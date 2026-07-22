@@ -92,6 +92,6 @@ Um projeto por disciplina — **12 projetos**. As matemáticas não se juntam: a
 - [ ] Piloto dos 3 kits novos: Sociologia · Filosofia · Matemática EF1 (sugestões nos `_MEMORIA.md`).
 - [ ] Piloto de Português EF1 (4º–5º).
 - [ ] Calibrar a extensão de Matemática EF1 após o piloto (hoje provisória).
-- [x] Capítulos-modelo por ano/série concluídos em Biologia (9º + EM), Ciências (4º–8º), Estudos Sociais (4º–9º), Física (6º–9º + EM) e Matemática Financeira (6º–9º + EM).
+- [x] Capítulos-modelo por ano/série concluídos em Biologia (9º + EM), Ciências (4º–8º), Estudos Sociais (4º–9º), Física (6º–9º + EM), Matemática Financeira (6º–9º + EM) e Geometria (6º–9º + EM).
 - [ ] Decisão pendente: versículo Mateus 25:40 repetido em 3 séries nos blueprints de Geometria.
 - [ ] Decisão pendente: formato da Conexão VP — os kits praticam versículo condicional inline, mas o Anexo A §5 ainda marca como "em aberto". Física e Geometria já decidiram **não levar versículo**.

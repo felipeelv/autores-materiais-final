@@ -77,6 +77,38 @@ Regras calibradas:
 
 Os sete modelos passam no validador da disciplina. No capítulo de 9º ano, os dados reais de inflação e de garantia do FGC foram conferidos em fontes oficiais.
 
+## Geometria
+
+Modelos disponíveis do **6º ao 9º ano e da 1ª à 3ª série do Ensino Médio**, em `Geometria/modelos/`.
+
+Regras calibradas:
+
+- manter 170–210 palavras por aula, com teto de 240 e sem mínimo obrigatório;
+- descrever toda configuração com pontos, posições relativas, medidas, dados e incógnitas suficientes para reconstruí-la;
+- não usar imagens: diagramas simples podem ser representados em ASCII quando forem indispensáveis;
+- apresentar justificativa geométrica antes da fórmula e uma operação por linha nos exemplos;
+- escrever construções com instrumentos ou software como procedimentos descritos, nunca como atividades;
+- manter unidade em todo resultado de comprimento, área, volume ou ângulo;
+- não inserir versículos, mesmo quando o blueprint trouxer conexão VP.
+
+Os sete modelos passam no validador da disciplina e foram conferidos quanto a fórmulas, unidades e descrição das configurações.
+
+### Decisão pendente para 22/07/2026 — imagens em Geometria
+
+O `Geometria/AUTOR.md` consolidado determina atualmente **“sem imagens”**: as figuras devem ser reconstruíveis por descrição verbal, notação geométrica e, quando indispensável, ASCII. Por essa razão, os sete modelos foram produzidos sem TikZ e sem PNG.
+
+O fluxo especializado de produção de Geometria também oferece a possibilidade de gerar **fontes TikZ editáveis e imagens PNG incorporadas ao Markdown**. Felipe decidirá em **22/07/2026** se esse recurso deve passar a fazer parte do padrão oficial da disciplina.
+
+Quando o assunto for retomado, seguir esta ordem:
+
+1. decidir entre **manter o padrão textual atual** ou **adotar TikZ + PNG**;
+2. se TikZ + PNG for aprovado, reajustar primeiro o `Geometria/AUTOR.md` — instruções do projeto, regras de figuras, proibições, estrutura da aula e checklist;
+3. registrar a nova decisão em `Geometria/_MEMORIA.md`;
+4. somente depois revisar os sete modelos e definir quais conceitos realmente exigem figura;
+5. criar fontes `.tex`, renderizar PNGs e validar os links apenas para as figuras pedagogicamente necessárias.
+
+**Gatilho de retomada:** se Felipe mencionar “imagens”, “TikZ”, “PNG” ou “figuras de Geometria”, reler esta pendência antes de alterar o autor ou gerar arquivos.
+
 ## Estudos Sociais
 
 Modelos disponíveis do **4º ao 9º ano**, em `Estudos Sociais/modelos/`.
@@ -98,13 +130,14 @@ A quantidade de boxes ainda exige conferência separada: o validador atual verif
 
 ## Estado da validação
 
-Existem **29 capítulos-modelo**:
+Existem **36 capítulos-modelo**:
 
 - 4 de Biologia;
 - 5 de Ciências;
 - 6 de Estudos Sociais;
 - 7 de Física;
-- 7 de Matemática Financeira.
+- 7 de Matemática Financeira;
+- 7 de Geometria.
 
 Todos passam em `python3 validar-modelos.py`. Isso confirma a estrutura mecânica; a aprovação editorial final continua sendo feita pelo Felipe.
 
@@ -113,9 +146,16 @@ Todos passam em `python3 validar-modelos.py`. Isso confirma a estrutura mecânic
 - Repositório definitivo: `felipeelv/autores-materiais-final`
 - Visibilidade: privada
 - Branch principal: `main`
+- Branch de trabalho atual: `agent/consolida-modelos-curriculares`
 - Os arquivos ficam diretamente na raiz do repositório.
 
 O repositório antigo `autores-material` não deve ser usado como fonte desta versão final. A separação permite higienizar os arquivos antigos sem afetar os autores consolidados.
+
+### Estado da publicação em 21/07/2026
+
+- A branch de trabalho reúne os modelos de Estudos Sociais, Física, Matemática Financeira e Geometria.
+- O PR rascunho [#1](https://github.com/felipeelv/autores-materiais-final/pull/1) está aberto contra a `main` com esse conjunto consolidado.
+- A decisão sobre adotar TikZ e PNG em Geometria permanece pendente para 22/07/2026; os modelos publicados seguem a regra textual atualmente vigente.
 
 ## Como continuar de casa
 
@@ -126,17 +166,18 @@ python3 sincronizar.py --check
 python3 validar-modelos.py
 ```
 
-Se o repositório já estiver clonado:
+Enquanto o PR #1 estiver aberto, retome pela branch de trabalho:
 
 ```bash
 git fetch origin
-git switch main
-git pull origin main
+git switch agent/consolida-modelos-curriculares
+git pull --ff-only
 ```
 
 ## Próximos passos
 
-1. Validar visualmente os modelos de Biologia, Ciências, Estudos Sociais, Física e Matemática Financeira.
-2. Registrar novos ajustes no `AUTOR.md` e no `_MEMORIA.md` da disciplina correspondente.
-3. Aplicar o mesmo processo às demais disciplinas, uma por vez.
-4. Manter o repositório final atualizado até a aprovação de todas as disciplinas.
+1. Em 22/07/2026, decidir se Geometria continuará sem imagens ou adotará fontes TikZ editáveis e PNGs renderizados; se mudar, reajustar o `Geometria/AUTOR.md` antes dos modelos.
+2. Validar visualmente os modelos de Biologia, Ciências, Estudos Sociais, Física, Matemática Financeira e Geometria.
+3. Registrar novos ajustes no `AUTOR.md` e no `_MEMORIA.md` da disciplina correspondente.
+4. Aplicar o mesmo processo às demais disciplinas, uma por vez.
+5. Manter o repositório final atualizado até a aprovação de todas as disciplinas.

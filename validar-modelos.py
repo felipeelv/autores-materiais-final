@@ -14,6 +14,7 @@ DISCIPLINAS = {
     "Estudos Sociais": "estudos-sociais",
     "Fisica": "fisica",
     "Financeira": "financeira",
+    "Geometria": "geometria",
 }
 
 

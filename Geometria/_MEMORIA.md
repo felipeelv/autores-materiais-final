@@ -1,6 +1,6 @@
 # Memória do Kit — Geometria (Matemática 2) · Reorganização 2026 · 2º Semestre
 
-> Registro de origem, decisões e estado deste kit. Ler antes de alterar qualquer arquivo da pasta. Última atualização: **19/07/2026**.
+> Registro de origem, decisões e estado deste kit. Ler antes de alterar qualquer arquivo da pasta. Última atualização: **21/07/2026**.
 
 ---
 
@@ -41,7 +41,9 @@ Criado em **19/07/2026** a partir do kit único de Matemática, **separado por d
 
 - [x] Kit completo (6 arquivos + esta memória) — 19/07/2026
 - [ ] Montar o projeto no claude.ai (ver `_COMO-MONTAR-OS-PROJETOS.md` na pasta acima)
-- [ ] Capítulo piloto: Transformações geométricas · 8º ano · `3bim-bloco1.md` (3 aulas — testa descrição de figura, isometrias e Escher)
+- [x] Capítulo piloto: Transformações geométricas · 8º ano · `modelos/geometria-8ano-modelo.md`
+- [x] Sete capítulos-modelo, um por ano/série do 6º ano à 3ª série do Ensino Médio, em `modelos/`
+- [ ] Validar visual e editorialmente os sete modelos com o Felipe
 
 ## 5. Histórico
 
@@ -53,6 +55,7 @@ Criado em **19/07/2026** a partir do kit único de Matemática, **separado por d
 | 21/07/2026 | **Recalibragem de forma e extensão (vale para as 9 disciplinas).** Diagnóstico em Biologia: os capítulos tinham o mesmo tamanho do texto-referência aprovado pelo Felipe (255 vs 250 palavras) e ainda liam como "texto demais" — **78% de prosa corrida contra 46% da referência**, e 11 de 24 aulas sem uma única lista. Mudanças: `MIN_PAL, MAX_PAL = 180, 300` (era 250, 400 — o teto virava meta); prompt ganhou a seção **FORMA DO CONTEÚDO — prosa + marcadores** (o material é referência do aluno, a explicação é do professor; máx. 2 frases seguidas antes de uma lista; tabela para 2+ itens; subseções numeradas `N.1`); validador ganhou `[2b] Prosa × marcadores`, que **diagnostica e não reprova** (travar num percentual só produz bullet forçado). Versículo virou **condicional**: só com ligação conceitual, validada pelo **teste do sinônimo** — 4 dos 7 versículos de Biologia ligavam por trocadilho, todos prescritos nos blueprints. |
 | 21/07/2026 | **Geometria não leva versículo.** As 4 conexões VP dos blueprints são analogia (invariância geométrica ↦ dignidade), o que o `regras-editoriais.md` desta disciplina já proibia ("sem analogia explícita"). Diferente de Biologia/Financeira, o conteúdo de Geometria nunca levanta a questão do valor humano. Versículos removidos dos 4 capítulos do 3º bim. **Pendente:** rever a conexão VP nos blueprints ou tirar VP da disciplina. |
 | 21/07/2026 | **Extensão apertada: alvo 170–210, teto 240** (padrão da casa é 300). Geometria é fórmula-e-figura: o desenho e a tabela carregam o que em Humanas precisaria de frase. Medido antes: **378 palavras/aula**, a maior do projeto, com `"Veja o exemplo abaixo."` em 10 das 12 aulas — frase que o próprio prompt prescrevia. Prompt ganhou "O que é enumerável nesta disciplina" (tabela *o que preserva × o que muda* é o formato mais consultado) e "Filler característico". Os 4 capítulos do 3º bim refeitos: **236 pal./aula, 41% de prosa**. |
+| 21/07/2026 | **Modelos concluídos do 6º ano à 3ª série.** Os sete capítulos do primeiro bloco do 3º bimestre foram reescritos no formato consolidado: subtópicos numerados, descrição reconstruível das configurações, justificativa antes da fórmula, exemplos resolvidos em todas as aulas, unidades nos resultados e nenhum versículo. Conforme a regra mestra deste kit, não foram criadas imagens nem arquivos TikZ; descrições verbais e notação substituem figuras externas. Todos passam no validador de Geometria. |
 
 ---
 
