@@ -44,7 +44,8 @@ DISC = {
     "matematica-ef1":  dict(boxes="🔢⚠️",         fora_box="",  familia="matematicas"),
 }
 
-# Extensão por aula: (piso, teto). O piso só avisa; o teto reprova acima de +10%.
+# Extensão por aula: (piso, teto). O piso só avisa.
+# Em Operações, o teto é firme; nas demais disciplinas, reprova acima de +10%.
 # Disciplinas fórmula-driven entregam o mesmo conteúdo em menos texto — fórmula,
 # tabela e figura carregam o que em Humanas precisa de frase.
 # ⚠️ Os limites foram calibrados com o método de contagem de contar_conteudo().
@@ -52,6 +53,7 @@ DISC = {
 MIN_PAL, MAX_PAL = 180, 300
 PAL_POR_DISC = {
     "fisica":         (110, 190),
+    "operacoes":      (90, 170),
     "geometria":      (150, 240),
     "matematica-ef1": (150, 260),   # provisório — calibrar após o piloto
 }
@@ -154,7 +156,9 @@ def main():
     print(f"\n[2] Extensão por aula (teto {max_pal} · piso de referência {min_pal})")
     for num, tit, corpo in aulas:
         n = contar_conteudo(corpo)
-        if n > max_pal * 1.1:
+        if args.disciplina == "operacoes" and n > max_pal:
+            rc |= falha(f"Aula {num} — {tit}: {n} palavras (teto firme {max_pal})")
+        elif n > max_pal * 1.1:
             rc |= falha(f"Aula {num} — {tit}: {n} palavras")
         elif n > max_pal:
             aviso(f"Aula {num} — {tit}: {n} palavras (pouco acima do teto)")
@@ -270,6 +274,38 @@ def main():
             rc |= falha(f"antecipação proibida ('como veremos adiante') nas linhas {prep}")
         else:
             ok("sem antecipações ('como veremos adiante')")
+    if args.disciplina == "operacoes":
+        pontos = [i + 1 for i, l in enumerate(linhas) if r"\cdot" in l]
+        if pontos:
+            rc |= falha(f"multiplicação com \\cdot (use \\times) nas linhas {pontos[:12]}")
+        else:
+            ok("multiplicação usa \\times, sem \\cdot")
+
+        formulas_resolucao = []
+        for m in re.finditer(r"(?m)^\*\*Resolução:\*\*\s*$", texto):
+            resposta = re.search(r"(?m)^\*\*Resposta:\*\*", texto[m.end():])
+            fim = m.end() + resposta.start() if resposta else len(texto)
+            trecho = texto[m.end():fim]
+            for fm in re.finditer(r"(?m)^\$\$(.*?)\$\$$", trecho):
+                formula = fm.group(1).strip()
+                linha = texto[:m.end() + fm.start()].count("\n") + 1
+                formulas_resolucao.append((linha, formula))
+
+        iniciais = [linha for linha, f in formulas_resolucao if f.startswith("=")]
+        sem_resultado = [linha for linha, f in formulas_resolucao if "=" not in f]
+        cadeias = []
+        for linha, f in formulas_resolucao:
+            if any(parte.count("=") > 1 for parte in re.split(r"\\\\", f)):
+                cadeias.append(linha)
+
+        if iniciais:
+            rc |= falha(f"bloco de cálculo iniciado apenas por `=` nas linhas {iniciais[:12]}")
+        if sem_resultado:
+            rc |= falha(f"operação sem resultado no mesmo bloco nas linhas {sem_resultado[:12]}")
+        if cadeias:
+            rc |= falha(f"cadeia com mais de uma igualdade na mesma linha nas linhas {cadeias[:12]}")
+        if not iniciais and not sem_resultado and not cadeias:
+            ok("resoluções: expressão no passo e uma operação com resultado por linha")
     if args.disciplina == "geometria":
         fig = [i + 1 for i, l in enumerate(linhas)
                if re.search(r"figura ao lado|veja a figura|conforme o desenho|imagem ao lado", l.lower())]
