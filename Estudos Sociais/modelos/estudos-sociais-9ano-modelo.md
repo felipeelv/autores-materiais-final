@@ -25,9 +25,11 @@ A posição aproxima a Europa da Ásia, da África e das rotas do Atlântico.
 
 ### 1.2 Muitos países em pouco espaço
 
-Mais de 50 países ocupam cerca de 10 milhões de quilômetros quadrados.
+> 🔎 **Curiosidade:**
+>
+> Mais de 50 países ocupam cerca de 10 milhões de quilômetros quadrados na Europa.
 
-> O mapa político apresenta territórios de tamanhos muito diferentes.
+O mapa político apresenta territórios de tamanhos muito diferentes.
 
 Rússia, França e Espanha ocupam grandes áreas, enquanto Mônaco e Vaticano possuem territórios reduzidos.
 
@@ -82,11 +84,11 @@ O oceano reduz variações de temperatura no oeste, enquanto o interior apresent
 
 ### 2.3 Rios e ocupação
 
-O Reno conecta áreas industriais ao mar do Norte.
+> 🔎 **Curiosidade:**
+>
+> O Reno conecta áreas industriais ao mar do Norte, enquanto o Danúbio atravessa vários países e chega ao mar Negro.
 
-O Danúbio atravessa vários países e chega ao mar Negro.
-
-> Esses rios são usados para:
+Esses rios são usados para:
 
 - transporte de cargas;
 - abastecimento;
@@ -143,11 +145,11 @@ Também provoca disputas políticas sobre fronteiras, acolhimento e integração
 
 O continente reúne dezenas de línguas e identidades nacionais.
 
-> Algumas pertencem a famílias próximas; outras possuem origens distintas.
+Algumas pertencem a famílias próximas; outras possuem origens distintas.
 
-Integração econômica não elimina diferenças religiosas, linguísticas e históricas.
-
-> O desafio europeu é cooperar sem transformar diversidade em uniformidade.
+> 💭 **Você já pensou nisso?**
+>
+> Como cooperar sem apagar diferenças? A integração econômica aproxima países, mas não elimina identidades religiosas, linguísticas e históricas.
 
 ---
 
@@ -170,9 +172,11 @@ O mercado único reduziu barreiras à circulação de mercadorias, serviços, ca
 
 ### 4.2 Schuman e a paz econômica
 
-> 👤 **Esse foi o “cara”:**  
+> 👤 **Esse foi o “cara”:**
+>
 > - Robert Schuman foi ministro das Relações Exteriores da França;  
-> - apresentou a Declaração Schuman em 9 de maio de 1950;  
+> - apresentou a Declaração Schuman em 9 de maio de 1950;
+>
 > - propôs administrar carvão e aço franceses e alemães em conjunto.  
 > A proposta ligava economias para tornar uma nova guerra mais difícil.
 
@@ -198,16 +202,14 @@ Compartilhar regras não elimina os interesses nacionais.
 
 ### 5.1 Crises e solidariedade
 
-A crise da dívida, a partir de 2010, expôs diferenças econômicas entre os membros.
+Duas crises expuseram diferenças entre os membros:
 
-A crise migratória de 2015 revelou divergências sobre acolhimento e divisão de responsabilidades.
+- a crise da dívida, a partir de 2010, revelou desigualdades econômicas;
+- a crise migratória de 2015 mostrou divergências sobre acolhimento e divisão de responsabilidades.
 
-> Nos dois casos, surgiu a mesma pergunta:
-
-- quanto cada país deve decidir sozinho;
-- quanto deve assumir em nome do conjunto.
-
-> A integração é testada quando os custos de uma decisão não são distribuídos igualmente.
+> 💭 **Você já pensou nisso?**
+>
+> Quanto cada país deve decidir sozinho e quanto deve assumir em nome do conjunto? A integração é testada quando os custos não são distribuídos igualmente.
 
 ### 5.2 Brexit
 

@@ -1,6 +1,6 @@
 # Memória do Kit — Financeira (Matemática 3) · Reorganização 2026 · 2º Semestre
 
-> Registro de origem, decisões e estado deste kit. Ler antes de alterar qualquer arquivo da pasta. Última atualização: **19/07/2026**.
+> Registro de origem, decisões e estado deste kit. Ler antes de alterar qualquer arquivo da pasta. Última atualização: **21/07/2026**.
 
 ---
 
@@ -43,7 +43,9 @@ Criado em **19/07/2026** a partir do kit único de Matemática, **separado por d
 - [x] Kit completo (6 arquivos + esta memória) — 19/07/2026
 - [ ] Montar o projeto no claude.ai (ver `_COMO-MONTAR-OS-PROJETOS.md` na pasta acima)
 - [ ] **Confirmar com o Felipe a regra de ética financeira** (item 3)
-- [ ] Capítulo piloto: Medidas de dispersão · 1ª série · `3bim-bloco1.md` (3 aulas — testa cálculo passo a passo, interpretação e a nota crítica sobre Galton)
+- [x] Capítulo piloto: Medidas de dispersão · 1ª série · `3bim-bloco1.md` (3 aulas — testa cálculo passo a passo, interpretação e a nota crítica sobre Galton)
+- [x] Sete capítulos-modelo, um por ano/série do 6º ano à 3ª série do Ensino Médio, em `modelos/`
+- [ ] Validar visual e editorialmente os sete modelos com o Felipe
 
 ## 5. Histórico
 
@@ -53,6 +55,7 @@ Criado em **19/07/2026** a partir do kit único de Matemática, **separado por d
 | 20/07/2026 | Extensão recalibrada: **teto firme de 400 palavras/aula** (as aulas estavam saindo prolixas) e piso de 350 abolido — 250–300 palavras bastam se o recorte foi coberto. No validador o teto reprova; ficar abaixo do piso só avisa |
 | 20/07/2026 | `validar-capitulo.py`: seção de fechamento passou a comparar o título inteiro ("fotossíntese"/"síntese proteica" eram reprovadas por substring) e a extensão deixou de falhar por aula curta — as duas travavam a produção |
 | 21/07/2026 | **Recalibragem de forma e extensão (vale para as 9 disciplinas).** Diagnóstico em Biologia: os capítulos tinham o mesmo tamanho do texto-referência aprovado pelo Felipe (255 vs 250 palavras) e ainda liam como "texto demais" — **78% de prosa corrida contra 46% da referência**, e 11 de 24 aulas sem uma única lista. Mudanças: `MIN_PAL, MAX_PAL = 180, 300` (era 250, 400 — o teto virava meta); prompt ganhou a seção **FORMA DO CONTEÚDO — prosa + marcadores** (o material é referência do aluno, a explicação é do professor; máx. 2 frases seguidas antes de uma lista; tabela para 2+ itens; subseções numeradas `N.1`); validador ganhou `[2b] Prosa × marcadores`, que **diagnostica e não reprova** (travar num percentual só produz bullet forçado). Versículo virou **condicional**: só com ligação conceitual, validada pelo **teste do sinônimo** — 4 dos 7 versículos de Biologia ligavam por trocadilho, todos prescritos nos blueprints. |
+| 21/07/2026 | **Modelos concluídos do 6º ano à 3ª série.** Os sete capítulos foram reescritos no formato vigente: aulas e subtópicos numerados, prosa curta, tabelas em Markdown, exemplos resolvidos passo a passo e interpretação obrigatória dos resultados. Foram preservados os recortes dos blueprints, a ética de dados e investimentos e a nota crítica sobre Francis Galton. Os dados reais de IPCA e garantia do FGC usados no 9º ano foram conferidos em fontes oficiais de 2026. Todos passam no validador da disciplina. |
 
 ---
 

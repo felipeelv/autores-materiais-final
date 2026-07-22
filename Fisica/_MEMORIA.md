@@ -1,6 +1,6 @@
 # Memória do Kit — Física · Produção de Capítulos (Reorganização 2026 · 2º Semestre)
 
-> Registro de origem, decisões e estado deste kit. Ler antes de alterar qualquer arquivo da pasta. Última atualização: **19/07/2026**.
+> Registro de origem, decisões e estado deste kit. Ler antes de alterar qualquer arquivo da pasta. Última atualização: **21/07/2026**.
 
 ---
 
@@ -36,7 +36,9 @@ Kit criado em **19/07/2026** a partir das instruções + memória do projeto Cla
 
 - [x] Kit completo e consistente (4 arquivos .md + esta memória) — 19/07/2026
 - [ ] Subir os arquivos no projeto Claude.ai de Física (substituindo as instruções antigas por unidades)
-- [ ] Capítulo piloto para validar o kit (sugestão: Leis de Newton · 1ª série · blueprint `3bim-bloco1.md` — capítulo de 3 aulas, bom para teste rápido)
+- [x] Capítulo piloto: Leis de Newton · 1ª série · `modelos/fisica-1serie-modelo.md`
+- [x] Modelos do 6º ao 9º ano e da 1ª à 3ª série produzidos e disponíveis em `modelos/`
+- [ ] Validar visualmente os sete modelos com o Felipe
 - [ ] Após piloto aprovado: registrar ajustes aqui e replicar aprendizados aos próximos kits
 
 ## 5. Histórico
@@ -50,6 +52,7 @@ Kit criado em **19/07/2026** a partir das instruções + memória do projeto Cla
 | 20/07/2026 | `validar-capitulo.py`: seção de fechamento passou a comparar o título inteiro ("fotossíntese"/"síntese proteica" eram reprovadas por substring) e a extensão deixou de falhar por aula curta — as duas travavam a produção |
 | 21/07/2026 | **Recalibragem de forma e extensão (vale para as 9 disciplinas).** Diagnóstico em Biologia: os capítulos tinham o mesmo tamanho do texto-referência aprovado pelo Felipe (255 vs 250 palavras) e ainda liam como "texto demais" — **78% de prosa corrida contra 46% da referência**, e 11 de 24 aulas sem uma única lista. Mudanças: `MIN_PAL, MAX_PAL = 180, 300` (era 250, 400 — o teto virava meta); prompt ganhou a seção **FORMA DO CONTEÚDO — prosa + marcadores** (o material é referência do aluno, a explicação é do professor; máx. 2 frases seguidas antes de uma lista; tabela para 2+ itens; subseções numeradas `N.1`); validador ganhou `[2b] Prosa × marcadores`, que **diagnostica e não reprova** (travar num percentual só produz bullet forçado). Versículo virou **condicional**: só com ligação conceitual, validada pelo **teste do sinônimo** — 4 dos 7 versículos de Biologia ligavam por trocadilho, todos prescritos nos blueprints. |
 | 21/07/2026 | **Física não leva versículo + volume não cresce com a série.** As 9 conexões VP dos blueprints são analogia ("assim como [fenômeno], assim [lição]"), e a Física nunca levanta a questão do valor humano — mesma conclusão de Geometria. Versículos removidos dos 9 capítulos do 3º bim. Junto: extensão apertada duas vezes (240 → **190**, piso 110) porque o 6º ano continuava com "muita explicação", e registrada a regra de que **o volume não cresce com a série** — a produção vinha entregando 180 pal./aula no 6º ano e 303–341 no EM sem que nada no kit pedisse isso. **Pendente:** rever a conexão VP nos blueprints ou tirar VP da disciplina. |
+| 21/07/2026 | **Conjunto de modelos concluído:** um capítulo por ano/série, do 6º ano à 3ª série EM. Os capítulos do 3º bimestre serviram apenas de matéria-prima e foram reescritos no padrão atual: 130–170 palavras por aula, subtópicos numerados, prosa curta + marcadores, fórmulas com grandezas e unidades SI, exemplos em etapas e zero versículo. Os sete passam no validador de Física. |
 
 ---
 

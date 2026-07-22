@@ -37,9 +37,11 @@ Os povos indígenas continuam presentes no Brasil.
 
 Em 2022, o IBGE registrou cerca de 305 povos e 274 línguas indígenas.
 
-> 👤 **Esse foi o “cara”:**  
+> 👤 **Esse foi o “cara”:**
+>
 > - Claude Lévi-Strauss veio ao Brasil em 1935;  
-> - conviveu com os povos Bororo, Kadiwéu e Nambikwara;  
+> - conviveu com os povos Bororo, Kadiwéu e Nambikwara;
+>
 > - publicou *Tristes Trópicos* em 1955.  
 > Seu trabalho mostrou que essas culturas eram complexas, não “primitivas”.
 
@@ -77,7 +79,9 @@ Nos primeiros 30 anos, a exploração seguia três etapas:
 - carregavam a madeira nos navios;
 - voltavam para a Europa.
 
-> O nome Brasil veio dessa árvore.
+> 🔎 **Curiosidade:**
+>
+> O nome Brasil veio do pau-brasil, árvore explorada desde os primeiros anos da presença portuguesa.
 
 ### 2.3 O início da colonização
 
@@ -134,11 +138,11 @@ Entre 1530 e 1888, cerca de 4,8 milhões de africanos chegaram ao Brasil nessa c
 
 ### 3.3 Palavra e resistência
 
-A expressão correta é **pessoa escravizada**.
+> 💭 **Você já pensou nisso?**
+>
+> Por que dizemos **pessoa escravizada**? A expressão mostra que a escravidão foi uma violência imposta, não uma característica da pessoa.
 
-Ela mostra que a escravidão foi uma violência imposta, não uma característica da pessoa.
-
-> A resistência assumiu diferentes formas:
+A resistência assumiu diferentes formas:
 
 - fugas;
 - formação de **quilombos**, comunidades livres;
@@ -178,7 +182,9 @@ Entre os grupos mais numerosos estavam:
 
 Cerca de 1,4 milhão de italianos e 1,3 milhão de portugueses chegaram nesse período.
 
-> Cada família trouxe língua, comida, religião e costumes.
+> 💭 **Você já pensou nisso?**
+>
+> Que histórias uma receita, um sobrenome ou uma festa familiar pode guardar? Esses elementos acompanham as pessoas quando elas migram.
 
 Essas migrações também alteraram a distribuição da população.
 
@@ -226,7 +232,9 @@ As opções usadas pelo IBGE são:
 - amarela;
 - indígena.
 
-Cerca de 45% da população se declarou parda.
+> 🔎 **Curiosidade:**
+>
+> Cerca de 45% da população brasileira se declarou parda no Censo de 2022.
 
 O dado ajuda a perceber como muitas origens se encontraram.
 
@@ -236,7 +244,8 @@ A miscigenação não tornou todas as pessoas iguais.
 
 Cada matriz manteve marcas próprias na comida, na língua, na música e na fé.
 
-> *“À imagem de Deus os criou.”*  
+> *“À imagem de Deus os criou.”*
+>
 > — **Gênesis 1:27**
 
 A mesma dignidade pertence a pessoas de todas as origens.

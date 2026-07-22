@@ -10,7 +10,11 @@ Entre o Egito e a Mesopotâmia, Canaã era passagem de povos, mercadorias e exé
 
 ### 1.1 Um território entre grandes potências
 
-Os hebreus se estabeleceram em **Canaã**, na Palestina, parte ocidental do Crescente Fértil.
+Os hebreus se estabeleceram em **Canaã**.
+
+> 🔎 **Curiosidade:**
+>
+> Canaã ficava na Palestina, parte ocidental do Crescente Fértil.
 
 O território ligava o vale do Nilo às cidades mesopotâmicas.
 
@@ -35,7 +39,8 @@ Os hebreus organizaram uma tradição **monoteísta**: a fé em um único Deus, 
 | vários deuses, com funções diferentes | um único Deus, criador e soberano |
 | cultos ligados a cidades e fenômenos | aliança entre Deus e o povo |
 
-> *“À imagem de Deus os criou.”*  
+> *“À imagem de Deus os criou.”*
+>
 > — **Gênesis 1:27**
 
 Nessa tradição, todo ser humano carrega a imagem de Deus.
@@ -68,9 +73,11 @@ O Êxodo é a saída dos hebreus do Egito, situada pela tradição por volta de 
 
 No monte Sinai, os Dez Mandamentos uniram deveres religiosos e regras de convivência.
 
-> 👤 **Esse foi o “cara”:**  
+> 👤 **Esse foi o “cara”:**
+>
 > - **Moisés** é a figura central do Êxodo;  
-> - segundo a tradição, conduziu o povo para fora do Egito;  
+> - segundo a tradição, conduziu o povo para fora do Egito;
+>
 > - recebeu os Dez Mandamentos no Sinai.  
 > Seu legado reúne libertação, lei e identidade coletiva.
 
@@ -119,7 +126,9 @@ Sem um Estado próprio, comunidades judaicas preservaram a identidade por meio d
 - Números;
 - Deuteronômio.
 
-O conjunto também é chamado **Pentateuco**.
+> 🔎 **Curiosidade:**
+>
+> Os cinco livros da Torá também formam um conjunto chamado **Pentateuco**.
 
 Seus relatos, leis e ensinamentos mantiveram uma memória compartilhada durante a dispersão.
 
@@ -149,19 +158,22 @@ A influência fenícia nasceu das rotas comerciais, não de um grande império t
 
 ### 4.2 Um sistema prático de escrita
 
-Por volta de 1050 a.C., os fenícios usavam um **alfabeto fonético** com 22 sinais consonantais.
+Por volta de 1050 a.C., os fenícios usavam um **alfabeto fonético**.
+
+> 🔎 **Curiosidade:**
+>
+> O sistema fenício tinha 22 sinais consonantais; mais tarde, os gregos acrescentaram vogais.
 
 Cada sinal representava um som, facilitando registros comerciais.
 
 > Outros povos adaptaram o sistema:
 
-- os gregos acrescentaram vogais;
 - os romanos desenvolveram a escrita latina usada no português;
 - outros ramos contribuíram para os alfabetos hebraico e árabe.
 
-O alfabeto mudou o mundo porque registrava informações com poucos sinais combináveis.
+O sistema se espalhou pelo Mediterrâneo junto com os comerciantes.
 
-Ele se espalhou pelo Mediterrâneo junto com os comerciantes.
+Com poucos sinais combináveis, o alfabeto simplificou registros e pôde ser adaptado por muitos povos.
 
 ---
 
@@ -204,6 +216,8 @@ Duas filosofias propuseram caminhos distintos:
 | educação, dever e respeito | harmonia com o Tao e a natureza |
 | responsabilidade social | simplicidade e equilíbrio |
 
-A Grande Muralha e essas invenções resultaram do trabalho acumulado de diferentes períodos.
+> 🔎 **Curiosidade:**
+>
+> A Grande Muralha não foi construída de uma só vez: diferentes governos ligaram e ampliaram trechos ao longo do tempo.
 
 Assim como o alfabeto fenício, o conhecimento chinês atravessou fronteiras e foi adaptado por outros povos.

@@ -34,9 +34,11 @@ Ele foi coroado aos 14 anos.
 
 D. Pedro II governou de 1840 a 1889.
 
-> 👤 **Esse foi o “cara”:**  
+> 👤 **Esse foi o “cara”:**
+>
 > - D. Pedro II foi o segundo e último imperador do Brasil;  
-> - estudava línguas, astronomia e fotografia;  
+> - estudava línguas, astronomia e fotografia;
+>
 > - reinou durante 49 anos.  
 > Defendia o fim da escravidão, mas adiou decisões enquanto milhões continuavam escravizados.
 
@@ -78,6 +80,10 @@ O plantio contínuo desgastou parte do solo.
 | produção mais antiga | expansão posterior |
 | solo desgastado pelo cultivo | terra roxa mais fértil |
 | próximo ao Rio de Janeiro | Campinas e Ribeirão Preto |
+
+> 💭 **Você já pensou nisso?**
+>
+> Terra fértil produz riqueza sozinha? O café também dependia de trabalho humano, transporte e controle de grandes propriedades.
 
 ### 2.3 Quem produzia a riqueza
 
@@ -124,7 +130,8 @@ Quem colhia os grãos continuava sem receber salário.
 
 ### 3.3 Riqueza e dignidade
 
-> *“À imagem de Deus o criou.”*  
+> *“À imagem de Deus o criou.”*
+>
 > — **Gênesis 1:27**
 
 A mesma dignidade pertencia ao proprietário e à pessoa obrigada a trabalhar.
@@ -133,7 +140,9 @@ A mesma dignidade pertencia ao proprietário e à pessoa obrigada a trabalhar.
 
 D. Pedro II dizia apoiar o fim da escravidão, mas o trabalho escravizado continuou durante quase todo o seu reinado.
 
-> Reconhecer o que é justo sem agir permite que a injustiça permaneça.
+> 💭 **Você já pensou nisso?**
+>
+> O que acontece quando alguém reconhece uma injustiça, mas adia a mudança? No Império, a demora permitiu que a escravidão continuasse.
 
 ---
 
@@ -149,9 +158,9 @@ O dinheiro e a necessidade de transportar café favoreceram mudanças:
 - **1874:** cabo telegráfico ligou o Brasil à Europa;
 - **fim do século XIX:** iluminação elétrica começou a chegar às ruas.
 
-O telégrafo enviava sinais por fios.
-
-Uma mensagem que levava semanas passou a chegar em minutos.
+> 🔎 **Curiosidade:**
+>
+> O telégrafo enviava sinais por fios e fazia chegar em minutos uma mensagem que antes levava semanas.
 
 ### 4.2 Os trilhos do café
 

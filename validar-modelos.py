@@ -12,6 +12,8 @@ DISCIPLINAS = {
     "Biologia": "biologia",
     "Ciencias": "ciencias",
     "Estudos Sociais": "estudos-sociais",
+    "Fisica": "fisica",
+    "Financeira": "financeira",
 }
 
 

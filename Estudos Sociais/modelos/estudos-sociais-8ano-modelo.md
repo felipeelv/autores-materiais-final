@@ -10,7 +10,9 @@ No fim do século XVIII, Saint-Domingue era a colônia francesa mais rica do mun
 
 ### 1.1 A riqueza da plantation
 
-A colônia produzia cerca de 40% do açúcar e 60% do café consumidos no mundo.
+> 🔎 **Curiosidade:**
+>
+> Saint-Domingue produzia cerca de 40% do açúcar e 60% do café consumidos no mundo.
 
 A economia seguia o sistema de **plantation**:
 
@@ -67,9 +69,11 @@ O conflito durou treze anos e envolveu potências que disputavam o controle da i
 
 ### 2.2 Toussaint Louverture
 
-> 👤 **Esse foi o “cara”:**  
+> 👤 **Esse foi o “cara”:**
+>
 > - Toussaint nasceu escravizado e foi alforriado adulto;  
-> - organizou forças contra franceses, espanhóis e ingleses;  
+> - organizou forças contra franceses, espanhóis e ingleses;
+>
 > - aboliu a escravidão e promulgou uma constituição autônoma em 1801.  
 > Capturado por Napoleão, morreu numa prisão francesa em 1803.
 
@@ -108,13 +112,16 @@ Essa ruptura assustou sociedades escravistas de outras regiões.
 
 ### 3.2 Uma constituição antirracista
 
-A Constituição de 1805 determinava que todo cidadão seria chamado negro.
+> 🔎 **Curiosidade:**
+>
+> A Constituição haitiana de 1805 determinava que todo cidadão seria chamado negro.
 
-> Nas colônias, essa palavra era usada para negar direitos.
+Nas colônias, essa palavra era usada para negar direitos.
 
 No Haiti, passou a expressar pertencimento político e igualdade.
 
-> *“Sempre que o fizestes a um destes meus irmãos, a mim o fizestes.”*  
+> *“Sempre que o fizestes a um destes meus irmãos, a mim o fizestes.”*
+>
 > — **Mateus 25:40**
 
 Os revolucionários reconheceram em si a dignidade que o sistema escravista negava.
@@ -152,7 +159,9 @@ Tinham terras e riqueza, mas os principais cargos eram reservados aos **peninsul
 - criollos queriam controlar decisões locais;
 - peninsulares defendiam os privilégios metropolitanos.
 
-> A independência começou entre grupos que disputavam o comando, não entre pessoas com condições iguais.
+> 💭 **Você já pensou nisso?**
+>
+> A independência significava igualdade para todos? No início, ela nasceu da disputa pelo comando entre grupos que viviam em condições diferentes.
 
 ### 4.2 As Juntas de Defesa
 
@@ -222,7 +231,9 @@ As forças ligadas a Bolívar continuaram a guerra no Peru.
 
 A vitória de Ayacucho, em 1824, encerrou o domínio espanhol sobre quase toda a América continental.
 
-> Os territórios tornaram-se independentes, mas ainda precisavam definir fronteiras e governos.
+> 💭 **Você já pensou nisso?**
+>
+> Vencer o domínio espanhol bastava para formar novos países? Depois da independência, ainda era necessário definir fronteiras e governos.
 
 ---
 
@@ -256,9 +267,9 @@ A independência política não transformou toda a sociedade:
 - a escravidão permaneceu em vários países;
 - comunidades indígenas continuaram exploradas.
 
-> Trocar a bandeira não significou libertar todos os grupos.
-
-Para muitos trabalhadores, a vida cotidiana mudou pouco.
+> 💭 **Você já pensou nisso?**
+>
+> Trocar a bandeira bastava para libertar todos os grupos? Para muitos trabalhadores, a vida cotidiana mudou pouco.
 
 ### 6.3 Novas dependências
 

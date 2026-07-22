@@ -43,6 +43,7 @@ Kit criado em **19/07/2026** a partir da memória do projeto Claude.ai (`Estudos
     - um capítulo = uma disciplina (nunca misturar recorte de Geografia e História).
 11. **Paragrafação enxuta e respiro visual** (piloto de 21/07): cada parágrafo traz uma ideia principal, preferencialmente em uma frase curta; duas frases só quando completam o mesmo encadeamento. Blockquote simples (`>`) destaca ressalva histórica, distinção entre fontes, contraste ou síntese; não tem emoji nem título, não é box e não entra no limite de boxes. Nunca há três parágrafos consecutivos sem lista, tabela, box ou blockquote; preferir um respiro por subseção e usar um segundo apenas quando necessário para interromper outra sequência.
 12. **Alternância entre subtópicos com e sem marcadores** (21/07/2026, ajuste do Felipe): dentro da mesma aula, dois `###` sem bullets não ficam seguidos. Um deles deve organizar em marcadores causas, consequências, etapas, exemplos, grupos ou contrastes já presentes no conteúdo. Subtópicos com marcadores podem ser consecutivos; lista sem função didática continua proibida.
+13. **Boxes recalibrados nos seis modelos do Fundamental** (21/07/2026): a auditoria encontrou apenas 6 boxes em 31 aulas — todos 👤, sem nenhuma ocorrência de 🔎 ou 💭. Os modelos foram corrigidos para **exatamente 1 box por aula**, totalizando 31: 14 🔎 Curiosidades, 11 💭 reflexões e 6 👤 personagens. Sempre que possível, conteúdo já existente foi convertido em box, sem repetição no corpo. Blockquote simples continua sendo apenas respiro visual e não entra nessa contagem.
 
 ## 4. Estado e próximos passos
 
@@ -51,6 +52,7 @@ Kit criado em **19/07/2026** a partir da memória do projeto Claude.ai (`Estudos
 - [ ] Subir os arquivos no projeto Claude.ai (substituindo o fluxo antigo por unidades) — **os 4 .md juntos**
 - [x] Primeiro modelo por ano: Civilizações do Oriente Antigo · 6º ano · `modelos/estudos-sociais-6ano-modelo.md` — usado para calibrar concisão e respiro visual
 - [x] Modelos do 4º ao 9º ano produzidos e disponíveis em `modelos/`
+- [x] Boxes revisados nos seis modelos: 1 por aula, família 🔎 💭 👤 equilibrada e sem duplicação de conteúdo
 - [ ] Capítulo piloto do EM (sugestão: Fundamentos e regulação do comércio internacional · Geografia · 2ª série · `3bim-bloco2.md` — testa densidade conceitual, dados e Smith × Prebisch sem escolher lado)
 - [ ] Após pilotos aprovados: registrar ajustes aqui
 
@@ -67,6 +69,7 @@ Kit criado em **19/07/2026** a partir da memória do projeto Claude.ai (`Estudos
 | 21/07/2026 | Capítulo-piloto do 6º ano transferido para `modelos/estudos-sociais-6ano-modelo.md`; criada a organização de um modelo por ano, com validação independente. |
 | 21/07/2026 | Conjunto de modelos do Fundamental concluído do 4º ao 9º ano; todos recalibrados para parágrafos enxutos, 180–220 palavras e respiro visual. |
 | 21/07/2026 | Regras visuais de Ciências aplicadas a Estudos Sociais: nenhum trecho com três parágrafos corridos e nenhum par de subtópicos sem marcadores. Os seis modelos foram revisados, e o validador ganhou as checagens `[2a] Ritmo visual da prosa` e `[2b] Alternância de subtópicos`. |
+| 21/07/2026 | Auditoria dos boxes corrigiu a ausência de 🔎 e 💭 nos modelos: as 31 aulas passaram a ter exatamente 1 box cada (14 🔎, 11 💭 e 6 👤). A revisão converteu conteúdo existente para evitar redundância; todos os seis capítulos continuaram aprovados pelo validador. Registrada também a limitação do validador atual, que não confere o mínimo de boxes por aula. |
 
 ---
 
