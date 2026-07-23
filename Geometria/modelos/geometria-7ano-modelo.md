@@ -19,6 +19,10 @@ Seus elementos principais são:
 - diâmetro — maior corda, pois passa pelo centro;
 - arco — parte da curva entre dois pontos.
 
+<!-- tikz:inicio fig-01-elementos-da-circunferencia -->
+![Circunferência de centro O com raio, corda, diâmetro e arco identificados](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/7ano/circunferencia-e-circulo/fig-01-elementos-da-circunferencia.png)
+<!-- tikz:fim fig-01-elementos-da-circunferencia -->
+
 O diâmetro contém dois raios:
 
 $$d=2r$$
@@ -31,6 +35,10 @@ A ponta seca fixa o centro e a abertura conserva o raio. O procedimento é:
 - **Passo 2:** abre-se o compasso na medida $$r$$;
 - **Passo 3:** fixa-se a ponta seca em $$O$$;
 - **Passo 4:** gira-se o compasso uma volta completa.
+
+<!-- tikz:inicio fig-02-construcao-com-compasso -->
+![Compasso com ponta seca fixa no centro O, abertura r e giro completo traçando a circunferência](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/7ano/circunferencia-e-circulo/fig-02-construcao-com-compasso.png)
+<!-- tikz:fim fig-02-construcao-com-compasso -->
 
 Pontos situados a $$8\,\mathrm{m}$$ de um poste, por exemplo, formam uma circunferência de centro no poste e raio $$8\,\mathrm{m}$$.
 
@@ -72,6 +80,10 @@ Considere centro $$O$$, raio $$r$$ e um ponto $$P$$. A comparação entre $$\ove
 | $$\overline{OP}=r$$ | pertencente |
 | $$\overline{OP}>r$$ | externo |
 
+<!-- tikz:inicio fig-03-posicoes-de-um-ponto -->
+![Comparação das posições interna, pertencente e externa de um ponto P conforme a distância OP e o raio](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/7ano/circunferencia-e-circulo/fig-03-posicoes-de-um-ponto.png)
+<!-- tikz:fim fig-03-posicoes-de-um-ponto -->
+
 ### 2.2 Reta e circunferência
 
 Para uma reta $$s$$, usa-se a menor distância $$d(O,s)$$, medida por um segmento perpendicular:
@@ -81,6 +93,10 @@ Para uma reta $$s$$, usa-se a menor distância $$d(O,s)$$, medida por um segment
 | $$d(O,s)<r$$ | secante | 2 |
 | $$d(O,s)=r$$ | tangente | 1 |
 | $$d(O,s)>r$$ | externa | 0 |
+
+<!-- tikz:inicio fig-04-posicoes-de-uma-reta -->
+![Comparação entre reta secante, tangente e externa conforme sua distância perpendicular ao centro](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/7ano/circunferencia-e-circulo/fig-04-posicoes-de-uma-reta.png)
+<!-- tikz:fim fig-04-posicoes-de-uma-reta -->
 
 No ponto de tangência $$T$$, o raio $$\overline{OT}$$ é perpendicular à reta tangente.
 
@@ -115,6 +131,10 @@ Uma volta da roda mede seu contorno; dividir essa medida pelo diâmetro produz s
 O número $$\pi$$ é a razão entre o comprimento $$C$$ e o diâmetro $$d$$:
 
 $$\pi=\frac{C}{d}$$
+
+<!-- tikz:inicio fig-05-razao-comprimento-diametro -->
+![Circunferência desenrolada em três diâmetros inteiros e mais zero vírgula quatorze do diâmetro](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/7ano/circunferencia-e-circulo/fig-05-razao-comprimento-diametro.png)
+<!-- tikz:fim fig-05-razao-comprimento-diametro -->
 
 Ele é irracional: sua escrita decimal não termina nem apresenta repetição periódica. Em cálculos escolares, usa-se $$\pi\approx3{,}14$$.
 

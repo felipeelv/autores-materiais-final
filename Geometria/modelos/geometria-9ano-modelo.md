@@ -15,7 +15,15 @@ No triângulo $$ABC$$, retângulo em $$A$$, tome $$\theta=\angle B$$. A hipotenu
 - $$\overline{AC}$$ é o cateto oposto;
 - $$\overline{AB}$$ é o cateto adjacente.
 
+<!-- tikz:inicio fig-01-lados-em-relacao-ao-angulo -->
+![Triângulo ABC retângulo em A com hipotenusa, cateto oposto e cateto adjacente identificados em relação ao ângulo teta em B](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/9ano/trigonometria-no-triangulo-retangulo/fig-01-lados-em-relacao-ao-angulo.png)
+<!-- tikz:fim fig-01-lados-em-relacao-ao-angulo -->
+
 Triângulos retângulos com o mesmo $$\theta$$ são semelhantes pelo caso AA. Portanto, as razões entre lados correspondentes não dependem do tamanho.
+
+<!-- tikz:inicio fig-02-triangulos-semelhantes-mesmo-angulo -->
+![Dois triângulos retângulos de tamanhos diferentes compartilham o mesmo ângulo teta e têm lados correspondentes proporcionais](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/9ano/trigonometria-no-triangulo-retangulo/fig-02-triangulos-semelhantes-mesmo-angulo.png)
+<!-- tikz:fim fig-02-triangulos-semelhantes-mesmo-angulo -->
 
 ### 1.2 Seno, cosseno e tangente
 
@@ -71,11 +79,19 @@ Os esquadros de desenho usam $$30^{\circ}$$, $$45^{\circ}$$ e $$60^{\circ}$$ por
 
 Uma altura divide um triângulo equilátero de lado 2 em dois triângulos retângulos com hipotenusa 2, cateto 1 e outro cateto $$\sqrt{3}$$. Eles produzem os valores de $$30^{\circ}$$ e $$60^{\circ}$$.
 
+<!-- tikz:inicio fig-03-triangulo-de-trinta-e-sessenta -->
+![Triângulo equilátero de lado 2 dividido pela altura em triângulos retângulos com catetos 1 e raiz de 3 e ângulos de 30 e 60 graus](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/9ano/trigonometria-no-triangulo-retangulo/fig-03-triangulo-de-trinta-e-sessenta.png)
+<!-- tikz:fim fig-03-triangulo-de-trinta-e-sessenta -->
+
 Um triângulo retângulo isósceles com catetos 1 tem hipotenusa:
 
 $$h^{2}=1^{2}+1^{2}$$
 
 $$h=\sqrt{2}$$
+
+<!-- tikz:inicio fig-04-triangulo-de-quarenta-e-cinco -->
+![Triângulo retângulo isósceles com catetos iguais a 1, hipotenusa raiz de 2 e dois ângulos de 45 graus](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/9ano/trigonometria-no-triangulo-retangulo/fig-04-triangulo-de-quarenta-e-cinco.png)
+<!-- tikz:fim fig-04-triangulo-de-quarenta-e-cinco -->
 
 Esse triângulo produz os valores de $$45^{\circ}$$.
 
@@ -132,6 +148,10 @@ $$\mathrm{sen}\,\theta=\cos(90^{\circ}-\theta)$$
 ### 3.2 Altura por ângulo de elevação
 
 O **ângulo de elevação** parte da horizontal para cima; o de depressão parte da horizontal para baixo.
+
+<!-- tikz:inicio fig-05-angulo-de-elevacao -->
+![Teodolito observa o topo de um prédio pelo ângulo de elevação teta, formando triângulo retângulo com distância horizontal b e altura a](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/9ano/trigonometria-no-triangulo-retangulo/fig-05-angulo-de-elevacao.png)
+<!-- tikz:fim fig-05-angulo-de-elevacao -->
 
 Se $$a$$ é o cateto oposto, $$b$$ o adjacente e $$c$$ a hipotenusa, casos diretos usam:
 

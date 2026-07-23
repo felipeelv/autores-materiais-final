@@ -1,0 +1,157 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-geometria}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-elementos-da-circunferencia
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,-0.10) rectangle (8.10,6.25);
+  \coordinate (O) at (4.00,3.00);
+  \fill[eleveazulclaro] (O) circle (2.30);
+  \draw[eleve aresta, line width=1.8pt] (O) circle (2.30);
+  \fill[eleveazul] (O) circle (2.2pt);
+  \node[font=\large\bfseries, text=elevecinza] at (3.65,3.34) {$O$};
+
+  \coordinate (A) at ($(O)+(180:2.30)$);
+  \coordinate (B) at ($(O)+(0:2.30)$);
+  \draw[eleve destaque, line width=1.7pt] (A) -- (B);
+  \node[font=\large\bfseries, text=elevelaranja] at (4.00,2.10) {diâmetro};
+
+  \coordinate (R) at ($(O)+(52:2.30)$);
+  \draw[eleve aresta, line width=1.6pt] (O) -- (R);
+  \node[font=\large\bfseries, text=eleveazul] at (5.25,3.62) {raio};
+
+  \coordinate (C) at ($(O)+(218:2.30)$);
+  \coordinate (D) at ($(O)+(322:2.30)$);
+  \draw[eleve aresta, line width=1.5pt] (C) -- (D);
+  \node[font=\large\bfseries, text=eleveazul] at (4.00,1.16) {corda};
+
+  \draw[eleve destaque, line width=3pt]
+    ($(O)+(70:2.30)$) arc[start angle=70,end angle=135,radius=2.30];
+  \node[font=\large\bfseries, text=elevelaranja] at (3.15,5.73) {arco};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-construcao-com-compasso
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,-0.10) rectangle (8.10,7.40);
+  \coordinate (O) at (4.00,2.75);
+  \coordinate (P) at (6.30,2.75);
+  \coordinate (H) at (5.15,6.10);
+
+  \draw[eleve auxiliar, line width=1.1pt] (O) circle (2.30);
+  \draw[eleve destaque, line width=2.3pt]
+    ($(O)+(15:2.30)$) arc[start angle=15,end angle=310,radius=2.30];
+  \draw[eleve destaque, ->, line width=2pt]
+    ($(O)+(320:2.30)$) arc[start angle=320,end angle=350,radius=2.30];
+
+  % Pernas do compasso: ponta seca em O e grafite em P.
+  \draw[eleve aresta, line width=3.3pt] (H) -- (O);
+  \draw[eleve aresta, line width=3.3pt] (H) -- (P);
+  \fill[eleveazul] (H) circle (4pt);
+  \fill[eleveazul] (O) circle (2.4pt);
+  \fill[elevelaranja] (P) circle (2.6pt);
+  \draw[elevecinza, line width=1.5pt] ($(O)+(0,0.18)$) -- ($(O)+(0,-0.22)$);
+  \draw[elevelaranja, line width=2.0pt] ($(P)+(-0.08,0.18)$) -- ($(P)+(0.08,-0.25)$);
+
+  \draw[eleve auxiliar, |-|, line width=1.2pt] (O) -- (P);
+  \node[font=\Large\bfseries, text=elevelaranja] at (5.15,2.37) {$r$};
+  \node[font=\large\bfseries, text=eleveazul] at (2.56,0.40) {centro fixo};
+  \node[font=\large\bfseries, text=elevelaranja] at (6.55,0.40) {giro completo};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-posicoes-de-um-ponto
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,-0.10) rectangle (8.10,9.20);
+
+  \foreach \cy/\nome/\rel/\px/\cor in
+    {7.55/interno/$OP<r$/2.65/elevelaranja,
+     4.55/pertencente/$OP=r$/3.20/eleveazul,
+     1.55/externo/$OP>r$/3.70/elevelaranja}{
+    \coordinate (O) at (2.15,\cy);
+    \fill[eleveazulclaro] (O) circle (1.05);
+    \draw[eleve aresta, line width=1.5pt] (O) circle (1.05);
+    \fill[eleveazul] (O) circle (2pt);
+    \node[font=\normalsize\bfseries, text=elevecinza, below left=1pt] at (O) {$O$};
+    \draw[eleve auxiliar] (O) -- (\px,\cy);
+    \fill[\cor] (\px,\cy) circle (2.8pt);
+    \node[font=\large\bfseries, text=\cor, above=2pt] at (\px,\cy) {$P$};
+    \node[font=\Large\bfseries, text=elevecinza, anchor=west] at (4.30,\cy+0.34) {\nome};
+    \node[font=\large, text=elevecinza, anchor=west] at (4.30,\cy-0.37) {\rel};
+  }
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-posicoes-de-uma-reta
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,-0.10) rectangle (8.50,10.20);
+
+  % Secante
+  \coordinate (O1) at (2.15,8.35);
+  \fill[eleveazulclaro] (O1) circle (1.15);
+  \draw[eleve aresta, line width=1.5pt] (O1) circle (1.15);
+  \draw[eleve destaque, <->, line width=1.6pt] (0.45,8.10) -- (3.85,8.10);
+  \draw[eleve auxiliar] (O1) -- (2.15,8.10);
+  \draw[elevecinza, line width=1pt] (2.15,8.10) -- (2.38,8.10) -- (2.38,8.33);
+  \node[font=\Large\bfseries, text=elevelaranja, anchor=west] at (4.35,8.62) {secante};
+  \node[font=\large, text=elevecinza, anchor=west] at (4.35,8.03) {$d(O,s)<r$};
+  \node[font=\normalsize, text=elevecinza, anchor=west] at (4.35,7.50) {2 pontos comuns};
+
+  % Tangente
+  \coordinate (O2) at (2.15,5.15);
+  \fill[eleveazulclaro] (O2) circle (1.15);
+  \draw[eleve aresta, line width=1.5pt] (O2) circle (1.15);
+  \draw[eleve destaque, <->, line width=1.6pt] (0.45,4.00) -- (3.85,4.00);
+  \draw[eleve auxiliar] (O2) -- (2.15,4.00);
+  \draw[elevecinza, line width=1pt] (2.15,4.00) -- (2.38,4.00) -- (2.38,4.23);
+  \fill[elevelaranja] (2.15,4.00) circle (2.4pt);
+  \node[font=\Large\bfseries, text=elevelaranja, anchor=west] at (4.35,5.42) {tangente};
+  \node[font=\large, text=elevecinza, anchor=west] at (4.35,4.83) {$d(O,s)=r$};
+  \node[font=\normalsize, text=elevecinza, anchor=west] at (4.35,4.30) {1 ponto comum};
+
+  % Externa
+  \coordinate (O3) at (2.15,1.75);
+  \fill[eleveazulclaro] (O3) circle (1.15);
+  \draw[eleve aresta, line width=1.5pt] (O3) circle (1.15);
+  \draw[eleve destaque, <->, line width=1.6pt] (0.45,0.30) -- (3.85,0.30);
+  \draw[eleve auxiliar] (O3) -- (2.15,0.30);
+  \draw[elevecinza, line width=1pt] (2.15,0.30) -- (2.38,0.30) -- (2.38,0.53);
+  \node[font=\Large\bfseries, text=elevelaranja, anchor=west] at (4.35,2.02) {externa};
+  \node[font=\large, text=elevecinza, anchor=west] at (4.35,1.43) {$d(O,s)>r$};
+  \node[font=\normalsize, text=elevecinza, anchor=west] at (4.35,0.90) {nenhum ponto comum};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-razao-comprimento-diametro
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,-0.10) rectangle (9.10,7.35);
+  \coordinate (O) at (4.50,5.42);
+  \fill[eleveazulclaro] (O) circle (1.35);
+  \draw[eleve destaque, line width=2.5pt] (O) circle (1.35);
+  \draw[eleve aresta, |-|, line width=1.6pt]
+    ($(O)+(-1.35,0)$) -- ($(O)+(1.35,0)$);
+  \node[font=\large\bfseries, text=eleveazul] at (4.50,4.87) {diâmetro $d$};
+
+  \draw[eleve auxiliar, ->, line width=1.2pt]
+    (5.52,4.40) .. controls (6.05,4.05) and (5.92,3.60) .. (5.34,3.32);
+  \node[font=\large\bfseries, text=elevecinza] at (4.50,3.78) {borda desenrolada};
+
+  \draw[eleve aresta, line width=3pt] (0.45,2.72) -- (3.05,2.72);
+  \draw[eleve destaque, line width=3pt] (3.05,2.72) -- (5.65,2.72);
+  \draw[eleve aresta, line width=3pt] (5.65,2.72) -- (8.25,2.72);
+  \draw[eleve destaque, line width=3pt] (8.25,2.72) -- (8.61,2.72);
+  \foreach \x in {0.45,3.05,5.65,8.25,8.61}{
+    \draw[elevecinza, line width=0.9pt] (\x,2.50) -- (\x,2.94);
+  }
+  \draw[decorate, decoration={brace,mirror,amplitude=6pt}, eleve aresta]
+    (0.45,2.28) -- (3.05,2.28)
+    node[midway, below=8pt, font=\Large\bfseries, text=eleveazul] {$d$};
+  \draw[decorate, decoration={brace,mirror,amplitude=6pt}, eleve destaque]
+    (3.05,2.28) -- (5.65,2.28)
+    node[midway, below=8pt, font=\Large\bfseries, text=elevelaranja] {$d$};
+  \draw[decorate, decoration={brace,mirror,amplitude=6pt}, eleve aresta]
+    (5.65,2.28) -- (8.25,2.28)
+    node[midway, below=8pt, font=\Large\bfseries, text=eleveazul] {$d$};
+  \draw[decorate, decoration={brace,mirror,amplitude=6pt}, eleve destaque]
+    (8.25,2.28) -- (8.61,2.28)
+    node[midway, below=8pt, font=\large\bfseries, text=elevelaranja] {$0{,}14d$};
+\end{tikzpicture}
+
+\end{document}

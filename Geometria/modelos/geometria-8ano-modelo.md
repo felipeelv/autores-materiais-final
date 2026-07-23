@@ -20,6 +20,10 @@ Na **translação**, cada ponto percorre o mesmo vetor $$\vec{v}$$, definido por
 
 Por isso, os segmentos que ligam pontos correspondentes são paralelos e congruentes.
 
+<!-- tikz:inicio fig-01-translacao-por-vetor -->
+![Triângulo ABC e sua imagem A linha B linha C linha ligados por deslocamentos paralelos iguais ao vetor v](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/8ano/transformacoes-geometricas/fig-01-translacao-por-vetor.png)
+<!-- tikz:fim fig-01-translacao-por-vetor -->
+
 ### 1.2 Procedimento de construção
 
 Para transladar o triângulo $$ABC$$ com régua e compasso:
@@ -66,6 +70,10 @@ Na **reflexão** em relação à reta $$e$$, o eixo é a mediatriz de cada segme
 - comprimentos e ângulos se conservam;
 - a orientação da figura se inverte.
 
+<!-- tikz:inicio fig-02-reflexao-por-eixo -->
+![Triângulo e sua reflexão em lados opostos do eixo e, com segmentos perpendiculares e distâncias correspondentes iguais](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/8ano/transformacoes-geometricas/fig-02-reflexao-por-eixo.png)
+<!-- tikz:fim fig-02-reflexao-por-eixo -->
+
 Com compasso, arcos centrados em dois pontos do eixo localizam $$P'$$ no lado oposto.
 
 ### 2.2 Rotação pelo centro
@@ -75,6 +83,10 @@ Na **rotação**, cada ponto gira ao redor de um centro $$O$$ por um mesmo ângu
 $$OP'=OP$$
 
 $$\angle POP'=\alpha$$
+
+<!-- tikz:inicio fig-03-rotacao-por-centro -->
+![Triângulo girado em torno do centro O por um ângulo alfa, preservando a distância entre O e pontos correspondentes](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/8ano/transformacoes-geometricas/fig-03-rotacao-por-centro.png)
+<!-- tikz:fim fig-03-rotacao-por-centro -->
 
 O sentido anti-horário é positivo. Giros de $$90^{\circ}$$, $$180^{\circ}$$ e $$360^{\circ}$$ são casos frequentes; a rotação preserva a orientação.
 
@@ -114,6 +126,10 @@ Pegadas alternadas combinam reflexão e translação: uma transformação atua s
 
 Uma reflexão seguida de translação paralela ao eixo forma uma **reflexão deslizante**, padrão observado em sequências de pegadas.
 
+<!-- tikz:inicio fig-04-ordem-da-composicao -->
+![Duas sequências mostram que refletir e depois transladar leva de 1 a 3, enquanto transladar e depois refletir leva de 1 a menos 5](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/8ano/transformacoes-geometricas/fig-04-ordem-da-composicao.png)
+<!-- tikz:fim fig-04-ordem-da-composicao -->
+
 **Refletir e transladar um ponto**
 
 O ponto $$P$$ está a $$1\,\mathrm{cm}$$ à direita de um eixo vertical. A translação desloca $$4\,\mathrm{cm}$$ para a direita.
@@ -133,6 +149,10 @@ $$1\,\mathrm{cm}+4\,\mathrm{cm}=5\,\mathrm{cm}$$
 ### 3.2 Tesselações
 
 **Tesselação** recobre o plano com figuras congruentes, sem falhas nem sobreposições. Nos vértices, os ângulos completam uma volta:
+
+<!-- tikz:inicio fig-05-tesselacao-hexagonal -->
+![Três hexágonos regulares compartilham um vértice onde três ângulos de 120 graus completam 360 graus sem falha](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/8ano/transformacoes-geometricas/fig-05-tesselacao-hexagonal.png)
+<!-- tikz:fim fig-05-tesselacao-hexagonal -->
 
 $$360^{\circ}$$
 

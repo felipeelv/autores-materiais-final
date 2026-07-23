@@ -16,6 +16,10 @@ $$|PF_1-PF_2|=2a$$
 
 Os focos são $$F_1$$ e $$F_2$$, separados por $$2c$$, com $$2a<2c$$. Diferentemente da elipse, que usa soma, a hipérbole tem duas folhas abertas e usa diferença.
 
+<!-- tikz:inicio fig-01-definicao-por-diferenca-de-distancias -->
+![Hipérbole de duas folhas com focos F1 e F2 e pontos P e Q cuja diferença das distâncias aos focos é constante](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/3serie/hiperbole/fig-01-definicao-por-diferenca-de-distancias.png)
+<!-- tikz:fim fig-01-definicao-por-diferenca-de-distancias -->
+
 ### 1.2 Eixos e relação fundamental
 
 Seus elementos são:
@@ -24,6 +28,10 @@ Seus elementos são:
 - eixo real ou transverso — mede $$2a$$ e contém os dois vértices;
 - eixo imaginário ou conjugado — mede $$2b$$;
 - distância focal — mede $$2c$$.
+
+<!-- tikz:inicio fig-02-elementos-da-hiperbole -->
+![Hipérbole com centro O, vértices, focos, eixos real e imaginário e parâmetros a, b e c identificados](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/3serie/hiperbole/fig-02-elementos-da-hiperbole.png)
+<!-- tikz:fim fig-02-elementos-da-hiperbole -->
 
 A relação fundamental é:
 
@@ -76,6 +84,14 @@ Com centro na origem, as formas reduzidas são:
 | horizontal | $$\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=1$$ | $$y=\pm\frac{b}{a}x$$ |
 | vertical | $$\frac{y^{2}}{a^{2}}-\frac{x^{2}}{b^{2}}=1$$ | $$y=\pm\frac{a}{b}x$$ |
 
+<!-- tikz:inicio fig-03-hiperbole-horizontal-e-assintotas -->
+![Hipérbole de eixo real horizontal com retângulo fundamental e assíntotas passando pelo centro](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/3serie/hiperbole/fig-03-hiperbole-horizontal-e-assintotas.png)
+<!-- tikz:fim fig-03-hiperbole-horizontal-e-assintotas -->
+
+<!-- tikz:inicio fig-04-hiperbole-vertical-e-assintotas -->
+![Hipérbole de eixo real vertical com retângulo fundamental e assíntotas passando pelo centro](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/3serie/hiperbole/fig-04-hiperbole-vertical-e-assintotas.png)
+<!-- tikz:fim fig-04-hiperbole-vertical-e-assintotas -->
+
 O denominador do termo positivo contém $$a^{2}$$ e determina os vértices. O outro contém $$b^{2}$$.
 
 ### 2.2 Retângulo fundamental
@@ -126,6 +142,10 @@ $$e=\frac{c}{a}>1$$
 
 Quanto mais próximo $$e$$ está de 1, mais estreita é a abertura; valores maiores indicam folhas mais abertas. Na elipse, em contraste, $$0<e<1$$.
 
+<!-- tikz:inicio fig-05-comparacao-de-excentricidades -->
+![Duas hipérboles na mesma escala com excentricidades um vírgula dois e dois, mostrando aberturas diferentes](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/3serie/hiperbole/fig-05-comparacao-de-excentricidades.png)
+<!-- tikz:fim fig-05-comparacao-de-excentricidades -->
+
 ### 3.2 Caso equilátero
 
 A **hipérbole equilátera** satisfaz $$a=b$$. Com centro na origem e eixo real horizontal, suas propriedades são:
@@ -133,6 +153,10 @@ A **hipérbole equilátera** satisfaz $$a=b$$. Com centro na origem e eixo real 
 - assíntotas perpendiculares;
 - equações das assíntotas $$y=\pm x$$ no caso horizontal;
 - excentricidade $$e=\sqrt{2}$$.
+
+<!-- tikz:inicio fig-06-hiperbole-equilatera -->
+![Hipérbole equilátera com parâmetros a e b iguais, retângulo fundamental quadrado e assíntotas perpendiculares](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/3serie/hiperbole/fig-06-hiperbole-equilatera.png)
+<!-- tikz:fim fig-06-hiperbole-equilatera -->
 
 **Hipérbole com parâmetros iguais**
 
@@ -179,7 +203,15 @@ Se dois sinais viajam com velocidade $$v_s$$ e chegam separados por $$\Delta t$$
 
 $$\Delta d=v_s\Delta t$$
 
+<!-- tikz:inicio fig-07-uma-hiperbole-de-localizacao -->
+![Duas estações S1 e S2 servem de focos para um ramo hiperbólico que contém as posições possíveis do receptor P](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/3serie/hiperbole/fig-07-uma-hiperbole-de-localizacao.png)
+<!-- tikz:fim fig-07-uma-hiperbole-de-localizacao -->
+
 Manter $$\Delta d$$ constante define uma hipérbole com as estações nos focos. Uma segunda dupla de estações produz outra hipérbole; a interseção indica a posição.
+
+<!-- tikz:inicio fig-08-intersecao-de-duas-hiperboles -->
+![Duas duplas de estações geram hipérboles distintas cuja interseção determina a posição P do receptor](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/3serie/hiperbole/fig-08-intersecao-de-duas-hiperboles.png)
+<!-- tikz:fim fig-08-intersecao-de-duas-hiperboles -->
 
 **Diferença registrada pelo receptor**
 

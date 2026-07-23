@@ -1,0 +1,131 @@
+{
+  "versao": 1,
+  "disciplina": "geometria",
+  "ano_serie": "2serie",
+  "titulo_documento": "Cones",
+  "slug_documento": "cones",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Geometria/2serie/geometria-2serie-3bim-cap2.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-geracao-do-cone-por-rotacao",
+      "pagina": 1,
+      "arquivo": "fig-01-geracao-do-cone-por-rotacao.png",
+      "alt": "Triângulo retângulo girando em torno de um cateto enquanto a hipotenusa gera a superfície de um cone",
+      "aprovada": true,
+      "sha256": "187ac2db83b3cb96b5f6862580ca90649b07dc7d3c3329c5a979a3f75db0b375",
+      "largura_px": 1170,
+      "altura_px": 1099,
+      "publicado_sha256": "187ac2db83b3cb96b5f6862580ca90649b07dc7d3c3329c5a979a3f75db0b375",
+      "publicado_commit": "91280df1a49efd6f1263bb5b527675bdc40521e4"
+    },
+    {
+      "id": "fig-02-elementos-do-cone",
+      "pagina": 2,
+      "arquivo": "fig-02-elementos-do-cone.png",
+      "alt": "Cone reto com vértice, base, eixo, raio r, altura h e geratriz g identificados",
+      "aprovada": true,
+      "sha256": "8049da8823ee293330d35ac1dde1638ef5f358837c6237e74d5593e0aa503c7f",
+      "largura_px": 1205,
+      "altura_px": 1176,
+      "publicado_sha256": "8049da8823ee293330d35ac1dde1638ef5f358837c6237e74d5593e0aa503c7f",
+      "publicado_commit": "91280df1a49efd6f1263bb5b527675bdc40521e4"
+    },
+    {
+      "id": "fig-03-cone-reto-e-obliquo",
+      "pagina": 3,
+      "arquivo": "fig-03-cone-reto-e-obliquo.png",
+      "alt": "Comparação entre cone reto de eixo perpendicular à base e cone oblíquo de eixo inclinado",
+      "aprovada": true,
+      "sha256": "b8296ae754afa1e15f3bb645751ebe58b17710833abfd8ef061cafda20bdc0a8",
+      "largura_px": 1335,
+      "altura_px": 1046,
+      "publicado_sha256": "b8296ae754afa1e15f3bb645751ebe58b17710833abfd8ef061cafda20bdc0a8",
+      "publicado_commit": "91280df1a49efd6f1263bb5b527675bdc40521e4"
+    },
+    {
+      "id": "fig-04-seccao-meridiana-do-cone-equilatero",
+      "pagina": 4,
+      "arquivo": "fig-04-seccao-meridiana-do-cone-equilatero.png",
+      "alt": "Secção meridiana equilátera de um cone com base dois r, lados g e altura r raiz de três",
+      "aprovada": true,
+      "sha256": "ac1c5a74476d5e5ba47eeedba7dcf1dafd503759d70a133e8c7f7e088c84e2be",
+      "largura_px": 1182,
+      "altura_px": 1046,
+      "publicado_sha256": "ac1c5a74476d5e5ba47eeedba7dcf1dafd503759d70a133e8c7f7e088c84e2be",
+      "publicado_commit": "91280df1a49efd6f1263bb5b527675bdc40521e4"
+    },
+    {
+      "id": "fig-05-planificacao-da-area-lateral",
+      "pagina": 5,
+      "arquivo": "fig-05-planificacao-da-area-lateral.png",
+      "alt": "Superfície lateral do cone aberta em setor circular de raio g e arco de comprimento dois pi r",
+      "aprovada": true,
+      "sha256": "25f03d0e0ec61991e42a7486dc3f9239184f9421722e972566762baeda47b14e",
+      "largura_px": 1205,
+      "altura_px": 1270,
+      "publicado_sha256": "25f03d0e0ec61991e42a7486dc3f9239184f9421722e972566762baeda47b14e",
+      "publicado_commit": "91280df1a49efd6f1263bb5b527675bdc40521e4"
+    },
+    {
+      "id": "fig-06-planificacao-da-area-total",
+      "pagina": 6,
+      "arquivo": "fig-06-planificacao-da-area-total.png",
+      "alt": "Planificação do cone fechado com setor lateral de raio g e círculo da base de raio r separados",
+      "aprovada": true,
+      "sha256": "26e865ec3891a1fa0ea7aa48f3648bafa4b96dfc62b41fff414e6291002cf10f",
+      "largura_px": 1205,
+      "altura_px": 1128,
+      "publicado_sha256": "26e865ec3891a1fa0ea7aa48f3648bafa4b96dfc62b41fff414e6291002cf10f",
+      "publicado_commit": "91280df1a49efd6f1263bb5b527675bdc40521e4"
+    },
+    {
+      "id": "fig-07-tres-cones-preenchem-um-cilindro",
+      "pagina": 7,
+      "arquivo": "fig-07-tres-cones-preenchem-um-cilindro.png",
+      "alt": "Três porções cônicas equivalentes preenchendo um cilindro de mesma base e altura",
+      "aprovada": true,
+      "sha256": "8a67b48756382236a1f48aac621e560c32576c86e52163786a4a6999b4c00e04",
+      "largura_px": 1406,
+      "altura_px": 1052,
+      "publicado_sha256": "8a67b48756382236a1f48aac621e560c32576c86e52163786a4a6999b4c00e04",
+      "publicado_commit": "91280df1a49efd6f1263bb5b527675bdc40521e4"
+    },
+    {
+      "id": "fig-08-elementos-do-tronco-de-cone",
+      "pagina": 8,
+      "arquivo": "fig-08-elementos-do-tronco-de-cone.png",
+      "alt": "Tronco de cone reto com raio maior R, raio menor r, altura h e geratriz g identificados",
+      "aprovada": true,
+      "sha256": "879ae9f253d12ab6a4e79fe05363b4bfe1c761fb0f0291b1f8aea1d21651b5db",
+      "largura_px": 1205,
+      "altura_px": 1128,
+      "publicado_sha256": "879ae9f253d12ab6a4e79fe05363b4bfe1c761fb0f0291b1f8aea1d21651b5db",
+      "publicado_commit": "91280df1a49efd6f1263bb5b527675bdc40521e4"
+    },
+    {
+      "id": "fig-09-triangulo-gerador-do-tronco",
+      "pagina": 9,
+      "arquivo": "fig-09-triangulo-gerador-do-tronco.png",
+      "alt": "Secção lateral do tronco isolando triângulo retângulo de catetos h e R menos r e hipotenusa g",
+      "aprovada": true,
+      "sha256": "7d1aff7d2cf3c0b53309c7969ade54135359933606f08fbbeb71c14400b7c59a",
+      "largura_px": 1123,
+      "altura_px": 981,
+      "publicado_sha256": "7d1aff7d2cf3c0b53309c7969ade54135359933606f08fbbeb71c14400b7c59a",
+      "publicado_commit": "91280df1a49efd6f1263bb5b527675bdc40521e4"
+    },
+    {
+      "id": "fig-10-tronco-como-cone-recortado",
+      "pagina": 10,
+      "arquivo": "fig-10-tronco-como-cone-recortado.png",
+      "alt": "Cone completo cortado por plano paralelo à base com o pequeno cone retirado e o tronco restante",
+      "aprovada": true,
+      "sha256": "0a9a21d2de74748b08abbc2280aae04ae2272211e401a785a94603a4506a773b",
+      "largura_px": 1205,
+      "altura_px": 1205,
+      "publicado_sha256": "0a9a21d2de74748b08abbc2280aae04ae2272211e401a785a94603a4506a773b",
+      "publicado_commit": "91280df1a49efd6f1263bb5b527675bdc40521e4"
+    }
+  ]
+}

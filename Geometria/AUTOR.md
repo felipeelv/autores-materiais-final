@@ -2,7 +2,7 @@
 
 > **Arquivo único da disciplina.** Reúne o que antes estava em `INSTRUCOES-DO-PROJETO.md`, `CLAUDE.md`, `prompt-producao-capitulo.md`, `regras-editoriais.md` e `convencao-latex-mathjax.md`. A **Parte 1** é o texto que se cola no campo *Instruções do projeto* do claude.ai; as partes seguintes são o manual, que sobe no conhecimento do projeto.
 >
-> **Pasta autossuficiente:** tudo o que a produção precisa está aqui — o manual (Parte 2) e a referência completa de nível, ortografia e notação (Parte 3). O único insumo externo é o **blueprint do bloco** (`Reorganizacao-2026-2Semestre/disciplinas/<Disciplina>/blueprints/`), que é o conteúdo a desenvolver.
+> **Kit editorial autossuficiente:** o manual e as referências de escrita estão aqui. A produção técnica de figuras é centralizada exclusivamente em `../_tikz/`; fontes, manifestos e renderizações não ficam espalhados nesta pasta. O outro insumo externo é o **blueprint do bloco** (`Reorganizacao-2026-2Semestre/disciplinas/<Disciplina>/blueprints/`), que é o conteúdo a desenvolver.
 >
 > **Padrão geral de escrita:** no conjunto completo, consulte `../PADRAO-GERAL-DE-ESCRITA.md`. A mesma referência está incorporada integralmente no **Anexo A**, para que esta disciplina também funcione isoladamente.
 
@@ -27,7 +27,7 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **Anexo A** (como esc
 - **1 tema = 1 capítulo · 1 aula = 1 tópico numerado `## N.`**, na ordem do blueprint. Cada aula é autossuficiente (~50 min).
 - **O material é a REFERÊNCIA DO ALUNO — a explicação é do professor.** Prosa curta para o raciocínio, marcadores para o que é enumerável: máximo 2 frases seguidas antes de uma lista; tabela sempre que houver 2+ itens a contrastar.
 - **170–210 palavras de conteúdo por aula, teto firme de 240.** O teto **não é meta**; não existe mínimo. Conteúdo difícil vira **fatias menores**, nunca aula inchada.
-- **O projeto não usa imagens — descrever a figura é conteúdo crítico.** Toda figura precisa ser reconstruível pelo texto: vértices nomeados, posições relativas, medidas, o que é dado × o que se procura. ASCII simples quando ajudar. **Nunca** escreva "veja a figura ao lado".
+- **O projeto usa figuras produzidas em TikZ e renderizadas em PNG transparente quando a configuração visual favorece a compreensão.** Toda produção fica em `../_tikz/`, e somente o PNG aprovado é publicado em `felipeelv/imagens-tikz`; o Markdown usa a URL pública absoluta. Preserve a fonte `.tex`, o manifesto e os dados matemáticos essenciais: vértices, posições relativas, medidas, o que é dado × o que se procura. Planeje e revise a figura na largura efetiva mínima de **300 px**, sem cartão de fundo, com rótulos grandes e apenas o texto indispensável ao desenho. ASCII simples continua permitido quando for suficiente. **Nunca** escreva apenas "veja a figura ao lado": identifique a figura pelo conteúdo.
 - **Construções (régua, compasso, transferidor, GeoGebra) entram como procedimento descrito** — "traça-se a mediatriz assim: …" — **nunca como atividade proposta** ("agora construa você").
 - **Material é só conteúdo.** Zero exercício proposto, construção pedida, lista, desafio, revisão ou prova. **Exemplo resolvido é conteúdo e é obrigatório.**
 - **Sem seções de fechamento.** Nada de "Introdução", "E A BÍBLIA NISSO?", "Síntese", "Fórmulas do capítulo" — esses elementos vivem **dentro** das aulas.
@@ -41,7 +41,7 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **Anexo A** (como esc
 - **Zero itens da lista NÃO ANTECIPAR** do blueprint, nem em exemplos (ex.: coordenadas antes do bloco que as introduz).
 - A **pergunta-problema** é respondida dentro da aula pertinente, **sem anunciar**.
 
-**Fluxo:** confirme ano/série, bimestre, bloco e capítulo e diga qual blueprint vai usar → se for bloco inteiro, liste os capítulos e **aguarde aprovação** → produza **um capítulo por vez** → antes de entregar, **recalcule todos os exemplos**, confira unidades e verifique se cada figura está descrita de forma reconstruível → entregue **só o capítulo em Markdown**, sem comentar a estrutura. Correção apontada em um capítulo vale para todos os seguintes. **Não rode comandos de verificação durante a produção** — a conferência mecânica é um passo à parte, no terminal.
+**Fluxo:** confirme ano/série, bimestre, bloco e capítulo e diga qual blueprint vai usar → se for bloco inteiro, liste os capítulos e **aguarde aprovação** → produza **um capítulo por vez** → quando houver figura necessária, registre o marcador no Markdown e a especificação no manifesto de `../_tikz/` → antes de entregar, **recalcule todos os exemplos**, confira unidades, fonte, PNG, URL pública e dados matemáticos → entregue o capítulo em Markdown, sem comentar a estrutura. Correção apontada em um capítulo vale para todos os seguintes. **Não rode comandos de verificação durante a produção** — renderização e conferência mecânica são passos separados, no terminal.
 
 **Tom:** informativo, acessível, levemente motivador — sem excesso de exclamações. A geometria entra pelo olho: primeiro a forma que se vê, depois a propriedade, depois a fórmula.
 
@@ -92,7 +92,7 @@ O capítulo **termina na última aula**. Não há seção de fechamento (sem "In
 - **1 aula = 1 tópico `## N.`**, na ordem do blueprint; `---` entre aulas.
 - Tópicos internos viram subseções **numeradas `### N.1`, `### N.2`** (a numeração da aula, depois a da parte). Título curto e descritivo — o aluno usa como índice.
 - **2 a 3 subseções por aula.** Mais que isso fragmenta; cada subseção nova traz sua própria abertura e engorda o texto.
-- **Extensão: alvo 170–210 palavras, teto firme de 240** por aula (fórmulas, exemplos, tabelas, ASCII e boxes não contam) — **direto e conciso é o padrão da casa** (que em outras disciplinas é 220–250/300). Desenvolva todo o recorte e pare. Se passar de 240, corte rodeio e redundância — nunca recorte do blueprint. **Não existe mínimo:** aula que cobriu todo o recorte de forma direta em 150 palavras está pronta. Conteúdo difícil vira **fatias menores** (o blueprint já fez esse corte), nunca aula inchada.
+- **Extensão: alvo 170–210 palavras, teto firme de 240** por aula (fórmulas, exemplos, tabelas, figuras TikZ/PNG, ASCII e boxes não contam) — **direto e conciso é o padrão da casa** (que em outras disciplinas é 220–250/300). Desenvolva todo o recorte e pare. Se passar de 240, corte rodeio e redundância — nunca recorte do blueprint. **Não existe mínimo:** aula que cobriu todo o recorte de forma direta em 150 palavras está pronta. Conteúdo difícil vira **fatias menores** (o blueprint já fez esse corte), nunca aula inchada.
 
 ## 3. Forma do conteúdo — prosa + marcadores
 
@@ -140,7 +140,7 @@ A **tabela de comparação** é o formato mais consultado da disciplina — "o q
 Medido nas 12 aulas do 3º bimestre (média de **378 palavras**, a mais alta do projeto) — corte na revisão:
 
 - ❌ **`"Veja o exemplo abaixo."`** — 10 ocorrências em 12 aulas. O exemplo leva **rótulo com o nome da situação** em negrito.
-- ❌ **Descrever a figura em prosa quando o diagrama ASCII já a mostra** ("A no canto inferior esquerdo, B a 2 cm à direita de A…"). Dê só o que o desenho não carrega: as medidas que entram na conta.
+- ❌ **Descrever em prosa tudo o que a figura TikZ/PNG ou o diagrama ASCII já mostra.** No texto, dê os dados necessários para interpretar a configuração e acompanhar o raciocínio, sem narrar cada traço.
 - ❌ **Repetir a propriedade depois do diagrama** — se o esquema já evidencia que os segmentos são paralelos e iguais, a frase seguinte não precisa reafirmar.
 - ❌ **Mais de 3 subseções por aula.**
 
@@ -148,7 +148,7 @@ Medido nas 12 aulas do 3º bimestre (média de **378 palavras**, a mais alta do 
 
 1. **Abertura: no máximo 25 palavras.** Pode ser **situação visual** (o azulejo, a sombra do poste, a rampa, a lata) **ou fato direto** — escolha o que chega mais rápido ao conteúdo. Situação visual quando a forma observável é o caminho mais curto; fato direto quando o conteúdo é método, história ou definição. Sem cena narrativa, sem suspense.
 2. **Progressão fixa:** figura/situação → propriedade → justificativa → fórmula → exemplo resolvido. A geometria se explica **pelo que a figura preserva ou muda**, não por decoreba de fórmula.
-3. **Descrição de figura é conteúdo crítico** — vem **antes** do cálculo: o aluno precisa ver a figura na cabeça antes de acompanhar as contas. Como descrever (e quando usar ASCII) está em §7.
+3. **Figura e dados matemáticos trabalham juntos** — a imagem vem antes do cálculo, e o texto informa as medidas, relações e incógnitas necessárias para interpretá-la. Como produzir TikZ/PNG e quando usar ASCII está em §7.
 4. **Construções (régua, compasso, transferidor, GeoGebra) entram como PROCEDIMENTO DESCRITO no conteúdo** — "traça-se a mediatriz de AB assim: ponta seca em A, abertura maior que a metade…" — **nunca como atividade proposta** ("agora construa você", "desenhe em seu caderno", "abra o GeoGebra e teste"). Isso é do professor. Regra explícita das regras transversais dos blueprints.
 5. **Definição destacada em negrito**, curta, na primeira seção conceitual, nascida da observação.
 6. **Justificativa antes da fórmula:** dizer *por que* a fórmula vale (o retângulo que vira dois triângulos, a soma dos ângulos que fecha meia-volta). Fórmula sem justificativa é decoreba. Demonstração formal só quando o blueprint pedir — leve, em passos curtos.
@@ -252,13 +252,17 @@ Medido nas 12 aulas do 3º bimestre (média de **378 palavras**, a mais alta do 
 - Conversões explicitadas quando o problema mistura unidades ("1 m = 100 cm, então 1 m² = 10 000 cm²").
 - **Resultado final sempre com unidade e simplificado.** Resultado sem unidade é erro.
 
-**Figuras — a regra que define a disciplina. O projeto não usa imagens; a descrição da figura é conteúdo, não acessório.** Duas ferramentas:
+**Figuras — a regra que define a disciplina. Imagens geométricas em TikZ/PNG fazem parte do projeto quando a configuração visual favorece a compreensão.** O contrato visual está em `../_tikz/PADRAO-DE-CONSTRUCAO.md`, e o fluxo operacional, em `../_tikz/README.md`. Três ferramentas:
 
-1. **Descrição verbal precisa** (obrigatória sempre): nomeie vértices (ABCD), diga posições relativas ("M é o ponto médio de AB"), medidas, e o que é dado × o que se procura.
+1. **TikZ + PNG transparente** para figuras pedagogicamente necessárias: fonte `.tex`, manifesto e `build/` ficam exclusivamente em `_tikz/<disciplina>/<ano-serie>/<titulo>/`. Um `.tex` pode conter vários ambientes `tikzpicture`, um por imagem. **Cada PNG responde a uma única pergunta visual e fica junto do trecho do Markdown que levanta essa pergunta.** Conceitos independentes recebem imagens separadas; uma comparação só reúne casos quando ela própria é o conceito e permanece legível a 300 px. Depois da revisão visual, somente os PNGs são publicados em `felipeelv/imagens-tikz/<disciplina>/<ano-serie>/<titulo>/`; o Markdown recebe a URL `raw.githubusercontent.com` e texto alternativo idêntico ao manifesto. Nomeie vértices, marque medidas e mantenha a notação consistente com o capítulo. Não desenhe cartão externo nem painéis brancos; use composição vertical ou quase quadrada, rótulos legíveis na largura mínima de 300 px e deixe títulos, explicações e fórmulas repetidas no Markdown.
+
+   **Teste de redução obrigatório:** aprove a figura somente depois de examiná-la reduzida a **300 px de largura** sobre fundo branco. Nessa escala, caixas de texto não podem se tocar, nenhum rótulo pode cruzar segmento, seta, marca geométrica ou outro rótulo, e toda explicação deve ocupar uma faixa exclusiva fora do desenho. Quando dois conceitos disputarem a mesma linha, empilhe-os verticalmente ou separe-os em figuras; não tente recuperar legibilidade aumentando apenas o DPI. Use `\normalsize` como tamanho mínimo no TikZ e encurte o texto antes de reduzir a fonte.
+
+2. **Dados matemáticos no texto** (obrigatórios sempre): informe as medidas, relações e incógnitas necessárias para interpretar a figura e acompanhar o cálculo, sem transformar o parágrafo em uma narração redundante do desenho.
 
    > "No triângulo ABC, retângulo em A, o cateto AB mede 3 cm e o cateto AC, 4 cm."
 
-2. **ASCII simples** entre ` ``` ` (opcional, quando o esquema ajuda — eixos, triângulos, sólidos planificados, malhas): legível, sem excesso de símbolos.
+3. **ASCII simples** entre ` ``` ` (opcional, quando for suficiente para um esquema elementar — eixos, triângulos, sólidos planificados, malhas): legível, sem excesso de símbolos e sem duplicar uma figura TikZ/PNG equivalente.
 
 ```
       C
@@ -269,25 +273,25 @@ Medido nas 12 aulas do 3º bimestre (média de **378 palavras**, a mais alta do 
         3
 ```
 
-❌ Nunca "observe a figura ao lado", "conforme o desenho", "veja a imagem" — não existe figura ao lado.
+❌ Nunca use referência vaga como "observe a figura ao lado". Apresente a figura no ponto pertinente e identifique o que o aluno deve observar nela.
 
 ## 8. Proibições
 
 - ❌ **Nenhum exercício proposto, atividade, construção pedida ao aluno, lista, desafio, projeto, revisão ou avaliação** — material é só conteúdo. (Exemplo **resolvido** e construção **descrita** são conteúdo e são permitidos; "agora construa/desenhe/calcule você" não.)
-- ❌ **Nenhuma referência a imagem inexistente** ("veja a figura", "conforme o desenho ao lado") — toda figura é descrita em palavras ou ASCII.
+- ❌ **Nenhuma referência vaga, imagem inexistente ou link quebrado.** Toda figura citada deve ter fonte e manifesto privados em `_tikz/`, PNG aprovado no repositório público autorizado, URL absoluta e texto alternativo; ASCII pode substituir a imagem quando for suficiente.
 - ❌ **Nenhum item da lista NÃO ANTECIPAR** do blueprint, nem em exemplos (ex.: coordenadas antes do bloco que as introduz).
 - ❌ Profundidade fora do balizamento da série definido no blueprint.
 - ❌ Fórmula sem justificativa · resultado sem unidade · cálculo com etapas puladas.
 - ❌ Frases-preparação ("Nesta aula vamos aprender…") e antecipações ("como veremos adiante").
 - ❌ Rótulos no cabeçalho ("Pergunta-problema:") — só a pergunta em blockquote.
-- ❌ Emojis fora dos boxes · imagens · marcadores de lista com `*` (sempre `-`).
+- ❌ Emojis fora dos boxes · imagens sem manifesto TikZ ou fora do repositório público autorizado · marcadores de lista com `*` (sempre `-`).
 - ❌ Analogia estendida · parágrafo que recapitula · exemplo repetido no mesmo tópico · lista sem frase de transição.
 
 **Vocabulário proibido / substituições:**
 
 | ❌ Evitar | ✅ Usar |
 |---|---|
-| "observe a figura ao lado" | descrição verbal completa da figura |
+| "observe a figura ao lado" | apresentar a figura no ponto pertinente e indicar o aspecto a observar |
 | "agora construa/desenhe você" | "traça-se assim: …" (procedimento descrito) |
 | fórmula solta, sem justificativa | por que a fórmula vale, depois a fórmula |
 | resultado sem unidade ("a área é 25") | "a área é 25 cm²" |
@@ -326,7 +330,7 @@ Estes elementos existiam como blocos pós-conteúdo no formato antigo (Introduç
 - [ ] Cada aula abre com situação visual concreta · **170–210 palavras (teto 240)** · autossuficiente
 - [ ] **Prosa curta + marcadores:** conteúdo enumerável em lista/tabela; máx. 2 frases antes de uma lista
 - [ ] Nenhuma analogia estendida, nenhum parágrafo que recapitula, nenhum exemplo repetido
-- [ ] **Toda figura reconstruível pelo texto** (vértices nomeados, posições, medidas, dado × procurado) · zero "veja a figura" · descrição antes do cálculo
+- [ ] **Toda figura necessária presente e legível** · uma pergunta visual por PNG · conceitos independentes separados · fonte e manifesto em `_tikz/` · PNG transparente, sem cartão de fundo e aprovado a 300 px sobre branco · nenhum texto sobre texto, linha, seta ou marca · revisado e publicado em `felipeelv/imagens-tikz` · URL absoluta indexada · texto alternativo · dados, relações e incógnitas identificados · zero referência vaga ou link quebrado
 - [ ] Construções como **procedimento descrito**, nunca pedidas ao aluno
 - [ ] **Exemplos recalculados** · resultados simplificados **e com unidade** · fórmulas justificadas · elementos da fórmula definidos logo após
 - [ ] Notação geométrica correta (`\overline{AB}`, `\angle`, `\triangle`, `^{\circ}`, `\parallel`, `\perp`) · vírgula decimal `{,}` · uma operação por bloco `$$...$$`
@@ -408,13 +412,12 @@ O mesmo nível N muda de cara conforme a série. Parâmetros objetivos por faixa
 - **O blueprint manda no recorte:** os 3 tópicos internos da aula são o recorte — desenvolver sem inventar tópico novo e sem cruzar o NÃO ANTECIPAR.
 - **Conflito Diretriz × reorganização:** a reorganização vence; a Diretriz da disciplina só calibra profundidade (tratar como introdutório onde ela restringir).
 
-### 5. Educação Cristã — Conexão VP (⚠️ formato em aberto)
+### 5. Educação Cristã — decisão específica de Geometria
 
-- **O que existe:** todos os 280 blueprints (248 do 6º ano em diante + 32 do Fundamental I) trazem, **por tema**, uma **Conexão VP pronta** — unidade VP do período (ex.: *U5 — Dignidade*), **versículo-âncora** e conexão já redigida em 2–3 frases. É a **fonte a consultar** durante a produção; não é preciso buscar nada fora do blueprint.
-- **O que mudou (19/07/2026):** o **fechamento de capítulo do formato antigo foi abolido** (incluía a seção "E a Bíblia nisso?", destino original da Conexão VP). O Felipe vai definir um **formato novo** — o tratamento da Conexão VP no material (inline, box, ou fora do material) será fixado junto com o novo prompt de produção.
-- **Enquanto não definido:** nenhuma produção deve inventar tratamento próprio para o VP; a conexão permanece nos blueprints aguardando a regra do novo formato.
-- **⚠️ Dois rótulos convivem nos blueprints — é intencional, não descuido.** Os **248 blueprints do 6º ano em diante** (até 19/07/2026) rotulam o campo como **`**Conexão VP (para E A BÍBLIA NISSO?):**`**, porque foram escritos quando a seção "E a Bíblia nisso?" ainda era o destino do texto. Os **32 blueprints do Fundamental I** (20/07/2026) usam o rótulo neutro **`**Conexão VP:**`**, já que o fechamento antigo tinha sido abolido no dia anterior e o formato novo ainda não existe. **O conteúdo do campo é o mesmo** (unidade VP, versículo-âncora e conexão redigida); só o rótulo difere. Os dois serão uniformizados quando o Felipe fixar o formato novo — não normalizar antes disso.
-- **Fonte profunda (raramente necessária):** a apostila "Vida e Propósito" tem pipeline próprio e isolado em `~/conteudos-prontos/_vida-e-proposito/` (frameworks por unidade e por ano — disponível no Mac Mini). Consultar só se for preciso mudar/aprofundar o **tema** VP de uma unidade, nunca na produção normal.
+- **Geometria não leva versículo nem conexão VP no capítulo.** Essa decisão prevalece sobre o campo correspondente dos blueprints e sobre qualquer regra genérica de outras disciplinas.
+- Os blueprints ainda conservam a unidade VP, o versículo-âncora e a conexão histórica porque são documentos curriculares compartilhados. Durante a produção de Geometria, esse campo é ignorado; não se cria seção, box, parágrafo inline ou analogia de valor.
+- Os rótulos `Conexão VP (para E A BÍBLIA NISSO?)` e `Conexão VP` podem permanecer nos blueprints. Não é necessário normalizá-los para produzir o capítulo.
+- Uma futura mudança geral do projeto não altera Geometria automaticamente. Inserir VP nesta disciplina exige nova decisão explícita do Felipe e atualização prévia deste `AUTOR.md`.
 
 ### 6. Ajustes por família de disciplina
 
@@ -477,9 +480,7 @@ $$\frac{1+2}{4} = \frac{3}{4}$$
 
 ### 2. {Título da Aula 2}
 
-{...mesma estrutura. Se a conexão VP do blueprint for conceitual (teste do sinônimo), o versículo entra aqui, no fluxo:}
-
-{1 parágrafo curto ligando o conceito ao valor — prático e específico, sem piedosismo. Sem seção própria, sem lista de ações.}
+{...mesma estrutura. Em Geometria, prossiga somente com o conteúdo matemático da aula: não insira conexão VP, versículo, box ou parágrafo de valor, mesmo que o blueprint os apresente.}
 
 ---
 
@@ -497,9 +498,9 @@ $$\frac{1+2}{4} = \frac{3}{4}$$
 5. **Extensão por aula:** padrão da casa 220–250 (teto 300); overrides por disciplina — Física 130–170 (teto 190), Geometria 170–210 (teto 240), Matemática EF1 180–220 (teto 260). Fórmulas, exemplos resolvidos, tabelas, ASCII e boxes **não** entram na conta. **O teto não é meta; não existe mínimo.**
 6. **Prosa curta + marcadores:** máx. 2 frases seguidas antes de uma lista; tabela para 2+ itens comparáveis; **liste o paralelo, escreva o encadeado**. Toda lista com frase de transição **informativa**.
 7. **Boxes:** só a família da disciplina, em blockquote, com quebra de linha interna (título na 1ª linha com dois espaços finais). 1–2 por aula, **nunca dois seguidos**, 1 frase ("drop").
-8. **Bíblia condicional:** versículo só com ligação **conceitual** (teste do sinônimo) — capítulo sem versículo é entrega válida.
+8. **Sem versículo em Geometria:** ignore a conexão VP do blueprint; não insira Bíblia, analogia de valor, box ou parágrafo inline no capítulo.
 9. **Personagem/referência-chave** 1× por capítulo, na aula pertinente (EF em box 👤 onde a disciplina tiver; EM e matemáticas integrado ao texto).
-10. **O que NUNCA aparece:** blocos pós-conteúdo do formato antigo (`Introdução`, `Sua Parte`, `O que a Bíblia diz sobre...`, `E a Bíblia nisso?`, `Simplificando`, `Para não esquecer`, `Explorando os Conceitos`, `Ampliando o Olhar`, `No Fio da História`, `O Que a Fé Diz`, `Pensador em Destaque`, `Você já pensou nisso?`, `Síntese`, `Fórmulas do capítulo`, `💬 Para Conversar`) · atividades/exercícios propostos/provas · itens do NÃO ANTECIPAR · emojis fora de box · imagens (figuras descritas ou ASCII) · frases-preparação ("Neste capítulo vamos...").
+10. **O que NUNCA aparece:** blocos pós-conteúdo do formato antigo (`Introdução`, `Sua Parte`, `O que a Bíblia diz sobre...`, `E a Bíblia nisso?`, `Simplificando`, `Para não esquecer`, `Explorando os Conceitos`, `Ampliando o Olhar`, `No Fio da História`, `O Que a Fé Diz`, `Pensador em Destaque`, `Você já pensou nisso?`, `Síntese`, `Fórmulas do capítulo`, `💬 Para Conversar`) · atividades/exercícios propostos/provas · itens do NÃO ANTECIPAR · emojis fora de box · imagens, **exceto as figuras TikZ/PNG autorizadas pelo manual de Geometria** · frases-preparação ("Neste capítulo vamos...").
 
 **Famílias de boxes por disciplina:**
 

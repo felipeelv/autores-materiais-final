@@ -1,6 +1,6 @@
 # Memória de continuidade — Autores de Material
 
-Atualizado em **21/07/2026**.
+Atualizado em **22/07/2026**.
 
 ## Objetivo
 
@@ -84,8 +84,10 @@ Modelos disponíveis do **6º ao 9º ano e da 1ª à 3ª série do Ensino Médio
 Regras calibradas:
 
 - manter 170–210 palavras por aula, com teto de 240 e sem mínimo obrigatório;
-- descrever toda configuração com pontos, posições relativas, medidas, dados e incógnitas suficientes para reconstruí-la;
-- não usar imagens: diagramas simples podem ser representados em ASCII quando forem indispensáveis;
+- usar figuras produzidas em TikZ e renderizadas em PNG quando a configuração visual favorecer a compreensão;
+- concentrar fonte `.tex`, manifesto, ferramentas e renderizações temporárias exclusivamente em `_tikz/`;
+- publicar somente o PNG aprovado em `felipeelv/imagens-tikz` e indexar sua URL absoluta no Markdown;
+- usar ASCII simples quando ele for suficiente, sem duplicar uma figura TikZ/PNG equivalente;
 - apresentar justificativa geométrica antes da fórmula e uma operação por linha nos exemplos;
 - escrever construções com instrumentos ou software como procedimentos descritos, nunca como atividades;
 - manter unidade em todo resultado de comprimento, área, volume ou ângulo;
@@ -93,21 +95,28 @@ Regras calibradas:
 
 Os sete modelos passam no validador da disciplina e foram conferidos quanto a fórmulas, unidades e descrição das configurações.
 
-### Decisão pendente para 22/07/2026 — imagens em Geometria
+### Decisão de 22/07/2026 — imagens em Geometria
 
-O `Geometria/AUTOR.md` consolidado determina atualmente **“sem imagens”**: as figuras devem ser reconstruíveis por descrição verbal, notação geométrica e, quando indispensável, ASCII. Por essa razão, os sete modelos foram produzidos sem TikZ e sem PNG.
+Felipe aprovou o uso de **fontes TikZ editáveis e imagens PNG incorporadas ao Markdown**. A proibição geral de imagens em Geometria foi revogada no `Geometria/AUTOR.md` e em `Geometria/_MEMORIA.md`.
 
-O fluxo especializado de produção de Geometria também oferece a possibilidade de gerar **fontes TikZ editáveis e imagens PNG incorporadas ao Markdown**. Felipe decidirá em **22/07/2026** se esse recurso deve passar a fazer parte do padrão oficial da disciplina.
+O padrão oficial passa a ser:
 
-Quando o assunto for retomado, seguir esta ordem:
+1. usar figura apenas quando a configuração visual tiver função pedagógica;
+2. preservar a fonte `.tex` e o manifesto privado em `_tikz/` e renderizar uma versão `.png` transparente a 300 DPI, sem cartão externo ou painéis brancos;
+3. publicar somente o PNG aprovado em `felipeelv/imagens-tikz` e indexar sua URL absoluta no Markdown com texto alternativo descritivo;
+4. informar no texto as medidas, relações e incógnitas necessárias para interpretar a figura;
+5. usar ASCII apenas quando for suficiente e não duplicar uma figura TikZ/PNG equivalente;
+6. impedir referências vagas, imagens inexistentes e links quebrados.
 
-1. decidir entre **manter o padrão textual atual** ou **adotar TikZ + PNG**;
-2. se TikZ + PNG for aprovado, reajustar primeiro o `Geometria/AUTOR.md` — instruções do projeto, regras de figuras, proibições, estrutura da aula e checklist;
-3. registrar a nova decisão em `Geometria/_MEMORIA.md`;
-4. somente depois revisar os sete modelos e definir quais conceitos realmente exigem figura;
-5. criar fontes `.tex`, renderizar PNGs e validar os links apenas para as figuras pedagogicamente necessárias.
+O criador definitivo está em `_tikz/`: fonte multipágina, manifesto por documento, estilo visual, renderização transparente, aprovação, publicação protegida e indexação idempotente. O validador confere canal alfa, URL do repositório autorizado, manifesto e fonte privados, texto alternativo, SHA-256 e registro da versão publicada. As figuras são planejadas e revisadas na largura efetiva mínima de 300 px sobre fundo branco, com composição vertical ou quase quadrada, `\normalsize` como tamanho mínimo, faixas exclusivas para texto e desenho e nenhum cruzamento entre rótulo, segmento, seta ou marca. Capítulos sem figura continuam válidos. O contrato visual definitivo foi registrado em `_tikz/PADRAO-DE-CONSTRUCAO.md`: uma pergunta pedagógica por PNG, separação obrigatória de conceitos independentes, fundo transparente e revisão na largura real de leitura.
 
-**Gatilho de retomada:** se Felipe mencionar “imagens”, “TikZ”, “PNG” ou “figuras de Geometria”, reler esta pendência antes de alterar o autor ou gerar arquivos.
+Os sete modelos inicialmente produzidos foram analisados e ilustrados. Eles possuem **51 figuras publicadas** — 6 no 6º ano, 5 no 7º, 5 no 8º, 5 no 9º, 12 na 1ª série, 10 na 2ª e 8 na 3ª — com fontes e manifestos privados, PNGs transparentes e pontos de inserção registrados em `Geometria/PLANO-DE-IMAGENS-TIKZ.md`. Todos os hashes públicos foram confirmados e os sete Markdown estão sincronizados no Google Drive.
+
+**Correção curricular de 22/07/2026:** a auditoria dos blueprints revelou que o bloco 1 da 3ª série tinha um segundo capítulo, **Parábola: definição e equações reduzidas**, que ainda não havia sido produzido. Ele foi escrito como pré-requisito antes do Capítulo 3.
+
+**Nova produção concluída:** os sete capítulos do bloco 2 e o capítulo ausente da 3ª série foram produzidos e validados: 8 arquivos, 32 aulas, todas entre 150 e 203 palavras. Suas **60 figuras** — 56 do bloco 2 e 4 do pré-requisito — foram produzidas em oito documentos TikZ, revisadas no original e a 300 px sobre branco, publicadas, indexadas e validadas. As oito cópias em `Segundo Semestre/Geometria/` foram conferidas como idênticas. O controle completo está em `Geometria/Acompanhamento de produção.md`.
+
+O repositório público exclusivo está em `https://github.com/felipeelv/imagens-tikz`, na branch `main`. Ele contém o README e **111 PNGs transparentes aprovados**; nenhuma fonte, manifesto, capítulo ou imagem de teste foi publicada. Os 15 Markdown privados e suas cópias em `Segundo Semestre/Geometria/` estão idênticos e validados. As fontes, manifestos e renderizações permanecem exclusivamente em `_tikz/`. O checkpoint da etapa termina no commit `2fdcd844d6a909e73c4204a99445dd7d55535447`; os oito commits do bloco 2 estão registrados em `Geometria/PLANO-DE-IMAGENS-TIKZ-BLOCO2.md`.
 
 ## Estudos Sociais
 
@@ -155,7 +164,8 @@ O repositório antigo `autores-material` não deve ser usado como fonte desta ve
 
 - A branch de trabalho reúne os modelos de Estudos Sociais, Física, Matemática Financeira e Geometria.
 - O PR rascunho [#1](https://github.com/felipeelv/autores-materiais-final/pull/1) está aberto contra a `main` com esse conjunto consolidado.
-- A decisão sobre adotar TikZ e PNG em Geometria permanece pendente para 22/07/2026; os modelos publicados seguem a regra textual atualmente vigente.
+- Em 22/07/2026, os sete capítulos inicialmente ilustrados de Geometria foram concluídos com 51 figuras TikZ/PNG publicadas, indexadas e sincronizadas no Google Drive.
+- Na mesma data, os sete capítulos do bloco 2 e o capítulo de parábola ausente da 3ª série foram produzidos, validados e ilustrados com outras 60 imagens; o 3º bimestre foi fechado com 15 capítulos, 60 aulas e 111 PNGs sincronizados no Drive.
 
 ## Como continuar de casa
 
@@ -176,8 +186,7 @@ git pull --ff-only
 
 ## Próximos passos
 
-1. Em 22/07/2026, decidir se Geometria continuará sem imagens ou adotará fontes TikZ editáveis e PNGs renderizados; se mudar, reajustar o `Geometria/AUTOR.md` antes dos modelos.
-2. Validar visualmente os modelos de Biologia, Ciências, Estudos Sociais, Física, Matemática Financeira e Geometria.
-3. Registrar novos ajustes no `AUTOR.md` e no `_MEMORIA.md` da disciplina correspondente.
-4. Aplicar o mesmo processo às demais disciplinas, uma por vez.
-5. Manter o repositório final atualizado até a aprovação de todas as disciplinas.
+1. Estudos Sociais do 3º bimestre está concluído; usar `Estudos Sociais/Acompanhamento de produção.md` como registro final.
+2. Ao iniciar outro bimestre ou disciplina, repetir o fluxo: blueprint → capítulo → validação → pasta oficial → acompanhamento.
+3. Registrar qualquer nova calibragem no `AUTOR.md` e no `_MEMORIA.md` da disciplina correspondente.
+4. Geometria do 3º bimestre está concluída; usar `Geometria/Acompanhamento de produção.md` como registro final e manter o mesmo pipeline nos próximos bimestres.

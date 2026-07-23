@@ -1,0 +1,138 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-geometria}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-posicoes-entre-retas-no-espaco
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (10.45,9.60);
+  % paralelas
+  \node[font=\Large\bfseries,text=eleveazul] at (2.25,9.18) {paralelas};
+  \fill[eleveazulclaro,opacity=.75] (.45,6.10)--(3.90,6.60)--(4.55,8.45)--(1.10,7.95)--cycle;
+  \draw[eleve aresta] (.45,6.10)--(3.90,6.60)--(4.55,8.45)--(1.10,7.95)--cycle;
+  \draw[eleve destaque,<->] (1.10,6.85)--(3.90,7.25);
+  \draw[eleve destaque,<->] (1.45,7.65)--(4.25,8.05);
+  % concorrentes
+  \node[font=\Large\bfseries,text=eleveazul] at (7.75,9.18) {concorrentes};
+  \fill[eleveazulclaro,opacity=.75] (5.55,6.10)--(9.50,6.60)--(10.05,8.45)--(6.10,7.95)--cycle;
+  \draw[eleve aresta] (5.55,6.10)--(9.50,6.60)--(10.05,8.45)--(6.10,7.95)--cycle;
+  \draw[eleve destaque,<->] (6.25,6.55)--(9.45,8.15);
+  \draw[eleve destaque,<->] (6.45,8.10)--(9.15,6.65);
+  \fill[elevelaranja] (7.80,7.32) circle (2.5pt);
+  % reversas em um bloco
+  \node[font=\Large\bfseries,text=elevelaranja] at (5.15,5.25) {reversas};
+  \coordinate (A) at (2.20,.85); \coordinate (B) at (6.85,.85);
+  \coordinate (C) at (8.25,2.15); \coordinate (D) at (3.60,2.15);
+  \coordinate (E) at (2.20,3.75); \coordinate (F) at (6.85,3.75);
+  \coordinate (G) at (8.25,5.05); \coordinate (H) at (3.60,5.05);
+  \draw[eleve aresta] (A)--(B)--(C)--(D)--cycle (E)--(F)--(G)--(H)--cycle (A)--(E) (B)--(F) (C)--(G) (D)--(H);
+  \draw[eleve destaque,line width=2.4pt] (A)--(B);
+  \draw[eleve destaque,line width=2.4pt] (C)--(G);
+  \node[font=\large\bfseries,text=elevecinza] at (5.15,.30) {não coplanares e não se cruzam};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-posicoes-entre-reta-e-plano
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,4.55) rectangle (10.55,8.80);
+  % contida
+  \node[font=\Large\bfseries,text=eleveazul] at (1.75,8.42) {contida};
+  \fill[eleveazulclaro] (.20,5.25)--(3.05,5.75)--(3.55,7.75)--(.70,7.25)--cycle;
+  \draw[eleve aresta] (.20,5.25)--(3.05,5.75)--(3.55,7.75)--(.70,7.25)--cycle;
+  \draw[eleve destaque,<->] (.65,6.05)--(3.15,7.05);
+  % paralela
+  \node[font=\Large\bfseries,text=eleveazul] at (5.20,8.42) {paralela};
+  \fill[eleveazulclaro] (3.70,5.25)--(6.55,5.75)--(7.05,7.75)--(4.20,7.25)--cycle;
+  \draw[eleve aresta] (3.70,5.25)--(6.55,5.75)--(7.05,7.75)--(4.20,7.25)--cycle;
+  \draw[eleve destaque,<->] (4.20,8.05)--(6.75,8.50);
+  % secante
+  \node[font=\Large\bfseries,text=elevelaranja] at (8.70,8.42) {secante};
+  \fill[eleveazulclaro] (7.20,5.25)--(10.05,5.75)--(10.55,7.75)--(7.70,7.25)--cycle;
+  \draw[eleve aresta] (7.20,5.25)--(10.05,5.75)--(10.55,7.75)--(7.70,7.25)--cycle;
+  \draw[eleve destaque,<->] (8.10,4.55)--(9.60,8.45);
+  \fill[elevelaranja] (9.00,6.90) circle (2.6pt);
+  \node[font=\large\bfseries,text=elevecinza] at (9.00,4.78) {um ponto comum};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-posicoes-entre-planos
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (10.55,8.30);
+  \node[font=\Large\bfseries,text=eleveazul] at (1.75,7.90) {paralelos};
+  \fill[eleveazulclaro] (.25,5.05)--(2.95,5.55)--(3.40,6.95)--(.70,6.45)--cycle;
+  \fill[orange!16] (.25,3.95)--(2.95,4.45)--(3.40,5.85)--(.70,5.35)--cycle;
+  \draw[eleve aresta] (.25,5.05)--(2.95,5.55)--(3.40,6.95)--(.70,6.45)--cycle;
+  \draw[eleve destaque] (.25,3.95)--(2.95,4.45)--(3.40,5.85)--(.70,5.35)--cycle;
+
+  \node[font=\Large\bfseries,text=elevelaranja] at (5.25,7.90) {secantes};
+  \fill[eleveazulclaro] (3.65,4.40)--(6.85,4.95)--(7.25,6.35)--(4.05,5.80)--cycle;
+  \fill[orange!18,opacity=.85] (4.85,3.55)--(5.45,7.20)--(6.25,7.05)--(5.65,3.40)--cycle;
+  \draw[eleve aresta] (3.65,4.40)--(6.85,4.95)--(7.25,6.35)--(4.05,5.80)--cycle;
+  \draw[eleve destaque] (4.85,3.55)--(5.45,7.20)--(6.25,7.05)--(5.65,3.40)--cycle;
+  \draw[eleve destaque,line width=2.4pt] (5.12,5.18)--(5.96,5.30);
+  \node[font=\large\bfseries,text=elevecinza] at (5.45,2.92) {reta comum};
+
+  \node[font=\Large\bfseries,text=eleveazul] at (8.75,7.90) {coincidentes};
+  \fill[eleveazulclaro] (7.25,4.30)--(9.95,4.80)--(10.40,6.45)--(7.70,5.95)--cycle;
+  \draw[eleve aresta,line width=2.2pt] (7.25,4.30)--(9.95,4.80)--(10.40,6.45)--(7.70,5.95)--cycle;
+  \draw[eleve destaque,dashed,line width=1.5pt] (7.42,4.45)--(9.83,4.90)--(10.20,6.28)--(7.80,5.84)--cycle;
+  \node[font=\large\bfseries,text=elevecinza] at (8.75,3.55) {mesmo plano};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-elementos-de-um-poliedro
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (9.45,8.15);
+  \coordinate (A) at (1.15,1.05); \coordinate (B) at (6.15,1.05);
+  \coordinate (C) at (7.75,2.55); \coordinate (D) at (2.75,2.55);
+  \coordinate (E) at (1.15,5.65); \coordinate (F) at (6.15,5.65);
+  \coordinate (G) at (7.75,7.15); \coordinate (H) at (2.75,7.15);
+  \fill[eleveazulclaro] (E)--(F)--(G)--(H)--cycle;
+  \fill[orange!14] (B)--(C)--(G)--(F)--cycle;
+  \draw[eleve aresta,line width=1.7pt] (A)--(B)--(C)--(D)--cycle (E)--(F)--(G)--(H)--cycle (A)--(E) (B)--(F) (C)--(G) (D)--(H);
+  \fill[elevelaranja] (G) circle (3pt);
+  \node[font=\Large\bfseries,text=elevelaranja,anchor=west] at (8.05,7.15) {vértice};
+  \draw[eleve destaque,line width=3pt] (F)--(G);
+  \node[font=\Large\bfseries,text=elevelaranja,anchor=west] at (7.35,5.65) {aresta};
+  \node[font=\Large\bfseries,text=eleveazul] at (4.45,6.35) {face};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-objeto-e-tres-vistas-ortogonais
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (10.55,10.10);
+  % bloco em perspectiva
+  \coordinate (A) at (2.15,6.25); \coordinate (B) at (6.95,6.25);
+  \coordinate (C) at (8.20,7.35); \coordinate (D) at (3.40,7.35);
+  \coordinate (E) at (2.15,8.85); \coordinate (F) at (6.95,8.85);
+  \coordinate (G) at (8.20,9.95); \coordinate (H) at (3.40,9.95);
+  \fill[eleveazulclaro] (E)--(F)--(G)--(H)--cycle;
+  \draw[eleve aresta,line width=1.6pt] (A)--(B)--(C)--(D)--cycle (E)--(F)--(G)--(H)--cycle (A)--(E) (B)--(F) (C)--(G) (D)--(H);
+  \draw[eleve destaque,->] (2.15,5.75)--(2.15,4.95);
+  \draw[eleve destaque,->] (8.70,7.85)--(9.55,7.85);
+  \draw[eleve destaque,->] (5.15,10.00)--(5.15,9.15);
+  % frontal
+  \draw[eleve aresta,fill=eleveazulclaro] (.55,.65) rectangle (4.55,3.15);
+  \node[font=\large\bfseries,text=elevecinza] at (2.55,.18) {frontal};
+  \node[font=\Large\bfseries,text=elevelaranja] at (2.55,3.58) {$8\times3$};
+  % lateral
+  \draw[eleve aresta,fill=eleveazulclaro] (6.25,.65) rectangle (8.75,3.15);
+  \node[font=\large\bfseries,text=elevecinza] at (7.50,.18) {lateral};
+  \node[font=\Large\bfseries,text=elevelaranja] at (7.50,3.58) {$5\times3$};
+  % superior
+  \draw[eleve aresta,fill=orange!18] (2.35,4.10) rectangle (7.35,5.55);
+  \node[font=\large\bfseries,text=elevecinza] at (7.95,4.82) {superior};
+  \node[font=\Large\bfseries,text=elevelaranja] at (4.85,5.92) {$8\times5$};
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-perspectiva-e-arestas-ocultas
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (9.75,8.15);
+  \coordinate (A) at (1.10,.85); \coordinate (B) at (6.35,.85);
+  \coordinate (C) at (8.50,2.65); \coordinate (D) at (3.25,2.65);
+  \coordinate (E) at (1.10,5.65); \coordinate (F) at (6.35,5.65);
+  \coordinate (G) at (8.50,7.45); \coordinate (H) at (3.25,7.45);
+  \fill[eleveazulclaro] (E)--(F)--(G)--(H)--cycle;
+  \draw[eleve aresta,line width=1.8pt] (A)--(B)--(C) (A)--(E)--(F)--(B) (E)--(H)--(G)--(F) (C)--(G);
+  \draw[eleve auxiliar,line width=1.4pt] (A)--(D)--(C) (D)--(H);
+  \node[font=\large\bfseries,text=eleveazul] at (2.25,6.85) {contínua = visível};
+  \node[font=\large\bfseries,text=elevecinza] at (4.80,.25) {tracejada = escondida};
+\end{tikzpicture}
+
+\end{document}

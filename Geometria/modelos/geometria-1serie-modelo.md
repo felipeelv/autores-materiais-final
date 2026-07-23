@@ -18,6 +18,10 @@ Seus elementos incluem:
 - arco e flecha, segmento entre o ponto médio da corda e o arco;
 - centro, que determina a equidistância.
 
+<!-- tikz:inicio fig-01-elementos-da-circunferencia -->
+![Circunferência com raio, diâmetro, corda, arco e flecha identificados](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/1serie/circunferencia/fig-01-elementos-da-circunferencia.png)
+<!-- tikz:fim fig-01-elementos-da-circunferencia -->
+
 ### 1.2 Critério algébrico
 
 A distância $$\overline{OP}$$ classifica um ponto $$P$$:
@@ -27,6 +31,10 @@ A distância $$\overline{OP}$$ classifica um ponto $$P$$:
 | $$\overline{OP}<r$$ | interna |
 | $$\overline{OP}=r$$ | na circunferência |
 | $$\overline{OP}>r$$ | externa |
+
+<!-- tikz:inicio fig-02-posicoes-de-um-ponto -->
+![Comparação visual das posições interna, pertencente e externa de um ponto em relação à circunferência](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/1serie/circunferencia/fig-02-posicoes-de-um-ponto.png)
+<!-- tikz:fim fig-02-posicoes-de-um-ponto -->
 
 **Sensor próximo à pista**
 
@@ -64,6 +72,10 @@ Para uma reta $$s$$, compara-se a distância perpendicular $$d(O,s)$$ com o raio
 | $$d(O,s)=r$$ | tangente | 1 |
 | $$d(O,s)<r$$ | secante | 2 |
 
+<!-- tikz:inicio fig-03-posicoes-de-uma-reta -->
+![Comparação entre reta externa sem interseções, tangente com uma interseção e secante com duas interseções](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/1serie/circunferencia/fig-03-posicoes-de-uma-reta.png)
+<!-- tikz:fim fig-03-posicoes-de-uma-reta -->
+
 No ponto de tangência $$T$$, o raio é perpendicular à reta:
 
 $$\overline{OT}\perp s$$
@@ -77,9 +89,20 @@ Se $$D=\overline{O_1O_2}$$, compara-se a distância entre centros com a soma e a
 | $$D>r_1+r_2$$ | externas |
 | $$D=r_1+r_2$$ | tangentes externas |
 | $$|r_1-r_2|<D<r_1+r_2$$ | secantes |
+
+<!-- tikz:inicio fig-04-circunferencias-externas -->
+![Comparação entre duas circunferências externas, tangentes externas e secantes](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/1serie/circunferencia/fig-04-circunferencias-externas.png)
+<!-- tikz:fim fig-04-circunferencias-externas -->
+
+| Condição | Posição |
+|---|---|
 | $$D=|r_1-r_2|$$ | tangentes internas |
 | $$0<D<|r_1-r_2|$$ | internas |
 | $$D=0$$ | concêntricas |
+
+<!-- tikz:inicio fig-05-circunferencias-internas -->
+![Comparação entre duas circunferências tangentes internas, internas sem contato e concêntricas](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/1serie/circunferencia/fig-05-circunferencias-internas.png)
+<!-- tikz:fim fig-05-circunferencias-internas -->
 
 **Rua tangente à praça**
 
@@ -114,6 +137,10 @@ O **ângulo central** tem vértice no centro e lados formados por raios; sua med
 O **ângulo inscrito** tem vértice na circunferência e lados formados por cordas. Para o mesmo arco $$AB$$:
 
 $$\angle AOB=2\angle APB$$
+
+<!-- tikz:inicio fig-06-angulo-central-e-inscrito -->
+![Mesmo arco AB determina um ângulo central de medida dois alfa e um ângulo inscrito de medida alfa](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/1serie/circunferencia/fig-06-angulo-central-e-inscrito.png)
+<!-- tikz:fim fig-06-angulo-central-e-inscrito -->
 
 Logo, o inscrito mede metade do central.
 
@@ -172,6 +199,10 @@ Duas consequências são diretas:
 
 O **ângulo de segmento** tem vértice na circunferência e lados formados por uma corda e uma tangente. Ele também mede metade do arco correspondente.
 
+<!-- tikz:inicio fig-07-angulo-de-segmento -->
+![Ângulo de segmento formado por uma tangente e uma corda com o arco correspondente destacado](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/1serie/circunferencia/fig-07-angulo-de-segmento.png)
+<!-- tikz:fim fig-07-angulo-de-segmento -->
+
 **Ângulo de visão no estádio**
 
 Uma abertura determina um arco de $$80^{\circ}$$. Calcule o ângulo visto por um observador situado no arco oposto.
@@ -202,11 +233,19 @@ No **ângulo excêntrico interior**, duas cordas se cruzam dentro da circunferê
 
 $$\gamma_{int}=\frac{\alpha_1+\alpha_2}{2}$$
 
+<!-- tikz:inicio fig-08-angulo-excentrico-interior -->
+![Duas cordas cruzam-se no interior da circunferência e determinam um ângulo e dois arcos opostos](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/1serie/circunferencia/fig-08-angulo-excentrico-interior.png)
+<!-- tikz:fim fig-08-angulo-excentrico-interior -->
+
 ### 5.2 Vértice exterior
 
 No **ângulo excêntrico exterior**, duas secantes, duas tangentes ou uma de cada encontram-se fora. A medida é a semidiferença entre o arco maior e o menor:
 
 $$\gamma_{ext}=\frac{|\alpha_1-\alpha_2|}{2}$$
+
+<!-- tikz:inicio fig-09-angulo-excentrico-exterior -->
+![Duas secantes partem de um ponto exterior e determinam um ângulo entre os arcos maior e menor](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/1serie/circunferencia/fig-09-angulo-excentrico-exterior.png)
+<!-- tikz:fim fig-09-angulo-excentrico-exterior -->
 
 As cinco relações podem ser comparadas assim:
 
@@ -254,12 +293,30 @@ As relações métricas são:
 | Configuração | Relação |
 |---|---|
 | corda × corda | $$PA\cdot PB=PC\cdot PD$$ |
+
+<!-- tikz:inicio fig-10-potencia-entre-cordas -->
+![Duas cordas AB e CD cruzam-se no ponto interior P, destacando os quatro segmentos da relação de potência](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/1serie/circunferencia/fig-10-potencia-entre-cordas.png)
+<!-- tikz:fim fig-10-potencia-entre-cordas -->
+
+| Configuração | Relação |
+|---|---|
 | secante × secante | $$PA\cdot PB=PC\cdot PD$$ |
+
+<!-- tikz:inicio fig-11-potencia-entre-secantes -->
+![Duas secantes PAB e PCD partem do mesmo ponto exterior P e destacam as distâncias da relação de potência](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/1serie/circunferencia/fig-11-potencia-entre-secantes.png)
+<!-- tikz:fim fig-11-potencia-entre-secantes -->
+
+| Configuração | Relação |
+|---|---|
 | secante × tangente | $$PA\cdot PB=PT^{2}$$ |
 
 No caso de duas secantes, os ângulos inscritos formados pelos mesmos arcos tornam dois triângulos semelhantes; a proporção entre lados correspondentes gera a igualdade dos produtos.
 
 ### 6.2 Produto constante
+
+<!-- tikz:inicio fig-12-potencia-secante-tangente -->
+![Do ponto exterior P partem uma secante PAB e uma tangente PT, com o raio perpendicular no ponto T](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/1serie/circunferencia/fig-12-potencia-secante-tangente.png)
+<!-- tikz:fim fig-12-potencia-secante-tangente -->
 
 **Tangente a partir de um ponto**
 

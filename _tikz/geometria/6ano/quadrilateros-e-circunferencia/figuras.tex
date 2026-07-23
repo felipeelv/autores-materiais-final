@@ -1,0 +1,236 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-geometria}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-elementos-dos-quadrilateros
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,0.05) rectangle (7.85,4.55);
+
+  \node[font=\bfseries\Large, text=eleveazul] at (3.85,4.22)
+    {Elementos};
+
+  \coordinate (A) at (1.20,1.10);
+  \coordinate (B) at (6.75,1.33);
+  \coordinate (C) at (6.05,3.40);
+  \coordinate (D) at (1.85,3.10);
+  \draw[eleve preenchimento, line width=1.5pt] (A) -- (B) -- (C) -- (D) -- cycle;
+  \draw[eleve auxiliar, line width=1.1pt] (A) -- (C);
+  \draw[eleve auxiliar, line width=1.1pt] (B) -- (D);
+  \EleveVertice{A}{below left}{A}
+  \EleveVertice{B}{below right}{B}
+  \EleveVertice{C}{above right}{C}
+  \EleveVertice{D}{above left}{D}
+  \node[font=\large\bfseries, text=elevecinza] at (3.85,0.52)
+    {4 lados \quad 4 vértices \quad 2 diagonais};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-propriedades-do-paralelogramo
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.40) rectangle (9.65,5.25);
+
+  \coordinate (A) at (0.80,0.45);
+  \coordinate (B) at (7.55,0.45);
+  \coordinate (C) at (8.85,4.25);
+  \coordinate (D) at (2.10,4.25);
+  \coordinate (M) at ($(A)!0.5!(C)$);
+
+  \draw[eleve preenchimento, line width=1.6pt] (A) -- (B) -- (C) -- (D) -- cycle;
+  \draw[eleve auxiliar, line width=1.15pt] (A) -- (C);
+  \draw[eleve auxiliar, line width=1.15pt] (B) -- (D);
+  \EleveVertice{A}{below left}{A}
+  \EleveVertice{B}{below right}{B}
+  \EleveVertice{C}{above right}{C}
+  \EleveVertice{D}{above left}{D}
+  \EleveVertice{M}{above}{M}
+
+  \node[font=\large\bfseries, text=elevelaranja]
+    at ($(A)!0.5!(B)+(0,-0.32)$) {$8\,\mathrm{cm}$};
+  \node[font=\large\bfseries, text=elevelaranja]
+    at ($(D)!0.5!(C)+(0,0.32)$) {$8\,\mathrm{cm}$};
+  \node[font=\large\bfseries, text=elevelaranja, rotate=71]
+    at ($(A)!0.5!(D)+(-0.34,0)$) {$5\,\mathrm{cm}$};
+  \node[font=\large\bfseries, text=elevelaranja, rotate=71]
+    at ($(B)!0.5!(C)+(0.34,0)$) {$5\,\mathrm{cm}$};
+
+  \draw[eleve destaque]
+    ($(A)+(0.76,0)$) arc[start angle=0,end angle=71.1,radius=0.76];
+  \draw[elevecinza, line width=1pt]
+    ($(B)+(71.1:0.76)$) arc[start angle=71.1,end angle=180,radius=0.76];
+  \draw[eleve destaque]
+    ($(C)+(180:0.76)$) arc[start angle=180,end angle=251.1,radius=0.76];
+  \draw[elevecinza, line width=1pt]
+    ($(D)+(-108.9:0.76)$) arc[start angle=-108.9,end angle=0,radius=0.76];
+  \node[font=\large\bfseries, text=elevelaranja] at (1.72,0.94) {$70^{\circ}$};
+  \node[font=\large\bfseries, text=elevecinza] at (6.65,0.96) {$110^{\circ}$};
+  \node[font=\large\bfseries, text=elevelaranja] at (7.90,3.74) {$70^{\circ}$};
+  \node[font=\large\bfseries, text=elevecinza] at (3.02,3.70) {$110^{\circ}$};
+
+  % Marcas iguais em cada metade das diagonais
+  \foreach \t in {0.25,0.75}{
+    \draw[eleve destaque]
+      ($(A)!\t!(C)+(-0.09,0.19)$) -- ($(A)!\t!(C)+(0.09,-0.19)$);
+  }
+  \foreach \t in {0.25,0.75}{
+    \draw[eleve aresta]
+      ($(B)!\t!(D)+(-0.12,-0.15)$) -- ($(B)!\t!(D)+(0.12,0.15)$);
+    \draw[eleve aresta]
+      ($(B)!\t!(D)+(-0.21,-0.08)$) -- ($(B)!\t!(D)+(0.03,0.22)$);
+  }
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-elementos-da-circunferencia
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.10) rectangle (9.15,9.95);
+
+  \node[font=\bfseries\Large, text=eleveazul] at (4.50,9.60)
+    {Elementos};
+  \coordinate (O) at (4.50,6.95);
+  \fill[eleveazulclaro] (O) circle (2.15);
+  \draw[eleve aresta, line width=1.8pt] (O) circle (2.15);
+  \fill[eleveazul] (O) circle (2pt);
+  \node[font=\large, text=elevecinza] at (4.22,7.20) {$O$};
+
+  \coordinate (A) at ($(O)+(-2.15,0)$);
+  \coordinate (B) at ($(O)+(2.15,0)$);
+  \draw[eleve destaque, line width=1.7pt] (A) -- (B);
+  \node[font=\large\bfseries, text=elevelaranja] at (4.50,6.66)
+    {diâmetro};
+
+  \coordinate (R) at ($(O)+(45:2.15)$);
+  \draw[eleve aresta, line width=1.5pt] (O) -- (R);
+  \node[font=\large\bfseries, text=eleveazul] at (5.25,7.72) {raio};
+
+  \coordinate (C) at (2.80,5.62);
+  \coordinate (D) at (6.20,5.62);
+  \draw[eleve aresta, line width=1.5pt] (C) -- (D);
+  \node[font=\large\bfseries, text=eleveazul] at (4.50,5.32) {corda};
+
+  \draw[eleve destaque, line width=2.7pt]
+    ($(O)+(25:2.15)$) arc[start angle=25,end angle=105,radius=2.15];
+  \node[font=\large\bfseries, text=elevelaranja] at (4.88,9.18) {arco};
+
+  \draw[elevecinzaclaro, line width=1.2pt] (0.20,4.35) -- (8.80,4.35);
+  \node[font=\bfseries\Large, text=eleveazul] at (4.50,3.92)
+    {Retas e pontos comuns};
+
+  % Tangente: um ponto comum
+  \coordinate (O1) at (2.30,2.05);
+  \fill[eleveazulclaro] (O1) circle (1.25);
+  \draw[eleve aresta, line width=1.5pt] (O1) circle (1.25);
+  \coordinate (T) at (3.55,2.05);
+  \draw[eleve destaque, <->, line width=1.6pt] (3.55,0.48) -- (3.55,3.62);
+  \fill[elevelaranja] (T) circle (2.2pt);
+  \node[font=\large\bfseries, text=elevelaranja] at (2.30,0.44)
+    {tangente};
+  \node[font=\normalsize, text=elevecinza] at (2.30,0.10)
+    {1 ponto comum};
+
+  % Secante: dois pontos comuns
+  \coordinate (O2) at (6.80,2.05);
+  \fill[eleveazulclaro] (O2) circle (1.25);
+  \draw[eleve aresta, line width=1.5pt] (O2) circle (1.25);
+  \draw[eleve aresta, <->, line width=1.5pt] (5.05,1.75) -- (8.55,1.75);
+  \fill[eleveazul] (5.59,1.75) circle (2.2pt);
+  \fill[eleveazul] (8.01,1.75) circle (2.2pt);
+  \node[font=\large\bfseries, text=eleveazul] at (6.80,0.44)
+    {secante};
+  \node[font=\normalsize, text=elevecinza] at (6.80,0.10)
+    {2 pontos comuns};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-razao-circunferencia-diametro
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,1.65) rectangle (9.10,8.60);
+
+  \coordinate (O) at (4.50,6.65);
+  \fill[eleveazulclaro] (O) circle (1.45);
+  \draw[eleve destaque, line width=2.5pt] (O) circle (1.45);
+  \draw[eleve aresta, |-|, line width=1.6pt]
+    ($(O)+(-1.45,0)$) -- ($(O)+(1.45,0)$);
+  \node[font=\large\bfseries, text=eleveazul] at (4.50,6.32)
+    {diâmetro $d$};
+
+  \draw[eleve auxiliar, ->, line width=1.2pt]
+    (5.55,5.55) .. controls (6.20,5.15) and (6.05,4.65) .. (5.38,4.35);
+  \node[font=\large\bfseries, text=elevecinza] at (4.50,4.82)
+    {desenrolando a borda};
+
+  % Comprimento da circunferência disposto em 3,14 diâmetros
+  \draw[eleve aresta, line width=3pt] (0.45,3.55) -- (3.05,3.55);
+  \draw[eleve destaque, line width=3pt] (3.05,3.55) -- (5.65,3.55);
+  \draw[eleve aresta, line width=3pt] (5.65,3.55) -- (8.25,3.55);
+  \draw[eleve destaque, line width=3pt] (8.25,3.55) -- (8.61,3.55);
+  \foreach \x in {0.45,3.05,5.65,8.25,8.61}{
+    \draw[elevecinza, line width=0.9pt] (\x,3.34) -- (\x,3.76);
+  }
+  \node[font=\Large\bfseries, text=elevecinza] at (4.50,4.02)
+    {comprimento $C$};
+
+  \draw[decorate, decoration={brace,mirror,amplitude=6pt}, eleve aresta]
+    (0.45,3.12) -- (3.05,3.12)
+    node[midway, below=8pt, font=\Large\bfseries, text=eleveazul] {$d$};
+  \draw[decorate, decoration={brace,mirror,amplitude=6pt}, eleve destaque]
+    (3.05,3.12) -- (5.65,3.12)
+    node[midway, below=8pt, font=\Large\bfseries, text=elevelaranja] {$d$};
+  \draw[decorate, decoration={brace,mirror,amplitude=6pt}, eleve aresta]
+    (5.65,3.12) -- (8.25,3.12)
+    node[midway, below=8pt, font=\Large\bfseries, text=eleveazul] {$d$};
+  \draw[decorate, decoration={brace,mirror,amplitude=6pt}, eleve destaque]
+    (8.25,3.12) -- (8.61,3.12)
+    node[midway, below=8pt, font=\large\bfseries, text=elevelaranja] {$0{,}14d$};
+
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-classificacao-dos-paralelogramos
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,2.68) rectangle (7.85,9.60);
+
+  \node[font=\bfseries\Large, text=eleveazul] at (3.85,9.18)
+    {Paralelogramos};
+
+  % Hierarquia dos paralelogramos em uma árvore vertical
+  \node[font=\large, text=elevecinza] at (3.85,8.72)
+    {2 pares de lados paralelos};
+
+  \draw[eleve aresta, fill=eleveazulclaro]
+    (3.05,7.27) -- (4.35,7.27) -- (4.68,7.77) -- (3.38,7.77) -- cycle;
+  \node[font=\large, text=elevecinza] at (3.85,6.96) {caso geral};
+
+  \draw[eleve auxiliar, ->] (3.85,6.72) -- (2.15,6.35);
+  \draw[eleve auxiliar, ->] (3.85,6.72) -- (5.55,6.35);
+
+  \node[font=\large\bfseries, text=eleveazul] at (2.15,6.02)
+    {Retângulos};
+  \draw[eleve aresta, fill=eleveazulclaro]
+    (1.25,5.02) rectangle (3.05,5.62);
+
+  \node[font=\large\bfseries, text=elevelaranja] at (5.55,6.02)
+    {Losangos};
+  \draw[eleve destaque, fill=orange!18]
+    (5.55,5.78) -- (6.38,5.30) -- (5.55,4.82) -- (4.72,5.30) -- cycle;
+
+  \draw[eleve auxiliar, ->] (2.15,4.83) -- (3.48,4.28);
+  \draw[eleve auxiliar, ->] (5.55,4.60) -- (4.22,4.28);
+  \draw[eleve destaque, fill=eleveazulclaro]
+    (3.35,3.25) rectangle (4.35,4.25);
+  \node[font=\large\bfseries, text=elevecinza] at (3.85,2.92)
+    {Quadrados};
+
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-classificacao-dos-trapezios
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.10) rectangle (7.85,3.35);
+
+  \node[font=\bfseries\Large, text=elevelaranja] at (3.85,3.02)
+    {Trapézios};
+  \node[font=\large, text=elevecinza] at (3.85,2.56)
+    {exatamente 1 par de lados paralelos};
+  \draw[eleve preenchimento, line width=1.4pt]
+    (2.10,0.25) -- (5.60,0.25) -- (4.92,2.05) -- (2.78,2.05) -- cycle;
+  \draw[eleve destaque, ->] (2.48,0.55) -- (3.42,0.55);
+  \draw[eleve destaque, ->] (3.35,1.75) -- (4.29,1.75);
+\end{tikzpicture}
+
+\end{document}

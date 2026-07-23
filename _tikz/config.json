@@ -1,0 +1,13 @@
+{
+  "versao": 1,
+  "repositorio_publico": "felipeelv/imagens-tikz",
+  "branch_publicacao": "main",
+  "dpi": 300,
+  "raizes_markdown_permitidas": [
+    ".",
+    "../Reorganizacao-2026-2Semestre/conteudos-prontos"
+  ],
+  "disciplinas_ativas": [
+    "geometria"
+  ]
+}

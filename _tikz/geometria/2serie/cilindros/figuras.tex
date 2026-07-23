@@ -1,0 +1,294 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-geometria}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-geracao-por-rotacao
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-1.95,0.00) rectangle (6.35,6.20);
+
+  \coordinate (A) at (2.05,1.05);
+  \coordinate (B) at (5.85,1.05);
+  \coordinate (C) at (5.85,4.75);
+  \coordinate (D) at (2.05,4.75);
+
+  \draw[eleve preenchimento, line width=1.5pt] (A) -- (B) -- (C) -- (D) -- cycle;
+  \draw[eleve destaque, line width=2.2pt] (1.95,0.55) -- (1.95,5.30);
+  \node[font=\large\bfseries, text=elevelaranja, anchor=east] at (1.70,2.90)
+    {eixo};
+
+  \draw[eleve auxiliar] (D) -- (0.80,4.75) -- (0.80,1.05) -- (A);
+  \draw[eleve auxiliar] (D) -- (3.00,5.25) -- (3.00,1.55) -- (A);
+  \draw[eleve destaque, ->, line width=1.8pt]
+    (4.55,5.15) .. controls (3.30,6.08) and (0.68,6.05) .. (0.58,4.73);
+  \node[font=\Large\bfseries, text=elevelaranja] at (2.58,5.72)
+    {$360^{\circ}$};
+
+  \draw[eleve aresta, line width=1.4pt] (2.05,1.05) ellipse (3.80 and 0.46);
+  \draw[eleve aresta, line width=1.4pt] (2.05,4.75) ellipse (3.80 and 0.46);
+  \draw[eleve aresta, line width=1.4pt] (5.85,1.05) -- (5.85,4.75);
+  \node[font=\large\bfseries, text=elevecinza] at (2.05,0.35)
+    {lado gerador};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-geracao-por-translacao-da-base
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (0.00,-0.15) rectangle (7.60,7.25);
+
+  \coordinate (O1) at (3.80,1.25);
+  \coordinate (O2) at (3.80,5.80);
+  \fill[eleveazulclaro] (O1) ellipse (2.10 and 0.58);
+  \draw[eleve aresta, line width=1.6pt] (O1) ellipse (2.10 and 0.58);
+  \fill[eleveazulclaro, opacity=.55] (O2) ellipse (2.10 and 0.58);
+  \draw[eleve aresta, line width=1.6pt] (O2) ellipse (2.10 and 0.58);
+  \draw[eleve auxiliar] (1.70,1.25) -- (1.70,5.80);
+  \draw[eleve auxiliar] (5.90,1.25) -- (5.90,5.80);
+
+  \fill[eleveazul] (O1) circle (2pt);
+  \fill[eleveazul] (O2) circle (2pt);
+  \draw[eleve destaque, ->, line width=2pt] (O1) -- (O2);
+  \node[font=\Large\bfseries, text=elevelaranja, anchor=west] at (4.08,3.55)
+    {$h$};
+  \node[font=\large\bfseries, text=elevecinza] at (3.80,6.82)
+    {círculo transladado};
+
+  \draw[eleve aresta, line width=1.1pt] (1.05,0.45) -- (6.55,0.45);
+  \draw[eleve aresta, line width=1.1pt] (1.05,0.45) -- (0.35,0.12);
+  \draw[eleve aresta, line width=1.1pt] (6.55,0.45) -- (5.85,0.12);
+  \draw[eleve destaque, line width=1.3pt] (3.80,0.45) -- (3.80,0.82) -- (4.17,0.82);
+  \node[font=\normalsize, text=elevecinza] at (3.80,0.02)
+    {direção perpendicular ao plano};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-elementos-do-cilindro
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.20) rectangle (9.20,8.25);
+
+  \coordinate (O1) at (4.25,1.30);
+  \coordinate (O2) at (4.25,6.55);
+  \fill[eleveazulclaro] (O1) ellipse (2.15 and 0.58);
+  \fill[eleveazulclaro, opacity=.55] (O2) ellipse (2.15 and 0.58);
+  \draw[eleve aresta, line width=1.6pt] (O1) ellipse (2.15 and 0.58);
+  \draw[eleve aresta, line width=1.6pt] (O2) ellipse (2.15 and 0.58);
+  \draw[eleve aresta, line width=1.6pt] (2.10,1.30) -- (2.10,6.55);
+  \draw[eleve aresta, line width=1.6pt] (6.40,1.30) -- (6.40,6.55);
+
+  \fill[eleveazul] (O1) circle (2pt);
+  \fill[eleveazul] (O2) circle (2pt);
+  \draw[eleve auxiliar, line width=1.2pt] (O1) -- (O2);
+  \node[font=\large\bfseries, text=elevecinza, anchor=west] at (4.48,4.20)
+    {eixo};
+
+  \draw[eleve destaque, ->, line width=1.7pt] (O2) -- (6.40,6.55);
+  \node[font=\Large\bfseries, text=elevelaranja] at (5.34,6.92) {$r$};
+
+  \draw[eleve destaque, |-|, line width=1.7pt] (1.18,1.30) -- (1.18,6.55);
+  \node[font=\Large\bfseries, text=elevelaranja] at (0.80,3.92) {$h$};
+
+  \draw[eleve destaque, line width=2.2pt] (6.40,1.30) -- (6.40,6.55);
+  \node[font=\Large\bfseries, text=elevelaranja, anchor=west] at (6.68,3.92)
+    {geratriz $g$};
+  \node[font=\large\bfseries, text=eleveazul] at (4.25,7.72) {base};
+  \node[font=\large\bfseries, text=eleveazul] at (4.25,0.34) {base};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-cilindro-reto-e-obliquo
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.20) rectangle (10.45,6.40);
+
+  % Cilindro reto
+  \coordinate (R1) at (2.35,1.05);
+  \coordinate (R2) at (2.35,4.55);
+  \fill[eleveazulclaro] (R1) ellipse (1.35 and 0.40);
+  \fill[eleveazulclaro, opacity=.55] (R2) ellipse (1.35 and 0.40);
+  \draw[eleve aresta, line width=1.5pt] (R1) ellipse (1.35 and 0.40);
+  \draw[eleve aresta, line width=1.5pt] (R2) ellipse (1.35 and 0.40);
+  \draw[eleve aresta, line width=1.5pt] (1.00,1.05) -- (1.00,4.55);
+  \draw[eleve destaque, line width=2pt] (3.70,1.05) -- (3.70,4.55);
+  \draw[eleve auxiliar, line width=1.2pt] (R1) -- (R2);
+  \node[font=\large\bfseries, text=eleveazul] at (2.35,5.55) {reto};
+  \node[font=\Large\bfseries, text=elevelaranja] at (4.05,2.80) {$g=h$};
+  \draw[eleve destaque, line width=1.3pt] (2.35,1.05) -- (2.35,1.43) -- (2.73,1.43);
+
+  % Cilindro oblíquo
+  \coordinate (B1) at (7.20,1.05);
+  \coordinate (B2) at (8.15,4.55);
+  \fill[eleveazulclaro] (B1) ellipse (1.35 and 0.40);
+  \fill[eleveazulclaro, opacity=.55] (B2) ellipse (1.35 and 0.40);
+  \draw[eleve aresta, line width=1.5pt] (B1) ellipse (1.35 and 0.40);
+  \draw[eleve aresta, line width=1.5pt] (B2) ellipse (1.35 and 0.40);
+  \draw[eleve aresta, line width=1.5pt] (5.85,1.05) -- (6.80,4.55);
+  \draw[eleve destaque, line width=2pt] (8.55,1.05) -- (9.50,4.55);
+  \draw[eleve auxiliar, line width=1.2pt] (B1) -- (B2);
+  \draw[eleve auxiliar, |-|, line width=1.2pt] (6.55,1.05) -- (6.55,4.55);
+  \draw[eleve destaque, line width=1.3pt] (6.55,1.05) -- (6.55,1.43) -- (6.93,1.43);
+  \node[font=\large\bfseries, text=eleveazul] at (7.68,5.55) {oblíquo};
+  \node[font=\Large\bfseries, text=elevelaranja] at (8.78,0.35) {$g>h$};
+  \node[font=\large\bfseries, text=elevecinza] at (6.15,2.80) {$h$};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-cilindro-equilatero
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,-0.20) rectangle (7.90,7.85);
+
+  \coordinate (O1) at (3.90,1.20);
+  \coordinate (O2) at (3.90,6.20);
+  \fill[eleveazulclaro] (O1) ellipse (2.50 and 0.58);
+  \fill[eleveazulclaro, opacity=.45] (O2) ellipse (2.50 and 0.58);
+  \draw[eleve aresta, line width=1.5pt] (O1) ellipse (2.50 and 0.58);
+  \draw[eleve aresta, line width=1.5pt] (O2) ellipse (2.50 and 0.58);
+  \draw[eleve aresta, line width=1.5pt] (1.40,1.20) -- (1.40,6.20);
+  \draw[eleve aresta, line width=1.5pt] (6.40,1.20) -- (6.40,6.20);
+
+  \fill[orange!18, opacity=.75] (1.40,1.20) rectangle (6.40,6.20);
+  \draw[eleve destaque, line width=2pt] (1.40,1.20) rectangle (6.40,6.20);
+  \draw[eleve auxiliar] (O1) -- (3.90,3.05);
+  \draw[eleve auxiliar] (3.90,4.35) -- (O2);
+  \draw[eleve destaque, |-|, line width=1.6pt] (1.40,0.45) -- (6.40,0.45);
+  \node[font=\Large\bfseries, text=elevelaranja] at (3.90,0.03) {$2r$};
+  \draw[eleve destaque, |-|, line width=1.6pt] (0.70,1.20) -- (0.70,6.20);
+  \node[font=\Large\bfseries, text=elevelaranja] at (0.35,3.70) {$h$};
+  \node[font=\large\bfseries, text=elevecinza] at (3.90,7.28)
+    {secção meridiana quadrada};
+  \node[font=\Large\bfseries, text=eleveazul] at (3.90,3.70) {$h=2r$};
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-desenrolamento-da-area-lateral
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.20) rectangle (8.15,9.10);
+
+  \coordinate (O1) at (4.00,5.90);
+  \coordinate (O2) at (4.00,7.75);
+  \fill[eleveazulclaro] (O1) ellipse (1.55 and 0.40);
+  \fill[eleveazulclaro, opacity=.55] (O2) ellipse (1.55 and 0.40);
+  \draw[eleve aresta, line width=1.5pt] (O1) ellipse (1.55 and 0.40);
+  \draw[eleve aresta, line width=1.5pt] (O2) ellipse (1.55 and 0.40);
+  \draw[eleve aresta, line width=1.5pt] (2.45,5.90) -- (2.45,7.75);
+  \draw[eleve destaque, line width=2pt] (5.55,5.90) -- (5.55,7.75);
+
+  \draw[eleve destaque, ->, line width=1.8pt] (4.00,5.25) -- (4.00,4.30);
+  \node[font=\large\bfseries, text=elevecinza, anchor=west] at (4.25,4.78)
+    {abrindo o corte};
+
+  \fill[eleveazulclaro] (0.75,0.65) rectangle (7.25,3.75);
+  \draw[eleve aresta, line width=1.7pt] (0.75,0.65) rectangle (7.25,3.75);
+  \draw[eleve destaque, |-|, line width=1.6pt] (0.75,0.25) -- (7.25,0.25);
+  \node[font=\Large\bfseries, text=elevelaranja] at (4.00,-0.08) {$2\pi r$};
+  \draw[eleve destaque, |-|, line width=1.6pt] (7.65,0.65) -- (7.65,3.75);
+  \node[font=\Large\bfseries, text=elevelaranja] at (7.92,2.20) {$h$};
+\end{tikzpicture}
+
+% FIGURA 7 — fig-07-planificacao-da-area-total
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.10) rectangle (8.15,9.65);
+
+  \fill[eleveazulclaro] (0.75,3.50) rectangle (7.25,6.80);
+  \draw[eleve aresta, line width=1.7pt] (0.75,3.50) rectangle (7.25,6.80);
+  \node[font=\large\bfseries, text=elevecinza] at (4.00,5.15)
+    {superfície lateral};
+  \draw[eleve destaque, |-|, line width=1.5pt] (0.75,3.10) -- (7.25,3.10);
+  \node[font=\Large\bfseries, text=elevelaranja] at (4.00,2.72) {$2\pi r$};
+  \draw[eleve destaque, |-|, line width=1.5pt] (7.65,3.50) -- (7.65,6.80);
+  \node[font=\Large\bfseries, text=elevelaranja] at (7.92,5.15) {$h$};
+
+  \fill[orange!18] (4.00,8.35) circle (1.08);
+  \draw[eleve destaque, line width=1.7pt] (4.00,8.35) circle (1.08);
+  \fill[orange!18] (4.00,1.00) circle (1.08);
+  \draw[eleve destaque, line width=1.7pt] (4.00,1.00) circle (1.08);
+  \fill[elevelaranja] (4.00,8.35) circle (2pt);
+  \fill[elevelaranja] (4.00,1.00) circle (2pt);
+  \draw[eleve destaque, ->, line width=1.4pt] (4.00,8.35) -- (5.08,8.35);
+  \draw[eleve destaque, ->, line width=1.4pt] (4.00,1.00) -- (5.08,1.00);
+  \node[font=\large\bfseries, text=elevelaranja] at (5.40,8.35) {$r$};
+  \node[font=\large\bfseries, text=elevelaranja] at (5.40,1.00) {$r$};
+\end{tikzpicture}
+
+% FIGURA 8 — fig-08-cavalieri-e-volume
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (10.55,7.30);
+
+  % Reto
+  \coordinate (A1) at (2.45,1.15);
+  \coordinate (A2) at (2.45,5.75);
+  \fill[eleveazulclaro] (A1) ellipse (1.45 and 0.42);
+  \fill[eleveazulclaro, opacity=.50] (A2) ellipse (1.45 and 0.42);
+  \draw[eleve aresta, line width=1.5pt] (A1) ellipse (1.45 and 0.42);
+  \draw[eleve aresta, line width=1.5pt] (A2) ellipse (1.45 and 0.42);
+  \draw[eleve aresta, line width=1.5pt] (1.00,1.15) -- (1.00,5.75);
+  \draw[eleve aresta, line width=1.5pt] (3.90,1.15) -- (3.90,5.75);
+  \draw[eleve destaque, line width=1.8pt] (A1) ellipse (1.45 and 0.42);
+  \node[font=\large\bfseries, text=eleveazul] at (2.45,6.65) {reto};
+
+  % Oblíquo
+  \coordinate (B1) at (7.30,1.15);
+  \coordinate (B2) at (8.35,5.75);
+  \fill[eleveazulclaro] (B1) ellipse (1.45 and 0.42);
+  \fill[eleveazulclaro, opacity=.50] (B2) ellipse (1.45 and 0.42);
+  \draw[eleve aresta, line width=1.5pt] (B1) ellipse (1.45 and 0.42);
+  \draw[eleve aresta, line width=1.5pt] (B2) ellipse (1.45 and 0.42);
+  \draw[eleve aresta, line width=1.5pt] (5.85,1.15) -- (6.90,5.75);
+  \draw[eleve aresta, line width=1.5pt] (8.75,1.15) -- (9.80,5.75);
+  \draw[eleve destaque, line width=1.8pt] (B1) ellipse (1.45 and 0.42);
+  \node[font=\large\bfseries, text=eleveazul] at (7.83,6.65) {oblíquo};
+
+  % Mesmas secções paralelas e mesma altura
+  \foreach \y in {2.45,3.45,4.45}{
+    \draw[eleve auxiliar, line width=1pt] (1.00,\y) arc (180:360:1.45 and 0.38);
+    \draw[eleve auxiliar, line width=1pt]
+      ({5.85+0.228*(\y-1.15)},\y) arc (180:360:1.45 and 0.38);
+  }
+  \draw[eleve destaque, |-|, line width=1.5pt] (4.55,1.15) -- (4.55,5.75);
+  \node[font=\Large\bfseries, text=elevelaranja] at (4.88,3.45) {$h$};
+  \node[font=\large\bfseries, text=elevecinza] at (5.28,0.35)
+    {mesma base e mesma altura};
+\end{tikzpicture}
+
+% FIGURA 9 — fig-09-seccao-meridiana
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,-0.20) rectangle (8.10,7.85);
+
+  \coordinate (O1) at (4.00,1.20);
+  \coordinate (O2) at (4.00,6.20);
+  \fill[eleveazulclaro] (O1) ellipse (2.35 and 0.58);
+  \fill[eleveazulclaro, opacity=.45] (O2) ellipse (2.35 and 0.58);
+  \draw[eleve aresta, line width=1.5pt] (O1) ellipse (2.35 and 0.58);
+  \draw[eleve aresta, line width=1.5pt] (O2) ellipse (2.35 and 0.58);
+  \draw[eleve aresta, line width=1.5pt] (1.65,1.20) -- (1.65,6.20);
+  \draw[eleve aresta, line width=1.5pt] (6.35,1.20) -- (6.35,6.20);
+
+  \fill[orange!18, opacity=.82] (1.65,1.20) rectangle (6.35,6.20);
+  \draw[eleve destaque, line width=2pt] (1.65,1.20) rectangle (6.35,6.20);
+  \draw[eleve auxiliar, line width=1.2pt] (O1) -- (O2);
+  \draw[eleve destaque, |-|, line width=1.6pt] (1.65,0.46) -- (6.35,0.46);
+  \node[font=\Large\bfseries, text=elevelaranja] at (4.00,0.03) {$2r$};
+  \draw[eleve destaque, |-|, line width=1.6pt] (0.92,1.20) -- (0.92,6.20);
+  \node[font=\Large\bfseries, text=elevelaranja] at (0.55,3.70) {$h$};
+  \node[font=\large\bfseries, text=elevecinza] at (4.00,7.35)
+    {plano que contém o eixo};
+\end{tikzpicture}
+
+% FIGURA 10 — fig-10-seccao-transversal
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,-0.20) rectangle (8.20,8.00);
+
+  \coordinate (O1) at (4.00,1.10);
+  \coordinate (O2) at (4.00,6.65);
+  \coordinate (S) at (4.00,3.80);
+  \fill[eleveazulclaro] (O1) ellipse (2.30 and 0.58);
+  \fill[eleveazulclaro, opacity=.42] (O2) ellipse (2.30 and 0.58);
+  \draw[eleve aresta, line width=1.5pt] (O1) ellipse (2.30 and 0.58);
+  \draw[eleve aresta, line width=1.5pt] (O2) ellipse (2.30 and 0.58);
+  \draw[eleve aresta, line width=1.5pt] (1.70,1.10) -- (1.70,6.65);
+  \draw[eleve aresta, line width=1.5pt] (6.30,1.10) -- (6.30,6.65);
+
+  \fill[orange!24, opacity=.88] (S) ellipse (2.30 and 0.58);
+  \draw[eleve destaque, line width=2.1pt] (S) ellipse (2.30 and 0.58);
+  \fill[elevelaranja] (S) circle (2pt);
+  \draw[eleve destaque, ->, line width=1.6pt] (S) -- (6.30,3.80);
+  \node[font=\Large\bfseries, text=elevelaranja] at (5.12,4.22) {$r$};
+  \draw[eleve auxiliar] (0.75,3.80) -- (7.25,3.80);
+  \node[font=\large\bfseries, text=elevecinza] at (4.00,7.55)
+    {plano paralelo às bases};
+\end{tikzpicture}
+
+\end{document}

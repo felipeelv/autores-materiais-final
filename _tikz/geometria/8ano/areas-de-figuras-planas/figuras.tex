@@ -1,0 +1,104 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-geometria}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-altura-no-paralelogramo-e-trapezio
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (9.25,9.00);
+  \node[font=\Large\bfseries,text=eleveazul] at (4.45,8.62) {paralelogramo};
+  \fill[eleveazulclaro] (1.25,4.85)--(6.75,4.85)--(8.00,7.55)--(2.50,7.55)--cycle;
+  \draw[eleve aresta,line width=1.7pt] (1.25,4.85)--(6.75,4.85)--(8.00,7.55)--(2.50,7.55)--cycle;
+  \draw[eleve destaque,|<->|] (2.50,4.85)--(2.50,7.55) node[midway,right,font=\Large\bfseries] {$h$};
+  \draw[eleve destaque] (2.50,4.85)--(2.86,4.85)--(2.86,5.21)--(2.50,5.21);
+  \node[font=\large\bfseries,text=elevecinza,rotate=65] at (7.50,6.20) {lado};
+
+  \node[font=\Large\bfseries,text=eleveazul] at (4.45,4.15) {trapézio};
+  \fill[eleveazulclaro] (1.10,.55)--(7.85,.55)--(6.55,3.35)--(2.75,3.35)--cycle;
+  \draw[eleve aresta,line width=1.7pt] (1.10,.55)--(7.85,.55)--(6.55,3.35)--(2.75,3.35)--cycle;
+  \draw[eleve destaque,|<->|] (2.75,.55)--(2.75,3.35) node[midway,right,font=\Large\bfseries] {$h$};
+  \draw[eleve destaque] (2.75,.55)--(3.11,.55)--(3.11,.91)--(2.75,.91);
+  \node[font=\large\bfseries,text=elevecinza,rotate=-66] at (7.18,1.95) {lado};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-diagonais-do-losango
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (9.15,7.55);
+  \coordinate (L) at (.75,3.65); \coordinate (R) at (8.05,3.65);
+  \coordinate (T) at (4.40,6.85); \coordinate (B) at (4.40,.45);
+  \fill[eleveazulclaro] (L)--(T)--(R)--(B)--cycle;
+  \draw[eleve aresta,line width=1.8pt] (L)--(T)--(R)--(B)--cycle;
+  \draw[eleve destaque,line width=1.6pt] (L)--(R);
+  \draw[eleve destaque,line width=1.6pt] (T)--(B);
+  \draw[eleve destaque] (4.40,3.65)--(4.82,3.65)--(4.82,4.07)--(4.40,4.07);
+  \node[font=\Large\bfseries,text=elevelaranja] at (6.70,3.18) {$D$};
+  \node[font=\Large\bfseries,text=elevelaranja] at (4.82,5.22) {$d$};
+  \node[font=\large\bfseries,text=elevecinza] at (4.40,7.28) {diagonais, não lados};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-triangulo-metade-do-paralelogramo
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (9.15,6.70);
+  \fill[eleveazulclaro] (.75,.75)--(5.45,.75)--(2.45,5.95)--cycle;
+  \fill[orange!22] (2.45,5.95)--(5.45,.75)--(7.15,5.95)--cycle;
+  \draw[eleve aresta,line width=1.8pt] (.75,.75)--(5.45,.75)--(7.15,5.95)--(2.45,5.95)--cycle;
+  \draw[eleve destaque,line width=1.5pt] (2.45,5.95)--(5.45,.75);
+  \draw[eleve destaque,|<->|] (.30,.75)--(.30,5.95) node[midway,left,font=\Large\bfseries] {$h$};
+  \draw[eleve aresta,|<->|] (.75,.28)--(5.45,.28) node[midway,below,font=\Large\bfseries] {$b$};
+  \node[font=\large\bfseries,text=elevecinza] at (7.55,1.20) {duas metades};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-tres-pares-de-base-e-altura
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (11.15,7.10);
+  \foreach \dx/\cor in {0/eleveazul,3.65/elevelaranja,7.30/eleveazul}{
+    \fill[eleveazulclaro] ({.35+\dx},1.15)--({3.15+\dx},1.65)--({1.25+\dx},5.70)--cycle;
+    \draw[draw=\cor,line width=1.5pt] ({.35+\dx},1.15)--({3.15+\dx},1.65)--({1.25+\dx},5.70)--cycle;
+  }
+  % base 1 e altura correspondente
+  \draw[eleve destaque,line width=2pt] (.35,1.15)--(3.15,1.65);
+  \draw[eleve destaque,dashed] (1.25,5.70)--(1.94,1.43);
+  \draw[eleve destaque] (1.94,1.43)--(2.25,1.48)--(2.20,1.79);
+  \node[font=\Large\bfseries,text=elevelaranja] at (1.75,.55) {$b_1,h_1$};
+  % base 2 e altura correspondente
+  \draw[eleve destaque,line width=2pt] (4.00,1.15)--(4.90,5.70);
+  \draw[eleve destaque,dashed] (6.80,1.65)--(4.26,2.47);
+  \node[font=\Large\bfseries,text=elevelaranja] at (5.40,.55) {$b_2,h_2$};
+  % base 3 e altura externa
+  \draw[eleve destaque,line width=2pt] (8.55,5.70)--(10.45,1.65);
+  \draw[eleve destaque,dashed] (7.65,1.15)--(10.95,2.72);
+  \node[font=\Large\bfseries,text=elevelaranja] at (9.05,.55) {$b_3,h_3$};
+  \node[font=\large\bfseries,text=elevecinza] at (9.05,6.65) {altura externa};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-triangulo-na-malha-quadriculada
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (8.45,7.45);
+  \draw[step=1cm,elevecinza!60,line width=.7pt] (.65,.65) grid (7.65,6.65);
+  \fill[eleveazulclaro,opacity=.9] (1.65,1.65)--(6.65,1.65)--(4.65,5.65)--cycle;
+  \draw[eleve aresta,line width=1.8pt] (1.65,1.65)--(6.65,1.65)--(4.65,5.65)--cycle;
+  \draw[eleve destaque,dashed,line width=1.4pt] (1.65,1.65) rectangle (6.65,5.65);
+  \draw[eleve destaque,dashed] (4.65,5.65)--(4.65,1.65);
+  \node[font=\Large\bfseries,text=elevelaranja] at (4.15,7.05) {retângulo $-$ complementos};
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-duas-decomposicoes-da-sala-em-l
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (11.15,7.80);
+  \node[font=\Large\bfseries,text=eleveazul] at (2.70,7.40) {somar};
+  \fill[eleveazulclaro] (.55,.75)--(4.95,.75)--(4.95,2.65)--(3.05,2.65)--(3.05,6.25)--(.55,6.25)--cycle;
+  \draw[eleve aresta,line width=1.7pt] (.55,.75)--(4.95,.75)--(4.95,2.65)--(3.05,2.65)--(3.05,6.25)--(.55,6.25)--cycle;
+  \draw[eleve destaque] (.55,2.65)--(3.05,2.65);
+  \node[font=\large\bfseries,text=elevelaranja] at (1.80,4.45) {$A_1$};
+  \node[font=\large\bfseries,text=elevelaranja] at (2.75,1.70) {$A_2$};
+
+  \node[font=\Large\bfseries,text=elevelaranja] at (8.10,7.40) {subtrair};
+  \fill[eleveazulclaro] (5.75,.75)--(10.55,.75)--(10.55,2.65)--(8.45,2.65)--(8.45,6.25)--(5.75,6.25)--cycle;
+  \draw[eleve aresta,line width=1.7pt] (5.75,.75)--(10.55,.75)--(10.55,2.65)--(8.45,2.65)--(8.45,6.25)--(5.75,6.25)--cycle;
+  \draw[eleve destaque,dashed] (8.45,2.65)--(10.55,2.65)--(10.55,6.25)--(8.45,6.25);
+  \node[font=\large\bfseries,text=elevecinza] at (9.50,4.45) {$3\times2$};
+  \draw[eleve destaque,|<->|] (5.75,.30)--(10.55,.30) node[midway,below,font=\Large\bfseries] {$8\,\mathrm{m}$};
+  \draw[eleve destaque,|<->|] (5.28,.75)--(5.28,6.25) node[midway,left,font=\Large\bfseries] {$6\,\mathrm{m}$};
+\end{tikzpicture}
+
+\end{document}

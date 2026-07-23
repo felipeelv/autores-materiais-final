@@ -13,7 +13,16 @@ Uma lata pode ser entendida como um retângulo girando ou como um círculo deslo
 O **cilindro circular reto** admite duas leituras equivalentes:
 
 - **sólido de revolução** — rotação completa de um retângulo em torno de um de seus lados;
+
+<!-- tikz:inicio fig-01-geracao-por-rotacao -->
+![Retângulo girando trezentos e sessenta graus em torno de um de seus lados para gerar um cilindro](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/2serie/cilindros/fig-01-geracao-por-rotacao.png)
+<!-- tikz:fim fig-01-geracao-por-rotacao -->
+
 - **leitura análoga a um prisma** — translação de um círculo ao longo de uma direção não paralela ao plano da base.
+
+<!-- tikz:inicio fig-02-geracao-por-translacao-da-base -->
+![Círculo transladado perpendicularmente ao plano da base por uma distância h para gerar um cilindro](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/2serie/cilindros/fig-02-geracao-por-translacao-da-base.png)
+<!-- tikz:fim fig-02-geracao-por-translacao-da-base -->
 
 O geômetra **Apolônio de Perga (c. 262–c. 190 a.C.)** estudou superfícies de revolução em *Cônicas*, escrito por volta de 200 a.C.
 
@@ -25,6 +34,10 @@ As duas bases são círculos congruentes situados em planos paralelos. Os demais
 - raio $$r$$ — raio de cada base;
 - altura $$h$$ — distância perpendicular entre os planos das bases;
 - geratriz $$g$$ — segmento da superfície lateral paralelo ao eixo.
+
+<!-- tikz:inicio fig-03-elementos-do-cilindro -->
+![Cilindro com as duas bases, o eixo, o raio r, a altura h e uma geratriz g identificados](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/2serie/cilindros/fig-03-elementos-do-cilindro.png)
+<!-- tikz:fim fig-03-elementos-do-cilindro -->
 
 **Leitura de uma embalagem**
 
@@ -61,6 +74,10 @@ Inclinar um cilindro altera a geratriz, mas não a distância perpendicular entr
 | Reto | perpendicular | $$g=h$$ |
 | Oblíquo | inclinado | $$g>h$$ |
 
+<!-- tikz:inicio fig-04-cilindro-reto-e-obliquo -->
+![Comparação entre cilindro reto, em que geratriz e altura coincidem, e cilindro oblíquo, em que a geratriz é maior](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/2serie/cilindros/fig-04-cilindro-reto-e-obliquo.png)
+<!-- tikz:fim fig-04-cilindro-reto-e-obliquo -->
+
 Em ambos, as bases continuam congruentes e paralelas. A altura é sempre perpendicular aos planos, mesmo que não coincida com uma geratriz.
 
 ### 2.2 Cilindro equilátero
@@ -68,6 +85,10 @@ Em ambos, as bases continuam congruentes e paralelas. A altura é sempre perpend
 O **cilindro equilátero** é reto e tem altura igual ao diâmetro:
 
 $$h=2r$$
+
+<!-- tikz:inicio fig-05-cilindro-equilatero -->
+![Cilindro equilátero cortado pelo eixo, formando uma secção meridiana quadrada com altura h igual a dois raios](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/2serie/cilindros/fig-05-cilindro-equilatero.png)
+<!-- tikz:fim fig-05-cilindro-equilatero -->
 
 Sua secção pelo eixo será um quadrado, pois altura e diâmetro têm a mesma medida.
 
@@ -109,6 +130,10 @@ No cilindro reto, o retângulo obtido tem:
 
 - base igual ao comprimento da circunferência, $$2\pi r$$;
 - altura igual à geratriz, que coincide com $$h$$.
+
+<!-- tikz:inicio fig-06-desenrolamento-da-area-lateral -->
+![Superfície lateral de um cilindro sendo aberta em um retângulo de comprimento dois pi r e altura h](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/2serie/cilindros/fig-06-desenrolamento-da-area-lateral.png)
+<!-- tikz:fim fig-06-desenrolamento-da-area-lateral -->
 
 Por isso, sua área lateral é:
 
@@ -158,6 +183,10 @@ Somando a área lateral e duas bases:
 
 $$A_T=A_L+2A_B$$
 
+<!-- tikz:inicio fig-07-planificacao-da-area-total -->
+![Planificação de um cilindro fechado com o retângulo lateral e duas bases circulares de raio r separados](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/2serie/cilindros/fig-07-planificacao-da-area-total.png)
+<!-- tikz:fim fig-07-planificacao-da-area-total -->
+
 $$A_T=2\pi rh+2\pi r^{2}$$
 
 Fatorando o termo comum:
@@ -206,6 +235,10 @@ $$V=A_Bh$$
 
 $$V=\pi r^{2}h$$
 
+<!-- tikz:inicio fig-08-cavalieri-e-volume -->
+![Cilindros reto e oblíquo com a mesma área de base, a mesma altura e secções paralelas correspondentes](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/2serie/cilindros/fig-08-cavalieri-e-volume.png)
+<!-- tikz:fim fig-08-cavalieri-e-volume -->
+
 A fórmula vale para cilindros retos e oblíquos com mesma base e mesma altura.
 
 Para conservar o volume, o produto $$r^{2}h$$ deve permanecer constante: aumentar o raio exige reduzir a altura. A escolha de uma lata também considera material, resistência e armazenamento.
@@ -252,11 +285,19 @@ $$2r$$
 
 $$h$$
 
+<!-- tikz:inicio fig-09-seccao-meridiana -->
+![Plano que contém o eixo de um cilindro reto produzindo uma secção meridiana retangular de lados dois r e h](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/2serie/cilindros/fig-09-seccao-meridiana.png)
+<!-- tikz:fim fig-09-seccao-meridiana -->
+
 No cilindro equilátero, $$h=2r$$, e esse retângulo torna-se quadrado.
 
 ### 6.2 Secção transversal
 
 Um plano paralelo às bases produz um círculo congruente a elas, em qualquer altura. A secção preserva o raio $$r$$ e permite ler a área da base.
+
+<!-- tikz:inicio fig-10-seccao-transversal -->
+![Plano paralelo às bases cortando o cilindro e produzindo uma secção circular de raio r](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/2serie/cilindros/fig-10-seccao-transversal.png)
+<!-- tikz:fim fig-10-seccao-transversal -->
 
 **Dimensões pela secção**
 

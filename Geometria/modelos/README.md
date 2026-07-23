@@ -4,13 +4,17 @@
 
 | Série | Arquivo | Situação |
 |---|---|---|
-| 6º ano | `geometria-6ano-modelo.md` | Disponível para validação |
-| 7º ano | `geometria-7ano-modelo.md` | Disponível para validação |
-| 8º ano | `geometria-8ano-modelo.md` | Disponível para validação |
-| 9º ano | `geometria-9ano-modelo.md` | Disponível para validação |
-| 1ª série EM | `geometria-1serie-modelo.md` | Disponível para validação |
-| 2ª série EM | `geometria-2serie-modelo.md` | Disponível para validação |
-| 3ª série EM | `geometria-3serie-modelo.md` | Disponível para validação |
+| 6º ano | `geometria-6ano-modelo.md` | Validado com 6 figuras TikZ/PNG publicadas |
+| 7º ano | `geometria-7ano-modelo.md` | Validado com 5 figuras TikZ/PNG publicadas |
+| 8º ano | `geometria-8ano-modelo.md` | Validado com 5 figuras TikZ/PNG publicadas |
+| 9º ano | `geometria-9ano-modelo.md` | Validado com 5 figuras TikZ/PNG publicadas |
+| 1ª série EM | `geometria-1serie-modelo.md` | Validado com 12 figuras TikZ/PNG publicadas |
+| 2ª série EM | `geometria-2serie-modelo.md` | Validado com 10 figuras TikZ/PNG publicadas |
+| 3ª série EM | `geometria-3serie-modelo.md` | Validado com 8 figuras TikZ/PNG publicadas |
+
+O contrato visual definitivo está em `../../_tikz/PADRAO-DE-CONSTRUCAO.md`. O conteúdo de cada figura, a ordem dos lotes e o ponto exato de inserção no Markdown dos modelos estão em `../PLANO-DE-IMAGENS-TIKZ.md`.
+
+O 3º bimestre completo está registrado em `../Acompanhamento de produção.md`: 15 capítulos, 60 aulas e 111 PNGs publicados. As 60 figuras dos oito capítulos seguintes, com seus commits públicos, estão documentadas em `../PLANO-DE-IMAGENS-TIKZ-BLOCO2.md`.
 
 ## Validar os modelos
 

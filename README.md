@@ -1,6 +1,6 @@
 # Autores de Material — Colégio Eleve
 
-> **Fonte única dos autores de material didático.** Cada disciplina é uma **pasta autossuficiente**: dá para copiar, mover ou usar sozinha, sem depender de nada fora dela. Formato único da Reorganização 2026 · 2º Semestre — **sem blocos pós-conteúdo**.
+> **Fonte única dos autores de material didático.** Cada disciplina mantém um kit editorial autossuficiente. A produção técnica compartilhada de figuras fica isolada em `_tikz/`, sem espalhar fontes ou imagens pelas pastas das disciplinas. Formato único da Reorganização 2026 · 2º Semestre — **sem blocos pós-conteúdo**.
 
 ---
 
@@ -16,6 +16,7 @@ Autores-de-Material/
 │   └── validar-capitulo.py  ← conferência mecânica (roda no terminal)
 ├── _fontes/                 ← convenções comuns + espelho do padrão antigo
 ├── _skills/                 ← skills do Claude Code
+├── _tikz/                   ← única área privada de produção de figuras TikZ
 ├── sincronizar.py           ← replica os anexos comuns nas 12 pastas
 └── validar-capitulo.py      ← validador mestre
 ```
@@ -28,7 +29,7 @@ Autores-de-Material/
 | **2 — Manual de produção** | escopo, estrutura, forma, construção da aula, voz, boxes, notação, proibições, integrações, checklist | o manual da disciplina |
 | **3 — Referência** | Anexo A (nível × faixa + esqueleto do capítulo) · Anexo B (ortografia) · Anexo C (LaTeX, onde há fórmula) | consulta; igual em todas as disciplinas |
 
-O arquivo `PADRAO-GERAL-DE-ESCRITA.md`, na raiz, é a **fonte oficial e mais simples de consultar** para nível N1–N4, linguagem por faixa e estrutura comum. O Anexo A de cada `AUTOR.md` é uma cópia integral gerada dele, preservada para que a pasta da disciplina continue funcionando sozinha.
+O arquivo `PADRAO-GERAL-DE-ESCRITA.md`, na raiz, é a **fonte oficial e mais simples de consultar** para nível N1–N4, linguagem por faixa e estrutura comum. O Anexo A de cada `AUTOR.md` é uma cópia integral gerada dele, preservada para que o kit editorial da disciplina continue funcionando sozinho. Quando houver figura autorizada, a produção e a rastreabilidade ficam centralizadas em `_tikz/`.
 
 **O único insumo externo é o blueprint** — o conteúdo a desenvolver, que vive em `Reorganizacao-2026-2Semestre/disciplinas/<D>/blueprints/`.
 

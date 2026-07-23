@@ -15,6 +15,7 @@ O QUE ELE FAZ — só o que a máquina decide melhor que a leitura:
   [2] extensão por aula          [5] emoji fora de box
   [3] seções de fechamento       [6] ortografia pré-Acordo
   [2b] LaTeX que quebra render   [7] regras da família/disciplina
+  [7a] TikZ/PNG de Geometria (URL pública, manifesto, fonte e versão publicada)
 
 O QUE ELE NÃO FAZ (fica para a leitura humana / do autor):
   - julgar se o recorte do blueprint foi cumprido ou se algum item do
@@ -24,7 +25,13 @@ O QUE ELE NÃO FAZ (fica para a leitura humana / do autor):
 Rodar DEPOIS de entregar o capítulo, nunca durante a produção.
 Código de saída: 0 se nada falhou; 1 se há falhas (⚠️ são avisos, não falham).
 """
-import re, argparse
+from __future__ import annotations
+
+import argparse
+import json
+import re
+from pathlib import Path
+from urllib.parse import unquote, urlparse
 
 # ── Configuração por disciplina ───────────────────────────────────────────────
 # boxes: emojis permitidos em linha de box (blockquote)
@@ -78,6 +85,8 @@ TIPOGRAFIA_OK = set("→←↔⇒⇐✅❌✓✗±≈≥≤≠∴")
 # ️ é o seletor de variação que acompanha ⚠️ e ⏸️ — sem ele esses boxes
 # passavam invisíveis pelo validador.
 BOX_TITULO = re.compile(r"^\s*>\s*(" + EMOJI.pattern + r")️?\s*\*\*")
+IMAGEM_MD = re.compile(r"!\[([^\]\n]*)\]\(([^)\n]+)\)")
+SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
 
 
 def falha(msg): print(f"  ✗ {msg}"); return 1
@@ -93,6 +102,8 @@ def contar_conteudo(corpo: str) -> int:
     """
     t = re.sub(r"```.*?```", " ", corpo, flags=re.S)
     t = re.sub(r"\$\$.*?\$\$", " ", t, flags=re.S)
+    t = IMAGEM_MD.sub(" ", t)
+    t = re.sub(r"<!--.*?-->", " ", t, flags=re.S)
     manter = [l for l in t.split("\n")
               if l.strip() and l.strip() != "---"
               and not re.match(r"^\|[\s:\-|]+\|$", l.strip())]
@@ -111,15 +122,194 @@ def separar_aulas(texto: str):
     return [(a[0], a[1], a[3]) for a in aulas]
 
 
+def destino_markdown(conteudo: str) -> str:
+    """Extrai o caminho de `destino` ou de `<destino com espaços> "título"`."""
+    bruto = conteudo.strip()
+    if bruto.startswith("<"):
+        fim = bruto.find(">")
+        return bruto[1:fim] if fim >= 0 else bruto[1:]
+    return bruto.split(None, 1)[0] if bruto else ""
+
+
+def raiz_tikz_padrao() -> Path:
+    """Localiza `_tikz` tanto na raiz quanto a partir da cópia da disciplina."""
+    pasta_script = Path(__file__).resolve().parent
+    candidatos = (pasta_script / "_tikz", pasta_script.parent / "_tikz")
+    for candidato in candidatos:
+        if (candidato / "config.json").is_file():
+            return candidato
+    return candidatos[0]
+
+
+def carregar_json_tikz(caminho: Path) -> dict:
+    dados = json.loads(caminho.read_text(encoding="utf-8"))
+    if not isinstance(dados, dict):
+        raise ValueError("o JSON não contém um objeto")
+    return dados
+
+
+def validar_figuras_geometria(
+    texto: str, arquivo_capitulo: Path, raiz_tikz: Path | None = None
+) -> int:
+    """Confere Markdown → manifesto/fonte privados → PNG público."""
+    print("\n[7a] Figuras TikZ/PNG")
+    rc = 0
+    imagens = list(IMAGEM_MD.finditer(texto))
+
+    if not imagens:
+        ok("nenhuma figura no capítulo (permitido quando não for necessária)")
+        return rc
+
+    raiz_tikz = (raiz_tikz or raiz_tikz_padrao()).resolve()
+    try:
+        config = carregar_json_tikz(raiz_tikz / "config.json")
+        repo_publico = config["repositorio_publico"]
+        branch_publicacao = config["branch_publicacao"]
+        dono_esperado, repo_esperado = repo_publico.split("/", 1)
+    except (OSError, UnicodeError, json.JSONDecodeError, KeyError, ValueError) as exc:
+        return falha(f"configuração TikZ inválida em {raiz_tikz}: {exc}")
+
+    validas = 0
+    cache_manifestos = {}
+    for imagem in imagens:
+        linha = texto.count("\n", 0, imagem.start()) + 1
+        alt = imagem.group(1).strip()
+        destino = destino_markdown(imagem.group(2))
+        erro = False
+
+        if not alt:
+            rc |= falha(f"imagem sem texto alternativo na linha {linha}")
+            erro = True
+
+        if not destino:
+            rc |= falha(f"imagem sem caminho na linha {linha}")
+            continue
+        url = urlparse(destino)
+        if (
+            url.scheme != "https"
+            or url.netloc != "raw.githubusercontent.com"
+            or url.query
+            or url.fragment
+        ):
+            rc |= falha(
+                f"imagem da linha {linha} deve usar URL HTTPS direta do repositório TikZ"
+            )
+            continue
+        partes = [unquote(parte) for parte in url.path.split("/") if parte]
+        if len(partes) != 7:
+            rc |= falha(f"estrutura de URL TikZ inválida na linha {linha}: {destino}")
+            continue
+        dono, repo, branch, disciplina, ano_serie, slug_documento, arquivo_png = partes
+        if (dono, repo, branch) != (
+            dono_esperado,
+            repo_esperado,
+            branch_publicacao,
+        ):
+            rc |= falha(
+                f"imagem da linha {linha} aponta fora de {repo_publico}/{branch_publicacao}"
+            )
+            continue
+        if disciplina != "geometria":
+            rc |= falha(f"imagem da linha {linha} não está na pasta geometria")
+            continue
+        if Path(arquivo_png).suffix.lower() != ".png":
+            rc |= falha(f"imagem da linha {linha} não é PNG: {destino}")
+            continue
+
+        manifesto_path = (
+            raiz_tikz / disciplina / ano_serie / slug_documento / "manifesto.json"
+        ).resolve()
+        try:
+            manifesto_path.relative_to(raiz_tikz)
+        except ValueError:
+            rc |= falha(f"caminho público inseguro na linha {linha}")
+            continue
+        if manifesto_path not in cache_manifestos:
+            try:
+                manifesto = carregar_json_tikz(manifesto_path)
+                figuras = manifesto["figuras"]
+                fonte_path = (manifesto_path.parent / manifesto["fonte"]).resolve()
+                fonte_path.relative_to(manifesto_path.parent)
+                fonte = fonte_path.read_text(encoding="utf-8")
+                inicios = fonte.count(r"\begin{tikzpicture}")
+                finais = fonte.count(r"\end{tikzpicture}")
+                paginas = [figura.get("pagina") for figura in figuras]
+                if (
+                    manifesto.get("disciplina") != disciplina
+                    or manifesto.get("ano_serie") != ano_serie
+                    or manifesto.get("slug_documento") != slug_documento
+                ):
+                    raise ValueError("metadados não correspondem ao caminho público")
+                if not isinstance(figuras, list) or not figuras:
+                    raise ValueError("lista de figuras vazia")
+                if inicios != finais or inicios != len(figuras):
+                    raise ValueError("quantidade de tikzpicture não corresponde ao manifesto")
+                if paginas != list(range(1, len(figuras) + 1)):
+                    raise ValueError("páginas do manifesto não são consecutivas")
+                cache_manifestos[manifesto_path] = (manifesto, None)
+            except (
+                OSError,
+                UnicodeError,
+                json.JSONDecodeError,
+                KeyError,
+                TypeError,
+                ValueError,
+            ) as exc:
+                cache_manifestos[manifesto_path] = (None, str(exc))
+
+        manifesto, erro_manifesto = cache_manifestos[manifesto_path]
+        if erro_manifesto:
+            rc |= falha(
+                f"manifesto/fonte inválido para a imagem da linha {linha}: {erro_manifesto}"
+            )
+            continue
+        figura = next(
+            (item for item in manifesto["figuras"] if item.get("arquivo") == arquivo_png),
+            None,
+        )
+        if figura is None:
+            rc |= falha(
+                f"imagem da linha {linha} não está indexada em {manifesto_path.name}"
+            )
+            continue
+        if figura.get("alt", "").strip() != alt:
+            rc |= falha(
+                f"texto alternativo da linha {linha} diverge do manifesto TikZ"
+            )
+            erro = True
+        resumo = figura.get("sha256")
+        if not isinstance(resumo, str) or not SHA256_RE.fullmatch(resumo):
+            rc |= falha(f"imagem da linha {linha} ainda não possui renderização registrada")
+            erro = True
+        elif figura.get("publicado_sha256") != resumo:
+            rc |= falha(f"imagem da linha {linha} ainda não foi publicada nesta versão")
+            erro = True
+
+        if not erro:
+            validas += 1
+
+    if validas == len(imagens):
+        ok(
+            f"{validas} figura(s) com URL pública, manifesto, fonte TikZ e versão publicada válidos"
+        )
+    return rc
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("capitulo")
     ap.add_argument("--disciplina", required=True, choices=DISC.keys())
+    ap.add_argument(
+        "--raiz-tikz",
+        type=Path,
+        help="sobrescreve a pasta _tikz (útil em testes e validações isoladas)",
+    )
     args = ap.parse_args()
 
     cfg = DISC[args.disciplina]
     min_pal, max_pal = PAL_POR_DISC.get(args.disciplina, (MIN_PAL, MAX_PAL))
-    texto = open(args.capitulo, encoding="utf-8").read()
+    arquivo_capitulo = Path(args.capitulo).resolve()
+    texto = arquivo_capitulo.read_text(encoding="utf-8")
     linhas = texto.split("\n")
     rc = 0
 
@@ -272,11 +462,12 @@ def main():
             ok("sem antecipações ('como veremos adiante')")
     if args.disciplina == "geometria":
         fig = [i + 1 for i, l in enumerate(linhas)
-               if re.search(r"figura ao lado|veja a figura|conforme o desenho|imagem ao lado", l.lower())]
+               if re.search(r"figura ao lado|imagem ao lado|veja a figura|veja a imagem", l.lower())]
         if fig:
-            rc |= falha(f"referência a imagem inexistente nas linhas {fig}")
+            rc |= falha(f"referência vaga a figura/imagem nas linhas {fig}")
         else:
-            ok("nenhuma referência a 'figura ao lado'")
+            ok("nenhuma referência vaga a figura/imagem")
+        rc |= validar_figuras_geometria(texto, arquivo_capitulo, args.raiz_tikz)
 
     print("\n" + ("═══ ✗ HÁ FALHAS — revisar antes de publicar ═══"
                   if rc else "═══ ✓ TUDO CERTO ═══") + "\n")
