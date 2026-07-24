@@ -14,12 +14,7 @@ Empurrar uma parede causa cansaço, mas não produz deslocamento — portanto, o
 
 $$W = F \cdot d \cdot \cos\theta$$
 
-Nessa expressão, as grandezas são:
-
-- $$W$$ — trabalho, medido em joule (J);
-- $$F$$ — intensidade da força (N);
-- $$d$$ — deslocamento (m);
-- $$\theta$$ — ângulo entre força e deslocamento.
+Aqui, $$W$$ é o trabalho, em joule (J), e $$\theta$$ é o ângulo entre força e deslocamento.
 
 Um joule equivale a um newton-metro: $$1\,\mathrm{J} = 1\,\mathrm{N \cdot m}$$.
 
@@ -62,7 +57,7 @@ Para uma variação vertical, o módulo do trabalho do peso é:
 
 $$|W_P| = m \cdot g \cdot h$$
 
-As grandezas são massa $$m$$ (kg), gravidade $$g$$ ($$\mathrm{m/s^2}$$) e altura $$h$$ (m). O sinal é positivo na descida e negativo na subida; o resultado não depende da trajetória.
+O sinal é positivo na descida e negativo na subida; o resultado não depende da trajetória.
 
 📝 **Exemplo:**
 Uma caixa de $$2\,\mathrm{kg}$$ sobe $$3\,\mathrm{m}$$, com $$g=10\,\mathrm{m/s^2}$$.
@@ -95,7 +90,7 @@ Em uma máquina ideal, essa troca obedece a:
 
 $$F_1 \cdot d_1 = F_2 \cdot d_2$$
 
-Nessa expressão, $$F_1$$ e $$F_2$$ são forças (N), enquanto $$d_1$$ e $$d_2$$ são distâncias (m).
+Os índices 1 e 2 associam cada força à distância percorrida no mesmo lado da máquina.
 
 ### 3.2 Três tipos de alavanca
 
@@ -140,7 +135,7 @@ Na ausência de atrito, a força paralela necessária para sustentar um peso na 
 
 $$F = P \cdot \sin\theta$$
 
-Nessa expressão, $$F$$ e $$P$$ são forças (N), e $$\theta$$ é o ângulo de inclinação.
+Aqui, $$\theta$$ é o ângulo de inclinação.
 
 Quanto menor o ângulo, menor a força e maior o caminho. Parafusos funcionam como rampas enroladas; cunhas, como rampas duplas.
 
@@ -160,7 +155,7 @@ A **vantagem mecânica** compara a força resistente à força aplicada:
 
 $$VM = \frac{F_R}{F_A}$$
 
-Nessa expressão, $$F_R$$ e $$F_A$$ são medidas em newton (N); $$VM$$ não possui unidade.
+Aqui, $$VM$$ é a vantagem mecânica e não possui unidade.
 
 O valor permite duas leituras:
 
@@ -181,7 +176,7 @@ Nas máquinas reais, o atrito transforma parte do trabalho recebido. Por isso, a
 
 $$\eta = \frac{W_u}{W_t} < 1$$
 
-$$W_u$$ é o trabalho útil e $$W_t$$, o trabalho total recebido, ambos em joule (J); $$\eta$$ não possui unidade.
+O rendimento $$\eta$$ não possui unidade; $$W_u$$ é o trabalho útil e $$W_t$$, o trabalho total recebido.
 
 > 💡 **Você sabia?**
 >
@@ -210,8 +205,6 @@ Um guindaste ideal com duas roldanas móveis tem $$VM=4$$: aplica um quarto da f
 Nenhuma máquina cria energia. Em condições ideais, reduzir a força exige ampliar a distância na mesma proporção:
 
 $$F_A \cdot d_A = F_R \cdot d_R$$
-
-Nessa expressão, as forças são medidas em newton (N) e as distâncias, em metro (m).
 
 Esse princípio explica a rampa da pergunta inicial: ela não oferece energia gratuita. O caminho maior permite erguer a geladeira com força menor.
 

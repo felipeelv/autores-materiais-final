@@ -49,7 +49,7 @@ DISC = {
 # tabela e figura carregam o que em Humanas precisa de frase.
 # ⚠️ Os limites foram calibrados com o método de contagem de contar_conteudo().
 # Mudar o método sem recalibrar faz o validador reprovar o padrão-ouro.
-MIN_PAL, MAX_PAL = 180, 300
+MIN_PAL, MAX_PAL = 140, 220
 PAL_POR_DISC = {
     "fisica":         (110, 190),
     "geometria":      (150, 240),

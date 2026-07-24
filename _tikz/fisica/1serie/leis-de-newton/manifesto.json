@@ -1,0 +1,71 @@
+{
+  "versao": 1,
+  "disciplina": "fisica",
+  "ano_serie": "1serie",
+  "titulo_documento": "Leis de Newton",
+  "slug_documento": "leis-de-newton",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Fisica/1serie/fisica-1serie-3bim-cap1.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-equilibrio-estatico-e-dinamico",
+      "pagina": 1,
+      "arquivo": "fig-01-equilibrio-estatico-e-dinamico.png",
+      "alt": "Comparação entre corpo em repouso e corpo em movimento retilíneo uniforme, ambos com resultante nula",
+      "aprovada": true,
+      "sha256": "dea3b3a4f3c34018ee816941d24463f38cf7760262793ff22672cc329ec81ea1",
+      "largura_px": 1371,
+      "altura_px": 1276,
+      "publicado_sha256": "dea3b3a4f3c34018ee816941d24463f38cf7760262793ff22672cc329ec81ea1",
+      "publicado_commit": "2050a68709b4a942f31d94326658b10f87e1c2d2"
+    },
+    {
+      "id": "fig-02-inercia-do-passageiro",
+      "pagina": 2,
+      "arquivo": "fig-02-inercia-do-passageiro.png",
+      "alt": "Carro freando enquanto o passageiro tende a manter sua velocidade para a frente",
+      "aprovada": true,
+      "sha256": "72a4b35f2d498bd2cd5c937abddd359ba71c4efe2c18d145ca577a871f11486a",
+      "largura_px": 1418,
+      "altura_px": 1205,
+      "publicado_sha256": "72a4b35f2d498bd2cd5c937abddd359ba71c4efe2c18d145ca577a871f11486a",
+      "publicado_commit": "2050a68709b4a942f31d94326658b10f87e1c2d2"
+    },
+    {
+      "id": "fig-03-resultante-de-forcas-perpendiculares",
+      "pagina": 3,
+      "arquivo": "fig-03-resultante-de-forcas-perpendiculares.png",
+      "alt": "Forças perpendiculares de 30 N e 40 N compondo uma resultante de 50 N",
+      "aprovada": true,
+      "sha256": "3dd50285006e79e26e726b3314f720f5443a26325ab1af3ac7bb447ba8d0f4b0",
+      "largura_px": 1229,
+      "altura_px": 1111,
+      "publicado_sha256": "3dd50285006e79e26e726b3314f720f5443a26325ab1af3ac7bb447ba8d0f4b0",
+      "publicado_commit": "2050a68709b4a942f31d94326658b10f87e1c2d2"
+    },
+    {
+      "id": "fig-04-velocidade-e-aceleracao-opostas",
+      "pagina": 4,
+      "arquivo": "fig-04-velocidade-e-aceleracao-opostas.png",
+      "alt": "Corpo movendo-se para a direita com aceleração e resultante para a esquerda",
+      "aprovada": true,
+      "sha256": "74125ca911e7f4141d9e76841ab207e9d033886b0efc315debee7512078ca56b",
+      "largura_px": 1323,
+      "altura_px": 1028,
+      "publicado_sha256": "74125ca911e7f4141d9e76841ab207e9d033886b0efc315debee7512078ca56b",
+      "publicado_commit": "2050a68709b4a942f31d94326658b10f87e1c2d2"
+    },
+    {
+      "id": "fig-05-acao-e-reacao-em-corpos-diferentes",
+      "pagina": 5,
+      "arquivo": "fig-05-acao-e-reacao-em-corpos-diferentes.png",
+      "alt": "Pessoa empurrando carrinho com forças opostas aplicadas em corpos diferentes",
+      "aprovada": true,
+      "sha256": "c90e68c4eef8fa261082bae11f7886e78afb99d9032ea321b0531e0e5955d7e2",
+      "largura_px": 1418,
+      "altura_px": 1140,
+      "publicado_sha256": "c90e68c4eef8fa261082bae11f7886e78afb99d9032ea321b0531e0e5955d7e2",
+      "publicado_commit": "2050a68709b4a942f31d94326658b10f87e1c2d2"
+    }
+  ]
+}

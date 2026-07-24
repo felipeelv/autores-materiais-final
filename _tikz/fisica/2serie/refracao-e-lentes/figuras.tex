@@ -1,0 +1,193 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-fisica}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-desvio-na-refracao
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.0,11.0);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.25,10.45)
+    {para o meio mais refringente};
+  \fill[eleveazulclaro!55] (0.65,5.45) rectangle (9.85,8.0);
+  \draw[fisica superficie] (0.65,8.0) -- (9.85,8.0);
+  \draw[fisica auxiliar] (5.25,5.45) -- (5.25,10.0);
+  \draw[fisica raio] (1.7,9.8) -- (5.25,8.0);
+  \draw[fisica raio] (5.25,8.0) -- (6.45,5.75);
+  \node[fisica rotulo] at (8.2,6.45) {aproxima da normal};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.25,4.55)
+    {para o meio menos refringente};
+  \fill[eleveazulclaro!55] (0.65,0.55) rectangle (9.85,3.05);
+  \draw[fisica superficie] (0.65,3.05) -- (9.85,3.05);
+  \draw[fisica auxiliar] (5.25,0.55) -- (5.25,4.2);
+  \draw[fisica raio] (4.05,0.8) -- (5.25,3.05);
+  \draw[fisica raio] (5.25,3.05) -- (8.1,4.05);
+  \node[fisica rotulo] at (7.85,1.2) {afasta da normal};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-profundidade-aparente
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.8,9.5);
+  \fill[eleveazulclaro!60] (0.65,0.65) rectangle (10.0,5.0);
+  \draw[fisica superficie] (0.65,5.0) -- (10.0,5.0);
+  \node[fisica corpo, circle, minimum size=0.7cm] (O) at (5.3,1.25) {};
+  \node[fisica rotulo, below=7pt] at (O) {objeto real};
+  \draw[fisica raio] (O.center) -- (3.65,5.0) -- (2.35,8.55);
+  \draw[fisica raio] (O.center) -- (6.95,5.0) -- (8.25,8.55);
+  \draw[fisica extensao] (3.65,5.0) -- (5.3,3.0);
+  \draw[fisica extensao] (6.95,5.0) -- (5.3,3.0);
+  \node[fisica corpo, circle, minimum size=0.7cm, dashed] at (5.3,3.0) {};
+  \node[fisica rotulo, anchor=west] at (5.8,3.0) {imagem aparente};
+  \node[font=\large\bfseries, text=elevecinza] at (5.3,9.0)
+    {o prolongamento situa a imagem mais perto da superfície};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-reflexao-total-na-fibra
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.0,7.7);
+  \draw[eleveazul, fill=eleveazulclaro, line width=1.4pt, rounded corners=8pt]
+    (0.7,1.45) rectangle (10.0,6.25);
+  \draw[elevecinza, fill=white, line width=1.1pt, rounded corners=7pt]
+    (0.9,2.1) rectangle (9.8,5.6);
+  \draw[fisica raio] (1.05,3.05) -- (3.2,5.6) -- (5.35,2.1)
+    -- (7.5,5.6) -- (9.65,3.05);
+  \node[fisica rotulo] at (5.35,3.85) {núcleo};
+  \node[fisica rotulo, anchor=west] at (7.35,6.8) {revestimento};
+  \draw[fisica auxiliar, ->] (7.8,6.45) -- (8.2,5.95);
+  \node[font=\large\bfseries, text=elevecinza] at (5.35,0.6)
+    {reflexões totais sucessivas mantêm a luz no núcleo};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-lente-convergente-e-divergente
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.2,11.0);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.35,10.45) {convergente};
+  \draw[eleveazul, fill=eleveazulclaro, line width=1.4pt]
+    (6.1,5.85) .. controls (7.0,7.0) and (7.0,9.0) .. (6.1,10.0)
+    .. controls (5.2,9.0) and (5.2,7.0) .. (6.1,5.85) -- cycle;
+  \foreach \y in {6.7,7.9,9.1}{
+    \draw[fisica raio] (0.8,\y) -- (6.1,\y) -- (9.35,7.9);
+  }
+  \fill[eleveazul] (9.35,7.9) circle (3pt)
+    node[fisica rotulo, below=7pt] {$F'$};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.35,5.1) {divergente};
+  \draw[eleveazul, fill=eleveazulclaro, line width=1.4pt]
+    (6.1,0.5) .. controls (5.25,1.55) and (5.25,3.6) .. (6.1,4.6)
+    .. controls (6.95,3.6) and (6.95,1.55) .. (6.1,0.5) -- cycle;
+  \foreach \y/\fy in {1.35/0.85,2.55/2.55,3.75/4.25}{
+    \draw[fisica raio] (0.8,\y) -- (6.1,\y) -- (9.45,\fy);
+    \draw[fisica extensao] (6.1,\y) -- (3.15,2.55);
+  }
+  \fill[eleveazul] (3.15,2.55) circle (3pt)
+    node[fisica rotulo, below=7pt] {$F'$ virtual};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-elementos-da-lente-fina
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.2,8.2);
+  \draw[fisica auxiliar] (0.65,3.75) -- (10.35,3.75)
+    node[right, fisica rotulo] {eixo};
+  \draw[eleveazul, fill=eleveazulclaro, line width=1.4pt]
+    (5.35,0.8) .. controls (6.2,2.0) and (6.2,5.5) .. (5.35,6.7)
+    .. controls (4.5,5.5) and (4.5,2.0) .. (5.35,0.8) -- cycle;
+  \fill[eleveazul] (2.3,3.75) circle (3pt);
+  \fill[eleveazul] (5.35,3.75) circle (3pt);
+  \fill[eleveazul] (8.4,3.75) circle (3pt);
+  \node[fisica rotulo, below=7pt] at (2.3,3.75) {$F$};
+  \node[fisica rotulo, below=7pt] at (5.35,3.75) {$O$};
+  \node[fisica rotulo, below=7pt] at (8.4,3.75) {$F'$};
+  \draw[decorate, decoration={brace, mirror, amplitude=7pt}, elevelaranja, line width=1pt]
+    (5.35,6.65) -- (8.4,6.65)
+    node[midway, above=11pt, fisica medida] {$f$};
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-raios-notaveis-na-convergente
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.4,9.0);
+  \draw[fisica auxiliar] (0.65,1.25) -- (10.65,1.25);
+  \draw[eleveazul, fill=eleveazulclaro, line width=1.4pt]
+    (6.0,0.2) .. controls (6.8,1.8) and (6.8,5.7) .. (6.0,7.35)
+    .. controls (5.2,5.7) and (5.2,1.8) .. (6.0,0.2) -- cycle;
+  \fill[eleveazul] (3.35,1.25) circle (3pt)
+    node[fisica rotulo, below=7pt] {$F$};
+  \fill[eleveazul] (8.65,1.25) circle (3pt)
+    node[fisica rotulo, below=7pt] {$F'$};
+  \draw[fisica movimento] (0.95,1.25) -- (0.95,6.45)
+    node[fisica rotulo, above] {objeto};
+  \coordinate (A) at (0.95,6.45);
+  \draw[fisica raio] (A) -- (6.0,6.45) -- (8.65,1.25);
+  \draw[fisica raio] (A) -- (3.35,1.25) -- (6.0,1.25) -- (10.4,1.25);
+  \draw[fisica raio] (A) -- (6.0,3.35) -- (10.4,0.95);
+  \node[fisica rotulo, align=left, anchor=west] at (4.1,8.25)
+    {paralelo $\to F'$\\por $F\to$ paralelo\\por $O\to$ sem desvio};
+\end{tikzpicture}
+
+% FIGURA 7 — fig-07-casos-principais-da-convergente
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.45) rectangle (11.3,15.7);
+  \foreach \base/\titulo in {13.5/além de $2F$,9.5/entre $2F$ e $F$,5.5/em $F$,1.5/entre $F$ e $O$}{
+    \node[font=\large\bfseries, text=eleveazul, anchor=west] at (0.45,\base+1.65) {\titulo};
+    \draw[fisica auxiliar] (0.55,\base) -- (10.55,\base);
+    \draw[eleveazul, fill=eleveazulclaro, line width=1.0pt]
+      (7.7,\base-0.9) .. controls (8.15,\base-0.35) and (8.15,\base+0.95) .. (7.7,\base+1.5)
+      .. controls (7.25,\base+0.95) and (7.25,\base-0.35) .. (7.7,\base-0.9) -- cycle;
+    \fill[eleveazul] (5.75,\base) circle (2.5pt);
+    \fill[eleveazul] (9.65,\base) circle (2.5pt);
+    \node[fisica medida, below=4pt] at (5.75,\base) {$F$};
+    \node[fisica medida, below=4pt] at (9.65,\base) {$F'$};
+  }
+  \draw[fisica movimento] (1.25,13.5) -- ++(0,1.1);
+  \draw[fisica movimento] (9.0,13.5) -- ++(0,-0.72);
+  \node[fisica rotulo] at (3.05,12.25) {real, invertida, reduzida};
+
+  \draw[fisica movimento] (6.45,9.5) -- ++(0,1.05);
+  \draw[fisica movimento] (1.2,9.5) -- ++(0,-1.45);
+  \node[fisica rotulo] at (3.15,8.15) {real, invertida, ampliada};
+
+  \draw[fisica movimento] (5.75,5.5) -- ++(0,1.05);
+  \draw[fisica raio] (5.75,6.55) -- (10.25,6.55);
+  \draw[fisica raio] (5.75,6.15) -- (10.25,6.15);
+  \node[fisica rotulo] at (3.15,4.25) {raios paralelos; imagem no infinito};
+
+  \draw[fisica movimento] (6.6,1.5) -- ++(0,1.0);
+  \draw[fisica extensao] (9.2,1.5) -- ++(0,1.5);
+  \node[fisica rotulo] at (3.2,0.25) {virtual, direita, ampliada};
+\end{tikzpicture}
+
+% FIGURA 8 — fig-08-miopia-e-hipermetropia
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.9) rectangle (11.4,11.8);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.45,11.25) {miopia};
+  \draw[eleveazul, fill=eleveazulclaro, line width=1.3pt]
+    (7.45,8.35) ellipse (2.3 and 1.65);
+  \draw[elevecinza, line width=1.4pt] (9.45,7.15) arc[start angle=-50,end angle=50,radius=1.55];
+  \draw[eleveazul, line width=1.2pt] (5.55,7.15)
+    .. controls (6.15,7.7) and (6.15,9.0) .. (5.55,9.55);
+  \draw[fisica raio] (0.8,7.8) -- (5.55,7.8) -- (8.45,8.35);
+  \draw[fisica raio] (0.8,8.9) -- (5.55,8.9) -- (8.45,8.35);
+  \fill[elevelaranja] (8.45,8.35) circle (3pt);
+  \draw[fisica extensao] (8.45,8.35) -- (9.25,8.35);
+  \node[fisica rotulo] at (8.45,6.25) {foco antes da retina};
+  \draw[eleveazul, line width=1.3pt] (0.9,6.05)
+    .. controls (0.45,6.45) and (0.45,7.05) .. (0.9,7.45);
+  \node[fisica medida, anchor=west, align=left] at (1.3,6.65)
+    {correção:\\divergente};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.45,5.15) {hipermetropia};
+  \draw[eleveazul, fill=eleveazulclaro, line width=1.3pt]
+    (7.45,2.35) ellipse (2.3 and 1.65);
+  \draw[elevecinza, line width=1.4pt] (9.45,1.15) arc[start angle=-50,end angle=50,radius=1.55];
+  \draw[eleveazul, line width=1.2pt] (5.55,1.15)
+    .. controls (6.15,1.7) and (6.15,3.0) .. (5.55,3.55);
+  \draw[fisica raio] (0.8,1.8) -- (5.55,1.8) -- (10.15,2.35);
+  \draw[fisica raio] (0.8,2.9) -- (5.55,2.9) -- (10.15,2.35);
+  \fill[elevelaranja] (10.15,2.35) circle (3pt);
+  \node[fisica rotulo] at (8.45,0.25) {foco depois da retina};
+  \draw[eleveazul, line width=1.3pt] (0.9,-0.55)
+    .. controls (1.45,-0.15) and (1.45,0.65) .. (0.9,1.05);
+  \node[fisica medida, anchor=west, align=left] at (1.45,0.25)
+    {correção:\\convergente};
+\end{tikzpicture}
+
+\end{document}

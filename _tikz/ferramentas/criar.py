@@ -275,6 +275,16 @@ def url_publica(config: dict, manifesto: dict, figura: dict) -> str:
     )
 
 
+def url_indexada(config: dict, manifesto: dict, figura: dict) -> str:
+    """Usa a versão imutável aprovada quando o commit já foi registrado."""
+    referencia = figura.get("publicado_commit") or config["branch_publicacao"]
+    return (
+        "https://raw.githubusercontent.com/"
+        f"{config['repositorio_publico']}/{quote(referencia, safe='')}/"
+        f"{caminho_publico(manifesto, figura)}"
+    )
+
+
 def sha256(caminho: Path) -> str:
     resumo = hashlib.sha256()
     with caminho.open("rb") as arquivo:
@@ -364,42 +374,85 @@ def validar_build(
     return manifesto, config
 
 
-def fonte_inicial(figura_id: str) -> str:
+def pacote_estilo(disciplina: str) -> str:
+    return f"eleve-{disciplina}"
+
+
+def estilo_figura(disciplina: str) -> str:
+    estilos = {
+        "geometria": "eleve figura",
+        "fisica": "fisica figura",
+        "matematica-ef1": "matematica figura",
+        "quimica": "quimica figura",
+    }
+    try:
+        return estilos[disciplina]
+    except KeyError as exc:
+        raise ErroPipeline(
+            f"não há estilo-base para a disciplina: {disciplina}"
+        ) from exc
+
+
+def desenho_inicial(disciplina: str) -> str:
+    if disciplina == "geometria":
+        return r"""  \coordinate (A) at (0,0);
+  \coordinate (B) at (4,0);
+  \coordinate (C) at (1.1,2.6);
+
+  \draw[eleve preenchimento] (A) -- (B) -- (C) -- cycle;
+  \EleveVertice{A}{below left}{A}
+  \EleveVertice{B}{below right}{B}
+  \EleveVertice{C}{above}{C}"""
+    if disciplina == "fisica":
+        return r"""  \draw[fisica superficie] (-0.5,0) -- (5.2,0);
+  \node[fisica corpo, minimum width=2.2cm, minimum height=1.35cm] (corpo)
+    at (2.2,0.7) {corpo};
+  \draw[fisica forca] (corpo.center) -- ++(0,2)
+    node[fisica rotulo, above] {$\vec N$};
+  \draw[fisica forca] (corpo.center) -- ++(0,-2)
+    node[fisica rotulo, below] {$\vec P$};"""
+    if disciplina == "matematica-ef1":
+        return r"""  \fill[matematica destaque claro] (0,0) rectangle (2,1.4);
+  \draw[matematica contorno] (0,0) rectangle (4,1.4);
+  \draw[matematica divisao] (2,0) -- (2,1.4);
+  \node[matematica rotulo, below=7pt] at (2,0) {$\frac{1}{2}$};"""
+    if disciplina == "quimica":
+        return r"""  \draw[quimica eixo] (0,0) -- (5.2,0)
+    node[right, quimica rotulo] {tempo};
+  \draw[quimica eixo] (0,0) -- (0,4.2)
+    node[above, quimica rotulo] {grandeza};
+  \draw[quimica direta] (0.2,3.7) .. controls (1.6,2.1) and (3.4,2.0) .. (5.0,2.0);
+  \draw[quimica inversa] (0.2,0.4) .. controls (1.6,1.8) and (3.4,2.0) .. (5.0,2.0);"""
+    raise ErroPipeline(f"não há desenho-base para a disciplina: {disciplina}")
+
+
+def fonte_inicial(figura_id: str, disciplina: str) -> str:
+    pacote = pacote_estilo(disciplina)
+    estilo = estilo_figura(disciplina)
+    desenho = desenho_inicial(disciplina)
     return rf"""\documentclass[tikz,border=3mm,multi=tikzpicture]{{standalone}}
-\usepackage{{eleve-geometria}}
+\usepackage{{{pacote}}}
 
 \begin{{document}}
 
 % FIGURA 1 — {figura_id}
 % Substitua o desenho-base pela configuração descrita no conteúdo.
-\begin{{tikzpicture}}[eleve figura, scale=1.15]
-  \coordinate (A) at (0,0);
-  \coordinate (B) at (4,0);
-  \coordinate (C) at (1.1,2.6);
-
-  \draw[eleve preenchimento] (A) -- (B) -- (C) -- cycle;
-  \EleveVertice{{A}}{{below left}}{{A}}
-  \EleveVertice{{B}}{{below right}}{{B}}
-  \EleveVertice{{C}}{{above}}{{C}}
+\begin{{tikzpicture}}[{estilo}, scale=1.15]
+{desenho}
 \end{{tikzpicture}}
 
 \end{{document}}
 """
 
 
-def bloco_tikz(figura_id: str, pagina: int) -> str:
+def bloco_tikz(figura_id: str, pagina: int, disciplina: str) -> str:
+    estilo = estilo_figura(disciplina)
+    desenho = desenho_inicial(disciplina)
     return rf"""
 % FIGURA {pagina} — {figura_id}
 % Substitua o desenho-base pela configuração descrita no conteúdo.
-\begin{{tikzpicture}}[eleve figura, scale=1.15]
-  \coordinate (A) at (0,0);
-  \coordinate (B) at (4,0);
-  \coordinate (C) at (1.1,2.6);
-
-  \draw[eleve preenchimento] (A) -- (B) -- (C) -- cycle;
-  \EleveVertice{{A}}{{below left}}{{A}}
-  \EleveVertice{{B}}{{below right}}{{B}}
-  \EleveVertice{{C}}{{above}}{{C}}
+\begin{{tikzpicture}}[{estilo}, scale=1.15]
+{desenho}
 \end{{tikzpicture}}
 """
 
@@ -432,7 +485,7 @@ def comando_novo(args: argparse.Namespace) -> None:
         raise ErroPipeline(f"a pasta do documento já existe: {pasta}")
     pasta.mkdir(parents=True)
     fonte = pasta / "figuras.tex"
-    fonte.write_text(fonte_inicial(figura_id), encoding="utf-8")
+    fonte.write_text(fonte_inicial(figura_id, disciplina), encoding="utf-8")
     manifesto = {
         "versao": 1,
         "disciplina": disciplina,
@@ -473,7 +526,10 @@ def comando_adicionar(args: argparse.Namespace) -> None:
     marca = r"\end{document}"
     if texto.count(marca) != 1:
         raise ErroPipeline("a fonte precisa ter exatamente um \\end{document}")
-    texto = texto.replace(marca, bloco_tikz(args.id, pagina) + "\n" + marca)
+    texto = texto.replace(
+        marca,
+        bloco_tikz(args.id, pagina, manifesto["disciplina"]) + "\n" + marca,
+    )
     fonte.write_text(texto, encoding="utf-8")
     manifesto["figuras"].append(
         {
@@ -595,8 +651,14 @@ def baixar_url(url: str) -> bytes:
 
 def verificar_publicacao(config: dict, manifesto: dict, figura: dict) -> None:
     commit = figura.get("publicado_commit", "")
-    sufixo = f"?v={quote(commit)}" if commit else ""
-    url = url_publica(config, manifesto, figura) + sufixo
+    if commit:
+        url = (
+            "https://raw.githubusercontent.com/"
+            f"{config['repositorio_publico']}/{quote(commit, safe='')}/"
+            f"{caminho_publico(manifesto, figura)}"
+        )
+    else:
+        url = url_publica(config, manifesto, figura)
     dados = baixar_url(url)
     if not dados.startswith(PNG_ASSINATURA):
         raise ErroPipeline(f"a URL não retornou um PNG: {url}")
@@ -744,7 +806,7 @@ def comando_publicar(args: argparse.Namespace) -> None:
 def bloco_markdown(config: dict, manifesto: dict, figura: dict) -> str:
     return (
         f"<!-- tikz:inicio {figura['id']} -->\n"
-        f"![{figura['alt']}]({url_publica(config, manifesto, figura)})\n"
+        f"![{figura['alt']}]({url_indexada(config, manifesto, figura)})\n"
         f"<!-- tikz:fim {figura['id']} -->"
     )
 

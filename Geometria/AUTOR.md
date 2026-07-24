@@ -386,12 +386,12 @@ O mesmo nível N muda de cara conforme a série. Parâmetros objetivos por faixa
 | **Ordem de apresentação** | **Exemplo concreto → conceito**, sem exceção; o conceito nomeia o que a criança acabou de ver | **Exemplo concreto → conceito** (sempre) | Exemplo → conceito, ou conceito → exemplo imediato | Definição formal primeiro é aceitável | Definição direta; aluno já tem repertório |
 | **Vocabulário** | Cotidiano da criança; termo técnico só quando é o próprio conteúdo, explicado com palavra do dia a dia | Cotidiano; **todo termo técnico explicado na 1ª ocorrência** | Técnico consolidado; termo novo sempre explicado | Técnico pleno; nomenclatura padrão da área | Técnico pleno + vocabulário de prova |
 | **Abstração** | Nenhuma; tudo ancorado no que se vê, toca ou conta | Mínima; ancorar em situação vivida/observável | Transição: alterna concreto e abstrato | Abstração plena, com retorno ao real como aplicação | Abstração + síntese entre temas |
-| **Exemplos por conceito** | 2, do mundo da criança de 9–10 anos (casa, escola, brincadeira, animais, comida, dinheiro de troco) | 2, do universo do aluno (escola, família, esporte, jogos, tecnologia) | 1–2, de textos/fenômenos reais e referências culturais | 1–2, de fontes reais (literatura, imprensa, dados, experimento) | 1 forte + 1 no formato de prova |
+| **Exemplos por conceito** | 1 exemplo claro; segundo só quando mostrar uma situação diferente, sempre do mundo da criança | 2, do universo do aluno (escola, família, esporte, jogos, tecnologia) | 1–2, de textos/fenômenos reais e referências culturais | 1–2, de fontes reais (literatura, imprensa, dados, experimento) | 1 forte + 1 no formato de prova |
 | **Exceções e casos raros** | Nunca entram | Não entram (salvo se estiverem no recorte do blueprint) | Entram as principais | Sistematizadas | Sistematizadas + pegadinhas clássicas de prova |
 | **Tom** | Professor próximo, fala com "você", frases afirmativas — **sem infantilizar, sem diminutivo, sem personagem falante** | Professor próximo e direto (fala com "você") | Direto, sem infantilizar | Acadêmico acessível — **nunca infantilizar** | Pré-universitário |
 | **Conexão com prova** | Não | Não | Leve (no 9º, mencionar quando natural) | Notas ENEM/vestibular quando o conteúdo render | Sistemática |
 
-**Nota sobre o 4º–5º ano:** faixa acrescentada em 20/07/2026 com a entrada do Fundamental I. A escala N1–N4 não muda — ela descreve a operação cognitiva, não a linguagem. Na prática o EF1 opera em **N1–N3**; **N4 é raro** e só aparece quando o próprio blueprint marcar. O erro típico aqui não é escrever difícil demais, é **infantilizar**: o aluno de 9–10 anos entende explicação direta, o que ele não tem é repertório abstrato.
+**Nota sobre o 4º–5º ano:** faixa acrescentada em 20/07/2026 com a entrada do Fundamental I. A escala N1–N4 não muda — ela descreve a operação cognitiva, não a linguagem. Na prática o EF1 opera em **N1–N3**; **N4 é raro** e só aparece quando o próprio blueprint marcar. O texto usa palavras comuns, exemplos próximos e frases curtas. Simplicidade não significa infantilização: diminutivos e personagens falantes continuam fora do padrão.
 
 **Nota sobre o 9º ano:** é segmento próprio no calendário (24 aulas/sem), mas na escrita segue a coluna 8º–9º **puxando para cima** — é a ponte para o EM.
 
@@ -412,12 +412,13 @@ O mesmo nível N muda de cara conforme a série. Parâmetros objetivos por faixa
 - **O blueprint manda no recorte:** os 3 tópicos internos da aula são o recorte — desenvolver sem inventar tópico novo e sem cruzar o NÃO ANTECIPAR.
 - **Conflito Diretriz × reorganização:** a reorganização vence; a Diretriz da disciplina só calibra profundidade (tratar como introdutório onde ela restringir).
 
-### 5. Educação Cristã — decisão específica de Geometria
+### 5. Educação Cristã — Conexão VP (⚠️ formato em aberto)
 
-- **Geometria não leva versículo nem conexão VP no capítulo.** Essa decisão prevalece sobre o campo correspondente dos blueprints e sobre qualquer regra genérica de outras disciplinas.
-- Os blueprints ainda conservam a unidade VP, o versículo-âncora e a conexão histórica porque são documentos curriculares compartilhados. Durante a produção de Geometria, esse campo é ignorado; não se cria seção, box, parágrafo inline ou analogia de valor.
-- Os rótulos `Conexão VP (para E A BÍBLIA NISSO?)` e `Conexão VP` podem permanecer nos blueprints. Não é necessário normalizá-los para produzir o capítulo.
-- Uma futura mudança geral do projeto não altera Geometria automaticamente. Inserir VP nesta disciplina exige nova decisão explícita do Felipe e atualização prévia deste `AUTOR.md`.
+- **O que existe:** todos os 280 blueprints (248 do 6º ano em diante + 32 do Fundamental I) trazem, **por tema**, uma **Conexão VP pronta** — unidade VP do período (ex.: *U5 — Dignidade*), **versículo-âncora** e conexão já redigida em 2–3 frases. É a **fonte a consultar** durante a produção; não é preciso buscar nada fora do blueprint.
+- **O que mudou (19/07/2026):** o **fechamento de capítulo do formato antigo foi abolido** (incluía a seção "E a Bíblia nisso?", destino original da Conexão VP). O Felipe vai definir um **formato novo** — o tratamento da Conexão VP no material (inline, box, ou fora do material) será fixado junto com o novo prompt de produção.
+- **Enquanto não definido:** nenhuma produção deve inventar tratamento próprio para o VP; a conexão permanece nos blueprints aguardando a regra do novo formato.
+- **⚠️ Dois rótulos convivem nos blueprints — é intencional, não descuido.** Os **248 blueprints do 6º ano em diante** (até 19/07/2026) rotulam o campo como **`**Conexão VP (para E A BÍBLIA NISSO?):**`**, porque foram escritos quando a seção "E a Bíblia nisso?" ainda era o destino do texto. Os **32 blueprints do Fundamental I** (20/07/2026) usam o rótulo neutro **`**Conexão VP:**`**, já que o fechamento antigo tinha sido abolido no dia anterior e o formato novo ainda não existe. **O conteúdo do campo é o mesmo** (unidade VP, versículo-âncora e conexão redigida); só o rótulo difere. Os dois serão uniformizados quando o Felipe fixar o formato novo — não normalizar antes disso.
+- **Fonte profunda (raramente necessária):** a apostila "Vida e Propósito" tem pipeline próprio e isolado em `~/conteudos-prontos/_vida-e-proposito/` (frameworks por unidade e por ano — disponível no Mac Mini). Consultar só se for preciso mudar/aprofundar o **tema** VP de uma unidade, nunca na produção normal.
 
 ### 6. Ajustes por família de disciplina
 
@@ -480,7 +481,9 @@ $$\frac{1+2}{4} = \frac{3}{4}$$
 
 ### 2. {Título da Aula 2}
 
-{...mesma estrutura. Em Geometria, prossiga somente com o conteúdo matemático da aula: não insira conexão VP, versículo, box ou parágrafo de valor, mesmo que o blueprint os apresente.}
+{...mesma estrutura. Se a conexão VP do blueprint for conceitual (teste do sinônimo), o versículo entra aqui, no fluxo:}
+
+{1 parágrafo curto ligando o conceito ao valor — prático e específico, sem piedosismo. Sem seção própria, sem lista de ações.}
 
 ---
 
@@ -495,12 +498,12 @@ $$\frac{1+2}{4} = \frac{3}{4}$$
 2. **Pergunta-problema** do blueprint em blockquote logo abaixo do título, **sem rótulo** — só a pergunta. É respondida dentro da aula pertinente, sem anunciar.
 3. **1 aula = 1 tópico `## N.`**, na ordem do blueprint; `---` entre aulas. Cada aula autossuficiente (~50 min).
 4. **2–3 subseções `### N.1`, `### N.2`** por aula, com título curto (pode ser pergunta orientadora).
-5. **Extensão por aula:** padrão da casa 220–250 (teto 300); overrides por disciplina — Física 130–170 (teto 190), Geometria 170–210 (teto 240), Matemática EF1 180–220 (teto 260). Fórmulas, exemplos resolvidos, tabelas, ASCII e boxes **não** entram na conta. **O teto não é meta; não existe mínimo.**
+5. **Extensão por aula:** padrão da casa 220–250 (teto 300); overrides por disciplina — Física 130–170 (teto 190), Química 180–210 (teto 240), Geometria 170–210 (teto 240), Matemática EF1 **sem alvo e sem mínimo** (teto 160). Fórmulas, exemplos resolvidos, tabelas, ASCII, figuras TikZ/PNG, textos alternativos e boxes **não** entram na conta. **O teto não é meta.**
 6. **Prosa curta + marcadores:** máx. 2 frases seguidas antes de uma lista; tabela para 2+ itens comparáveis; **liste o paralelo, escreva o encadeado**. Toda lista com frase de transição **informativa**.
 7. **Boxes:** só a família da disciplina, em blockquote, com quebra de linha interna (título na 1ª linha com dois espaços finais). 1–2 por aula, **nunca dois seguidos**, 1 frase ("drop").
-8. **Sem versículo em Geometria:** ignore a conexão VP do blueprint; não insira Bíblia, analogia de valor, box ou parágrafo inline no capítulo.
+8. **Bíblia condicional:** versículo só com ligação **conceitual** (teste do sinônimo) — capítulo sem versículo é entrega válida.
 9. **Personagem/referência-chave** 1× por capítulo, na aula pertinente (EF em box 👤 onde a disciplina tiver; EM e matemáticas integrado ao texto).
-10. **O que NUNCA aparece:** blocos pós-conteúdo do formato antigo (`Introdução`, `Sua Parte`, `O que a Bíblia diz sobre...`, `E a Bíblia nisso?`, `Simplificando`, `Para não esquecer`, `Explorando os Conceitos`, `Ampliando o Olhar`, `No Fio da História`, `O Que a Fé Diz`, `Pensador em Destaque`, `Você já pensou nisso?`, `Síntese`, `Fórmulas do capítulo`, `💬 Para Conversar`) · atividades/exercícios propostos/provas · itens do NÃO ANTECIPAR · emojis fora de box · imagens, **exceto as figuras TikZ/PNG autorizadas pelo manual de Geometria** · frases-preparação ("Neste capítulo vamos...").
+10. **O que NUNCA aparece:** blocos pós-conteúdo do formato antigo (`Introdução`, `Sua Parte`, `O que a Bíblia diz sobre...`, `E a Bíblia nisso?`, `Simplificando`, `Para não esquecer`, `Explorando os Conceitos`, `Ampliando o Olhar`, `No Fio da História`, `O Que a Fé Diz`, `Pensador em Destaque`, `Você já pensou nisso?`, `Síntese`, `Fórmulas do capítulo`, `💬 Para Conversar`) · atividades/exercícios propostos/provas · itens do NÃO ANTECIPAR · emojis fora de box · imagens, **exceto as figuras TikZ/PNG autorizadas pelo manual da disciplina** · frases-preparação ("Neste capítulo vamos...").
 
 **Famílias de boxes por disciplina:**
 

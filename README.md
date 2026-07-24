@@ -43,12 +43,14 @@ O arquivo `PADRAO-GERAL-DE-ESCRITA.md`, na raiz, é a **fonte oficial e mais sim
 | `Ciencias/` | 4º → 8º ano | ✅ validado em produção |
 | `Biologia/` | 9º ano → 3ª EM | ✅ validado em produção |
 | `Fisica/` | 6º ano → 3ª EM | ✅ validado em produção |
-| `Quimica/` | 9º ano → 3ª EM | ✅ validado em produção |
-| `Estudos Sociais/` | 4º → 9º ano **+ Geografia e História EM** | ✅ validado em produção |
-| `Sociologia/` | 1ª → 3ª EM | 🆕 sem piloto |
-| `Filosofia/` | 1ª → 3ª EM | 🆕 sem piloto |
+| `Quimica/` | 9º ano → 3ª EM | ✅ 3º bimestre concluído: 8 capítulos · 42 aulas · 15 figuras TikZ |
+| `Estudos Sociais/` | 4º → 9º ano | ✅ validado em produção |
+| `Geografia/` | 1ª → 3ª EM | ✅ 3º bimestre concluído: 12 capítulos · 54 aulas |
+| `Historia/` | 1ª → 3ª EM | ✅ 3º bimestre concluído: 12 capítulos · 54 aulas |
+| `Sociologia/` | 1ª → 3ª EM | ✅ 3º bimestre concluído: 6 capítulos · 18 aulas |
+| `Filosofia/` | 1ª → 3ª EM | ✅ 3º bimestre concluído: 6 capítulos · 18 aulas |
 
-Duas pastas têm um arquivo a mais, porque a regra não cabe no manual comum: **Estudos Sociais** tem `instrucoes-geografia-historia-EM.md` (prevalece sobre o manual no Ensino Médio) e **Português** tem `referencia-exemplos-linguagem.md` (calibragem de exemplos por faixa, herdada do autor antigo) e o capítulo-modelo aprovado.
+**Estudos Sociais** mantém `instrucoes-geografia-historia-EM.md` apenas como registro legado. História usa exclusivamente `Historia/AUTOR.md`. **Português** mantém `referencia-exemplos-linguagem.md` e o capítulo-modelo aprovado.
 
 ## 2. O formato (decisão fechada)
 
@@ -56,18 +58,18 @@ Duas pastas têm um arquivo a mais, porque a regra não cabe no manual comum: **
 
 **Hierarquia de autoridade:** **blueprint** (o quê e até onde) → **Anexo A** (como escrever no nível × faixa) → **Parte 2 do `AUTOR.md`** (voz e formato) → Parte 1 (instruções do projeto).
 
-**Extensão por aula varia por disciplina:** padrão 220–250 (teto 300) · Estudos Sociais 180–220 (teto 300) · Física 130–170 (teto 190) · Geometria 170–210 (teto 240) · Matemática EF1 sem alvo nem mínimo (teto 160). O teto nunca é meta.
+**Extensão por aula varia por disciplina:** padrão 220–250 (teto 300) · Ciências 140–200 (teto 220) · Estudos Sociais 180–220 (teto 300) · Geografia e História 145–175 (teto de segurança 200) · Filosofia 155–185 (teto de segurança 200) · Sociologia 175–195 (teto 200) · Física 130–170 (teto 190) · Química 180–210 (teto 240) · Geometria 170–210 (teto 240) · Matemática EF1 sem alvo nem mínimo (teto 160). O teto nunca é meta.
 
 ## 3. Montar um Claude Project
 
 1. Crie o projeto no claude.ai com o nome da disciplina.
 2. **Instruções:** copie a **Parte 1** do `AUTOR.md` e cole no campo *Instruções do projeto*.
-3. **Conhecimento:** suba o `AUTOR.md` e, quando existir, **somente o modelo do ano/série em produção** (+ `instrucoes-geografia-historia-EM.md` no EM de Estudos Sociais; + `referencia-exemplos-linguagem.md` em Português).
+3. **Conhecimento:** suba o `AUTOR.md` e, quando existir, **somente o modelo do ano/série em produção** (+ `referencia-exemplos-linguagem.md` em Português).
 4. **Blueprints:** cópia fiel de `Reorganizacao-2026-2Semestre/disciplinas/<D>/blueprints/`, **renomeados com a série no nome** (`7ano-3bim-bloco1.md`) — no repositório todos se chamam `3bim-bloco1.md` e colidiriam. Em Estudos Sociais, prefixe a disciplina (`geografia-2serie-…`).
 5. **Não suba** `_MEMORIA.md` nem `validar-capitulo.py` (um `.py` no claude.ai é lido como texto, não executa).
 6. Se a janela encher: suba só os blueprints do bimestre em produção. Nunca suba capítulos prontos como conhecimento.
 
-Um projeto por disciplina — **12 projetos**. As matemáticas não se juntam: as regras conflitam e os blueprints estourariam a janela.
+Um projeto por kit editorial ativo — **14 projetos**. As matemáticas não se juntam: as regras conflitam e os blueprints estourariam a janela.
 
 ## 4. Manutenção
 
@@ -91,12 +93,16 @@ Um projeto por disciplina — **12 projetos**. As matemáticas não se juntam: a
 
 ## 6. Próximos passos
 
-- [ ] **Revisar os capítulos já prontos contra o teto vigente.** Os de Ciências e Estudos Sociais foram escritos quando o teto era 400; o teto atual é 300, e alguns reprovam no validador. Decidir caso a caso: revisar o capítulo ou ajustar o teto.
+- [x] **Revisar os capítulos já prontos contra o teto vigente.** Ciências foi integralmente recalibrada para 140–200 palavras por aula, com teto de 220; Estudos Sociais também consta como concluído no controle geral.
 - [ ] Revisar cada `AUTOR.md` com o Felipe, um por um.
-- [ ] Piloto dos 2 kits novos restantes: Sociologia · Filosofia (sugestões nos `_MEMORIA.md`).
+- [x] Recalibrar o autor, criar os modelos e concluir no Drive os 6 capítulos do 3º bimestre de Sociologia.
 - [ ] Piloto de Português EF1 (4º–5º).
 - [x] Calibrar a extensão de Matemática EF1 com os modelos do 4º e do 5º ano.
 - [x] Produzir, ilustrar e salvar no Drive os 18 capítulos do 3º bimestre de Matemática EF1.
+- [x] Criar o autor exclusivo e concluir no Drive os 12 capítulos do 3º bimestre de Geografia.
+- [x] Criar o autor exclusivo e os três modelos de História do Ensino Médio.
+- [x] Produzir e salvar no Drive os 12 capítulos do 3º bimestre de História.
+- [x] Recalibrar o autor, criar os modelos e concluir no Drive os 6 capítulos do 3º bimestre de Filosofia.
 - [x] Capítulos-modelo por ano/série concluídos em Biologia (9º + EM), Ciências (4º–8º), Estudos Sociais (4º–9º), Física (6º–9º + EM), Matemática Financeira (6º–9º + EM) e Geometria (6º–9º + EM).
 - [ ] Decisão pendente: versículo Mateus 25:40 repetido em 3 séries nos blueprints de Geometria.
 - [ ] Decisão pendente: formato da Conexão VP — os kits praticam versículo condicional inline, mas o Anexo A §5 ainda marca como "em aberto". Física e Geometria já decidiram **não levar versículo**.

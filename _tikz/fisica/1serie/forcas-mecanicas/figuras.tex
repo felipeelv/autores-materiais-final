@@ -1,0 +1,142 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-fisica}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-normal-em-superficies-diferentes
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.7,10.1);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.15,9.55)
+    {superfície horizontal};
+  \draw[fisica superficie] (0.85,6.35) -- (9.45,6.35);
+  \node[fisica corpo, minimum width=1.9cm, minimum height=1.25cm] (A)
+    at (5.15,7.0) {};
+  \draw[fisica forca] (A.center) -- ++(0,2.0)
+    node[fisica rotulo, above] {$\vec N$};
+  \draw[elevelaranja, line width=1.1pt] (5.15,6.53) -- ++(0.45,0) -- ++(0,0.45);
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.15,5.15)
+    {superfície inclinada};
+  \draw[fisica superficie] (0.85,0.65) -- (9.45,4.25);
+  \coordinate (O) at (5.15,2.45);
+  \begin{scope}[shift={(O)}, rotate=23]
+    \node[fisica corpo, minimum width=1.9cm, minimum height=1.25cm] (B) at (0,0) {};
+    \draw[fisica forca] (B.center) -- ++(0,2.25)
+      node[fisica rotulo, above] {$\vec N$};
+    \draw[elevelaranja, line width=1.1pt] (0,-0.48) -- ++(0.45,0) -- ++(0,0.45);
+  \end{scope}
+  \node[fisica rotulo] at (2.2,2.35) {$\vec N\perp$ superfície};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-peso-aparente-no-elevador
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-1.25) rectangle (11.4,12.1);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.45,11.55)
+    {aceleração para cima};
+  \coordinate (A) at (5.45,9.25);
+  \node[fisica corpo, minimum width=1.45cm, minimum height=0.95cm] at (A) {};
+  \draw[fisica forca] (A) -- ++(0,1.65)
+    node[fisica rotulo, above] {$\vec N$};
+  \draw[fisica forca] (A) -- ++(0,-1.05)
+    node[fisica rotulo, below] {$\vec P$};
+  \draw[fisica movimento] (8.6,9.25) -- ++(0,1.35)
+    node[fisica rotulo, above] {$\vec a$};
+  \node[fisica medida] at (2.25,9.25) {$N>P$};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.45,7.0)
+    {aceleração para baixo};
+  \coordinate (B) at (5.45,4.75);
+  \node[fisica corpo, minimum width=1.45cm, minimum height=0.95cm] at (B) {};
+  \draw[fisica forca] (B) -- ++(0,1.05)
+    node[fisica rotulo, above] {$\vec N$};
+  \draw[fisica forca] (B) -- ++(0,-1.65)
+    node[fisica rotulo, below] {$\vec P$};
+  \draw[fisica movimento] (8.6,4.75) -- ++(0,-1.35)
+    node[fisica rotulo, below] {$\vec a$};
+  \node[fisica medida] at (2.25,4.75) {$N<P$};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.45,2.15)
+    {queda livre};
+  \coordinate (C) at (5.45,0.55);
+  \node[fisica corpo, minimum width=1.45cm, minimum height=0.95cm] at (C) {};
+  \draw[fisica forca] (C) -- ++(0,-1.45)
+    node[fisica rotulo, below] {$\vec P$};
+  \node[fisica medida] at (2.25,0.55) {$N=0$};
+  \draw[fisica movimento] (8.6,0.55) -- ++(0,-1.35)
+    node[fisica rotulo, below] {$\vec a=\vec g$};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-tracao-em-cabo-e-polia-ideais
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.4,9.6);
+  \draw[fisica superficie] (1.0,8.55) -- (9.0,8.55);
+  \draw[elevecinza, line width=1.4pt] (5.0,8.55) -- (5.0,7.55);
+  \draw[elevecinza, fill=white, line width=1.4pt] (5.0,6.7) circle (0.85);
+  \fill[elevecinza] (5.0,6.7) circle (2.7pt);
+  \draw[elevecinza, line width=1.6pt] (4.15,6.7) -- (4.15,2.2);
+  \draw[elevecinza, line width=1.6pt] (5.85,6.7) -- (5.85,2.2);
+  \node[fisica corpo, minimum width=1.55cm, minimum height=1.05cm] at (4.15,1.65)
+    {carga};
+  \draw[fisica forca] (4.15,4.0) -- ++(0,1.65)
+    node[fisica rotulo, left] {$\vec T$};
+  \draw[fisica forca] (5.85,4.0) -- ++(0,-1.65)
+    node[fisica rotulo, right] {$\vec T$};
+  \node[fisica medida] at (8.25,6.7) {$|\vec T|$ igual};
+  \node[font=\large\bfseries, text=elevecinza] at (5.0,0.35)
+    {a polia muda a direção, não o módulo};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-corpos-ligados-e-mesma-aceleracao
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.1,8.8);
+  \draw[fisica superficie] (0.65,5.2) -- (8.0,5.2);
+  \node[fisica corpo, minimum width=1.8cm, minimum height=1.2cm] (A)
+    at (3.0,5.85) {$A$};
+  \draw[elevecinza, line width=1.5pt] (3.9,5.85) -- (7.4,5.85)
+    arc[start angle=90,end angle=0,radius=0.65] -- (8.05,3.0);
+  \draw[elevecinza, fill=white, line width=1.4pt] (7.4,5.2) circle (0.65);
+  \node[fisica corpo, minimum width=1.55cm, minimum height=1.2cm] (B)
+    at (8.05,2.45) {$B$};
+  \draw[fisica movimento] ($(A.north)+(0,0.65)$) -- ++(2.1,0)
+    node[fisica rotulo, right] {$\vec a_A$};
+  \draw[fisica movimento] ($(B.east)+(0.65,0.5)$) -- ++(0,-1.6)
+    node[fisica rotulo, right] {$\vec a_B$};
+  \node[font=\Large\bfseries, text=eleveazul] at (5.2,8.15)
+    {$|\vec a_A|=|\vec a_B|$};
+  \node[fisica rotulo] at (3.0,3.9) {fio inextensível};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-forca-restauradora-e-limite-elastico
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.1,11.8);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.25,11.25) {compressão};
+  \draw[fisica superficie] (1.0,9.05) -- (2.0,9.05);
+  \draw[elevecinza, line width=1.5pt, decorate,
+    decoration={zigzag, segment length=6pt, amplitude=3pt}]
+    (2.0,9.05) -- (5.45,9.05);
+  \node[fisica corpo, minimum width=1.45cm, minimum height=1.05cm] (A)
+    at (6.2,9.05) {};
+  \draw[fisica forca] (A.center) -- ++(2.1,0)
+    node[fisica rotulo, right] {$\vec F_{el}$};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.25,7.15) {extensão};
+  \draw[fisica superficie] (1.0,4.95) -- (2.0,4.95);
+  \draw[elevecinza, line width=1.5pt, decorate,
+    decoration={zigzag, segment length=10pt, amplitude=3pt}]
+    (2.0,4.95) -- (7.4,4.95);
+  \node[fisica corpo, minimum width=1.45cm, minimum height=1.05cm] (B)
+    at (8.15,4.95) {};
+  \draw[fisica forca] ($(B.south)+(0,-0.55)$) -- ++(-2.1,0)
+    node[fisica rotulo, left] {$\vec F_{el}$};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.25,3.0)
+    {além do limite elástico};
+  \draw[fisica superficie] (1.0,0.85) -- (2.0,0.85);
+  \draw[elevecinza, line width=1.5pt, decorate,
+    decoration={zigzag, segment length=13pt, amplitude=5pt}]
+    (2.0,0.85) -- (8.15,0.85);
+  \node[fisica corpo, minimum width=1.45cm, minimum height=1.05cm] at (8.9,0.85) {};
+  \node[fisica medida] at (5.25,-0.05) {não retorna ao comprimento inicial};
+\end{tikzpicture}
+
+\end{document}

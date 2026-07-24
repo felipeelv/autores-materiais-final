@@ -10,15 +10,28 @@ manifestos, estilos, ferramentas e renderizações temporárias ficam sob
 O repositório público `felipeelv/imagens-tikz` recebe somente cópias dos PNGs
 aprovados. O Markdown privado referencia esses arquivos por URL absoluta.
 
-## Estado salvo — 22/07/2026
+## Estado salvo — 23/07/2026
 
 - Geometria: 15 documentos/manifestos e 111 figuras;
 - 111 PNGs aprovados, publicados e validados por SHA-256;
 - 15 Markdown sincronizados com as cópias oficiais no Google Drive;
 - repositório público auditado com somente `README.md` e 111 PNGs;
-- último commit da produção do 3º bimestre: `2fdcd844d6a909e73c4204a99445dd7d55535447`.
+- último commit da produção do 3º bimestre: `2fdcd844d6a909e73c4204a99445dd7d55535447`;
+- Física: 17 documentos e 103 figuras aprovadas, publicadas, indexadas,
+  revisadas em contexto e sincronizadas no Google Drive;
+- Matemática EF1: 18 documentos e 58 figuras aprovadas, publicadas,
+  indexadas, revisadas em contexto e salvas no Google Drive;
+- Química: 5 documentos e 15 figuras aprovadas, publicadas, indexadas e
+  revisadas no original, a 300 px e no capítulo em coluna de 720 px;
+- repositório público: 287 PNGs, sendo 111 de Geometria, 103 de Física,
+  58 de Matemática EF1 e 15 de Química;
+- commit público vigente: `04cb6b4853f64c3a51e29fafbe3bcfb4b13dda72`.
 
 O detalhamento editorial está em `../Geometria/Acompanhamento de produção.md`; os commits da segunda etapa estão em `../Geometria/PLANO-DE-IMAGENS-TIKZ-BLOCO2.md`.
+O contrato específico do novo piloto está em
+`../Fisica/PADRAO-DE-IMAGENS-TIKZ.md`.
+O contrato visual de Química está em
+`../Quimica/PADRAO-DE-IMAGENS-TIKZ.md`.
 
 Os capítulos podem permanecer fora deste repositório, desde que sua raiz
 privada esteja listada em `raizes_markdown_permitidas` no `config.json`. O
@@ -33,10 +46,13 @@ repositório público de imagens.
 _tikz/
 ├── config.json
 ├── estilos/
-│   └── eleve-geometria.sty
+│   ├── eleve-geometria.sty
+│   ├── eleve-fisica.sty
+│   ├── eleve-matematica-ef1.sty
+│   └── eleve-quimica.sty
 ├── ferramentas/
 │   └── criar.py
-└── geometria/
+└── <disciplina>/
     └── <ano-serie>/
         └── <titulo-do-documento>/
             ├── figuras.tex
@@ -49,7 +65,7 @@ Cada ambiente `tikzpicture` de `figuras.tex` gera uma página do PDF e um PNG.
 A ordem deve coincidir com `pagina` no manifesto. `build/` é regenerável e não
 é versionado.
 
-## Fluxo de Geometria
+## Fluxo por disciplina
 
 ### 1. Criar o documento
 
@@ -158,16 +174,23 @@ python3 _tikz/ferramentas/criar.py indexar \
   _tikz/geometria/6ano/triangulos-elementos-e-classificacao/manifesto.json
 ```
 
-O marcador vira um bloco idempotente:
+O marcador vira um bloco idempotente. Quando a publicação já existe, o
+indexador usa o commit publicado na URL, tornando a referência imutável:
 
 ```md
 <!-- tikz:inicio fig-01-elementos-do-triangulo -->
-![Triângulo ABC com vértices, lados e ângulos internos identificados](https://raw.githubusercontent.com/felipeelv/imagens-tikz/main/geometria/6ano/triangulos-elementos-e-classificacao/fig-01-elementos-do-triangulo.png)
+![Triângulo ABC com vértices, lados e ângulos internos identificados](https://raw.githubusercontent.com/felipeelv/imagens-tikz/<commit-publicado>/geometria/6ano/triangulos-elementos-e-classificacao/fig-01-elementos-do-triangulo.png)
 <!-- tikz:fim fig-01-elementos-do-triangulo -->
 ```
 
 O indexador normal exige que a mesma versão já esteja publicada. Para montar
 uma prévia local antes da publicação, use `--rascunho`.
+
+Depois da indexação, abra o capítulo no mesmo formato de coluna ou página usado
+na entrega e faça uma segunda revisão visual. Além da prévia isolada de 300 px,
+essa conferência deve verificar o encontro da imagem com tabelas, subtítulos e
+imagens vizinhas. A sincronização final só ocorre quando não houver rótulos,
+vetores ou casos empilhados próximos o bastante para parecer sobreposição.
 
 ### 7. Conferir a publicação real
 
@@ -188,5 +211,6 @@ executado antes de copiar o Markdown pronto para o Google Drive.
 - blueprints, memórias e arquivos `AUTOR.md`;
 - logs, PDFs intermediários ou credenciais.
 
-Física e Química usarão a mesma hierarquia no futuro, mas permanecem inativas
-em `config.json` até que seus estilos e regras pedagógicas sejam aprovados.
+Física está ativa com estilo e fluxo aprovados em todos os capítulos do
+3º bimestre. Química também está ativa: o piloto e os quatro Capítulos 2
+oficiais foram produzidos, publicados e revisados em contexto.

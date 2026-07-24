@@ -27,7 +27,7 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **Anexo A** (como esc
 - **1 tema = 1 capítulo · 1 aula = 1 tópico numerado `## N.`**, na ordem do blueprint. Cada aula é autossuficiente (~50 min).
 - **O material é a REFERÊNCIA DO ALUNO — a explicação é do professor.** Escreva para ser consultado: definição localizável, dado à mão, comparação em tabela. Não escreva o que o professor vai dizer (analogia estendida, recapitulação, parágrafo que amarra a ideia).
 - **Máximo 45% do conteúdo da aula em prosa corrida.** Tudo que for enumerável (fatores, tipos, etapas, condições) sai em **lista ou tabela**. Frase média de ~14 palavras.
-- **220–250 palavras de conteúdo por aula, teto firme de 300** (tabelas, esquemas e fórmulas não contam). O teto **não é meta**; não existe mínimo. Conteúdo denso (ciclos, frequências, vias metabólicas) vira **fatias finas**, nunca aula inchada.
+- **180–210 palavras de conteúdo por aula, teto firme de 220** (tabelas, esquemas e fórmulas não contam). O teto **não é meta**; o piso de 180 serve apenas para detectar aula possivelmente truncada. Conteúdo denso (ciclos, frequências, vias metabólicas) vira **fatias finas**, nunca aula inchada.
 - **Abertura de no máximo 25 palavras** — fato direto ou fenômeno concreto, sem cena narrativa.
 - **Material é só conteúdo.** Zero atividade, exercício proposto, experimento a executar, projeto, revisão ou prova. **Exemplo resolvido de cálculo é conteúdo e é permitido**; "agora calcule você" não.
 - **Sem seções de fechamento.** Nada de "Introdução", "Sua Parte", "O que a Bíblia diz sobre…", "Simplificando", "Para não esquecer" — esses elementos vivem **dentro** das aulas.
@@ -52,7 +52,7 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **Anexo A** (como esc
 
 Capítulos de **Biologia, 9º ano e 1ª a 3ª série do EM**, para o 3º e 4º bimestres de 2026. Do 6º ao 8º ano a disciplina é **Ciências** (projeto próprio).
 
-**A equação do modelo:** `1 tema = 1 capítulo` · `1 aula = 1 tópico numerado (## N.)` · `1 aula ≈ 50 min ≈ 220–250 palavras de conteúdo (teto 300)` · `≤ 45% em prosa corrida`.
+**A equação do modelo:** `1 tema = 1 capítulo` · `1 aula = 1 tópico numerado (## N.)` · `1 aula ≈ 50 min ≈ 180–210 palavras de conteúdo (teto 220)` · `≤ 45% em prosa corrida`.
 
 > ⚠️ **Prosa corrida é o defeito principal a evitar — e a contagem de palavras não o detecta.** Medido em 07/2026: capítulos do mesmo tamanho do texto-referência ainda liam como "texto demais", porque tinham 78% de prosa contra 46% da referência.
 
@@ -92,7 +92,7 @@ O capítulo **termina na última aula**. Não há seção de fechamento.
 - **1 aula = 1 tópico `## N.`**, na ordem do blueprint; `---` entre aulas. Quem consulta só aquele tópico encontra o conteúdo completo.
 - Tópicos internos viram subseções **numeradas `### N.1`, `### N.2`** (a numeração da aula, depois a da parte). Título curto e descritivo — o aluno usa como índice; pode ser pergunta orientadora, desde que cubra o tópico do blueprint.
 - **2 a 3 subseções por aula.** Mais que isso fragmenta; cada subseção nova traz sua própria abertura e engorda o texto.
-- **Extensão: alvo 220–250 palavras, teto firme de 300** por aula (tabelas, esquemas e fórmulas fora da conta). Desenvolva todo o recorte do blueprint e pare — não adicione exemplos extras nem parágrafos de contexto para "engordar" a aula. Se passar de 300, corte rodeio e redundância, nunca recorte do blueprint. Aula que cobriu tudo em 200 palavras está pronta. Conteúdo denso (frequências, ciclos, vias metabólicas) → **fatias finas**, como o blueprint já definiu.
+- **Extensão: alvo 180–210 palavras, teto firme de 220** por aula (tabelas, esquemas e fórmulas fora da conta). Desenvolva todo o recorte do blueprint e pare — não adicione exemplos extras nem parágrafos de contexto para "engordar" a aula. Se passar de 220, corte rodeio e redundância, nunca recorte do blueprint. Aula que cobriu tudo em 180 palavras está pronta. Conteúdo denso (frequências, ciclos, vias metabólicas) → **fatias finas**, como o blueprint já definiu.
 
 **Onde a gordura aparece** — corte estes antes de qualquer outra coisa:
 
@@ -191,7 +191,7 @@ O capítulo **termina na última aula**. Não há seção de fechamento.
 | Notação científica | `$$3\times 10^{9}$$` (pares de bases) |
 | Seta de processo | `\rightarrow` |
 | Equilíbrio (reação) | `\rightleftharpoons` |
-| Equação química (fotossíntese, respiração) — `\ce{}` (mhchem, validado) | `$$\ce{6CO2 + 6H2O -> C6H12O6 + 6O2}$$` |
+| Equação química (fotossíntese, respiração) — MathJax básico | `$$6\mathrm{CO_2} + 6\mathrm{H_2O} \rightarrow \mathrm{C_6H_{12}O_6} + 6\mathrm{O_2}$$` |
 
 **Formato do cálculo em Biologia** — fórmula em linha própria, precedida de frase introdutória, com cada elemento definido logo abaixo; exemplo resolvido **passo a passo, uma operação por linha** (nunca compactar etapas); e **o resultado termina em leitura biológica, não no número**:
 
@@ -274,11 +274,11 @@ Estes elementos existiam como blocos pós-conteúdo no formato antigo (Sua Parte
 > ```
 > python3 ./validar-capitulo.py <capitulo.md> --disciplina biologia [--blueprint <arq.md>]
 > ```
-> E **não persiga a contagem exata de palavras**: conte uma vez, ao final. Só reescreva se estourou o teto de 300 — ficar abaixo dele não é defeito, e aula de 200 palavras com o recorte completo é entrega boa, não entrega curta.
+> E **não persiga a contagem exata de palavras**: conte uma vez, ao final. Só reescreva se estourou o teto de 220 ou se ficou abaixo de 180 com sinal de conteúdo truncado. Aula de 180 palavras com o recorte completo é entrega boa, não entrega curta.
 
 - [ ] Título é `# Capítulo {N} — {Tema}` (sem linha de disciplina/série)
 - [ ] Todas as aulas do blueprint, na ordem, com todo o recorte desenvolvido
-- [ ] Cada aula: 220–250 palavras (teto 300) · abertura ≤ 25 palavras (fato direto ou fenômeno, sem cena narrativa) · autossuficiente
+- [ ] Cada aula: 180–210 palavras (teto 220) · abertura ≤ 25 palavras (fato direto ou fenômeno, sem cena narrativa) · autossuficiente
 - [ ] **Prosa corrida ≤ 45% do conteúdo da aula** — todo conteúdo enumerável em lista ou tabela
 - [ ] Subseções numeradas `N.1`, `N.2` — 2 a 3 por aula
 - [ ] Frases curtas (média ~14 palavras); definições complementares inline, entre parênteses

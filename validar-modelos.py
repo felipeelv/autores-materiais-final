@@ -14,8 +14,14 @@ DISCIPLINAS = {
     "Estudos Sociais": "estudos-sociais",
     "Fisica": "fisica",
     "Financeira": "financeira",
+    "Filosofia": "filosofia",
+    "Geografia": "geografia",
     "Geometria": "geometria",
+    "Historia": "historia",
     "Matematica EF1": "matematica-ef1",
+    "Portugues": "portugues",
+    "Quimica": "quimica",
+    "Sociologia": "sociologia",
 }
 
 

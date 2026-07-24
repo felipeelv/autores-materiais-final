@@ -105,11 +105,7 @@ Essa relação é representada por:
 
 $$P = m \cdot g$$
 
-Nessa expressão, as grandezas são:
-
-- $$P$$ — peso, medido em newton (N);
-- $$m$$ — massa, medida em quilograma (kg);
-- $$g$$ — aceleração da gravidade, cerca de $$10\,\mathrm{m/s^2}$$ na Terra.
+Aqui, $$g$$ é a aceleração da gravidade, cerca de $$10\,\mathrm{m/s^2}$$ na Terra.
 
 ### 4.2 O astro muda o peso
 

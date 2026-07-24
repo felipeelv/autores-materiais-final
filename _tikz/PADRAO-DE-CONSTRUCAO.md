@@ -4,6 +4,9 @@ Este documento fixa o contrato visual e editorial das figuras produzidas em
 `_tikz/`. O fluxo operacional de renderização, aprovação, publicação e
 indexação continua em `README.md`.
 
+Contratos específicos de disciplina complementam estas regras sem substituí-las.
+Para Física, consultar `../Fisica/PADRAO-DE-IMAGENS-TIKZ.md`.
+
 ## 1. Unidade pedagógica
 
 - Cada PNG responde a **uma pergunta visual** e ocupa o ponto do Markdown em
@@ -28,6 +31,15 @@ indexação continua em `README.md`.
 - Desenho, rótulos e explicações ocupam faixas exclusivas.
 - Nenhum texto pode tocar outro texto nem cruzar segmento, arco, seta, vértice
   ou marca de congruência.
+- Na prévia de 300 px, manter pelo menos **8 px de respiro** entre um rótulo e
+  qualquer traço não relacionado. Comparações empilhadas mantêm pelo menos
+  **16 px livres** entre os limites visuais de um caso e o seguinte.
+- Seta informativa não pode compartilhar o mesmo traçado de corda, superfície,
+  trajetória, eixo ou contorno. Quando as direções coincidirem, deslocar a seta
+  para uma faixa paralela e preservar a estrutura visível.
+- Nenhuma seta atravessa letra, medida ou nome colocado dentro de um corpo.
+  Se o vetor precisar partir do centro, o identificador do corpo fica fora da
+  linha do vetor.
 - `\normalsize` é o tamanho mínimo; primeiro encurte o rótulo, depois aumente
   a área útil e, se ainda necessário, divida a figura. Nunca recupere espaço
   reduzindo a fonte.
@@ -49,6 +61,17 @@ sips -s format jpeg /tmp/fig-01-exemplo-300px.png \
 Usar `--resampleWidth`, nunca `-Z`: a altura da figura não pode reduzir a
 largura usada no teste. DPI alto melhora definição, mas não corrige texto
 pequeno, excesso de conteúdo ou sobreposição.
+
+A aprovação possui **duas escalas obrigatórias**:
+
+1. **figura isolada:** original e prévia de 300 px sobre branco;
+2. **capítulo diagramado:** imagem já indexada, na largura real da coluna ou da
+   página usada pelo material.
+
+A primeira revisão autoriza a publicação inicial. A segunda ocorre antes da
+sincronização final e do encerramento do capítulo. Um PNG pode funcionar
+isoladamente e ainda criar colisões na diagramação; por isso, sem a segunda
+revisão a entrega permanece provisória.
 
 ## 4. Fonte, nome e localização
 
@@ -84,6 +107,9 @@ material em colunas.
 - [ ] posição correta no Markdown;
 - [ ] notação e medidas iguais às do capítulo;
 - [ ] nenhum texto ou traço sobreposto na prévia de 300 px;
+- [ ] respiro mínimo preservado entre rótulos, vetores e casos empilhados;
+- [ ] nenhuma seta encobre corda, superfície, trajetória ou identificador;
+- [ ] capítulo diagramado conferido na largura real da coluna ou página;
 - [ ] fonte mínima `\normalsize`;
 - [ ] sem título, fórmula ou explicação redundante;
 - [ ] texto alternativo idêntico ao manifesto;

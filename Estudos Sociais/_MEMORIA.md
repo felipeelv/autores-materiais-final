@@ -1,6 +1,6 @@
 # Memória do Kit — Estudos Sociais · Produção de Capítulos (Reorganização 2026 · 2º Semestre)
 
-> Registro de origem, decisões e estado deste kit. Ler antes de alterar qualquer arquivo da pasta. Última atualização: **21/07/2026**.
+> Registro de origem, decisões e estado deste kit. Ler antes de alterar qualquer arquivo da pasta. Última atualização: **22/07/2026**.
 
 ---
 
@@ -53,6 +53,8 @@ Kit criado em **19/07/2026** a partir da memória do projeto Claude.ai (`Estudos
 - [x] Primeiro modelo por ano: Civilizações do Oriente Antigo · 6º ano · `modelos/estudos-sociais-6ano-modelo.md` — usado para calibrar concisão e respiro visual
 - [x] Modelos do 4º ao 9º ano produzidos e disponíveis em `modelos/`
 - [x] Boxes revisados nos seis modelos: 1 por aula, família 🔎 💭 👤 equilibrada e sem duplicação de conteúdo
+- [x] Produção do 3º bimestre concluída: 34 capítulos e 162 aulas, do 4º ao 9º ano, salvos na pasta oficial e aprovados pelo validador
+- [x] Revisão final contra os blueprints: títulos, ordem, quantidade de aulas, recortes e itens NÃO ANTECIPAR conferidos; redação mantida concisa e direta
 - [ ] Capítulo piloto do EM (sugestão: Fundamentos e regulação do comércio internacional · Geografia · 2ª série · `3bim-bloco2.md` — testa densidade conceitual, dados e Smith × Prebisch sem escolher lado)
 - [ ] Após pilotos aprovados: registrar ajustes aqui
 
@@ -70,6 +72,7 @@ Kit criado em **19/07/2026** a partir da memória do projeto Claude.ai (`Estudos
 | 21/07/2026 | Conjunto de modelos do Fundamental concluído do 4º ao 9º ano; todos recalibrados para parágrafos enxutos, 180–220 palavras e respiro visual. |
 | 21/07/2026 | Regras visuais de Ciências aplicadas a Estudos Sociais: nenhum trecho com três parágrafos corridos e nenhum par de subtópicos sem marcadores. Os seis modelos foram revisados, e o validador ganhou as checagens `[2a] Ritmo visual da prosa` e `[2b] Alternância de subtópicos`. |
 | 21/07/2026 | Auditoria dos boxes corrigiu a ausência de 🔎 e 💭 nos modelos: as 31 aulas passaram a ter exatamente 1 box cada (14 🔎, 11 💭 e 6 👤). A revisão converteu conteúdo existente para evitar redundância; todos os seis capítulos continuaram aprovados pelo validador. Registrada também a limitação do validador atual, que não confere o mínimo de boxes por aula. |
+| 22/07/2026 | Concluída a produção integral do 3º bimestre: 28 capítulos novos e 131 aulas foram produzidos, somando 34 capítulos e 162 aulas com os seis modelos iniciais. Todos foram salvos em `Segundo Semestre/Estudos Sociais`, validados e revisados contra os blueprints. A orientação do Felipe de priorizar concisão foi aplicada sem retirar o recorte autoritativo. |
 
 ---
 

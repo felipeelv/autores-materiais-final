@@ -1,0 +1,155 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-fisica}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-fluxo-e-orientacao-da-area
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.3,12.4);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.45,11.85)
+    {$\theta=0^\circ$: fluxo máximo};
+  \foreach \x in {1.2,2.7,...,9.2}
+    \draw[fisica campo] (\x,8.0) -- (\x,10.25);
+  \draw[elevecinza, fill=eleveazulclaro, opacity=.65, line width=1.2pt]
+    (3.0,8.55) -- (7.9,8.55) -- (8.6,9.55) -- (3.7,9.55) -- cycle;
+  \draw[fisica movimento] (5.8,9.05) -- ++(0,1.55)
+    node[fisica rotulo, right] {$\vec A$};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.45,7.15)
+    {$0^\circ<\theta<90^\circ$: fluxo intermediário};
+  \foreach \x in {1.2,2.7,...,9.2}
+    \draw[fisica campo] (\x,4.1) -- (\x,6.2);
+  \draw[elevecinza, fill=eleveazulclaro, opacity=.65, line width=1.2pt]
+    (3.4,4.25) -- (7.9,4.95) -- (8.2,6.0) -- (3.7,5.3) -- cycle;
+  \draw[fisica movimento] (5.8,5.1) -- ++(1.0,1.7)
+    node[fisica rotulo, above] {$\vec A$};
+  \draw[elevelaranja, line width=1.1pt] (5.8,6.0)
+    arc[start angle=90,end angle=60,radius=.9];
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.45,3.2)
+    {$\theta=90^\circ$: fluxo nulo};
+  \foreach \x in {1.2,2.7,...,9.2}
+    \draw[fisica campo] (\x,0.55) -- (\x,2.25);
+  \draw[elevecinza, fill=eleveazulclaro, opacity=.65, line width=1.2pt]
+    (5.1,0.45) -- (6.2,0.45) -- (6.2,2.35) -- (5.1,2.35) -- cycle;
+  \draw[fisica movimento] (5.65,1.4) -- ++(2.1,0)
+    node[fisica rotulo, right] {$\vec A$};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-tres-modos-de-variar-o-fluxo
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.2,11.1);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.35,10.55)
+    {alterar $B$};
+  \draw[elevecinza, line width=1.4pt] (3.2,8.2) ellipse (2.1 and .8);
+  \foreach \x in {2.3,3.2,4.1}
+    \draw[fisica campo] (\x,7.25) -- (\x,9.25);
+  \draw[fisica movimento] (6.2,8.2) -- (8.15,8.2)
+    node[fisica rotulo, right] {mais linhas};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.35,6.7)
+    {alterar $A$};
+  \draw[elevecinza, line width=1.4pt] (2.5,4.7) ellipse (1.25 and .55);
+  \draw[elevecinza, line width=1.4pt] (7.7,4.7) ellipse (2.1 and .8);
+  \draw[fisica movimento] (4.25,4.7) -- (5.5,4.7);
+  \node[fisica rotulo] at (5.1,3.75) {área maior};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.35,3.0)
+    {alterar $\theta$};
+  \draw[elevecinza, line width=1.4pt] (3.0,0.95) ellipse (1.75 and .65);
+  \draw[elevecinza, line width=1.4pt, rotate around={35:(7.75,0.95)}]
+    (7.75,0.95) ellipse (1.75 and .65);
+  \draw[fisica movimento] (5.0,0.95) -- (6.0,0.95);
+  \draw[fisica movimento] (7.75,0.95) -- ++(1.35,1.15)
+    node[fisica rotulo, right] {$\vec A$};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-ima-em-movimento-e-corrente-induzida
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.3,8.6);
+  \node[fisica corpo, minimum width=2.6cm, minimum height=1.35cm] (I)
+    at (2.0,4.35) {};
+  \draw[elevecinza, line width=1.1pt] (2.0,3.68) -- (2.0,5.02);
+  \node[font=\Large\bfseries, text=eleveazul] at (1.35,4.35) {S};
+  \node[font=\Large\bfseries, text=elevelaranja] at (2.65,4.35) {N};
+  \draw[fisica movimento] (3.55,4.35) -- (5.25,4.35)
+    node[fisica rotulo, above] {aproxima};
+  \foreach \x in {5.9,6.45,...,8.65}
+    \draw[elevecinza, line width=1.2pt] (\x,2.55) arc[start angle=270,end angle=90,x radius=.38,y radius=1.8];
+  \draw[elevecinza, line width=1.3pt] (5.5,4.35) -- (5.5,1.05) -- (9.7,1.05)
+    -- (9.7,4.35);
+  \draw[eleveazul, line width=1.2pt] (7.6,0.55) circle (0.65);
+  \draw[elevelaranja, line width=1.6pt] (7.6,0.55) -- ++(0.35,0.4);
+  \node[fisica rotulo, anchor=west] at (9.1,6.65) {bobina};
+  \node[fisica medida] at (7.6,1.85) {corrente induzida};
+  \node[font=\large\bfseries, text=elevecinza] at (5.5,8.0)
+    {movimento relativo varia o fluxo};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-oposicao-de-lenz
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.4,10.5);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.45,9.95)
+    {ímã se aproxima};
+  \node[fisica corpo, minimum width=2.3cm, minimum height=1.2cm] at (2.0,7.7) {};
+  \node[font=\Large\bfseries, text=elevelaranja] at (2.55,7.7) {N};
+  \node[font=\Large\bfseries, text=eleveazul] at (1.45,7.7) {S};
+  \draw[fisica movimento] (3.35,8.7) -- (4.75,8.7)
+    node[fisica rotulo, above] {aproxima};
+  \foreach \x in {6.0,6.5,...,8.5}
+    \draw[elevecinza, line width=1.2pt] (\x,6.35) arc[start angle=270,end angle=90,x radius=.34,y radius=1.35];
+  \node[fisica medida] at (5.75,7.7) {N};
+  \node[fisica rotulo] at (4.55,6.65) {repulsão};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.45,5.1)
+    {ímã se afasta};
+  \node[fisica corpo, minimum width=2.3cm, minimum height=1.2cm] at (2.0,2.8) {};
+  \node[font=\Large\bfseries, text=elevelaranja] at (2.55,2.8) {N};
+  \node[font=\Large\bfseries, text=eleveazul] at (1.45,2.8) {S};
+  \draw[fisica movimento] (3.35,3.8) -- ++(-1.2,0)
+    node[fisica rotulo, above] {afasta};
+  \foreach \x in {6.0,6.5,...,8.5}
+    \draw[elevecinza, line width=1.2pt] (\x,1.45) arc[start angle=270,end angle=90,x radius=.34,y radius=1.35];
+  \node[fisica medida] at (5.75,2.8) {S};
+  \node[fisica rotulo] at (4.55,1.75) {atração};
+  \node[font=\large\bfseries, text=elevecinza] at (5.45,0.4)
+    {o campo induzido combate a variação};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-gerador-por-rotacao-da-espira
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.9,9.2);
+  \node[fisica corpo, minimum width=1.55cm, minimum height=5.4cm] at (1.25,4.4) {N};
+  \node[fisica corpo, minimum width=1.55cm, minimum height=5.4cm] at (9.45,4.4) {S};
+  \foreach \y in {2.25,3.3,4.4,5.5,6.55}
+    \draw[fisica campo] (2.05,\y) -- (8.65,\y);
+  \draw[elevecinza, line width=2.2pt, rotate around={28:(5.35,4.4)}]
+    (3.65,2.45) rectangle (7.05,6.35);
+  \draw[fisica movimento] (7.15,7.4)
+    arc[start angle=25,end angle=155,x radius=1.8,y radius=.8];
+  \node[fisica rotulo] at (5.35,8.45) {rotação};
+  \draw[elevecinza, line width=1.4pt] (5.35,1.1) -- (5.35,7.7);
+  \node[font=\large\bfseries, text=elevecinza] at (5.35,0.35)
+    {a orientação muda continuamente};
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-transformador-e-razao-de-espiras
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.3,9.2);
+  \draw[elevecinza, line width=14pt, rounded corners=12pt]
+    (2.0,1.25) rectangle (9.3,7.65);
+  \draw[white, line width=8pt, rounded corners=9pt]
+    (2.0,1.25) rectangle (9.3,7.65);
+  \foreach \y in {2.0,2.65,...,6.6}
+    \draw[eleveazul, line width=1.6pt] (1.2,\y) arc[start angle=270,end angle=90,x radius=.55,y radius=.33];
+  \foreach \y in {2.35,3.65,4.95,6.25}
+    \draw[elevelaranja, line width=1.6pt] (8.75,\y) arc[start angle=270,end angle=90,x radius=.55,y radius=.48];
+  \node[fisica rotulo] at (1.25,8.45) {primária: $N_1$};
+  \node[fisica medida] at (9.5,8.45) {secundária: $N_2$};
+  \draw[fisica campo] (3.0,4.45) -- (8.2,4.45);
+  \node[fisica rotulo] at (5.65,5.15) {fluxo compartilhado};
+  \node[fisica rotulo] at (1.25,0.45) {$V_1,I_1$};
+  \node[fisica medida] at (9.5,0.45) {$V_2,I_2$};
+\end{tikzpicture}
+
+\end{document}

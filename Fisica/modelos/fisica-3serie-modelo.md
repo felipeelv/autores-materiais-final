@@ -84,12 +84,7 @@ Para um fio retilíneo longo, o módulo do campo é:
 
 $$B = \frac{\mu_0 \cdot I}{2\pi \cdot r}$$
 
-Nessa expressão, as grandezas são:
-
-- $$B$$ — campo magnético (T);
-- $$I$$ — corrente elétrica (A);
-- $$r$$ — distância ao fio (m);
-- $$\mu_0=4\pi\times10^{-7}\,\mathrm{T \cdot m/A}$$ — permeabilidade do vácuo.
+Aqui, $$\mu_0=4\pi\times10^{-7}\,\mathrm{T \cdot m/A}$$ é a permeabilidade magnética do vácuo, e $$r$$ é a distância ao fio.
 
 O campo aumenta com a corrente e diminui com a distância.
 
@@ -128,8 +123,6 @@ No centro de uma espira circular, o campo vale:
 
 $$B = \frac{\mu_0 \cdot I}{2R}$$
 
-Nessa expressão, $$B$$ é medido em tesla (T), $$I$$ em ampere (A) e o raio $$R$$ em metro (m).
-
 A regra da mão direita também se aplica: dedos acompanham a corrente na espira; o polegar indica o campo no eixo.
 
 ### 4.2 Solenoide ideal
@@ -142,20 +135,26 @@ $$n$$ é a quantidade de espiras por metro:
 
 $$n = \frac{N}{L}$$
 
-Nessa relação, $$N$$ é o número de espiras e $$L$$, o comprimento (m).
+Nessa relação, $$N$$ é o número de espiras e $$L$$, o comprimento do solenoide.
 
 📝 **Exemplo:**
 Para $$N=1000$$, $$L=0{,}50\,\mathrm{m}$$ e $$I=2\,\mathrm{A}$$:
 
 Dados: $$N=1000$$, $$L=0{,}50\,\mathrm{m}$$ e $$I=2\,\mathrm{A}$$
 
-$$n = \frac{1000}{0{,}50} = 2000\,\mathrm{m^{-1}}$$
+$$n = \frac{N}{L}$$
+
+$$n = \frac{1000}{0{,}50}$$
+
+$$n = 2000\,\mathrm{m^{-1}}$$
 
 $$B = \mu_0 \cdot n \cdot I$$
 
 $$B = 4\pi\times10^{-7}\cdot 2000\cdot 2$$
 
-$$B \approx 5{,}0\times10^{-3}\,\mathrm{T} = 5{,}0\,\mathrm{mT}$$
+$$B \approx 5{,}0\times10^{-3}\,\mathrm{T}$$
+
+$$B \approx 5{,}0\,\mathrm{mT}$$
 
 > 💡 **Você sabia?**
 >

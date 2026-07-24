@@ -1,0 +1,83 @@
+{
+  "versao": 1,
+  "disciplina": "fisica",
+  "ano_serie": "3serie",
+  "titulo_documento": "Indução eletromagnética",
+  "slug_documento": "inducao-eletromagnetica",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Fisica/3serie/fisica-3serie-3bim-cap3.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-fluxo-e-orientacao-da-area",
+      "pagina": 1,
+      "arquivo": "fig-01-fluxo-e-orientacao-da-area.png",
+      "alt": "Três orientações da superfície em campo uniforme com fluxos máximo, intermediário e nulo",
+      "aprovada": true,
+      "sha256": "fcfcb52e2cd01c920224e998f744c309e8b1e466b5bc29a076f8d0b1cadf8ff0",
+      "largura_px": 1430,
+      "altura_px": 1560,
+      "publicado_sha256": "fcfcb52e2cd01c920224e998f744c309e8b1e466b5bc29a076f8d0b1cadf8ff0",
+      "publicado_commit": "e17f2259625af4ba7fee38863f0ffbad50ee4118"
+    },
+    {
+      "id": "fig-02-tres-modos-de-variar-o-fluxo",
+      "pagina": 2,
+      "arquivo": "fig-02-tres-modos-de-variar-o-fluxo.png",
+      "alt": "Comparação entre variar campo, área e ângulo de uma espira",
+      "aprovada": true,
+      "sha256": "635a4b340f830441a37c0d211fdb4202f441935384311a1ba621df571911a6a2",
+      "largura_px": 1418,
+      "altura_px": 1406,
+      "publicado_sha256": "635a4b340f830441a37c0d211fdb4202f441935384311a1ba621df571911a6a2",
+      "publicado_commit": "e17f2259625af4ba7fee38863f0ffbad50ee4118"
+    },
+    {
+      "id": "fig-03-ima-em-movimento-e-corrente-induzida",
+      "pagina": 3,
+      "arquivo": "fig-03-ima-em-movimento-e-corrente-induzida.png",
+      "alt": "Ímã aproximando-se de bobina ligada a medidor com corrente induzida",
+      "aprovada": true,
+      "sha256": "a86f0af162e5cd61028c4587b10bfb9d0ccaca0b1504ffcc6be971270ed497a3",
+      "largura_px": 1430,
+      "altura_px": 1111,
+      "publicado_sha256": "a86f0af162e5cd61028c4587b10bfb9d0ccaca0b1504ffcc6be971270ed497a3",
+      "publicado_commit": "e17f2259625af4ba7fee38863f0ffbad50ee4118"
+    },
+    {
+      "id": "fig-04-oposicao-de-lenz",
+      "pagina": 4,
+      "arquivo": "fig-04-oposicao-de-lenz.png",
+      "alt": "Bobina criando polos que se opõem à aproximação e ao afastamento do ímã",
+      "aprovada": true,
+      "sha256": "5880efba77d4565442cf90c6386c380d65203b17311aeda60aa68fcd4ff7e913",
+      "largura_px": 1441,
+      "altura_px": 1335,
+      "publicado_sha256": "5880efba77d4565442cf90c6386c380d65203b17311aeda60aa68fcd4ff7e913",
+      "publicado_commit": "e17f2259625af4ba7fee38863f0ffbad50ee4118"
+    },
+    {
+      "id": "fig-05-gerador-por-rotacao-da-espira",
+      "pagina": 5,
+      "arquivo": "fig-05-gerador-por-rotacao-da-espira.png",
+      "alt": "Espira girando entre polos magnéticos e produzindo variação periódica de fluxo",
+      "aprovada": true,
+      "sha256": "a79917fc6a61487ad6372d4419f1b4de0e50c121f1454eee45e9e50a4f8e600d",
+      "largura_px": 1382,
+      "altura_px": 1182,
+      "publicado_sha256": "a79917fc6a61487ad6372d4419f1b4de0e50c121f1454eee45e9e50a4f8e600d",
+      "publicado_commit": "e17f2259625af4ba7fee38863f0ffbad50ee4118"
+    },
+    {
+      "id": "fig-06-transformador-e-razao-de-espiras",
+      "pagina": 6,
+      "arquivo": "fig-06-transformador-e-razao-de-espiras.png",
+      "alt": "Núcleo ferromagnético com bobinas primária e secundária de números de espiras diferentes",
+      "aprovada": true,
+      "sha256": "10edd0585e71897376e901b50a70707701534b8b9bf91b3923775ae516ca8096",
+      "largura_px": 1430,
+      "altura_px": 1182,
+      "publicado_sha256": "10edd0585e71897376e901b50a70707701534b8b9bf91b3923775ae516ca8096",
+      "publicado_commit": "e17f2259625af4ba7fee38863f0ffbad50ee4118"
+    }
+  ]
+}

@@ -51,9 +51,14 @@ DISC = {
 # Mudar o método sem recalibrar faz o validador reprovar o padrão-ouro.
 MIN_PAL, MAX_PAL = 180, 300
 PAL_POR_DISC = {
+    "sociologia":     (170, 195),
     "fisica":         (110, 190),
     "geometria":      (150, 240),
     "matematica-ef1": (150, 260),   # provisório — calibrar após o piloto
+}
+
+TETO_DURO_POR_DISC = {
+    "sociologia": 200,
 }
 
 # Títulos de fechamento proibidos (o formato novo dissolveu tudo nas aulas).
@@ -111,6 +116,30 @@ def separar_aulas(texto: str):
     return [(a[0], a[1], a[3]) for a in aulas]
 
 
+def subsecoes_com_prosa_corrida(texto: str):
+    """Localiza subseções com 3+ parágrafos de prosa sem quebra visual."""
+    achados = []
+    partes = re.split(r"(?m)^(?=###\s+)", texto)
+    for parte in partes:
+        cabecalho = re.match(r"###\s+([^\n]+)", parte)
+        if not cabecalho:
+            continue
+        corpo = parte[cabecalho.end():]
+        corpo = re.split(r"(?m)^(?:##\s+|---\s*$)", corpo, maxsplit=1)[0]
+        corrida = 0
+        maior = 0
+        for bloco in re.split(r"\n\s*\n", corpo.strip()):
+            inicio = bloco.lstrip()
+            if re.match(r"(?:>|[-*+]\s|\d+[.)]\s|\||```)", inicio):
+                corrida = 0
+            elif inicio:
+                corrida += 1
+                maior = max(maior, corrida)
+        if maior >= 3:
+            achados.append((cabecalho.group(1).strip(), maior))
+    return achados
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("capitulo")
@@ -151,10 +180,14 @@ def main():
         ok("pergunta-problema em blockquote, sem rótulo")
 
     # 2. Extensão por aula ----------------------------------------------------
-    print(f"\n[2] Extensão por aula (teto {max_pal} · piso de referência {min_pal})")
+    teto_duro = TETO_DURO_POR_DISC.get(args.disciplina)
+    detalhe_teto = f" · teto de segurança {teto_duro}" if teto_duro else ""
+    print(f"\n[2] Extensão por aula (teto {max_pal} · piso de referência {min_pal}{detalhe_teto})")
     for num, tit, corpo in aulas:
         n = contar_conteudo(corpo)
-        if n > max_pal * 1.1:
+        if teto_duro and n > teto_duro:
+            rc |= falha(f"Aula {num} — {tit}: {n} palavras")
+        elif n > max_pal * 1.1:
             rc |= falha(f"Aula {num} — {tit}: {n} palavras")
         elif n > max_pal:
             aviso(f"Aula {num} — {tit}: {n} palavras (pouco acima do teto)")
@@ -162,6 +195,37 @@ def main():
             aviso(f"Aula {num} — {tit}: {n} palavras (abaixo do piso — só confira se ficou truncada)")
         else:
             ok(f"Aula {num} — {tit}: {n} palavras")
+
+    if args.disciplina == "sociologia":
+        print("\n[2a] Ritmo visual da prosa")
+        corridas = subsecoes_com_prosa_corrida(texto)
+        for titulo, quantidade in corridas:
+            rc |= falha(
+                f"{titulo}: {quantidade} parágrafos consecutivos sem quebra visual"
+            )
+        if not corridas:
+            ok("nenhuma sequência de 3+ parágrafos sem lista, tabela ou blockquote")
+
+        print("\n[2b] Organizadores visuais por aula")
+        sem_organizador = []
+        for num, tit, corpo in aulas:
+            partes = re.split(r"(?m)^(?=###\s+)", corpo)
+            organizadas = 0
+            for parte in partes:
+                if not re.match(r"###\s+", parte):
+                    continue
+                tem_lista = bool(re.search(r"(?m)^\s*[-*+]\s+\S", parte))
+                tem_tabela = bool(re.search(r"(?m)^\|.+\|$", parte))
+                if tem_lista or tem_tabela:
+                    organizadas += 1
+            if organizadas < 2:
+                sem_organizador.append(
+                    f"Aula {num} — {tit}: apenas {organizadas} subseção(ões) com lista ou tabela"
+                )
+        for item in sem_organizador:
+            rc |= falha(item)
+        if not sem_organizador:
+            ok("todas as aulas possuem ao menos 2 subseções com lista ou tabela")
 
     # 2b. LaTeX que quebra a renderização -------------------------------------
     # Dois bugs reais do material do 3º bimestre: `\text{}` não aceita acento
@@ -218,6 +282,17 @@ def main():
         rc |= falha(f"boxes consecutivos sem prosa entre eles — {c}")
     if not consec:
         ok("nenhum par de boxes consecutivos")
+
+    if args.disciplina == "sociologia":
+        inconsistentes = []
+        for num, tit, corpo in aulas:
+            qtd = sum(1 for linha in corpo.splitlines() if BOX_TITULO.match(linha))
+            if qtd != 1:
+                inconsistentes.append(f"Aula {num} — {tit}: {qtd}")
+        for item in inconsistentes:
+            rc |= falha(f"Sociologia exige exatamente 1 box por aula — {item}")
+        if not inconsistentes:
+            ok("exatamente 1 box por aula")
 
     # 5. Emoji fora de box ----------------------------------------------------
     print("\n[5] Emoji fora de box")

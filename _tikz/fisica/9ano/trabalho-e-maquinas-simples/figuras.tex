@@ -1,0 +1,157 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-fisica}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-sinais-do-trabalho
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.8,11.8);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.15,11.25)
+    {trabalho motor: $W>0$};
+  \node[fisica corpo, minimum width=1.3cm, minimum height=0.85cm] (A) at (2.0,9.15) {};
+  \draw[fisica movimento] ($(A.north)+(0,0.55)$) -- ++(2.2,0)
+    node[fisica rotulo, right] {$\vec d$};
+  \draw[fisica forca] (A.center) -- ++(2.2,0)
+    node[fisica rotulo, right] {$\vec F$};
+  \node[fisica medida] at (7.4,9.15) {$\theta=0^\circ$};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.15,7.0)
+    {trabalho nulo: $W=0$};
+  \node[fisica corpo, minimum width=1.3cm, minimum height=0.85cm] (B) at (2.0,4.9) {};
+  \draw[fisica movimento] ($(B.north)+(0,0.55)$) -- ++(2.2,0)
+    node[fisica rotulo, right] {$\vec d$};
+  \draw[fisica forca] (B.center) -- ++(0,1.8)
+    node[fisica rotulo, above] {$\vec F$};
+  \node[fisica medida] at (7.4,4.9) {$\theta=90^\circ$};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.15,2.85)
+    {trabalho resistente: $W<0$};
+  \node[fisica corpo, minimum width=1.3cm, minimum height=0.85cm] (C) at (5.15,0.8) {};
+  \draw[fisica movimento] ($(C.north)+(0,0.55)$) -- ++(2.2,0)
+    node[fisica rotulo, right] {$\vec d$};
+  \draw[fisica forca] (C.center) -- ++(-2.2,0)
+    node[fisica rotulo, left] {$\vec F$};
+  \node[fisica medida] at (8.5,0.8) {$\theta=180^\circ$};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-trabalho-do-peso-independe-do-caminho
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.0,8.9);
+  \draw[fisica superficie] (0.7,1.0) -- (10.0,1.0);
+  \draw[fisica superficie] (0.7,7.25) -- (10.0,7.25);
+  \coordinate (A) at (1.4,1.0);
+  \coordinate (B) at (9.1,7.25);
+  \draw[fisica trajetoria] (A) -- (B);
+  \draw[fisica trajetoria, dashed] (A)
+    .. controls (2.0,6.3) and (7.3,1.9) .. (B);
+  \node[fisica rotulo, rotate=39] at (5.2,4.55) {caminho reto};
+  \node[fisica rotulo] at (5.2,2.5) {caminho curvo};
+  \draw[decorate, decoration={brace, amplitude=7pt}, elevelaranja, line width=1.1pt]
+    (10.1,1.0) -- (10.1,7.25)
+    node[midway, right=12pt, fisica medida] {$h$};
+  \draw[fisica forca] (3.0,6.55) -- ++(0,-2.0)
+    node[fisica rotulo, below] {$\vec P$};
+  \node[font=\Large\bfseries, text=eleveazul] at (5.25,8.35)
+    {mesmo desnível, mesmo trabalho do peso};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-equilibrio-da-alavanca
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.1,7.8);
+  \draw[fisica superficie] (0.7,3.65) -- (10.25,3.65);
+  \fill[elevecinza] (3.15,3.65) -- (2.45,2.5) -- (3.85,2.5) -- cycle;
+  \node[fisica medida] at (3.15,2.05) {fulcro};
+  \draw[fisica forca] (1.55,3.65) -- ++(0,-2.1)
+    node[fisica rotulo, below] {$600\,\mathrm{N}$};
+  \draw[fisica forca] (8.0,3.65) -- ++(0,-2.1)
+    node[fisica rotulo, below] {$200\,\mathrm{N}$};
+  \draw[decorate, decoration={brace, mirror, amplitude=6pt}, elevecinza, line width=1pt]
+    (1.55,5.1) -- (3.15,5.1)
+    node[midway, above=10pt, fisica rotulo] {$0{,}5\,\mathrm{m}$};
+  \draw[decorate, decoration={brace, mirror, amplitude=6pt}, elevecinza, line width=1pt]
+    (3.15,5.1) -- (8.0,5.1)
+    node[midway, above=10pt, fisica rotulo] {$1{,}5\,\mathrm{m}$};
+  \node[font=\Large\bfseries, text=eleveazul] at (5.35,7.15)
+    {produtos força $\times$ braço iguais};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-roldana-fixa-e-movel
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.1,10.0);
+  \node[font=\Large\bfseries, text=eleveazul] at (2.75,9.45) {fixa};
+  \draw[fisica superficie] (0.65,8.55) -- (4.85,8.55);
+  \draw[elevecinza, line width=1.4pt] (2.75,8.55) -- (2.75,7.75);
+  \draw[elevecinza, fill=white, line width=1.4pt] (2.75,7.1) circle (0.65);
+  \draw[elevecinza, line width=1.5pt] (2.1,7.1) -- (2.1,3.8);
+  \draw[elevecinza, line width=1.5pt] (3.4,7.1) -- (3.4,3.8);
+  \node[fisica corpo, minimum width=1.45cm, minimum height=1.0cm] at (2.1,3.3) {$P$};
+  \draw[fisica forca] (3.4,3.8) -- ++(0,-1.65)
+    node[fisica rotulo, below] {$F=P$};
+  \node[fisica rotulo, align=center] at (2.75,1.0) {$d_{\text{corda}}=h$};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (8.0,9.45) {móvel};
+  \draw[fisica superficie] (5.8,8.55) -- (10.25,8.55);
+  \fill[elevecinza] (6.65,8.55) circle (3pt);
+  \draw[elevecinza, line width=1.5pt] (6.65,8.55) -- (6.65,5.6)
+    arc[start angle=180,end angle=0,radius=1.05] -- (8.75,7.95);
+  \draw[elevecinza, fill=white, line width=1.4pt] (7.7,5.6) circle (1.05);
+  \draw[elevecinza, line width=1.4pt] (7.7,4.55) -- (7.7,3.75);
+  \node[fisica corpo, minimum width=1.45cm, minimum height=1.0cm] at (7.7,3.25) {$P$};
+  \draw[fisica forca] (8.75,7.95) -- ++(0,-1.65)
+    node[fisica rotulo, right] {$F=P/2$};
+  \node[fisica rotulo, align=center] at (7.7,1.0) {$d_{\text{corda}}=2h$};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-forca-no-plano-inclinado
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.9,8.5);
+  \fill[elevecinzaclaro] (0.75,0.75) -- (10.0,0.75) -- (10.0,6.1) -- cycle;
+  \draw[fisica superficie] (0.75,0.75) -- (10.0,6.1);
+  \draw[fisica superficie] (0.75,0.75) -- (10.0,0.75);
+  \coordinate (C) at (5.7,3.6);
+  \begin{scope}[shift={(C)}, rotate=30]
+    \node[fisica corpo, minimum width=1.8cm, minimum height=1.2cm] (A) at (0,0)
+      {$P=1000\,\mathrm{N}$};
+    \draw[fisica forca] (A.east) -- ++(1.75,0)
+      node[fisica rotulo, right] {$F=500\,\mathrm{N}$};
+  \end{scope}
+  \draw[elevelaranja, line width=1.2pt] (2.1,0.75)
+    arc[start angle=0,end angle=30,radius=1.35];
+  \node[fisica medida] at (3.25,1.15) {$30^\circ$};
+  \draw[decorate, decoration={brace, amplitude=7pt}, elevecinza, line width=1pt]
+    (9.75,0.75) -- (9.75,6.1);
+  \node[fisica rotulo, anchor=east] at (9.45,3.4) {altura};
+  \node[font=\large\bfseries, text=elevecinza] at (5.2,7.65)
+    {metade do peso; caminho maior que a altura};
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-ganho-em-forca-custo-em-distancia
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.0,11.4);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.25,10.85)
+    {roldana móvel};
+  \node[fisica corpo, minimum width=1.4cm, minimum height=0.9cm] at (2.0,8.95)
+    {carga};
+  \draw[fisica movimento] (3.2,8.95) -- (5.0,8.95)
+    node[fisica rotulo, right] {força $\frac12$};
+  \draw[fisica movimento] (6.4,8.95) -- (8.95,8.95)
+    node[fisica rotulo, right] {corda $2\times$};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.25,7.05)
+    {rampa de $30^\circ$};
+  \draw[fisica movimento] (1.35,5.15) -- (4.35,5.15)
+    node[fisica rotulo, right] {força $\frac12$};
+  \draw[fisica movimento] (6.0,5.15) -- (9.0,5.15)
+    node[fisica rotulo, right] {caminho $2\times$};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.25,3.25)
+    {alavanca $3\times$};
+  \draw[fisica movimento] (1.35,1.35) -- (4.35,1.35)
+    node[fisica rotulo, right] {força $\frac13$};
+  \draw[fisica movimento] (6.0,1.35) -- (9.0,1.35)
+    node[fisica rotulo, right] {mão $3\times$};
+  \node[font=\large\bfseries, text=elevelaranja] at (5.25,0.35)
+    {ganho em força $\Longleftrightarrow$ custo em distância};
+\end{tikzpicture}
+
+\end{document}

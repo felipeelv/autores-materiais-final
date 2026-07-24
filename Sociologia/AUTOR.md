@@ -23,8 +23,8 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **Anexo A** (como esc
 **Regras inegociáveis:**
 
 - **1 tema = 1 capítulo · 1 aula = 1 tópico numerado `## N.`**, na ordem do blueprint. Cada aula é autossuficiente (~50 min).
-- **O material é a REFERÊNCIA DO ALUNO — a explicação é do professor.** Prosa curta para o raciocínio, marcadores para o que é enumerável: máximo 2 frases seguidas antes de uma lista; tabela sempre que houver 2+ itens a contrastar.
-- **220–250 palavras de conteúdo por aula, teto firme de 300.** O teto **não é meta**; não existe mínimo.
+- **O material é a REFERÊNCIA DO ALUNO — a explicação é do professor.** Prosa curta apenas para relações causais; marcadores para conceitos, agentes, processos e consequências; tabelas para comparação. **Toda aula contém organizadores visuais em pelo menos duas subseções.**
+- **Preferir 175–195 palavras de conteúdo por aula.** Sociologia tem uma aula semanal e precisa concentrar o núcleo conceitual sem ultrapassar o teto firme de 200. O teto **não é meta**.
 - **Material é só conteúdo.** Zero atividade, exercício, debate proposto, projeto, pesquisa proposta, revisão ou prova.
 - **Sem seções de fechamento.** Nada de "Introdução", "Explorando os Conceitos", "Ampliando o Olhar", "No Fio da História", "O Que a Fé Diz", "Pensador em Destaque", "Você já pensou nisso?", "Simplificando", "Para não esquecer" — esses elementos vivem **dentro** das aulas.
 - **Senso comum × conhecimento sociológico é o motor:** toda aula desnaturaliza algo que parecia óbvio. Conceito sempre aplicado a fenômeno observável — nunca decoreba.
@@ -33,7 +33,8 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **Anexo A** (como esc
 - **Dados com fonte e ano** (do blueprint) — nunca inventar estatística.
 - **Neutralidade político-partidária:** disputas aparecem como disputas, com os argumentos de cada lado.
 - **Toda lista precedida de frase de transição que carrega informação** — nunca lista solta, nunca "As principais características são:".
-- **Boxes são "drops":** 1 frase, sem desenvolver. Família 💭 ⏸️ 💡 🔍 · 1–2 por aula, **nunca dois seguidos**.
+- **Ritmo visual:** 2–3 subseções por aula; preferir três quando o blueprint reúne contexto, conceito e análise. Pelo menos duas subseções usam lista ou tabela. Não esconder uma classificação ou sequência em parágrafo. Em geral, usar um ou dois blockquotes simples por capítulo para fonte, dado, contraste ou síntese.
+- **Box é "drop":** exatamente 1 por aula, em uma frase curta. Família 💭 ⏸️ 💡 🔍.
 - **Bíblia condicional:** versículo só com ligação **conceitual** (teste do sinônimo); capítulo sem versículo é entrega válida.
 - **Zero itens da lista NÃO ANTECIPAR** do blueprint, nem "de passagem".
 - A **pergunta-problema** é respondida dentro da aula pertinente, **sem anunciar**.
@@ -50,7 +51,7 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **Anexo A** (como esc
 
 Capítulos de **Sociologia, 1ª a 3ª série do Ensino Médio**, para o 3º e 4º bimestres de 2026.
 
-**A equação do modelo:** `1 tema = 1 capítulo` · `1 aula = 1 tópico numerado (## N.)` · `1 aula ≈ 50 min ≈ 220–250 palavras (teto 300)` · `prosa curta + marcadores`.
+**A equação do modelo:** `1 tema = 1 capítulo` · `1 aula = 1 tópico numerado (## N.)` · `1 aula ≈ 50 min ≈ 175–195 palavras (teto 200)` · `fenômeno + conceito + análise visual`.
 
 **Carga e condensação:** a disciplina tem **1 aula/semana** — 3º Bim: 3 + 3 aulas · 4º Bim: 2 + 3 aulas. Em geral, **1 capítulo por bloco**. A condensação é forte: cada aula agrupa vários subtópicos do framework e precisa ser desenvolvida em fatias claras, sem digressão.
 
@@ -81,24 +82,29 @@ Cada blueprint traz, por capítulo: tema, nº de aulas, pergunta-problema, **ref
 O capítulo **termina na última aula**. Não há seção de fechamento.
 
 - **1 aula = 1 tópico `## N.`**, na ordem do blueprint; `---` entre aulas. Cada aula deve ser **autossuficiente**: quem lê só aquele tópico tem a aula completa (~50 min).
-- Tópicos internos viram subseções **numeradas `### N.1`, `### N.2`** (a numeração da aula, depois a da parte). Título curto e descritivo — pode ser **pergunta orientadora**, desde que cubra o tópico do blueprint.
-- **2 a 3 subseções por aula.** Mais que isso fragmenta; cada subseção nova traz sua própria abertura e engorda o texto.
-- **Extensão: alvo 220–250 palavras, teto firme de 300** por aula (tabelas e boxes fora da conta) — **direto e conciso é o padrão da casa**. Desenvolva todo o recorte e pare: não adicione exemplos extras nem parágrafos de contexto para "engordar" a aula. Se passar de 300, corte rodeio e redundância — nunca recorte do blueprint. **Não existe mínimo:** aula que cobriu todo o recorte de forma direta em 200 palavras está pronta.
+- Tópicos internos viram subseções **numeradas `### N.1`, `### N.2`, `### N.3`** (a numeração da aula, depois a da parte). Título curto e descritivo — pode ser **pergunta orientadora**, desde que cubra o tópico do blueprint.
+- **2 a 3 subseções por aula.** Quando o recorte trouxer três núcleos, usar três movimentos curtos — contexto ou fenômeno → conceito → leitura sociológica. Duas subseções bastam quando um mesmo raciocínio precisa permanecer encadeado. Mais que três fragmenta.
+- **Toda aula precisa de organização visual distribuída:** pelo menos duas subseções contêm lista ou tabela ligada ao fenômeno analisado. Títulos, boxes e blockquotes não substituem essa organização.
+- **Extensão: preferir 175–195 palavras por aula; teto firme de 200**, pelo método do validador, que conta todo texto legível. Use a faixa adicional para explicitar relações, limites e contrastes do próprio blueprint — não para acrescentar exemplos laterais. Se passar de 200, corte rodeio e redundância, nunca o núcleo conceitual.
 
 ## 3. Forma do conteúdo — prosa + marcadores
 
-**O material é a REFERÊNCIA DO ALUNO — a explicação é do professor.** Não é um texto que ensina sozinho: é o que o aluno consulta antes, durante e depois da aula. Escreva para ser **consultado**, não lido de ponta a ponta. Daí a mistura: **prosa curta para o raciocínio, marcadores para o que é enumerável.** Nem só parágrafo (vira parede de texto), nem só bullet (pica o raciocínio em fragmentos).
+**O material é a REFERÊNCIA DO ALUNO — a explicação é do professor.** É o que o aluno consulta antes, durante e depois da aula. Misture **prosa curta para relações causais** e **marcadores para elementos realmente paralelos**. Nem parede de texto nem sequência de listas.
+
+**Unidade visual mínima da aula:** uma abertura curta + duas ou três subseções + organizadores visuais em pelo menos duas delas. Em aulas densas, os subtópicos devem separar os três movimentos do raciocínio, e não apenas repartir o texto pelo tamanho. Use rótulos em negrito nos marcadores para transformar conceitos, agentes, processos e consequências em pontos de consulta.
 
 **Abertura de aula (`## N.`):** 1 frase direta, sem desenvolvimento. Sem cena narrativa, sem construção de suspense.
 
 **Subtópico (`### N.1`…):**
 
-- **Definição em 1 frase curta.** Se precisar de mais de uma frase para definir, use bullets — não parágrafo.
-- **No máximo 2 frases seguidas antes de uma lista.** Prefira 1 frase densa + bullets.
+- **Definição em 1 frase curta**, já aplicada ao fenômeno em análise.
+- **Parágrafos curtos:** em geral, 1–2 frases. A prosa explica causa, relação ou limite; definições paralelas, etapas e consequências viram tópicos.
 - **Lista com marcadores** para características, argumentos, consequências, tipos e condições.
-- **Tabela comparativa** sempre que houver 2 ou mais itens a contrastar (correntes, tipos de solidariedade, senso comum × sociologia) — é o formato que mais economiza texto.
+- **Tabela comparativa** quando duas ou mais posições compartilham critérios claros; não transformar todo contraste em tabela.
 - **Exemplo concreto** com fenômeno social observável — do universo do aluno ou do Brasil real, com dado e fonte quando o blueprint trouxer.
 - Definição complementar entra **inline, entre parênteses**: `anomia (enfraquecimento ou ausência das normas que regulam a vida social)`.
+
+Use **um ou dois blockquotes simples por capítulo**, em subtópicos sem marcadores, quando uma fonte, dado, contraste ou síntese merecer pausa visual. O blockquote não repete a frase anterior e não funciona como decoração.
 
 **Frase de transição antes da lista — só se carregar informação:**
 
@@ -114,7 +120,7 @@ O capítulo **termina na última aula**. Não há seção de fechamento.
 1. **Abertura: no máximo 25 palavras.** Pode ser **situação concreta** (cena do cotidiano, fenômeno social reconhecível) **ou fato direto** — escolha o que chega mais rápido ao conteúdo. Sem cena narrativa, sem construção de suspense.
 2. **Senso comum × conhecimento sociológico — o movimento central da disciplina:** partir do que "todo mundo acha" e mostrar o que o olhar sociológico revela (estranhar o familiar, desnaturalizar o óbvio). Nunca apresentar o conceito descolado do fenômeno que ele explica.
 3. **Conceitos como ferramentas de análise, não decoreba:** todo conceito entra aplicado a um fenômeno observável — trabalho informal no Brasil, redes sociais, escola, consumo. Dados estatísticos com fonte e ano quando o blueprint trouxer; nunca inventar dado. **Brasil como caso permanente:** informalidade, urbanização, desigualdade, religião — o fenômeno brasileiro concretiza o conceito clássico. Sem dado disponível, o fenômeno é descrito qualitativamente.
-4. **Ritmo:** fenômeno → conceito → análise. Abertura de seção em 1 frase direta; parágrafos de no máximo 2–3 frases; cada frase entrega informação.
+4. **Ritmo:** fenômeno → conceito → análise. Abertura de seção em 1 frase direta; parágrafos de 1–2 frases; pelo menos duas subseções com lista ou tabela; cada frase entrega informação.
 5. **Teorias com fidelidade intelectual:** apresentar a tese do pensador como ele a formulou, com força, **antes** de qualquer avaliação — nunca caricaturar nem suavizar. **Correntes em contraste** quando o blueprint pedir: o que cada teoria explica bem e o que deixa de fora, sem eleger vencedor onde há disputa legítima.
 6. **Referência-chave (pensador):** aparece **uma vez no capítulo**, integrada ao texto da aula mais pertinente, em 2–3 linhas (quem foi, o que fez, obra/ano — dados do blueprint) — **sem box próprio**. Referências secundárias só mencionadas.
 7. **Neutralidade político-partidária:** analisar fenômenos e teorias sem prescrever posição partidária ao aluno. Posições em disputa aparecem como disputa, com os argumentos de cada lado.
@@ -160,15 +166,13 @@ Ao tratar pensadores cujas teses confrontam a visão cristã (Marx, Comte, Durkh
 ## 6. Boxes (única família permitida — todos em blockquote)
 
 ```
-> 💭 **Pense um pouco:**  → pergunta de reflexão sociológica
-> ⏸️ **Pare e Pense:**    → dilema ético, moral ou social direto
-> 💡 **Você sabia?**      → curiosidade rápida sobre pensador, conceito ou dado social
-> 🔍 **Conexão:**         → ponte entre o conceito e um fenômeno atual do cotidiano do aluno
+> 💭 **Pense um pouco:** pergunta de reflexão sociológica
+> ⏸️ **Pare e pense:** dilema ético, moral ou social direto
+> 💡 **Você sabia?** curiosidade rápida sobre pensador, conceito ou dado social
+> 🔍 **Conexão:** ponte entre o conceito e um fenômeno atual
 ```
 
-- **No máximo 2 boxes por aula.** Cada box é um "drop": **1 frase única** — dado isolado, nunca mini-parágrafo.
-- **Quebra de linha interna obrigatória:** título na 1ª linha (dois espaços no final), conteúdo na 2ª, ambos no blockquote.
-- **Nunca dois boxes seguidos** — sempre ao menos um parágrafo de conteúdo entre eles.
+- **Exatamente 1 box por aula.** Cada box é um "drop" em uma única linha e uma frase curta — nunca mini-parágrafo.
 - **Referência-chave (pensador) não vai em box:** é integrada ao texto, em 2–3 linhas, uma única vez no capítulo.
 
 ## 7. Convenções tipográficas
@@ -220,12 +224,14 @@ Estes elementos existiam como blocos pós-conteúdo no formato antigo (Ampliando
 > ```
 > python3 ./validar-capitulo.py <capitulo.md> --disciplina sociologia [--blueprint <arq.md>]
 > ```
-> **Não persiga a contagem exata de palavras:** conte uma vez, ao final. Só reescreva se estourou o teto de 300 — ficar abaixo dele não é defeito.
+> **Não persiga a contagem exata de palavras:** conte uma vez, ao final. Só reescreva se estourou o teto de 200 ou se o conteúdo ficou claramente truncado.
 
 - [ ] Título é `# Capítulo {N} — {Tema}` (sem linha de disciplina/série)
 - [ ] Todas as aulas do blueprint, na ordem, com todo o recorte desenvolvido
-- [ ] Cada aula abre com situação/fenômeno concreto · 220–250 palavras (teto 300) · autossuficiente
-- [ ] **Prosa curta + marcadores:** conteúdo enumerável em lista/tabela; máx. 2 frases antes de uma lista
+- [ ] Cada aula abre com situação/fenômeno concreto · preferencialmente 175–195 palavras · teto 200 · autossuficiente
+- [ ] **Organização visual:** pelo menos duas subseções de cada aula contêm lista ou tabela ligada ao fenômeno analisado
+- [ ] **Prosa curta + tópicos pedagógicos:** parágrafos de 1–2 frases só para relações; classificações, etapas e consequências em marcadores; tabela só quando houver critérios comparáveis
+- [ ] Um ou dois blockquotes simples no capítulo, usados para fonte, dado, contraste ou síntese
 - [ ] Nenhuma analogia estendida, nenhum parágrafo que recapitula, nenhum exemplo repetido
 - [ ] Movimento **senso comum × conhecimento sociológico** presente; conceito sempre aplicado a fenômeno observável
 - [ ] Teorias com fidelidade intelectual; **ancoragem cristã respeitada** nos pensadores que desafiam a fé (Escritura como ponto de origem, distinção fé/teoria, comparações morais antes das neutras)
@@ -233,7 +239,7 @@ Estes elementos existiam como blocos pós-conteúdo no formato antigo (Ampliando
 - [ ] Dados sociais com fonte e ano (do blueprint); nomes, datas e obras conferidos
 - [ ] Toda lista precedida de frase de transição **que carrega informação**
 - [ ] Versículo só com ligação **conceitual** (teste do sinônimo) — capítulo sem versículo é entrega válida
-- [ ] Boxes: só 💭 ⏸️ 💡 🔍, 1–2 por aula, nunca consecutivos, quebra de linha interna
+- [ ] Boxes: só 💭 ⏸️ 💡 🔍, exatamente um por aula, em uma frase curta
 - [ ] Referência-chave integrada ao texto, uma única vez, na aula pertinente (sem box)
 - [ ] Zero atividades; zero itens de NÃO ANTECIPAR; balizamento da série respeitado
 - [ ] Sem seções de fechamento; pergunta-problema respondida sem anúncio

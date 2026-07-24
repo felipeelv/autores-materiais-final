@@ -1,0 +1,71 @@
+{
+  "versao": 1,
+  "disciplina": "fisica",
+  "ano_serie": "1serie",
+  "titulo_documento": "Forças mecânicas",
+  "slug_documento": "forcas-mecanicas",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Fisica/1serie/fisica-1serie-3bim-cap2.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-normal-em-superficies-diferentes",
+      "pagina": 1,
+      "arquivo": "fig-01-normal-em-superficies-diferentes.png",
+      "alt": "Bloco no piso e na rampa com forças normais perpendiculares a cada superfície",
+      "aprovada": true,
+      "sha256": "e23d086e794405809869f1860a122e717e8e713ff93a98e3ab976dcdf90997e3",
+      "largura_px": 1359,
+      "altura_px": 1288,
+      "publicado_sha256": "e23d086e794405809869f1860a122e717e8e713ff93a98e3ab976dcdf90997e3",
+      "publicado_commit": "979efdd119aa6e4a6ddc371d6356e32973fe9141"
+    },
+    {
+      "id": "fig-02-peso-aparente-no-elevador",
+      "pagina": 2,
+      "arquivo": "fig-02-peso-aparente-no-elevador.png",
+      "alt": "Três diagramas do elevador acelerando para cima, para baixo e em queda livre",
+      "aprovada": true,
+      "sha256": "b819612061077385e39cd6e2800264864313dedbece9a5e2fc072f1aaea24b7d",
+      "largura_px": 1441,
+      "altura_px": 1648,
+      "publicado_sha256": "b819612061077385e39cd6e2800264864313dedbece9a5e2fc072f1aaea24b7d",
+      "publicado_commit": "979efdd119aa6e4a6ddc371d6356e32973fe9141"
+    },
+    {
+      "id": "fig-03-tracao-em-cabo-e-polia-ideais",
+      "pagina": 3,
+      "arquivo": "fig-03-tracao-em-cabo-e-polia-ideais.png",
+      "alt": "Corda sobre polia ideal com vetores de tração iguais nos dois trechos",
+      "aprovada": true,
+      "sha256": "214011c05c6f7fb0f1e8e1a207dbb80d2e3519c303d24ece4fd69b83c4b0a64d",
+      "largura_px": 1323,
+      "altura_px": 1229,
+      "publicado_sha256": "214011c05c6f7fb0f1e8e1a207dbb80d2e3519c303d24ece4fd69b83c4b0a64d",
+      "publicado_commit": "979efdd119aa6e4a6ddc371d6356e32973fe9141"
+    },
+    {
+      "id": "fig-04-corpos-ligados-e-mesma-aceleracao",
+      "pagina": 4,
+      "arquivo": "fig-04-corpos-ligados-e-mesma-aceleracao.png",
+      "alt": "Bloco na mesa e bloco pendente ligados por corda com acelerações de mesmo módulo",
+      "aprovada": true,
+      "sha256": "e575929158b1b7c74d263461c608738c7c9b8e059131a7954835a1dc46839e9c",
+      "largura_px": 1406,
+      "altura_px": 1134,
+      "publicado_sha256": "e575929158b1b7c74d263461c608738c7c9b8e059131a7954835a1dc46839e9c",
+      "publicado_commit": "979efdd119aa6e4a6ddc371d6356e32973fe9141"
+    },
+    {
+      "id": "fig-05-forca-restauradora-e-limite-elastico",
+      "pagina": 5,
+      "arquivo": "fig-05-forca-restauradora-e-limite-elastico.png",
+      "alt": "Mola comprimida, alongada e deformada além do limite com respostas distintas",
+      "aprovada": true,
+      "sha256": "d74db0baa4f1c0130ed9dcdc8496fb8e211d5d0180658f1aff18054d6f26d649",
+      "largura_px": 1406,
+      "altura_px": 1489,
+      "publicado_sha256": "d74db0baa4f1c0130ed9dcdc8496fb8e211d5d0180658f1aff18054d6f26d649",
+      "publicado_commit": "979efdd119aa6e4a6ddc371d6356e32973fe9141"
+    }
+  ]
+}

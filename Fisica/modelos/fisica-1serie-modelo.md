@@ -10,16 +10,11 @@ Numa freada, o passageiro continua avançando até que o cinto exerça força.
 
 ### 1.1 Inércia em forma vetorial
 
-Em 1684, Edmond Halley consultou **Isaac Newton (1643–1727)** sobre órbitas. A pergunta levou ao *Principia* (1687), síntese da mecânica em três leis.
+**Isaac Newton** reuniu a mecânica em três leis, relacionando força e mudança de movimento.
 
 **Referencial inercial** — sistema de observação que não está acelerado. Nele, a 1ª Lei estabelece:
 
 $$\vec{F}_R = 0 \Leftrightarrow \vec{v} = \text{constante}$$
-
-Nessa expressão, as grandezas são:
-
-- $$\vec{F}_R$$ — força resultante, medida em newton (N);
-- $$\vec{v}$$ — velocidade, medida em metro por segundo (m/s).
 
 Velocidade constante conserva módulo, direção e sentido. Portanto, um carro em curva acelera mesmo que o velocímetro não mude.
 
@@ -61,12 +56,6 @@ A 2ª Lei relaciona a resultante à aceleração:
 
 $$\vec{F}_R = m\vec{a}$$
 
-Nessa expressão, as grandezas são:
-
-- $$\vec{F}_R$$ — força resultante (N);
-- $$m$$ — massa (kg);
-- $$\vec{a}$$ — aceleração ($$\mathrm{m/s^2}$$).
-
 A aceleração tem a direção e o sentido da resultante, não necessariamente da velocidade. Um newton é a força que produz $$1\,\mathrm{m/s^2}$$ em uma massa de $$1\,\mathrm{kg}$$.
 
 ### 2.2 Diagrama e componentes
@@ -81,20 +70,30 @@ As componentes obedecem a:
 
 $$F_{Rx} = ma_x \qquad F_{Ry} = ma_y$$
 
-$$F_{Rx}$$ e $$F_{Ry}$$ são as componentes da resultante (N); $$a_x$$ e $$a_y$$ são as componentes da aceleração ($$\mathrm{m/s^2}$$).
+Os índices x e y identificam as componentes da resultante e da aceleração.
 
 📝 **Exemplo:**
 Um bloco de $$10\,\mathrm{kg}$$ recebe $$30\,\mathrm{N}$$ em x e $$40\,\mathrm{N}$$ em y.
 
 Dados: $$m=10\,\mathrm{kg}$$, $$F_x=30\,\mathrm{N}$$ e $$F_y=40\,\mathrm{N}$$
 
-$$a_x = \frac{F_x}{m} \qquad a_y = \frac{F_y}{m}$$
+$$a_x = \frac{F_x}{m}$$
 
-$$a_x = \frac{30}{10} = 3\,\mathrm{m/s^2}$$
+$$a_x = \frac{30}{10}$$
 
-$$a_y = \frac{40}{10} = 4\,\mathrm{m/s^2}$$
+$$a_x = 3\,\mathrm{m/s^2}$$
 
-$$a = \sqrt{3^2 + 4^2} = 5\,\mathrm{m/s^2}$$
+$$a_y = \frac{F_y}{m}$$
+
+$$a_y = \frac{40}{10}$$
+
+$$a_y = 4\,\mathrm{m/s^2}$$
+
+$$a = \sqrt{a_x^2+a_y^2}$$
+
+$$a = \sqrt{3^2 + 4^2}$$
+
+$$a = 5\,\mathrm{m/s^2}$$
 
 > 💡 **Você sabia?**
 >
@@ -119,7 +118,7 @@ O par ação–reação tem quatro características:
 - sentidos opostos;
 - atuação em corpos diferentes.
 
-Cada símbolo representa uma força medida em newton (N). Os índices identificam quem exerce e quem recebe a força.
+Os índices identificam quem exerce e quem recebe a força.
 
 ### 3.2 Por que não se anulam
 

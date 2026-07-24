@@ -1,0 +1,109 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-fisica}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-equilibrio-estatico-e-dinamico
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.8,10.0);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.15,9.45)
+    {equilíbrio estático};
+  \coordinate (A) at (5.15,7.0);
+  \node[fisica corpo, minimum width=1.65cm, minimum height=1.1cm] at (A) {};
+  \draw[fisica forca] (A) -- ++(0,1.65)
+    node[fisica rotulo, above] {$\vec N$};
+  \draw[fisica forca] (A) -- ++(0,-1.65)
+    node[fisica rotulo, below] {$\vec P$};
+  \node[fisica medida] at (2.0,7.0) {$\vec v=0$};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.15,4.4)
+    {equilíbrio dinâmico};
+  \coordinate (B) at (5.15,1.95);
+  \node[fisica corpo, minimum width=1.65cm, minimum height=1.1cm] at (B) {};
+  \draw[fisica forca] (B) -- ++(0,1.65)
+    node[fisica rotulo, above] {$\vec N$};
+  \draw[fisica forca] (B) -- ++(0,-1.65)
+    node[fisica rotulo, below] {$\vec P$};
+  \draw[fisica movimento] ($(B.north)+(0,0.7)$) -- ++(2.2,0)
+    node[fisica rotulo, right] {$\vec v$ constante};
+  \node[font=\large\bfseries, text=elevelaranja] at (2.1,3.75)
+    {$\vec F_R=0$ nos dois casos};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-inercia-do-passageiro
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.2,9.4);
+  \draw[fisica superficie] (0.55,1.05) -- (10.55,1.05);
+  \draw[eleveazul, fill=eleveazulclaro, line width=1.4pt, rounded corners=5pt]
+    (1.15,2.0) rectangle (9.3,5.25);
+  \draw[elevecinza, line width=1.4pt] (2.3,2.0) -- (2.3,3.6);
+  \node[fisica corpo, circle, minimum size=0.6cm] (P) at (5.5,3.65) {};
+  \draw[elevecinza, line width=1.4pt] (4.6,2.35) -- (5.2,3.45);
+  \draw[elevelaranja, line width=1.7pt] (4.6,4.75) -- (5.35,3.8);
+  \draw[elevecinza, fill=white, line width=1.5pt] (2.7,1.05) circle (0.65);
+  \draw[elevecinza, fill=white, line width=1.5pt] (7.9,1.05) circle (0.65);
+  \draw[fisica movimento] ($(P.north)+(0,2.0)$) -- ++(2.45,0);
+  \node[fisica rotulo, anchor=east] at (10.45,6.25)
+    {tendência de manter $\vec v$};
+  \draw[fisica forca] (P.center) -- ++(-2.1,0)
+    node[fisica rotulo, left] {$\vec F_{\text{cinto}}$};
+  \draw[fisica movimento] (8.7,6.85) -- ++(-2.6,0)
+    node[fisica rotulo, left] {carro freia};
+  \node[font=\large\bfseries, text=elevecinza] at (5.35,8.35)
+    {o cinto fornece a força que reduz a velocidade};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-resultante-de-forcas-perpendiculares
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (9.6,8.6);
+  \coordinate (O) at (1.25,1.15);
+  \draw[fisica forca] (O) -- ++(4.2,0)
+    node[fisica rotulo, below=7pt] {$F_x=30\,\mathrm{N}$};
+  \draw[fisica forca] ($(O)+(4.2,0)$) -- ++(0,5.6)
+    node[fisica rotulo, right] {$F_y=40\,\mathrm{N}$};
+  \draw[fisica forca] (O) -- ++(4.2,5.6)
+    node[fisica rotulo, above left] {$F_R=50\,\mathrm{N}$};
+  \draw[fisica auxiliar] (O) -- ++(0,5.6) -- ++(4.2,0);
+  \draw[elevelaranja, line width=1.1pt] ($(O)+(3.65,0)$)
+    -- ++(0,0.55) -- ++(0.55,0);
+  \node[font=\large\bfseries, text=elevecinza] at (5.0,7.85)
+    {triângulo $3$--$4$--$5$};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-velocidade-e-aceleracao-opostas
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.4,7.9);
+  \draw[fisica superficie] (0.65,1.1) -- (9.75,1.1);
+  \node[fisica corpo, minimum width=1.8cm, minimum height=1.05cm] (A)
+    at (5.0,2.0) {};
+  \draw[fisica movimento] ($(A.north)+(0,1.0)$) -- ++(3.0,0)
+    node[fisica rotulo, right] {$\vec v$};
+  \draw[fisica forca] ($(A.north)+(0,2.3)$) -- ++(-2.5,0)
+    node[fisica rotulo, left] {$\vec F_R$};
+  \draw[fisica movimento] (5.0,5.9) -- ++(-2.0,0)
+    node[fisica rotulo, left] {$\vec a$};
+  \node[font=\Large\bfseries, text=eleveazul] at (5.0,7.25)
+    {move para a direita e perde rapidez};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-acao-e-reacao-em-corpos-diferentes
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.65) rectangle (11.2,8.4);
+  \draw[fisica superficie] (0.65,1.1) -- (10.55,1.1);
+  \node[fisica corpo, minimum width=2.0cm, minimum height=2.5cm] (P)
+    at (2.25,2.4) {pessoa};
+  \node[fisica corpo, minimum width=2.5cm, minimum height=1.55cm] (C)
+    at (8.25,1.9) {carrinho};
+  \draw[fisica forca] (P.east) -- ++(2.4,0)
+    node[fisica rotulo, midway, above=8pt] {$\vec F_{P\to C}$};
+  \draw[fisica forca] (C.west) -- ++(-2.4,0);
+  \node[fisica rotulo] at (5.25,0.35) {$\vec F_{C\to P}$};
+  \node[fisica rotulo] at (2.25,5.45) {força sobre a pessoa};
+  \node[fisica rotulo] at (8.25,5.45) {força sobre o carrinho};
+  \draw[fisica auxiliar, ->] (2.25,5.0) -- (3.2,3.2);
+  \draw[fisica auxiliar, ->] (8.25,5.0) -- (7.25,2.95);
+  \node[font=\Large\bfseries, text=elevelaranja] at (5.25,7.45)
+    {mesmo módulo; corpos diferentes};
+\end{tikzpicture}
+
+\end{document}

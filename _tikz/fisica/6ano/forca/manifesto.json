@@ -1,0 +1,71 @@
+{
+  "versao": 1,
+  "disciplina": "fisica",
+  "ano_serie": "6ano",
+  "titulo_documento": "Força",
+  "slug_documento": "forca",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Fisica/6ano/fisica-6ano-3bim-cap1.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-interacao-entre-dois-corpos",
+      "pagina": 1,
+      "arquivo": "fig-01-interacao-entre-dois-corpos.png",
+      "alt": "Mão empurrando uma caixa com a interação identificada da mão sobre a caixa",
+      "aprovada": true,
+      "sha256": "b0e794a505ac11bb2917909e703aa77b8ba88df8f08110b28aafbf080e3c9f20",
+      "largura_px": 1182,
+      "altura_px": 780,
+      "publicado_sha256": "b0e794a505ac11bb2917909e703aa77b8ba88df8f08110b28aafbf080e3c9f20",
+      "publicado_commit": "f9c97b3bbf4b6d3a9168fd6f36b366f241e408cb"
+    },
+    {
+      "id": "fig-02-intensidade-direcao-e-sentido",
+      "pagina": 2,
+      "arquivo": "fig-02-intensidade-direcao-e-sentido.png",
+      "alt": "Vetor de força com intensidade, direção horizontal e sentido para a direita identificados",
+      "aprovada": true,
+      "sha256": "9d5d6cb11255e0bdbf485fd78fc1edae48acb3f4e5043e2a0b1e6090944f701c",
+      "largura_px": 1288,
+      "altura_px": 851,
+      "publicado_sha256": "9d5d6cb11255e0bdbf485fd78fc1edae48acb3f4e5043e2a0b1e6090944f701c",
+      "publicado_commit": "f9c97b3bbf4b6d3a9168fd6f36b366f241e408cb"
+    },
+    {
+      "id": "fig-03-forcas-de-contato-e-a-distancia",
+      "pagina": 3,
+      "arquivo": "fig-03-forcas-de-contato-e-a-distancia.png",
+      "alt": "Comparação entre mão empurrando uma caixa por contato e ímã atraindo um clipe sem contato",
+      "aprovada": true,
+      "sha256": "17c31159cee398aa88e45b9b171dbb138acad59ad63c4eb648632e5058c3ea70",
+      "largura_px": 1229,
+      "altura_px": 1312,
+      "publicado_sha256": "17c31159cee398aa88e45b9b171dbb138acad59ad63c4eb648632e5058c3ea70",
+      "publicado_commit": "f9c97b3bbf4b6d3a9168fd6f36b366f241e408cb"
+    },
+    {
+      "id": "fig-04-peso-aponta-para-o-centro",
+      "pagina": 4,
+      "arquivo": "fig-04-peso-aponta-para-o-centro.png",
+      "alt": "Corpos em quatro pontos da Terra com vetores peso apontando para o centro do planeta",
+      "aprovada": true,
+      "sha256": "aa60eb4557e056e1cdffa540da79ff0a6e276ab6c5535c82ce2ec086e1f23206",
+      "largura_px": 1252,
+      "altura_px": 1252,
+      "publicado_sha256": "aa60eb4557e056e1cdffa540da79ff0a6e276ab6c5535c82ce2ec086e1f23206",
+      "publicado_commit": "f9c97b3bbf4b6d3a9168fd6f36b366f241e408cb"
+    },
+    {
+      "id": "fig-05-atrito-se-opoe-ao-deslizamento",
+      "pagina": 5,
+      "arquivo": "fig-05-atrito-se-opoe-ao-deslizamento.png",
+      "alt": "Dois blocos com movimentos opostos e vetores de atrito em sentidos contrários ao deslizamento",
+      "aprovada": true,
+      "sha256": "ed59d77841d32eae7b860aae2d9bbc3efeefd0cecc0cea24164b5127d02b511b",
+      "largura_px": 1300,
+      "altura_px": 1205,
+      "publicado_sha256": "ed59d77841d32eae7b860aae2d9bbc3efeefd0cecc0cea24164b5127d02b511b",
+      "publicado_commit": "f9c97b3bbf4b6d3a9168fd6f36b366f241e408cb"
+    }
+  ]
+}

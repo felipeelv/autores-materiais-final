@@ -44,12 +44,6 @@ A relação fundamental das ondas é:
 
 $$v = \lambda \cdot f$$
 
-Nessa expressão, as grandezas são:
-
-- $$v$$ — velocidade de propagação (m/s);
-- $$\lambda$$ — comprimento de onda (m);
-- $$f$$ — frequência (Hz).
-
 📝 **Exemplo:**
 No ar, uma onda sonora tem $$\lambda = 2\,\mathrm{m}$$ e $$f = 170\,\mathrm{Hz}$$.
 

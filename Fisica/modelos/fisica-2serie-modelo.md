@@ -14,7 +14,7 @@ Na **óptica geométrica**, cada raio indica a direção e o sentido da propaga�
 
 $$\lambda \ll D$$
 
-Nessa condição, $$\lambda$$ e $$D$$ são comprimentos medidos em metro (m).
+Nessa condição, $$\lambda$$ é o comprimento de onda e $$D$$, a dimensão do objeto.
 
 Três princípios organizam o modelo:
 
@@ -108,7 +108,7 @@ Para raios próximos ao eixo principal, vale a aproximação paraxial:
 
 $$f = \frac{R}{2}$$
 
-Nessa expressão, $$f$$ é a distância focal e $$R$$ é o raio de curvatura, ambos medidos em metro (m).
+Nessa expressão, $$f$$ é a distância focal e $$R$$, o raio de curvatura.
 
 Raios muito afastados do eixo não convergem exatamente no mesmo ponto. Esse desvio é a **aberração esférica**, limite do modelo ideal.
 
@@ -168,11 +168,11 @@ O aumento linear é:
 
 $$A = \frac{i}{o} = -\frac{p'}{p}$$
 
-As grandezas são:
+Os símbolos e sinais distinguem posição e natureza da imagem:
 
-- $$p$$ e $$p'$$ — posições do objeto e da imagem (m);
-- $$f$$ — distância focal (m);
-- $$i$$ e $$o$$ — alturas da imagem e do objeto (m);
+- $$p$$ e $$p'$$ — posições do objeto e da imagem;
+- $$f$$ — distância focal;
+- $$i$$ e $$o$$ — alturas da imagem e do objeto;
 - $$A$$ — aumento, sem unidade.
 
 ### 5.2 Convenção de sinais
@@ -196,15 +196,23 @@ $$\frac{1}{p} + \frac{1}{p'} = \frac{1}{f}$$
 
 $$\frac{1}{0{,}30} + \frac{1}{p'} = \frac{1}{0{,}10}$$
 
+$$\frac{1}{f}=10\,\mathrm{m^{-1}}$$
+
+$$\frac{1}{p}\approx3{,}33\,\mathrm{m^{-1}}$$
+
 $$\frac{1}{p'} = 10 - 3{,}33$$
 
 $$\frac{1}{p'} = 6{,}67\,\mathrm{m^{-1}}$$
 
 $$p' = 0{,}15\,\mathrm{m}$$
 
-$$A = -\frac{0{,}15}{0{,}30} = -0{,}5$$
+$$A = -\frac{p'}{p}$$
 
-A imagem é real, invertida e reduzida. **Carl Friedrich Gauss** formalizou esse tratamento em 1841.
+$$A = -\frac{0{,}15}{0{,}30}$$
+
+$$A = -0{,}5$$
+
+A imagem é real, invertida e reduzida. **Carl Friedrich Gauss** formalizou esse tratamento algébrico.
 
 > 📏 **Medidas Impressionantes:**
 >

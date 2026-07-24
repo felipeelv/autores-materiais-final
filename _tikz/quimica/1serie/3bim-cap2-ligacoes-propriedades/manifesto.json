@@ -1,0 +1,59 @@
+{
+  "versao": 1,
+  "disciplina": "quimica",
+  "ano_serie": "1serie",
+  "titulo_documento": "Ligações químicas e propriedades dos materiais",
+  "slug_documento": "3bim-cap2-ligacoes-propriedades",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Quimica/1serie/quimica-1serie-3bim-cap2.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-reticulo-ionico-fragilidade",
+      "pagina": 1,
+      "arquivo": "fig-01-reticulo-ionico-fragilidade.png",
+      "alt": "Retículo iônico antes e depois do deslocamento de uma camada mostrando aproximação entre cargas iguais e ruptura do cristal",
+      "aprovada": true,
+      "sha256": "03636127f2ab39cf58d3e071558bc0f85f588e084bb52d0ea47317b6c8c1469c",
+      "largura_px": 1530,
+      "altura_px": 981,
+      "publicado_sha256": "03636127f2ab39cf58d3e071558bc0f85f588e084bb52d0ea47317b6c8c1469c",
+      "publicado_commit": "fe12c19c3343742ec9d9cbfc94466682c97baa70"
+    },
+    {
+      "id": "fig-02-estruturas-lewis",
+      "pagina": 2,
+      "arquivo": "fig-02-estruturas-lewis.png",
+      "alt": "Estruturas de Lewis de água, amônia, metano e dióxido de carbono com pares ligantes e pares livres identificáveis",
+      "aprovada": true,
+      "sha256": "a41b8adcb05c0db748f1c15f2a54ff8cf459c1ec78b2392444ee51c3b191d126",
+      "largura_px": 1465,
+      "altura_px": 1058,
+      "publicado_sha256": "a41b8adcb05c0db748f1c15f2a54ff8cf459c1ec78b2392444ee51c3b191d126",
+      "publicado_commit": "fe12c19c3343742ec9d9cbfc94466682c97baa70"
+    },
+    {
+      "id": "fig-03-ligacao-metalica",
+      "pagina": 3,
+      "arquivo": "fig-03-ligacao-metalica.png",
+      "alt": "Rede metálica com núcleos organizados e elétrons deslocalizados movendo-se pelo sólido sob campo elétrico",
+      "aprovada": true,
+      "sha256": "4b3ddea580cb518c12e59d00825fe6806f07375164f643486302069f25885bb2",
+      "largura_px": 1441,
+      "altura_px": 993,
+      "publicado_sha256": "4b3ddea580cb518c12e59d00825fe6806f07375164f643486302069f25885bb2",
+      "publicado_commit": "fe12c19c3343742ec9d9cbfc94466682c97baa70"
+    },
+    {
+      "id": "fig-04-molecular-rede-covalente",
+      "pagina": 4,
+      "arquivo": "fig-04-molecular-rede-covalente.png",
+      "alt": "Comparação entre moléculas discretas separadas por forças intermoleculares e átomos unidos numa rede covalente contínua",
+      "aprovada": true,
+      "sha256": "761e3fae24090a59524b41da7b5feb7b5ef5036afc7ab413cd54e67f9dd0bf30",
+      "largura_px": 1536,
+      "altura_px": 963,
+      "publicado_sha256": "761e3fae24090a59524b41da7b5feb7b5ef5036afc7ab413cd54e67f9dd0bf30",
+      "publicado_commit": "fe12c19c3343742ec9d9cbfc94466682c97baa70"
+    }
+  ]
+}

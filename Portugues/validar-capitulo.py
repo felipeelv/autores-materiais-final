@@ -30,7 +30,7 @@ import re, argparse
 # boxes: emojis permitidos em linha de box (blockquote)
 # fora_box: emojis permitidos FORA de box (ex.: rótulo 📝 Exemplo da Física)
 DISC = {
-    "portugues":       dict(boxes="💡⚠️📌🔎👤", fora_box="",  familia="humanas"),
+    "portugues":       dict(boxes="💡⚠️📌",     fora_box="",  familia="humanas"),
     "estudos-sociais": dict(boxes="🔎💭👤",       fora_box="",  familia="humanas"),
     "sociologia":      dict(boxes="💭⏸️💡🔍",     fora_box="",  familia="humanas"),
     "filosofia":       dict(boxes="💭⏸️💡🔍",     fora_box="",  familia="humanas"),
@@ -51,6 +51,7 @@ DISC = {
 # Mudar o método sem recalibrar faz o validador reprovar o padrão-ouro.
 MIN_PAL, MAX_PAL = 180, 300
 PAL_POR_DISC = {
+    "portugues":      (100, 300),   # sem piso editorial; 100 só sinaliza possível truncamento
     "fisica":         (110, 190),
     "geometria":      (150, 240),
     "matematica-ef1": (150, 260),   # provisório — calibrar após o piloto
@@ -151,7 +152,10 @@ def main():
         ok("pergunta-problema em blockquote, sem rótulo")
 
     # 2. Extensão por aula ----------------------------------------------------
-    print(f"\n[2] Extensão por aula (teto {max_pal} · piso de referência {min_pal})")
+    if args.disciplina == "portugues":
+        print(f"\n[2] Extensão por aula (teto {max_pal} · aviso de truncamento abaixo de {min_pal})")
+    else:
+        print(f"\n[2] Extensão por aula (teto {max_pal} · piso de referência {min_pal})")
     for num, tit, corpo in aulas:
         n = contar_conteudo(corpo)
         if n > max_pal * 1.1:
@@ -159,7 +163,10 @@ def main():
         elif n > max_pal:
             aviso(f"Aula {num} — {tit}: {n} palavras (pouco acima do teto)")
         elif n < min_pal:
-            aviso(f"Aula {num} — {tit}: {n} palavras (abaixo do piso — só confira se ficou truncada)")
+            sufixo = ("possível truncamento — confira o recorte"
+                      if args.disciplina == "portugues"
+                      else "abaixo do piso — só confira se ficou truncada")
+            aviso(f"Aula {num} — {tit}: {n} palavras ({sufixo})")
         else:
             ok(f"Aula {num} — {tit}: {n} palavras")
 
@@ -218,6 +225,16 @@ def main():
         rc |= falha(f"boxes consecutivos sem prosa entre eles — {c}")
     if not consec:
         ok("nenhum par de boxes consecutivos")
+    if args.disciplina == "portugues":
+        excesso = []
+        for num, tit, corpo in aulas:
+            qtd = len(re.findall(r"(?m)^>\s*(?:💡|⚠️|📌)️?\s*\*\*", corpo))
+            if qtd > 1:
+                excesso.append(f"Aula {num} — {tit}: {qtd}")
+        for item in excesso:
+            rc |= falha(f"mais de 1 box na aula — {item}")
+        if not excesso:
+            ok("no máximo 1 box por aula")
 
     # 5. Emoji fora de box ----------------------------------------------------
     print("\n[5] Emoji fora de box")
@@ -258,6 +275,37 @@ def main():
             rc |= falha(f"voz em 3ª pessoa ('o brasileiro/os brasileiros'): {len(v)}×")
         else:
             ok("voz inclusiva (sem 'o brasileiro')")
+    if args.disciplina == "portugues":
+        padroes_meta = [
+            r"\bneste capítulo\b", r"\bnesta aula\b", r"\baqui,?\s+o foco\b",
+            r"\bveremos adiante\b", r"\bveremos depois\b",
+            r"\bserá (?:estudado|detalhado|aprofundado)(?:a)?\b",
+            r"\bserão (?:estudado|detalhado|aprofundado)(?:a)?s\b",
+            r"\bpertence(?:m)? a outr[oa] bloco\b",
+            r"\bpertence(?:m)? a (?:um )?capítulo posterior\b",
+            r"\boutro capítulo\b", r"\bcapítulos seguintes\b", r"\bséries posteriores\b",
+            r"\ba análise permanece\b", r"\bcabe lembrar que\b",
+            r"\bpergunta do capítulo\b", r"\bo capítulo não\b",
+        ]
+        meta = [i + 1 for i, l in enumerate(linhas)
+                if any(re.search(p, l.lower()) for p in padroes_meta)]
+        if meta:
+            rc |= falha(f"metadiscurso curricular nas linhas {meta}")
+        else:
+            ok("sem metadiscurso curricular")
+
+        termos_abstratos = re.compile(
+            r"\b(?:elementos?|constituintes?|declaraç(?:ão|ões)|"
+            r"determina(?:m|r|va|vam|ndo|do|da|dos|das)?|"
+            r"caracteriza(?:m|r|va|vam|ndo|do|da|dos|das)?|"
+            r"especifica(?:m|r|va|vam|ndo|do|da|dos|das)?)\b",
+            re.I,
+        )
+        abstratos = [i + 1 for i, l in enumerate(linhas) if termos_abstratos.search(l)]
+        if abstratos:
+            rc |= falha(f"metalinguagem abstrata evitada nas linhas {abstratos}")
+        else:
+            ok("sem metalinguagem abstrata evitada")
     if cfg["familia"] == "matematicas":
         ast = [i + 1 for i, l in enumerate(linhas) if re.match(r"^\s*\*\s+\S", l)]
         if ast:

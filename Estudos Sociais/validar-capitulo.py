@@ -8,7 +8,8 @@ USO:
     python3 validar-capitulo.py <capitulo.md> --disciplina <nome>
 
 DISCIPLINAS: portugues · ciencias · biologia · fisica · quimica · estudos-sociais
-             operacoes · geometria · financeira · sociologia · filosofia · matematica-ef1
+             geografia · historia · operacoes · geometria · financeira
+             sociologia · filosofia · matematica-ef1
 
 O QUE ELE FAZ — só o que a máquina decide melhor que a leitura:
   [1] estrutura do capítulo      [4] boxes (família, consecutivos)
@@ -32,6 +33,8 @@ import re, argparse
 DISC = {
     "portugues":       dict(boxes="💡⚠️📌🔎👤", fora_box="",  familia="humanas"),
     "estudos-sociais": dict(boxes="🔎💭👤",       fora_box="",  familia="humanas"),
+    "geografia":       dict(boxes="🔎💭",         fora_box="",  familia="humanas"),
+    "historia":        dict(boxes="🔎💭",         fora_box="",  familia="humanas"),
     "sociologia":      dict(boxes="💭⏸️💡🔍",     fora_box="",  familia="humanas"),
     "filosofia":       dict(boxes="💭⏸️💡🔍",     fora_box="",  familia="humanas"),
     "ciencias":        dict(boxes="💭⏸️💡📏🔬",   fora_box="",  familia="empiricas"),
@@ -52,8 +55,15 @@ DISC = {
 MIN_PAL, MAX_PAL = 180, 300
 PAL_POR_DISC = {
     "fisica":         (110, 190),
+    "geografia":      (140, 190),
+    "historia":       (140, 190),
     "geometria":      (150, 240),
     "matematica-ef1": (150, 260),   # provisório — calibrar após o piloto
+}
+
+TETO_DURO_POR_DISC = {
+    "geografia": 200,
+    "historia":  200,
 }
 
 # Títulos de fechamento proibidos (o formato novo dissolveu tudo nas aulas).
@@ -196,10 +206,16 @@ def main():
         ok("pergunta-problema em blockquote, sem rótulo")
 
     # 2. Extensão por aula ----------------------------------------------------
-    print(f"\n[2] Extensão por aula (teto {max_pal} · piso de referência {min_pal})")
+    teto_duro = TETO_DURO_POR_DISC.get(args.disciplina, max_pal * 1.1)
+    complemento = (
+        f" · teto de segurança {teto_duro}"
+        if args.disciplina in TETO_DURO_POR_DISC
+        else ""
+    )
+    print(f"\n[2] Extensão por aula (faixa até {max_pal} · piso de referência {min_pal}{complemento})")
     for num, tit, corpo in aulas:
         n = contar_conteudo(corpo)
-        if n > max_pal * 1.1:
+        if n > teto_duro:
             rc |= falha(f"Aula {num} — {tit}: {n} palavras")
         elif n > max_pal:
             aviso(f"Aula {num} — {tit}: {n} palavras (pouco acima do teto)")
@@ -208,7 +224,7 @@ def main():
         else:
             ok(f"Aula {num} — {tit}: {n} palavras")
 
-    if args.disciplina == "estudos-sociais":
+    if args.disciplina in {"estudos-sociais", "geografia", "historia"}:
         print("\n[2a] Ritmo visual da prosa")
         corridas = subsecoes_com_prosa_corrida(texto)
         for titulo, quantidade in corridas:

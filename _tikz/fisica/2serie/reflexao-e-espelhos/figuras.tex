@@ -1,0 +1,199 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-fisica}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-reflexao-regular-e-difusa
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.0,10.1);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.25,9.55)
+    {reflexão regular};
+  \draw[fisica superficie] (0.8,5.6) -- (9.8,5.6);
+  \foreach \x in {2.1,4.1,6.1}{
+    \draw[fisica raio] (\x-1.1,8.25) -- (\x,5.6);
+    \draw[fisica raio] (\x,5.6) -- (\x+1.1,8.25);
+  }
+  \node[fisica rotulo] at (5.25,4.95) {feixe permanece paralelo};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.25,3.85)
+    {reflexão difusa};
+  \draw[fisica superficie]
+    (0.8,0.85) -- (1.7,1.25) -- (2.6,0.75) -- (3.5,1.2)
+    -- (4.4,0.82) -- (5.3,1.32) -- (6.2,0.78) -- (7.1,1.18)
+    -- (8.0,0.8) -- (8.9,1.25) -- (9.8,0.85);
+  \foreach \x in {2.2,4.5,6.8}{
+    \draw[fisica raio] (\x-1.0,3.05) -- (\x,1.05);
+  }
+  \draw[fisica raio] (2.2,1.05) -- (1.25,2.75);
+  \draw[fisica raio] (4.5,1.05) -- (5.4,3.0);
+  \draw[fisica raio] (6.8,1.05) -- (8.3,2.45);
+  \node[fisica rotulo] at (5.25,0.1) {feixe se espalha};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-lei-da-reflexao
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.6,8.9);
+  \draw[fisica superficie] (0.75,1.1) -- (9.85,1.1);
+  \draw[fisica auxiliar] (5.15,1.1) -- (5.15,8.25)
+    node[above, fisica rotulo] {normal};
+  \draw[fisica raio] (1.2,6.75) -- (5.15,1.1);
+  \draw[fisica raio] (5.15,1.1) -- (9.1,6.75);
+  \draw[elevelaranja, line width=1.2pt] (5.15,3.05)
+    arc[start angle=90,end angle=125,radius=1.95];
+  \draw[elevelaranja, line width=1.2pt] (5.15,3.05)
+    arc[start angle=90,end angle=55,radius=1.95];
+  \node[fisica medida] at (4.05,3.3) {$\hat i$};
+  \node[fisica medida] at (6.25,3.3) {$\hat r$};
+  \node[fisica rotulo] at (1.8,5.7) {incidente};
+  \node[fisica rotulo] at (8.5,5.7) {refletido};
+  \node[font=\Large\bfseries, text=eleveazul] at (5.15,7.65)
+    {$\hat i=\hat r$};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-imagem-no-espelho-plano
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.1,8.8);
+  \draw[elevecinza, line width=2.2pt] (5.35,0.8) -- (5.35,8.0);
+  \foreach \y in {1.1,1.8,...,7.6}
+    \draw[elevecinza, line width=0.8pt] (5.35,\y) -- ++(0.45,-0.35);
+  \draw[fisica movimento] (2.1,1.35) -- (2.1,6.65)
+    node[fisica rotulo, above] {objeto};
+  \draw[fisica extensao] (8.6,1.35) -- (8.6,6.65)
+    node[fisica rotulo, above] {imagem virtual};
+  \draw[fisica raio] (2.1,6.65) -- (5.35,5.6) -- (1.25,4.15);
+  \draw[fisica extensao] (5.35,5.6) -- (8.6,6.65);
+  \draw[fisica raio] (2.1,6.65) -- (5.35,3.3) -- (1.25,2.35);
+  \draw[fisica extensao] (5.35,3.3) -- (8.6,6.65);
+  \draw[decorate, decoration={brace, mirror, amplitude=6pt}, elevelaranja, line width=1pt]
+    (2.1,0.65) -- (5.35,0.65)
+    node[midway, below=10pt, fisica medida] {$d$};
+  \draw[decorate, decoration={brace, mirror, amplitude=6pt}, elevelaranja, line width=1pt]
+    (5.35,0.65) -- (8.6,0.65)
+    node[midway, below=10pt, fisica medida] {$d$};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-espelho-concavo-e-convexo
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.2,11.0);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.35,10.45) {côncavo};
+  \draw[fisica superficie] (8.7,6.1)
+    .. controls (9.7,7.15) and (9.7,8.65) .. (8.7,9.7);
+  \draw[fisica auxiliar] (0.8,7.9) -- (9.1,7.9);
+  \foreach \y in {6.75,7.9,9.05}{
+    \draw[fisica raio] (0.85,\y) -- (8.85,\y);
+    \draw[fisica raio] (8.85,\y) -- (5.45,7.9);
+  }
+  \fill[eleveazul] (5.45,7.9) circle (3pt);
+  \node[fisica rotulo, below=7pt] at (5.45,7.9) {$F$ real};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.35,5.1) {convexo};
+  \draw[fisica superficie] (8.7,0.75)
+    .. controls (7.7,1.8) and (7.7,3.3) .. (8.7,4.35);
+  \draw[fisica auxiliar] (0.8,2.55) -- (10.25,2.55);
+  \foreach \y/\fy in {1.4/2.0,2.55/2.55,3.7/3.1}{
+    \draw[fisica raio] (0.85,\y) -- (8.1,\y);
+    \draw[fisica raio] (8.1,\y) -- (5.15,\fy);
+    \draw[fisica extensao] (8.1,\y) -- (9.75,2.55);
+  }
+  \fill[eleveazul] (9.75,2.55) circle (3pt);
+  \node[fisica rotulo, below=7pt] at (9.75,2.55) {$F$ virtual};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-elementos-do-espelho-esferico
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.2,7.9);
+  \draw[fisica auxiliar] (0.65,3.55) -- (10.35,3.55)
+    node[right, fisica rotulo] {eixo};
+  \draw[fisica superficie] (8.65,0.7)
+    .. controls (9.8,2.1) and (9.8,5.0) .. (8.65,6.4);
+  \fill[eleveazul] (2.15,3.55) circle (3pt);
+  \fill[eleveazul] (5.4,3.55) circle (3pt);
+  \fill[eleveazul] (8.65,3.55) circle (3pt);
+  \node[fisica rotulo, below=7pt] at (2.15,3.55) {$C$};
+  \node[fisica rotulo, below=7pt] at (5.4,3.55) {$F$};
+  \node[fisica rotulo, below=7pt] at (8.65,3.55) {$V$};
+  \draw[decorate, decoration={brace, mirror, amplitude=7pt}, elevelaranja, line width=1pt]
+    (2.15,5.65) -- (8.65,5.65)
+    node[midway, above=11pt, fisica medida] {$R$};
+  \draw[decorate, decoration={brace, amplitude=7pt}, elevelaranja, line width=1pt]
+    (5.4,1.45) -- (8.65,1.45)
+    node[midway, below=11pt, fisica medida] {$f=R/2$};
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-raios-notaveis-no-concavo
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.3,9.2);
+  \draw[fisica auxiliar] (0.65,1.25) -- (10.35,1.25);
+  \draw[fisica superficie] (9.0,0.25)
+    .. controls (10.05,2.25) and (10.05,5.8) .. (9.0,7.8);
+  \fill[eleveazul] (3.2,1.25) circle (3pt)
+    node[fisica rotulo, below=7pt] {$C$};
+  \fill[eleveazul] (6.1,1.25) circle (3pt)
+    node[fisica rotulo, below=7pt] {$F$};
+  \fill[eleveazul] (9.0,1.25) circle (3pt)
+    node[fisica rotulo, below=7pt] {$V$};
+  \draw[fisica movimento] (1.45,1.25) -- (1.45,6.65)
+    node[fisica rotulo, above] {objeto};
+  \coordinate (O) at (1.45,6.65);
+  \draw[fisica raio] (O) -- (9.0,6.65) -- (6.1,1.25);
+  \draw[fisica raio] (O) -- (6.1,1.25) -- (9.0,1.25);
+  \draw[fisica raio] (9.0,1.25) -- (0.8,1.25);
+  \draw[fisica raio] (O) -- (3.2,1.25) -- (9.0,3.85);
+  \draw[fisica raio] (9.0,3.85) -- (3.2,1.25) -- (O);
+  \node[fisica rotulo, align=left, anchor=west] at (4.45,8.45)
+    {paralelo $\to F$\\por $F\to$ paralelo\\por $C\to$ retorna};
+\end{tikzpicture}
+
+% FIGURA 7 — fig-07-casos-principais-do-concavo
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.45) rectangle (11.2,15.7);
+  \foreach \base/\titulo in {13.5/além de $C$,9.5/entre $C$ e $F$,5.5/em $F$,1.5/entre $F$ e $V$}{
+    \node[font=\large\bfseries, text=eleveazul, anchor=west] at (0.55,\base+1.65) {\titulo};
+    \draw[fisica auxiliar] (0.65,\base) -- (10.25,\base);
+    \fill[eleveazul] (4.1,\base) circle (2.5pt);
+    \fill[eleveazul] (6.4,\base) circle (2.5pt);
+    \node[fisica medida, below=4pt] at (4.1,\base) {$C$};
+    \node[fisica medida, below=4pt] at (6.4,\base) {$F$};
+    \draw[fisica superficie] (9.0,\base-0.85)
+      .. controls (9.6,\base-0.25) and (9.6,\base+0.85) .. (9.0,\base+1.45);
+  }
+  \draw[fisica movimento] (1.35,13.5) -- ++(0,1.1);
+  \draw[fisica movimento] (5.15,13.5) -- ++(0,-0.72);
+  \node[fisica rotulo] at (2.9,12.25) {real, invertida, reduzida};
+
+  \draw[fisica movimento] (5.1,9.5) -- ++(0,1.05);
+  \draw[fisica movimento] (1.35,9.5) -- ++(0,-1.45);
+  \node[fisica rotulo] at (3.2,8.15) {real, invertida, ampliada};
+
+  \draw[fisica movimento] (6.4,5.5) -- ++(0,1.05);
+  \draw[fisica raio] (6.4,6.55) -- (9.0,6.55);
+  \draw[fisica raio] (6.4,6.15) -- (9.0,6.15);
+  \node[fisica rotulo] at (3.25,4.25) {raios paralelos; imagem no infinito};
+
+  \draw[fisica movimento] (7.55,1.5) -- ++(0,1.0);
+  \draw[fisica extensao] (10.0,1.5) -- ++(0,1.5);
+  \node[fisica rotulo] at (3.2,0.25) {virtual, direita, ampliada};
+\end{tikzpicture}
+
+% FIGURA 8 — fig-08-campo-visual-do-convexo
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.2,10.2);
+  \node[font=\Large\bfseries, text=eleveazul] at (2.75,9.65) {plano};
+  \draw[elevecinza, line width=2pt] (1.15,5.15) -- (4.35,5.15);
+  \node[fisica corpo, circle, minimum size=0.65cm] (O1) at (2.75,1.35) {};
+  \draw[fisica raio] (O1.center) -- (1.15,5.15);
+  \draw[fisica raio] (O1.center) -- (4.35,5.15);
+  \fill[eleveazulclaro, opacity=.55] (O1.center) -- (1.15,5.15) -- (4.35,5.15) -- cycle;
+  \node[fisica rotulo] at (2.75,0.45) {campo menor};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (8.1,9.65) {convexo};
+  \draw[fisica superficie] (6.5,5.15)
+    .. controls (8.1,4.05) and (8.1,4.05) .. (9.7,5.15);
+  \node[fisica corpo, circle, minimum size=0.65cm] (O2) at (8.1,1.35) {};
+  \draw[fisica raio] (O2.center) -- (6.5,5.15) -- (5.1,7.9);
+  \draw[fisica raio] (O2.center) -- (9.7,5.15) -- (11.1,7.9);
+  \fill[eleveazulclaro, opacity=.55] (O2.center) -- (5.1,7.9) -- (11.1,7.9) -- cycle;
+  \node[fisica rotulo] at (8.1,0.45) {campo maior};
+\end{tikzpicture}
+
+\end{document}

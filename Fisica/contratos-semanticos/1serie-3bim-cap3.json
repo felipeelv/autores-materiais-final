@@ -1,0 +1,158 @@
+{
+  "capitulo": "1ª série · 3º bimestre · Capítulo 3 — Aplicações da dinâmica",
+  "blueprint": "../Reorganizacao-2026-2Semestre/disciplinas/Fisica/blueprints/1serie/3bim-bloco2.md",
+  "grandezas_estabelecidas": [
+    {
+      "simbolo": "m",
+      "grandeza": "massa",
+      "unidade": "kg",
+      "origem": "capítulo 1"
+    },
+    {
+      "simbolo": "F",
+      "grandeza": "força",
+      "unidade": "N",
+      "origem": "capítulo 1"
+    },
+    {
+      "simbolo": "a",
+      "grandeza": "aceleração",
+      "unidade": "m/s²",
+      "origem": "capítulo 1"
+    },
+    {
+      "simbolo": "v",
+      "grandeza": "velocidade",
+      "unidade": "m/s",
+      "origem": "percurso anterior"
+    },
+    {
+      "simbolo": "d, R",
+      "grandeza": "distância ou raio",
+      "unidade": "m",
+      "origem": "percurso anterior"
+    },
+    {
+      "simbolo": "t",
+      "grandeza": "tempo",
+      "unidade": "s",
+      "origem": "percurso anterior"
+    },
+    {
+      "simbolo": "g",
+      "grandeza": "aceleração da gravidade",
+      "unidade": "m/s²",
+      "origem": "capítulo 2"
+    },
+    {
+      "simbolo": "P, N, T",
+      "grandeza": "peso, normal e tração",
+      "unidade": "N",
+      "origem": "capítulo 2"
+    }
+  ],
+  "grandezas_novas": [
+    {
+      "simbolo": "mu_e, mu_c",
+      "grandeza": "coeficientes de atrito",
+      "unidade": "sem unidade",
+      "declarar_em": "1.1"
+    },
+    {
+      "simbolo": "omega",
+      "grandeza": "velocidade angular",
+      "unidade": "rad/s",
+      "declarar_em": "4.1"
+    }
+  ],
+  "conceitos": [
+    {
+      "id": "atrito_estatico",
+      "introduzido_em": "1.1",
+      "depende_de": [],
+      "padroes": [
+        "F_\\{at,e\\}",
+        "atrito estático"
+      ]
+    },
+    {
+      "id": "decomposicao_do_peso",
+      "introduzido_em": "3.1",
+      "depende_de": [],
+      "padroes": [
+        "P_x\\s*=",
+        "P_y\\s*=",
+        "decomposição do peso"
+      ]
+    },
+    {
+      "id": "angulo_de_iminencia",
+      "introduzido_em": "3.2",
+      "depende_de": [
+        "atrito_estatico",
+        "decomposicao_do_peso"
+      ],
+      "padroes": [
+        "\\\\tan\\s*\\\\theta_\\{im\\}",
+        "ângulo.+iminência"
+      ]
+    },
+    {
+      "id": "aceleracao_centripeta",
+      "introduzido_em": "4.1",
+      "depende_de": [],
+      "padroes": [
+        "a_c\\s*=",
+        "aceleração centrípeta"
+      ]
+    },
+    {
+      "id": "velocidade_minima_looping",
+      "introduzido_em": "5.2",
+      "depende_de": [
+        "aceleracao_centripeta"
+      ],
+      "padroes": [
+        "v_\\{min\\}",
+        "velocidade mínima"
+      ]
+    }
+  ],
+  "historia": {
+    "pessoas": [
+      {
+        "id": "amontons",
+        "padroes_nome": [
+          "Guillaume Amontons",
+          "\\bAmontons\\b"
+        ],
+        "secoes_inline_essenciais": [
+          "1.2"
+        ],
+        "padroes_acessorios": [
+          "1663",
+          "1705",
+          "surdo",
+          "Paris",
+          "De la résistance"
+        ]
+      },
+      {
+        "id": "huygens",
+        "padroes_nome": [
+          "Christiaan Huygens",
+          "\\bHuygens\\b"
+        ],
+        "secoes_inline_essenciais": [
+          "4.2"
+        ],
+        "padroes_acessorios": [
+          "1629",
+          "1695",
+          "Haia",
+          "Horologium Oscillatorium"
+        ]
+      }
+    ]
+  }
+}

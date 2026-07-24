@@ -24,7 +24,7 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **Anexo A** (como esc
 
 - **1 tema = 1 capítulo · 1 aula = 1 tópico numerado `## N.`**, na ordem do blueprint. Cada aula é autossuficiente (~50 min).
 - **O material é a REFERÊNCIA DO ALUNO — a explicação é do professor.** Prosa curta para o raciocínio, marcadores para o que é enumerável: máximo 2 frases seguidas antes de uma lista; tabela sempre que houver 2+ itens a contrastar.
-- **Ciências é concisa e direta:** preferir **180–220 palavras de conteúdo por aula**, com teto firme de 300. O teto **não é meta**; não existe mínimo nem preenchimento para alcançar faixa.
+- **Ciências é concisa e direta:** preferir **140–200 palavras de conteúdo por aula**, com teto firme de 220. O teto **não é meta**; não existe mínimo nem preenchimento para alcançar faixa.
 - **O volume não cresce com o ano:** 4º, 5º, 6º, 7º e 8º seguem a mesma extensão, o mesmo número de subseções e o mesmo ritmo visual. A série muda a profundidade, não a quantidade de texto.
 - **Respiro visual obrigatório:** toda subseção `###` sem lista ou tabela recebe uma frase-chave em blockquote simples (`> ...`). Além disso, nunca deixar três parágrafos de prosa consecutivos: antes do terceiro, transformar a ideia de contraste, alerta ou síntese em blockquote. Lista, tabela ou box também interrompem a sequência.
 - **Alternância de subtópicos:** dentro da mesma aula, dois subtópicos `###` sem lista de marcadores não podem ficar seguidos. Se isso ocorrer, reorganize um deles com bullets que expressem elementos realmente paralelos. Subtópicos com marcadores podem ser consecutivos.
@@ -50,9 +50,9 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **Anexo A** (como esc
 
 Capítulos de **Ciências, 4º ao 8º ano**, para o 3º e 4º bimestres de 2026. *(Escopo estendido ao Fundamental I — 4º e 5º ano — por decisão do Felipe em 20/07/2026.)*
 
-**A equação do modelo:** `1 tema = 1 capítulo` · `1 aula = 1 tópico numerado (## N.)` · `1 aula ≈ 50 min ≈ 180–220 palavras (teto 300)` · `prosa curta + marcadores + respiro visual`.
+**A equação do modelo:** `1 tema = 1 capítulo` · `1 aula = 1 tópico numerado (## N.)` · `1 aula ≈ 50 min ≈ 140–200 palavras (teto 220)` · `prosa curta + marcadores + respiro visual`.
 
-> **Override específico de Ciências:** a faixa 180–220 substitui, nesta disciplina, o padrão comum de 220–250 do Anexo A. O recorte completo continua sendo mais importante que a contagem.
+> **Override específico de Ciências:** a faixa 140–200 substitui, nesta disciplina, o padrão comum de 220–250 do Anexo A. O recorte completo continua sendo mais importante que a contagem.
 
 **Como achar o blueprint:** `Blueprints/<ano>-<bimestre>-<bloco>.md` — todos numa pasta só, com o ano no nome. Anos: `4ano` … `8ano`. Blocos: `3bim-bloco1` · `3bim-bloco2` · `4bim-bloco1` · `4bim-bloco23`. Exemplo: A célula (6º ano, 3º bim, bloco 1) → `Blueprints/6ano-3bim-bloco1.md`.
 
@@ -81,7 +81,7 @@ O capítulo **termina na última aula**. Não há seção de fechamento.
 - **1 aula = 1 tópico `## N.`**, na ordem do blueprint; `---` entre aulas.
 - Tópicos internos viram subseções **numeradas `### N.1`, `### N.2`**. Título curto e descritivo — pode ser pergunta orientadora, desde que cubra o tópico do blueprint.
 - **2 a 3 subseções por aula.** Mais que isso fragmenta.
-- **Extensão: preferir 180–220 palavras, teto firme de 300** por aula. Desenvolva todo o recorte e pare. Se passar de 220, procure repetição e frase de ligação dispensável; se passar de 300, corte rodeio e redundância — nunca recorte do blueprint. Aula completa com menos de 180 palavras está pronta.
+- **Extensão: preferir 140–200 palavras, teto firme de 220** por aula. Desenvolva todo o recorte e pare. Se passar de 200, procure repetição e frase de ligação dispensável; se passar de 220, corte rodeio e redundância — nunca recorte do blueprint. Aula completa com menos de 140 palavras está pronta.
 
 ### O volume não cresce com o ano
 
@@ -89,7 +89,7 @@ Do **4º ao 8º ano**, a construção material da aula permanece constante:
 
 | Elemento | Padrão em todas as séries |
 |---|---|
-| extensão | preferencialmente 180–220 palavras |
+| extensão | preferencialmente 140–200 palavras |
 | organização | 2–3 subseções `###` |
 | parágrafo | 1 frase sempre que possível; máximo 2 |
 | visual | lista/tabela ou respiro em `>` por subseção |
@@ -223,7 +223,7 @@ Estes elementos existiam como blocos pós-conteúdo no formato antigo (Sua Parte
 
 - [ ] Título é `# Capítulo {N} — {Tema}` (sem linha de disciplina/ano)
 - [ ] Todas as aulas do blueprint, na ordem, com todo o recorte desenvolvido
-- [ ] Cada aula abre com cena/fenômeno · preferencialmente 180–220 palavras (teto 300) · autossuficiente
+- [ ] Cada aula abre com cena/fenômeno · preferencialmente 140–200 palavras (teto 220) · autossuficiente
 - [ ] O volume é o mesmo do 4º ao 8º ano; série mais alta não ganhou parágrafos, exemplos ou subseções extras
 - [ ] **Prosa curta + marcadores:** conteúdo enumerável em lista/tabela; máx. 2 frases antes de uma lista
 - [ ] Toda subseção `###` sem lista/tabela tem um respiro em `>`; box ou versículo já conta

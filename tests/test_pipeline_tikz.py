@@ -13,6 +13,11 @@ import unittest
 BASE = Path(__file__).resolve().parents[1]
 CRIADOR = BASE / "_tikz" / "ferramentas" / "criar.py"
 ESTILO = BASE / "_tikz" / "estilos" / "eleve-geometria.sty"
+ESTILO_FISICA = BASE / "_tikz" / "estilos" / "eleve-fisica.sty"
+ESTILO_MATEMATICA_EF1 = (
+    BASE / "_tikz" / "estilos" / "eleve-matematica-ef1.sty"
+)
+ESTILO_QUIMICA = BASE / "_tikz" / "estilos" / "eleve-quimica.sty"
 PNG_ASSINATURA = b"\x89PNG\r\n\x1a\n"
 
 
@@ -31,6 +36,18 @@ class PipelineTikzTest(unittest.TestCase):
     def preparar_raiz(self, raiz: Path):
         (raiz / "_tikz" / "estilos").mkdir(parents=True)
         shutil.copyfile(ESTILO, raiz / "_tikz" / "estilos" / ESTILO.name)
+        shutil.copyfile(
+            ESTILO_FISICA,
+            raiz / "_tikz" / "estilos" / ESTILO_FISICA.name,
+        )
+        shutil.copyfile(
+            ESTILO_MATEMATICA_EF1,
+            raiz / "_tikz" / "estilos" / ESTILO_MATEMATICA_EF1.name,
+        )
+        shutil.copyfile(
+            ESTILO_QUIMICA,
+            raiz / "_tikz" / "estilos" / ESTILO_QUIMICA.name,
+        )
         (raiz / "_tikz" / "config.json").write_text(
             json.dumps(
                 {
@@ -38,7 +55,12 @@ class PipelineTikzTest(unittest.TestCase):
                     "repositorio_publico": "felipeelv/imagens-tikz",
                     "branch_publicacao": "main",
                     "dpi": 300,
-                    "disciplinas_ativas": ["geometria"],
+                    "disciplinas_ativas": [
+                        "geometria",
+                        "fisica",
+                        "matematica-ef1",
+                        "quimica",
+                    ],
                 }
             ),
             encoding="utf-8",
@@ -148,6 +170,123 @@ class PipelineTikzTest(unittest.TestCase):
                 "Triângulo ABC com seus três vértices e lados identificados",
             )
             self.assertEqual(novo.returncode, 0, novo.stderr)
+
+    def test_novo_documento_usa_estilo_da_disciplina(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            raiz = Path(tmp)
+            self.preparar_raiz(raiz)
+            (raiz / "Fisica").mkdir()
+            (raiz / "Fisica" / "capitulo.md").write_text(
+                "# Capítulo 1 — Dinâmica\n\n"
+                "<!-- tikz:fig-01-diagrama-de-corpo-livre -->\n",
+                encoding="utf-8",
+            )
+
+            novo = self.executar(
+                raiz,
+                "novo",
+                "--disciplina",
+                "fisica",
+                "--ano-serie",
+                "1serie",
+                "--titulo",
+                "Dinâmica",
+                "--markdown",
+                "Fisica/capitulo.md",
+                "--id",
+                "fig-01-diagrama-de-corpo-livre",
+                "--alt",
+                "Bloco apoiado com as forças peso e normal em sentidos opostos",
+            )
+            self.assertEqual(novo.returncode, 0, novo.stderr)
+            fonte = (
+                raiz
+                / "_tikz"
+                / "fisica"
+                / "1serie"
+                / "dinamica"
+                / "figuras.tex"
+            ).read_text(encoding="utf-8")
+            self.assertIn(r"\usepackage{eleve-fisica}", fonte)
+            self.assertIn(r"\begin{tikzpicture}[fisica figura", fonte)
+
+    def test_novo_documento_de_matematica_ef1_usa_estilo_proprio(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            raiz = Path(tmp)
+            self.preparar_raiz(raiz)
+            (raiz / "Matematica EF1").mkdir()
+            (raiz / "Matematica EF1" / "capitulo.md").write_text(
+                "# Capítulo 1 — Frações\n\n"
+                "<!-- tikz:fig-01-fracoes-equivalentes -->\n",
+                encoding="utf-8",
+            )
+
+            novo = self.executar(
+                raiz,
+                "novo",
+                "--disciplina",
+                "matematica-ef1",
+                "--ano-serie",
+                "4ano",
+                "--titulo",
+                "Frações",
+                "--markdown",
+                "Matematica EF1/capitulo.md",
+                "--id",
+                "fig-01-fracoes-equivalentes",
+                "--alt",
+                "Uma metade e dois quartos ocupam a mesma parte do inteiro",
+            )
+            self.assertEqual(novo.returncode, 0, novo.stderr)
+            fonte = (
+                raiz
+                / "_tikz"
+                / "matematica-ef1"
+                / "4ano"
+                / "fracoes"
+                / "figuras.tex"
+            ).read_text(encoding="utf-8")
+            self.assertIn(r"\usepackage{eleve-matematica-ef1}", fonte)
+            self.assertIn(r"\begin{tikzpicture}[matematica figura", fonte)
+
+    def test_novo_documento_de_quimica_usa_estilo_proprio(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            raiz = Path(tmp)
+            self.preparar_raiz(raiz)
+            (raiz / "Quimica").mkdir()
+            (raiz / "Quimica" / "capitulo.md").write_text(
+                "# Capítulo 1 — Equilíbrio químico\n\n"
+                "<!-- tikz:fig-01-equilibrio-dinamico -->\n",
+                encoding="utf-8",
+            )
+
+            novo = self.executar(
+                raiz,
+                "novo",
+                "--disciplina",
+                "quimica",
+                "--ano-serie",
+                "2serie",
+                "--titulo",
+                "Equilíbrio químico",
+                "--markdown",
+                "Quimica/capitulo.md",
+                "--id",
+                "fig-01-equilibrio-dinamico",
+                "--alt",
+                "Velocidades direta e inversa convergem para o mesmo valor",
+            )
+            self.assertEqual(novo.returncode, 0, novo.stderr)
+            fonte = (
+                raiz
+                / "_tikz"
+                / "quimica"
+                / "2serie"
+                / "equilibrio-quimico"
+                / "figuras.tex"
+            ).read_text(encoding="utf-8")
+            self.assertIn(r"\usepackage{eleve-quimica}", fonte)
+            self.assertIn(r"\begin{tikzpicture}[quimica figura", fonte)
 
 
 if __name__ == "__main__":

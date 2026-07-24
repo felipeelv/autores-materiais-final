@@ -26,16 +26,18 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **Anexo A** (como esc
 - **Material é só conteúdo.** Zero exercício proposto, atividade, experimento a executar, projeto, revisão ou prova. **Exemplo resolvido é conteúdo e é permitido**; "agora resolva você" e "experimente em casa" não.
 - **Sem seções de fechamento.** Nada de "Introdução", "NA VIDA REAL", "E A BÍBLIA NISSO?", "Simplificando", "Para não esquecer", "Fórmulas do capítulo" — esses elementos vivem **dentro** das aulas.
 - **Progressão fixa: fenômeno → conceito/lei → modelo idealizado → expressão matemática.** A abertura tem no máximo 25 palavras, com fenômeno concreto (carro, elevador, esporte, cozinha) ou fato direto — **a lei nunca abre a aula**, e não há cena narrativa nem suspense.
-- **Física é fórmula-driven:** fórmula, tabela de grandezas e diagrama carregam o que em Humanas precisaria de frase. **Grandeza sempre com unidade no SI**; cada fórmula com suas grandezas definidas logo abaixo.
-- **Todo cálculo passo a passo:** exemplo com rótulo `📝 **Exemplo:**` (máx. 1 por tópico `###`), uma operação por linha — dados → fórmula → substituição → resultado com unidade.
+- **Física é fórmula-driven:** fórmula, tabela de grandezas e diagrama carregam o que em Humanas precisaria de frase. Grandeza **nova** declara unidade uma vez, na primeira fórmula em que aparece; grandeza já estabelecida no percurso não tem unidade redeclarada. **É proibido inventário de unidades após fórmula.**
+- **Todo cálculo passo a passo:** exemplo com rótulo `📝 **Exemplo:**` (máx. 1 por tópico `###`), uma operação por linha — dados → fórmula → substituição → cada simplificação → resultado com unidade. Nenhum valor pode surgir sem estar no enunciado ou em etapa anterior.
 - **Experimento e observação entram como contexto** (cena histórica, medição, dado real), em 2–3 frases — **nunca como prática a executar**.
 - **Toda lista precedida de frase de transição que carrega informação** — nunca lista solta, nunca "As principais características são:".
-- **Boxes são "drops":** 1 frase. Família 💭 ⏸️ 💡 📏 ⚡ 📐 · 1–2 por aula, **nunca dois seguidos**. O box 🧪 não existe mais.
+- **Boxes são "drops":** 1 frase. Família 💭 ⏸️ 💡 📏 ⚡ 📐, com `👤` apenas na última aula · 1–2 por aula, **nunca dois seguidos**. O box deve acrescentar aplicação concreta, consequência, erro comum, dado novo ou pergunta ainda não respondida — nunca parafrasear a seção. O box 🧪 não existe mais.
+- **História da ciência:** experimento, evidência ou contribuição indispensável pode permanecer junto ao conceito; biografia, datas acessórias, prêmios, instituições e títulos de obras vão para um único box final `👤 **Quem pesquisou isso:**`, apenas quando acrescentarem informação útil.
+- **Tabela e prosa se complementam:** a prosa não repete o que a tabela já informa; depois dela, só interpretação, causa, consequência, exceção ou erro comum.
 - **Física NÃO leva versículo** (decisão do Felipe, 21/07/2026). Capítulo sem versículo é a entrega correta, mesmo quando o blueprint prescrever a conexão VP.
 - **Zero itens da lista NÃO ANTECIPAR** do blueprint, nem em exemplos.
 - A **pergunta-problema** é respondida dentro da aula pertinente, **sem anunciar**.
 
-**Fluxo:** confirme série/bimestre/bloco/capítulo e diga qual blueprint vai usar → se for bloco inteiro, liste os capítulos e **aguarde aprovação** → produza **um capítulo por vez** → antes de entregar, **recalcule todos os exemplos** e confira símbolos, unidades e nomenclatura → entregue **só o capítulo em Markdown**, sem comentar a estrutura. Correção apontada em um capítulo vale para todos os seguintes. **Não rode comandos de verificação durante a produção** — a conferência mecânica é um passo à parte, no terminal.
+**Fluxo:** confirme série/bimestre/bloco/capítulo e diga qual blueprint vai usar → se for bloco inteiro, liste os capítulos e **aguarde aprovação** → produza **um capítulo por vez** → antes de entregar, **recalcule todos os exemplos** e confira símbolos, unidades e nomenclatura → entregue **só o capítulo em Markdown**, sem comentar a estrutura. Correção apontada em um capítulo vale para todos os seguintes. Depois da produção, rode a validação mecânica e a auditoria semântica; revisão humana fica restrita aos achados de baixa confiança ou aos conflitos com o blueprint.
 
 **Fora de escopo:** do **6º ao 8º ano**, conteúdos de Química e Biologia pertencem a **Ciências** (outro projeto). Química e Biologia do **9º ano e do EM** também têm projetos próprios. Se o pedido for desses conteúdos, diga a que projeto pertence.
 
@@ -161,7 +163,7 @@ Física é **fórmula-driven**: fórmula, tabela de grandezas e diagrama carrega
 | Conteúdo | Formato | Exemplo |
 |---|---|---|
 | Grandezas de um fenômeno | **tabela símbolo · o que mede · unidade** | $$\lambda$$ · distância entre cristas · m |
-| Elementos de uma fórmula | lista logo abaixo da fórmula | $$v$$ — velocidade (m/s) · $$f$$ — frequência (Hz) |
+| Grandeza nova em uma fórmula | meia linha na primeira ocorrência | onde $$f$$ é a frequência, em hertz (Hz) |
 | Classificações | tabela | mecânica × eletromagnética · transversal × longitudinal |
 | Fenômenos que se comparam | tabela | reflexão × refração × difração |
 | Condições de validade de uma lei | lista | quando o modelo vale e quando falha |
@@ -179,6 +181,32 @@ Medido nas 42 aulas do 3º bimestre (média de 336 palavras e **72% de prosa**, 
 - ❌ **Reenunciar a fórmula em palavras** ("A leitura em palavras ajuda: se cada oscilação avança um comprimento de onda…"). A fórmula já diz; o que falta é a leitura **física** do resultado, não a tradução da álgebra.
 - ❌ **Descrever em prosa o que o diagrama já mostra.**
 
+### 3.5 Passada específica de exatas
+
+Estas regras valem para produção e revisão de todos os capítulos:
+
+1. **Grandeza já estabelecida não tem unidade redeclarada.** A referência não é uma lista universal: consulte o contrato semântico do capítulo e o percurso anterior da mesma série. No capítulo 3 da 1ª série, por exemplo, massa (kg), força (N), aceleração ($$\mathrm{m/s^2}$$), velocidade (m/s), distância (m), tempo (s), peso, normal, tração e $$g$$ já estão estabelecidos pelos capítulos 1 e 2.
+2. **Grandeza nova declara unidade uma vez**, em meia linha, na primeira fórmula em que aparece: “onde $$\omega$$ é a velocidade angular, em rad/s”. Grandeza adimensional é identificada uma única vez como “sem unidade”.
+3. **Parágrafo-inventário de unidades é proibido.** Não escrever “Nessas expressões, $$v$$ é medida em..., $$R$$ em..., $$g$$ em...”. Se todas as grandezas já são conhecidas, nenhuma linha de unidades é acrescentada.
+4. **Todo valor usado em cálculo precisa de origem visível:** foi dado no enunciado ou calculado em uma linha anterior. Dados recuperados de tabela ou parágrafo distante devem ser repetidos no enunciado do exemplo.
+5. **Uma operação por linha.** Não encadear etapas como `P=mg=10\cdot10=100\,\mathrm{N}`. Usar:
+
+   ```markdown
+   $$P=mg$$
+
+   $$P=10\cdot10$$
+
+   $$P=100\,\mathrm{N}$$
+   ```
+
+6. **Dependência conceitual governa a ordem.** Resultado, caso especial ou fórmula só aparece depois do conceito e da ferramenta que o justificam. O contrato semântico registra `introduzido_em` e `depende_de`.
+7. **História não interrompe o raciocínio.** Contribuição essencial — experimento, evidência ou passo histórico exigido pelo blueprint — permanece junto ao conceito, em até 2 frases. Biografia acessória é reunida, quando realmente útil, em um único box `👤 **Quem pesquisou isso:**` na última aula; não se cria box apenas para cumprir cota.
+8. **Tabela e prosa não duplicam afirmações.** A frase posterior deve acrescentar interpretação, causa, consequência, exceção, limite do modelo ou erro comum. “Tabela ou prosa” não significa proibir uma introdução curta à tabela.
+9. **Box precisa ter função nova**, classificada como aplicação concreta, consequência, erro comum, pergunta genuína ainda não respondida ou dado novo. Box que apenas reescreve a definição da seção é cortado ou substituído.
+10. **LaTeX:** `\,` aparece somente dentro de ambiente matemático; unidade nunca vira vírgula na conversão (`10\,\mathrm{kg}`, nunca `10,kg`).
+
+Na revisão final, faça uma passada específica por: inventários de unidades; valores sem declaração anterior; múltiplas operações na mesma linha; resultado anterior ao pré-requisito; história acessória fora do box final; prosa que repete tabela; box sem novidade; e `\,` fora do LaTeX.
+
 ## 4. Como cada aula é construída
 
 1. **Abertura: no máximo 25 palavras.** Pode ser **fenômeno concreto** que o aluno reconheça (carro, elevador, esporte, cozinha) **ou fato direto** — escolha o que chega mais rápido ao conteúdo. Sem cena narrativa, sem construção de suspense.
@@ -187,10 +215,10 @@ Medido nas 42 aulas do 3º bimestre (média de 336 palavras e **72% de prosa**, 
    - **A lei nunca abre a aula.**
 2. **Progressão fixa: fenômeno → conceito/lei → modelo idealizado → expressão matemática** (nas séries com formalismo). Cada frase entrega informação; se pode ser cortada sem perda, corte.
 3. **Experimento e observação entram como contexto** — cena histórica, medição, dado real — **nunca como prática a executar**, e em 2–3 frases, não como narrativa (regra da família Empíricas).
-4. **Fórmulas integradas ao texto, nunca isoladas:** fórmula central em `$$...$$` em linha própria, precedida de frase introdutória; logo após, **definir cada grandeza com sua unidade SI** ("onde $$m$$ é a massa (kg)…"). Grandeza física sempre acompanhada de unidade.
+4. **Fórmulas integradas ao texto, nunca isoladas:** fórmula central em `$$...$$` em linha própria e precedida de frase introdutória. Logo após, definir **somente a grandeza nova**, com unidade SI, na primeira ocorrência; grandezas já estabelecidas não recebem inventário repetido.
 5. **Exemplo resolvido** (quando o conteúdo envolve cálculo): rótulo `📝 **Exemplo:**`, sem numeração e sem "resolvido", **máximo 1 por tópico `###`** — o mais didático. **Cada operação em linha própria**: dados → fórmula com símbolos → substituição → cada simplificação → resultado com unidade (formato completo na §7).
-6. **Listas sempre com frase de transição** ("Isso acontece porque:") — nunca lista solta. Tabelas para comparar grandezas, unidades ou dados; diagramas ASCII (entre ` ``` `) para esquemas — sem imagens.
-7. **Físico-chave:** aparece **uma vez no capítulo**, na aula mais pertinente, como cena de descoberta dentro do texto (quem foi, o que fez, quando — dados do blueprint). Referências secundárias só mencionadas.
+6. **Listas sempre com frase de transição** ("Isso acontece porque:") — nunca lista solta. Tabelas para comparar grandezas, unidades ou dados; figuras TikZ/PNG seguem `PADRAO-DE-IMAGENS-TIKZ.md`. ASCII fica restrito a esquema simples que não justifique figura.
+7. **Físico-chave:** a contribuição essencial aparece **uma vez**, junto ao conceito pertinente. Informações biográficas acessórias, se úteis, ficam reunidas no box final `👤 **Quem pesquisou isso:**`; referências secundárias sem função conceitual são cortadas.
 8. **Modelo idealizado com seus limites:** dizer o que o modelo explica e onde ele falha, quando o nível permitir.
 9. **Conexões ENEM/vestibular** (só EM): mencionar quando naturais, em 1 frase — sem transformar em exercício.
 
@@ -230,11 +258,14 @@ Medido nas 42 aulas do 3º bimestre (média de 336 palavras e **72% de prosa**, 
 > 📏 **Medidas Impressionantes:** → dado numérico surpreendente com grandeza e unidade
 > ⚡ **Física no Dia a Dia:**     → fenômeno físico observável no cotidiano em 1 frase
 > 📐 **Fazendo as Contas:**       → conta simples que reforça o conceito (2–3 linhas)
+> 👤 **Quem pesquisou isso:**     → biografia acessória útil, somente na última aula
 ```
 
 - **No máximo 2 boxes por aula.** Cada box é um "drop": **1 frase única** — dado isolado, nunca mini-parágrafo.
+- **Cada box precisa acrescentar informação:** aplicação concreta, consequência, erro comum, pergunta genuína ainda não respondida ou dado novo. Se a frase puder substituir a definição da seção sem perda, o box está repetitivo.
 - **Quebra de linha interna obrigatória:** título na 1ª linha (dois espaços no final), conteúdo na 2ª, ambos no blockquote.
 - **Nunca dois boxes seguidos** — sempre ao menos um parágrafo de conteúdo entre eles.
+- O box `👤` é excepcional: no máximo 1 por capítulo, sempre na última aula e somente quando houver biografia acessória útil. Contribuição histórica essencial continua junto ao conceito.
 - ❌ O box `🧪 Experimente` **foi abolido** (material não propõe experimentos — regra da reorganização). Nenhum box de experimento, atividade ou procedimento a executar.
 - Ponto contraintuitivo ou erro comum **não fica em negrito solto no corpo**: a família de Física não tem box de alerta, então vira **frase curta própria**.
 
@@ -242,7 +273,7 @@ Medido nas 42 aulas do 3º bimestre (média de 336 palavras e **72% de prosa**, 
 
 - **Negrito** → termo em estudo, leis, definições. *Itálico* → palavras citadas, títulos de obras, grandezas na primeira menção.
 - Emojis → somente nos boxes padronizados e no rótulo `📝 **Exemplo:**` (**exceção única**). Nunca em títulos ou corpo do texto.
-- Diagramas → ASCII entre ` ``` `. O projeto não usa imagens.
+- Diagramas → figuras TikZ/PNG conforme `PADRAO-DE-IMAGENS-TIKZ.md`; ASCII entre ` ``` ` apenas para esquema simples.
 - Numerais: por extenso de um a dez **em texto corrido não técnico**; **algarismos sempre** em dados, medidas, valores de grandezas e tabelas (20 m/s, 1.200 kg, 60 km/h).
 - Ortografia: **Anexo B** — Acordo Ortográfico 1990 com as escolhas da casa. Verificar antes da entrega; grafia em dúvida → VOLP (volp.abl.org.br).
 
@@ -253,7 +284,9 @@ Medido nas 42 aulas do 3º bimestre (média de 336 palavras e **72% de prosa**, 
 - Toda grandeza numérica com unidade, em `\mathrm{}` com espaço fino `\,`: `$$v = 20\,\mathrm{m/s}$$`, `$$P = 60\,\mathrm{W}$$`, `$$E = 240\,\mathrm{kJ}$$`, `$$g = 9{,}8\,\mathrm{m/s^2}$$`.
 - Unidades compostas dentro de **um único** `\mathrm{}`: `\mathrm{m/s^2}`, `\mathrm{kg \cdot m/s}`, `\mathrm{N}`.
 - Milhar separado por espaço fino: `$$240\,000\,\mathrm{J}$$`.
-- **Cada fórmula com suas grandezas definidas logo abaixo**, com unidade SI; fórmula nunca isolada sem contexto.
+- **Grandeza nova:** definir símbolo, significado e unidade SI uma única vez, na primeira fórmula em que aparece.
+- **Grandeza já estabelecida:** usar diretamente, sem redeclarar a unidade. O contrato semântico do capítulo registra o que já foi apresentado no percurso.
+- **Proibido:** parágrafo ou lista que inventarie unidades depois da fórmula.
 - **Símbolos consistentes no capítulo inteiro** — não alternar $$\Delta s$$ e $$d$$ para a mesma grandeza.
 
 **Comandos que aparecem só aqui**
@@ -267,7 +300,7 @@ Medido nas 42 aulas do 3º bimestre (média de 336 palavras e **72% de prosa**, 
 | Rótulo em fórmula (palavra curta, sem acento) | `\text{}` — ex.: `$$F_{\text{atrito}}$$` |
 | Proporcional | `\propto` |
 
-> ⚗️ Se aparecer equação química (ex.: combustão em termologia), usar `\ce{}` (mhchem) — validado no nosso ambiente em jul/2026: `$$\ce{CH4 + 2O2 -> CO2 + 2H2O}$$`.
+> ⚗️ Se aparecer equação química, usar MathJax básico, sem mhchem: `$$\mathrm{CH_4} + 2\mathrm{O_2} \rightarrow \mathrm{CO_2} + 2\mathrm{H_2O}$$`. O render final exibe `\ce{}` literalmente.
 
 **Exemplo resolvido — formato obrigatório da disciplina** *(difere do padrão de Passos das matemáticas)*
 
@@ -287,7 +320,9 @@ $$E_c = \frac{1}{2} \cdot 1200 \cdot 20^2$$
 
 $$E_c = \frac{1}{2} \cdot 1200 \cdot 400$$
 
-$$E_c = 240\,000\,\mathrm{J} = 240\,\mathrm{kJ}$$
+$$E_c = 240\,000\,\mathrm{J}$$
+
+$$E_c = 240\,\mathrm{kJ}$$
 ```
 
 **Nomenclatura física (padrão didático brasileiro)** — seguir a nomenclatura consagrada nos didáticos brasileiros e no ENEM/vestibular (Ramalho, Halliday adaptado). *Adicionar casos conforme surgirem.*
@@ -306,7 +341,7 @@ $$E_c = 240\,000\,\mathrm{J} = 240\,\mathrm{kJ}$$
 - ❌ Formalismo fora do balizamento da série definido no blueprint.
 - ❌ Frases-preparação ("Neste capítulo vamos estudar...", "A seguir veremos...", parágrafos que só contextualizam sem informar). A frase de transição antes de lista é obrigatória — mas ela anuncia a lista em meia frase, não repete o conteúdo.
 - ❌ Rótulos no cabeçalho ("Pergunta-problema:") — só a pergunta em blockquote.
-- ❌ Emojis fora dos boxes (exceção única: o rótulo `📝 **Exemplo:**`) · imagens (só ASCII).
+- ❌ Emojis fora dos boxes (exceção única: o rótulo `📝 **Exemplo:**`) · imagens fora do pipeline TikZ/PNG autorizado.
 - ❌ Definição enciclopédica de abertura · lista sem frase de transição · analogia estendida · parágrafo que recapitula · "o estudante deve..." · grandeza sem unidade.
 
 ## 9. Integrações obrigatórias (dentro do conteúdo — nunca como seção)
@@ -330,6 +365,7 @@ Estes elementos existiam como blocos pós-conteúdo no formato antigo (NA VIDA R
 > Releia o capítulo com esta lista na mão. **Não escreva scripts nem rode uma bateria de comandos** — isso multiplica o tempo de entrega sem melhorar o texto. A verificação mecânica já existe pronta, em um comando só (estrutura, extensão por aula, seções proibidas, boxes, emoji fora de box, ortografia), e roda **depois** de entregar:
 > ```
 > python3 ./validar-capitulo.py <capitulo.md> --disciplina fisica [--blueprint <arq.md>]
+> python3 ./auditar-fisica.py <capitulo.md> --contrato <contrato.json>
 > ```
 > **Não persiga a contagem exata de palavras:** conte uma vez, ao final. Só reescreva se estourou o teto de 190 — ficar abaixo dele não é defeito.
 
@@ -339,12 +375,14 @@ Estes elementos existiam como blocos pós-conteúdo no formato antigo (NA VIDA R
 - [ ] **Prosa curta + marcadores:** conteúdo enumerável em lista/tabela; máx. 2 frases antes de uma lista; definição em uma linha
 - [ ] Nenhuma analogia estendida, nenhum parágrafo que recapitula, nenhum exemplo repetido
 - [ ] **Progressão fenômeno → conceito/lei → modelo idealizado → expressão matemática**; a lei nunca abre a aula
-- [ ] Física conferida: fórmulas corretas, símbolos consistentes, valores dos exemplos recalculados, **unidades SI em tudo**, grandezas definidas após a fórmula
+- [ ] Física conferida: fórmulas corretas, símbolos consistentes, valores dos exemplos recalculados; grandeza nova com unidade uma vez, grandeza estabelecida sem redeclaração e nenhum inventário de unidades
 - [ ] LaTeX no padrão MathJax (**Anexo C**): `\vec{}` onde o balizamento pede, unidades em `\mathrm{}` com `\,`, vírgula decimal `{,}`, delimitador único `$$...$$`
-- [ ] Exemplos resolvidos: máx. 1 por tópico `###`, rótulo `📝 **Exemplo:**`, uma operação por linha, dados → fórmula → substituição → resultado
+- [ ] Exemplos resolvidos: máx. 1 por tópico `###`, rótulo `📝 **Exemplo:**`, uma operação por linha, nenhum valor implícito, dados → fórmula → substituição → cada simplificação → resultado
 - [ ] Toda lista precedida de frase de transição **que carrega informação**
 - [ ] Boxes: só da família permitida (sem 🧪), 1–2 por aula, nunca consecutivos, quebra de linha interna
-- [ ] Físico-chave desenvolvido uma única vez, na aula pertinente
+- [ ] Dependências conceituais conferidas: nenhum resultado aparece antes da ferramenta de que depende
+- [ ] Físico-chave essencial junto ao conceito; biografia acessória, se útil, em um único box `👤` na última aula
+- [ ] Nenhum box repete a seção; nenhuma prosa repete informação já presente em tabela
 - [ ] Experimento/observação só como contexto histórico ou dado real; zero prática a executar
 - [ ] **Zero versículo** — Física não leva versículo; a conexão VP do blueprint não entra no capítulo
 - [ ] Zero exercícios propostos; zero itens de NÃO ANTECIPAR; formalismo dentro do balizamento da série

@@ -342,16 +342,16 @@ O mesmo nível N muda de cara conforme a série. Parâmetros objetivos por faixa
 
 | Parâmetro | **4º–5º EF** | **6º–7º EF** | **8º–9º EF** | **1ª–2ª EM** | **3ª EM** |
 |---|---|---|---|---|---|
-| **Frases** | Muito curtas, ordem direta (≈ até 12 palavras); período simples predominante | Curtas, ordem direta (≈ até 20 palavras); período composto com moderação | Curtas e objetivas; no máximo duas por parágrafo | Curtas e objetivas; no máximo duas por parágrafo | Idem, com vocabulário mais técnico |
+| **Frases** | Muito curtas, ordem direta (≈ até 12 palavras); período simples predominante | Curtas, ordem direta (≈ até 20 palavras); período composto com moderação | Médias; subordinação normal | Prosa acadêmica leve, sem restrição artificial | Idem, mais densa |
 | **Ordem de apresentação** | **Exemplo concreto → conceito**, sem exceção; o conceito nomeia o que a criança acabou de ver | **Exemplo concreto → conceito** (sempre) | Exemplo → conceito, ou conceito → exemplo imediato | Definição formal primeiro é aceitável | Definição direta; aluno já tem repertório |
 | **Vocabulário** | Cotidiano da criança; termo técnico só quando é o próprio conteúdo, explicado com palavra do dia a dia | Cotidiano; **todo termo técnico explicado na 1ª ocorrência** | Técnico consolidado; termo novo sempre explicado | Técnico pleno; nomenclatura padrão da área | Técnico pleno + vocabulário de prova |
 | **Abstração** | Nenhuma; tudo ancorado no que se vê, toca ou conta | Mínima; ancorar em situação vivida/observável | Transição: alterna concreto e abstrato | Abstração plena, com retorno ao real como aplicação | Abstração + síntese entre temas |
-| **Exemplos por conceito** | 2, do mundo da criança de 9–10 anos (casa, escola, brincadeira, animais, comida, dinheiro de troco) | 2, do universo do aluno (escola, família, esporte, jogos, tecnologia) | 1–2, de textos/fenômenos reais e referências culturais | 1–2, de fontes reais (literatura, imprensa, dados, experimento) | 1 forte + 1 no formato de prova |
+| **Exemplos por conceito** | 1 exemplo claro; segundo só quando mostrar uma situação diferente, sempre do mundo da criança | 2, do universo do aluno (escola, família, esporte, jogos, tecnologia) | 1–2, de textos/fenômenos reais e referências culturais | 1–2, de fontes reais (literatura, imprensa, dados, experimento) | 1 forte + 1 no formato de prova |
 | **Exceções e casos raros** | Nunca entram | Não entram (salvo se estiverem no recorte do blueprint) | Entram as principais | Sistematizadas | Sistematizadas + pegadinhas clássicas de prova |
 | **Tom** | Professor próximo, fala com "você", frases afirmativas — **sem infantilizar, sem diminutivo, sem personagem falante** | Professor próximo e direto (fala com "você") | Direto, sem infantilizar | Acadêmico acessível — **nunca infantilizar** | Pré-universitário |
 | **Conexão com prova** | Não | Não | Leve (no 9º, mencionar quando natural) | Notas ENEM/vestibular quando o conteúdo render | Sistemática |
 
-**Nota sobre o 4º–5º ano:** faixa acrescentada em 20/07/2026 com a entrada do Fundamental I. A escala N1–N4 não muda — ela descreve a operação cognitiva, não a linguagem. Na prática o EF1 opera em **N1–N3**; **N4 é raro** e só aparece quando o próprio blueprint marcar. O erro típico aqui não é escrever difícil demais, é **infantilizar**: o aluno de 9–10 anos entende explicação direta, o que ele não tem é repertório abstrato.
+**Nota sobre o 4º–5º ano:** faixa acrescentada em 20/07/2026 com a entrada do Fundamental I. A escala N1–N4 não muda — ela descreve a operação cognitiva, não a linguagem. Na prática o EF1 opera em **N1–N3**; **N4 é raro** e só aparece quando o próprio blueprint marcar. O texto usa palavras comuns, exemplos próximos e frases curtas. Simplicidade não significa infantilização: diminutivos e personagens falantes continuam fora do padrão.
 
 **Nota sobre o 9º ano:** é segmento próprio no calendário (24 aulas/sem), mas na escrita segue a coluna 8º–9º **puxando para cima** — é a ponte para o EM.
 
@@ -458,12 +458,12 @@ $$\frac{1+2}{4} = \frac{3}{4}$$
 2. **Pergunta-problema** do blueprint em blockquote logo abaixo do título, **sem rótulo** — só a pergunta. É respondida dentro da aula pertinente, sem anunciar.
 3. **1 aula = 1 tópico `## N.`**, na ordem do blueprint; `---` entre aulas. Cada aula autossuficiente (~50 min).
 4. **2–3 subseções `### N.1`, `### N.2`** por aula, com título curto (pode ser pergunta orientadora).
-5. **Extensão por aula:** padrão da casa 220–250 (teto 300); overrides por disciplina — Física 130–170 (teto 190), **Operações 90–130 (teto 170)**, Geometria 170–210 (teto 240), Matemática EF1 180–220 (teto 260). Em Operações, blocos MathJax e ASCII ficam fora; todo texto lido pelo aluno entra. **O teto não é meta; não existe mínimo.**
+5. **Extensão por aula:** padrão da casa 220–250 (teto 300); overrides por disciplina — Física 130–170 (teto 190), Química 180–210 (teto 240), Geometria 170–210 (teto 240), Matemática EF1 **sem alvo e sem mínimo** (teto 160). Fórmulas, exemplos resolvidos, tabelas, ASCII, figuras TikZ/PNG, textos alternativos e boxes **não** entram na conta. **O teto não é meta.**
 6. **Prosa curta + marcadores:** máx. 2 frases seguidas antes de uma lista; tabela para 2+ itens comparáveis; **liste o paralelo, escreva o encadeado**. Toda lista com frase de transição **informativa**.
 7. **Boxes:** só a família da disciplina, em blockquote, com quebra de linha interna (título na 1ª linha com dois espaços finais). 1–2 por aula, **nunca dois seguidos**, 1 frase ("drop").
 8. **Bíblia condicional:** versículo só com ligação **conceitual** (teste do sinônimo) — capítulo sem versículo é entrega válida.
 9. **Personagem/referência-chave** 1× por capítulo, na aula pertinente (EF em box 👤 onde a disciplina tiver; EM e matemáticas integrado ao texto).
-10. **O que NUNCA aparece:** blocos pós-conteúdo do formato antigo (`Introdução`, `Sua Parte`, `O que a Bíblia diz sobre...`, `E a Bíblia nisso?`, `Simplificando`, `Para não esquecer`, `Explorando os Conceitos`, `Ampliando o Olhar`, `No Fio da História`, `O Que a Fé Diz`, `Pensador em Destaque`, `Você já pensou nisso?`, `Síntese`, `Fórmulas do capítulo`, `💬 Para Conversar`) · atividades/exercícios propostos/provas · itens do NÃO ANTECIPAR · emojis fora de box · imagens, **exceto as figuras TikZ/PNG autorizadas pelo manual de Geometria** · frases-preparação ("Neste capítulo vamos...").
+10. **O que NUNCA aparece:** blocos pós-conteúdo do formato antigo (`Introdução`, `Sua Parte`, `O que a Bíblia diz sobre...`, `E a Bíblia nisso?`, `Simplificando`, `Para não esquecer`, `Explorando os Conceitos`, `Ampliando o Olhar`, `No Fio da História`, `O Que a Fé Diz`, `Pensador em Destaque`, `Você já pensou nisso?`, `Síntese`, `Fórmulas do capítulo`, `💬 Para Conversar`) · atividades/exercícios propostos/provas · itens do NÃO ANTECIPAR · emojis fora de box · imagens, **exceto as figuras TikZ/PNG autorizadas pelo manual da disciplina** · frases-preparação ("Neste capítulo vamos...").
 
 **Famílias de boxes por disciplina:**
 
@@ -664,7 +664,7 @@ Permanece **apenas** em nomes próprios estrangeiros e derivados: *Müller, mül
 | Chaves de conjunto: `\{ ... \}` | `$$A = \{1, 2, 3\}$$` |
 | Conectivos "e"/"ou" dentro de fórmula: `\text{ e }` (a forma antiga `\mathrm{~e~}` segue válida) | `$$x > 2 \text{ e } x < 7$$` |
 | Milhar em fórmula separado por `\,` | `$$1\,500$$` |
-| `\text{}` permitido para **palavras curtas sem acento**; palavras acentuadas ficam fora da fórmula | `$$\text{area} = b \times h$$` |
+| `\text{}` permitido para **palavras curtas** (acentos funcionam no MathJax) | `$$\text{área} = b \cdot h$$` |
 | Frase explicativa longa fica **fora** do LaTeX | — |
 | **Toda fórmula com elementos definidos logo após** | onde $$a$$, $$b$$ e $$c$$ são os coeficientes... |
 | **Uma operação por linha** nos exemplos resolvidos — blocos `$$...$$` separados, sem `\begin{array}`/`aligned` | ver seção 3 |
@@ -678,7 +678,7 @@ Permanece **apenas** em nomes próprios estrangeiros e derivados: *Müller, mül
 | Número misto | `1\frac{3}{4}` |
 | Raiz quadrada / n-ésima | `\sqrt{x}` · `\sqrt[3]{x}` |
 | Potência / índice | `x^{2}` · `a_{n}` |
-| Multiplicação | `\times` → $$\times$$ (nunca `\cdot` e nunca a letra x) |
+| Multiplicação | `\cdot` (nunca letra x) |
 | Divisão | `\div` ou fração |
 | Conjuntos numéricos | `\mathbb{N}` · `\mathbb{Z}` · `\mathbb{Q}` · `\mathbb{R}` |
 | Pertence / não pertence | `\in` · `\notin` |
@@ -701,37 +701,27 @@ Permanece **apenas** em nomes próprios estrangeiros e derivados: *Müller, mül
 
 - Exemplo resolvido com **rótulo = nome da situação em negrito** (`**Duas turmas com a mesma média**`) — nunca rótulo formal (`### EXERCÍCIO RESOLVIDO`) e **nunca frase de anúncio** ("Veja o exemplo abaixo.").
 - Estrutura: enunciado → `**Resolução:**` → passos com `- **Passo N:**` (marcador `-`, nunca `*`) → `**Resposta:**` em frase.
-- A fração, expressão ou equação trabalhada fica no texto do passo; abaixo, **cada operação matemática em um bloco `$$...$$` próprio**, já com seu resultado.
-- Nunca usar uma fração sozinha em uma linha, bloco iniciado apenas por `=` ou cadeia de igualdades.
-- Multiplicação sempre com `\times`, nunca `\cdot`.
+- **Cada operação matemática em um bloco `$$...$$` próprio, em linha própria** — nunca compactar etapas, nunca pular passo.
 - **Resultado final sempre simplificado**, com unidade quando houver.
 
 ```markdown
-**Produto de duas frações**
+**Notas de cinco alunos**
 
-Calcule $$\frac{3}{5}\times\frac{10}{9}$$.
+Calcule: $$(3x^2 + 2x - 1) + (x^2 - 5x + 4)$$
 
 **Resolução:**
 
-- **Passo 1:** Em $$\frac{3}{5}\times\frac{10}{9}$$, simplificar 3 e 9 por 3.
+- **Passo 1:** Agrupar os termos semelhantes.
 
-$$3\div3=1$$
+$$(3x^2 + x^2) + (2x - 5x) + (-1 + 4)$$
 
-$$9\div3=3$$
+- **Passo 2:** Somar os coeficientes de cada grupo.
 
-- **Passo 2:** Simplificar 10 e 5 por 5.
+$$(3+1)x^2 + (2-5)x + (-1+4)$$
 
-$$10\div5=2$$
+$$= 4x^2 - 3x + 3$$
 
-$$5\div5=1$$
-
-- **Passo 3:** Multiplicar os termos de $$\frac{1}{1}\times\frac{2}{3}$$.
-
-$$1\times2=2$$
-
-$$1\times3=3$$
-
-**Resposta:** o produto é $$\frac{2}{3}$$.
+**Resposta:** $$4x^2 - 3x + 3$$
 ```
 
 
@@ -739,7 +729,7 @@ $$1\times3=3$$
 
 1. **Recalcular todos os exemplos resolvidos** — aritmética, álgebra, simplificações e arredondamentos.
 2. Conferir **resultado simplificado** em todo exemplo (fração irredutível, radical simplificado, unidade correta).
-3. Varrer todos os `$$...$$`: vírgula decimal `{,}` · `\times` para multiplicação · zero `\cdot` · `\mathbb{}` para conjuntos · intervalos abertos com colchetes invertidos `]a, b[` · `\mathrm{}` em unidades e R$ · uma operação por linha · matrizes uma por bloco.
+3. Varrer todos os `$$...$$`: vírgula decimal `{,}` · `\cdot` para multiplicação · `\mathbb{}` para conjuntos · intervalos abertos com colchetes invertidos `]a, b[` · `\mathrm{}` em unidades e R$ · uma operação por linha · matrizes uma por bloco.
 4. Frases explicativas longas fora do LaTeX; `\text{}` só para palavras curtas.
 5. Delimitador único `$$...$$` — sem `\[...\]`, sem `$...$` simples.
 6. Conflito entre este arquivo e blueprint antigo (restrições CodeCogs) ou capítulo anterior → **este arquivo prevalece**.

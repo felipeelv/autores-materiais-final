@@ -11,7 +11,7 @@
 | 8º ano | `estudos-sociais-8ano-modelo.md` | Disponível para validação |
 | 9º ano | `estudos-sociais-9ano-modelo.md` | Disponível para validação |
 
-Geografia e História do Ensino Médio terão arquivos próprios após a validação dos modelos do Fundamental.
+Geografia e História do Ensino Médio possuem pastas próprias na raiz do projeto.
 
 ## Validar os modelos
 
