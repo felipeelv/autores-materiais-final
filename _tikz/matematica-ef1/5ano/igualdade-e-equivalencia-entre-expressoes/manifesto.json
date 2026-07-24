@@ -1,0 +1,59 @@
+{
+  "versao": 1,
+  "disciplina": "matematica-ef1",
+  "ano_serie": "5ano",
+  "titulo_documento": "Igualdade e equivalência entre expressões",
+  "slug_documento": "igualdade-e-equivalencia-entre-expressoes",
+  "arquivo_markdown": "Matematica EF1/modelos/matematica-ef1-5ano-modelo.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-balanca-equilibrada-e-desequilibrada",
+      "pagina": 1,
+      "arquivo": "fig-01-balanca-equilibrada-e-desequilibrada.png",
+      "alt": "Duas balanças mostram massas iguais em equilíbrio e o prato esquerdo descendo após receber mais peso",
+      "aprovada": true,
+      "sha256": "654ff84e8849c72f094491e66e203ff6b2f7f9d3e58b38e40dd12a42e4fb8309",
+      "largura_px": 1335,
+      "altura_px": 1424,
+      "publicado_sha256": "654ff84e8849c72f094491e66e203ff6b2f7f9d3e58b38e40dd12a42e4fb8309",
+      "publicado_commit": "63e10fe64741b0ce90d4132e8c8c22408c2a53cb"
+    },
+    {
+      "id": "fig-02-dois-membros-da-igualdade",
+      "pagina": 2,
+      "arquivo": "fig-02-dois-membros-da-igualdade.png",
+      "alt": "Balança equilibrada relaciona a expressão três mais quatro ao valor sete nos dois membros da igualdade",
+      "aprovada": true,
+      "sha256": "ef6e8f07a08d5b1de2eea62678991a75d7478bd01405906bd959a5e3100b2028",
+      "largura_px": 1335,
+      "altura_px": 904,
+      "publicado_sha256": "ef6e8f07a08d5b1de2eea62678991a75d7478bd01405906bd959a5e3100b2028",
+      "publicado_commit": "63e10fe64741b0ce90d4132e8c8c22408c2a53cb"
+    },
+    {
+      "id": "fig-03-mesma-adicao-nos-dois-membros",
+      "pagina": 3,
+      "arquivo": "fig-03-mesma-adicao-nos-dois-membros.png",
+      "alt": "Duas balanças mostram nove igual a nove e doze igual a doze após somar três aos dois membros",
+      "aprovada": true,
+      "sha256": "ca2e8aad31fc7284691b7dddd3505aeeec0fd4416b351fd25febe6914f6a24cb",
+      "largura_px": 1335,
+      "altura_px": 1394,
+      "publicado_sha256": "ca2e8aad31fc7284691b7dddd3505aeeec0fd4416b351fd25febe6914f6a24cb",
+      "publicado_commit": "63e10fe64741b0ce90d4132e8c8c22408c2a53cb"
+    },
+    {
+      "id": "fig-04-igualdade-verdadeira-e-falsa",
+      "pagina": 4,
+      "arquivo": "fig-04-igualdade-verdadeira-e-falsa.png",
+      "alt": "Comparação entre uma igualdade nivelada com resultados doze e uma desigualdade inclinada com resultados nove e oito",
+      "aprovada": true,
+      "sha256": "339cdf433aaabf12bd6bc159f7c98b59947ad0c70ac8696a810918cdb703b029",
+      "largura_px": 1335,
+      "altura_px": 1424,
+      "publicado_sha256": "339cdf433aaabf12bd6bc159f7c98b59947ad0c70ac8696a810918cdb703b029",
+      "publicado_commit": "63e10fe64741b0ce90d4132e8c8c22408c2a53cb"
+    }
+  ]
+}

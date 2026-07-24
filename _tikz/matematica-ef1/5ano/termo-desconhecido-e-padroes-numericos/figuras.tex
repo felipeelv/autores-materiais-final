@@ -1,0 +1,24 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-matematica-ef1}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-padroes-de-soma-e-dobro
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (11.50,6.25);
+  \node[matematica rotulo,anchor=east] at (1.35,4.70) {somar $3$};
+  \foreach \x/\v in {2.0/2,4.1/5,6.2/8,8.3/11,10.4/14}
+    \node[matematica valor] at (\x,4.70) {\v};
+  \foreach \x in {2.0,4.1,6.2,8.3}
+    \draw[-{Stealth[length=2.7mm]},matematica destaque] (\x+.35,4.70)--(\x+1.75,4.70)
+      node[midway,above=5pt,font=\normalsize\bfseries,text=matemalaranja] {$+3$};
+
+  \node[matematica rotulo,anchor=east] at (1.35,1.55) {dobrar};
+  \foreach \x/\v in {2.0/1,4.1/2,6.2/4,8.3/8,10.4/16}
+    \node[matematica valor] at (\x,1.55) {\v};
+  \foreach \x in {2.0,4.1,6.2,8.3}
+    \draw[-{Stealth[length=2.7mm]},matematica contorno] (\x+.35,1.55)--(\x+1.75,1.55)
+      node[midway,above=5pt,font=\normalsize\bfseries,text=matemazul] {$\times2$};
+\end{tikzpicture}
+
+\end{document}

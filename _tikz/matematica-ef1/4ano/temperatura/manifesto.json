@@ -1,0 +1,47 @@
+{
+  "versao": 1,
+  "disciplina": "matematica-ef1",
+  "ano_serie": "4ano",
+  "titulo_documento": "Temperatura",
+  "slug_documento": "temperatura",
+  "arquivo_markdown": "Matematica EF1/_staging-3bim/4ano/Temperatura.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-escala-do-termometro",
+      "pagina": 1,
+      "arquivo": "fig-01-escala-do-termometro.png",
+      "alt": "Termômetro graduado mostra o líquido na marca de vinte graus Celsius",
+      "aprovada": true,
+      "sha256": "387b21717e011faac090f3d86a3d17f340d065c8658292da302a2d8fe02189a9",
+      "largura_px": 804,
+      "altura_px": 963,
+      "publicado_sha256": "387b21717e011faac090f3d86a3d17f340d065c8658292da302a2d8fe02189a9",
+      "publicado_commit": "8108e4ce0b770224d8be90ebe8e9fddb74b194ee"
+    },
+    {
+      "id": "fig-02-maxima-e-minima",
+      "pagina": 2,
+      "arquivo": "fig-02-maxima-e-minima.png",
+      "alt": "Termômetros mostram mínima de quatorze e máxima de vinte e sete graus Celsius",
+      "aprovada": true,
+      "sha256": "63babcfa63fdf954389616dd0609d116b005f4258f97bacfc7f9207f951c757d",
+      "largura_px": 1176,
+      "altura_px": 975,
+      "publicado_sha256": "63babcfa63fdf954389616dd0609d116b005f4258f97bacfc7f9207f951c757d",
+      "publicado_commit": "8108e4ce0b770224d8be90ebe8e9fddb74b194ee"
+    },
+    {
+      "id": "fig-03-grafico-de-temperaturas",
+      "pagina": 3,
+      "arquivo": "fig-03-grafico-de-temperaturas.png",
+      "alt": "Gráfico de colunas compara máximas de vinte e quatro a vinte e sete graus em quatro dias",
+      "aprovada": true,
+      "sha256": "13837dd9801e46b78d509080fb1d98aa7098ff0cfbd1958ea3fac0dc20f5bdec",
+      "largura_px": 1406,
+      "altura_px": 890,
+      "publicado_sha256": "13837dd9801e46b78d509080fb1d98aa7098ff0cfbd1958ea3fac0dc20f5bdec",
+      "publicado_commit": "8108e4ce0b770224d8be90ebe8e9fddb74b194ee"
+    }
+  ]
+}

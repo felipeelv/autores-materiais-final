@@ -53,7 +53,7 @@ MIN_PAL, MAX_PAL = 180, 300
 PAL_POR_DISC = {
     "fisica":         (110, 190),
     "geometria":      (150, 240),
-    "matematica-ef1": (150, 260),   # provisório — calibrar após o piloto
+    "matematica-ef1": (0, 160),
 }
 
 # Títulos de fechamento proibidos (o formato novo dissolveu tudo nas aulas).
@@ -88,11 +88,13 @@ def ok(msg):    print(f"  ✓ {msg}"); return 0
 def contar_conteudo(corpo: str) -> int:
     """Palavras que o aluno lê na aula.
 
-    Exclui blocos de código/ASCII, LaTeX e separadores de tabela.
+    Exclui blocos de código/ASCII, LaTeX, imagens e separadores de tabela.
     Inclui prosa, exemplos, versículos, texto de box e de tabela.
     """
     t = re.sub(r"```.*?```", " ", corpo, flags=re.S)
     t = re.sub(r"\$\$.*?\$\$", " ", t, flags=re.S)
+    t = re.sub(r"(?m)^!\[[^\]]*\]\([^)]+\)\s*$", " ", t)
+    t = re.sub(r"<!--.*?-->", " ", t, flags=re.S)
     manter = [l for l in t.split("\n")
               if l.strip() and l.strip() != "---"
               and not re.match(r"^\|[\s:\-|]+\|$", l.strip())]
@@ -151,14 +153,15 @@ def main():
         ok("pergunta-problema em blockquote, sem rótulo")
 
     # 2. Extensão por aula ----------------------------------------------------
-    print(f"\n[2] Extensão por aula (teto {max_pal} · piso de referência {min_pal})")
+    piso = f" · piso de referência {min_pal}" if min_pal else " · sem mínimo"
+    print(f"\n[2] Extensão por aula (teto {max_pal}{piso})")
     for num, tit, corpo in aulas:
         n = contar_conteudo(corpo)
         if n > max_pal * 1.1:
             rc |= falha(f"Aula {num} — {tit}: {n} palavras")
         elif n > max_pal:
             aviso(f"Aula {num} — {tit}: {n} palavras (pouco acima do teto)")
-        elif n < min_pal:
+        elif min_pal and n < min_pal:
             aviso(f"Aula {num} — {tit}: {n} palavras (abaixo do piso — só confira se ficou truncada)")
         else:
             ok(f"Aula {num} — {tit}: {n} palavras")
@@ -270,6 +273,29 @@ def main():
             rc |= falha(f"antecipação proibida ('como veremos adiante') nas linhas {prep}")
         else:
             ok("sem antecipações ('como veremos adiante')")
+    if args.disciplina == "matematica-ef1":
+        ponto = [i + 1 for i, l in enumerate(linhas) if r"\cdot" in l]
+        xis_letra = [i + 1 for i, l in enumerate(linhas)
+                     if re.search(r"(?<![A-Za-zÀ-ÿ])\d+\s*[xX]\s*\d+", l)]
+        blocos_formula = list(re.finditer(r"\$\$.*?\$\$", texto, flags=re.S))
+        fragmentadas = [
+            texto.count("\n", 0, atual.start()) + 1
+            for atual, seguinte in zip(blocos_formula, blocos_formula[1:])
+            if not texto[atual.end():seguinte.start()].strip()
+        ]
+        if ponto:
+            rc |= falha(f"multiplicação com `\\cdot` nas linhas {ponto}; no EF1 use `\\times`")
+        if xis_letra:
+            rc |= falha(f"letra x usada como operador nas linhas {xis_letra}; use `\\times`")
+        if not ponto and not xis_letra:
+            ok("multiplicação usa `\\times` (×), sem ponto central nem letra x")
+        if fragmentadas:
+            rc |= falha(
+                "cadeia de cálculo fragmentada em blocos LaTeX consecutivos "
+                f"perto das linhas {fragmentadas}; use um único bloco `aligned`"
+            )
+        else:
+            ok("nenhuma cadeia de cálculo fragmentada em blocos consecutivos")
     if args.disciplina == "geometria":
         fig = [i + 1 for i, l in enumerate(linhas)
                if re.search(r"figura ao lado|veja a figura|conforme o desenho|imagem ao lado", l.lower())]

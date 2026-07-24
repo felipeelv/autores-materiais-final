@@ -1,0 +1,35 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-matematica-ef1}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-partilha-uma-para-duas
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (10.80,5.50);
+  \fill[matemazulclaro] (.60,1.75) rectangle (3.60,3.65);
+  \fill[matemalaranjaclaro] (3.60,1.75) rectangle (9.60,3.65);
+  \draw[matematica contorno,line width=2pt] (.60,1.75) rectangle (9.60,3.65);
+  \draw[matematica divisao] (3.60,1.75)--(3.60,3.65);
+  \draw[matematica divisao] (6.60,1.75)--(6.60,3.65);
+  \node[matematica valor] at (2.10,2.70) {R\$ 40};
+  \node[matematica resultado] at (6.60,2.70) {R\$ 80};
+  \draw[decorate,decoration={brace,mirror,amplitude=7pt},matematica contorno]
+    (.60,1.30)--(3.60,1.30);
+  \node[matematica rotulo] at (2.10,.65) {$1$ parte};
+  \draw[decorate,decoration={brace,mirror,amplitude=7pt},matematica destaque]
+    (3.60,1.30)--(9.60,1.30);
+  \node[matematica rotulo] at (6.60,.65) {$2$ partes};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-partilha-do-lucro
+\begin{tikzpicture}[matematica figura, x=.85cm, y=.85cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (12.90,7.20);
+  \foreach \y/\n/\v/\w in {5.30/10/R\$ 100/2,3.25/20/R\$ 200/4,1.20/30/R\$ 300/6}{
+    \fill[matemazulclaro] (3.00,\y-.55) rectangle ({3.00+\w},\y+.55);
+    \draw[matematica contorno,line width=1.8pt] (3.00,\y-.55) rectangle ({3.00+\w},\y+.55);
+    \node[matematica valor,anchor=east] at (2.50,\y) {\n\ bilhetes};
+    \node[matematica resultado,anchor=west] at ({3.30+\w},\y) {\v};
+  }
+\end{tikzpicture}
+
+\end{document}

@@ -1,6 +1,6 @@
 # Memória de continuidade — Autores de Material
 
-Atualizado em **22/07/2026**.
+Atualizado em **23/07/2026**.
 
 ## Objetivo
 
@@ -20,6 +20,31 @@ O **blueprint define o conteúdo**. O modelo de cada ano define apenas a forma, 
 - Blockquote simples (`>`) cria respiro visual para contraste, ressalva, exceção ou síntese.
 - O padrão geral está em `PADRAO-GERAL-DE-ESCRITA.md`, espelhado em `_fontes/_PADROES-DE-ESCRITA.md`.
 - `sincronizar.py` mantém os padrões comuns alinhados, sem sobrescrever os validadores específicos.
+
+## Matemática EF1
+
+### Produção do 3º bimestre — concluída em 23/07/2026
+
+- Os **18 capítulos previstos**, totalizando **96 aulas**, foram produzidos: nove do 4º ano e nove do 5º.
+- Os dois modelos foram formalizados como Capítulos 1; os outros 16 capítulos somam 84 aulas novas.
+- O padrão definitivo ficou **sem alvo e sem mínimo de palavras**, com teto de segurança de 160 por aula.
+- A voz foi simplificada para crianças de 9–10 anos: palavras comuns, frases curtas, um exemplo claro por ideia e nenhuma biografia ou curiosidade histórica.
+- Os cálculos usam `\times` para multiplicação e reúnem etapas relacionadas em um único bloco `aligned`.
+- As **58 figuras TikZ/PNG** foram aprovadas, publicadas por URLs imutáveis, indexadas, validadas por SHA-256 e revisadas no original, a 300 px e em contexto de 720 px.
+- Os arquivos estão em `Segundo Semestre/Matemática EF1`, na pasta oficial [Matemática EF1 — Google Drive](https://drive.google.com/drive/folders/1GrYCV9-QXcOczHZ6smQfQvDfbuv_29w-).
+- A estrutura oficial é [4º Ano](https://drive.google.com/drive/folders/1Dvr5rFC6mb3a-t515D7V7qRa888-o3X0) e [5º Ano](https://drive.google.com/drive/folders/1RcU6FXM5c7sBWgIIRpPQ_gSdYGB2TkDy), com exatamente nove arquivos em cada pasta. Após a revisão editorial, a leitura de retorno confirmou igualdade integral dos 18 arquivos com a produção local validada.
+- A pasta anterior `Segundo Semestre/MATEMÁTICA EDITANDO` ficou vazia após a migração e **não é mais um destino válido**.
+- O controle detalhado está em `Matematica EF1/Acompanhamento de produção.md`.
+
+O 4º bimestre permanece pendente: **18 capítulos e 80 aulas**.
+
+### Ponto de retomada de Matemática EF1
+
+- Não há trabalho pendente no 3º bimestre.
+- Os capítulos finais ficam apenas no Drive; os modelos e as fontes TikZ permanecem locais.
+- Salvar toda nova produção do 4º ano em `Matemática EF1/4º Ano` e toda nova produção do 5º ano em `Matemática EF1/5º Ano`.
+- O padrão vigente está em `Matematica EF1/AUTOR.md`: linguagem direta para crianças, sem mínimo de palavras, teto 160, um exemplo claro por ideia e nenhuma referência histórica.
+- A próxima produção é o 4º bimestre. Antes de iniciar, usar `Matematica EF1/Acompanhamento de produção.md` e os blueprints como fontes de estado.
 
 ## Biologia
 

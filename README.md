@@ -36,7 +36,7 @@ O arquivo `PADRAO-GERAL-DE-ESCRITA.md`, na raiz, é a **fonte oficial e mais sim
 | Kit | Escopo | Situação |
 |---|---|---|
 | `Portugues/` | Português 1 · 4º ano EF1 → 3ª EM | ✅ validado em produção *(EF1 sem piloto)* |
-| `Matematica EF1/` | Matemática única · 4º–5º ano | 🆕 sem piloto |
+| `Matematica EF1/` | Matemática única · 4º–5º ano | ✅ 3º bimestre concluído: 18 capítulos · 96 aulas |
 | `Operacoes/` | Matemática 1 · 6º → 3ª EM | ✅ validado em produção |
 | `Geometria/` | Matemática 2 · 6º → 3ª EM | ✅ validado em produção |
 | `Financeira/` | Matemática 3 · 6º → 3ª EM | ✅ validado em produção |
@@ -56,7 +56,7 @@ Duas pastas têm um arquivo a mais, porque a regra não cabe no manual comum: **
 
 **Hierarquia de autoridade:** **blueprint** (o quê e até onde) → **Anexo A** (como escrever no nível × faixa) → **Parte 2 do `AUTOR.md`** (voz e formato) → Parte 1 (instruções do projeto).
 
-**Extensão por aula varia por disciplina:** padrão 220–250 (teto 300) · Estudos Sociais 180–220 (teto 300) · Física 130–170 (teto 190) · Geometria 170–210 (teto 240) · Matemática EF1 180–220 (teto 260, provisório). O teto nunca é meta e não existe mínimo.
+**Extensão por aula varia por disciplina:** padrão 220–250 (teto 300) · Estudos Sociais 180–220 (teto 300) · Física 130–170 (teto 190) · Geometria 170–210 (teto 240) · Matemática EF1 sem alvo nem mínimo (teto 160). O teto nunca é meta.
 
 ## 3. Montar um Claude Project
 
@@ -83,16 +83,20 @@ Um projeto por disciplina — **12 projetos**. As matemáticas não se juntam: a
 ## 5. O que fica fora daqui
 
 - **Blueprints** — fonte única em `~/Reorganizacao-2026-2Semestre/disciplinas/<D>/blueprints/` (280 prontos).
-- **Capítulos produzidos** — `~/Reorganizacao-2026-2Semestre/conteudos-prontos/` (status em `_PROGRESSO.md`).
+- **Capítulos concluídos** — salvar diretamente na pasta oficial da disciplina em `Google Drive/Conteudos - Colégio Eleve/Segundo Semestre/`.
+- Se a pasta da disciplina ou do ano/série ainda não existir no Drive, **crie-a e salve o capítulo nela**. A ausência da pasta não é motivo para usar outro destino.
+- Não manter cópia final em `~/Reorganizacao-2026-2Semestre/conteudos-prontos/` nem em outra área intermediária; o Google Drive é o repositório único dos conteúdos concluídos.
+- **Matemática EF1** — usar exclusivamente [Segundo Semestre/Matemática EF1](https://drive.google.com/drive/folders/1GrYCV9-QXcOczHZ6smQfQvDfbuv_29w-), com os arquivos separados nas pastas `4º Ano` e `5º Ano`.
 - **Pastas antigas, não editar mais:** `~/autores-material/` (autores do pipeline por unidades — arquivo histórico, fonte da herança editorial) e `~/Reorganizacao-2026-2Semestre/prompts-producao/` (origem dos kits — **esta pasta é a mestra agora**).
 
 ## 6. Próximos passos
 
 - [ ] **Revisar os capítulos já prontos contra o teto vigente.** Os de Ciências e Estudos Sociais foram escritos quando o teto era 400; o teto atual é 300, e alguns reprovam no validador. Decidir caso a caso: revisar o capítulo ou ajustar o teto.
 - [ ] Revisar cada `AUTOR.md` com o Felipe, um por um.
-- [ ] Piloto dos 3 kits novos: Sociologia · Filosofia · Matemática EF1 (sugestões nos `_MEMORIA.md`).
+- [ ] Piloto dos 2 kits novos restantes: Sociologia · Filosofia (sugestões nos `_MEMORIA.md`).
 - [ ] Piloto de Português EF1 (4º–5º).
-- [ ] Calibrar a extensão de Matemática EF1 após o piloto (hoje provisória).
+- [x] Calibrar a extensão de Matemática EF1 com os modelos do 4º e do 5º ano.
+- [x] Produzir, ilustrar e salvar no Drive os 18 capítulos do 3º bimestre de Matemática EF1.
 - [x] Capítulos-modelo por ano/série concluídos em Biologia (9º + EM), Ciências (4º–8º), Estudos Sociais (4º–9º), Física (6º–9º + EM), Matemática Financeira (6º–9º + EM) e Geometria (6º–9º + EM).
 - [ ] Decisão pendente: versículo Mateus 25:40 repetido em 3 séries nos blueprints de Geometria.
 - [ ] Decisão pendente: formato da Conexão VP — os kits praticam versículo condicional inline, mas o Anexo A §5 ainda marca como "em aberto". Física e Geometria já decidiram **não levar versículo**.

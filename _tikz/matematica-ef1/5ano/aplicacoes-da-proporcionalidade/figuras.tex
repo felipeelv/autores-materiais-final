@@ -1,0 +1,49 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-matematica-ef1}
+
+\newcommand{\Pessoa}[2]{%
+  \fill[matemazul] (#1,#2+.35) circle (.15);
+  \draw[matematica contorno] (#1,#2+.15)--(#1,#2-.45);
+  \draw[matematica contorno] (#1-.25,#2-.10)--(#1+.25,#2-.10);
+  \draw[matematica contorno] (#1,#2-.45)--(#1-.20,#2-.80);
+  \draw[matematica contorno] (#1,#2-.45)--(#1+.20,#2-.80);
+}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-receita-ampliada
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.25,-0.20) rectangle (11.80,7.30);
+  \foreach \i in {0,...,3}\Pessoa{1.25+.70*\i}{5.85}
+  \node[matematica valor] at (2.30,4.55) {$4$ pessoas};
+  \node[matematica rotulo] at (2.30,3.60) {$2$ ovos};
+  \node[matematica rotulo] at (2.30,2.85) {$200\text{ g}$ de farinha};
+
+  \draw[-{Stealth[length=3mm]},matematica destaque,line width=2pt] (4.20,4.40)--(6.10,4.40);
+  \node[matematica resultado] at (5.15,5.05) {$\times3$};
+
+  \foreach \r in {0,1}\foreach \i in {0,...,5}\Pessoa{6.75+.70*\i}{6.05-1.15*\r}
+  \node[matematica valor] at (8.50,3.65) {$12$ pessoas};
+  \node[matematica rotulo] at (8.50,2.75) {$6$ ovos};
+  \node[matematica rotulo] at (8.50,2.00) {$600\text{ g}$ de farinha};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-escala-de-mapa-e-planta
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (11.60,6.50);
+  \node[matematica valor,anchor=east] at (2.00,4.75) {mapa};
+  \draw[{Stealth[length=2.7mm]}-{Stealth[length=2.7mm]},matematica destaque]
+    (2.55,4.75)--(4.55,4.75);
+  \node[matematica resultado] at (3.55,5.35) {$1\text{ cm}$};
+  \draw[-{Stealth[length=3mm]},matematica contorno] (5.10,4.75)--(6.60,4.75);
+  \node[matematica valor,anchor=west] at (7.10,4.75) {$50\text{ km}$ reais};
+
+  \node[matematica valor,anchor=east] at (2.00,1.65) {planta};
+  \draw[{Stealth[length=2.7mm]}-{Stealth[length=2.7mm]},matematica destaque]
+    (2.55,1.65)--(4.55,1.65);
+  \node[matematica resultado] at (3.55,2.25) {$1\text{ cm}$};
+  \draw[-{Stealth[length=3mm]},matematica contorno] (5.10,1.65)--(6.60,1.65);
+  \node[matematica valor,anchor=west] at (7.10,1.65) {$1\text{ m}$ real};
+\end{tikzpicture}
+
+\end{document}

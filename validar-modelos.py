@@ -15,6 +15,7 @@ DISCIPLINAS = {
     "Fisica": "fisica",
     "Financeira": "financeira",
     "Geometria": "geometria",
+    "Matematica EF1": "matematica-ef1",
 }
 
 
