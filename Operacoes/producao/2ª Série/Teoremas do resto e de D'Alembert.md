@@ -1,4 +1,4 @@
-# Capítulo 6 — Teoremas do resto e de D'Alembert
+# BL2_Capítulo 3 — Teoremas do resto e de D'Alembert
 
 > Como encontrar restos e fatores sem fazer toda a divisão?
 

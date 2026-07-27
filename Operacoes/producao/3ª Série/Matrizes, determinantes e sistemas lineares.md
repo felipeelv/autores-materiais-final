@@ -1,4 +1,4 @@
-# Capítulo 4 — Matrizes, determinantes e sistemas lineares
+# BL2_Capítulo 1 — Matrizes, determinantes e sistemas lineares
 
 > Como matrizes, determinantes e sistemas se conectam?
 

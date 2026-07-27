@@ -1,4 +1,4 @@
-# Capítulo 6 — Discriminante e construção de gráficos
+# BL2_Capítulo 3 — Discriminante e construção de gráficos
 
 > Como o discriminante orienta o esboço da parábola?
 

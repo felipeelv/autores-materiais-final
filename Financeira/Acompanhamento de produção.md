@@ -33,33 +33,33 @@ Cada item será marcado somente depois de produzido, recalculado, validado e sal
 
 ### Ensino Fundamental
 
-- [x] **6º ano — Capítulo 2: Probabilidade** — Bloco 2 · 3 aulas · concluído, recalculado e validado.
+- [x] **6º ano — BL2_BL1_Capítulo 1: Probabilidade** — Bloco 2 · 3 aulas · concluído, recalculado e validado.
   - Arquivo previsto: `6º Ano/Probabilidade.md`.
-- [x] **7º ano — Capítulo 2: Plano cartesiano e transformações** — Bloco 2 · 3 aulas · concluído, recalculado e validado.
+- [x] **7º ano — BL2_Capítulo 1: Plano cartesiano e transformações** — Bloco 2 · 3 aulas · concluído, recalculado e validado.
   - Arquivo previsto: `7º Ano/Plano cartesiano e transformações.md`.
-- [x] **8º ano — Capítulo 2: Gráficos estatísticos** — Bloco 2 · 3 aulas · concluído, recalculado e validado.
+- [x] **8º ano — BL2_Capítulo 1: Gráficos estatísticos** — Bloco 2 · 3 aulas · concluído, recalculado e validado.
   - Arquivo previsto: `8º Ano/Gráficos estatísticos.md`.
-- [x] **9º ano — Capítulo 2: Probabilidade: dependência e independência** — Bloco 2 · 3 aulas · concluído, recalculado e validado.
+- [x] **9º ano — BL2_BL1_BL2_Capítulo 1: Probabilidade: dependência e independência** — Bloco 2 · 3 aulas · concluído, recalculado e validado.
   - Arquivo previsto: `9º Ano/Probabilidade: dependência e independência.md`.
 
 ### Ensino Médio
 
-- [x] **1ª série — Capítulo 2: Probabilidade e educação financeira** — Bloco 2 · 3 aulas · concluído, recalculado e validado.
+- [x] **1ª série — BL2_BL1_BL2_Capítulo 1: Probabilidade e educação financeira** — Bloco 2 · 3 aulas · concluído, recalculado e validado.
   - Arquivo previsto: `1ª Série/Probabilidade e educação financeira.md`.
-- [x] **2ª série — Capítulo 2: Crédito e financiamentos** — Bloco 2 · 3 aulas · concluído, recalculado e validado.
+- [x] **2ª série — BL2_Capítulo 1: Crédito e financiamentos** — Bloco 2 · 3 aulas · concluído, recalculado e validado.
   - Arquivo previsto: `2ª Série/Crédito e financiamentos.md`.
-- [x] **3ª série — Capítulo 2: Probabilidade e matemática financeira** — Bloco 2 · 3 aulas · concluído, recalculado e validado.
+- [x] **3ª série — BL2_BL1_BL2_Capítulo 1: Probabilidade e matemática financeira** — Bloco 2 · 3 aulas · concluído, recalculado e validado.
   - Arquivo previsto: `3ª Série/Probabilidade e matemática financeira.md`.
 
 ## Conteúdos prontos em Segundo Semestre
 
-- [x] **6º ano — Capítulo 1: Frequência e representação de dados** — 3 aulas · validado.
-- [x] **7º ano — Capítulo 1: Medidas de tendência central** — 3 aulas · validado.
-- [x] **8º ano — Capítulo 1: Probabilidade** — 3 aulas · validado.
-- [x] **9º ano — Capítulo 1: Juros, inflação e investimentos** — 3 aulas · validado.
-- [x] **1ª série — Capítulo 1: Medidas de dispersão** — 3 aulas · validado.
-- [x] **2ª série — Capítulo 1: Probabilidade: aprofundamento** — 3 aulas · validado.
-- [x] **3ª série — Capítulo 1: Estatística** — 3 aulas · validado.
+- [x] **6º ano — BL1_Capítulo 1: Frequência e representação de dados** — 3 aulas · validado.
+- [x] **7º ano — BL1_Capítulo 1: Medidas de tendência central** — 3 aulas · validado.
+- [x] **8º ano — BL2_BL1_Capítulo 1: Probabilidade** — 3 aulas · validado.
+- [x] **9º ano — BL1_Capítulo 1: Juros, inflação e investimentos** — 3 aulas · validado.
+- [x] **1ª série — BL1_Capítulo 1: Medidas de dispersão** — 3 aulas · validado.
+- [x] **2ª série — BL2_BL1_Capítulo 1: Probabilidade: aprofundamento** — 3 aulas · validado.
+- [x] **3ª série — BL1_Capítulo 1: Estatística** — 3 aulas · validado.
 
 ## Regra de atualização
 

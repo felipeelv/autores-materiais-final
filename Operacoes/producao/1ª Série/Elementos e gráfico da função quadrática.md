@@ -1,4 +1,4 @@
-# Capítulo 1 — Elementos e gráfico da função quadrática
+# BL1_Capítulo 1 — Elementos e gráfico da função quadrática
 
 > Como os coeficientes controlam o gráfico de uma função quadrática?
 

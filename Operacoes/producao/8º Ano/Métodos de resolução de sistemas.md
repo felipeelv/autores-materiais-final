@@ -1,4 +1,4 @@
-# Capítulo 1 — Métodos de resolução de sistemas
+# BL1_Capítulo 1 — Métodos de resolução de sistemas
 
 > Como resolver um sistema 2×2 por substituição ou adição?
 

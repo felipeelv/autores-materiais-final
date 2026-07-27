@@ -25,21 +25,21 @@ O blueprint do bloco 1 possui dois capítulos, mas apenas **Hipérbole** havia s
 
 A lacuna foi corrigida nesta produção:
 
-- [x] Capítulo 2 — Parábola: definição e equações reduzidas — 2 aulas;
+- [x] BL1_Capítulo 2 — Parábola: definição e equações reduzidas — 2 aulas;
 - [x] validado e copiado para `Geometria/3ª Série/` no Google Drive;
 - [x] quatro figuras definidas no plano visual;
 - [x] quatro figuras produzidas, publicadas, indexadas e validadas.
 
 ## Capítulos do 3º bimestre
 
-| Ano/série | Capítulo 1 | Capítulo 2 | Capítulo 3 |
+| Ano/série | BL1_Capítulo 1 | BL1_Capítulo 2 | BL2_Capítulo 1 |
 |---|---|---|---|
-| 6º ano | Quadriláteros e circunferência · 3 aulas · ilustrado | Área de figuras planas · 3 aulas · ilustrado | — |
-| 7º ano | Circunferência e círculo · 3 aulas · ilustrado | Área e perímetro · 3 aulas · ilustrado | — |
-| 8º ano | Transformações geométricas · 3 aulas · ilustrado | Áreas de figuras planas · 3 aulas · ilustrado | — |
-| 9º ano | Trigonometria no triângulo retângulo · 3 aulas · ilustrado | Geometria espacial e representações · 3 aulas · ilustrado | — |
-| 1ª série | Circunferência · 6 aulas · ilustrado | Áreas de figuras planas · 6 aulas · ilustrado | — |
-| 2ª série | Cilindros · 6 aulas · ilustrado | Cones · 6 aulas · ilustrado | — |
+| 6º ano | Quadriláteros e circunferência · 3 aulas · ilustrado | — | Área de figuras planas · 3 aulas · ilustrado |
+| 7º ano | Circunferência e círculo · 3 aulas · ilustrado | — | Área e perímetro · 3 aulas · ilustrado |
+| 8º ano | Transformações geométricas · 3 aulas · ilustrado | — | Áreas de figuras planas · 3 aulas · ilustrado |
+| 9º ano | Trigonometria no triângulo retângulo · 3 aulas · ilustrado | — | Geometria espacial e representações · 3 aulas · ilustrado |
+| 1ª série | Circunferência · 6 aulas · ilustrado | — | Áreas de figuras planas · 6 aulas · ilustrado |
+| 2ª série | Cilindros · 6 aulas · ilustrado | — | Cones · 6 aulas · ilustrado |
 | 3ª série | Hipérbole · 4 aulas · ilustrado | Parábola: definição e equações reduzidas · 2 aulas · ilustrado | Parábola e reconhecimento de cônicas · 6 aulas · ilustrado |
 
 ## Validação da nova produção
@@ -54,8 +54,8 @@ Os oito capítulos produzidos nesta etapa somam 32 aulas. Todas passaram no vali
 | 9º ano | `9ano/geometria-9ano-3bim-cap2.md` | 150–189 |
 | 1ª série | `1serie/geometria-1serie-3bim-cap2.md` | 150–173 |
 | 2ª série | `2serie/geometria-2serie-3bim-cap2.md` | 150–162 |
-| 3ª série · Capítulo 2 | `3serie/geometria-3serie-3bim-cap2.md` | 191–203 |
-| 3ª série · Capítulo 3 | `3serie/geometria-3serie-3bim-cap3.md` | 151–164 |
+| 3ª série · BL1_Capítulo 2 | `3serie/geometria-3serie-3bim-cap2.md` | 191–203 |
+| 3ª série · BL2_Capítulo 1 | `3serie/geometria-3serie-3bim-cap3.md` | 151–164 |
 
 Raiz privada dos arquivos: `Reorganizacao-2026-2Semestre/conteudos-prontos/Geometria/`.
 

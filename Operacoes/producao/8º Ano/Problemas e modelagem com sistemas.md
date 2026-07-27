@@ -1,4 +1,4 @@
-# Capítulo 3 — Problemas e modelagem com sistemas
+# BL1_Capítulo 3 — Problemas e modelagem com sistemas
 
 > Como transformar um problema com duas incógnitas em sistema?
 

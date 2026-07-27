@@ -1,4 +1,4 @@
-# Capítulo 7 — Comparação entre tipos e situações-problema
+# BL2_Capítulo 4 — Comparação entre tipos e situações-problema
 
 > Como reconhecer uma equação incompleta e escolher o método?
 

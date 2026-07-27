@@ -27,14 +27,14 @@
 
 ## Capítulos produzidos nesta etapa
 
-- [x] **6º ano — Capítulo 2: Estrutura da Terra** — 6 aulas.
-- [x] **7º ano — Capítulo 3: Máquinas simples** — 6 aulas.
-- [x] **8º ano — Capítulo 2: Sistema Sol–Terra–Lua** — 6 aulas.
-- [x] **9º ano — Capítulo 2: Energia mecânica e potência** — 6 aulas.
-- [x] **1ª série — Capítulo 3: Aplicações da dinâmica** — 6 aulas.
-- [x] **2ª série — Capítulo 2: Refração e lentes** — 6 aulas.
-- [x] **3ª série — Capítulo 2: Força magnética** — 3 aulas.
-- [x] **3ª série — Capítulo 3: Indução eletromagnética** — 3 aulas.
+- [x] **6º ano — BL2_Capítulo 1: Estrutura da Terra** — 6 aulas.
+- [x] **7º ano — BL2_Capítulo 1: Máquinas simples** — 6 aulas.
+- [x] **8º ano — BL2_Capítulo 1: Sistema Sol–Terra–Lua** — 6 aulas.
+- [x] **9º ano — BL2_Capítulo 1: Energia mecânica e potência** — 6 aulas.
+- [x] **1ª série — BL2_Capítulo 1: Aplicações da dinâmica** — 6 aulas.
+- [x] **2ª série — BL2_Capítulo 1: Refração e lentes** — 6 aulas.
+- [x] **3ª série — BL1_BL2_Capítulo 1: Força magnética** — 3 aulas.
+- [x] **3ª série — BL2_Capítulo 2: Indução eletromagnética** — 3 aulas.
 
 ## Conteúdos prontos em Segundo Semestre
 

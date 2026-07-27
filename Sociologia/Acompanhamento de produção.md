@@ -22,29 +22,29 @@ O 3º bimestre foi concluído, validado e salvo na pasta oficial [Segundo Semest
 
 ### 1ª série
 
-- [x] **Capítulo 1 — O trabalho como atividade social** — 3 aulas.
-- [x] **Capítulo 2 — Karl Marx — capitalismo e alienação** — 3 aulas.
+- [x] **BL1_Capítulo 1 — O trabalho como atividade social** — 3 aulas.
+- [x] **BL2_Capítulo 1 — Karl Marx — capitalismo e alienação** — 3 aulas.
 
 ### 2ª série
 
-- [x] **Capítulo 1 — Movimentos sociais no Brasil** — 3 aulas.
-- [x] **Capítulo 2 — Tecnologia, redes sociais e ciberativismo** — 3 aulas.
+- [x] **BL1_Capítulo 1 — Movimentos sociais no Brasil** — 3 aulas.
+- [x] **BL2_Capítulo 1 — Tecnologia, redes sociais e ciberativismo** — 3 aulas.
 
 ### 3ª série
 
-- [x] **Capítulo 1 — Clássicos da Sociologia** — 3 aulas.
-- [x] **Capítulo 2 — Cultura, política e globalização** — 3 aulas.
+- [x] **BL1_Capítulo 1 — Clássicos da Sociologia** — 3 aulas.
+- [x] **BL2_Capítulo 1 — Cultura, política e globalização** — 3 aulas.
 
 ## Calibragem final
 
-- Os três modelos locais foram formalizados como Capítulos 1.
+- Os três modelos locais foram formalizados como BL1_Capítulos 1.
 - As **18 aulas** ficaram entre **175 e 195 palavras**, com média de **188,6**.
 - Cada aula possui três subtópicos curtos; pelo menos duas subseções usam lista ou tabela.
 - Definições, classificações, marcos e consequências aparecem em tópicos rotulados; a prosa curta explica causas, relações e limites.
 - Cada aula possui exatamente um box de uma frase; cada capítulo usa dois blockquotes simples.
 - Os seis arquivos passam no validador e foram revisados contra conteúdo, ordem e itens `NÃO ANTECIPAR`.
 - As três pastas oficiais contêm exatamente dois arquivos Markdown cada; nomes e tamanhos coincidem com as versões locais validadas.
-- A leitura de retorno do Capítulo 2 da 1ª série confirmou a integridade do conteúdo enviado.
+- A leitura de retorno do BL2_Capítulo 1 da 1ª série confirmou a integridade do conteúdo enviado.
 
 ## Próxima etapa
 

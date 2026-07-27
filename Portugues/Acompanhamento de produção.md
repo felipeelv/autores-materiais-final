@@ -29,7 +29,7 @@
 
 ## Conferência final
 
-- Os 64 arquivos previstos estão presentes, com numeração contínua em cada ano ou série.
+- Os 64 arquivos previstos estão presentes, com a numeração reiniciada em cada bloco/tema.
 - As 348 aulas seguem a quantidade e a ordem definidas nos blueprints dos blocos 1 e 2.
 - Todos os capítulos passam no validador de Português.
 - Nenhuma aula ultrapassa o teto de 300 palavras.

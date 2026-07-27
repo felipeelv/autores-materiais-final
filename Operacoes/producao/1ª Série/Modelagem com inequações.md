@@ -1,4 +1,4 @@
-# Capítulo 7 — Modelagem com inequações
+# BL2_Capítulo 4 — Modelagem com inequações
 
 > Como traduzir limites reais em inequações e encontrar soluções viáveis?
 

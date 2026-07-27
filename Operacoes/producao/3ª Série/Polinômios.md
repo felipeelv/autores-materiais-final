@@ -1,4 +1,4 @@
-# Capítulo 5 — Polinômios
+# BL2_Capítulo 2 — Polinômios
 
 > Como operar, dividir e decompor polinômios?
 

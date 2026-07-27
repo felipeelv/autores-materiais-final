@@ -1,4 +1,4 @@
-# Capítulo 5 — Inequações do 2º grau
+# BL2_Capítulo 2 — Inequações do 2º grau
 
 > Como encontrar a faixa em que uma expressão quadrática é positiva?
 

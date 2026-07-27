@@ -1,4 +1,4 @@
-# Capítulo 2 — Métodos de resolução: substituição, adição e escalonamento
+# BL1_Capítulo 2 — Métodos de resolução: substituição, adição e escalonamento
 
 > Como escolher e aplicar substituição, adição ou escalonamento?
 

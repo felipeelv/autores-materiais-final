@@ -1,4 +1,4 @@
-# Capítulo 2 — Função modular, composta e inversa
+# BL1_Capítulo 2 — Função modular, composta e inversa
 
 > Como interpretar módulo, composição e função inversa?
 

@@ -1,4 +1,4 @@
-# Capítulo 6 — Equações ax² + bx = 0
+# BL2_Capítulo 3 — Equações ax² + bx = 0
 
 > Por que dividir por x pode eliminar uma raiz de x² − 5x = 0?
 

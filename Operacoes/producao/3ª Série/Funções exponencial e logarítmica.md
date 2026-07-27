@@ -1,4 +1,4 @@
-# Capítulo 3 — Funções exponencial e logarítmica
+# BL1_Capítulo 3 — Funções exponencial e logarítmica
 
 > Como exponencial e logaritmo se relacionam?
 

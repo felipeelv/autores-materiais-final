@@ -1,4 +1,4 @@
-# Capítulo 1 — Funções afim e quadrática
+# BL1_Capítulo 1 — Funções afim e quadrática
 
 > Como os coeficientes determinam retas e parábolas?
 

@@ -1,4 +1,4 @@
-# Capítulo 3 — Otimização e modelagem
+# BL1_Capítulo 3 — Otimização e modelagem
 
 > Como usar o vértice para encontrar o maior ou o menor valor?
 

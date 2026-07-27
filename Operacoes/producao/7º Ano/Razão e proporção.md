@@ -1,4 +1,4 @@
-# Capítulo 6 — Razão e proporção
+# BL2_Capítulo 4 — Razão e proporção
 
 > Como usar razões e proporções para comparar grandezas?
 

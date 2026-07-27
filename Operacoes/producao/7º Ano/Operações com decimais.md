@@ -1,4 +1,4 @@
-# Capítulo 3 — Operações com decimais
+# BL2_Capítulo 1 — Operações com decimais
 
 > Como operar decimais e converter frações em decimais?
 

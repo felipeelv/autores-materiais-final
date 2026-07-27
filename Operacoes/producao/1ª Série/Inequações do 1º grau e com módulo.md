@@ -1,4 +1,4 @@
-# Capítulo 4 — Inequações do 1º grau e com módulo
+# BL2_Capítulo 1 — Inequações do 1º grau e com módulo
 
 > Como representar e resolver faixas de valores com inequações?
 

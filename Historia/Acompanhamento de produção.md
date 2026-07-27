@@ -20,7 +20,7 @@ O 3º bimestre foi concluído, validado e salvo na pasta oficial [Segundo Semest
 | 2ª série | [2ª Série](https://drive.google.com/drive/folders/1sC0Plv94zkQ1z5ra95VXZFMTa6mvlOcH) | 4 | 18 | Concluída |
 | 3ª série | [3ª Série](https://drive.google.com/drive/folders/1mt-fK-a8Mr1X_zmyvbUHXFLqXceD2RZM) | 4 | 18 | Concluída |
 
-Os três modelos foram formalizados como Capítulos 1. Os outros nove capítulos, com 40 aulas, foram produzidos no mesmo padrão. O conjunto final possui **54 aulas entre 146 e 175 palavras**, média de **166,7 palavras**, exatamente um box por aula e dois blockquotes simples por capítulo.
+Os três modelos foram formalizados como BL1_Capítulos 1. Os outros nove capítulos, com 40 aulas, foram produzidos no mesmo padrão. O conjunto final possui **54 aulas entre 146 e 175 palavras**, média de **166,7 palavras**, exatamente um box por aula e dois blockquotes simples por capítulo.
 
 Todos os 12 arquivos passaram no validador de História e foram revisados contra a ordem, os títulos, os conteúdos e os itens `NÃO ANTECIPAR` dos blueprints. A conferência no Drive confirmou quatro arquivos Markdown por série e tamanhos idênticos aos arquivos locais validados.
 

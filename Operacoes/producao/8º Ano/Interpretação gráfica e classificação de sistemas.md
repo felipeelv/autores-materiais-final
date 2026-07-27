@@ -1,4 +1,4 @@
-# Capítulo 2 — Interpretação gráfica e classificação de sistemas
+# BL1_Capítulo 2 — Interpretação gráfica e classificação de sistemas
 
 > Como os coeficientes mostram se duas retas se cruzam?
 

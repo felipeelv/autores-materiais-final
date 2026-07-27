@@ -75,7 +75,7 @@ A faixa preferencial de 90–130 palavras não é mínimo obrigatório. Aulas ab
 
 ## Padrão de notação e resolução vertical
 
-**Capítulo piloto:** 7º ano, Capítulo 2 — Operações com frações.
+**Capítulo piloto:** 7º ano, BL1_Capítulo 2 — Operações com frações.
 
 **Situação:** aprovado pelo Felipe e aplicado aos 43 capítulos.
 
@@ -125,16 +125,16 @@ Os cálculos finais dos exemplos estavam corretos, mas a apresentação e alguma
 - 144 blocos concentram duas ou mais igualdades, candidatos a desdobramento;
 - 18 frações numéricas usam barra simples em vez de `\frac{}{}`;
 - os 65 exemplos usam a frase “Veja o exemplo abaixo.”, incompatível com o modelo atual, e precisam receber um nome de situação em negrito;
-- **7º ano, Capítulo 1:** trocar “forma irredutível positiva” por “forma irredutível com denominador positivo”;
-- **7º ano, Capítulo 2:** restringir as afirmações sobre aumentar ou diminuir ao multiplicar a valores positivos e fatores entre 0 e 1 ou maiores que 1;
-- **8º ano, Capítulo 2:** o teste por razões precisa prever coeficientes nulos ou ser escrito por proporcionalidade/produtos cruzados;
-- **9º ano, Capítulo 1:** substituir “quadrado dá positivo” por “quadrado é não negativo”;
-- **9º ano, Capítulo 2:** explicitar o cuidado com `\sqrt{4a^2}=2|a|` na dedução, preservando a fórmula final de Bhaskara;
-- **9º ano, Capítulo 3:** corrigir `\sqrt{x^2}=x` para `\sqrt{x^2}=|x|` nas duas ocorrências;
-- **2ª série, Capítulos 1 e 3:** o critério `\det A=0` com todos os `\det A_i=0` não basta, em geral, para classificar sistemas de ordem 3 ou maior; restringir o teste ou usar posto/Rouché-Capelli;
-- **3ª série, Capítulo 1:** declarar `x_1 \neq x_2` na fórmula da taxa de variação;
-- **3ª série, Capítulo 2:** declarar `a>0` nas equivalências de inequações modulares;
-- **3ª série, Capítulo 3:** declarar `x>0` e `y>0` nas propriedades dos logaritmos.
+- **7º ano, BL1_Capítulo 1:** trocar “forma irredutível positiva” por “forma irredutível com denominador positivo”;
+- **7º ano, BL1_Capítulo 2:** restringir as afirmações sobre aumentar ou diminuir ao multiplicar a valores positivos e fatores entre 0 e 1 ou maiores que 1;
+- **8º ano, BL1_Capítulo 2:** o teste por razões precisa prever coeficientes nulos ou ser escrito por proporcionalidade/produtos cruzados;
+- **9º ano, BL1_Capítulo 1:** substituir “quadrado dá positivo” por “quadrado é não negativo”;
+- **9º ano, BL1_Capítulo 2:** explicitar o cuidado com `\sqrt{4a^2}=2|a|` na dedução, preservando a fórmula final de Bhaskara;
+- **9º ano, BL1_Capítulo 3:** corrigir `\sqrt{x^2}=x` para `\sqrt{x^2}=|x|` nas duas ocorrências;
+- **2ª série, BL1_Capítulos 1 e 3:** o critério `\det A=0` com todos os `\det A_i=0` não basta, em geral, para classificar sistemas de ordem 3 ou maior; restringir o teste ou usar posto/Rouché-Capelli;
+- **3ª série, BL1_Capítulo 1:** declarar `x_1 \neq x_2` na fórmula da taxa de variação;
+- **3ª série, BL1_Capítulo 2:** declarar `a>0` nas equivalências de inequações modulares;
+- **3ª série, BL1_Capítulo 3:** declarar `x>0` e `y>0` nas propriedades dos logaritmos.
 
 ### Cobertura dos blueprints
 

@@ -1,4 +1,4 @@
-# Capítulo 4 — Operações com decimais
+# BL2_Capítulo 2 — Operações com decimais
 
 > Como posicionar a vírgula nas operações com decimais?
 

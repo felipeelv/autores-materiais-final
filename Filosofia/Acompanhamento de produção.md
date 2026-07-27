@@ -22,22 +22,22 @@ O 3º bimestre foi concluído, validado e salvo na pasta oficial [Segundo Semest
 
 ### 1ª série
 
-- [x] **Capítulo 1 — Aristóteles — metafísica e ética** — 3 aulas.
-- [x] **Capítulo 2 — Tomás de Aquino — síntese fé e razão** — 3 aulas.
+- [x] **BL1_Capítulo 1 — Aristóteles — metafísica e ética** — 3 aulas.
+- [x] **BL2_Capítulo 1 — Tomás de Aquino — síntese fé e razão** — 3 aulas.
 
 ### 2ª série
 
-- [x] **Capítulo 1 — Nietzsche e a morte de Deus** — 3 aulas.
-- [x] **Capítulo 2 — Existencialismo — angústia e liberdade** — 3 aulas.
+- [x] **BL1_Capítulo 1 — Nietzsche e a morte de Deus** — 3 aulas.
+- [x] **BL2_Capítulo 1 — Existencialismo — angústia e liberdade** — 3 aulas.
 
 ### 3ª série
 
-- [x] **Capítulo 1 — Filosofia antiga e medieval** — 3 aulas.
-- [x] **Capítulo 2 — Filosofia moderna e contemporânea** — 3 aulas.
+- [x] **BL1_Capítulo 1 — Filosofia antiga e medieval** — 3 aulas.
+- [x] **BL2_Capítulo 1 — Filosofia moderna e contemporânea** — 3 aulas.
 
 ## Calibragem final
 
-- Os três modelos locais foram formalizados como Capítulos 1.
+- Os três modelos locais foram formalizados como BL1_Capítulos 1.
 - As **18 aulas** ficaram entre **158 e 185 palavras**, com média de **178,8**.
 - Cada aula possui ao menos uma lista ou tabela e exatamente um box de uma frase.
 - Cada capítulo usa dois blockquotes simples, além da pergunta-problema.

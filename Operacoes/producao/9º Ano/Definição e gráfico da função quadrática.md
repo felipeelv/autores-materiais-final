@@ -1,4 +1,4 @@
-# Capítulo 4 — Definição e gráfico da função quadrática
+# BL2_Capítulo 1 — Definição e gráfico da função quadrática
 
 > Como uma função quadrática gera uma parábola?
 

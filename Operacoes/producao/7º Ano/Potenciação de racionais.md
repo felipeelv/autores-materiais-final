@@ -1,4 +1,4 @@
-# Capítulo 4 — Potenciação de racionais
+# BL2_Capítulo 2 — Potenciação de racionais
 
 > Como calcular potências de racionais com expoentes inteiros?
 

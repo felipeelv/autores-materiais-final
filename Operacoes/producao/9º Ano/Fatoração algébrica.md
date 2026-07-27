@@ -1,4 +1,4 @@
-# Capítulo 3 — Fatoração algébrica
+# BL1_Capítulo 3 — Fatoração algébrica
 
 > Quando a fatoração resolve uma equação quadrática?
 

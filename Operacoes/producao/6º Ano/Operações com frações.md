@@ -1,4 +1,4 @@
-# Capítulo 2 — Operações com frações
+# BL1_Capítulo 2 — Operações com frações
 
 > Como operar frações sem somar denominadores?
 

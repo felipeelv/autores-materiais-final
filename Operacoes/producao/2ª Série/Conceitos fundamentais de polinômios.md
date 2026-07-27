@@ -1,4 +1,4 @@
-# Capítulo 4 — Conceitos fundamentais de polinômios
+# BL2_Capítulo 1 — Conceitos fundamentais de polinômios
 
 > O que define um polinômio e quando um valor é sua raiz?
 

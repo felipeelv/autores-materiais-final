@@ -1,4 +1,4 @@
-# Capítulo 3 — Representação e comparação de decimais
+# BL2_Capítulo 1 — Representação e comparação de decimais
 
 > Como representar, converter e comparar números decimais?
 

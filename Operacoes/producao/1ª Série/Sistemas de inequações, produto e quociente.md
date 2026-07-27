@@ -1,4 +1,4 @@
-# Capítulo 6 — Sistemas de inequações, produto e quociente
+# BL2_Capítulo 3 — Sistemas de inequações, produto e quociente
 
 > Como combinar desigualdades e analisar produtos e quocientes?
 

@@ -1,4 +1,4 @@
-# Capítulo 2 — Estudo do sinal, forma canônica e gráficos
+# BL1_Capítulo 2 — Estudo do sinal, forma canônica e gráficos
 
 > Como identificar onde uma função quadrática é positiva ou negativa?
 

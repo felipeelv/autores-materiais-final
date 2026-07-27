@@ -1,4 +1,4 @@
-# Capítulo 5 — Equações ax² + c = 0
+# BL2_Capítulo 2 — Equações ax² + c = 0
 
 > Quando x² = k tem duas, uma ou nenhuma solução real?
 

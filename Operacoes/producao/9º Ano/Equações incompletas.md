@@ -1,4 +1,4 @@
-# Capítulo 1 — Equações incompletas
+# BL1_Capítulo 1 — Equações incompletas
 
 > Como resolver equações quadráticas incompletas?
 

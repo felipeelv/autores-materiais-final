@@ -1,4 +1,4 @@
-# Capítulo 5 — Radiciação e números irracionais
+# BL2_Capítulo 3 — Radiciação e números irracionais
 
 > Como calcular raízes e reconhecer números irracionais?
 

@@ -1,4 +1,4 @@
-# Capítulo 6 — Progressões aritméticas e geométricas
+# BL2_Capítulo 3 — Progressões aritméticas e geométricas
 
 > Como calcular termos e somas de PA e PG?
 

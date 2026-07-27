@@ -1,4 +1,4 @@
-# Capítulo 5 — Operações com polinômios
+# BL2_Capítulo 2 — Operações com polinômios
 
 > Como operar e dividir polinômios com segurança?
 

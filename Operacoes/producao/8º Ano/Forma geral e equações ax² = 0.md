@@ -1,4 +1,4 @@
-# Capítulo 4 — Forma geral e equações ax² = 0
+# BL2_Capítulo 1 — Forma geral e equações ax² = 0
 
 > Como classificar e resolver equações quadráticas incompletas?
 

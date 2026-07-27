@@ -1,4 +1,4 @@
-# Capítulo 5 — Vértice e eixo de simetria
+# BL2_Capítulo 2 — Vértice e eixo de simetria
 
 > Como calcular o vértice e o eixo de simetria?
 

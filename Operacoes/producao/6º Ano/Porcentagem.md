@@ -1,4 +1,4 @@
-# Capítulo 5 — Porcentagem
+# BL2_Capítulo 3 — Porcentagem
 
 > Como calcular porcentagens, descontos e acréscimos?
 

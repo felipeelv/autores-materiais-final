@@ -22,15 +22,15 @@
 
 ## Capítulos oficiais
 
-- [x] **9º ano — Capítulo 1: Ácidos e bases** — 3 aulas.
+- [x] **9º ano — BL1_Capítulo 1: Ácidos e bases** — 3 aulas.
 
-- [x] **9º ano — Capítulo 2: Sais, óxidos e neutralização** — 3 aulas.
-- [x] **1ª série — Capítulo 1: Tabela periódica** — 6 aulas.
-- [x] **1ª série — Capítulo 2: Ligações químicas e propriedades dos materiais** — 6 aulas.
-- [x] **2ª série — Capítulo 1: Equilíbrio químico** — 6 aulas.
-- [x] **2ª série — Capítulo 2: Equilíbrio iônico, pH e titulação** — 6 aulas.
-- [x] **3ª série — Capítulo 1: Isomeria** — 6 aulas.
-- [x] **3ª série — Capítulo 2: Reações orgânicas** — 6 aulas.
+- [x] **9º ano — BL2_Capítulo 1: Sais, óxidos e neutralização** — 3 aulas.
+- [x] **1ª série — BL1_Capítulo 1: Tabela periódica** — 6 aulas.
+- [x] **1ª série — BL2_Capítulo 1: Ligações químicas e propriedades dos materiais** — 6 aulas.
+- [x] **2ª série — BL1_Capítulo 1: Equilíbrio químico** — 6 aulas.
+- [x] **2ª série — BL2_Capítulo 1: Equilíbrio iônico, pH e titulação** — 6 aulas.
+- [x] **3ª série — BL1_Capítulo 1: Isomeria** — 6 aulas.
+- [x] **3ª série — BL2_Capítulo 1: Reações orgânicas** — 6 aulas.
 
 Os oito arquivos passam no validador de Química. A extensão menor ocorre quando fórmulas, tabelas e figuras realizam parte da explicação, sem perda do recorte.
 
@@ -62,8 +62,8 @@ A revisão foi feita antes da redação, com consulta à BNCC, à matriz oficial
 ## Conferência da sincronização
 
 - A pasta oficial e as quatro subpastas de ano/série foram criadas em `Segundo Semestre/Química`.
-- Os quatro Capítulos 1 foram formalizados e enviados em 23/07/2026.
-- Os quatro Capítulos 2 foram substituídos pelas versões com fórmulas corrigidas.
+- Os quatro BL1_Capítulos 1 foram formalizados e enviados em 23/07/2026.
+- Os quatro BL2_Capítulos 1 foram substituídos pelas versões com fórmulas corrigidas.
 - Cada subpasta contém exatamente os dois capítulos previstos para o 3º bimestre.
 - A leitura de retorno confirmou os oito arquivos byte a byte idênticos às versões locais.
 - Não há capítulo pendente no 3º bimestre.

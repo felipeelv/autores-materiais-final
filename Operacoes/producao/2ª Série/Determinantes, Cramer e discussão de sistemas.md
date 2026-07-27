@@ -1,4 +1,4 @@
-# Capítulo 3 — Determinantes, Cramer e discussão de sistemas
+# BL1_Capítulo 3 — Determinantes, Cramer e discussão de sistemas
 
 > Como resolver e classificar sistemas usando determinantes?
 

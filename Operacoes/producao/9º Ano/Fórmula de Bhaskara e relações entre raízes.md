@@ -1,4 +1,4 @@
-# Capítulo 2 — Fórmula de Bhaskara e relações entre raízes
+# BL1_Capítulo 2 — Fórmula de Bhaskara e relações entre raízes
 
 > Como resolver uma equação quadrática completa?
 
