@@ -68,11 +68,11 @@ de leitura definida pelo padrão. A aprovação deve considerar:
 
 ### Leis de Newton
 
-![Galeria com as cinco figuras de Leis de Newton da 1ª série](../_tikz/fisica/revisao-300px/galeria-1serie-leis-de-newton.jpg)
+![Galeria com as sete figuras de Leis de Newton da 1ª série](../_tikz/fisica/revisao-300px/galeria-1serie-leis-de-newton.jpg)
 
 ### Forças mecânicas
 
-![Galeria com as cinco figuras de Forças mecânicas da 1ª série](../_tikz/fisica/revisao-300px/galeria-1serie-forcas-mecanicas.jpg)
+![Galeria com as sete figuras de Forças mecânicas da 1ª série](../_tikz/fisica/revisao-300px/galeria-1serie-forcas-mecanicas.jpg)
 
 ## 2ª série
 
@@ -107,3 +107,20 @@ de leitura definida pelo padrão. A aprovação deve considerar:
 5. 95 hashes públicos confirmados;
 6. 16 capítulos sincronizados nos mesmos arquivos do Google Drive;
 7. leitura de retorno idêntica aos arquivos locais.
+
+## Revisão de 04/08/2026 — 1ª série · Bloco 1
+
+Os números acima são o registro da rodada original. A auditoria dos dois
+capítulos da 1ª série contra `PADRAO-DE-IMAGENS-TIKZ.md` alterou o conjunto:
+
+- **seis peças refeitas** por violação de respiro — `fig-02` e `fig-03` de
+  Leis de Newton; `fig-01`, `fig-02`, `fig-03` e `fig-05` de Forças
+  mecânicas. A mais grave era a tração desenhada sobre a própria corda,
+  contra a regra de faixa paralela do §3;
+- **quatro peças novas**, páginas 6 e 7 de cada fonte — o diagrama de corpo
+  livre e o par livro/Terra em Leis de Newton; os diagramas dos corpos
+  ligados e o gráfico $|F_{el}| \times x$ em Forças mecânicas;
+- as galerias desta seção foram regeradas com as 14 peças vigentes.
+
+Com isso a coleção de Física passa de 103 para **107 PNGs** e o commit
+público vigente é `1addc5b0379a`.

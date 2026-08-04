@@ -70,6 +70,14 @@
 - [x] Dezesseis capítulos revisados em coluna de 720 px, sem sobreposição ou extravasamento.
 - [x] Dezesseis arquivos sincronizados no Google Drive e conferidos por leitura de retorno.
 
-**Commit público vigente da coleção:** `8a79200b98f7`.
+- [x] **04/08/2026 — auditoria da 1ª série · Bloco 1:** seis figuras refeitas
+  por violação de respiro (a mais grave, a tração desenhada sobre a corda) e
+  quatro figuras novas — diagrama de corpo livre e par livro/Terra em Leis de
+  Newton; diagramas dos corpos ligados e gráfico $|F_{el}| \times x$ em Forças
+  mecânicas. As 14 peças foram revisadas a 300 px, publicadas, validadas por
+  hash e indexadas no Markdown privado e no Google Drive. Coleção de Física:
+  **107 PNGs**.
+
+**Commit público vigente da coleção:** `1addc5b0379a`.
 
 **Galerias aprovadas:** `REVISAO-TIKZ-DEMAIS-CAPITULOS.md`.

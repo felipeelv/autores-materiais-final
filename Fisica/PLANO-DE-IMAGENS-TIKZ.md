@@ -212,13 +212,19 @@ As 95 figuras abaixo seguem o padrão já aprovado:
 | 7º ano | 3 | 13 |
 | 8º ano | 2 | 15 |
 | 9º ano | 2 | 12 |
-| 1ª série | 2 restantes | 10 |
+| 1ª série | 2 restantes | 10 (+4 em 04/08/2026) |
 | 2ª série | 2 | 16 |
 | 3ª série | 3 | 18 |
 | **Total restante** | **16** | **95** |
 
 Somadas às oito figuras do piloto, a coleção de Física tem **103 PNGs**
 aprovados, publicados, indexados e sincronizados.
+
+Em 04/08/2026 a 1ª série recebeu quatro figuras adicionais na revisão do
+Bloco 1 — `fig-06-diagrama-de-corpo-livre` e `fig-07-par-livro-e-terra` no
+Capítulo 1; `fig-06-diagramas-dos-corpos-ligados` e
+`fig-07-grafico-forca-e-deformacao` no Capítulo 2 —, elevando a coleção de
+Física a **107 PNGs**. Detalhes em `../_tikz/README.md`.
 
 ## Execução
 

@@ -17,7 +17,7 @@
       "largura_px": 1371,
       "altura_px": 1276,
       "publicado_sha256": "dea3b3a4f3c34018ee816941d24463f38cf7760262793ff22672cc329ec81ea1",
-      "publicado_commit": "2050a68709b4a942f31d94326658b10f87e1c2d2"
+      "publicado_commit": "1addc5b0379a44995a89003d50781f5d7d10d764"
     },
     {
       "id": "fig-02-inercia-do-passageiro",
@@ -25,11 +25,11 @@
       "arquivo": "fig-02-inercia-do-passageiro.png",
       "alt": "Carro freando enquanto o passageiro tende a manter sua velocidade para a frente",
       "aprovada": true,
-      "sha256": "72a4b35f2d498bd2cd5c937abddd359ba71c4efe2c18d145ca577a871f11486a",
+      "sha256": "3e36b550d7bcf0d5bfbddfc2ea7aca2552bfd5ae2f78307e1a8eae51cbf1b5ed",
       "largura_px": 1418,
       "altura_px": 1205,
-      "publicado_sha256": "72a4b35f2d498bd2cd5c937abddd359ba71c4efe2c18d145ca577a871f11486a",
-      "publicado_commit": "2050a68709b4a942f31d94326658b10f87e1c2d2"
+      "publicado_sha256": "3e36b550d7bcf0d5bfbddfc2ea7aca2552bfd5ae2f78307e1a8eae51cbf1b5ed",
+      "publicado_commit": "1addc5b0379a44995a89003d50781f5d7d10d764"
     },
     {
       "id": "fig-03-resultante-de-forcas-perpendiculares",
@@ -37,11 +37,11 @@
       "arquivo": "fig-03-resultante-de-forcas-perpendiculares.png",
       "alt": "Forças perpendiculares de 30 N e 40 N compondo uma resultante de 50 N",
       "aprovada": true,
-      "sha256": "3dd50285006e79e26e726b3314f720f5443a26325ab1af3ac7bb447ba8d0f4b0",
-      "largura_px": 1229,
-      "altura_px": 1111,
-      "publicado_sha256": "3dd50285006e79e26e726b3314f720f5443a26325ab1af3ac7bb447ba8d0f4b0",
-      "publicado_commit": "2050a68709b4a942f31d94326658b10f87e1c2d2"
+      "sha256": "7c67de41ee9978b09df358c75c0c7adeac16dc7209d6ce9f0607efe4197190ec",
+      "largura_px": 1111,
+      "altura_px": 1134,
+      "publicado_sha256": "7c67de41ee9978b09df358c75c0c7adeac16dc7209d6ce9f0607efe4197190ec",
+      "publicado_commit": "1addc5b0379a44995a89003d50781f5d7d10d764"
     },
     {
       "id": "fig-04-velocidade-e-aceleracao-opostas",
@@ -53,7 +53,7 @@
       "largura_px": 1323,
       "altura_px": 1028,
       "publicado_sha256": "74125ca911e7f4141d9e76841ab207e9d033886b0efc315debee7512078ca56b",
-      "publicado_commit": "2050a68709b4a942f31d94326658b10f87e1c2d2"
+      "publicado_commit": "1addc5b0379a44995a89003d50781f5d7d10d764"
     },
     {
       "id": "fig-05-acao-e-reacao-em-corpos-diferentes",
@@ -65,7 +65,31 @@
       "largura_px": 1418,
       "altura_px": 1140,
       "publicado_sha256": "c90e68c4eef8fa261082bae11f7886e78afb99d9032ea321b0531e0e5955d7e2",
-      "publicado_commit": "2050a68709b4a942f31d94326658b10f87e1c2d2"
+      "publicado_commit": "1addc5b0379a44995a89003d50781f5d7d10d764"
+    },
+    {
+      "id": "fig-06-diagrama-de-corpo-livre",
+      "pagina": 6,
+      "arquivo": "fig-06-diagrama-de-corpo-livre.png",
+      "alt": "Cena física de um bloco empurrado em ângulo e o diagrama de corpo livre correspondente, com a força inclinada projetada nos eixos",
+      "aprovada": true,
+      "sha256": "1439a6fb39583be896c493a784b04da5b0b11332fd0be32a6ce4eef5e1899f41",
+      "largura_px": 1063,
+      "altura_px": 1217,
+      "publicado_sha256": "1439a6fb39583be896c493a784b04da5b0b11332fd0be32a6ce4eef5e1899f41",
+      "publicado_commit": "1addc5b0379a44995a89003d50781f5d7d10d764"
+    },
+    {
+      "id": "fig-07-par-livro-e-terra",
+      "pagina": 7,
+      "arquivo": "fig-07-par-livro-e-terra.png",
+      "alt": "Livro e Terra atraindo-se com forças de mesmo módulo e sentidos opostos, cada uma aplicada em um corpo",
+      "aprovada": true,
+      "sha256": "f90c421586da27ca01b892ba5ca5149cd4bb1a5ef3740b54b622ed868cf1eadb",
+      "largura_px": 709,
+      "altura_px": 745,
+      "publicado_sha256": "f90c421586da27ca01b892ba5ca5149cd4bb1a5ef3740b54b622ed868cf1eadb",
+      "publicado_commit": "1addc5b0379a44995a89003d50781f5d7d10d764"
     }
   ]
 }

@@ -17,21 +17,38 @@ aprovados. O Markdown privado referencia esses arquivos por URL absoluta.
 - 15 Markdown sincronizados com as cópias oficiais no Google Drive;
 - repositório público auditado com somente `README.md` e 111 PNGs;
 - último commit da produção do 3º bimestre: `2fdcd844d6a909e73c4204a99445dd7d55535447`;
-- Física: 17 documentos e 103 figuras aprovadas, publicadas, indexadas,
+- Física: 17 documentos e 107 figuras aprovadas, publicadas, indexadas,
   revisadas em contexto e sincronizadas no Google Drive;
 - Matemática EF1: 18 documentos e 58 figuras aprovadas, publicadas,
   indexadas, revisadas em contexto e salvas no Google Drive;
 - Química: 5 documentos e 15 figuras aprovadas, publicadas, indexadas e
   revisadas no original, a 300 px e no capítulo em coluna de 720 px;
-- repositório público: 287 PNGs, sendo 111 de Geometria, 103 de Física,
+- repositório público: 291 PNGs, sendo 111 de Geometria, 107 de Física,
   58 de Matemática EF1 e 15 de Química;
-- commit público vigente: `04cb6b4853f64c3a51e29fafbe3bcfb4b13dda72`.
+- commit público vigente: `1addc5b0379a44995a89003d50781f5d7d10d764`.
 
 O detalhamento editorial está em `../Geometria/Acompanhamento de produção.md`; os commits da segunda etapa estão em `../Geometria/PLANO-DE-IMAGENS-TIKZ-BLOCO2.md`.
 O contrato específico do novo piloto está em
 `../Fisica/PADRAO-DE-IMAGENS-TIKZ.md`.
 O contrato visual de Química está em
 `../Quimica/PADRAO-DE-IMAGENS-TIKZ.md`.
+
+## Revisão de 04/08/2026 — Física · 1ª série · 3º Bim Bloco 1
+
+Auditoria dos dois capítulos contra `../Fisica/PADRAO-DE-IMAGENS-TIKZ.md`:
+
+- seis figuras existentes refeitas por violação de respiro — `fig-02` e
+  `fig-03` de Leis de Newton; `fig-01`, `fig-02`, `fig-03` e `fig-05` de
+  Forças mecânicas. O caso mais grave era a tração desenhada sobre a própria
+  corda, contra a regra de faixa paralela;
+- quatro figuras novas: `fig-06-diagrama-de-corpo-livre` e
+  `fig-07-par-livro-e-terra` (Leis de Newton);
+  `fig-06-diagramas-dos-corpos-ligados` e
+  `fig-07-grafico-forca-e-deformacao` (Forças mecânicas). As novas entram
+  como páginas 6 e 7 da fonte; a posição no Markdown segue a pergunta
+  pedagógica, não o número do arquivo;
+- as 14 peças foram revisadas a 300 px, publicadas, validadas por hash e
+  indexadas no Markdown privado e na cópia do Google Drive.
 
 Os capítulos podem permanecer fora deste repositório, desde que sua raiz
 privada esteja listada em `raizes_markdown_permitidas` no `config.json`. O
