@@ -1,4 +1,4 @@
-# Capítulo 1 — Civilizações do Oriente Antigo
+# BL1_Capítulo 1 — Civilizações do Oriente Antigo
 
 > Por que a ideia de um único Deus foi tão revolucionária num mundo de muitos deuses — e por que um alfabeto de 22 letras e a pólvora mudaram o mundo para sempre?
 
@@ -39,11 +39,7 @@ Os hebreus organizaram uma tradição **monoteísta**: a fé em um único Deus, 
 | vários deuses, com funções diferentes | um único Deus, criador e soberano |
 | cultos ligados a cidades e fenômenos | aliança entre Deus e o povo |
 
-> *“À imagem de Deus os criou.”*
->
-> — **Gênesis 1:27**
-
-Nessa tradição, todo ser humano carrega a imagem de Deus.
+> Nessa tradição, todo ser humano carrega a imagem de Deus.
 
 A **dignidade**, portanto, não depende de riqueza, poder ou origem.
 
@@ -69,19 +65,9 @@ A tradição relata que seus descendentes foram escravizados, preparando o conte
 
 ### 2.2 Libertação e aliança
 
-O Êxodo é a saída dos hebreus do Egito, situada pela tradição por volta de 1250 a.C.
+O Êxodo é a saída dos hebreus do Egito, situada pela tradição por volta de 1250 a.C. No monte Sinai, os Dez Mandamentos uniram deveres religiosos e regras de convivência.
 
-No monte Sinai, os Dez Mandamentos uniram deveres religiosos e regras de convivência.
-
-> 👤 **Esse foi o “cara”:**
->
-> - **Moisés** é a figura central do Êxodo;  
-> - segundo a tradição, conduziu o povo para fora do Egito;
->
-> - recebeu os Dez Mandamentos no Sinai.  
-> Seu legado reúne libertação, lei e identidade coletiva.
-
-O Êxodo ocupa lugar central na fé e na memória judaicas.
+O episódio ocupa lugar central na fé e na memória judaicas.
 
 > Os historiadores, porém, debatem sua dimensão histórica, pois as evidências arqueológicas não confirmam todos os acontecimentos narrados.
 

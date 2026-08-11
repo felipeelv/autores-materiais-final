@@ -1,4 +1,4 @@
-# Capítulo 1 — O Segundo Reinado e a riqueza do café
+# BL1_Capítulo 1 — O Segundo Reinado e a riqueza do café
 
 > Como um grão pequeno como o café pagou ferrovias, navios e a luz das ruas do Brasil — e quem trabalhava para que isso acontecesse?
 
@@ -32,19 +32,14 @@ Ele foi coroado aos 14 anos.
 
 ### 1.3 Um reinado longo
 
-D. Pedro II governou de 1840 a 1889.
+D. Pedro II governou de 1840 a 1889, o reinado mais longo da história do Brasil.
 
-> 👤 **Esse foi o “cara”:**
->
-> - D. Pedro II foi o segundo e último imperador do Brasil;  
-> - estudava línguas, astronomia e fotografia;
->
-> - reinou durante 49 anos.  
-> Defendia o fim da escravidão, mas adiou decisões enquanto milhões continuavam escravizados.
+O contraste do período aparecia na educação:
 
-O imperador tinha acesso a muitos estudos.
+- o imperador falava várias línguas e trocava cartas com cientistas europeus;
+- a maior parte da população não frequentava a escola.
 
-A maior parte da população, porém, não frequentava a escola.
+> Um país governado por um estudioso não era um país de estudantes.
 
 ---
 
@@ -129,10 +124,6 @@ Os grandes fazendeiros também enriqueceram.
 Quem colhia os grãos continuava sem receber salário.
 
 ### 3.3 Riqueza e dignidade
-
-> *“À imagem de Deus o criou.”*
->
-> — **Gênesis 1:27**
 
 A mesma dignidade pertencia ao proprietário e à pessoa obrigada a trabalhar.
 

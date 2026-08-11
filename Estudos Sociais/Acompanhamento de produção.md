@@ -2,7 +2,7 @@
 
 > Controle dos capítulos do 3º bimestre de 2026. A produção é acompanhada nesta pasta; `Segundo Semestre/Estudos Sociais` recebe somente os conteúdos concluídos.
 
-**Última atualização:** 22/07/2026
+**Última atualização:** 30/07/2026
 
 **Pasta de produção:** `autores-materiais-final/Estudos Sociais`
 
@@ -25,6 +25,20 @@
 **Critério de conferência:** títulos, numeração e quantidade de aulas foram levantados nos blueprints dos blocos 1 e 2. Os 34 arquivos da pasta oficial foram conferidos pelo validador de Estudos Sociais.
 
 **Revisão final — 22/07/2026:** os 34 capítulos e as 162 aulas seguem a ordem e o recorte dos blueprints. Todos passaram na validação estrutural e editorial; cada aula possui de 1 a 2 boxes permitidos. A redação foi mantida concisa, sem exercícios, fechamentos ou antecipação dos conteúdos indicados para outros capítulos.
+
+**Reforma editorial — 30/07/2026:** os 34 capítulos foram revisados sob as regras novas (`_MEMORIA.md`, decisão 14) e cada um ganhou seu **arquivo de anexo**. O que mudou:
+
+| Correção | Alcance |
+|---|---|
+| Boxes que abriam subtópico, reposicionados | 46 ocorrências em 29 capítulos |
+| Box `👤 Esse foi o "cara"` removido do corpo | 34 (um por capítulo) |
+| Subtópicos reescritos por terem ficado sem conteúdo ao perder o box | 12 |
+| Versículos retirados do fluxo da aula | 5 |
+| Arquivos `{Tema} — Anexo.md` criados | 34 |
+
+**Estado da validação:** os 34 capítulos passam sem nenhuma falha em `validar-capitulo.py`, que agora também detecta box abrindo subtópico e exige o prefixo de bloco no título. Backup dos arquivos originais em `~/Desktop/Estudos Sociais — backup antes do ajuste`.
+
+⚠️ **Pendência:** os 4 capítulos do 9º ano bloco 1 (Europa · Ásia · Potências econômicas asiáticas · Oriente Médio) têm anexo **sem "E para hoje…"** — o blueprint desses capítulos não traz Conexão VP. A correção, se desejada, é no blueprint.
 
 ## Fila de produção
 

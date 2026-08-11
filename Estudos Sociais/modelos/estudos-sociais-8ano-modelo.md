@@ -1,4 +1,4 @@
-# Capítulo 1 — Independências no Haiti e na América Espanhola
+# BL1_Capítulo 1 — Independências no Haiti e na América Espanhola
 
 > Por que a única revolução de escravizados vitoriosa da história — o Haiti — é a menos conhecida, enquanto as independências de Bolívar e San Martín, apesar de libertarem países inteiros, mantiveram a sociedade que já existia?
 
@@ -10,19 +10,16 @@ No fim do século XVIII, Saint-Domingue era a colônia francesa mais rica do mun
 
 ### 1.1 A riqueza da plantation
 
-> 🔎 **Curiosidade:**
->
-> Saint-Domingue produzia cerca de 40% do açúcar e 60% do café consumidos no mundo.
-
 A economia seguia o sistema de **plantation**:
 
 - grandes propriedades;
 - cultivo de um produto para exportação;
 - trabalho de pessoas escravizadas.
 
-A riqueza dependia da exploração de uma população sem liberdade.
+A riqueza dependia da exploração de uma população sem liberdade, e o controle era mantido por leis e violência.
 
-O controle era mantido por leis e violência.
+> 🔎 **Curiosidade:**
+> A colônia produzia cerca de 40% do açúcar e 60% do café consumidos no mundo.
 
 ### 1.2 Uma sociedade desigual
 
@@ -32,9 +29,7 @@ O controle era mantido por leis e violência.
 | *gens de couleur libres* | pessoas livres de ascendência africana e europeia, sem direitos iguais |
 | pessoas escravizadas | cerca de 90% da população e base do trabalho |
 
-Cada grupo buscava mudanças diferentes.
-
-A maioria escravizada lutava pela liberdade.
+Cada grupo buscava mudanças diferentes, mas a maioria escravizada lutava pela liberdade.
 
 ### 1.3 O Código Negro
 
@@ -57,29 +52,28 @@ Em agosto de 1791, uma cerimônia vodu em Bois Caïman reuniu pessoas prontas pa
 
 ### 2.1 Da insurreição à revolução
 
-Boukman participou da organização inicial.
+Boukman participou da organização inicial, e o vodu — religião viva no Haiti — ajudava africanos de diferentes origens a criar vínculos.
 
-O vodu, religião viva no Haiti, ajudava africanos de diferentes origens a criar vínculos.
-
-> A Revolução Francesa também influenciou o conflito ao anunciar liberdade e igualdade.
-
-O conflito durou treze anos e envolveu potências que disputavam o controle da ilha.
+A Revolução Francesa influenciou o conflito ao anunciar liberdade e igualdade.
 
 > Os escravizados de Saint-Domingue exigiram que esses direitos também valessem para eles.
 
-### 2.2 Toussaint Louverture
+O conflito durou treze anos e envolveu potências que disputavam o controle da ilha.
 
-> 👤 **Esse foi o “cara”:**
->
-> - Toussaint nasceu escravizado e foi alforriado adulto;  
-> - organizou forças contra franceses, espanhóis e ingleses;
->
-> - aboliu a escravidão e promulgou uma constituição autônoma em 1801.  
-> Capturado por Napoleão, morreu numa prisão francesa em 1803.
+### 2.2 A liderança de Toussaint Louverture
 
-Sua liderança transformou grupos rebeldes em força política e militar.
+Um homem nascido escravizado e alforriado na vida adulta assumiu o comando militar da revolta.
 
-A guerra também destruiu plantations e enfraqueceu o domínio francês.
+Sua atuação mudou o caráter do movimento:
+
+- transformou grupos rebeldes dispersos em um exército organizado;
+- enfrentou tropas francesas, espanholas e inglesas;
+- aboliu a escravidão na ilha e promulgou uma constituição autônoma em 1801.
+
+Napoleão o capturou em 1802, e ele morreu numa prisão francesa no ano seguinte.
+
+> 💭 **Você já pensou nisso?**
+> A revolução seguiu sem seu principal líder. O que mantém um movimento de pé quando quem o conduzia desaparece?
 
 ### 2.3 De 1791 a 1804
 
@@ -106,25 +100,15 @@ O Haiti realizou três mudanças históricas:
 - abolição imediata;
 - primeira república negra das Américas.
 
-A independência alterou o governo e também a base social da colônia.
-
-Essa ruptura assustou sociedades escravistas de outras regiões.
+A independência alterou o governo e também a base social da colônia, e essa ruptura assustou sociedades escravistas de outras regiões.
 
 ### 3.2 Uma constituição antirracista
 
-> 🔎 **Curiosidade:**
->
-> A Constituição haitiana de 1805 determinava que todo cidadão seria chamado negro.
+A Constituição haitiana de 1805 determinou que todo cidadão seria chamado **negro**.
 
-Nas colônias, essa palavra era usada para negar direitos.
+Nas colônias, essa palavra era usada para negar direitos; no Haiti, passou a expressar pertencimento político e igualdade.
 
-No Haiti, passou a expressar pertencimento político e igualdade.
-
-> *“Sempre que o fizestes a um destes meus irmãos, a mim o fizestes.”*
->
-> — **Mateus 25:40**
-
-Os revolucionários reconheceram em si a dignidade que o sistema escravista negava.
+> Os revolucionários reconheceram em si a dignidade que o sistema escravista negava.
 
 ### 3.3 Isolamento e dívida
 
@@ -142,26 +126,26 @@ O Haiti precisou pagar antigos proprietários pelas perdas causadas pela indepen
 
 Esse isolamento ajuda a explicar o enfraquecimento do país.
 
+> 💭 **Você já pensou nisso?**
+> Um país recém-libertado pagando indenização a quem o escravizava. Isso é independência completa?
+
 ---
 
 ## 4. Causas das independências espanholas
 
-Em 1808, Napoleão retirou o rei espanhol e criou um vazio de poder.
+Em 1808, Napoleão retirou o rei espanhol do trono e criou um vazio de poder.
 
 ### 4.1 Criollos e peninsulares
 
-Os **criollos** eram brancos nascidos na América.
+Os **criollos** eram brancos nascidos na América: tinham terras e riqueza, mas os principais cargos ficavam reservados aos **peninsulares**, nascidos na Espanha.
 
-Tinham terras e riqueza, mas os principais cargos eram reservados aos **peninsulares**, nascidos na Espanha.
+O conflito reunia duas posições:
 
-> O conflito reunia duas posições:
-
-- criollos queriam controlar decisões locais;
+- criollos queriam controlar as decisões locais;
 - peninsulares defendiam os privilégios metropolitanos.
 
 > 💭 **Você já pensou nisso?**
->
-> A independência significava igualdade para todos? No início, ela nasceu da disputa pelo comando entre grupos que viviam em condições diferentes.
+> A independência significava igualdade para todos? No início, ela nasceu da disputa pelo comando entre grupos que já viviam em condições diferentes.
 
 ### 4.2 As Juntas de Defesa
 
@@ -173,9 +157,7 @@ Esses conselhos combinaram três movimentos:
 - mantiveram inicialmente a fidelidade ao rei;
 - transferiram poder às elites locais.
 
-As juntas se tornaram centros de articulação política local.
-
-Quando o rei voltou, muitas regiões já tinham experimentado governo próprio.
+As juntas se tornaram centros de articulação política local, e quando o rei voltou, muitas regiões já tinham experimentado governo próprio.
 
 > A tentativa de recuperar o controle aprofundou a ruptura.
 
@@ -207,9 +189,7 @@ O **cabildo aberto** era uma assembleia municipal convocada em momentos extraord
 | atravessou os Andes em 1817 | conduziu campanhas no norte |
 | deixou a vida pública após Guayaquil | defendeu uma federação americana |
 
-Os dois combateram o domínio espanhol por caminhos diferentes.
-
-As campanhas dependeram de alianças entre diferentes regiões.
+Os dois combateram o domínio espanhol por caminhos diferentes, e as campanhas dependeram de alianças entre regiões distantes.
 
 ### 5.2 Outros movimentos
 
@@ -223,16 +203,11 @@ O movimento mexicano reuniu características próprias:
 
 ### 5.3 O fim do domínio continental
 
-San Martín e Bolívar se encontraram em Guayaquil, em 1822.
+San Martín e Bolívar se encontraram em Guayaquil, em 1822, e depois do encontro San Martín se retirou.
 
-> Depois do encontro, San Martín se retirou.
-
-As forças ligadas a Bolívar continuaram a guerra no Peru.
-
-A vitória de Ayacucho, em 1824, encerrou o domínio espanhol sobre quase toda a América continental.
+As forças ligadas a Bolívar continuaram a guerra no Peru e venceram em Ayacucho, em 1824, encerrando o domínio espanhol sobre quase toda a América continental.
 
 > 💭 **Você já pensou nisso?**
->
 > Vencer o domínio espanhol bastava para formar novos países? Depois da independência, ainda era necessário definir fronteiras e governos.
 
 ---
@@ -249,15 +224,11 @@ Três fatores dificultaram a unidade:
 - interesses das elites regionais;
 - instituições políticas frágeis.
 
-Chefes locais com prestígio militar assumiram o poder em várias regiões.
-
-Esse fenômeno recebeu o nome de **caudilhismo**.
+Chefes locais com prestígio militar assumiram o poder em várias regiões, e esse fenômeno recebeu o nome de **caudilhismo**.
 
 > As disputas tornaram muitos governos instáveis.
 
-A emancipação política não garantiu participação igual nos novos Estados.
-
-As novas fronteiras também provocaram conflitos entre governos vizinhos.
+A emancipação política não garantiu participação igual nos novos Estados, e as novas fronteiras ainda provocaram conflitos entre governos vizinhos.
 
 ### 6.2 Estruturas que permaneceram
 
@@ -268,7 +239,6 @@ A independência política não transformou toda a sociedade:
 - comunidades indígenas continuaram exploradas.
 
 > 💭 **Você já pensou nisso?**
->
 > Trocar a bandeira bastava para libertar todos os grupos? Para muitos trabalhadores, a vida cotidiana mudou pouco.
 
 ### 6.3 Novas dependências
@@ -277,7 +247,7 @@ Os países exportavam minérios e produtos agrícolas.
 
 Também importavam manufaturados e buscavam empréstimos no Reino Unido e, depois, nos Estados Unidos.
 
-> Essa relação manteve dependência econômica externa.
+> Essa relação manteve a dependência econômica externa.
 
 O Haiti rompeu a escravidão e a ordem colonial.
 

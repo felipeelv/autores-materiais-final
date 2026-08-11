@@ -1,4 +1,4 @@
-# Capítulo 1 — Urbanização do Brasil
+# BL1_Capítulo 1 — Urbanização do Brasil
 
 > Se o Brasil é 87% urbano, por que a gente ainda imagina o país como campo, sertão e Amazônia? Onde estão os 180 milhões de brasileiros que vivem em cidades?
 
@@ -38,14 +38,6 @@ Nos anos 1950, a indústria automobilística atraiu trabalhadores e outras empre
 > A cidade cresceu porque empregos e serviços passaram a se concentrar nela.
 
 ### 1.3 Celso Furtado e as regiões
-
-> 👤 **Esse foi o “cara”:**
->
-> - Celso Furtado publicou *Formação Econômica do Brasil* em 1959;  
-> - explicou o subdesenvolvimento como processo histórico;
->
-> - criou a SUDENE para enfrentar desigualdades regionais.  
-> Seu trabalho mostrou que o crescimento não acontece do mesmo modo em todo o território.
 
 A concentração industrial no Sudeste ajuda a explicar por que tantas pessoas migraram para essa região.
 

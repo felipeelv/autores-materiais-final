@@ -2,6 +2,11 @@
 __pycache__/
 *.pyc
 
+# Área de rascunho e caches de ferramenta
+tmp/
+.firecrawl/
+Captura de Tela *.png
+
 # Artefatos regeneráveis do pipeline TikZ privado
 _tikz/**/build/
 _tikz/**/*.aux

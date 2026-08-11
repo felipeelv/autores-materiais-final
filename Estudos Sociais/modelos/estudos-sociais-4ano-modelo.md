@@ -1,4 +1,4 @@
-# Capítulo 1 — Os povos que formaram o Brasil
+# BL1_Capítulo 1 — Os povos que formaram o Brasil
 
 > Quando você olha para a sua família, para a comida da sua mesa e para as palavras que você fala, de quantos povos diferentes você é feito?
 
@@ -33,17 +33,7 @@ Suas atividades incluíam:
 
 ### 1.3 Povos indígenas hoje
 
-Os povos indígenas continuam presentes no Brasil.
-
-Em 2022, o IBGE registrou cerca de 305 povos e 274 línguas indígenas.
-
-> 👤 **Esse foi o “cara”:**
->
-> - Claude Lévi-Strauss veio ao Brasil em 1935;  
-> - conviveu com os povos Bororo, Kadiwéu e Nambikwara;
->
-> - publicou *Tristes Trópicos* em 1955.  
-> Seu trabalho mostrou que essas culturas eram complexas, não “primitivas”.
+Os povos indígenas continuam presentes no Brasil. Em 2022, o IBGE registrou cerca de 305 povos e 274 línguas indígenas.
 
 Crianças indígenas estudam, brincam e aprendem línguas de suas comunidades.
 
@@ -108,11 +98,9 @@ Milhões de pessoas foram retiradas de diferentes regiões da África e levadas 
 
 ### 3.1 O tráfico atlântico
 
-Homens, mulheres e crianças foram capturados e colocados em navios.
+Homens, mulheres e crianças foram capturados e colocados em navios. Essa viagem forçada recebeu o nome de **tráfico atlântico**.
 
-Essa viagem forçada recebeu o nome de **tráfico atlântico**.
-
-> Durante a travessia, perderam:
+Durante a travessia, perderam:
 
 - liberdade;
 - contato com a família;
@@ -138,10 +126,6 @@ Entre 1530 e 1888, cerca de 4,8 milhões de africanos chegaram ao Brasil nessa c
 
 ### 3.3 Palavra e resistência
 
-> 💭 **Você já pensou nisso?**
->
-> Por que dizemos **pessoa escravizada**? A expressão mostra que a escravidão foi uma violência imposta, não uma característica da pessoa.
-
 A resistência assumiu diferentes formas:
 
 - fugas;
@@ -149,6 +133,10 @@ A resistência assumiu diferentes formas:
 - preservação de línguas, saberes e costumes.
 
 Nenhuma pessoa aceitou perder a liberdade sem criar maneiras de resistir.
+
+> 💭 **Você já pensou nisso?**
+>
+> Por que dizemos **pessoa escravizada**? A expressão mostra que a escravidão foi uma violência imposta, não uma característica da pessoa.
 
 A resistência também preservou conhecimentos que atravessaram gerações.
 
@@ -160,11 +148,9 @@ Sobrenomes como Bianchi, Tanaka e Salim contam histórias de viagens ao Brasil.
 
 ### 4.1 Quem é imigrante
 
-**Imigrante** é a pessoa que deixa seu país para viver em outro.
+**Imigrante** é a pessoa que deixa seu país para viver em outro. Nos séculos XIX e XX, muitas famílias buscavam terra, trabalho e segurança.
 
-Nos séculos XIX e XX, muitas famílias buscavam terra, trabalho e segurança.
-
-> A experiência delas foi diferente da escravização:
+A experiência delas foi diferente da escravização:
 
 | Pessoas escravizadas | Imigrantes |
 |---|---|
@@ -244,10 +230,6 @@ A miscigenação não tornou todas as pessoas iguais.
 
 Cada matriz manteve marcas próprias na comida, na língua, na música e na fé.
 
-> *“À imagem de Deus os criou.”*
->
-> — **Gênesis 1:27**
-
-A mesma dignidade pertence a pessoas de todas as origens.
+> A mesma dignidade pertence a pessoas de todas as origens.
 
 Nenhum povo vale mais que outro, e ninguém foi criado para ser propriedade de alguém.
