@@ -39,7 +39,7 @@ O arquivo `PADRAO-GERAL-DE-ESCRITA.md`, na raiz, é a **fonte oficial e mais sim
 | `Matematica EF1/` | Matemática única · 4º–5º ano | ✅ 3º bimestre concluído: 18 capítulos · 96 aulas |
 | `Operacoes/` | Matemática 1 · 6º → 3ª EM | ✅ validado em produção |
 | `Geometria/` | Matemática 2 · 6º → 3ª EM | ✅ validado em produção |
-| `Financeira/` | Matemática 3 · 6º → 3ª EM | ✅ validado em produção |
+| `Financeira/` | Matemática 3 · 6º → 3ª EM | ✅ 3º bimestre concluído: 14 capítulos · 42 aulas · Bloco 1 alinhado às páginas-resumo (11/08) |
 | `Ciencias/` | 4º → 8º ano | ✅ validado em produção |
 | `Biologia/` | 9º ano → 3ª EM | ✅ validado em produção |
 | `Fisica/` | 6º ano → 3ª EM | ✅ validado em produção |
@@ -55,6 +55,8 @@ O arquivo `PADRAO-GERAL-DE-ESCRITA.md`, na raiz, é a **fonte oficial e mais sim
 ## 2. O formato (decisão fechada)
 
 **Não existem mais blocos pós-conteúdo** (decisão do Felipe, 21/07/2026): sem "Sua Parte", "O que a Bíblia diz", "Simplificando", "Para não esquecer", "Ampliando o Olhar", "Pensador em Destaque". Tudo vive **dentro das aulas**: `1 tema = 1 capítulo · 1 aula = 1 tópico ## N. · prosa curta + marcadores · Bíblia condicional inline (teste do sinônimo)`. O que sobreviveu dos autores antigos é a **proposta de conteúdo**: voz, famílias de boxes, adaptação por série e as regras invioláveis de cada disciplina.
+
+> **Exceção — Estudos Sociais (30/07/2026).** A disciplina entrega **dois arquivos por capítulo**: o capítulo e um `{Tema} — Anexo.md`, com "Enquanto isso…", "E para hoje…" e "Esse foi o 'cara'". Não é volta do fechamento antigo: nada disso entra no corpo do capítulo, e por isso o **versículo saiu do fluxo da aula** nessa disciplina. Estudos Sociais também não tem mais box `👤`, e nela **o box nunca abre um subtópico** — esta última regra vale para todas as disciplinas (Anexo A §7 item 7).
 
 **Hierarquia de autoridade:** **blueprint** (o quê e até onde) → **Anexo A** (como escrever no nível × faixa) → **Parte 2 do `AUTOR.md`** (voz e formato) → Parte 1 (instruções do projeto).
 
@@ -105,4 +107,15 @@ Um projeto por kit editorial ativo — **14 projetos**. As matemáticas não se 
 - [x] Recalibrar o autor, criar os modelos e concluir no Drive os 6 capítulos do 3º bimestre de Filosofia.
 - [x] Capítulos-modelo por ano/série concluídos em Biologia (9º + EM), Ciências (4º–8º), Estudos Sociais (4º–9º), Física (6º–9º + EM), Matemática Financeira (6º–9º + EM) e Geometria (6º–9º + EM).
 - [ ] Decisão pendente: versículo Mateus 25:40 repetido em 3 séries nos blueprints de Geometria.
-- [ ] Decisão pendente: formato da Conexão VP — os kits praticam versículo condicional inline, mas o Anexo A §5 ainda marca como "em aberto". Física e Geometria já decidiram **não levar versículo**.
+- [ ] Decisão pendente: formato da Conexão VP — os kits praticam versículo condicional inline, mas o Anexo A §5 ainda marca como "em aberto". Física e Geometria já decidiram **não levar versículo**; **Estudos Sociais fechou em 30/07/2026**: versículo no arquivo de anexo, em "E para hoje…".
+- [x] Reforma editorial de Estudos Sociais (30/07/2026): box nunca abre subtópico · fim do box 👤 · anexo como arquivo separado · convenção de título `BL1_`/`BL2_` oficializada no validador. 34 capítulos revisados e 34 anexos criados.
+- [ ] Pendência aberta em Estudos Sociais: os 4 capítulos do **9º ano bloco 1** não têm Conexão VP no blueprint, e seus anexos saíram sem "E para hoje…". Corrigir no blueprint se o versículo for desejado.
+- [x] Alinhar os 6 capítulos de Bloco 1 de Matemática Financeira aos exemplos das páginas-resumo aprovadas e republicar no Drive (11/08/2026).
+- [ ] **Conferir a mesma divergência nas demais disciplinas.** Descoberto em Financeira: o `gerador-de-imagens` consome os **blueprints**, não os capítulos — o blueprint define o recorte, mas não os números, então autor de texto e autor de imagem inventam exemplos diferentes. Em Financeira, 7 das 18 páginas do Bloco 1 divergiam do capítulo. Vale auditar antes de imprimir qualquer disciplina que já tenha imagem aprovada.
+- [ ] Decisão pendente: notação do coeficiente de variação — a página-resumo da 1ª série de Financeira traz `CV = σ/x̄` e o `AUTOR.md` traz `CV = s/x̄`. Ajustar o kit ou regerar a imagem.
+- [x] **Validadores ressincronizados (11/08/2026).** Há 15 arquivos `validar-capitulo.py`; 2 são shims (`Historia/` e `Geografia/` executam o de Estudos Sociais via `runpy`), restando 13 implementações reais — o mestre da raiz e 12 cópias por disciplina. As duas lacunas de comportamento foram fechadas nos 13:
+  - **Prefixo `BL1_`/`BL2_`** existia em 1 de 13. As outras 12 exigiam `# Capítulo N — Tema` e **reprovavam todos os capítulos em produção** — verificado: as 12 disciplinas usam o prefixo no Drive. Portada a lógica de Estudos Sociais: o prefixo é **aceito em qualquer disciplina** e **obrigatório só onde `prefixo_bloco=True`** no `DISC` (hoje, apenas `estudos-sociais`). Para exigir em outra disciplina, basta acrescentar a chave.
+  - **`[2b] Prosa × marcadores`** existia em 2 de 13 (Biologia e Química). Portado para os outros 11, na versão de Química — que descarta imagem Markdown e comentário HTML antes de medir. Segue **diagnóstico, nunca reprova**. Ciências, Estudos Sociais e Filosofia já estavam renumeradas para `[2c]` esperando o bloco que nunca chegou; Filosofia estava incoerente (comentário `2c`, print `[2b]`). Índice do docstring corrigido nos 11.
+  - Não eram divergências: a função `contar_conteudo()` tem 4 variantes de texto, mas só 2 comportamentos — descartar ou não imagem Markdown e comentário HTML antes de contar —, e o corte segue as disciplinas que embutem figura TikZ (mestre, Física, Geometria, Química, Matemática EF1). O limite 140–220 de Ciências é escolha da disciplina, que cobre 4º–8º ano. Ambos ficaram como estavam.
+- [ ] Os 13 validadores continuam sendo **13 arquivos separados** — o patch igualou o comportamento, não a manutenção. Vale avaliar transformar as cópias em shims do mestre, como já fazem `Historia/` e `Geografia/`.
+- [ ] A entrada `"estudos-sociais"` no `DISC` das 12 cópias ainda lista o box `👤`, removido na reforma de 30/07. Não afeta ninguém (Estudos Sociais roda pelo próprio validador), mas está desatualizada.

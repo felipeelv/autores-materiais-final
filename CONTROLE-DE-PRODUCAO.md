@@ -932,6 +932,8 @@ Blueprint: `disciplinas/Geometria/blueprints/3serie/4bim-bloco23.md`
 
 **Escopo:** 28 capítulos · 77 aulas · 14 capítulos já produzidos.
 
+> **Alinhamento com as páginas-resumo — 11/08/2026.** Os 6 capítulos de Bloco 1 do 3º bimestre marcados abaixo (6º, 7º, 8º, 9º ano, 1ª e 2ª série) foram **reescritos** para trabalhar os exemplos das imagens aprovadas e republicados na pasta oficial. Continuam concluídos; mudaram os exemplos, não o recorte. Detalhe em `Financeira/Acompanhamento de produção.md`. O Bloco 2 e a 3ª série não têm imagem e seguem como estavam.
+
 ### 6º ano
 
 #### 3º bimestre · Bloco 1 — 1 capítulo · 3 aulas

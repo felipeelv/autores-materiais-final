@@ -284,6 +284,16 @@ Os sete modelos passam no validador da disciplina. No capítulo de 9º ano, os d
 - Cada aula possui exatamente um box da família 🔢/⚠️, sem exercícios propostos, recomendações de produto ou resultados sem interpretação.
 - O controle final está em `Financeira/Acompanhamento de produção.md` e os conteúdos em `Segundo Semestre/Matemática Financeira`.
 
+### Alinhamento com as páginas-resumo — 11/08/2026
+
+- Os **6 capítulos do Bloco 1 com página-resumo aprovada** (6º, 7º, 8º, 9º ano, 1ª e 2ª série) foram reescritos para trabalhar os exemplos das imagens e publicados na pasta oficial: 12 arquivos substituídos, contando os consolidados `bl1_`.
+- **Causa da divergência — vale para todas as disciplinas:** o `gerador-de-imagens` consome os **blueprints**, não os capítulos. O blueprint define o recorte, não os números, então autor de texto e autor de imagem inventam exemplos diferentes a partir do mesmo briefing. Onde coincidem, é porque o exemplo era óbvio.
+- As páginas correspondem **1:1 às aulas** — página 02 → aula 1, e assim por diante. Vale conferir se o mesmo padrão se repete nas outras disciplinas antes de mandar imprimir.
+- **Regra nova:** onde houver página-resumo aprovada, ela manda no exemplo; o capítulo é que se ajusta.
+- Três decisões com custo editorial, confirmadas pelo Felipe: o IPCA real de 4,64% saiu do 9º ano em favor de 5% hipotético; a abertura da 2ª série foi reescrita para o filtro de spam, divergindo da pergunta-problema do blueprint; a 1ª série adotou `CV = σ/x̄` da imagem, contra `CV = s/x̄` do kit — este último ainda pendente de decisão.
+- Reescrita e backup dos 12 originais em `Financeira/Financeira reescrita/`. **Bloco 2 e 3ª série ficaram de fora**, por não terem imagem aprovada.
+- ⚠️ A cópia em `Reorganizacao-2026-2Semestre/conteudos-prontos/Financeira/` é de 21/07 e **não é fonte confiável** — já estava atrás da revisão de 27/07 que só existia no Drive.
+
 ## Geometria
 
 Modelos disponíveis do **6º ao 9º ano e da 1ª à 3ª série do Ensino Médio**, em `Geometria/modelos/`.
@@ -353,6 +363,18 @@ A quantidade de boxes ainda exige conferência separada: o validador atual verif
 - Todas as aulas possuem de 1 a 2 boxes da família permitida; não há exercícios, fechamentos ou antecipações de conteúdos indicados para capítulos posteriores.
 - O controle final está em `Estudos Sociais/Acompanhamento de produção.md`.
 - A pasta oficial é `/Users/feliperosamini/Library/CloudStorage/GoogleDrive-felipe.rosa@colegioeleve.com.br/Drives compartilhados/Conteudos - Colégio Eleve/Segundo Semestre/Estudos Sociais`.
+
+## Ressincronização dos validadores — 11/08/2026
+
+Descoberto ao documentar o alinhamento de Financeira: dos 15 `validar-capitulo.py`, 13 são implementações reais (o mestre + 12 cópias; `Historia/` e `Geografia/` são shims que executam o de Estudos Sociais). Duas lacunas de comportamento foram fechadas nos 13.
+
+- **Prefixo `BL1_`/`BL2_` estava em 1 de 13.** As outras 12 exigiam `# Capítulo N — Tema` e **reprovavam todo capítulo em produção** — as 12 disciplinas usam o prefixo no Drive, conferido um a um. A lógica de Estudos Sociais foi portada: prefixo **aceito em qualquer disciplina**, **obrigatório só onde `prefixo_bloco=True`** no `DISC`. Hoje só `estudos-sociais` exige; para outra disciplina passar a exigir, acrescentar a chave.
+- **`[2b] Prosa × marcadores` estava em 2 de 13** (Biologia e Química), embora o histórico de 21/07 registrasse que valia para nove disciplinas. Portado para os 11 restantes na versão de Química, que descarta imagem Markdown e comentário HTML antes de medir. Continua **diagnóstico, nunca reprova**.
+- Ciências, Estudos Sociais e Filosofia já tinham sido renumeradas para `[2c]` esperando o bloco que nunca foi inserido; Filosofia estava incoerente (comentário `2c`, print `[2b]`). Índice do docstring corrigido nos 11.
+- **Não foram mexidos, porque não eram deriva:** as 4 variantes de `contar_conteudo()` colapsam em 2 comportamentos, e o corte acompanha as disciplinas que embutem figura TikZ; o limite 140–220 de Ciências é escolha da disciplina (4º–8º ano).
+- Verificação: os 15 compilam, e os 12 validadores rodaram contra um capítulo real da sua disciplina no Drive — **zero falhas**, com o `[2b]` ativo em todos.
+
+⚠️ Continuam sendo 13 arquivos separados. O patch igualou o comportamento, não a manutenção — a próxima divergência nasce do mesmo jeito. Vale avaliar transformar as cópias em shims do mestre.
 
 ## Estado da validação
 

@@ -33,7 +33,8 @@ import re, argparse
 # fora_box: emojis permitidos FORA de box (ex.: rótulo 📝 Exemplo da Física)
 DISC = {
     "portugues":       dict(boxes="💡⚠️📌🔎👤", fora_box="",  familia="humanas"),
-    "estudos-sociais": dict(boxes="🔎💭👤",       fora_box="",  familia="humanas"),
+    "estudos-sociais": dict(boxes="🔎💭👤",       fora_box="",  familia="humanas",
+                            prefixo_bloco=True),
     "sociologia":      dict(boxes="💭⏸️💡🔍",     fora_box="",  familia="humanas"),
     "filosofia":       dict(boxes="💭⏸️💡🔍",     fora_box="",  familia="humanas"),
     "ciencias":        dict(boxes="💭⏸️💡📏🔬",   fora_box="",  familia="empiricas"),
@@ -172,10 +173,16 @@ def main():
 
     # 1. Estrutura ------------------------------------------------------------
     print("\n[1] Estrutura")
-    if not re.match(r"^#\s+Capítulo\s+\d+\s+—\s+.+", texto.strip()):
-        rc |= falha("título não é `# Capítulo N — Tema`")
+    # O prefixo BL1_/BL2_ identifica o bloco do bimestre. Onde a disciplina o exige
+    # (cfg["prefixo_bloco"]), o título sem prefixo é falha; nas demais, é opcional.
+    exige_prefixo = cfg.get("prefixo_bloco", False)
+    m_titulo = re.match(r"^#\s+(BL(\d)_)?Capítulo\s+\d+\s+—\s+.+", texto.strip())
+    if not m_titulo:
+        rc |= falha("título não é `# [BL{1|2}_]Capítulo N — Tema`")
+    elif exige_prefixo and not m_titulo.group(1):
+        rc |= falha("título sem o prefixo de bloco — use `# BL1_Capítulo N — Tema`")
     else:
-        ok("título no formato `# Capítulo N — Tema`")
+        ok(f"título no formato `# {m_titulo.group(1) or ''}Capítulo N — Tema`")
 
     aulas = separar_aulas(texto)
     if not aulas:
