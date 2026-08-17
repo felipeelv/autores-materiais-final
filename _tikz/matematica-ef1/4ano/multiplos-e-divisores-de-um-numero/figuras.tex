@@ -1,0 +1,47 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-matematica-ef1}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-multiplos-de-2-e-5
+\begin{tikzpicture}[matematica figura, x=0.68cm, y=1cm]
+  \path[use as bounding box] (-0.55,-0.20) rectangle (10.90,6.10);
+  \draw[-{Stealth[length=2.5mm]},matematica eixo] (0,4.25)--(10.55,4.25);
+  \foreach \x in {0,...,10}{
+    \draw[matematica eixo] (\x,4.08)--(\x,4.42);
+    \node[font=\normalsize,text=matemacinza] at (\x,3.70) {\x};
+  }
+  \foreach \x in {0,2,4,6,8}
+    \draw[-{Stealth[length=2.1mm]},matematica destaque] (\x,4.58) .. controls (\x+0.35,5.30) and (\x+1.65,5.30) .. (\x+2,4.58);
+  \node[matematica valor] at (5,5.65) {saltos de $2$};
+
+  \draw[-{Stealth[length=2.5mm]},matematica eixo] (0,1.35)--(10.55,1.35);
+  \foreach \x/\v in {0/0,2/5,4/10,6/15,8/20,10/25}{
+    \draw[matematica eixo] (\x,1.18)--(\x,1.52);
+    \node[font=\normalsize,text=matemacinza] at (\x,0.82) {\v};
+  }
+  \foreach \x in {0,2,4,6,8}
+    \draw[-{Stealth[length=2.1mm]},matematica contorno] (\x,1.68) .. controls (\x+0.35,2.40) and (\x+1.65,2.40) .. (\x+2,1.68);
+  \node[matematica valor] at (5,2.75) {saltos de $5$};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-fileiras-e-divisores-de-12
+\begin{tikzpicture}[matematica figura, x=0.72cm, y=0.72cm]
+  \path[use as bounding box] (-0.30,-0.20) rectangle (12.70,9.30);
+  \node[matematica valor] at (2.20,8.70) {$2\times6$};
+  \foreach \r in {0,1}\foreach \c in {0,...,5}
+    \fill[matemazul] (0.65+0.63*\c,6.75-0.70*\r) circle (0.18);
+
+  \node[matematica valor] at (7.90,8.70) {$3\times4$};
+  \foreach \r in {0,...,2}\foreach \c in {0,...,3}
+    \fill[matemaverde] (6.80+0.72*\c,7.10-0.66*\r) circle (0.18);
+
+  \node[matematica valor] at (5.80,4.30) {grupos de $5$};
+  \foreach \c in {0,...,4}\fill[matemalaranja] (2.15+0.68*\c,2.85) circle (0.18);
+  \foreach \c in {0,...,4}\fill[matemalaranja] (2.15+0.68*\c,2.10) circle (0.18);
+  \foreach \c in {0,1}\fill[matemavermelho] (7.30+0.68*\c,2.48) circle (0.18);
+  \draw[matematica auxiliar, rounded corners=4pt] (1.72,1.65) rectangle (5.35,3.30);
+  \node[matematica rotulo, text=matemavermelho,anchor=west] at (8.35,2.48) {sobram $2$};
+\end{tikzpicture}
+
+\end{document}

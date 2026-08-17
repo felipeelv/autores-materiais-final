@@ -1,0 +1,117 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-fisica}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-interacao-entre-dois-corpos
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (9.2,5.8);
+  \draw[fisica superficie] (0.5,0.75) -- (8.7,0.75);
+  \node[fisica corpo, minimum width=1.9cm, minimum height=1.25cm] (mao)
+    at (1.75,1.45) {mão};
+  \node[fisica corpo, minimum width=2.25cm, minimum height=1.75cm] (caixa)
+    at (7.25,1.65) {caixa};
+  \draw[fisica forca] (mao.east) -- (caixa.west)
+    node[fisica rotulo, midway, above=8pt] {$\vec F_{\text{mão}\to\text{caixa}}$};
+  \node[font=\Large\bfseries, text=eleveazul] at (4.5,4.65)
+    {interação};
+  \node[font=\large\bfseries, text=elevecinza] at (1.75,3.55)
+    {quem age};
+  \node[font=\large\bfseries, text=elevecinza] at (7.25,3.55)
+    {quem recebe};
+  \draw[fisica auxiliar, ->] (1.75,3.2) -- (1.75,2.35);
+  \draw[fisica auxiliar, ->] (7.25,3.2) -- (7.25,2.65);
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-intensidade-direcao-e-sentido
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.1,6.4);
+  \coordinate (A) at (1.2,2.75);
+  \coordinate (B) at (8.85,2.75);
+  \draw[fisica auxiliar] (0.65,2.75) -- (9.45,2.75);
+  \draw[fisica forca] (A) -- (B)
+    node[fisica rotulo, midway, above=12pt] {$\vec F=20\,\mathrm{N}$};
+  \fill[eleveazul] (A) circle (3pt);
+  \node[font=\large\bfseries, text=elevecinza, align=center] at (4.95,5.35)
+    {intensidade\\comprimento e valor};
+  \draw[fisica auxiliar, ->] (4.95,4.65) -- (4.95,3.35);
+  \node[font=\large\bfseries, text=elevecinza] at (2.15,0.65)
+    {direção horizontal};
+  \draw[fisica auxiliar, ->] (3.95,0.85) -- (5.55,2.2);
+  \node[font=\large\bfseries, text=elevecinza] at (8.0,0.65)
+    {sentido};
+  \draw[fisica movimento] (7.25,0.95) -- (8.75,0.95)
+    node[fisica rotulo, right] {direita};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-forcas-de-contato-e-a-distancia
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (9.6,10.3);
+  \node[font=\Large\bfseries, text=eleveazul] at (4.7,9.75) {contato};
+  \draw[fisica superficie] (0.8,6.35) -- (8.7,6.35);
+  \node[fisica corpo, minimum width=1.55cm, minimum height=1.1cm] (mao)
+    at (1.8,7.0) {mão};
+  \node[fisica corpo, minimum width=1.9cm, minimum height=1.45cm] (c1)
+    at (6.7,7.1) {caixa};
+  \draw[fisica forca] (mao.east) -- (c1.west)
+    node[fisica rotulo, midway, above=7pt] {$\vec F$};
+  \node[font=\large\bfseries, text=elevecinza] at (4.7,5.55)
+    {os corpos se tocam};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (4.7,4.45) {à distância};
+  \node[fisica corpo, minimum width=1.55cm, minimum height=2.0cm] (ima)
+    at (1.8,2.1) {ímã};
+  \node[fisica corpo, circle, minimum size=0.9cm] (clipe)
+    at (7.3,2.1) {};
+  \draw[eleveazul, line width=1.4pt] (7.05,1.75) -- (7.55,2.45);
+  \draw[eleveazul, line width=1.4pt] (7.05,2.45) -- (7.55,1.75);
+  \draw[fisica forca] (clipe.west) -- ++(-2.75,0)
+    node[fisica rotulo, midway, above=7pt] {$\vec F_m$};
+  \node[font=\large\bfseries, text=elevecinza] at (4.7,0.6)
+    {há espaço entre os corpos};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-peso-aponta-para-o-centro
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.25,-0.25) rectangle (9.75,9.75);
+  \coordinate (O) at (4.75,4.75);
+  \shade[ball color=eleveazulclaro] (O) circle (2.75);
+  \draw[eleveazul, line width=1.4pt] (O) circle (2.75);
+  \fill[eleveazul] (O) circle (3pt);
+  \node[fisica rotulo, below=5pt] at (O) {centro};
+  \foreach \ang/\pos in {90/above,0/right,270/below,180/left}{
+    \coordinate (C) at ($(O)+(\ang:3.45)$);
+    \node[fisica corpo, circle, minimum size=0.62cm] at (C) {};
+    \draw[fisica forca] (C) -- ($(O)+(\ang:0.95)$);
+  }
+  \node[fisica rotulo] at (6.25,7.65) {$\vec P$};
+  \node[fisica rotulo] at (7.95,3.15) {$\vec P$};
+  \node[fisica rotulo] at (3.15,1.7) {$\vec P$};
+  \node[fisica rotulo] at (1.55,6.25) {$\vec P$};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-atrito-se-opoe-ao-deslizamento
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.2,9.4);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.0,8.85)
+    {deslizamento para a direita};
+  \draw[fisica superficie] (0.65,5.75) -- (9.45,5.75);
+  \node[fisica corpo, minimum width=2.0cm, minimum height=1.35cm] (A)
+    at (5.0,6.45) {};
+  \draw[fisica movimento] ($(A.north)+(0,0.55)$) -- ++(2.65,0)
+    node[fisica rotulo, right] {$\vec v$};
+  \draw[fisica forca] (A.center) -- ++(-2.65,0)
+    node[fisica rotulo, left] {$\vec F_{at}$};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.0,4.35)
+    {deslizamento para a esquerda};
+  \draw[fisica superficie] (0.65,1.25) -- (9.45,1.25);
+  \node[fisica corpo, minimum width=2.0cm, minimum height=1.35cm] (B)
+    at (5.0,1.95) {};
+  \draw[fisica movimento] ($(B.north)+(0,0.55)$) -- ++(-2.65,0)
+    node[fisica rotulo, left] {$\vec v$};
+  \draw[fisica forca] (B.center) -- ++(2.65,0)
+    node[fisica rotulo, right] {$\vec F_{at}$};
+\end{tikzpicture}
+
+\end{document}

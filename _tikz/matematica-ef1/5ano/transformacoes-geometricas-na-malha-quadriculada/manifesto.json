@@ -1,0 +1,71 @@
+{
+  "versao": 1,
+  "disciplina": "matematica-ef1",
+  "ano_serie": "5ano",
+  "titulo_documento": "Transformações geométricas na malha quadriculada",
+  "slug_documento": "transformacoes-geometricas-na-malha-quadriculada",
+  "arquivo_markdown": "Matematica EF1/_staging-3bim/5ano/Transformações geométricas na malha quadriculada.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-translacao-na-malha",
+      "pagina": 1,
+      "arquivo": "fig-01-translacao-na-malha.png",
+      "alt": "Figura desliza quatro quadrados à direita e dois para cima sem mudar a orientação",
+      "aprovada": true,
+      "sha256": "70d410c5c7e9dca5515d2343a5e805b4d5bf6e35a8f9e723366e03e47961e44a",
+      "largura_px": 1216,
+      "altura_px": 910,
+      "publicado_sha256": "70d410c5c7e9dca5515d2343a5e805b4d5bf6e35a8f9e723366e03e47961e44a",
+      "publicado_commit": "6b967d552be84be907d4b27429af31fec502aeea"
+    },
+    {
+      "id": "fig-02-rotacao-na-malha",
+      "pagina": 2,
+      "arquivo": "fig-02-rotacao-na-malha.png",
+      "alt": "Figura gira noventa e cento e oitenta graus ao redor de um ponto fixo",
+      "aprovada": true,
+      "sha256": "5b3d585094453bd13c046ff3841a30022b6451b739024958aff27bda8d6be9ac",
+      "largura_px": 1205,
+      "altura_px": 1087,
+      "publicado_sha256": "5b3d585094453bd13c046ff3841a30022b6451b739024958aff27bda8d6be9ac",
+      "publicado_commit": "6b967d552be84be907d4b27429af31fec502aeea"
+    },
+    {
+      "id": "fig-03-reflexao-na-malha",
+      "pagina": 3,
+      "arquivo": "fig-03-reflexao-na-malha.png",
+      "alt": "Figura e imagem refletida ficam à mesma distância de um eixo vertical",
+      "aprovada": true,
+      "sha256": "194f29392c216019368fb73c51fe201c9224b942ee81c7ce4a07e7d15c2d7b25",
+      "largura_px": 1251,
+      "altura_px": 874,
+      "publicado_sha256": "194f29392c216019368fb73c51fe201c9224b942ee81c7ce4a07e7d15c2d7b25",
+      "publicado_commit": "6b967d552be84be907d4b27429af31fec502aeea"
+    },
+    {
+      "id": "fig-04-ampliacao-na-malha",
+      "pagina": 4,
+      "arquivo": "fig-04-ampliacao-na-malha.png",
+      "alt": "Retângulo de dois por três quadrados é ampliado para quatro por seis",
+      "aprovada": true,
+      "sha256": "c8534ad8a4d934b9f4fc43c680cd6131fb6b5f108945931bec38fec1966fd62e",
+      "largura_px": 1398,
+      "altura_px": 858,
+      "publicado_sha256": "c8534ad8a4d934b9f4fc43c680cd6131fb6b5f108945931bec38fec1966fd62e",
+      "publicado_commit": "6b967d552be84be907d4b27429af31fec502aeea"
+    },
+    {
+      "id": "fig-05-reducao-na-malha",
+      "pagina": 5,
+      "arquivo": "fig-05-reducao-na-malha.png",
+      "alt": "Retângulo de seis por quatro quadrados é reduzido para três por dois",
+      "aprovada": true,
+      "sha256": "f1ae4dc873458b94bc13b7741d5472c6b5575030edbc11940ba435810aa59d53",
+      "largura_px": 1398,
+      "altura_px": 832,
+      "publicado_sha256": "f1ae4dc873458b94bc13b7741d5472c6b5575030edbc11940ba435810aa59d53",
+      "publicado_commit": "6b967d552be84be907d4b27429af31fec502aeea"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "versao": 1,
+  "disciplina": "fisica",
+  "ano_serie": "1serie",
+  "titulo_documento": "Forças mecânicas",
+  "slug_documento": "forcas-mecanicas",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Fisica/1serie/fisica-1serie-3bim-cap2.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-normal-em-superficies-diferentes",
+      "pagina": 1,
+      "arquivo": "fig-01-normal-em-superficies-diferentes.png",
+      "alt": "Bloco no piso e na rampa com forças normais perpendiculares a cada superfície",
+      "aprovada": true,
+      "sha256": "91d46d53039ab7ee4a3ce507c7bd44224bcf7ee4424bf361484c7758b662b524",
+      "largura_px": 1359,
+      "altura_px": 1288,
+      "publicado_sha256": "91d46d53039ab7ee4a3ce507c7bd44224bcf7ee4424bf361484c7758b662b524",
+      "publicado_commit": "f00a6edd55765ba1a600e93f290e2ba3953a4f98"
+    },
+    {
+      "id": "fig-02-peso-aparente-no-elevador",
+      "pagina": 2,
+      "arquivo": "fig-02-peso-aparente-no-elevador.png",
+      "alt": "Três diagramas do elevador acelerando para cima, para baixo e em queda livre",
+      "aprovada": true,
+      "sha256": "c83b4bfa54bb74d024c8a7783b58a10d133f78a3943e18993baea4e879a281b1",
+      "largura_px": 1347,
+      "altura_px": 1560,
+      "publicado_sha256": "c83b4bfa54bb74d024c8a7783b58a10d133f78a3943e18993baea4e879a281b1",
+      "publicado_commit": "f00a6edd55765ba1a600e93f290e2ba3953a4f98"
+    },
+    {
+      "id": "fig-03-tracao-em-cabo-e-polia-ideais",
+      "pagina": 3,
+      "arquivo": "fig-03-tracao-em-cabo-e-polia-ideais.png",
+      "alt": "Corda sobre polia ideal com vetores de tração iguais nos dois trechos",
+      "aprovada": true,
+      "sha256": "f399d876680e987053ed6bb6892d96d50b213d0fa9815ed603c5c4f02baaaa7a",
+      "largura_px": 1323,
+      "altura_px": 1229,
+      "publicado_sha256": "f399d876680e987053ed6bb6892d96d50b213d0fa9815ed603c5c4f02baaaa7a",
+      "publicado_commit": "f00a6edd55765ba1a600e93f290e2ba3953a4f98"
+    },
+    {
+      "id": "fig-04-corpos-ligados-e-mesma-aceleracao",
+      "pagina": 4,
+      "arquivo": "fig-04-corpos-ligados-e-mesma-aceleracao.png",
+      "alt": "Bloco na mesa e bloco pendente ligados por corda com acelerações de mesmo módulo",
+      "aprovada": true,
+      "sha256": "e575929158b1b7c74d263461c608738c7c9b8e059131a7954835a1dc46839e9c",
+      "largura_px": 1406,
+      "altura_px": 1134,
+      "publicado_sha256": "e575929158b1b7c74d263461c608738c7c9b8e059131a7954835a1dc46839e9c",
+      "publicado_commit": "f00a6edd55765ba1a600e93f290e2ba3953a4f98"
+    },
+    {
+      "id": "fig-05-forca-restauradora-e-limite-elastico",
+      "pagina": 5,
+      "arquivo": "fig-05-forca-restauradora-e-limite-elastico.png",
+      "alt": "Mola comprimida, alongada e deformada além do limite com respostas distintas",
+      "aprovada": true,
+      "sha256": "052b5872f5725db620014ce699189efc2ccc5282b034d05f477a4d8fba05169f",
+      "largura_px": 1406,
+      "altura_px": 1571,
+      "publicado_sha256": "052b5872f5725db620014ce699189efc2ccc5282b034d05f477a4d8fba05169f",
+      "publicado_commit": "f00a6edd55765ba1a600e93f290e2ba3953a4f98"
+    },
+    {
+      "id": "fig-06-diagramas-dos-corpos-ligados",
+      "pagina": 6,
+      "arquivo": "fig-06-diagramas-dos-corpos-ligados.png",
+      "alt": "Diagramas de corpo livre dos dois blocos ligados, com a tração em ambos e o peso maior no bloco pendurado",
+      "aprovada": true,
+      "sha256": "1317ba709bd712f472d62c3c63cab1d32dbdf272f3dab61852daed99f09c2967",
+      "largura_px": 945,
+      "altura_px": 863,
+      "publicado_sha256": "1317ba709bd712f472d62c3c63cab1d32dbdf272f3dab61852daed99f09c2967",
+      "publicado_commit": "f00a6edd55765ba1a600e93f290e2ba3953a4f98"
+    },
+    {
+      "id": "fig-07-grafico-forca-e-deformacao",
+      "pagina": 7,
+      "arquivo": "fig-07-grafico-forca-e-deformacao.png",
+      "alt": "Gráfico do módulo da força elástica em função da deformação, com reta no regime linear e desvio após o limite elástico",
+      "aprovada": true,
+      "sha256": "1f605dc2112f36d36690715d5f9f7a8b9715c06750190239eac15410792b49ef",
+      "largura_px": 1134,
+      "altura_px": 1028,
+      "publicado_sha256": "1f605dc2112f36d36690715d5f9f7a8b9715c06750190239eac15410792b49ef",
+      "publicado_commit": "f00a6edd55765ba1a600e93f290e2ba3953a4f98"
+    }
+  ]
+}

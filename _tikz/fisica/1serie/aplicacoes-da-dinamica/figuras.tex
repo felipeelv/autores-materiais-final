@@ -1,0 +1,237 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-fisica}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-transicao-do-atrito-estatico-ao-cinetico
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (8.90,6.75);
+  \draw[fisica eixo] (0.85,0.85) -- (8.35,0.85)
+    node[right=2pt, font=\Large\bfseries, text=elevecinza] {$F$};
+  \draw[fisica eixo] (0.85,0.85) -- (0.85,6.20)
+    node[above=3pt, font=\Large\bfseries, text=elevecinza] {$F_{at}$};
+
+  \draw[fisica grafico] (0.85,0.85) -- (4.65,5.05);
+  \fill[elevelaranja] (4.65,5.05) circle (3pt);
+  \draw[fisica auxiliar] (4.65,0.85) -- (4.65,5.05);
+  \draw[fisica grafico] (4.65,3.70) -- (8.10,3.70);
+
+  \node[fisica rotulo, anchor=south east] at (3.82,4.36) {estático};
+  \node[fisica rotulo, anchor=south] at (6.35,3.70) {cinético};
+  \node[fisica medida, anchor=south west] at (4.80,5.15)
+    {$F_{at,e}^{\max}$};
+  \node[fisica medida, anchor=west] at (7.15,3.25)
+    {$F_{at,c}$};
+  \node[font=\large\bfseries, text=elevecinza, align=center] at (4.40,0.30)
+    {início do deslizamento};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-diagrama-de-corpo-livre-horizontal
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (8.35,7.85);
+  \coordinate (C) at (4.10,3.85);
+  \node[fisica corpo, minimum width=1.65cm, minimum height=1.40cm] at (C) {};
+  \fill[eleveazul] (C) circle (2.7pt);
+
+  \draw[fisica forca] (C) -- ++(0,3.05)
+    node[fisica rotulo, above] {$\vec N$};
+  \draw[fisica forca] (C) -- ++(0,-3.05)
+    node[fisica rotulo, below] {$\vec P$};
+  \draw[fisica forca] (C) -- ++(3.25,0)
+    node[fisica rotulo, right] {$\vec F$};
+  \draw[fisica forca] (C) -- ++(-2.45,0)
+    node[fisica rotulo, left] {$\vec F_{at}$};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-decomposicao-do-peso-na-rampa
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (10.05,7.90);
+  \coordinate (O) at (5.30,4.70);
+  \coordinate (A) at ($(O)+(205:1.35)$);
+  \coordinate (B) at ($(O)+(295:2.90)$);
+  \coordinate (W) at ($(O)+(270:3.20)$);
+
+  \fill[elevecinzaclaro] (0.55,0.65) -- (9.45,0.65) -- (9.45,4.80) -- cycle;
+  \draw[fisica superficie] (0.55,0.65) -- (9.45,4.80);
+  \draw[fisica superficie] (0.55,0.65) -- (9.45,0.65);
+  \draw[elevecinza, line width=1.2pt]
+    (2.20,0.65) arc[start angle=0,end angle=25,radius=1.65];
+  \node[fisica medida] at (3.60,1.05) {$\theta$};
+
+  \begin{scope}[shift={(O)}, rotate=25]
+    \node[fisica corpo, minimum width=2.0cm, minimum height=1.30cm] at (0,0) {};
+    \draw[fisica eixo] (0,0) -- (3.15,0)
+      node[fisica rotulo, right] {$+x$};
+    \draw[fisica eixo] (0,0) -- (0,2.65)
+      node[fisica rotulo, above] {$+y$};
+  \end{scope}
+  \fill[eleveazul] (O) circle (2.7pt);
+
+  \draw[fisica forca] (O) -- (W)
+    node[fisica rotulo, below] {$\vec P$};
+  \draw[fisica componente] (O) -- (A)
+    node[fisica rotulo, above left] {$\vec P_x$};
+  \draw[fisica componente] (O) -- (B)
+    node[fisica rotulo, right] {$\vec P_y$};
+  \draw[fisica auxiliar] (A) -- (W);
+  \draw[fisica auxiliar] (B) -- (W);
+
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-velocidade-e-resultante-centripeta
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (9.30,8.35);
+  \coordinate (O) at (4.45,3.80);
+  \coordinate (C) at (7.70,3.80);
+
+  \draw[fisica trajetoria] (O) circle (3.25);
+  \draw[fisica auxiliar] (O) -- (C)
+    node[midway, below, font=\large\bfseries, text=elevecinza] {$R$};
+  \fill[eleveazul] (O) circle (3pt)
+    node[fisica rotulo, below left] {$O$};
+  \node[fisica corpo, circle, minimum size=0.82cm] at (C) {};
+
+  \draw[fisica movimento] (C) -- ++(0,3.05)
+    node[fisica rotulo, above] {$\vec v$};
+  \draw[fisica forca] (C) -- (4.90,3.80)
+    node[fisica rotulo, midway, above] {$\vec F_R$};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-atrito-na-curva-plana
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (9.30,8.90);
+  \coordinate (O) at (4.45,0.75);
+  \coordinate (C) at (4.45,6.25);
+
+  \draw[draw=elevecinzaclaro, line width=2.65cm]
+    ($(O)+(35:5.5)$) arc[start angle=35,end angle=145,radius=5.5];
+  \draw[fisica superficie]
+    ($(O)+(35:4.2)$) arc[start angle=35,end angle=145,radius=4.2];
+  \draw[fisica superficie]
+    ($(O)+(35:6.8)$) arc[start angle=35,end angle=145,radius=6.8];
+  \draw[fisica auxiliar]
+    ($(O)+(35:5.5)$) arc[start angle=35,end angle=145,radius=5.5];
+
+  \begin{scope}[shift={(C)}]
+    \node[fisica corpo, minimum width=1.35cm, minimum height=2.20cm] {};
+    \draw[eleveazul, line width=1pt] (-0.52,0.62) -- (0.52,0.62);
+    \draw[eleveazul, line width=1pt] (-0.52,-0.62) -- (0.52,-0.62);
+  \end{scope}
+  \fill[eleveazul] (O) circle (3pt)
+    node[fisica rotulo, right] {centro};
+
+  \draw[fisica movimento] (C) -- ++(3.10,0)
+    node[fisica rotulo, right] {$\vec v$};
+  \draw[fisica forca] (C) -- ++(0,-3.05)
+    node[fisica rotulo, right] {$\vec F_{at}$};
+  \draw[fisica auxiliar] ($(C)+(0,-3.05)$) -- (O);
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-forcas-na-lombada-e-no-vale
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (8.70,10.90);
+
+  \node[font=\Large\bfseries, text=eleveazul] at (4.20,10.42) {topo da lombada};
+  \draw[fisica superficie] (0.65,6.82)
+    .. controls (2.15,8.25) and (6.25,8.25) .. (7.75,6.82);
+  \coordinate (L) at (4.20,7.72);
+  \node[fisica corpo, minimum width=1.60cm, minimum height=0.85cm] at (L) {};
+  \fill[eleveazul] (L) circle (2.5pt);
+  \draw[fisica forca] (L) -- ++(0,1.22)
+    node[fisica rotulo, above] {$\vec N$};
+  \draw[fisica forca] (L) -- ++(0,-1.72)
+    node[fisica rotulo, below] {$\vec P$};
+  \draw[fisica auxiliar, ->] (7.50,8.80) -- (7.50,6.20)
+    node[fisica rotulo, below] {centro};
+  \node[fisica medida] at (1.55,8.62) {$N<P$};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (4.20,4.20) {fundo do vale};
+  \draw[fisica superficie] (0.65,2.35)
+    .. controls (2.15,0.80) and (6.25,0.80) .. (7.75,2.35);
+  \coordinate (V) at (4.20,1.35);
+  \node[fisica corpo, minimum width=1.60cm, minimum height=0.85cm] at (V) {};
+  \fill[eleveazul] (V) circle (2.5pt);
+  \draw[fisica forca] (V) -- ++(0,1.75)
+    node[fisica rotulo, above] {$\vec N$};
+  \draw[fisica forca] (V) -- ++(0,-1.05)
+    node[fisica rotulo, below] {$\vec P$};
+  \draw[fisica auxiliar, ->] (7.50,0.80) -- (7.50,3.55)
+    node[fisica rotulo, above] {centro};
+  \node[fisica medida] at (1.55,2.85) {$N>P$};
+\end{tikzpicture}
+
+% FIGURA 7 — fig-07-forcas-no-topo-e-na-base-do-looping
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.55) rectangle (9.50,10.00);
+  \coordinate (O) at (4.60,4.85);
+  \coordinate (T) at (4.60,8.55);
+  \coordinate (B) at (4.60,1.15);
+
+  \draw[draw=elevecinzaclaro, line width=1.15cm] (O) circle (3.70);
+  \draw[fisica superficie] (O) circle (3.12);
+  \draw[fisica superficie] (O) circle (4.28);
+  \fill[eleveazul] (O) circle (2.8pt)
+    node[fisica rotulo, right] {centro};
+
+  \node[fisica corpo, minimum width=1.45cm, minimum height=0.72cm] at (T) {};
+  \node[fisica corpo, minimum width=1.45cm, minimum height=0.72cm] at (B) {};
+
+  \draw[fisica forca] ($(T)+(-0.43,0)$) -- ++(0,-1.95)
+    node[fisica rotulo, below left] {$\vec P$};
+  \draw[fisica forca] ($(T)+(0.43,0)$) -- ++(0,-1.15)
+    node[fisica rotulo, below right] {$\vec N\to0$};
+
+  \draw[fisica forca] ($(B)+(-0.28,0)$) -- ++(0,-1.05)
+    node[fisica rotulo, below left] {$\vec P$};
+  \draw[fisica forca] ($(B)+(0.28,0)$) -- ++(0,2.20)
+    node[fisica rotulo, right] {$\vec N$};
+
+  \node[font=\large\bfseries, text=elevecinza] at (1.10,8.70) {topo};
+  \node[font=\large\bfseries, text=elevecinza] at (1.10,1.12) {base};
+\end{tikzpicture}
+
+% FIGURA 8 — fig-08-sistema-de-blocos-e-diagramas
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.65) rectangle (10.90,10.50);
+
+  % Sistema físico.
+  \draw[fisica superficie] (0.65,7.15) -- (7.55,7.15);
+  \node[fisica corpo, minimum width=1.75cm, minimum height=1.20cm] (A)
+    at (3.10,7.78) {$A$};
+  \draw[elevecinza, line width=1.5pt] (3.98,7.78) -- (7.55,7.78)
+    arc[start angle=90,end angle=0,radius=0.63] -- (8.18,5.35);
+  \draw[elevecinza, line width=1.5pt, fill=white] (7.55,7.15) circle (0.63);
+  \fill[elevecinza] (7.55,7.15) circle (2.2pt);
+  \node[fisica corpo, minimum width=1.55cm, minimum height=1.25cm] (B)
+    at (8.18,4.95) {$B$};
+  \draw[fisica movimento] ($(A.north west)+(0,0.55)$) -- ++(1.70,0)
+    node[fisica rotulo, above] {$\vec a$};
+  \draw[fisica movimento] ($(B.east)+(0.62,0.55)$) -- ++(0,-1.35)
+    node[fisica rotulo, right] {$\vec a$};
+
+  % DCL do bloco A.
+  \node[font=\Large\bfseries, text=eleveazul] at (2.80,3.55) {bloco $A$};
+  \coordinate (DA) at (2.80,1.55);
+  \node[fisica corpo, minimum width=1.20cm, minimum height=0.90cm] at (DA) {};
+  \fill[eleveazul] (DA) circle (2.5pt);
+  \draw[fisica forca] (DA) -- ++(0,1.15)
+    node[fisica rotulo, above] {$\vec N$};
+  \draw[fisica forca] (DA) -- ++(0,-1.15)
+    node[fisica rotulo, below] {$\vec P_A$};
+  \draw[fisica forca] (DA) -- ++(1.70,0)
+    node[fisica rotulo, right] {$\vec T$};
+  \draw[fisica forca] (DA) -- ++(-1.20,0)
+    node[fisica rotulo, left] {$\vec F_{at}$};
+
+  % DCL do bloco B.
+  \node[font=\Large\bfseries, text=eleveazul] at (8.05,3.55) {bloco $B$};
+  \coordinate (DB) at (8.05,1.55);
+  \node[fisica corpo, minimum width=1.20cm, minimum height=0.90cm] at (DB) {};
+  \fill[eleveazul] (DB) circle (2.5pt);
+  \draw[fisica forca] (DB) -- ++(0,1.15)
+    node[fisica rotulo, above] {$\vec T$};
+  \draw[fisica forca] (DB) -- ++(0,-1.60)
+    node[fisica rotulo, below] {$\vec P_B$};
+\end{tikzpicture}
+
+\end{document}

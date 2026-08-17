@@ -1,0 +1,35 @@
+{
+  "versao": 1,
+  "disciplina": "quimica",
+  "ano_serie": "2serie",
+  "titulo_documento": "Equilíbrio iônico, pH e titulação",
+  "slug_documento": "3bim-cap2-ph-titulacao",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Quimica/2serie/quimica-2serie-3bim-cap2.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-escala-logaritmica-ph",
+      "pagina": 1,
+      "arquivo": "fig-01-escala-logaritmica-ph.png",
+      "alt": "Escala de pH de zero a quatorze mostrando que cada unidade corresponde a uma variação de dez vezes na concentração de hidrônio",
+      "aprovada": true,
+      "sha256": "0e4b38e69364997539836ebe61e75d053e2514a03c1b7f6510fb2620715763bc",
+      "largura_px": 1843,
+      "altura_px": 815,
+      "publicado_sha256": "0e4b38e69364997539836ebe61e75d053e2514a03c1b7f6510fb2620715763bc",
+      "publicado_commit": "7f6fa768495b0b5faa2a9b3de65baea9690dde62"
+    },
+    {
+      "id": "fig-02-curva-titulacao-forte-forte",
+      "pagina": 2,
+      "arquivo": "fig-02-curva-titulacao-forte-forte.png",
+      "alt": "Curva de titulação de ácido forte por base forte com região de salto, ponto de equivalência em pH sete e faixa de viragem indicada",
+      "aprovada": true,
+      "sha256": "5c433de27fe399432926e925381992cba7b5c46de98a1a945cdfdc26034e6efa",
+      "largura_px": 1536,
+      "altura_px": 1111,
+      "publicado_sha256": "5c433de27fe399432926e925381992cba7b5c46de98a1a945cdfdc26034e6efa",
+      "publicado_commit": "7f6fa768495b0b5faa2a9b3de65baea9690dde62"
+    }
+  ]
+}

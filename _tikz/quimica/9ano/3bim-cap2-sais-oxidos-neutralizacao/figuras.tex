@@ -1,0 +1,70 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-quimica}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-oxidos-acido-basico
+\begin{tikzpicture}[quimica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.2) rectangle (11.25,6.75);
+
+  \node[quimica rotulo] at (2.7,6.25) {óxido ácido};
+  \node[quimica processo, minimum width=2.25cm] (co2) at (1.35,4.85)
+    {$\mathrm{CO_2}$};
+  \node[quimica processo, minimum width=2.25cm] (agua1) at (4.05,4.85)
+    {$\mathrm{H_2O}$};
+  \node[quimica destaque] at (2.70,3.65) {em água};
+  \draw[quimica fluxo] (2.70,3.25) -- (2.70,2.35);
+  \node[quimica separacao, minimum width=4.25cm] at (2.70,1.30)
+    {aumenta $[\mathrm{H_3O^+}]$\\meio ácido};
+
+  \draw[quimica auxiliar] (5.55,0.20) -- (5.55,6.40);
+
+  \node[quimica rotulo] at (8.40,6.25) {óxido básico};
+  \node[quimica processo, minimum width=2.25cm] (cao) at (7.05,4.85)
+    {$\mathrm{CaO}$};
+  \node[quimica processo, minimum width=2.25cm] (agua2) at (9.75,4.85)
+    {$\mathrm{H_2O}$};
+  \node[quimica destaque] at (8.40,3.65) {em água};
+  \draw[quimica fluxo] (8.40,3.25) -- (8.40,2.35);
+  \node[quimica separacao, minimum width=4.25cm] at (8.40,1.30)
+    {aumenta $[\mathrm{OH^-}]$\\meio básico};
+\end{tikzpicture}
+
+
+% FIGURA 2 — fig-02-neutralizacao-ionica
+\begin{tikzpicture}[quimica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.2) rectangle (12.1,6.8);
+
+  \node[quimica rotulo] at (2.65,6.35) {antes da reação};
+  \draw[quimica recipiente] (0.25,0.55) rectangle (5.05,5.90);
+  \node[quimica particula azul, minimum size=1.15cm] at (1.45,4.55)
+    {$\mathrm{H_3O^+}$};
+  \node[quimica particula laranja, minimum size=1.15cm] at (3.85,4.55)
+    {$\mathrm{OH^-}$};
+  \node[quimica particula azul, minimum size=1.05cm] at (1.45,2.05)
+    {$\mathrm{Na^+}$};
+  \node[quimica particula laranja, minimum size=1.05cm] at (3.85,2.05)
+    {$\mathrm{Cl^-}$};
+  \node[quimica destaque, font=\normalsize\bfseries] at (2.65,1.05)
+    {íons em solução};
+
+  \draw[quimica fluxo] (5.35,3.25) -- (6.65,3.25);
+  \node[quimica destaque, font=\normalsize\bfseries, above=5pt]
+    at (6.00,3.25) {reagem};
+
+  \node[quimica rotulo] at (9.25,6.35) {depois da reação};
+  \draw[quimica recipiente] (6.95,0.55) rectangle (11.55,5.90);
+  \node[quimica separacao, minimum width=1.70cm] at (8.20,4.55)
+    {$\mathrm{H_2O}$};
+  \node[quimica separacao, minimum width=1.70cm] at (10.30,4.55)
+    {$\mathrm{H_2O}$};
+  \node[quimica particula azul, minimum size=1.05cm] at (8.20,2.05)
+    {$\mathrm{Na^+}$};
+  \node[quimica particula laranja, minimum size=1.05cm] at (10.30,2.05)
+    {$\mathrm{Cl^-}$};
+  \node[quimica destaque, font=\normalsize\bfseries, align=center]
+    at (9.25,1.05)
+    {íons do sal\\permanecem em solução};
+\end{tikzpicture}
+
+\end{document}

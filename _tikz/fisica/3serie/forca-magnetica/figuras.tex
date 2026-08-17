@@ -1,0 +1,104 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-fisica}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-regra-vetor-velocidade-campo-forca
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (9.8,8.7);
+  \coordinate (O) at (4.6,3.65);
+  \node[fisica corpo, circle, minimum size=0.85cm] at (O) {$q>0$};
+  \draw[fisica movimento] ($(O)+(0.43,0)$) -- ++(2.82,0)
+    node[fisica rotulo, right] {$\vec v$};
+  \draw[fisica forca] ($(O)+(0,0.43)$) -- ++(0,2.82)
+    node[fisica rotulo, above] {$\vec F_m$};
+  \node[font=\Huge\bfseries, text=eleveazul] at (2.3,3.65) {$\otimes$};
+  \node[fisica rotulo] at (2.3,2.8) {$\vec B$ entra no plano};
+  \node[font=\large\bfseries, text=elevecinza] at (4.6,8.05)
+    {$\vec F_m\perp\vec v$ e $\vec F_m\perp\vec B$};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-casos-angulares-da-forca-magnetica
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.8,10.0);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.15,9.45)
+    {$\vec v\parallel\vec B$};
+  \node[fisica corpo, circle, minimum size=0.75cm] (A) at (2.0,7.2) {$q$};
+  \draw[fisica movimento] (A.east) -- ++(1.95,0)
+    node[fisica rotulo, right] {$\vec v$};
+  \draw[fisica campo] (5.25,7.2) -- (8.65,7.2);
+  \node[fisica rotulo] at (6.95,6.45) {$\vec B$};
+  \node[fisica medida] at (5.15,5.65) {$F_m=0$: trajetória reta};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.15,4.35)
+    {$\vec v\perp\vec B$};
+  \foreach \x in {1.2,2.3,...,9.0}
+    \node[font=\Large\bfseries, text=eleveazul] at (\x,2.45) {$\otimes$};
+  \node[fisica corpo, circle, minimum size=0.75cm] (B) at (2.0,1.35) {$q$};
+  \draw[fisica movimento] (B.east) -- ++(1.85,0)
+    node[fisica rotulo, right] {$\vec v$};
+  \draw[fisica forca] (B.north) -- ++(0,1.6)
+    node[fisica rotulo, above] {$\vec F_m$};
+  \draw[fisica trajetoria, dashed] (2.0,1.35)
+    .. controls (4.8,1.4) and (5.7,3.25) .. (5.45,4.0);
+  \node[fisica medida] at (8.0,0.65) {força máxima; curva};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-forca-sobre-condutor
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.6,8.9);
+  \foreach \x in {1.1,2.5,...,9.5}
+    \foreach \y in {1.1,2.5,3.9,5.3,7.5}
+      \node[font=\Large\bfseries, text=eleveazul] at (\x,\y) {$\otimes$};
+  \draw[elevecinza, line width=3.1pt] (1.15,3.6) -- (8.85,3.6);
+  \draw[fisica movimento] (2.0,3.6) -- (5.3,3.6)
+    node[fisica rotulo, above] {$I$};
+  \draw[fisica forca] (5.0,3.6) -- ++(0,3.0)
+    node[fisica rotulo, above] {$\vec F$};
+  \node[fisica rotulo] at (8.2,8.2) {$\vec B$ entra no plano};
+  \node[font=\large\bfseries, text=elevecinza] at (5.0,0.3)
+    {$\vec L\times\vec B$ aponta para cima};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-binario-na-espira
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.8,9.1);
+  \foreach \y in {1.1,2.3,...,7.1}
+    \draw[fisica campo] (0.7,\y) -- (10.0,\y);
+  \node[fisica rotulo] at (9.1,7.8) {$\vec B$};
+  \draw[elevecinza, line width=2.4pt] (3.3,1.5) rectangle (7.2,6.7);
+  \draw[fisica movimento] (3.3,2.0) -- (3.3,5.9)
+    node[fisica rotulo, above] {$I$};
+  \draw[fisica movimento] (7.2,6.1) -- (7.2,2.2)
+    node[fisica rotulo, below] {$I$};
+  \node[font=\Huge\bfseries, text=elevelaranja] at (3.3,4.1) {$\otimes$};
+  \node[font=\Huge\bfseries, text=elevelaranja] at (7.2,4.1) {$\odot$};
+  \node[fisica medida] at (2.1,4.1) {$\vec F$ entra};
+  \node[fisica medida] at (8.55,4.1) {$\vec F$ sai};
+  \draw[fisica movimento] (7.0,7.75)
+    arc[start angle=20,end angle=160,x radius=1.8,y radius=.55];
+  \node[fisica rotulo] at (5.25,8.65) {binário produz rotação};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-trajetorias-circular-e-helicoidal
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.2,10.4);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.35,9.85)
+    {$\vec v\perp\vec B$: circular};
+  \foreach \y in {6.3,7.3,8.3}
+    \draw[fisica campo] (0.75,\y) -- (9.95,\y);
+  \draw[fisica trajetoria, ->] (5.35,7.3) circle (1.45);
+  \node[fisica corpo, circle, minimum size=0.65cm] at (6.8,7.3) {$q$};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.35,5.2)
+    {$\vec v$ com componente paralela: helicoidal};
+  \foreach \y in {1.1,2.1,3.1,4.1}
+    \draw[fisica campo] (0.75,\y) -- (9.95,\y);
+  \draw[fisica movimento, domain=1.1:9.5, samples=150, variable=\x]
+    plot ({\x},{2.6+0.85*sin((\x-1.1)*150)});
+  \draw[fisica auxiliar, domain=1.1:9.5, samples=150, variable=\x]
+    plot ({\x},{2.6+0.35*sin((\x-1.1)*150)});
+  \node[fisica rotulo] at (8.35,0.35) {avanço ao longo do campo};
+\end{tikzpicture}
+
+\end{document}

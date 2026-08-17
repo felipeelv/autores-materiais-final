@@ -1,0 +1,83 @@
+{
+  "versao": 1,
+  "disciplina": "fisica",
+  "ano_serie": "6ano",
+  "titulo_documento": "Estrutura da Terra",
+  "slug_documento": "estrutura-da-terra",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Fisica/6ano/fisica-6ano-3bim-cap2.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-camadas-internas-da-terra",
+      "pagina": 1,
+      "arquivo": "fig-01-camadas-internas-da-terra.png",
+      "alt": "Corte da Terra com crosta, manto, núcleo externo e núcleo interno organizados em camadas",
+      "aprovada": true,
+      "sha256": "cba2f3d3dca14bd870cf01c1501925e37b4f08349b6581f933c7bd016b8f2abc",
+      "largura_px": 1359,
+      "altura_px": 1205,
+      "publicado_sha256": "cba2f3d3dca14bd870cf01c1501925e37b4f08349b6581f933c7bd016b8f2abc",
+      "publicado_commit": "24b899761005ecf22dc7c2eb0e062f0d7b8e361d"
+    },
+    {
+      "id": "fig-02-desvio-das-ondas-sismicas",
+      "pagina": 2,
+      "arquivo": "fig-02-desvio-das-ondas-sismicas.png",
+      "alt": "Raios sísmicos mudando de direção ao atravessar camadas internas de materiais diferentes",
+      "aprovada": true,
+      "sha256": "8e19fccc76418e712b4ba6b29f897e7a0b4f94398aacc47dba4e7f59b78f747d",
+      "largura_px": 1335,
+      "altura_px": 981,
+      "publicado_sha256": "8e19fccc76418e712b4ba6b29f897e7a0b4f94398aacc47dba4e7f59b78f747d",
+      "publicado_commit": "24b899761005ecf22dc7c2eb0e062f0d7b8e361d"
+    },
+    {
+      "id": "fig-03-camadas-da-atmosfera",
+      "pagina": 3,
+      "arquivo": "fig-03-camadas-da-atmosfera.png",
+      "alt": "Faixas verticais da troposfera à exosfera com altitude crescente e fenômenos característicos",
+      "aprovada": true,
+      "sha256": "21c4fb621618e934a1887bcf05e3ced643f61707c0e15f6ed19d6536d3bcbd82",
+      "largura_px": 1347,
+      "altura_px": 1312,
+      "publicado_sha256": "21c4fb621618e934a1887bcf05e3ced643f61707c0e15f6ed19d6536d3bcbd82",
+      "publicado_commit": "24b899761005ecf22dc7c2eb0e062f0d7b8e361d"
+    },
+    {
+      "id": "fig-04-ciclo-das-rochas",
+      "pagina": 4,
+      "arquivo": "fig-04-ciclo-das-rochas.png",
+      "alt": "Ciclo entre rochas ígneas, sedimentares e metamórficas por resfriamento, erosão, pressão e calor",
+      "aprovada": true,
+      "sha256": "0b421d6fa68f28084c237e5aa7187d650491e3889b68f15944efd3931e8d62cf",
+      "largura_px": 1323,
+      "altura_px": 1205,
+      "publicado_sha256": "0b421d6fa68f28084c237e5aa7187d650491e3889b68f15944efd3931e8d62cf",
+      "publicado_commit": "24b899761005ecf22dc7c2eb0e062f0d7b8e361d"
+    },
+    {
+      "id": "fig-05-sequencia-da-fossilizacao",
+      "pagina": 5,
+      "arquivo": "fig-05-sequencia-da-fossilizacao.png",
+      "alt": "Quatro etapas da fossilização desde o soterramento até a mineralização dos restos",
+      "aprovada": true,
+      "sha256": "78e15875b05bb22be8b2679a0915c7dba7bdae0b6b30b3e3a33692bc5633eb2d",
+      "largura_px": 1347,
+      "altura_px": 1418,
+      "publicado_sha256": "78e15875b05bb22be8b2679a0915c7dba7bdae0b6b30b3e3a33692bc5633eb2d",
+      "publicado_commit": "24b899761005ecf22dc7c2eb0e062f0d7b8e361d"
+    },
+    {
+      "id": "fig-06-camadas-e-tempo-geologico",
+      "pagina": 6,
+      "arquivo": "fig-06-camadas-e-tempo-geologico.png",
+      "alt": "Camadas sedimentares empilhadas com fósseis mais antigos abaixo e mais recentes acima",
+      "aprovada": true,
+      "sha256": "36250f6e0455de5596de279d01ccc4895be04c1064fb3f60e7087d302690e333",
+      "largura_px": 1300,
+      "altura_px": 1146,
+      "publicado_sha256": "36250f6e0455de5596de279d01ccc4895be04c1064fb3f60e7087d302690e333",
+      "publicado_commit": "24b899761005ecf22dc7c2eb0e062f0d7b8e361d"
+    }
+  ]
+}

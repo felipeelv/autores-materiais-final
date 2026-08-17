@@ -22,13 +22,14 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **Anexo A** (como esc
 
 - **1 tema = 1 capítulo · 1 aula = 1 tópico numerado `## N.`**, na ordem do blueprint. Cada aula é autossuficiente (~50 min).
 - **O material é a REFERÊNCIA DO ALUNO — a explicação é do professor.** Prosa curta para o raciocínio, marcadores para o que é enumerável: máximo 2 frases seguidas antes de uma lista; tabela sempre que houver 2+ itens a contrastar.
-- **220–250 palavras de conteúdo por aula, teto firme de 300** (tabelas e fórmulas fora da conta). O teto **não é meta**; não existe mínimo.
+- **Preferir 180–210 palavras de conteúdo por aula, com teto firme de 240**. O teto **não é meta**; não existe mínimo. Fórmulas, tabelas e esquemas devem carregar parte da explicação.
 - **Material é só conteúdo.** Zero exercício proposto, atividade, experimento-roteiro, projeto, revisão ou prova. **Exemplo resolvido é conteúdo e é permitido**; "agora resolva você" não.
 - **Sem seções de fechamento.** Nada de "Introdução", "Aplicações Práticas", "O que a Bíblia diz sobre…", "Síntese do Capítulo" — esses elementos vivem **dentro** das aulas.
-- **Toda aula abre com fenômeno ou cena concreta** (ou fato direto, quando chega mais rápido ao conteúdo). A definição nunca abre a aula.
-- **Método e experimento entram como narrativa** (cena de descoberta que motiva o conceito), nunca como prática a executar — regra da família Empíricas.
-- **LaTeX no padrão MathJax:** equações e espécies químicas sempre em `\ce{}` (`$$\ce{2H2 + O2 -> 2H2O}$$`); unidades e grandezas em `\mathrm{}`; vírgula decimal `{,}`.
-- **Boxes são "drops":** 1 frase. Família 💡 🔎 🌍 💭 ⏸️ ⚠️ · 1–2 por aula, **nunca dois seguidos**, nenhum de experimento.
+- **Toda aula abre com uma frase direta:** fato observável, contraste entre materiais ou conceito central. Sem histórias, cenas construídas ou suspense. A definição pode vir imediatamente depois.
+- **Método e experimento entram como descrição objetiva** do procedimento, da observação e da conclusão; nunca como história nem como prática a executar.
+- **LaTeX compatível com o render final:** `\ce{}`/mhchem está proibido porque aparece como comando literal na página. Equações e espécies químicas usam `\mathrm{}` com subscritos, sobrescritos e setas MathJax básicas. Unidades e grandezas também usam `\mathrm{}`; vírgula decimal, `{,}`.
+- **Figuras TikZ/PNG são permitidas quando tornam visível uma relação gráfica, espacial ou processual.** Use o manual `PADRAO-DE-IMAGENS-TIKZ.md`; não substitua classificações simples por imagem.
+- **Boxes são opcionais:** no máximo 1 por aula, em 1 frase, apenas quando acrescentarem dado, aplicação ou ressalva que não esteja no corpo. Família 💡 🔎 🌍 💭 ⏸️ ⚠️; nenhum de experimento.
 - **Bíblia condicional:** versículo só com ligação **conceitual** (teste do sinônimo); capítulo sem versículo é entrega válida.
 - **Zero itens da lista NÃO ANTECIPAR** do blueprint, nem de passagem.
 - A **pergunta-problema** é respondida dentro da aula pertinente, **sem anunciar**.
@@ -45,7 +46,9 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **Anexo A** (como esc
 
 Capítulos de **Química — 9º ano e 1ª a 3ª série do EM**, para o 3º e 4º bimestres de 2026, no modelo da Reorganização 2026/2S.
 
-**A equação do modelo:** `1 tema = 1 capítulo` · `1 aula = 1 tópico numerado (## N.)` · `1 aula ≈ 50 min ≈ 220–250 palavras (teto 300)` · `prosa curta + marcadores`.
+Os quatro capítulos-modelo vigentes estão em `modelos/`: Ácidos e bases (9º ano), Tabela periódica (1ª série), Equilíbrio químico (2ª série) e Isomeria (3ª série). Eles calibram forma e profundidade; o blueprint continua autoritativo sobre o conteúdo.
+
+**A equação do modelo:** `1 tema = 1 capítulo` · `1 aula = 1 tópico numerado (## N.)` · `1 aula ≈ 50 min ≈ 180–210 palavras (teto 240)` · `prosa curta + marcadores`.
 
 **Como achar o blueprint:** `Blueprints/<série>-<bimestre>-<bloco>.md` — todos numa pasta só, com a série no nome do arquivo. Séries: `9ano` · `1serie` · `2serie` · `3serie`. Blocos: `3bim-bloco1` · `3bim-bloco2` · `4bim-bloco1` · `4bim-bloco23`. Exemplo: Tabela periódica (1ª série, 3º bim, bloco 1) → `Blueprints/1serie-3bim-bloco1.md`.
 
@@ -53,9 +56,9 @@ Cada blueprint traz, para cada capítulo do bloco: tema, nº de aulas, pergunta-
 
 **Calendário:** 3º Bim — Bloco 1 (05/08–25/08, 3 sem, 50%) + Bloco 2 (27/08–18/09, 3 sem, 50%) · 4º Bim — Bloco 1 (28/09–09/10, 2 sem, 40%) + Blocos 2+3 (19/10–13/11, 3 sem, 60%). No 4º bimestre os blocos 2 e 3 andam juntos — por isso o arquivo único `4bim-bloco23.md`.
 
-**Glossário:** **Bloco** = subdivisão de semanas do bimestre · **Tema** = assunto do bloco, vira um capítulo · **Aula** = bloco de conteúdo (~50 min), vira um tópico `## N.`; toda aula tem conteúdo · **Recorte** = os tópicos listados dentro de cada aula no blueprint, é o que se desenvolve e nada além · **N2/N3/N4** = profundidade cognitiva alvo (identificar → consolidar → analisar) · **VP** = Valores e Princípios (unidade de valor + versículo-âncora) · **NÃO ANTECIPAR** = conteúdos proibidos naquele capítulo (pertencem a outra série ou bloco) · **Família Empíricas** = Ciências, Biologia, Física e Química: método e observação entram como contexto narrativo, nunca como prática.
+**Glossário:** **Bloco** = subdivisão de semanas do bimestre · **Tema** = assunto do bloco, vira um capítulo · **Aula** = bloco de conteúdo (~50 min), vira um tópico `## N.`; toda aula tem conteúdo · **Recorte** = os tópicos listados dentro de cada aula no blueprint, é o que se desenvolve e nada além · **N2/N3/N4** = profundidade cognitiva alvo (identificar → consolidar → analisar) · **VP** = Valores e Princípios (unidade de valor + versículo-âncora) · **NÃO ANTECIPAR** = conteúdos proibidos naquele capítulo (pertencem a outra série ou bloco) · **Família Empíricas** = Ciências, Biologia, Física e Química: método e observação entram como contexto objetivo, nunca como prática.
 
-⚠️ **Se um blueprint citar restrições do CodeCogs** (proibir `\text{}`, `\;`, `\,`), **ignore**: foram revogadas. Valem os **Anexos B e C** — o renderizador é MathJax e `\ce{}` (mhchem) foi validado.
+⚠️ **Se um blueprint citar restrições do CodeCogs** (proibir `\text{}`, `\;`, `\,`), **ignore**: foram revogadas. Valem os **Anexos B e C** — o renderizador é MathJax, mas sem a extensão mhchem.
 
 ## 2. Estrutura do capítulo
 
@@ -78,11 +81,13 @@ O capítulo **termina na última aula**. Não há seção de fechamento.
 - **1 aula = 1 tópico `## N.`**, na ordem do blueprint; `---` entre aulas. Cada aula deve ser **autossuficiente**: quem lê só aquele tópico tem a aula completa (~50 min).
 - Tópicos internos viram subseções **numeradas `### N.1`, `### N.2`** (a numeração da aula, depois a da parte). Título curto e descritivo — o aluno usa como índice.
 - **2 a 3 subseções por aula.** Mais que isso fragmenta; cada subseção nova traz sua própria abertura e engorda o texto.
-- **Extensão: alvo 220–250 palavras, teto firme de 300** por aula (tabelas, fórmulas e diagramas fora da conta) — **direto e conciso é o padrão da casa**. Desenvolva todo o recorte e pare: sem exemplos extras, paráfrases ou parágrafos de transição para "engordar". Se passar de 300, corte rodeio e redundância — **nunca recorte do blueprint**. Aula que cobriu tudo em 200 palavras está pronta: **não trate o teto como meta**.
+- **Extensão: preferir 180–210 palavras, teto firme de 240** por aula — **direto e conciso é o padrão da casa**. Fórmulas, tabelas e esquemas devem substituir prosa quando organizarem melhor a informação. Desenvolva todo o recorte e pare: sem exemplos extras, paráfrases ou transições para “engordar”. Se passar de 240, corte rodeio e redundância — **nunca recorte do blueprint**. Não existe mínimo obrigatório.
 
 ## 3. Forma do conteúdo — prosa + marcadores
 
 **O material é a REFERÊNCIA DO ALUNO — a explicação é do professor.** Não é um texto que ensina sozinho: é o que o aluno consulta antes, durante e depois da aula. Escreva para ser **consultado**, não lido de ponta a ponta. Daí a mistura: **prosa curta para o raciocínio, marcadores para o que é enumerável.** Nem só parágrafo (vira parede de texto), nem só bullet (pica o raciocínio em fragmentos).
+
+**Padrão editorial aprovado em 23/07/2026:** contexto cotidiano curto, como ponto de entrada, combinado com encadeamento conceitual explícito. A sequência preferencial é **fato observável → definição → representação ou fórmula → exemplo/tabela → ressalva**. O contexto serve ao conceito; não se transforma em história. Cada conceito recebe um exemplo forte, não uma coleção de casos semelhantes.
 
 **Abertura de aula (`## N.`):** 1 frase direta, sem desenvolvimento. Sem cena narrativa, sem construção de suspense.
 
@@ -106,16 +111,16 @@ O capítulo **termina na última aula**. Não há seção de fechamento.
 
 ## 4. Como cada aula é construída
 
-1. **Abertura: no máximo 25 palavras.** Pode ser **fenômeno concreto** (cotidiano, contraste entre materiais, dado experimental) **ou fato direto** — escolha o que chega mais rápido ao conteúdo. Sem cena narrativa, sem suspense.
+1. **Abertura: no máximo 25 palavras.** Use **fato observável**, contraste entre materiais ou conceito central — escolha o caminho mais curto. Sem história, cena narrativa ou suspense.
    - **Fenômeno** quando o observável é o caminho mais curto para o conceito.
-   - **Fato direto** quando o conteúdo é método, história ou definição.
-2. **Método e experimento entram como cena que motiva o conceito**, nunca como roteiro de prática — regra da família Empíricas.
+   - **Fato direto** quando uma contextualização não acrescentaria compreensão.
+2. **Método e experimento entram como descrição objetiva:** o que foi feito, o que se observou e qual conclusão decorre disso. Nunca como roteiro de prática nem como relato dramatizado.
 3. **Definição destacada em negrito**, em **1 frase**, na primeira seção conceitual. Se precisar de mais, complemente com bullets — não com parágrafo.
-4. **Ritmo fixo:** conceito → explicação → exemplo. Máximo 2 frases seguidas antes de uma lista, tabela ou fórmula. Exemplo prático sempre com substância ou situação real e reconhecível.
+4. **Ritmo fixo:** fato curto → definição → representação/fórmula → exemplo ou tabela → ressalva, quando necessária. Máximo 2 frases seguidas antes de uma lista, tabela ou fórmula. Use uma substância ou situação reconhecível por conceito.
 5. **Exemplos resolvidos** sempre que o conteúdo envolver cálculo — são **demonstração do conceito** (conteúdo), nunca proposta para o aluno resolver. Formato na seção 7.
 6. **Tabelas comparativas** sempre que houver 2+ itens a contrastar — e sempre que o blueprint pedir "quadro". Máximo 5 colunas; quando couber, uma coluna/linha com exemplo concreto.
-7. **Diagramas ASCII** (entre ` ``` `) para esquemas conceituais — simples e legíveis. Sem imagens.
-8. **Químico-chave:** aparece **uma vez no capítulo**, na aula mais pertinente, desenvolvido como cena de descoberta dentro do texto (quem foi, o que fez, quando — dados do blueprint). Referências secundárias do blueprint são só mencionadas, sem protagonismo.
+7. **Figuras TikZ/PNG** para gráficos, partículas, estruturas e processos em que a precisão visual ajuda a compreender. ASCII fica restrito a esquema trivial; nunca substitui uma figura necessária nem duplica o PNG.
+8. **Químico-chave:** aparece **uma vez no capítulo**, na aula pertinente, em uma frase factual com nome, contribuição e data quando o blueprint exigir. Não escrever biografia nem cena histórica. Referências secundárias são apenas mencionadas.
 9. **Conexões ENEM/vestibular** (só EM): mencionar quando naturais ao conteúdo, em 1 frase — sem transformar em exercício.
 
 ## 5. Voz e tom
@@ -125,6 +130,7 @@ O capítulo **termina na última aula**. Não há seção de fechamento.
 - **Rigor científico sempre:** terminologia química correta desde a primeira ocorrência, com glosa entre parênteses ou na frase seguinte.
 - Analogias apenas quando tornam concreto um conceito abstrato — nunca forçadas, nunca em cadeia.
 - **Cada frase entrega informação.** Se pode ser cortada sem perda, corte.
+- **História não é estratégia de abertura.** Só permanece o dado histórico indispensável para compreender a origem, o limite ou o uso do conceito.
 - **Zero frases-preparação:** nada de "Nesta seção veremos...", "A seguir...", "As principais características são:", "Como vimos anteriormente...".
 - Sobreposição entre capítulos: referencie o capítulo anterior em meia frase e siga — nunca reexplique.
 - **Processos inversos** (ex.: diluição depois de concentração) são tratados de forma **mais curta** que o processo direto.
@@ -141,7 +147,7 @@ O capítulo **termina na última aula**. Não há seção de fechamento.
 
 **Ajuste por série** (complementa a coluna correspondente o **Anexo A §2**):
 
-- **9º ano:** introdução à Química — **fenômeno observável antes do modelo**; frases curtas; representações simbólicas simples.
+- **9º ano:** introdução à Química — fato observável em uma frase, definição logo depois; frases curtas e representações simbólicas simples.
 - **1ª série EM:** direto e denso — conceito → explicação → exemplo, sem aquecimento; comparação quantitativa com valores tabelados.
 - **2ª série EM:** físico-química — cálculos com cada etapa em linha própria; contraste entre dados experimentais.
 - **3ª série EM:** orgânica, ambiental, bioquímica — síntese de conceitos e conexões ENEM/vestibular.
@@ -157,11 +163,10 @@ O capítulo **termina na última aula**. Não há seção de fechamento.
 > ⚠️ **Atenção:**        → erro comum ou ponto contraintuitivo — nunca no corpo do texto
 ```
 
-- **No máximo 2 boxes por aula.** Cada box é um "drop": **1 frase única** — dado isolado, nunca mini-parágrafo.
+- **Box não é obrigatório. No máximo 1 por aula.** Ele deve ser um "drop" de **1 frase única** e acrescentar informação; nunca repetir definição, tabela ou conclusão já presente.
 - **Quebra de linha interna obrigatória:** título na 1ª linha (dois espaços no final), conteúdo na 2ª, ambos dentro do blockquote.
-- **Nunca dois boxes seguidos** — sempre ao menos um parágrafo de conteúdo entre eles.
 - ❌ Nenhum box de experimento, atividade prática ou procedimento de laboratório.
-- Ponto contraintuitivo ou erro comum **não fica em negrito solto no corpo**: vira box `⚠️ Atenção`.
+- Ponto contraintuitivo ou erro comum pode virar `⚠️ Atenção` quando a ressalva ainda não estiver explicada no corpo.
 
 ## 7. Convenções tipográficas e notação
 
@@ -171,7 +176,7 @@ O capítulo **termina na última aula**. Não há seção de fechamento.
 - *Itálico* → palavras citadas como palavras, títulos de obras, grandezas na primeira menção.
 - Versículos bíblicos → em blockquote, itálico, com referência em linha própria: `— **Provérbios 25:2**`.
 - Emojis → somente nos boxes padronizados. Nunca em títulos ou corpo do texto.
-- Diagramas → ASCII entre ` ``` `. O projeto não usa imagens.
+- Diagramas → TikZ/PNG conforme `PADRAO-DE-IMAGENS-TIKZ.md`; ASCII somente quando a relação for trivial.
 - Numerais: por extenso de um a dez **em texto corrido não técnico**; **algarismos sempre** em dados, medidas, valores experimentais, fórmulas e tabelas (Z = 8, 25 °C, 58,5 g/mol).
 - **Ortografia:** **Anexo B** — Acordo Ortográfico 1990 com as escolhas da casa. Verificar antes da entrega; dúvida de grafia → VOLP (volp.abl.org.br).
 
@@ -179,26 +184,27 @@ O capítulo **termina na última aula**. Não há seção de fechamento.
 
 Regras da casa do MathJax, comandos frequentes, `\text{}` só para palavras curtas, frase longa fora do LaTeX, delimitador único `$$...$$`, as duas armadilhas que quebram a renderização (**acento dentro de `\text{}`** e **`%` sem escape**) e o protocolo geral estão lá. Não repetidos aqui. Abaixo, só o que é de Química.
 
-**Equação química — padrão da casa: `\ce{}` (mhchem)**
+**Equação química — MathJax básico, sem `\ce{}`**
 
-> ⚗️ **Validado em jul/2026** no Google Docs do Felipe: o Auto-LaTeX Equations renderiza mhchem perfeitamente. **Toda equação e espécie química deve usar `\ce{}`** — a extensão cuida sozinha de subscritos, cargas e setas.
+> ⚗️ **Corrigido em 23/07/2026 após teste no render final:** a página imprime `\ce` literalmente. Use somente `\mathrm{}`, subscritos, sobrescritos e setas básicas.
 
 ```
-$$\ce{2H2 + O2 -> 2H2O}$$
+$$2\mathrm{H_2} + \mathrm{O_2} \rightarrow 2\mathrm{H_2O}$$
 ```
 
 | Uso | Sintaxe | Exemplo |
 |---|---|---|
-| Reação | `->` | `$$\ce{CH4 + 2O2 -> CO2 + 2H2O}$$` |
-| Equilíbrio | `<=>` | `$$\ce{N2 + 3H2 <=> 2NH3}$$` |
-| Íon / carga | `^2+`, `^-` | `$$\ce{Cu^2+}$$` · `$$\ce{CO3^2-}$$` |
-| Estado físico | `(s) (l) (g) (aq)` | `$$\ce{NaCl(aq)}$$` |
-| Precipitado / gás | `v` · `^` | `$$\ce{AgCl v}$$` · `$$\ce{CO2 ^}$$` |
-| Isótopo | `^{A}_{Z}X` | `$$\ce{^{14}_{6}C}$$` |
-| Condição sobre a seta | `->[Δ]` | `$$\ce{CaCO3 ->[\Delta] CaO + CO2}$$` |
+| Reação | `\rightarrow` | `$$\mathrm{CH_4} + 2\mathrm{O_2} \rightarrow \mathrm{CO_2} + 2\mathrm{H_2O}$$` |
+| Equilíbrio | `\rightleftharpoons` | `$$\mathrm{N_2} + 3\mathrm{H_2} \rightleftharpoons 2\mathrm{NH_3}$$` |
+| Íon / carga | `^{2+}`, `^{-}` | `$$\mathrm{Cu^{2+}}$$` · `$$\mathrm{CO_3^{2-}}$$` |
+| Estado físico | `(s) (l) (g) (aq)` | `$$\mathrm{NaCl(aq)}$$` |
+| Precipitado / gás | `\downarrow` · `\uparrow` | `$$\mathrm{AgCl}\downarrow$$` · `$$\mathrm{CO_2}\uparrow$$` |
+| Isótopo | `{}^{A}_{Z}\mathrm{X}` | `$$ {}^{14}_{6}\mathrm{C} $$` |
+| Condição sobre a seta | `\xrightarrow{...}` | `$$\mathrm{CaCO_3} \xrightarrow{\Delta} \mathrm{CaO} + \mathrm{CO_2}$$` |
 
-- **Divisão de trabalho:** `\ce{}` para equações e espécies químicas; **`\mathrm{}` para unidades e grandezas** e para expressões matemáticas não químicas — `$$58{,}5\,\mathrm{g/mol}$$`, `$$25\,^{\circ}\mathrm{C}$$`. Símbolo químico nunca em itálico matemático.
-- A forma manual `\mathrm{}` + `\rightarrow` (setas `\rightleftharpoons`, `\uparrow`, `\downarrow`) é aceitável **apenas em material antigo** — capítulo novo usa `\ce{}`.
+- **Divisão de trabalho:** `\mathrm{}` mantém símbolos químicos, estados físicos, unidades e grandezas sem itálico — `$$58{,}5\,\mathrm{g/mol}$$`, `$$25\,^{\circ}\mathrm{C}$$`.
+- Use `\rightarrow` para reação e `\rightleftharpoons` para equilíbrio. Condição curta pode usar `\xrightarrow{\mathrm{Ni}}`; se houver erro no destino, escreva a condição em texto antes da equação e mantenha `\rightarrow`.
+- O validador reprova qualquer ocorrência de `\ce{}` para impedir a reincidência do erro.
 - Em **texto corrido**, fórmulas com Unicode são aceitáveis: H₂O, NaCl, CO₂, Cu²⁺.
 
 **Exemplo resolvido e cálculos (formato da disciplina)**
@@ -229,14 +235,14 @@ Verificação: $$2 + 2 + 4 = 8$$ ✓
 - ❌ Profundidade fora do balizamento da série definido no blueprint.
 - ❌ Frases-preparação ("Nesta seção veremos...", "Como vimos anteriormente...", "As principais características são:"). Se houver sobreposição com capítulo anterior, referencie em meia frase e siga.
 - ❌ Rótulos no cabeçalho ("Pergunta-problema:") — só a pergunta em blockquote.
-- ❌ Emojis fora dos boxes · imagens (só ASCII) · definição em mais de 1 frase.
+- ❌ Emojis fora dos boxes · imagens decorativas ou sem fonte TikZ · definição em mais de 1 frase.
 - ❌ Analogia estendida · parágrafo que recapitula · exemplo repetido no mesmo tópico · integração bíblica genérica.
 
 ## 9. Integrações obrigatórias (dentro do conteúdo — nunca como seção)
 
 Estes três elementos existiam como blocos pós-conteúdo no formato antigo (Aplicações Práticas · O que a Bíblia diz · Síntese). **Não existem mais como seções.** Eles agora vivem dentro das aulas:
 
-1. **Aplicações práticas** — são o próprio tecido do capítulo: aberturas com fenômenos reais, exemplos com substâncias reconhecíveis e boxes `🌍 Fenômeno` cumprem essa função. Nenhuma lista de aplicações no final.
+1. **Aplicações práticas** — entram como fatos curtos e exemplos com substâncias reconhecíveis. O box `🌍 Fenômeno` é opcional e só entra quando acrescentar informação. Não criar narrativa de cotidiano nem lista de aplicações no final.
 2. **Pergunta-problema** — respondida dentro da aula mais pertinente ao seu conteúdo, de forma natural, **sem anunciar** ("aqui está a resposta...", "respondendo à pergunta do tema..." são proibidos).
 3. **Bíblia (conexão VP do blueprint) — CONDICIONAL, não obrigatória.**
 
@@ -258,21 +264,22 @@ Estes três elementos existiam como blocos pós-conteúdo no formato antigo (Apl
 > ```
 > python3 ./validar-capitulo.py <capitulo.md> --disciplina quimica [--blueprint <arq.md>]
 > ```
-> **Não persiga a contagem exata de palavras:** conte uma vez, ao final. Só reescreva se estourou o teto de 300 — ficar abaixo dele não é defeito.
+> **Não persiga a contagem exata de palavras:** conte uma vez, ao final. Só reescreva se estourou o teto de 240 — ficar abaixo dele não é defeito.
 
 - [ ] Título é `# Capítulo {N} — {Tema}` (sem linha de disciplina/série)
 - [ ] Todas as aulas do blueprint, na ordem, com todo o recorte desenvolvido
-- [ ] Cada aula abre com fenômeno/cena concreta · 220–250 palavras (teto 300) · autossuficiente
+- [ ] Cada aula abre com fato observável ou conceito central, sem história · preferencialmente 180–210 palavras (teto 240) · autossuficiente
 - [ ] **Prosa curta + marcadores:** conteúdo enumerável em lista/tabela; máx. 2 frases antes de uma lista
 - [ ] Nenhuma analogia estendida, nenhum parágrafo que recapitula, nenhum exemplo repetido
 - [ ] Definições em 1 frase; zero frases-preparação; toda lista com frase de transição que carrega informação
 - [ ] Versículo só com ligação **conceitual** (teste do sinônimo) — capítulo sem versículo é entrega válida
 - [ ] Química conferida: balanceamento, nomenclatura, configurações eletrônicas, valores e unidades
-- [ ] LaTeX no padrão MathJax: equações e espécies em `\ce{}`, unidades em `\mathrm{}` precedidas de `\,`, vírgula decimal `{,}`, delimitador único `$$...$$`
+- [ ] LaTeX no padrão MathJax básico: nenhuma ocorrência de `\ce{}`; equações e espécies em `\mathrm{}`, unidades precedidas de `\,`, vírgula decimal `{,}`, delimitador único `$$...$$`
 - [ ] Tabelas pedidas pelo blueprint montadas (máx. 5 colunas); exemplos resolvidos no formato (rótulo em negrito sem numeração, etapas em linhas separadas)
-- [ ] Boxes: só da família permitida, 1–2 por aula, 1 frase única, nunca consecutivos, quebra de linha interna
-- [ ] Químico-chave desenvolvido uma única vez, na aula pertinente
-- [ ] Método/experimento só como narrativa; zero exercícios propostos e experimentos-roteiro
+- [ ] Figuras necessárias usam TikZ/PNG autorizado, texto alternativo descritivo e revisão a 300 px; nenhum ASCII permanece quando a precisão visual exigir imagem
+- [ ] Boxes opcionais: no máximo 1 por aula, só da família permitida, 1 frase nova e quebra de linha interna
+- [ ] Químico-chave em uma frase factual, sem biografia ou cena histórica
+- [ ] Método/experimento descrito objetivamente; zero exercícios propostos e experimentos-roteiro
 - [ ] Zero itens de NÃO ANTECIPAR; balizamento da série respeitado
 - [ ] Sem seções de fechamento; pergunta-problema respondida sem anúncio; versículo-âncora integrado a uma aula
 - [ ] Texto verificado contra **Anexos B e C** (ortografia)
@@ -323,12 +330,12 @@ O mesmo nível N muda de cara conforme a série. Parâmetros objetivos por faixa
 | **Ordem de apresentação** | **Exemplo concreto → conceito**, sem exceção; o conceito nomeia o que a criança acabou de ver | **Exemplo concreto → conceito** (sempre) | Exemplo → conceito, ou conceito → exemplo imediato | Definição formal primeiro é aceitável | Definição direta; aluno já tem repertório |
 | **Vocabulário** | Cotidiano da criança; termo técnico só quando é o próprio conteúdo, explicado com palavra do dia a dia | Cotidiano; **todo termo técnico explicado na 1ª ocorrência** | Técnico consolidado; termo novo sempre explicado | Técnico pleno; nomenclatura padrão da área | Técnico pleno + vocabulário de prova |
 | **Abstração** | Nenhuma; tudo ancorado no que se vê, toca ou conta | Mínima; ancorar em situação vivida/observável | Transição: alterna concreto e abstrato | Abstração plena, com retorno ao real como aplicação | Abstração + síntese entre temas |
-| **Exemplos por conceito** | 2, do mundo da criança de 9–10 anos (casa, escola, brincadeira, animais, comida, dinheiro de troco) | 2, do universo do aluno (escola, família, esporte, jogos, tecnologia) | 1–2, de textos/fenômenos reais e referências culturais | 1–2, de fontes reais (literatura, imprensa, dados, experimento) | 1 forte + 1 no formato de prova |
+| **Exemplos por conceito** | 1 exemplo claro; segundo só quando mostrar uma situação diferente, sempre do mundo da criança | 2, do universo do aluno (escola, família, esporte, jogos, tecnologia) | 1–2, de textos/fenômenos reais e referências culturais | 1–2, de fontes reais (literatura, imprensa, dados, experimento) | 1 forte + 1 no formato de prova |
 | **Exceções e casos raros** | Nunca entram | Não entram (salvo se estiverem no recorte do blueprint) | Entram as principais | Sistematizadas | Sistematizadas + pegadinhas clássicas de prova |
 | **Tom** | Professor próximo, fala com "você", frases afirmativas — **sem infantilizar, sem diminutivo, sem personagem falante** | Professor próximo e direto (fala com "você") | Direto, sem infantilizar | Acadêmico acessível — **nunca infantilizar** | Pré-universitário |
 | **Conexão com prova** | Não | Não | Leve (no 9º, mencionar quando natural) | Notas ENEM/vestibular quando o conteúdo render | Sistemática |
 
-**Nota sobre o 4º–5º ano:** faixa acrescentada em 20/07/2026 com a entrada do Fundamental I. A escala N1–N4 não muda — ela descreve a operação cognitiva, não a linguagem. Na prática o EF1 opera em **N1–N3**; **N4 é raro** e só aparece quando o próprio blueprint marcar. O erro típico aqui não é escrever difícil demais, é **infantilizar**: o aluno de 9–10 anos entende explicação direta, o que ele não tem é repertório abstrato.
+**Nota sobre o 4º–5º ano:** faixa acrescentada em 20/07/2026 com a entrada do Fundamental I. A escala N1–N4 não muda — ela descreve a operação cognitiva, não a linguagem. Na prática o EF1 opera em **N1–N3**; **N4 é raro** e só aparece quando o próprio blueprint marcar. O texto usa palavras comuns, exemplos próximos e frases curtas. Simplicidade não significa infantilização: diminutivos e personagens falantes continuam fora do padrão.
 
 **Nota sobre o 9º ano:** é segmento próprio no calendário (24 aulas/sem), mas na escrita segue a coluna 8º–9º **puxando para cima** — é a ponte para o EM.
 
@@ -435,12 +442,12 @@ $$\frac{1+2}{4} = \frac{3}{4}$$
 2. **Pergunta-problema** do blueprint em blockquote logo abaixo do título, **sem rótulo** — só a pergunta. É respondida dentro da aula pertinente, sem anunciar.
 3. **1 aula = 1 tópico `## N.`**, na ordem do blueprint; `---` entre aulas. Cada aula autossuficiente (~50 min).
 4. **2–3 subseções `### N.1`, `### N.2`** por aula, com título curto (pode ser pergunta orientadora).
-5. **Extensão por aula:** padrão da casa 220–250 (teto 300); overrides por disciplina — Física 130–170 (teto 190), Geometria 170–210 (teto 240), Matemática EF1 180–220 (teto 260). Fórmulas, exemplos resolvidos, tabelas, ASCII e boxes **não** entram na conta. **O teto não é meta; não existe mínimo.**
+5. **Extensão por aula:** padrão da casa 220–250 (teto 300); overrides por disciplina — Física 130–170 (teto 190), Química 180–210 (teto 240), Geometria 170–210 (teto 240), Matemática EF1 **sem alvo e sem mínimo** (teto 160). Fórmulas, exemplos resolvidos, tabelas, ASCII, figuras TikZ/PNG, textos alternativos e boxes **não** entram na conta. **O teto não é meta.**
 6. **Prosa curta + marcadores:** máx. 2 frases seguidas antes de uma lista; tabela para 2+ itens comparáveis; **liste o paralelo, escreva o encadeado**. Toda lista com frase de transição **informativa**.
-7. **Boxes:** só a família da disciplina, em blockquote, com quebra de linha interna (título na 1ª linha com dois espaços finais). 1–2 por aula, **nunca dois seguidos**, 1 frase ("drop").
-8. **Bíblia condicional:** versículo só com ligação **conceitual** (teste do sinônimo) — capítulo sem versículo é entrega válida.
-9. **Personagem/referência-chave** 1× por capítulo, na aula pertinente (EF em box 👤 onde a disciplina tiver; EM e matemáticas integrado ao texto).
-10. **O que NUNCA aparece:** blocos pós-conteúdo do formato antigo (`Introdução`, `Sua Parte`, `O que a Bíblia diz sobre...`, `E a Bíblia nisso?`, `Simplificando`, `Para não esquecer`, `Explorando os Conceitos`, `Ampliando o Olhar`, `No Fio da História`, `O Que a Fé Diz`, `Pensador em Destaque`, `Você já pensou nisso?`, `Síntese`, `Fórmulas do capítulo`, `💬 Para Conversar`) · atividades/exercícios propostos/provas · itens do NÃO ANTECIPAR · emojis fora de box · imagens (figuras descritas ou ASCII) · frases-preparação ("Neste capítulo vamos...").
+7. **Boxes:** só a família da disciplina, em blockquote, com quebra de linha interna (título na 1ª linha com dois espaços finais). 1–2 por aula, **nunca dois seguidos**, 1 frase ("drop"). **O box nunca abre um subtópico** — antes dele tem de haver parágrafo, lista ou tabela, porque ele comenta o que o aluno já leu.
+8. **Bíblia condicional:** versículo só com ligação **conceitual** (teste do sinônimo) — capítulo sem versículo é entrega válida. *(Em Estudos Sociais, desde 30/07/2026 o versículo não entra no capítulo: vive no arquivo de anexo.)*
+9. **Personagem/referência-chave** 1× por capítulo, na aula pertinente (EF em box 👤 onde a disciplina tiver; EM e matemáticas integrado ao texto). *(Estudos Sociais não tem mais box de personagem — a ficha vai para o anexo.)*
+10. **O que NUNCA aparece:** blocos pós-conteúdo do formato antigo (`Introdução`, `Sua Parte`, `O que a Bíblia diz sobre...`, `E a Bíblia nisso?`, `Simplificando`, `Para não esquecer`, `Explorando os Conceitos`, `Ampliando o Olhar`, `No Fio da História`, `O Que a Fé Diz`, `Pensador em Destaque`, `Você já pensou nisso?`, `Síntese`, `Fórmulas do capítulo`, `💬 Para Conversar`) · atividades/exercícios propostos/provas · itens do NÃO ANTECIPAR · emojis fora de box · imagens, **exceto as figuras TikZ/PNG autorizadas pelo manual da disciplina** · frases-preparação ("Neste capítulo vamos...").
 
 **Famílias de boxes por disciplina:**
 
@@ -450,7 +457,7 @@ $$\frac{1+2}{4} = \frac{3}{4}$$
 | Física | 💭 ⏸️ 💡 📏 ⚡ 📐 (+ 📝 rótulo de exemplo) |
 | Química | 💡 🔎 🌍 💭 ⏸️ ⚠️ |
 | Português | 💡 ⚠️ 📌 🔎 👤 |
-| Estudos Sociais (Geo/Hist) | 🔎 💭 👤 |
+| Estudos Sociais (Geo/Hist) | 🔎 💭 |
 | Sociologia · Filosofia | 💭 ⏸️ 💡 🔍 |
 | Operações · Geometria · Financeira · Matemática EF1 | 🔢 ⚠️ |
 

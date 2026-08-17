@@ -1,6 +1,6 @@
 # Memória do Kit — Biologia · Produção de Capítulos (Reorganização 2026 · 2º Semestre)
 
-> Registro de origem, decisões e estado deste kit. Ler antes de alterar qualquer arquivo da pasta. Última atualização: **21/07/2026**.
+> Registro de origem, decisões e estado deste kit. Ler antes de alterar qualquer arquivo da pasta. Última atualização: **23/07/2026**.
 
 ---
 
@@ -12,7 +12,7 @@ Arquivos que o projeto **Claude.ai de Biologia** consome para produzir capítulo
 |---|---|
 | `prompt-producao-capitulo.md` | Prompt de produção — abre com ESCOPO (9º + EM); campos `{ }` |
 | `regras-editoriais.md` | Voz, densidade, rigor científico, cálculo a serviço da biologia, boxes-"drops" |
-| `convencao-latex-mathjax.md` | Fórmulas (Hardy-Weinberg, proporções, taxas) no padrão MathJax + `\ce{}` p/ fotossíntese/respiração |
+| `convencao-latex-mathjax.md` | Fórmulas (Hardy-Weinberg, proporções, taxas e equações químicas) no padrão MathJax básico |
 | `convencao-ortografica.md` | Acordo Ortográfico 1990 + escolhas da casa (cópia idêntica à das outras disciplinas) |
 
 **Insumo por capítulo (fora desta pasta):** blueprint do bloco em `~/Reorganizacao-2026-2Semestre/disciplinas/Biologia/blueprints/<série>/<bim>-<bloco>.md`. Séries: **9º ano, 1ª, 2ª e 3ª EM**.
@@ -25,17 +25,18 @@ Kit criado em **19/07/2026**, derivado do kit de Ciências (as instruções e a 
 
 ## 3. Decisões registradas (não reabrir sem o Felipe)
 
-1. **Herda tudo do kit de Ciências:** fechamentos abolidos (Sua Parte · O que a Bíblia diz · Simplificando · Para não esquecer), storytelling migrado para a abertura de cada aula, 220–250 palavras/aula com teto de 300 (ver item 8), frase de transição antes de listas, progressão **fenômeno → modelo**, método/observação só como narrativa histórica, integração bíblica **prática e específica ao tema**.
+1. **Herda tudo do kit de Ciências:** fechamentos abolidos (Sua Parte · O que a Bíblia diz · Simplificando · Para não esquecer), storytelling migrado para a abertura de cada aula, frase de transição antes de listas, progressão **fenômeno → modelo**, método/observação só como narrativa histórica e integração bíblica **prática e específica ao tema**. A extensão própria vigente de Biologia está no item 12.
 2. **Boxes:** mesma família, com `🔬 Biologia no Dia a Dia` no lugar de "Ciência do Dia a Dia". Regra dos "drops" (1–2 frases), 1–2 por aula, nunca consecutivos.
-3. **Ganhou convenção LaTeX** (Ciências não tem): a disciplina calcula — Hardy-Weinberg ($$p^2 + 2pq + q^2 = 1$$), proporções mendelianas, taxas. Padrão MathJax; `\ce{}` disponível para fotossíntese/respiração (validado no kit de Química).
+3. **Ganhou convenção LaTeX** (Ciências não tem): a disciplina calcula — Hardy-Weinberg ($$p^2 + 2pq + q^2 = 1$$), proporções mendelianas, taxas e equações químicas. Estas usam MathJax básico com `\mathrm{}` e setas manuais; `\ce{}`/mhchem está proibido após falha confirmada no render final.
 4. **Regra própria: cálculo a serviço da interpretação biológica**, nunca álgebra abstrata — vem do balizamento da 3ª série nos blueprints ("Hardy-Weinberg como ferramenta de interpretação"). Todo resultado termina em leitura do fenômeno ("4 em cada 100 pessoas carregam o alelo"). Virou item de autovalidação.
 5. **Modelos com suas limitações** quando o nível permitir — pedido da memória do projeto para EM.
 6. **Temas de fronteira** (origem da vida, evolução, bioética): ciência com rigor + conexão de valor com honestidade, sem forçar concordância nem criar oposição artificial. (Decisão nova deste kit; conferir com o Felipe no piloto.)
 7. **Conteúdo denso = fatias finas** (ciclos, frequências, vias metabólicas) — o fatiamento já vem do blueprint; a aula não incha.
-8. **O teto não pode virar meta** (21/07/2026). Com teto 400 + piso 250, as 24 aulas do 3º bim saíram todas na faixa 287–400 (média 337) e **nenhuma violou o validador** — o intervalo "seguro" virou o alvo. Correção: teto para **300**, piso afundado para **180** (só pega aula truncada), e alvo declarado de **220–250** no prompt. **Não reabrir sem o Felipe** — foi ele quem pediu o corte após ler os capítulos do 3º bim.
+8. **O teto não pode virar meta** (21/07/2026). Com teto 400 + piso 250, as 24 aulas do 3º bim saíram todas na faixa 287–400 (média 337) e **nenhuma violou o validador** — o intervalo "seguro" virou o alvo. A primeira correção levou o teto a 300 e o alvo a 220–250; essa calibragem foi novamente reduzida após leitura do Felipe (ver item 12).
 9. **O material é referência do aluno, não texto autoexplicativo** (21/07/2026). Definido pelo Felipe: *"o material é uma referência para o aluno, mas a explicação vem do professor"*. Consequência medida: os capítulos tinham **o mesmo tamanho** do texto-referência que ele aprovou (255 vs 250 palavras) e ainda assim liam como "texto demais" — porque tinham **78% de prosa corrida contra 46% da referência**, e 11 de 24 aulas sem uma única lista. **Contagem de palavras não detecta esse defeito.** Entrou a seção **FORMA DO CONTEÚDO — prosa + marcadores** no prompt (idêntica nas 9 disciplinas), com a regra operacional que produz a mistura certa: **no máximo 2 frases seguidas antes de uma lista**, tabela para 2+ itens a contrastar, definição em 1 frase (se precisar de mais, vira bullet), abertura ≤ 25 palavras, subseções numeradas `N.1`.
 10. **Percentual de prosa é diagnóstico, não portão** (21/07/2026). O validador mede (`[2b] Prosa × marcadores`) mas **não reprova** — pedido do Felipe de "deixar mais solto". Travar num percentual produz bullet forçado e raciocínio picotado; o que vale é a regra operacional do item 9. O único aviso que se sustenta sozinho é o caso inequívoco: aula inteira sem lista nem tabela.
 11. **Versículo é condicional, nunca por trocadilho** (21/07/2026). Dos 7 versículos do 3º bim, **4 ligavam por palavra**, não por conceito (organela "menor" ↔ "ao menor destes"; população "pequena" ↔ "pequenino"; "todas as manhãs" ↔ "renovam-se cada manhã"; imune "amigo fiel" ↔ "ama o amigo"). **Os trocadilhos vinham prescritos nos blueprints** — a raiz era a regra "1 versículo obrigatório por capítulo". Agora: versículo só com ligação conceitual, validado pelo **teste do sinônimo** (a ligação sobrevive se eu trocar o termo em comum por um sinônimo?); capítulo sem versículo é entrega válida; o blueprint deixa de ser autoritativo neste ponto. **Pendente:** corrigir as conexões VP nos blueprints.
+12. **Biologia precisa ser mais enxuta que o padrão geral** (22/07/2026). Após ler os 13 capítulos completos do 3º bimestre, o Felipe considerou o conteúdo bom, porém ainda extenso. Nova regra específica: **alvo de 180–210 palavras por aula e teto firme de 220**, preservando integralmente o recorte do blueprint. Os 13 capítulos foram revisados: 48 aulas ficaram entre 180 e 219 palavras, com média de **192,8** (antes, 245,9), redução de **21,6%**. O validador local passou a aplicar o teto de 220 como falha, não aviso.
 
 ## 4. Estado e próximos passos
 
@@ -58,6 +59,8 @@ Kit criado em **19/07/2026**, derivado do kit de Ciências (as instruções e a 
 | 21/07/2026 | **Resultado final da recalibragem:** 337 → **232 pal./aula**, prosa 78% → 51%, zero aulas sem lista (eram 11 de 24). Versículos de 7 para 2 — sobreviveram Gn 1:27 no código genético universal (9º ano) e em Hardy-Weinberg/"não existe indivíduo geneticamente superior" (3ª série), os dois casos em que o conteúdo levanta a questão do valor humano por conta própria. |
 | 21/07/2026 | Capítulo-piloto do 9º ano transferido para `modelos/biologia-9ano-modelo.md`; criada a organização de um modelo por série, com validação independente. |
 | 21/07/2026 | Conjunto de modelos concluído: 9º ano e 1ª–3ª séries do EM, todos conferidos com o validador de Biologia. |
+| 22/07/2026 | **Revisão de concisão do 3º bimestre concluída:** 13 capítulos e 48 aulas revisados, sem retirar itens dos blueprints. Média de 245,9 para **192,8 palavras/aula** (−21,6%); faixa final de 180–219. `AUTOR.md` e validador local atualizados para alvo 180–210 e teto firme de 220. |
+| 23/07/2026 | **Convenção química corrigida:** a falha de mhchem confirmada no render de Química foi propagada para Biologia. O autor passou a usar `\mathrm{}` e `\rightarrow` nas equações, e o validador reprova qualquer ocorrência de `\ce{}`. |
 
 ---
 

@@ -1,0 +1,35 @@
+{
+  "versao": 1,
+  "disciplina": "quimica",
+  "ano_serie": "9ano",
+  "titulo_documento": "Sais, óxidos e neutralização",
+  "slug_documento": "3bim-cap2-sais-oxidos-neutralizacao",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Quimica/9ano/quimica-9ano-3bim-cap2.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-oxidos-acido-basico",
+      "pagina": 1,
+      "arquivo": "fig-01-oxidos-acido-basico.png",
+      "alt": "Comparação entre dióxido de carbono formando meio ácido e óxido de cálcio formando meio básico ao reagirem com água",
+      "aprovada": true,
+      "sha256": "36acdbfa50e6ddb0ab0ebe92a30007be3be0ddf7dc6f069598988dadc0771277",
+      "largura_px": 1418,
+      "altura_px": 892,
+      "publicado_sha256": "36acdbfa50e6ddb0ab0ebe92a30007be3be0ddf7dc6f069598988dadc0771277",
+      "publicado_commit": "1b36fb0a2b21ddeebbe2fbe8a29abc31055f7a38"
+    },
+    {
+      "id": "fig-02-neutralizacao-ionica",
+      "pagina": 2,
+      "arquivo": "fig-02-neutralizacao-ionica.png",
+      "alt": "Esquema em partículas mostrando hidrônio e hidróxido formando água enquanto sódio e cloreto permanecem como íons do sal",
+      "aprovada": true,
+      "sha256": "d3d1f642f532c9955f4afd7b710673f60674c3b11c1970c88463ef99b7ae103b",
+      "largura_px": 1518,
+      "altura_px": 898,
+      "publicado_sha256": "d3d1f642f532c9955f4afd7b710673f60674c3b11c1970c88463ef99b7ae103b",
+      "publicado_commit": "1b36fb0a2b21ddeebbe2fbe8a29abc31055f7a38"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "versao": 1,
+  "disciplina": "fisica",
+  "ano_serie": "1serie",
+  "titulo_documento": "Aplicações da dinâmica",
+  "slug_documento": "aplicacoes-da-dinamica",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Fisica/1serie/fisica-1serie-3bim-cap3.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-transicao-do-atrito-estatico-ao-cinetico",
+      "pagina": 1,
+      "arquivo": "fig-01-transicao-do-atrito-estatico-ao-cinetico.png",
+      "alt": "Gráfico qualitativo em que o atrito estático cresce com a força aplicada até um máximo e então diminui para o patamar do atrito cinético",
+      "aprovada": true,
+      "sha256": "85210ae9227908353830fc0d9054f91e5c2b562fa6c24f634ee1dc2f683858a7",
+      "largura_px": 1140,
+      "altura_px": 886,
+      "publicado_sha256": "85210ae9227908353830fc0d9054f91e5c2b562fa6c24f634ee1dc2f683858a7",
+      "publicado_commit": "9934fd2ba023e22ac040759d9fa7e58cbaafa707"
+    },
+    {
+      "id": "fig-02-diagrama-de-corpo-livre-horizontal",
+      "pagina": 2,
+      "arquivo": "fig-02-diagrama-de-corpo-livre-horizontal.png",
+      "alt": "Caixa isolada com peso para baixo, normal para cima, força aplicada para a direita e atrito para a esquerda",
+      "aprovada": true,
+      "sha256": "33aa8ba97116154c230c0a4a54f5eb2ec5371971ef18fa3cfa963fc5eb87ca0f",
+      "largura_px": 1075,
+      "altura_px": 1016,
+      "publicado_sha256": "33aa8ba97116154c230c0a4a54f5eb2ec5371971ef18fa3cfa963fc5eb87ca0f",
+      "publicado_commit": "9934fd2ba023e22ac040759d9fa7e58cbaafa707"
+    },
+    {
+      "id": "fig-03-decomposicao-do-peso-na-rampa",
+      "pagina": 3,
+      "arquivo": "fig-03-decomposicao-do-peso-na-rampa.png",
+      "alt": "Bloco em rampa com peso vertical decomposto em uma componente paralela e outra perpendicular ao plano inclinado",
+      "aprovada": true,
+      "sha256": "6ee73a2f1e4d6a80a025b4568c935467ab02d6c96dc6c6a0e29911ad655c3fbb",
+      "largura_px": 1282,
+      "altura_px": 1028,
+      "publicado_sha256": "6ee73a2f1e4d6a80a025b4568c935467ab02d6c96dc6c6a0e29911ad655c3fbb",
+      "publicado_commit": "9934fd2ba023e22ac040759d9fa7e58cbaafa707"
+    },
+    {
+      "id": "fig-04-velocidade-e-resultante-centripeta",
+      "pagina": 4,
+      "arquivo": "fig-04-velocidade-e-resultante-centripeta.png",
+      "alt": "Corpo em trajetória circular com velocidade tangente à curva e força resultante dirigida para o centro",
+      "aprovada": true,
+      "sha256": "e19f224face2143df05b9e73113a3c272aaee6e0d915b7ea111d6082a03f0452",
+      "largura_px": 1193,
+      "altura_px": 1081,
+      "publicado_sha256": "e19f224face2143df05b9e73113a3c272aaee6e0d915b7ea111d6082a03f0452",
+      "publicado_commit": "9934fd2ba023e22ac040759d9fa7e58cbaafa707"
+    },
+    {
+      "id": "fig-05-atrito-na-curva-plana",
+      "pagina": 5,
+      "arquivo": "fig-05-atrito-na-curva-plana.png",
+      "alt": "Vista superior de carro em curva plana com velocidade tangente à pista e atrito apontando para o centro da trajetória",
+      "aprovada": true,
+      "sha256": "91ba492b775a62b4511d11119d642c2722f62295bfde168811af5622be25fd66",
+      "largura_px": 1193,
+      "altura_px": 1146,
+      "publicado_sha256": "91ba492b775a62b4511d11119d642c2722f62295bfde168811af5622be25fd66",
+      "publicado_commit": "9934fd2ba023e22ac040759d9fa7e58cbaafa707"
+    },
+    {
+      "id": "fig-06-forcas-na-lombada-e-no-vale",
+      "pagina": 6,
+      "arquivo": "fig-06-forcas-na-lombada-e-no-vale.png",
+      "alt": "Comparação entre topo de lombada, onde a normal é menor que o peso, e fundo de vale, onde a normal é maior que o peso",
+      "aprovada": true,
+      "sha256": "39184d83b8e0f29bf2a8746fd0693033ba4a7241a5ad4a8d7db7bf76b27bafbc",
+      "largura_px": 1123,
+      "altura_px": 1382,
+      "publicado_sha256": "39184d83b8e0f29bf2a8746fd0693033ba4a7241a5ad4a8d7db7bf76b27bafbc",
+      "publicado_commit": "9934fd2ba023e22ac040759d9fa7e58cbaafa707"
+    },
+    {
+      "id": "fig-07-forcas-no-topo-e-na-base-do-looping",
+      "pagina": 7,
+      "arquivo": "fig-07-forcas-no-topo-e-na-base-do-looping.png",
+      "alt": "Looping vertical com peso dirigido ao centro e normal tendendo a zero no topo limite, além de normal maior que o peso na base",
+      "aprovada": true,
+      "sha256": "63bca0faada8dab0028a25d9a2f99a7c4b8c0a1350c815c45a5fcf855f4692ac",
+      "largura_px": 1217,
+      "altura_px": 1317,
+      "publicado_sha256": "63bca0faada8dab0028a25d9a2f99a7c4b8c0a1350c815c45a5fcf855f4692ac",
+      "publicado_commit": "9934fd2ba023e22ac040759d9fa7e58cbaafa707"
+    },
+    {
+      "id": "fig-08-sistema-de-blocos-e-diagramas",
+      "pagina": 8,
+      "arquivo": "fig-08-sistema-de-blocos-e-diagramas.png",
+      "alt": "Blocos ligados por uma corda sobre polia acompanhados dos diagramas de forças separados para o bloco da mesa e o bloco pendente",
+      "aprovada": true,
+      "sha256": "4db33c2ed1316f7f2881944554caf5fda2b729d7d569e0f9fb8f7e43fcd28c65",
+      "largura_px": 1382,
+      "altura_px": 1388,
+      "publicado_sha256": "4db33c2ed1316f7f2881944554caf5fda2b729d7d569e0f9fb8f7e43fcd28c65",
+      "publicado_commit": "9934fd2ba023e22ac040759d9fa7e58cbaafa707"
+    }
+  ]
+}

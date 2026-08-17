@@ -1,0 +1,83 @@
+{
+  "versao": 1,
+  "disciplina": "geometria",
+  "ano_serie": "9ano",
+  "titulo_documento": "Geometria espacial e representações",
+  "slug_documento": "geometria-espacial-e-representacoes",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Geometria/9ano/geometria-9ano-3bim-cap2.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-posicoes-entre-retas-no-espaco",
+      "pagina": 1,
+      "arquivo": "fig-01-posicoes-entre-retas-no-espaco.png",
+      "alt": "Comparação espacial entre retas paralelas, concorrentes e reversas com indicação dos planos que as contêm",
+      "aprovada": true,
+      "sha256": "92359d97da925906a3c6d3006dfeb70c99f5ac6f9baa28be937a408e0ce57212",
+      "largura_px": 1323,
+      "altura_px": 1223,
+      "publicado_sha256": "92359d97da925906a3c6d3006dfeb70c99f5ac6f9baa28be937a408e0ce57212",
+      "publicado_commit": "c19b60f726a803a0640ce1c4efc0732d8403028d"
+    },
+    {
+      "id": "fig-02-posicoes-entre-reta-e-plano",
+      "pagina": 2,
+      "arquivo": "fig-02-posicoes-entre-reta-e-plano.png",
+      "alt": "Reta contida em um plano, reta paralela ao plano e reta secante ao plano em um ponto",
+      "aprovada": true,
+      "sha256": "a342c059c055261944d29645774accd58666a4dbae7f3eb5e0213b61bbdfcfd7",
+      "largura_px": 1335,
+      "altura_px": 573,
+      "publicado_sha256": "a342c059c055261944d29645774accd58666a4dbae7f3eb5e0213b61bbdfcfd7",
+      "publicado_commit": "c19b60f726a803a0640ce1c4efc0732d8403028d"
+    },
+    {
+      "id": "fig-03-posicoes-entre-planos",
+      "pagina": 3,
+      "arquivo": "fig-03-posicoes-entre-planos.png",
+      "alt": "Comparação entre dois planos paralelos, secantes em uma reta e coincidentes",
+      "aprovada": true,
+      "sha256": "00798ff6bafc2cc005f81021b8f16034ee38077a6718329a48ef00caeaa734bf",
+      "largura_px": 1335,
+      "altura_px": 1069,
+      "publicado_sha256": "00798ff6bafc2cc005f81021b8f16034ee38077a6718329a48ef00caeaa734bf",
+      "publicado_commit": "c19b60f726a803a0640ce1c4efc0732d8403028d"
+    },
+    {
+      "id": "fig-04-elementos-de-um-poliedro",
+      "pagina": 4,
+      "arquivo": "fig-04-elementos-de-um-poliedro.png",
+      "alt": "Cubo com um vértice, uma aresta e uma face destacados e identificados",
+      "aprovada": true,
+      "sha256": "27e47de2125e27a41f65b02cf296289069c482b800337a5c468b0e1aa7e33e82",
+      "largura_px": 1205,
+      "altura_px": 1052,
+      "publicado_sha256": "27e47de2125e27a41f65b02cf296289069c482b800337a5c468b0e1aa7e33e82",
+      "publicado_commit": "c19b60f726a803a0640ce1c4efc0732d8403028d"
+    },
+    {
+      "id": "fig-05-objeto-e-tres-vistas-ortogonais",
+      "pagina": 5,
+      "arquivo": "fig-05-objeto-e-tres-vistas-ortogonais.png",
+      "alt": "Peça tridimensional ligada às vistas frontal, lateral e superior com dimensões compartilhadas",
+      "aprovada": true,
+      "sha256": "671a8984b67436e96e4a84cb99e6f8932149db8aa391f748fbd5d8c748d51072",
+      "largura_px": 1335,
+      "altura_px": 1282,
+      "publicado_sha256": "671a8984b67436e96e4a84cb99e6f8932149db8aa391f748fbd5d8c748d51072",
+      "publicado_commit": "c19b60f726a803a0640ce1c4efc0732d8403028d"
+    },
+    {
+      "id": "fig-06-perspectiva-e-arestas-ocultas",
+      "pagina": 6,
+      "arquivo": "fig-06-perspectiva-e-arestas-ocultas.png",
+      "alt": "Peça em perspectiva cavaleira com arestas visíveis contínuas e arestas escondidas tracejadas",
+      "aprovada": true,
+      "sha256": "0fc7e8fd6875dbf15475a0bb47fb0b5262649a3baaf3aa04cc95866275a15ed6",
+      "largura_px": 1241,
+      "altura_px": 1052,
+      "publicado_sha256": "0fc7e8fd6875dbf15475a0bb47fb0b5262649a3baaf3aa04cc95866275a15ed6",
+      "publicado_commit": "c19b60f726a803a0640ce1c4efc0732d8403028d"
+    }
+  ]
+}

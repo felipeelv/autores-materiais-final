@@ -1,4 +1,4 @@
-# Capítulo 1 — Urbanização do Brasil
+# BL1_Capítulo 1 — Urbanização do Brasil
 
 > Se o Brasil é 87% urbano, por que a gente ainda imagina o país como campo, sertão e Amazônia? Onde estão os 180 milhões de brasileiros que vivem em cidades?
 
@@ -39,12 +39,6 @@ Nos anos 1950, a indústria automobilística atraiu trabalhadores e outras empre
 
 ### 1.3 Celso Furtado e as regiões
 
-> 👤 **Esse foi o “cara”:**  
-> - Celso Furtado publicou *Formação Econômica do Brasil* em 1959;  
-> - explicou o subdesenvolvimento como processo histórico;  
-> - criou a SUDENE para enfrentar desigualdades regionais.  
-> Seu trabalho mostrou que o crescimento não acontece do mesmo modo em todo o território.
-
 A concentração industrial no Sudeste ajuda a explicar por que tantas pessoas migraram para essa região.
 
 ---
@@ -61,7 +55,9 @@ Entre 1950 e 1980, cerca de 40 milhões de pessoas deixaram o campo brasileiro.
 
 O movimento alterou ao mesmo tempo a população do campo e das cidades.
 
-> A decisão combinava dificuldades na origem e expectativas no destino.
+> 💭 **Você já pensou nisso?**
+>
+> Por que a ida à cidade não dependia de um único motivo? A decisão combinava dificuldades no campo e expectativas de uma vida melhor no destino.
 
 ### 2.2 Expulsão e atração
 
@@ -110,11 +106,11 @@ No mesmo município, uma pessoa acorda com ônibus; outra, com máquinas da lavo
 - áreas urbanas concentram comércio, indústria e serviços;
 - áreas rurais concentram agricultura e criação de animais.
 
-O limite oficial recebe o nome de **perímetro urbano**.
+> 🔎 **Curiosidade:**
+>
+> O limite oficial entre cidade e campo recebe o nome de **perímetro urbano**, mas nem sempre corresponde ao cotidiano dos moradores.
 
 ### 3.2 Uma fronteira pouco nítida
-
-A linha legal nem sempre corresponde ao cotidiano.
 
 Uma cidade pequena pode ter moradores que trabalham na roça.
 
@@ -160,9 +156,9 @@ A hierarquia reúne quatro níveis de alcance:
 - **metrópole regional:** influencia parte do país;
 - **metrópole nacional:** oferece serviços e decisões de alcance nacional.
 
-São Paulo e Rio de Janeiro são metrópoles nacionais.
-
-Salvador, Recife, Fortaleza, Belo Horizonte e Curitiba exercem influência regional.
+> 🔎 **Curiosidade:**
+>
+> São Paulo e Rio de Janeiro são metrópoles nacionais; Salvador, Recife, Fortaleza, Belo Horizonte e Curitiba exercem influência regional.
 
 ### 4.3 Fluxos entre as cidades
 
@@ -204,10 +200,11 @@ Uma **região metropolitana** reúne municípios vizinhos ligados no cotidiano e
 Essa integração aparece em três movimentos:
 
 - moradia, trabalho e serviços podem ficar em cidades diferentes;
-- o deslocamento diário entre moradia e trabalho chama-se **movimento pendular**;
 - o mesmo movimento ocorre para estudo, atendimento médico e outros serviços.
 
-> Metrópole é uma cidade; região metropolitana é o conjunto integrado de municípios ao redor dela.
+> 🔎 **Curiosidade:**
+>
+> O deslocamento diário entre a moradia e outra cidade para trabalhar ou estudar chama-se **movimento pendular**. Esse vaivém liga rotinas e serviços de municípios diferentes.
 
 ### 5.3 Planejamento compartilhado
 
@@ -259,8 +256,6 @@ O rio poluído em um município segue para o seguinte.
 
 O congestionamento também alcança vias de várias cidades.
 
-> A mancha urbana é contínua, mas cada prefeitura possui responsabilidades próprias.
-
-Isso exige decisões conjuntas para serviços que ultrapassam as placas municipais.
-
-A conurbação torna visível uma rede urbana que já funciona de maneira integrada.
+> 💭 **Você já pensou nisso?**
+>
+> Se poluição e congestionamento atravessam divisas, uma prefeitura consegue agir sozinha? Cada uma mantém responsabilidades próprias, mas a conurbação exige decisões conjuntas.

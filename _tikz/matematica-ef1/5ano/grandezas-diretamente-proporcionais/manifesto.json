@@ -1,0 +1,23 @@
+{
+  "versao": 1,
+  "disciplina": "matematica-ef1",
+  "ano_serie": "5ano",
+  "titulo_documento": "Grandezas diretamente proporcionais",
+  "slug_documento": "grandezas-diretamente-proporcionais",
+  "arquivo_markdown": "Matematica EF1/_staging-3bim/5ano/Grandezas diretamente proporcionais.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-bananas-e-precos",
+      "pagina": 1,
+      "arquivo": "fig-01-bananas-e-precos.png",
+      "alt": "Um, dois e três quilogramas de bananas aparecem associados a quatro, oito e doze reais",
+      "aprovada": true,
+      "sha256": "0c5b42507a9cdaee451451f43af4ebe9c45591467a1501c1a1ae71a6c3968754",
+      "largura_px": 1548,
+      "altura_px": 833,
+      "publicado_sha256": "0c5b42507a9cdaee451451f43af4ebe9c45591467a1501c1a1ae71a6c3968754",
+      "publicado_commit": "4e1b9f1f02c8ff66e9f3b213c89bd40f0ec8ba95"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-matematica-ef1}
+
+\newcommand{\Cacho}[2]{%
+  \foreach \a in {0,60,...,300}\fill[matemalaranja] ($(#1,#2)+(\a:.28)$) circle (.19);
+  \fill[matemalaranja] (#1,#2) circle (.19);
+  \draw[matematica contorno] (#1,#2+.30)--(#1+.20,#2+.58);
+}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-bananas-e-precos
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (12.30,6.25);
+  \foreach \x/\kg/\preco/\q in {1.7/1/R\$ 4/1,6.0/2/R\$ 8/2,10.3/3/R\$ 12/3}{
+    \draw[matematica contorno,rounded corners=8pt,fill=matemazulclaro]
+      (\x-1.45,.70) rectangle (\x+1.45,5.45);
+    \foreach \i in {1,...,\q}\Cacho{\x-0.50+0.50*\i}{3.75}
+    \node[matematica valor] at (\x,2.45) {$\kg\text{ kg}$};
+    \node[matematica resultado] at (\x,1.40) {\preco};
+  }
+  \draw[-{Stealth[length=2.8mm]},matematica destaque] (3.25,3.05)--(4.45,3.05);
+  \draw[-{Stealth[length=2.8mm]},matematica destaque] (7.55,3.05)--(8.75,3.05);
+\end{tikzpicture}
+
+\end{document}

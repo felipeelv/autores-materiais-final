@@ -1,0 +1,47 @@
+{
+  "versao": 1,
+  "disciplina": "matematica-ef1",
+  "ano_serie": "4ano",
+  "titulo_documento": "Medidas de comprimento, massa e capacidade",
+  "slug_documento": "medidas-de-comprimento-massa-e-capacidade",
+  "arquivo_markdown": "Matematica EF1/_staging-3bim/4ano/Medidas de comprimento, massa e capacidade.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-leitura-da-regua",
+      "pagina": 1,
+      "arquivo": "fig-01-leitura-da-regua.png",
+      "alt": "Lápis alinhado ao zero de uma régua mede quatorze centímetros",
+      "aprovada": true,
+      "sha256": "174bfbc60dfa171026bcf633f9b204b7e72f6a36cc18110b7e3d87a6a29fd98b",
+      "largura_px": 1052,
+      "altura_px": 597,
+      "publicado_sha256": "174bfbc60dfa171026bcf633f9b204b7e72f6a36cc18110b7e3d87a6a29fd98b",
+      "publicado_commit": "dbdfb07df2463cf73ab0a4dfef9e257b1be02668"
+    },
+    {
+      "id": "fig-02-perimetro-de-figuras",
+      "pagina": 2,
+      "arquivo": "fig-02-perimetro-de-figuras.png",
+      "alt": "Contorno de um retângulo mostra lados de seis e três centímetros somados para medir o perímetro",
+      "aprovada": true,
+      "sha256": "ff481fc6ee5ad5dcc52e5aefaccc57630528f5743438e3a3f99f38949bfd2704",
+      "largura_px": 1134,
+      "altura_px": 786,
+      "publicado_sha256": "ff481fc6ee5ad5dcc52e5aefaccc57630528f5743438e3a3f99f38949bfd2704",
+      "publicado_commit": "dbdfb07df2463cf73ab0a4dfef9e257b1be02668"
+    },
+    {
+      "id": "fig-03-leitura-da-jarra",
+      "pagina": 3,
+      "arquivo": "fig-03-leitura-da-jarra.png",
+      "alt": "Escala de uma jarra graduada indica seiscentos mililitros",
+      "aprovada": true,
+      "sha256": "51ff25ffa36953d1fefbd7a9191319f3045c6a53f017e4c03d916793c9032688",
+      "largura_px": 898,
+      "altura_px": 981,
+      "publicado_sha256": "51ff25ffa36953d1fefbd7a9191319f3045c6a53f017e4c03d916793c9032688",
+      "publicado_commit": "dbdfb07df2463cf73ab0a4dfef9e257b1be02668"
+    }
+  ]
+}

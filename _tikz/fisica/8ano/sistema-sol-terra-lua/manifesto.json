@@ -1,0 +1,95 @@
+{
+  "versao": 1,
+  "disciplina": "fisica",
+  "ano_serie": "8ano",
+  "titulo_documento": "Sistema Sol-Terra-Lua",
+  "slug_documento": "sistema-sol-terra-lua",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Fisica/8ano/fisica-8ano-3bim-cap2.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-escala-terra-lua-sol",
+      "pagina": 1,
+      "arquivo": "fig-01-escala-terra-lua-sol.png",
+      "alt": "Comparação esquemática das distâncias Terra-Lua e Terra-Sol com razão aproximada de 390",
+      "aprovada": true,
+      "sha256": "3d370e7967e1f9ee2f6f9b25e6af0d9eb7a4f49a75a21ce38ad25425227ebecb",
+      "largura_px": 1394,
+      "altura_px": 1040,
+      "publicado_sha256": "3d370e7967e1f9ee2f6f9b25e6af0d9eb7a4f49a75a21ce38ad25425227ebecb",
+      "publicado_commit": "0dc76e2bc84f08377a8714ad5fff0a9a6a54b70e"
+    },
+    {
+      "id": "fig-02-rotacao-e-translacao-da-terra",
+      "pagina": 2,
+      "arquivo": "fig-02-rotacao-e-translacao-da-terra.png",
+      "alt": "Terra girando em torno do próprio eixo e percorrendo uma órbita ao redor do Sol",
+      "aprovada": true,
+      "sha256": "cc98795432a16a0b15444d851bdb43902a6555547f33ffebdfd178167d82753b",
+      "largura_px": 1347,
+      "altura_px": 1229,
+      "publicado_sha256": "cc98795432a16a0b15444d851bdb43902a6555547f33ffebdfd178167d82753b",
+      "publicado_commit": "0dc76e2bc84f08377a8714ad5fff0a9a6a54b70e"
+    },
+    {
+      "id": "fig-03-inclinacao-do-eixo-e-estacoes",
+      "pagina": 3,
+      "arquivo": "fig-03-inclinacao-do-eixo-e-estacoes.png",
+      "alt": "Terra em dois pontos da órbita com eixo inclinado e hemisférios recebendo luz diferente",
+      "aprovada": true,
+      "sha256": "5fec7f0c6b62e5430a59f21dff0f14bdf9b1e0577dd383eafdb0c56f7417309d",
+      "largura_px": 1418,
+      "altura_px": 1182,
+      "publicado_sha256": "5fec7f0c6b62e5430a59f21dff0f14bdf9b1e0577dd383eafdb0c56f7417309d",
+      "publicado_commit": "0dc76e2bc84f08377a8714ad5fff0a9a6a54b70e"
+    },
+    {
+      "id": "fig-04-geometria-das-fases-da-lua",
+      "pagina": 4,
+      "arquivo": "fig-04-geometria-das-fases-da-lua.png",
+      "alt": "Quatro posições da Lua ao redor da Terra e as fases correspondentes vistas da Terra",
+      "aprovada": true,
+      "sha256": "b7ff790c047777323eb9e1bb01bccbd1af958bf1da3592eec5c6dedd781f2a46",
+      "largura_px": 1418,
+      "altura_px": 1347,
+      "publicado_sha256": "b7ff790c047777323eb9e1bb01bccbd1af958bf1da3592eec5c6dedd781f2a46",
+      "publicado_commit": "0dc76e2bc84f08377a8714ad5fff0a9a6a54b70e"
+    },
+    {
+      "id": "fig-05-eclipse-solar-e-lunar",
+      "pagina": 5,
+      "arquivo": "fig-05-eclipse-solar-e-lunar.png",
+      "alt": "Comparação dos alinhamentos Sol-Lua-Terra e Sol-Terra-Lua com os cones de sombra",
+      "aprovada": true,
+      "sha256": "dc0daa91c188f85b6760a8a1f1927653dc6c3a35449ee1ded28ef624bf570d26",
+      "largura_px": 1441,
+      "altura_px": 1418,
+      "publicado_sha256": "dc0daa91c188f85b6760a8a1f1927653dc6c3a35449ee1ded28ef624bf570d26",
+      "publicado_commit": "0dc76e2bc84f08377a8714ad5fff0a9a6a54b70e"
+    },
+    {
+      "id": "fig-06-orbita-lunar-inclinada",
+      "pagina": 6,
+      "arquivo": "fig-06-orbita-lunar-inclinada.png",
+      "alt": "Plano orbital lunar inclinado em relação ao plano da órbita terrestre com passagem acima e abaixo",
+      "aprovada": true,
+      "sha256": "8f6eaab2d3039d2d5f76b03959afe71a83b9ab804369e779c8b4a83db35a833d",
+      "largura_px": 1394,
+      "altura_px": 1146,
+      "publicado_sha256": "8f6eaab2d3039d2d5f76b03959afe71a83b9ab804369e779c8b4a83db35a833d",
+      "publicado_commit": "0dc76e2bc84f08377a8714ad5fff0a9a6a54b70e"
+    },
+    {
+      "id": "fig-07-sizigia-e-quadratura",
+      "pagina": 7,
+      "arquivo": "fig-07-sizigia-e-quadratura.png",
+      "alt": "Alinhamento e configuração transversal de Sol, Terra e Lua associados às marés",
+      "aprovada": true,
+      "sha256": "eafd1e9f364c205bd0843e4398b236dc6c64b85960a9eb85df462a73a90bafe6",
+      "largura_px": 1418,
+      "altura_px": 1371,
+      "publicado_sha256": "eafd1e9f364c205bd0843e4398b236dc6c64b85960a9eb85df462a73a90bafe6",
+      "publicado_commit": "0dc76e2bc84f08377a8714ad5fff0a9a6a54b70e"
+    }
+  ]
+}

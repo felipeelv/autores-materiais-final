@@ -1,3 +1,15 @@
 .DS_Store
 __pycache__/
 *.pyc
+
+# Área de rascunho e caches de ferramenta
+tmp/
+.firecrawl/
+Captura de Tela *.png
+
+# Artefatos regeneráveis do pipeline TikZ privado
+_tikz/**/build/
+_tikz/**/*.aux
+_tikz/**/*.log
+_tikz/**/*.pdf
+_tikz/**/*.synctex.gz

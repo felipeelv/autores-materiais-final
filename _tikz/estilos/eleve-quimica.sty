@@ -1,0 +1,117 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{eleve-quimica}[2026/07/23 Estilo TikZ de Química do Colégio Eleve]
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage{lmodern}
+\RequirePackage{amsmath}
+\RequirePackage{tikz}
+\usetikzlibrary{
+  arrows.meta,
+  calc,
+  decorations.markings,
+  positioning,
+  shapes.geometric
+}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{quimicaazul}{HTML}{245B78}
+\definecolor{quimicaazulclaro}{HTML}{DCEAF1}
+\definecolor{quimicalaranja}{HTML}{D97732}
+\definecolor{quimicalaranjaclaro}{HTML}{F7E4D5}
+\definecolor{quimicacinza}{HTML}{52606D}
+\definecolor{quimicacinzaclaro}{HTML}{E9EEF2}
+\definecolor{quimicaverde}{HTML}{3C7A57}
+\definecolor{quimicaverdeclaro}{HTML}{DDEDE3}
+
+\tikzset{
+  quimica figura/.style={
+    >=Stealth,
+    line cap=round,
+    line join=round,
+    font=\sffamily,
+    every node/.style={font=\sffamily}
+  },
+  quimica eixo/.style={
+    draw=quimicacinza,
+    ->,
+    line width=1.05pt
+  },
+  quimica auxiliar/.style={
+    draw=quimicacinza,
+    dashed,
+    line width=0.9pt
+  },
+  quimica direta/.style={
+    draw=quimicaazul,
+    line width=2pt
+  },
+  quimica inversa/.style={
+    draw=quimicalaranja,
+    line width=2pt,
+    dashed
+  },
+  quimica processo/.style={
+    draw=quimicaazul,
+    fill=quimicaazulclaro,
+    line width=1.4pt,
+    rounded corners=3pt,
+    text=quimicacinza,
+    font=\large\bfseries,
+    align=center,
+    minimum height=1.25cm
+  },
+  quimica separacao/.style={
+    draw=quimicaverde,
+    fill=quimicaverdeclaro,
+    line width=1.4pt,
+    rounded corners=3pt,
+    text=quimicacinza,
+    font=\large\bfseries,
+    align=center,
+    minimum height=1.25cm
+  },
+  quimica fluxo/.style={
+    draw=quimicaazul,
+    ->,
+    line width=1.7pt
+  },
+  quimica retorno/.style={
+    draw=quimicalaranja,
+    ->,
+    dashed,
+    line width=1.55pt
+  },
+  quimica recipiente/.style={
+    draw=quimicacinza,
+    fill=quimicacinzaclaro,
+    line width=1.35pt,
+    rounded corners=2pt
+  },
+  quimica particula azul/.style={
+    circle,
+    draw=quimicaazul,
+    fill=quimicaazulclaro,
+    line width=1.1pt,
+    minimum size=0.62cm,
+    inner sep=0pt
+  },
+  quimica particula laranja/.style={
+    circle,
+    draw=quimicalaranja,
+    fill=quimicalaranjaclaro,
+    line width=1.1pt,
+    minimum size=0.62cm,
+    inner sep=0pt
+  },
+  quimica rotulo/.style={
+    text=quimicacinza,
+    font=\large\bfseries,
+    inner sep=2.5pt
+  },
+  quimica destaque/.style={
+    text=quimicalaranja,
+    font=\large\bfseries,
+    inner sep=2.5pt
+  }
+}

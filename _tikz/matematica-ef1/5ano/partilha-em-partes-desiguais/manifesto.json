@@ -1,0 +1,35 @@
+{
+  "versao": 1,
+  "disciplina": "matematica-ef1",
+  "ano_serie": "5ano",
+  "titulo_documento": "Partilha em partes desiguais",
+  "slug_documento": "partilha-em-partes-desiguais",
+  "arquivo_markdown": "Matematica EF1/_staging-3bim/5ano/Partilha em partes desiguais.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-partilha-uma-para-duas",
+      "pagina": 1,
+      "arquivo": "fig-01-partilha-uma-para-duas.png",
+      "alt": "Barra de cento e vinte reais é dividida: uma parte vale quarenta reais e duas partes valem oitenta reais",
+      "aprovada": true,
+      "sha256": "c9e82d012824d251b485ad42ac51c06c8020a7128549af60a743c503d173388e",
+      "largura_px": 1371,
+      "altura_px": 745,
+      "publicado_sha256": "c9e82d012824d251b485ad42ac51c06c8020a7128549af60a743c503d173388e",
+      "publicado_commit": "250110b9b5571d7e2917f1b3a46498dd5eac68cd"
+    },
+    {
+      "id": "fig-02-partilha-do-lucro",
+      "pagina": 2,
+      "arquivo": "fig-02-partilha-do-lucro.png",
+      "alt": "Três barras proporcionais representam vendas de dez, vinte e trinta bilhetes e lucros de cem, duzentos e trezentos reais",
+      "aprovada": true,
+      "sha256": "e477b4811742c0d939fd0d8460e437e2a3f7e546643ee5622b78f2ec0cf99432",
+      "largura_px": 1387,
+      "altura_px": 814,
+      "publicado_sha256": "e477b4811742c0d939fd0d8460e437e2a3f7e546643ee5622b78f2ec0cf99432",
+      "publicado_commit": "250110b9b5571d7e2917f1b3a46498dd5eac68cd"
+    }
+  ]
+}

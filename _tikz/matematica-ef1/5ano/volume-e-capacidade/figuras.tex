@@ -1,0 +1,70 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-matematica-ef1}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-comprimento-area-e-volume
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (10.20,7.45);
+  \fill[matemazulclaro] (1.20,1.40)--(6.20,1.40)--(8.20,3.00)--(3.20,3.00)--cycle;
+  \fill[matemalaranjaclaro,opacity=.65] (3.20,3.00)--(8.20,3.00)--(8.20,6.10)--(3.20,6.10)--cycle;
+  \draw[matematica contorno,line width=2pt] (1.20,1.40)--(6.20,1.40)--(8.20,3.00)--(8.20,6.10)--(3.20,6.10)--(1.20,4.50)--cycle;
+  \draw[matematica contorno] (1.20,4.50)--(6.20,4.50)--(8.20,6.10);
+  \draw[matematica contorno] (6.20,1.40)--(6.20,4.50);
+  \draw[matematica contorno] (3.20,3.00)--(3.20,6.10);
+  \draw[matematica destaque,line width=3pt] (1.20,1.40)--(6.20,1.40);
+  \draw[-{Stealth[length=2.8mm]},matematica destaque] (4.00,.55)--(3.40,1.36);
+  \node[matematica resultado] at (4.70,.40) {comprimento};
+  \draw[-{Stealth[length=2.8mm]},matematica contorno] (9.25,5.70)--(7.40,5.25);
+  \node[matematica valor] at (9.10,6.35) {área};
+  \node[font=\Large\bfseries,text=matemaverde] at (4.65,3.75) {volume};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-cubos-em-camadas
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (10.80,8.40);
+  \foreach \layer/\base/\cor/\lab in {0/0.75/matemazulclaro/camada 1,1/4.45/matemalaranjaclaro/camada 2}{
+    \foreach \x in {0,...,3}\foreach \y in {0,...,2}{
+      \fill[\cor] (1.10+1.15*\x,\base+1.00*\y) rectangle ++(1.10,.95);
+      \draw[matematica contorno] (1.10+1.15*\x,\base+1.00*\y) rectangle ++(1.10,.95);
+    }
+    \node[matematica valor,anchor=west] at (6.25,\base+1.45) {\lab};
+    \node[matematica rotulo,anchor=west] at (6.25,\base+.72) {$12$ cubos};
+  }
+  \draw[-{Stealth[length=3mm]},matematica destaque] (8.10,3.55)--(8.10,4.30);
+  \node[matematica resultado,anchor=west] at (8.45,3.92) {empilhar};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-dimensoes-do-bloco
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (10.80,7.80);
+  \fill[matemazulclaro] (1.20,1.30)--(6.40,1.30)--(8.70,3.10)--(3.50,3.10)--cycle;
+  \draw[matematica contorno,line width=2pt] (1.20,1.30)--(6.40,1.30)--(8.70,3.10)--(8.70,5.70)--(3.50,5.70)--(1.20,3.90)--cycle;
+  \draw[matematica contorno] (1.20,3.90)--(6.40,3.90)--(8.70,5.70);
+  \draw[matematica contorno] (6.40,1.30)--(6.40,3.90);
+  \draw[matematica contorno] (3.50,3.10)--(3.50,5.70);
+  \foreach \i in {1,...,3}\draw[matematica divisao] ({1.20+1.30*\i},1.30)--({1.20+1.30*\i},3.90);
+  \foreach \i in {1,2}\draw[matematica divisao] ({1.20+.77*\i},{1.30+.60*\i})--({6.40+.77*\i},{1.30+.60*\i});
+  \draw[matematica divisao] (1.20,2.60)--(6.40,2.60)--(8.70,4.40)--(3.50,4.40)--cycle;
+  \node[matematica resultado] at (3.80,.52) {$4$ de comprimento};
+  \node[matematica valor,rotate=38] at (7.75,1.65) {$3$ de largura};
+  \node[matematica valor,rotate=90] at (9.35,4.40) {$2$ camadas};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-litro-e-centimetro-cubico
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (10.50,7.40);
+  \fill[matemazulclaro] (1.10,1.10)--(5.80,1.10)--(7.60,2.65)--(2.90,2.65)--cycle;
+  \draw[matematica contorno,line width=2pt] (1.10,1.10)--(5.80,1.10)--(7.60,2.65)--(7.60,6.20)--(2.90,6.20)--(1.10,4.65)--cycle;
+  \draw[matematica contorno] (1.10,4.65)--(5.80,4.65)--(7.60,6.20);
+  \draw[matematica contorno] (5.80,1.10)--(5.80,4.65);
+  \draw[matematica contorno] (2.90,2.65)--(2.90,6.20);
+  \node[matematica valor] at (3.45,.40) {$10\text{ cm}$};
+  \node[matematica valor,rotate=90] at (.45,2.90) {$10\text{ cm}$};
+  \node[matematica valor,rotate=40] at (6.95,1.45) {$10\text{ cm}$};
+  \node[matematica resultado] at (5.05,3.65) {$1000\text{ cm}^3$};
+  \draw[-{Stealth[length=3mm]},matematica destaque] (8.10,3.65)--(9.10,3.65);
+  \node[matematica resultado,anchor=west] at (9.35,3.65) {$1\text{ L}$};
+\end{tikzpicture}
+
+\end{document}

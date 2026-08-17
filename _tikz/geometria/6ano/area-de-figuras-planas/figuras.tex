@@ -1,0 +1,102 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-geometria}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-area-e-perimetro-no-retangulo
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (10.45,5.75);
+  \node[font=\Large\bfseries,text=elevelaranja] at (2.45,5.35) {perímetro};
+  \draw[eleve destaque,line width=3pt] (0.45,1.15) rectangle (4.45,4.45);
+  \node[font=\large,text=elevecinza] at (2.45,0.55) {contorno};
+
+  \node[font=\Large\bfseries,text=eleveazul] at (7.75,5.35) {área};
+  \fill[eleveazulclaro] (5.75,1.15) rectangle (9.75,4.45);
+  \draw[step=.55cm,elevecinza!55,line width=.55pt] (5.75,1.15) grid (9.75,4.45);
+  \draw[eleve aresta,line width=1.6pt] (5.75,1.15) rectangle (9.75,4.45);
+  \node[font=\large,text=elevecinza] at (7.75,0.55) {superfície};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-unidades-quadradas-no-retangulo-e-quadrado
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.10) rectangle (8.45,8.65);
+  \node[font=\Large\bfseries,text=eleveazul] at (4.15,8.25) {linhas $\times$ colunas};
+  \fill[eleveazulclaro] (1.15,4.35) rectangle (7.15,7.35);
+  \draw[step=1cm,eleve aresta,line width=1pt] (1.15,4.35) grid (7.15,7.35);
+  \node[font=\Large\bfseries,text=elevelaranja] at (4.15,3.82) {$6\times3=18$};
+
+  \fill[orange!18] (2.65,0.25) rectangle (5.65,3.25);
+  \draw[step=1cm,eleve destaque,line width=1pt] (2.65,0.25) grid (5.65,3.25);
+  \node[font=\Large\bfseries,text=elevelaranja] at (6.75,1.75) {$3^2=9$};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-recomposicao-do-paralelogramo
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.20) rectangle (8.65,9.30);
+  \coordinate (A) at (1.05,5.55); \coordinate (B) at (6.55,5.55);
+  \coordinate (C) at (7.75,8.05); \coordinate (D) at (2.25,8.05);
+  \fill[eleveazulclaro] (A)--(B)--(C)--(D)--cycle;
+  \fill[orange!28] (A)--(2.25,5.55)--(D)--cycle;
+  \draw[eleve aresta,line width=1.6pt] (A)--(B)--(C)--(D)--cycle;
+  \draw[eleve destaque,dashed] (D)--(2.25,5.55);
+  \draw[eleve destaque,|<->|] (0.55,5.55)--(0.55,8.05)
+    node[midway,left,font=\Large\bfseries] {$h$};
+  \draw[eleve aresta,|<->|] (1.05,5.10)--(6.55,5.10)
+    node[midway,below,font=\Large\bfseries] {$b$};
+
+  \draw[eleve destaque,->,line width=1.8pt] (4.25,4.82)--(4.25,3.78);
+  \node[font=\large\bfseries,text=elevecinza,anchor=west] at (4.55,4.30) {deslocar};
+
+  \fill[eleveazulclaro] (2.25,.55) rectangle (7.75,3.05);
+  \fill[orange!28] (6.55,.55)--(7.75,.55)--(7.75,3.05)--cycle;
+  \draw[eleve aresta,line width=1.6pt] (2.25,.55) rectangle (7.75,3.05);
+  \draw[eleve destaque] (6.55,.55)--(7.75,3.05);
+  \node[font=\large\bfseries,text=eleveazul] at (4.25,.12) {mesma base e altura};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-triangulo-metade-do-paralelogramo
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.10) rectangle (8.85,8.65);
+  \fill[eleveazulclaro] (.65,5.05)--(3.65,5.05)--(2.15,7.75)--cycle;
+  \draw[eleve aresta,line width=1.5pt] (.65,5.05)--(3.65,5.05)--(2.15,7.75)--cycle;
+  \fill[orange!22] (5.05,5.05)--(8.05,5.05)--(6.55,7.75)--cycle;
+  \draw[eleve destaque,line width=1.5pt] (5.05,5.05)--(8.05,5.05)--(6.55,7.75)--cycle;
+  \node[font=\Large\bfseries,text=elevecinza] at (4.35,4.55) {duas cópias};
+  \draw[eleve destaque,->,line width=1.8pt] (4.35,4.20)--(4.35,3.30);
+
+  \fill[eleveazulclaro] (1.10,.45)--(5.65,.45)--(7.15,3.05)--(2.60,3.05)--cycle;
+  \fill[orange!22] (2.60,3.05)--(5.65,.45)--(7.15,3.05)--cycle;
+  \draw[eleve aresta,line width=1.6pt] (1.10,.45)--(5.65,.45)--(7.15,3.05)--(2.60,3.05)--cycle;
+  \draw[eleve destaque] (2.60,3.05)--(5.65,.45);
+  \draw[eleve destaque,|<->|] (.62,.45)--(.62,3.05) node[midway,left,font=\Large\bfseries] {$h$};
+  \draw[eleve aresta,|<->|] (1.10,.08)--(5.65,.08) node[midway,below,font=\Large\bfseries] {$b$};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-duplicacao-do-trapezio
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (9.25,7.20);
+  \fill[eleveazulclaro] (.55,1.15)--(5.05,1.15)--(4.15,4.55)--(1.45,4.55)--cycle;
+  \fill[orange!22] (5.05,1.15)--(7.75,1.15)--(8.65,4.55)--(4.15,4.55)--cycle;
+  \draw[eleve aresta,line width=1.6pt] (.55,1.15)--(5.05,1.15)--(4.15,4.55)--(1.45,4.55)--cycle;
+  \draw[eleve destaque,line width=1.6pt] (5.05,1.15)--(7.75,1.15)--(8.65,4.55)--(4.15,4.55)--cycle;
+  \draw[eleve auxiliar] (5.05,1.15)--(4.15,4.55);
+  \draw[eleve destaque,|<->|] (.15,1.15)--(.15,4.55) node[midway,left,font=\Large\bfseries] {$h$};
+  \draw[eleve aresta,|<->|] (.55,.62)--(7.75,.62) node[midway,below,font=\Large\bfseries] {$B+b$};
+  \node[font=\large\bfseries,text=elevecinza] at (4.60,5.15) {duas cópias iguais};
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-malha-e-decomposicao-de-area
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (8.45,7.20);
+  \draw[step=1cm,elevecinza!55,line width=.7pt] (.65,.65) grid (7.65,6.65);
+  \fill[eleveazulclaro,opacity=.9]
+    (1.15,1.15)--(6.95,1.15)--(7.15,3.05)--(5.85,5.95)--(3.25,6.25)--(1.05,4.55)--cycle;
+  \draw[eleve aresta,line width=1.8pt]
+    (1.15,1.15)--(6.95,1.15)--(7.15,3.05)--(5.85,5.95)--(3.25,6.25)--(1.05,4.55)--cycle;
+  \fill[orange!40] (1.65,4.65) rectangle (2.65,5.65);
+  \fill[orange!40] (5.65,4.65)--(6.65,4.65)--(5.65,5.65)--cycle;
+  \node[font=\large\bfseries,text=eleveazul] at (4.15,.18) {quadrados inteiros};
+  \node[font=\large\bfseries,text=elevelaranja] at (4.15,6.98) {partes que se completam};
+\end{tikzpicture}
+
+\end{document}

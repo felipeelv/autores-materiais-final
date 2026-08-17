@@ -1,0 +1,126 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{eleve-fisica}[2026/07/23 Estilo TikZ de Física do Colégio Eleve]
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage{lmodern}
+\RequirePackage{amsmath}
+\RequirePackage{tikz}
+\usetikzlibrary{
+  angles,
+  arrows.meta,
+  calc,
+  decorations.markings,
+  decorations.pathmorphing,
+  decorations.pathreplacing,
+  intersections,
+  patterns,
+  positioning,
+  quotes
+}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{eleveazul}{HTML}{245B78}
+\definecolor{eleveazulclaro}{HTML}{DCEAF1}
+\definecolor{elevelaranja}{HTML}{D97732}
+\definecolor{elevelaranjaclaro}{HTML}{F7E4D5}
+\definecolor{elevecinza}{HTML}{52606D}
+\definecolor{elevecinzaclaro}{HTML}{E9EEF2}
+
+\tikzset{
+  fisica figura/.style={
+    >=Stealth,
+    line cap=round,
+    line join=round,
+    font=\sffamily,
+    every node/.style={font=\sffamily}
+  },
+  fisica corpo/.style={
+    draw=eleveazul,
+    fill=eleveazulclaro,
+    line width=1.35pt,
+    rounded corners=1.5pt,
+    text=elevecinza,
+    font=\large\bfseries
+  },
+  fisica superficie/.style={
+    draw=elevecinza,
+    line width=1.6pt
+  },
+  fisica trajetoria/.style={
+    draw=elevecinza,
+    line width=1.15pt
+  },
+  fisica auxiliar/.style={
+    draw=elevecinza,
+    dashed,
+    line width=0.9pt
+  },
+  fisica eixo/.style={
+    draw=elevecinza,
+    ->,
+    line width=1pt
+  },
+  fisica forca/.style={
+    draw=elevelaranja,
+    ->,
+    line width=2pt
+  },
+  fisica componente/.style={
+    draw=elevelaranja,
+    ->,
+    dashed,
+    line width=1.55pt
+  },
+  fisica movimento/.style={
+    draw=eleveazul,
+    ->,
+    line width=2pt
+  },
+  fisica campo/.style={
+    draw=eleveazul,
+    postaction={decorate},
+    decoration={
+      markings,
+      mark=at position .58 with {\arrow{Stealth}}
+    },
+    line width=1.3pt
+  },
+  fisica raio/.style={
+    draw=eleveazul,
+    ->,
+    line width=1.55pt
+  },
+  fisica extensao/.style={
+    draw=elevecinza,
+    dashed,
+    line width=1pt
+  },
+  fisica grafico/.style={
+    draw=elevelaranja,
+    line width=2pt
+  },
+  fisica rotulo/.style={
+    text=elevecinza,
+    font=\large\bfseries,
+    inner sep=2.5pt
+  },
+  fisica medida/.style={
+    text=elevelaranja,
+    font=\large\bfseries,
+    inner sep=2pt
+  },
+  fisica ponto/.style={
+    circle,
+    fill=eleveazul,
+    inner sep=2.2pt
+  }
+}
+
+\newcommand{\FisicaForca}[4][]{%
+  \draw[fisica forca,#1] (#2) -- ++(#3) node[fisica rotulo] {#4};%
+}
+
+\newcommand{\FisicaMovimento}[4][]{%
+  \draw[fisica movimento,#1] (#2) -- ++(#3) node[fisica rotulo] {#4};%
+}

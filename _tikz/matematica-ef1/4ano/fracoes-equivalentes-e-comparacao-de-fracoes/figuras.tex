@@ -1,0 +1,135 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-matematica-ef1}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-partes-iguais-e-diferentes
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,-0.10) rectangle (9.20,6.35);
+
+  \node[font=\Large\bfseries,text=matemazul] at (4.75,5.95)
+    {partes iguais};
+  \fill[matematica neutro] (1.35,3.85) rectangle (8.15,5.15);
+  \draw[matematica contorno] (1.35,3.85) rectangle (8.15,5.15);
+  \foreach \x in {3.05,4.75,6.45}
+    \draw[matematica divisao] (\x,3.85) -- (\x,5.15);
+  \foreach \x in {2.20,3.90,5.60,7.30}
+    \node[font=\Large\bfseries,text=matemaverde] at (\x,4.50) {$=$};
+
+  \node[font=\Large\bfseries,text=matemalaranja] at (4.75,2.95)
+    {partes diferentes};
+  \fill[matematica neutro] (1.35,0.75) rectangle (8.15,2.05);
+  \draw[matematica contorno] (1.35,0.75) rectangle (8.15,2.05);
+  \foreach \x in {2.25,4.85,6.10}
+    \draw[matematica destaque] (\x,0.75) -- (\x,2.05);
+  \draw[matematica destaque, <->] (1.35,0.38) -- (2.25,0.38);
+  \draw[matematica destaque, <->] (2.25,0.38) -- (4.85,0.38);
+  \draw[matematica destaque, <->] (4.85,0.38) -- (6.10,0.38);
+  \draw[matematica destaque, <->] (6.10,0.38) -- (8.15,0.38);
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-uma-metade-e-dois-quartos
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,-0.10) rectangle (9.60,6.65);
+
+  \node[matematica valor] at (0.90,4.95) {$\frac{1}{2}$};
+  \fill[matematica destaque claro] (1.65,4.20) rectangle (4.85,5.65);
+  \fill[matematica neutro] (4.85,4.20) rectangle (8.05,5.65);
+  \draw[matematica contorno] (1.65,4.20) rectangle (8.05,5.65);
+  \draw[matematica divisao] (4.85,4.20) -- (4.85,5.65);
+
+  \node[matematica valor] at (0.90,1.65) {$\frac{2}{4}$};
+  \fill[matematica destaque claro] (1.65,0.90) rectangle (4.85,2.35);
+  \fill[matematica neutro] (4.85,0.90) rectangle (8.05,2.35);
+  \draw[matematica contorno] (1.65,0.90) rectangle (8.05,2.35);
+  \foreach \x in {3.25,4.85,6.45}
+    \draw[matematica divisao] (\x,0.90) -- (\x,2.35);
+
+  \draw[matematica destaque, dashed] (4.85,0.55) -- (4.85,6.05);
+  \node[font=\Large\bfseries,text=matemalaranja,anchor=west,align=left]
+    at (6.00,3.30) {mesma\\quantidade};
+  \draw[matematica destaque, ->] (5.85,3.30) -- (5.12,3.30);
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-cortes-equivalentes
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,-0.10) rectangle (9.20,8.75);
+
+  \foreach \y/\n in {6.75/2,3.95/4,1.15/8}{
+    \fill[matematica destaque claro] (1.55,\y) rectangle (4.75,{\y+1.30});
+    \fill[matematica neutro] (4.75,\y) rectangle (7.95,{\y+1.30});
+    \draw[matematica contorno] (1.55,\y) rectangle (7.95,{\y+1.30});
+  }
+  \draw[matematica divisao] (4.75,6.75) -- (4.75,8.05);
+  \foreach \x in {3.15,4.75,6.35}
+    \draw[matematica divisao] (\x,3.95) -- (\x,5.25);
+  \foreach \x in {2.35,3.15,3.95,4.75,5.55,6.35,7.15}
+    \draw[matematica divisao] (\x,1.15) -- (\x,2.45);
+
+  \node[matematica valor] at (0.72,7.40) {$\frac{1}{2}$};
+  \node[matematica valor] at (0.72,4.60) {$\frac{2}{4}$};
+  \node[matematica valor] at (0.72,1.80) {$\frac{4}{8}$};
+  \draw[matematica destaque, dashed] (4.75,0.72) -- (4.75,8.45);
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-mesmo-ponto-na-reta
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,-0.10) rectangle (9.60,6.35);
+
+  \draw[matematica eixo, ->] (0.80,1.45) -- (8.95,1.45);
+  \foreach \i in {0,...,8}{
+    \draw[matematica eixo] ({0.90+0.95*\i},1.18) -- ({0.90+0.95*\i},1.72);
+  }
+  \node[matematica rotulo,below=7pt] at (0.90,1.18) {$0$};
+  \node[matematica rotulo,below=7pt] at (8.50,1.18) {$1$};
+
+  \fill[matemalaranja] (4.70,1.45) circle (4.2pt);
+  \draw[matematica destaque, dashed] (4.70,1.78) -- (4.70,3.55);
+  \node[matematica resultado] at (4.70,4.25)
+    {$\frac{1}{2}=\frac{2}{4}=\frac{4}{8}$};
+  \node[font=\large\bfseries,text=matemacinza]
+    at (4.70,5.35) {mesmo ponto};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-mesmo-denominador
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,0.70) rectangle (9.20,4.25);
+
+  \fill[matematica destaque claro] (0.55,2.25) rectangle (1.75,3.75);
+  \fill[matematica neutro] (1.75,2.25) rectangle (3.75,3.75);
+  \draw[matematica contorno] (0.55,2.25) rectangle (3.75,3.75);
+  \foreach \x in {0.95,1.35,1.75,2.15,2.55,2.95,3.35}
+    \draw[matematica divisao] (\x,2.25) -- (\x,3.75);
+
+  \fill[matematica destaque claro] (5.35,2.25) rectangle (7.35,3.75);
+  \fill[matematica neutro] (7.35,2.25) rectangle (8.55,3.75);
+  \draw[matematica contorno] (5.35,2.25) rectangle (8.55,3.75);
+  \foreach \x in {5.75,6.15,6.55,6.95,7.35,7.75,8.15}
+    \draw[matematica divisao] (\x,2.25) -- (\x,3.75);
+
+  \node[matematica valor] at (2.15,1.30) {$\frac{3}{8}$};
+  \node[matematica valor] at (6.95,1.30) {$\frac{5}{8}$};
+  \node[font=\Huge\bfseries,text=matemalaranja] at (4.55,3.00) {$<$};
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-mesmo-numerador
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,0.70) rectangle (9.20,4.25);
+
+  \fill[matematica destaque claro] (0.55,2.25) rectangle (2.15,3.75);
+  \fill[matematica neutro] (2.15,2.25) rectangle (3.75,3.75);
+  \draw[matematica contorno] (0.55,2.25) rectangle (3.75,3.75);
+  \draw[matematica divisao] (2.15,2.25) -- (2.15,3.75);
+
+  \fill[matematica destaque claro] (5.35,2.25) rectangle (5.75,3.75);
+  \fill[matematica neutro] (5.75,2.25) rectangle (8.55,3.75);
+  \draw[matematica contorno] (5.35,2.25) rectangle (8.55,3.75);
+  \foreach \x in {5.75,6.15,6.55,6.95,7.35,7.75,8.15}
+    \draw[matematica divisao] (\x,2.25) -- (\x,3.75);
+
+  \node[matematica valor] at (2.15,1.30) {$\frac{1}{2}$};
+  \node[matematica valor] at (6.95,1.30) {$\frac{1}{8}$};
+  \node[font=\Huge\bfseries,text=matemalaranja] at (4.55,3.00) {$>$};
+\end{tikzpicture}
+
+\end{document}

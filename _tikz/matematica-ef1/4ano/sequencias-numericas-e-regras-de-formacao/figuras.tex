@@ -1,0 +1,58 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-matematica-ef1}
+
+\newcommand{\Termo}[3]{%
+  \node[draw=matemazul,fill=matemazulclaro,rounded corners=4pt,
+        minimum width=1.15cm,minimum height=.85cm,font=\Large\bfseries,
+        text=matemazul] (#1) at (#2) {#3};}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-sequencias-na-reta
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-1.05,-0.20) rectangle (10.70,5.90);
+  \foreach \x/\v in {0.8/2,3.0/5,5.2/8,7.4/11,9.6/14}
+    \node[matematica valor] at (\x,4.45) {\v};
+  \foreach \x in {0.8,3.0,5.2,7.4}
+    \draw[-{Stealth[length=2.7mm]},matematica destaque] (\x+0.40,4.45)--(\x+1.80,4.45)
+      node[midway,above=4pt,font=\normalsize\bfseries,text=matemalaranja] {$+3$};
+  \foreach \x/\v in {0.8/20,3.0/17,5.2/14,7.4/11,9.6/8}
+    \node[matematica valor] at (\x,1.45) {\v};
+  \foreach \x in {0.8,3.0,5.2,7.4}
+    \draw[-{Stealth[length=2.7mm]},matematica contorno] (\x+0.40,1.45)--(\x+1.80,1.45)
+      node[midway,above=4pt,font=\normalsize\bfseries,text=matemazul] {$-3$};
+  \node[matematica rotulo,anchor=east] at (0.15,4.45) {cresce};
+  \node[matematica rotulo,anchor=east] at (0.15,1.45) {diminui};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-somar-ou-dobrar
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (11.10,6.05);
+  \node[matematica rotulo,anchor=east] at (1.15,4.55) {somar 2};
+  \foreach \x/\v in {1.80/1,3.85/3,5.90/5,7.95/7,10.00/9}
+    \node[matematica valor] at (\x,4.55) {\v};
+  \foreach \x in {1.80,3.85,5.90,7.95}
+    \draw[-{Stealth[length=2.6mm]},matematica contorno] (\x+.35,4.55)--(\x+1.70,4.55);
+
+  \node[matematica rotulo,anchor=east] at (1.15,1.55) {dobrar};
+  \foreach \x/\v in {1.80/1,3.85/2,5.90/4,7.95/8,10.00/16}
+    \node[matematica valor] at (\x,1.55) {\v};
+  \foreach \x in {1.80,3.85,5.90,7.95}
+    \draw[-{Stealth[length=2.6mm]},matematica destaque] (\x+.35,1.55)--(\x+1.70,1.55)
+      node[midway,above=4pt,font=\normalsize\bfseries,text=matemalaranja] {$\times2$};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-termo-que-falta
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (9.80,3.65);
+  \Termo{a}{1.0,1.55}{30}
+  \Termo{b}{4.80,1.55}{?}
+  \Termo{c}{8.60,1.55}{20}
+  \draw[-{Stealth[length=3mm]},matematica destaque] (a.east)--(b.west)
+    node[midway,above=7pt,matematica resultado] {$-5$};
+  \draw[-{Stealth[length=3mm]},matematica destaque] (b.east)--(c.west)
+    node[midway,above=7pt,matematica resultado] {$-5$};
+  \node[matematica resultado] at (4.80,0.35) {$25$};
+\end{tikzpicture}
+
+\end{document}

@@ -26,12 +26,14 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **Anexo A** (como esc
 
 - **1 tema = 1 capítulo · 1 aula = 1 tópico numerado `## N.`**, na ordem do blueprint. Cada aula é autossuficiente (~50 min).
 - **O material é a REFERÊNCIA DO ALUNO — a explicação é do professor.** Prosa curta para o raciocínio, marcadores para o que é enumerável: máximo 2 frases seguidas antes de uma lista; tabela sempre que houver 2+ itens a contrastar.
-- **220–250 palavras de conteúdo por aula, teto firme de 300.** O teto **não é meta**; não existe mínimo. (Fórmulas, exemplos e tabelas não contam.) Conteúdo difícil vira **fatias menores**, nunca aula inchada.
+- **Explicação sempre direta e concisa.** Diga a regra ou a decisão em uma frase; não anuncie, não recapitule e não repita em prosa o que a conta já mostra.
+- **Preferir 90–130 palavras visíveis por aula, teto firme de 170.** O teto **não é meta**; não existe mínimo. Blocos MathJax e esquemas ASCII não contam; enunciados, passos, respostas, boxes e texto de tabelas contam. Assim, a métrica favorece o **passo a passo** sem esconder prosa.
 - **Material é só conteúdo.** Zero exercício proposto, lista, desafio, atividade, projeto, revisão ou prova. **Exemplo resolvido é conteúdo e é obrigatório**; "agora tente você" não.
 - **Sem seções de fechamento.** Nada de "Introdução", "E A BÍBLIA NISSO?", "Síntese", "Fórmulas do capítulo", "Para não esquecer" — esses elementos vivem **dentro** das aulas.
-- **Toda aula abre com situação concreta** (dividir, medir, comparar, comprar) ou cena de descoberta. A definição/fórmula nunca abre a aula.
-- **Todo cálculo passo a passo, uma operação por linha, sem etapas puladas. Resultado sempre simplificado** (fração irredutível, radical simplificado).
+- **Toda aula entra diretamente na primeira subseção.** Use situação concreta apenas quando ela ajudar a montar a operação; métodos e fórmulas podem abrir de modo direto.
+- **Todo cálculo passo a passo, uma operação por linha, sem etapas puladas.** Use `\times` → $$\times$$ para multiplicação, nunca `\cdot` → $$\cdot$$. Resultado sempre simplificado.
 - **Exemplo resolvido com rótulo = nome da situação em negrito** (`**Duas turmas com a mesma média**`) — nunca rótulo formal (`### EXERCÍCIO RESOLVIDO`) e nunca frase de anúncio ("Veja o exemplo abaixo."): → enunciado → `**Resolução:**` → passos com `- **Passo N:**` → `**Resposta:**` em frase. Marcadores com `-`, nunca `*`.
+- **Organização visual da resolução:** a fração, expressão ou equação trabalhada fica **no texto do passo**; abaixo aparecem somente as contas necessárias, uma por linha, cada uma com seu resultado. A forma obtida volta ao texto ou à `**Resposta:**`. Nunca deixe uma fração sozinha em uma linha e nunca use blocos iniciados apenas por `=`.
 - **Progressão:** no Fundamental, apoio concreto/pictórico na entrada (barras, reta numérica, dinheiro) e procedimento seguro como régua; no EM, formalização direta com rigor.
 - **Boxes: só `🔢 Padrão:` e `⚠️ Atenção:`**, 1 por aula (2 só se um de cada tipo e ambos necessários), **1 frase única**, nunca consecutivos.
 - **Toda lista precedida de frase de transição.** Zero "como veremos adiante". Tabelas só quando os dados exigirem.
@@ -61,7 +63,9 @@ Capítulos de **Operações (Matemática 1)** — aritmética, álgebra, conjunt
 
 Se o pedido for de conteúdo de Geometria ou Financeira, **não produza aqui** — indique o projeto correto. A única exceção é a **ponte que o próprio blueprint pedir** (ex.: usar uma área para ilustrar produto notável), sempre em meia frase, sem desenvolver o conteúdo da outra disciplina.
 
-**A equação do modelo:** `1 tema = 1 capítulo` · `1 aula = 1 tópico numerado (## N.)` · `1 aula ≈ 50 min ≈ 220–250 palavras (teto 300)` · `prosa curta + marcadores`.
+**A equação do modelo:** `1 tema = 1 capítulo` · `1 aula = 1 tópico numerado (## N.)` · `1 aula ≈ 50 min ≈ 90–130 palavras de conteúdo (teto 170)` · `prosa mínima + procedimento passo a passo`.
+
+> **Override específico de Operações:** a faixa 90–130 e o teto 170 substituem o padrão comum de 220–250 e teto 300 do Anexo A. Blocos MathJax e esquemas ASCII ficam fora; todo texto lido pelo aluno conta. O recorte completo do blueprint continua acima da contagem.
 
 **Como achar o blueprint:** `Blueprints/<ano ou série>-<bimestre>-<bloco>.md` — todos numa pasta só, com a série no nome do arquivo. Séries: `6ano`, `7ano`, `8ano`, `9ano`, `1serie`, `2serie`, `3serie`. Blocos: `3bim-bloco1` · `3bim-bloco2` · `4bim-bloco1` · `4bim-bloco23`. Exemplo: Racionais (7º ano, 3º bim, bloco 1) → `Blueprints/7ano-3bim-bloco1.md`.
 
@@ -98,17 +102,18 @@ O capítulo **termina na última aula**. Não há seção de fechamento (sem "In
 - **1 aula = 1 tópico `## N.`**, na ordem do blueprint; `---` entre aulas. Cada aula deve ser **autossuficiente**: quem lê só aquele tópico tem a aula completa (~50 min).
 - Os tópicos internos da aula viram subseções **numeradas `### N.1`, `### N.2`** (a numeração da aula, depois a da parte). Título curto e descritivo — o aluno usa como índice.
 - **2 a 3 subseções por aula.** Mais que isso fragmenta; cada subseção nova traz sua própria abertura e engorda o texto.
-- **Extensão: alvo 220–250 palavras, teto firme de 300** de conteúdo por aula (fórmulas, exemplos resolvidos e tabelas não entram na conta) — **direto e conciso é o padrão da casa**. Desenvolva todo o recorte do blueprint e pare: não adicione exemplos extras nem paráfrases para "engordar" a aula. Se passar de 300, corte rodeio e redundância — nunca recorte do blueprint. **Não existe mínimo:** aula que cobriu todo o recorte de forma direta em 200 palavras está pronta.
+- **Extensão: preferir 90–130 palavras, teto firme de 170** por aula. Blocos MathJax e esquemas ASCII ficam fora; enunciados, passos, respostas, boxes e texto de tabelas entram. Desenvolva todo o recorte do blueprint e pare: não adicione exemplos extras nem paráfrases para "engordar" a aula. Se passar de 130, transforme explicação em passo, tabela ou cálculo; se passar de 170, corte rodeio e redundância — nunca recorte do blueprint. **Não existe mínimo:** uma aula com pouca prosa e um procedimento completo pode estar pronta abaixo da faixa.
 
 ## 3. Forma do conteúdo — prosa + marcadores
 
 **O material é a REFERÊNCIA DO ALUNO — a explicação é do professor.** Não é um texto que ensina sozinho: é o que o aluno consulta antes, durante e depois da aula. Escreva para ser **consultado**, não lido de ponta a ponta. Daí a mistura: **prosa curta para o raciocínio, marcadores para o que é enumerável.** Nem só parágrafo (vira parede de texto), nem só bullet (pica o raciocínio em fragmentos).
 
-**Abertura de aula (`## N.`):** 1 frase direta, sem desenvolvimento. Sem cena narrativa, sem construção de suspense.
+**Entrada de aula (`## N.`):** após o título, comece em `### N.1`; não repita o título em um parágrafo de abertura.
 
 **Subtópico (`### N.1`, `### N.2`…):**
 
 - **Definição em 1 frase curta.** Se precisar de mais de uma frase para definir, use bullets — não parágrafo.
+- **Explicação direta:** regra → condição → aplicação. Corte frases de anúncio, retomada e conclusão óbvia.
 - **No máximo 2 frases seguidas antes de uma lista.** Prefira 1 frase densa + bullets.
 - **Lista com marcadores** para propriedades, características, classificações, etapas e condições.
 - **Tabela comparativa** sempre que houver 2 ou mais itens a contrastar — é o formato que mais economiza texto.
@@ -126,34 +131,43 @@ O capítulo **termina na última aula**. Não há seção de fechamento (sem "In
 
 ## 4. Como cada aula é construída
 
-1. **Abertura: no máximo 25 palavras.** Pode ser **situação concreta** (dividir, medir, comparar, comprar) **ou fato direto** — escolha o que chega mais rápido ao conteúdo. Sem cena narrativa, sem construção de suspense.
-   - **Situação concreta** quando ela cria a necessidade do conceito.
-   - **Fato direto** quando o conteúdo é método, história ou definição.
-2. **Progressão fixa:** situação → conceito → procedimento → exemplo resolvido. No Fundamental, apoio concreto/pictórico na entrada (barras, retas numéricas, figuras descritas ou em ASCII) e **procedimento seguro** como régua; no EM, formalização direta com rigor.
-3. **Definição destacada em negrito**, curta, na primeira seção conceitual — nascida da situação de abertura.
+1. **Entrada direta:** `## N.` → `### N.1` → conceito, regra ou procedimento. Não escreva uma frase intermediária que apenas repita os títulos.
+2. **Progressão:** conceito → procedimento → exemplo resolvido. No Fundamental, use apoio concreto/pictórico quando ele esclarecer a operação; no EM, formalização direta com rigor.
+3. **Definição destacada em negrito**, curta, na primeira seção conceitual.
 4. **Todo cálculo exemplificado passo a passo — é a regra de ouro da disciplina.** Uma operação por linha, sem etapas puladas, **resultado sempre simplificado** (fração irredutível, radical simplificado, unidade correta). O formato do exemplo resolvido é fixo:
    - rótulo = **nome da situação em negrito** (`**Duas turmas com a mesma média**`) — nunca rótulo formal (`### EXERCÍCIO RESOLVIDO`), nunca frase de anúncio ("Veja o exemplo abaixo.");
    - enunciado → `**Resolução:**` → passos com `- **Passo N:**` (marcador `-`, nunca `*`) → `**Resposta:**` em frase;
-   - **cada operação matemática em um bloco `$$...$$` próprio, em linha própria** — nunca compactar etapas.
+   - a fração, expressão ou equação entra **no texto do passo**, nunca sozinha em um bloco;
+   - abaixo do passo, cada operação fica em um bloco `$$...$$` próprio e já mostra seu resultado;
+   - o resultado parcial volta ao texto; nunca use linhas soltas iniciadas por `=` e nunca encadeie igualdades;
+   - multiplicação sempre com `\times`, nunca `\cdot` e nunca a letra `x`.
 
    ```markdown
-   **Notas de cinco alunos**
+   **Produto de duas frações**
 
-   Calcule: $$(3x^2 + 2x - 1) + (x^2 - 5x + 4)$$
+   Calcule $$\frac{3}{5}\times\frac{10}{9}$$.
 
    **Resolução:**
 
-   - **Passo 1:** Agrupar os termos semelhantes.
+   - **Passo 1:** Em $$\frac{3}{5}\times\frac{10}{9}$$, simplificar 3 e 9 por 3.
 
-   $$(3x^2 + x^2) + (2x - 5x) + (-1 + 4)$$
+   $$3\div3=1$$
 
-   - **Passo 2:** Somar os coeficientes de cada grupo.
+   $$9\div3=3$$
 
-   $$(3+1)x^2 + (2-5)x + (-1+4)$$
+   - **Passo 2:** Simplificar 10 e 5 por 5.
 
-   $$= 4x^2 - 3x + 3$$
+   $$10\div5=2$$
 
-   **Resposta:** $$4x^2 - 3x + 3$$
+   $$5\div5=1$$
+
+   - **Passo 3:** Multiplicar os termos de $$\frac{1}{1}\times\frac{2}{3}$$.
+
+   $$1\times2=2$$
+
+   $$1\times3=3$$
+
+   **Resposta:** o produto é $$\frac{2}{3}$$.
    ```
 
    Máximo de exemplos: os que o recorte pede — sem multiplicar variações do mesmo caso.
@@ -168,7 +182,7 @@ O capítulo **termina na última aula**. Não há seção de fechamento (sem "In
 - Tom **informativo, acessível, levemente motivador** — sem excesso de exclamações ou entusiasmo forçado. Nunca infantilizar. A matemática entra pela **necessidade**: primeiro a situação que exige o conceito, depois o conceito.
 - Termo técnico apresentado **a partir do exemplo**, nunca solto ("essa fração que não dá mais para simplificar tem nome: **irredutível**").
 - Analogias concretas (dinheiro, comida, distância, jogos) — apenas quando concretizam; abandonar a analogia quando o procedimento assume.
-- **Cada frase entrega informação.** Se pode ser cortada sem perda, corte. Abertura de seção: 1 frase direta. Parágrafos: máximo 2–3 frases.
+- **Cada frase entrega informação.** Se pode ser cortada sem perda, corte. Parágrafos: 1 frase sempre que possível, nunca mais de 2.
 - **Procedimento em passos numerados ou linhas de cálculo — nunca em parágrafo corrido.** Prosa explica o porquê; o passo a passo mostra o como.
 
 **Ajuste por série:**
@@ -179,7 +193,7 @@ O capítulo **termina na última aula**. Não há seção de fechamento (sem "In
 
 **Rigor matemático:**
 
-- Notação consistente no capítulo inteiro (não alternar x e · para multiplicação; não trocar nome de variável no meio).
+- Notação consistente no capítulo inteiro: multiplicação com $$\times$$; a letra $$x$$ fica reservada à variável; não trocar nome de variável no meio.
 - Nomenclatura didática brasileira consagrada (ENEM/vestibular): "mínimo múltiplo comum (MMC)", "produtos notáveis", "função afim" (não "função linear" para f(x) = ax + b com b ≠ 0), "juros compostos".
 - Aproximações sempre sinalizadas (≈) e com critério dito ("com duas casas decimais").
 - Valores monetários realistas e atuais; taxas em % ao mês/ano sempre explícitas; arredondamento comercial (2 casas decimais) quando dinheiro entrar no exemplo.
@@ -212,7 +226,7 @@ O capítulo **termina na última aula**. Não há seção de fechamento (sem "In
 - Todas as expressões entre `$$ ... $$`, delimitador único — sem `\[...\]`, sem `$...$` simples.
 - **Intervalos na notação brasileira: colchetes invertidos para o extremo aberto** — `$$]a, b[$$`, `$$[0, 5[$$` — **nunca parênteses**.
 - Conjuntos numéricos com `\mathbb{}` na fórmula (`$$\mathbb{Q}$$`) e Unicode no texto corrido (ℕ, ℤ, ℚ, ℝ). Chaves de conjunto: `$$A = \{1, 2, 3\}$$`.
-- Vírgula decimal com `{,}` (`$$0{,}25$$`) · `\cdot` para multiplicação (nunca a letra x) · frações com `\frac{}{}` · milhar em fórmula separado por `\,`.
+- Vírgula decimal com `{,}` (`$$0{,}25$$`) · `\times` para multiplicação (nunca `\cdot` nem a letra x) · frações com `\frac{}{}` · milhar em fórmula separado por `\,`.
 - **Matrizes (2ª série): uma matriz por bloco `$$...$$`** — nunca duas lado a lado, nunca `\qquad` para justapor. Cada matriz introduzida com rótulo contextual em texto corrido ("Dada a matriz $$A$$:", "Sua transposta é:"); a **ordem vai no texto** ("matriz 2×3"), não como subscrito na matriz exibida. Verificações e multiplicações expandidas: quebradas em cálculos **elemento a elemento**, em linhas separadas. `\begin{pmatrix} a & b \\ c & d \end{pmatrix}` é suportado no MathJax (a proibição de ambientes multilinha era do CodeCogs).
 - Unidades e texto reto em `\mathrm{}` com espaço fino (`$$12\,\mathrm{cm}$$`); dinheiro em fórmula: `$$\mathrm{R\$}\,1\,500{,}00$$`.
 - **Toda fórmula com os elementos definidos logo após:** "onde $$a$$, $$b$$ e $$c$$ são os coeficientes...".
@@ -268,16 +282,16 @@ Estes elementos existiam como blocos pós-conteúdo no formato antigo. **Não ex
 > ```
 > python3 ./validar-capitulo.py <capitulo.md> --disciplina operacoes [--blueprint <arq.md>]
 > ```
-> **Não persiga a contagem exata de palavras:** conte uma vez, ao final. Só reescreva se estourou o teto de 300 — ficar abaixo dele não é defeito.
+> **Não persiga a contagem exata de palavras:** conte uma vez, ao final. Só reescreva por extensão se estourou o teto de 170 — ficar abaixo da faixa não é defeito quando o recorte e o procedimento estão completos.
 
 - [ ] Título é `# Capítulo {N} — {Tema}` (sem linha de disciplina/ano)
 - [ ] Todas as aulas do blueprint, na ordem, com todo o recorte desenvolvido
-- [ ] Cada aula abre com situação concreta · 220–250 palavras (teto 300) · autossuficiente
-- [ ] **Prosa curta + marcadores:** conteúdo enumerável em lista/tabela; máx. 2 frases antes de uma lista
+- [ ] Cada aula entra diretamente no conceito ou procedimento · preferir 90–130 palavras (teto 170, sem mínimo) · autossuficiente
+- [ ] **Prosa direta e concisa:** uma frase sempre que possível; sem anúncio, recapitulação ou repetição da conta
 - [ ] Nenhuma analogia estendida, nenhum parágrafo que recapitula, nenhum exemplo repetido
 - [ ] Versículo só com ligação **conceitual** (teste do sinônimo) — sem versículo é entrega válida
 - [ ] **Matemática conferida: todos os exemplos recalculados** (aritmética, álgebra, simplificações), resultados simplificados, notação consistente
-- [ ] LaTeX no padrão MathJax: vírgula decimal `{,}`, `\frac{}`, `\mathbb{}` para conjuntos, `\mathrm{}` em unidades, intervalos `]a, b[`, matrizes uma por bloco, uma operação por linha, delimitador único `$$...$$`
+- [ ] LaTeX no padrão MathJax: vírgula decimal `{,}`, `\frac{}`, `\mathbb{}` para conjuntos, `\mathrm{}` em unidades, `\times` para multiplicação, intervalos `]a, b[`, matrizes uma por bloco, uma operação por linha, delimitador único `$$...$$`
 - [ ] Exemplos resolvidos com **rótulo = nome da situação em negrito** (nunca "Veja o exemplo abaixo."), formato Resolução → Passos (`-`) → **Resposta:**, sem etapas puladas
 - [ ] Boxes: só 🔢 Padrão e ⚠️ Atenção, 1 por aula (2 só se 🔢+⚠️ necessários), 1 frase única, nunca consecutivos, quebra de linha interna
 - [ ] Matemático-referência integrado ao texto, uma única vez, na aula pertinente
@@ -332,12 +346,12 @@ O mesmo nível N muda de cara conforme a série. Parâmetros objetivos por faixa
 | **Ordem de apresentação** | **Exemplo concreto → conceito**, sem exceção; o conceito nomeia o que a criança acabou de ver | **Exemplo concreto → conceito** (sempre) | Exemplo → conceito, ou conceito → exemplo imediato | Definição formal primeiro é aceitável | Definição direta; aluno já tem repertório |
 | **Vocabulário** | Cotidiano da criança; termo técnico só quando é o próprio conteúdo, explicado com palavra do dia a dia | Cotidiano; **todo termo técnico explicado na 1ª ocorrência** | Técnico consolidado; termo novo sempre explicado | Técnico pleno; nomenclatura padrão da área | Técnico pleno + vocabulário de prova |
 | **Abstração** | Nenhuma; tudo ancorado no que se vê, toca ou conta | Mínima; ancorar em situação vivida/observável | Transição: alterna concreto e abstrato | Abstração plena, com retorno ao real como aplicação | Abstração + síntese entre temas |
-| **Exemplos por conceito** | 2, do mundo da criança de 9–10 anos (casa, escola, brincadeira, animais, comida, dinheiro de troco) | 2, do universo do aluno (escola, família, esporte, jogos, tecnologia) | 1–2, de textos/fenômenos reais e referências culturais | 1–2, de fontes reais (literatura, imprensa, dados, experimento) | 1 forte + 1 no formato de prova |
+| **Exemplos por conceito** | 1 exemplo claro; segundo só quando mostrar uma situação diferente, sempre do mundo da criança | 2, do universo do aluno (escola, família, esporte, jogos, tecnologia) | 1–2, de textos/fenômenos reais e referências culturais | 1–2, de fontes reais (literatura, imprensa, dados, experimento) | 1 forte + 1 no formato de prova |
 | **Exceções e casos raros** | Nunca entram | Não entram (salvo se estiverem no recorte do blueprint) | Entram as principais | Sistematizadas | Sistematizadas + pegadinhas clássicas de prova |
 | **Tom** | Professor próximo, fala com "você", frases afirmativas — **sem infantilizar, sem diminutivo, sem personagem falante** | Professor próximo e direto (fala com "você") | Direto, sem infantilizar | Acadêmico acessível — **nunca infantilizar** | Pré-universitário |
 | **Conexão com prova** | Não | Não | Leve (no 9º, mencionar quando natural) | Notas ENEM/vestibular quando o conteúdo render | Sistemática |
 
-**Nota sobre o 4º–5º ano:** faixa acrescentada em 20/07/2026 com a entrada do Fundamental I. A escala N1–N4 não muda — ela descreve a operação cognitiva, não a linguagem. Na prática o EF1 opera em **N1–N3**; **N4 é raro** e só aparece quando o próprio blueprint marcar. O erro típico aqui não é escrever difícil demais, é **infantilizar**: o aluno de 9–10 anos entende explicação direta, o que ele não tem é repertório abstrato.
+**Nota sobre o 4º–5º ano:** faixa acrescentada em 20/07/2026 com a entrada do Fundamental I. A escala N1–N4 não muda — ela descreve a operação cognitiva, não a linguagem. Na prática o EF1 opera em **N1–N3**; **N4 é raro** e só aparece quando o próprio blueprint marcar. O texto usa palavras comuns, exemplos próximos e frases curtas. Simplicidade não significa infantilização: diminutivos e personagens falantes continuam fora do padrão.
 
 **Nota sobre o 9º ano:** é segmento próprio no calendário (24 aulas/sem), mas na escrita segue a coluna 8º–9º **puxando para cima** — é a ponte para o EM.
 
@@ -444,12 +458,12 @@ $$\frac{1+2}{4} = \frac{3}{4}$$
 2. **Pergunta-problema** do blueprint em blockquote logo abaixo do título, **sem rótulo** — só a pergunta. É respondida dentro da aula pertinente, sem anunciar.
 3. **1 aula = 1 tópico `## N.`**, na ordem do blueprint; `---` entre aulas. Cada aula autossuficiente (~50 min).
 4. **2–3 subseções `### N.1`, `### N.2`** por aula, com título curto (pode ser pergunta orientadora).
-5. **Extensão por aula:** padrão da casa 220–250 (teto 300); overrides por disciplina — Física 130–170 (teto 190), Geometria 170–210 (teto 240), Matemática EF1 180–220 (teto 260). Fórmulas, exemplos resolvidos, tabelas, ASCII e boxes **não** entram na conta. **O teto não é meta; não existe mínimo.**
+5. **Extensão por aula:** padrão da casa 220–250 (teto 300); overrides por disciplina — Física 130–170 (teto 190), Química 180–210 (teto 240), Geometria 170–210 (teto 240), Matemática EF1 **sem alvo e sem mínimo** (teto 160). Fórmulas, exemplos resolvidos, tabelas, ASCII, figuras TikZ/PNG, textos alternativos e boxes **não** entram na conta. **O teto não é meta.**
 6. **Prosa curta + marcadores:** máx. 2 frases seguidas antes de uma lista; tabela para 2+ itens comparáveis; **liste o paralelo, escreva o encadeado**. Toda lista com frase de transição **informativa**.
-7. **Boxes:** só a família da disciplina, em blockquote, com quebra de linha interna (título na 1ª linha com dois espaços finais). 1–2 por aula, **nunca dois seguidos**, 1 frase ("drop").
-8. **Bíblia condicional:** versículo só com ligação **conceitual** (teste do sinônimo) — capítulo sem versículo é entrega válida.
-9. **Personagem/referência-chave** 1× por capítulo, na aula pertinente (EF em box 👤 onde a disciplina tiver; EM e matemáticas integrado ao texto).
-10. **O que NUNCA aparece:** blocos pós-conteúdo do formato antigo (`Introdução`, `Sua Parte`, `O que a Bíblia diz sobre...`, `E a Bíblia nisso?`, `Simplificando`, `Para não esquecer`, `Explorando os Conceitos`, `Ampliando o Olhar`, `No Fio da História`, `O Que a Fé Diz`, `Pensador em Destaque`, `Você já pensou nisso?`, `Síntese`, `Fórmulas do capítulo`, `💬 Para Conversar`) · atividades/exercícios propostos/provas · itens do NÃO ANTECIPAR · emojis fora de box · imagens (figuras descritas ou ASCII) · frases-preparação ("Neste capítulo vamos...").
+7. **Boxes:** só a família da disciplina, em blockquote, com quebra de linha interna (título na 1ª linha com dois espaços finais). 1–2 por aula, **nunca dois seguidos**, 1 frase ("drop"). **O box nunca abre um subtópico** — antes dele tem de haver parágrafo, lista ou tabela, porque ele comenta o que o aluno já leu.
+8. **Bíblia condicional:** versículo só com ligação **conceitual** (teste do sinônimo) — capítulo sem versículo é entrega válida. *(Em Estudos Sociais, desde 30/07/2026 o versículo não entra no capítulo: vive no arquivo de anexo.)*
+9. **Personagem/referência-chave** 1× por capítulo, na aula pertinente (EF em box 👤 onde a disciplina tiver; EM e matemáticas integrado ao texto). *(Estudos Sociais não tem mais box de personagem — a ficha vai para o anexo.)*
+10. **O que NUNCA aparece:** blocos pós-conteúdo do formato antigo (`Introdução`, `Sua Parte`, `O que a Bíblia diz sobre...`, `E a Bíblia nisso?`, `Simplificando`, `Para não esquecer`, `Explorando os Conceitos`, `Ampliando o Olhar`, `No Fio da História`, `O Que a Fé Diz`, `Pensador em Destaque`, `Você já pensou nisso?`, `Síntese`, `Fórmulas do capítulo`, `💬 Para Conversar`) · atividades/exercícios propostos/provas · itens do NÃO ANTECIPAR · emojis fora de box · imagens, **exceto as figuras TikZ/PNG autorizadas pelo manual da disciplina** · frases-preparação ("Neste capítulo vamos...").
 
 **Famílias de boxes por disciplina:**
 
@@ -459,7 +473,7 @@ $$\frac{1+2}{4} = \frac{3}{4}$$
 | Física | 💭 ⏸️ 💡 📏 ⚡ 📐 (+ 📝 rótulo de exemplo) |
 | Química | 💡 🔎 🌍 💭 ⏸️ ⚠️ |
 | Português | 💡 ⚠️ 📌 🔎 👤 |
-| Estudos Sociais (Geo/Hist) | 🔎 💭 👤 |
+| Estudos Sociais (Geo/Hist) | 🔎 💭 |
 | Sociologia · Filosofia | 💭 ⏸️ 💡 🔍 |
 | Operações · Geometria · Financeira · Matemática EF1 | 🔢 ⚠️ |
 

@@ -1,0 +1,83 @@
+{
+  "versao": 1,
+  "disciplina": "geometria",
+  "ano_serie": "8ano",
+  "titulo_documento": "Áreas de figuras planas",
+  "slug_documento": "areas-de-figuras-planas",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Geometria/8ano/geometria-8ano-3bim-cap2.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-altura-no-paralelogramo-e-trapezio",
+      "pagina": 1,
+      "arquivo": "fig-01-altura-no-paralelogramo-e-trapezio.png",
+      "alt": "Paralelogramo e trapézio com a altura perpendicular diferenciada do lado inclinado",
+      "aprovada": true,
+      "sha256": "2eefeb1afaf006d62225488e7ec54002a3279329f10885c42f62e86538382154",
+      "largura_px": 1182,
+      "altura_px": 1152,
+      "publicado_sha256": "2eefeb1afaf006d62225488e7ec54002a3279329f10885c42f62e86538382154",
+      "publicado_commit": "bc449b5a2623fb16ae62a59aa3bde80180f000b0"
+    },
+    {
+      "id": "fig-02-diagonais-do-losango",
+      "pagina": 2,
+      "arquivo": "fig-02-diagonais-do-losango.png",
+      "alt": "Losango com diagonais perpendiculares D e d identificadas e lados sem medida",
+      "aprovada": true,
+      "sha256": "c3e41ae203332cda48231eb28cdc1b876d595095855247c9f6b8bad8bbe9bd2c",
+      "largura_px": 1170,
+      "altura_px": 981,
+      "publicado_sha256": "c3e41ae203332cda48231eb28cdc1b876d595095855247c9f6b8bad8bbe9bd2c",
+      "publicado_commit": "bc449b5a2623fb16ae62a59aa3bde80180f000b0"
+    },
+    {
+      "id": "fig-03-triangulo-metade-do-paralelogramo",
+      "pagina": 3,
+      "arquivo": "fig-03-triangulo-metade-do-paralelogramo.png",
+      "alt": "Duas cópias congruentes do triângulo compondo um paralelogramo de mesma base e altura",
+      "aprovada": true,
+      "sha256": "bca3077f4dda4a0483fb198c4e0b3f6e41631c5af10704c4908fe7e4b9a7e289",
+      "largura_px": 1170,
+      "altura_px": 880,
+      "publicado_sha256": "bca3077f4dda4a0483fb198c4e0b3f6e41631c5af10704c4908fe7e4b9a7e289",
+      "publicado_commit": "bc449b5a2623fb16ae62a59aa3bde80180f000b0"
+    },
+    {
+      "id": "fig-04-tres-pares-de-base-e-altura",
+      "pagina": 4,
+      "arquivo": "fig-04-tres-pares-de-base-e-altura.png",
+      "alt": "Mesmo triângulo apresentado com três escolhas de base e suas alturas perpendiculares correspondentes",
+      "aprovada": true,
+      "sha256": "5e81d716c55db2abee3ea88a1af2c405edadf1e592300550f4c7093b106b0b74",
+      "largura_px": 1406,
+      "altura_px": 928,
+      "publicado_sha256": "5e81d716c55db2abee3ea88a1af2c405edadf1e592300550f4c7093b106b0b74",
+      "publicado_commit": "bc449b5a2623fb16ae62a59aa3bde80180f000b0"
+    },
+    {
+      "id": "fig-05-triangulo-na-malha-quadriculada",
+      "pagina": 5,
+      "arquivo": "fig-05-triangulo-na-malha-quadriculada.png",
+      "alt": "Triângulo em malha quadriculada dentro de um retângulo cujas partes complementares permitem conferir a área",
+      "aprovada": true,
+      "sha256": "262b7c779187adfcb7c9f20db7800b4e2fdefa3ac59e8a3bce263d1fcb283449",
+      "largura_px": 1087,
+      "altura_px": 969,
+      "publicado_sha256": "262b7c779187adfcb7c9f20db7800b4e2fdefa3ac59e8a3bce263d1fcb283449",
+      "publicado_commit": "bc449b5a2623fb16ae62a59aa3bde80180f000b0"
+    },
+    {
+      "id": "fig-06-duas-decomposicoes-da-sala-em-l",
+      "pagina": 6,
+      "arquivo": "fig-06-duas-decomposicoes-da-sala-em-l.png",
+      "alt": "Sala em formato de L com dimensões oito por seis metros e recorte três por dois resolvida por duas decomposições",
+      "aprovada": true,
+      "sha256": "62f67cde3728f4ac8d6c9ee77adf1c64e791db25a31a70ce726050aee53deb73",
+      "largura_px": 1406,
+      "altura_px": 1010,
+      "publicado_sha256": "62f67cde3728f4ac8d6c9ee77adf1c64e791db25a31a70ce726050aee53deb73",
+      "publicado_commit": "bc449b5a2623fb16ae62a59aa3bde80180f000b0"
+    }
+  ]
+}
