@@ -7,10 +7,10 @@ O padrão vigente está em `AUTOR.md`: fenômeno → conceito → análise, rigo
 Há um capítulo-modelo validado para cada série em `modelos/`:
 
 - 1ª série: O trabalho como atividade social;
-- 2ª série: Movimentos sociais no Brasil;
+- 2ª série: Estado, poder e dominação;
 - 3ª série: Clássicos da Sociologia.
 
-O 3º bimestre está concluído: **6 capítulos · 18 aulas**, salvos na pasta oficial [Segundo Semestre/Sociologia](https://drive.google.com/drive/folders/19srtjGKY0f9VA_G00ZupP5xhHvAPuIPV). Os três modelos foram formalizados como Capítulos 1.
+O 3º bimestre está concluído: **6 capítulos · 18 aulas**. Em 17/08/2026, a 2ª série foi reorganizada e seus quatro capítulos do segundo semestre foram produzidos, validados e publicados na pasta oficial do Drive.
 
 Estado detalhado:
 

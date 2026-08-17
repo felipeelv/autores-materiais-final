@@ -1,130 +1,115 @@
-# Capítulo 1 — Movimentos sociais no Brasil
+# BL1_Capítulo 1 — Estado, poder e dominação
 
-> Uma passeata fecha a avenida da sua cidade. Antes de decidir se é “a favor” ou “contra”, você saberia dizer o que é um movimento social — quem ele diz que é, contra o que luta e o que propõe?
-
----
-
-## 1. Teoria dos movimentos sociais; clássicos × novos movimentos
-
-Uma manifestação isolada não basta para formar um movimento social.
-
-### 1.1 Ação coletiva organizada
-
-Movimentos sociais são ações coletivas relativamente contínuas. Sua estrutura reúne:
-
-- **identidade coletiva:** quem afirma agir;
-- **adversário:** qual instituição, prática ou relação contesta;
-- **projeto:** qual mudança ou permanência defende;
-- **repertório:** como torna a reivindicação pública — marchas, ocupações, campanhas, abaixo-assinados ou ações judiciais.
-
-### 1.2 Lentes de análise
-
-**Maria da Glória Gohn** (1947–), socióloga e pesquisadora brasileira, autora de *Teoria dos Movimentos Sociais*, sistematizou três paradigmas:
-
-- **americano:** recursos, organização e capacidade de mobilização;
-- **europeu:** identidades, cultura e reconhecimento;
-- **latino-americano:** participação popular e transformação social.
-
-O método sociológico classifica objetivos, meios e efeitos antes de julgar a causa.
-
-### 1.3 Dois perfis históricos
-
-| Critério | Clássicos | Novos movimentos |
-|---|---|---|
-| Período | Séculos XIX–XX | Após 1960 |
-| Eixo | Classe e produção | Identidade, cultura e direitos |
-| Organização | Sindicatos e partidos | Redes e coletivos |
-| Meta frequente | Mudança econômica | Reconhecimento e participação |
-
-Os perfis podem se combinar: movimentos atuais articulam classe, identidade, hierarquia e redes.
-
-> 🔍 **Conexão:** Classificar um movimento não significa apoiar ou rejeitar automaticamente seu projeto.
+> Por que obedecemos a uma lei: por medo da punição, por concordar com ela ou por reconhecer a autoridade de quem a criou?
 
 ---
 
-## 2. Movimento negro e movimento feminista no Brasil
+## 1. Poder, política, autoridade e Estado moderno
 
-Direitos resultam de mobilização.
+Uma ordem não é obedecida apenas porque alguém fala mais alto; relações políticas dependem de instituições e reconhecimento.
 
-### 2.1 Movimento negro
+### 1.1 Relações de poder
 
-Da resistência quilombola às organizações urbanas, cinco marcos mostram sua trajetória:
+Quatro conceitos distinguem influência, decisão e obediência:
 
-- **1931:** Frente Negra Brasileira;
-- **1978:** Movimento Negro Unificado;
-- **1988:** racismo definido constitucionalmente como crime;
-- **2010:** Estatuto da Igualdade Racial;
-- **2012:** Lei de Cotas federal, revisada em 2023.
+- **poder:** capacidade de orientar condutas, mesmo diante de resistência;
+- **política:** organização e disputa das decisões coletivas;
+- **autoridade:** poder reconhecido como válido por quem obedece;
+- **legitimidade:** crença social que sustenta esse reconhecimento.
 
-**Racismo estrutural** é a desigualdade reproduzida por instituições; junto à violência, permanece desafio.
+Legitimidade explica a aceitação sem coerção permanente; não prova correção moral.
 
-### 2.2 Movimento feminista
+### 1.2 Instituições diferentes
 
-As “ondas” organizam ênfases históricas, sem formar fronteiras rígidas:
+Três estruturas frequentemente confundidas cumprem papéis distintos:
 
-| Onda | Pauta destacada |
+| Conceito | Núcleo |
 |---|---|
-| 1ª | Sufrágio; voto feminino no Brasil em 1932 |
-| 2ª | Trabalho, violência e direitos reprodutivos |
-| 3ª | Diversidade entre mulheres; interseccionalidade |
-| 4ª | Mobilização digital e denúncias públicas |
+| Estado | instituições, leis, território e soberania duradouros |
+| Governo | direção temporária das instituições estatais |
+| Nação | vínculos históricos e culturais de uma coletividade |
 
-Dois marcos enfrentam a violência:
+### 1.3 Força e limite
 
-- **2006:** Lei Maria da Penha;
-- **2015–2024:** feminicídio introduzido na lei e depois convertido em crime autônomo.
+Para Weber, o Estado reivindica o monopólio do uso legítimo da força num território: força institucionalmente regulada, não violência automaticamente justa.
 
-### 2.3 Comparar sem simplificar
+> A autoridade é delegada e encontra limites quando exige o que é moralmente indevido.
 
-Movimentos não são uniformes:
+Romanos 13 reconhece a autoridade; Atos 5:29 preserva a responsabilidade da consciência diante dela.
 
-- participantes podem concordar no **diagnóstico**;
-- podem divergir sobre **métodos** e **projetos**;
-- conquistas legais não encerram automaticamente desigualdades sociais.
-
-> Reconhecer uma injustiça não exige adesão a toda solução proposta.
-
-Miqueias 6:8 associa justiça e misericórdia; 1 Coríntios 13:1-3 exige amor e discernimento.
-
-> ⏸️ **Pare e pense:** Uma causa justa também precisa responder pelos meios que escolhe.
+> 💭 **Pense um pouco:** Obedecer por medo e obedecer por legitimidade produzem a mesma estabilidade social?
 
 ---
 
-## 3. Movimentos do campo, indígenas e LGBTQIA+
+## 2. Contratualistas e Marx: por que existe o Estado?
 
-Demandas disputam terra, reconhecimento e proteção jurídica.
+O Estado parece natural, mas teorias diferentes explicam por que aceitamos um poder comum.
 
-### 3.1 Terra e território
+### 2.1 Três contratos
 
-| Movimento | Reivindicação central | Marcos |
+Os contratualistas construíram modelos hipotéticos, não relatos de um acordo ocorrido historicamente:
+
+| Pensador | Problema inicial | Estado legítimo |
 |---|---|---|
-| Campo | Reforma agrária e condições rurais | MST, fundado em 1984 |
-| Indígena | Território, cultura e autodeterminação | Constituição de 1988; APIB |
+| Hobbes | insegurança e conflito | soberano forte garante a paz |
+| Locke | direitos sujeitos a violações | governo limitado protege vida, liberdade e propriedade |
+| Rousseau | dependência e desigualdade social | vontade geral orientada ao bem comum |
 
-As formas de atuação incluem:
+### 2.2 A leitura de Marx
 
-- **MST:** ocupações, cooperativas, agroecologia e educação do campo;
-- **movimentos indígenas:** combate a invasões, demarcação e preservação;
-- **APIB:** articulação nacional das organizações indígenas.
+Marx troca a origem imaginada pelo funcionamento histórico e destaca três relações:
 
-### 3.2 Direitos LGBTQIA+
+- **classe:** grupos ocupam posições desiguais na produção;
+- **propriedade:** normas protegem formas específicas de apropriação;
+- **Estado:** instituições podem reproduzir interesses dominantes sob aparência universal.
 
-Três marcos situam a pauta:
+A tese contesta a neutralidade estatal sem reduzir toda decisão a reflexo de classe.
 
-- **1969:** Stonewall torna-se referência simbólica internacional;
-- **2011:** o STF reconhece a união estável entre pessoas do mesmo sexo como entidade familiar;
-- **2019:** homofobia e transfobia são enquadradas na Lei do Racismo até existir legislação específica.
+### 2.3 Teoria e avaliação
 
-### 3.3 Três planos de leitura
+Cada modelo ilumina segurança, direitos, soberania ou desigualdade, sem descrever sozinho todos os Estados.
 
-O tema exige distinguir:
+A visão cristã reconhece a ordem, mas rejeita poder ilimitado e a promessa de redenção política.
 
-- **direito:** registra normas, decisões e efeitos sociais;
-- **sociologia:** examina identidades, adversários, repertórios e projetos;
-- **fé cristã:** afirma dignidade e respeito a toda pessoa, preservando convicções sobre sexualidade.
+> 🔍 **Conexão:** Perguntar quem se beneficia é análise; responder antes das evidências é preconceito.
 
-> Discordância moral não autoriza humilhação, violência ou tratamento desigual da dignidade humana.
+---
 
-Estudar fatos não converte descrição em militância nem avaliação crítica em preconceito.
+## 3. Weber: ação social, dominação e racionalização
 
-> 💭 **Pense um pouco:** Respeitar pessoas e examinar criticamente ideias são responsabilidades compatíveis.
+Weber começa pelo sentido que as pessoas atribuem às próprias ações.
+
+### 3.1 Ação orientada por sentido
+
+**Max Weber** (1864–1920) definiu quatro tipos ideais de ação:
+
+| Tipo | Orientação |
+|---|---|
+| Tradicional | costume incorporado |
+| Afetiva | emoção imediata |
+| Racional referente a valores | fidelidade a um princípio |
+| Racional referente a fins | cálculo entre meios e objetivos |
+
+Tipos combinam-se; nenhum é superior.
+
+### 3.2 Por que se obedece
+
+Dominação é obediência estável. Weber distingue três bases:
+
+- **tradicional:** continuidade dos costumes;
+- **carismática:** confiança nas qualidades excepcionais do líder;
+- **racional-legal:** obediência a regras, cargos e competências.
+
+A burocracia racional-legal usa hierarquia, documentos, especialização e impessoalidade; ganha eficiência, mas pode endurecer regras.
+
+### 3.3 A vida racionalizada
+
+Três mecanismos ampliam a racionalização:
+
+- **cálculo:** comparação sistemática de meios;
+- **previsibilidade:** regras reduzem incertezas;
+- **controle:** resultados e condutas são registrados.
+
+O **desencantamento** é o recuo de explicações mágicas na vida pública, não o fim da religião. Em *A ética protestante e o espírito do capitalismo*, Weber relacionou vocação, disciplina e conduta econômica sem atribuir o capitalismo apenas à fé.
+
+> 💡 **Você sabia?** A “jaula de ferro” descreve eficiência institucional que cresce enquanto o sentido da vida encolhe.

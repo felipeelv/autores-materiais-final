@@ -8,4 +8,4 @@
 
 Os três arquivos seguem o padrão conciso e visual registrado em `../AUTOR.md`: fenômeno → conceito → análise, três subtópicos curtos por aula, organizadores visuais em pelo menos duas subseções e exatamente um box por aula, além de dois blockquotes simples por capítulo.
 
-Os modelos foram formalizados como os Capítulos 1 oficiais do 3º bimestre. As cópias finais estão na pasta oficial de Sociologia no Google Drive; estes arquivos locais continuam como referência editorial.
+Os modelos da 1ª e da 3ª série correspondem aos Capítulos 1 publicados em julho. O modelo da 2ª série foi substituído em 17/08/2026 por **Estado, poder e dominação** e sincronizado com a pasta oficial.
