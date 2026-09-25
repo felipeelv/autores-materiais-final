@@ -1,0 +1,107 @@
+{
+  "versao": 1,
+  "disciplina": "fisica",
+  "ano_serie": "8ano",
+  "titulo_documento": "Som e luz",
+  "slug_documento": "som-e-luz",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Fisica/8ano/fisica-8ano-3bim-cap1.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-elementos-de-uma-onda",
+      "pagina": 1,
+      "arquivo": "fig-01-elementos-de-uma-onda.png",
+      "alt": "Onda transversal com linha de equilíbrio, cristas, vales, amplitude e comprimento de onda",
+      "aprovada": true,
+      "sha256": "b3a1e95e60c6ba28736411fc7e14665f984f8c6425f769c8095772af6baddc2b",
+      "largura_px": 1678,
+      "altura_px": 1016,
+      "publicado_sha256": "b3a1e95e60c6ba28736411fc7e14665f984f8c6425f769c8095772af6baddc2b",
+      "publicado_commit": "974781da5987cb4e0b29c10c94c91cc297d89f24"
+    },
+    {
+      "id": "fig-02-frequencia-fixa-muda-o-comprimento",
+      "pagina": 2,
+      "arquivo": "fig-02-frequencia-fixa-muda-o-comprimento.png",
+      "alt": "Duas ondas com mesma frequência e comprimentos diferentes em meios de velocidades diferentes",
+      "aprovada": true,
+      "sha256": "dc5c5708f550448742a48f13a2de6858f00a23f1be61749cd3ce815505c0b814",
+      "largura_px": 1371,
+      "altura_px": 1193,
+      "publicado_sha256": "dc5c5708f550448742a48f13a2de6858f00a23f1be61749cd3ce815505c0b814",
+      "publicado_commit": "974781da5987cb4e0b29c10c94c91cc297d89f24"
+    },
+    {
+      "id": "fig-03-onda-longitudinal-e-transversal",
+      "pagina": 3,
+      "arquivo": "fig-03-onda-longitudinal-e-transversal.png",
+      "alt": "Comparação entre compressões longitudinais e oscilação transversal em relação à propagação",
+      "aprovada": true,
+      "sha256": "5eca3beb587d1e4a2f1d1d22c29d45c4130c4bc0ac780a78de4ad190f9e0d64c",
+      "largura_px": 1406,
+      "altura_px": 1323,
+      "publicado_sha256": "5eca3beb587d1e4a2f1d1d22c29d45c4130c4bc0ac780a78de4ad190f9e0d64c",
+      "publicado_commit": "974781da5987cb4e0b29c10c94c91cc297d89f24"
+    },
+    {
+      "id": "fig-04-eco-e-reverberacao",
+      "pagina": 4,
+      "arquivo": "fig-04-eco-e-reverberacao.png",
+      "alt": "Linhas de tempo mostrando reflexão sonora separada no eco e próxima no caso da reverberação",
+      "aprovada": true,
+      "sha256": "63381c50ae46d5c3653078d1ef10fa1c6f881b73369af4211a412dad53f13b62",
+      "largura_px": 1371,
+      "altura_px": 1134,
+      "publicado_sha256": "63381c50ae46d5c3653078d1ef10fa1c6f881b73369af4211a412dad53f13b62",
+      "publicado_commit": "974781da5987cb4e0b29c10c94c91cc297d89f24"
+    },
+    {
+      "id": "fig-05-formacao-de-sombra",
+      "pagina": 5,
+      "arquivo": "fig-05-formacao-de-sombra.png",
+      "alt": "Fonte pontual, obstáculo opaco e região de sombra delimitada por raios retilíneos",
+      "aprovada": true,
+      "sha256": "1cf529bdbb8d3ad2299320586ba82005d1c66b891d760c4ab0952bff38d23c42",
+      "largura_px": 1394,
+      "altura_px": 1028,
+      "publicado_sha256": "1cf529bdbb8d3ad2299320586ba82005d1c66b891d760c4ab0952bff38d23c42",
+      "publicado_commit": "974781da5987cb4e0b29c10c94c91cc297d89f24"
+    },
+    {
+      "id": "fig-06-reflexao-e-refracao",
+      "pagina": 6,
+      "arquivo": "fig-06-reflexao-e-refracao.png",
+      "alt": "Raio incidente em interface com parte refletida e parte refratada em relação à normal",
+      "aprovada": true,
+      "sha256": "261f40ba2605f48ed23c7ac22762332ba3de47cdcb7457a0b69c7835a0116b21",
+      "largura_px": 1359,
+      "altura_px": 1146,
+      "publicado_sha256": "261f40ba2605f48ed23c7ac22762332ba3de47cdcb7457a0b69c7835a0116b21",
+      "publicado_commit": "974781da5987cb4e0b29c10c94c91cc297d89f24"
+    },
+    {
+      "id": "fig-07-dispersao-da-luz-branca",
+      "pagina": 7,
+      "arquivo": "fig-07-dispersao-da-luz-branca.png",
+      "alt": "Feixe branco atravessando um prisma e saindo separado em cores",
+      "aprovada": true,
+      "sha256": "cbff40ab9dd5634eec43737010568c45782faab27b5e2f28c3110b6490e74266",
+      "largura_px": 1394,
+      "altura_px": 1016,
+      "publicado_sha256": "cbff40ab9dd5634eec43737010568c45782faab27b5e2f28c3110b6490e74266",
+      "publicado_commit": "974781da5987cb4e0b29c10c94c91cc297d89f24"
+    },
+    {
+      "id": "fig-08-padrao-da-dupla-fenda",
+      "pagina": 8,
+      "arquivo": "fig-08-padrao-da-dupla-fenda.png",
+      "alt": "Duas fendas iluminadas e anteparo com faixas claras e escuras alternadas",
+      "aprovada": true,
+      "sha256": "3b02e554a2ca66e381e7eb02da5bd4ab4f9d5aec0cb651fd59255d8d8fc0fcb6",
+      "largura_px": 1418,
+      "altura_px": 1146,
+      "publicado_sha256": "3b02e554a2ca66e381e7eb02da5bd4ab4f9d5aec0cb651fd59255d8d8fc0fcb6",
+      "publicado_commit": "974781da5987cb4e0b29c10c94c91cc297d89f24"
+    }
+  ]
+}

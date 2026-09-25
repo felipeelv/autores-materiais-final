@@ -1,0 +1,156 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-fisica}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-camadas-internas-da-terra
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.7,9.4);
+  \coordinate (O) at (4.0,4.55);
+  \fill[elevelaranjaclaro] (O) circle (3.55);
+  \fill[elevecinzaclaro] (O) circle (2.75);
+  \fill[eleveazulclaro] (O) circle (1.8);
+  \fill[elevelaranja!75] (O) circle (0.95);
+  \draw[eleveazul, line width=1.4pt] (O) circle (3.55);
+  \draw[elevecinza, line width=1.05pt] (O) circle (2.75);
+  \draw[elevecinza, line width=1.05pt] (O) circle (1.8);
+  \draw[elevecinza, line width=1.05pt] (O) circle (0.95);
+  \fill[white] (O) -- ++(15:4.0) arc[start angle=15,end angle=-35,radius=4.0] -- cycle;
+  \draw[elevecinza, line width=1.0pt] (O) -- ++(15:3.55);
+  \draw[elevecinza, line width=1.0pt] (O) -- ++(-35:3.55);
+
+  \draw[fisica auxiliar] (6.95,6.45) -- (8.0,7.45);
+  \node[fisica rotulo, anchor=west] at (8.05,7.45) {crosta};
+  \draw[fisica auxiliar] (6.45,5.4) -- (8.0,5.9);
+  \node[fisica rotulo, anchor=west] at (8.05,5.9) {manto};
+  \draw[fisica auxiliar] (5.55,4.75) -- (8.0,4.35);
+  \node[fisica rotulo, anchor=west] at (8.05,4.35) {núcleo externo};
+  \draw[fisica auxiliar] (4.8,4.3) -- (8.0,2.75);
+  \node[fisica rotulo, anchor=west] at (8.05,2.75) {núcleo interno};
+  \node[font=\large\bfseries, text=elevecinza] at (4.0,0.35)
+    {corte esquemático sem escala};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-desvio-das-ondas-sismicas
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.5,7.5);
+  \fill[elevelaranjaclaro] (0.55,0.55) rectangle (3.55,6.9);
+  \fill[elevecinzaclaro] (3.55,0.55) rectangle (6.8,6.9);
+  \fill[eleveazulclaro] (6.8,0.55) rectangle (9.95,6.9);
+  \draw[fisica superficie] (3.55,0.55) -- (3.55,6.9);
+  \draw[fisica superficie] (6.8,0.55) -- (6.8,6.9);
+  \node[font=\large\bfseries, text=elevecinza] at (2.05,6.35) {material 1};
+  \node[font=\large\bfseries, text=elevecinza] at (5.2,6.35) {material 2};
+  \node[font=\large\bfseries, text=elevecinza] at (8.4,6.35) {material 3};
+  \fill[elevelaranja] (0.85,1.0) circle (4pt);
+  \node[fisica medida, anchor=west] at (1.05,1.0) {fonte};
+  \draw[fisica raio] (0.85,1.0) -- (3.55,2.6);
+  \draw[fisica raio] (3.55,2.6) -- (6.8,4.65);
+  \draw[fisica raio] (6.8,4.65) -- (9.55,5.35);
+  \draw[fisica auxiliar] (3.55,1.65) -- (3.55,3.55);
+  \draw[fisica auxiliar] (6.8,3.7) -- (6.8,5.6);
+  \node[fisica rotulo] at (5.15,0.55) {a trajetória muda nas fronteiras};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-camadas-da-atmosfera
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.6,10.3);
+  \fill[eleveazulclaro!55] (1.0,0.7) rectangle (4.3,2.25);
+  \fill[eleveazulclaro!70] (1.0,2.25) rectangle (4.3,3.8);
+  \fill[eleveazulclaro!82] (1.0,3.8) rectangle (4.3,5.35);
+  \fill[eleveazulclaro!94] (1.0,5.35) rectangle (4.3,6.9);
+  \fill[elevecinzaclaro] (1.0,6.9) rectangle (4.3,8.45);
+  \draw[eleveazul, line width=1.2pt] (1.0,0.7) rectangle (4.3,8.45);
+  \foreach \y in {2.25,3.8,5.35,6.9}
+    \draw[eleveazul, line width=0.8pt] (1.0,\y) -- (4.3,\y);
+  \node[font=\large\bfseries, text=elevecinza] at (2.65,1.48) {troposfera};
+  \node[font=\large\bfseries, text=elevecinza] at (2.65,3.02) {estratosfera};
+  \node[font=\large\bfseries, text=elevecinza] at (2.65,4.57) {mesosfera};
+  \node[font=\large\bfseries, text=elevecinza] at (2.65,6.12) {termosfera};
+  \node[font=\large\bfseries, text=elevecinza] at (2.65,7.67) {exosfera};
+
+  \node[fisica rotulo, anchor=west] at (5.1,1.48) {tempo e nuvens};
+  \node[fisica rotulo, anchor=west] at (5.1,3.02) {ozônio};
+  \node[fisica rotulo, anchor=west] at (5.1,4.57) {meteoros};
+  \node[fisica rotulo, anchor=west] at (5.1,6.12) {auroras};
+  \node[fisica rotulo, anchor=west] at (5.1,7.67) {transição ao espaço};
+  \draw[fisica eixo] (0.45,0.7) -- (0.45,8.85)
+    node[above, fisica rotulo] {altitude};
+  \draw[fisica superficie] (0.55,0.7) -- (9.8,0.7);
+  \node[font=\large\bfseries, text=elevecinza] at (5.3,9.55)
+    {limites esquemáticos};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-ciclo-das-rochas
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.4,9.4);
+  \node[fisica corpo, minimum width=2.55cm, minimum height=1.25cm] (I)
+    at (5.1,7.75) {ígnea};
+  \node[fisica corpo, minimum width=2.55cm, minimum height=1.25cm] (S)
+    at (1.9,2.05) {sedimentar};
+  \node[fisica corpo, minimum width=2.55cm, minimum height=1.25cm] (M)
+    at (8.3,2.05) {metamórfica};
+  \draw[fisica movimento, bend right=18] (I.west) to
+    node[fisica rotulo, left, align=center] {erosão\\e deposição} (S.north);
+  \draw[fisica movimento, bend right=18] (S.east) to
+    node[fisica rotulo, below=9pt, align=center] {calor e\\pressão} (M.west);
+  \draw[fisica movimento, bend right=18] (M.north) to
+    node[fisica rotulo, right, align=center] {fusão e\\resfriamento} (I.east);
+  \node[font=\Large\bfseries, text=elevelaranja] at (5.1,4.7)
+    {transformações};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-sequencia-da-fossilizacao
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.6,11.2);
+  \foreach \y in {8.1,5.55,3.0,0.45}
+    \fill[elevelaranjaclaro] (0.75,\y) rectangle (9.85,\y+1.65);
+  \foreach \y in {8.1,5.55,3.0,0.45}
+    \draw[fisica superficie] (0.75,\y) -- (9.85,\y);
+  \node[fisica corpo, minimum width=1.55cm, minimum height=0.55cm] at (2.1,9.1) {};
+  \draw[eleveazul, line width=1.2pt] (1.45,9.1) -- (2.75,9.1);
+  \node[fisica rotulo, anchor=west] at (3.25,8.95) {1. organismo é soterrado};
+
+  \draw[eleveazul, line width=1.3pt] (1.35,6.1) -- (2.85,6.1);
+  \draw[elevecinza, line width=1.1pt] (1.15,6.45) -- (3.05,6.45);
+  \draw[elevecinza, line width=1.1pt] (0.95,6.8) -- (3.25,6.8);
+  \node[fisica rotulo, anchor=west] at (3.55,6.25) {2. camadas se acumulam};
+
+  \draw[eleveazul, line width=2.1pt] (1.45,3.75)
+    .. controls (1.9,4.45) and (2.35,3.1) .. (2.85,3.75);
+  \node[fisica rotulo, anchor=west] at (3.55,3.7) {3. partes resistentes permanecem};
+
+  \draw[elevelaranja, line width=2.1pt] (1.45,1.2)
+    .. controls (1.9,1.9) and (2.35,0.55) .. (2.85,1.2);
+  \fill[eleveazul] (1.75,1.32) circle (2.5pt);
+  \fill[eleveazul] (2.15,1.05) circle (2.5pt);
+  \fill[eleveazul] (2.55,1.38) circle (2.5pt);
+  \node[fisica rotulo, anchor=west] at (3.55,1.15) {4. minerais ocupam os espaços};
+  \foreach \y in {7.75,5.2,2.65}
+    \draw[fisica movimento] (9.25,\y) -- ++(0,-0.9);
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-camadas-e-tempo-geologico
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.2,8.9);
+  \fill[elevelaranjaclaro] (1.15,0.75) rectangle (7.65,2.15);
+  \fill[elevecinzaclaro] (1.15,2.15) rectangle (7.65,3.55);
+  \fill[eleveazulclaro] (1.15,3.55) rectangle (7.65,4.95);
+  \fill[elevelaranjaclaro!70] (1.15,4.95) rectangle (7.65,6.35);
+  \draw[elevecinza, line width=1.2pt] (1.15,0.75) rectangle (7.65,6.35);
+  \foreach \y in {2.15,3.55,4.95}
+    \draw[elevecinza, line width=1.0pt] (1.15,\y) -- (7.65,\y);
+  \draw[eleveazul, line width=1.5pt] (2.1,1.35) arc[start angle=210,end angle=510,radius=0.45];
+  \draw[eleveazul, line width=1.5pt] (5.35,2.85) -- (6.45,2.85);
+  \draw[eleveazul, line width=1.5pt] (5.75,2.5) -- (6.05,3.2);
+  \draw[eleveazul, line width=1.5pt] (2.2,4.25)
+    .. controls (2.8,4.8) and (3.35,3.7) .. (3.9,4.25);
+  \draw[eleveazul, line width=1.5pt] (5.45,5.65) circle (0.35);
+  \draw[fisica eixo] (8.65,1.0) -- (8.65,6.55)
+    node[above, fisica rotulo] {mais recente};
+  \node[fisica rotulo, anchor=west] at (8.0,0.55) {mais antigo};
+  \node[font=\large\bfseries, text=elevecinza] at (4.4,7.7)
+    {ordem relativa das camadas};
+\end{tikzpicture}
+
+\end{document}

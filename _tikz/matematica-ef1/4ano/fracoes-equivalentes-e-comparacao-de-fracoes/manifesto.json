@@ -1,0 +1,83 @@
+{
+  "versao": 1,
+  "disciplina": "matematica-ef1",
+  "ano_serie": "4ano",
+  "titulo_documento": "Frações equivalentes e comparação de frações",
+  "slug_documento": "fracoes-equivalentes-e-comparacao-de-fracoes",
+  "arquivo_markdown": "Matematica EF1/modelos/matematica-ef1-4ano-modelo.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-partes-iguais-e-diferentes",
+      "pagina": 1,
+      "arquivo": "fig-01-partes-iguais-e-diferentes.png",
+      "alt": "Duas barras divididas em quatro partes, uma com partes iguais e outra com partes de tamanhos diferentes",
+      "aprovada": true,
+      "sha256": "b3ac6933ba265e5a00027bcd5409f055965bc8e05d3db7472361cb48f6ffdb46",
+      "largura_px": 1170,
+      "altura_px": 833,
+      "publicado_sha256": "b3ac6933ba265e5a00027bcd5409f055965bc8e05d3db7472361cb48f6ffdb46",
+      "publicado_commit": "7e71b6175d2ea52a9c4b04e2fd82bac369f066bb"
+    },
+    {
+      "id": "fig-02-uma-metade-e-dois-quartos",
+      "pagina": 2,
+      "arquivo": "fig-02-uma-metade-e-dois-quartos.png",
+      "alt": "Duas barras iguais mostram uma metade e dois quartos ocupando a mesma quantidade do todo",
+      "aprovada": true,
+      "sha256": "f4a0f53b1616369df9b358f58007214bddc5d8a0d96ba0be4227f8fed26c4993",
+      "largura_px": 1217,
+      "altura_px": 869,
+      "publicado_sha256": "f4a0f53b1616369df9b358f58007214bddc5d8a0d96ba0be4227f8fed26c4993",
+      "publicado_commit": "7e71b6175d2ea52a9c4b04e2fd82bac369f066bb"
+    },
+    {
+      "id": "fig-03-cortes-equivalentes",
+      "pagina": 3,
+      "arquivo": "fig-03-cortes-equivalentes.png",
+      "alt": "Três barras mostram a mesma metade dividida em dois, quatro e oito pedaços iguais",
+      "aprovada": true,
+      "sha256": "468c30b9941f286ccf9d2e1d3e6cbd363ae09436420832d4d172beae415642c1",
+      "largura_px": 1170,
+      "altura_px": 1117,
+      "publicado_sha256": "468c30b9941f286ccf9d2e1d3e6cbd363ae09436420832d4d172beae415642c1",
+      "publicado_commit": "7e71b6175d2ea52a9c4b04e2fd82bac369f066bb"
+    },
+    {
+      "id": "fig-04-mesmo-ponto-na-reta",
+      "pagina": 4,
+      "arquivo": "fig-04-mesmo-ponto-na-reta.png",
+      "alt": "Reta numérica mostra um meio, dois quartos e quatro oitavos coincidindo no mesmo ponto",
+      "aprovada": true,
+      "sha256": "f881ada891168fa1e5b3db16ee37464c031533b14dcaa53513aa2307723b465f",
+      "largura_px": 1217,
+      "altura_px": 833,
+      "publicado_sha256": "f881ada891168fa1e5b3db16ee37464c031533b14dcaa53513aa2307723b465f",
+      "publicado_commit": "7e71b6175d2ea52a9c4b04e2fd82bac369f066bb"
+    },
+    {
+      "id": "fig-05-mesmo-denominador",
+      "pagina": 5,
+      "arquivo": "fig-05-mesmo-denominador.png",
+      "alt": "Duas barras divididas em oito partes com três oitavos e cinco oitavos destacados para comparação",
+      "aprovada": true,
+      "sha256": "dd142ff73d119fe1aadf71569605ef16ad01f934773e07396139f88f2a491cc2",
+      "largura_px": 1170,
+      "altura_px": 491,
+      "publicado_sha256": "dd142ff73d119fe1aadf71569605ef16ad01f934773e07396139f88f2a491cc2",
+      "publicado_commit": "a456b888a9576b7a7b02297d9277629c8c4afea2"
+    },
+    {
+      "id": "fig-06-mesmo-numerador",
+      "pagina": 6,
+      "arquivo": "fig-06-mesmo-numerador.png",
+      "alt": "Duas barras iguais com uma metade e um oitavo destacados para comparar partes de tamanhos diferentes",
+      "aprovada": true,
+      "sha256": "a00d1efde1981d80d2cc227c9a971c41be2643d2d0c7a40b3630655617cd71b9",
+      "largura_px": 1170,
+      "altura_px": 491,
+      "publicado_sha256": "a00d1efde1981d80d2cc227c9a971c41be2643d2d0c7a40b3630655617cd71b9",
+      "publicado_commit": "a456b888a9576b7a7b02297d9277629c8c4afea2"
+    }
+  ]
+}

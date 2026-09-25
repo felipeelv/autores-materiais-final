@@ -1,0 +1,95 @@
+{
+  "versao": 1,
+  "disciplina": "matematica-ef1",
+  "ano_serie": "5ano",
+  "titulo_documento": "Localização no plano cartesiano",
+  "slug_documento": "localizacao-no-plano-cartesiano",
+  "arquivo_markdown": "Matematica EF1/_staging-3bim/5ano/Localização no plano cartesiano.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-mapa-linhas-e-colunas",
+      "pagina": 1,
+      "arquivo": "fig-01-mapa-linhas-e-colunas.png",
+      "alt": "Grade de um shopping destaca a loja localizada na coluna C e linha quatro",
+      "aprovada": true,
+      "sha256": "53fc7f2c926407e5b1983276553f0005543a17fae4afcc37d0c97abb208be08c",
+      "largura_px": 945,
+      "altura_px": 951,
+      "publicado_sha256": "53fc7f2c926407e5b1983276553f0005543a17fae4afcc37d0c97abb208be08c",
+      "publicado_commit": "bf45e5a1d9358a7dd00cdd019d76f64e03079d92"
+    },
+    {
+      "id": "fig-02-celulas-da-planilha",
+      "pagina": 2,
+      "arquivo": "fig-02-celulas-da-planilha.png",
+      "alt": "Planilha destaca as células B5 e E2 pelo cruzamento de colunas e linhas",
+      "aprovada": true,
+      "sha256": "c756274d2beccd6d760be75a5cbc645d5df32d896ffacb54f78aa015a2e98d9d",
+      "largura_px": 928,
+      "altura_px": 904,
+      "publicado_sha256": "c756274d2beccd6d760be75a5cbc645d5df32d896ffacb54f78aa015a2e98d9d",
+      "publicado_commit": "bf45e5a1d9358a7dd00cdd019d76f64e03079d92"
+    },
+    {
+      "id": "fig-03-latitude-e-longitude",
+      "pagina": 3,
+      "arquivo": "fig-03-latitude-e-longitude.png",
+      "alt": "Globo simplificado mostra paralelos horizontais e meridianos verticais",
+      "aprovada": true,
+      "sha256": "983c5f22af3ecbd43101fc9d1fa735f2c809b7d972e20f936aa9861e12a1602e",
+      "largura_px": 1223,
+      "altura_px": 993,
+      "publicado_sha256": "983c5f22af3ecbd43101fc9d1fa735f2c809b7d972e20f936aa9861e12a1602e",
+      "publicado_commit": "bf45e5a1d9358a7dd00cdd019d76f64e03079d92"
+    },
+    {
+      "id": "fig-04-eixos-e-par-ordenado",
+      "pagina": 4,
+      "arquivo": "fig-04-eixos-e-par-ordenado.png",
+      "alt": "Primeiro quadrante destaca a origem e o ponto de coordenadas três e dois",
+      "aprovada": true,
+      "sha256": "c6af721da08f4c52d7581b92b0073742a7b0058974b4c3a1956fee6785a1ee24",
+      "largura_px": 907,
+      "altura_px": 890,
+      "publicado_sha256": "c6af721da08f4c52d7581b92b0073742a7b0058974b4c3a1956fee6785a1ee24",
+      "publicado_commit": "bf45e5a1d9358a7dd00cdd019d76f64e03079d92"
+    },
+    {
+      "id": "fig-05-marcar-e-ler-pontos",
+      "pagina": 5,
+      "arquivo": "fig-05-marcar-e-ler-pontos.png",
+      "alt": "Plano cartesiano mostra os pontos três e cinco, dois e cinco, e cinco e dois",
+      "aprovada": true,
+      "sha256": "8b89ef759e683e6857581406bbf0ecfd144f1f1c00ee29c53c7d68bde3130f18",
+      "largura_px": 912,
+      "altura_px": 906,
+      "publicado_sha256": "8b89ef759e683e6857581406bbf0ecfd144f1f1c00ee29c53c7d68bde3130f18",
+      "publicado_commit": "bf45e5a1d9358a7dd00cdd019d76f64e03079d92"
+    },
+    {
+      "id": "fig-06-deslocamentos-no-plano",
+      "pagina": 6,
+      "arquivo": "fig-06-deslocamentos-no-plano.png",
+      "alt": "Setas mostram o deslocamento do ponto dois e três até cinco e sete",
+      "aprovada": true,
+      "sha256": "0a9ba37858f73d3089f89d3fe62b9731477aa07e8005cb537e15d06dfb6f5c30",
+      "largura_px": 882,
+      "altura_px": 996,
+      "publicado_sha256": "0a9ba37858f73d3089f89d3fe62b9731477aa07e8005cb537e15d06dfb6f5c30",
+      "publicado_commit": "bf45e5a1d9358a7dd00cdd019d76f64e03079d92"
+    },
+    {
+      "id": "fig-07-trajeto-com-giros",
+      "pagina": 7,
+      "arquivo": "fig-07-trajeto-com-giros.png",
+      "alt": "Malha mostra três passos à direita, giro de noventa graus e dois passos para cima",
+      "aprovada": true,
+      "sha256": "0e167baad02101f72c8621854d2b6b8f7c7774f8c4fa7f0177a3c53cd684570a",
+      "largura_px": 1081,
+      "altura_px": 880,
+      "publicado_sha256": "0e167baad02101f72c8621854d2b6b8f7c7774f8c4fa7f0177a3c53cd684570a",
+      "publicado_commit": "bf45e5a1d9358a7dd00cdd019d76f64e03079d92"
+    }
+  ]
+}

@@ -23,6 +23,8 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **`instrucoes-geograf
 **Regras inegociáveis:**
 
 - **1 tema = 1 capítulo · 1 aula = 1 tópico numerado `## N.`**, na ordem do blueprint. Cada aula é autossuficiente (~50 min).
+- **Título do capítulo:** `# BL{1|2}_Capítulo {N} — {Tema}`. O prefixo indica o bloco do bimestre e a numeração reinicia a cada bloco.
+- **Todo capítulo tem dois arquivos:** o capítulo e o **anexo** (`{Título do capítulo} — Anexo.md`), que é onde vivem "Enquanto isso…", "E para hoje…" e "Esse foi o 'cara'". Nada disso entra no corpo do capítulo.
 - **O material é a REFERÊNCIA DO ALUNO — a explicação é do professor.** Prosa curta para o raciocínio, marcadores para o que é enumerável: máximo 2 frases seguidas antes de uma lista; tabela sempre que houver 2+ itens a contrastar.
 - **Preferir 180–220 palavras de conteúdo por aula, teto firme de 300.** O teto **não é meta**; não existe mínimo. Aula completa pode ficar abaixo da faixa.
 - **Parágrafo enxuto:** uma ideia principal e, sempre que possível, uma única frase curta. A segunda frase só entra quando completa uma relação de causa e consequência.
@@ -35,8 +37,9 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **`instrucoes-geograf
 - **Tradições religiosas vivas com dignidade**, distinguindo sempre relato de tradição de evidência arqueológica ("segundo a tradição…" / "os historiadores debatem…"). Nenhum juízo depreciativo sobre povos e culturas.
 - **Respiro visual em `>`:** uma frase-chave para ressalva histórica, contraste ou síntese; sem emoji e sem título. Nunca deixar três parágrafos de prosa consecutivos: antes do terceiro, inserir lista, tabela, box ou blockquote.
 - **Alternância de subtópicos:** dentro da mesma aula, dois subtópicos `###` sem lista de marcadores não podem ficar seguidos. Reorganize um deles com bullets que expressem elementos realmente paralelos; subtópicos com marcadores podem ser consecutivos.
-- **Boxes são "drops":** família 🔎 💭 👤 · 1–2 por aula, **nunca dois seguidos**.
-- **Bíblia condicional:** versículo só com ligação **conceitual** (teste do sinônimo); capítulo sem versículo é entrega válida. O versículo-âncora não se repete entre capítulos.
+- **Boxes são "drops":** família 🔎 💭 · 1–2 por aula, **nunca dois seguidos** e **nunca logo abaixo de um título** — o box comenta o que o aluno já leu, então antes dele tem de haver parágrafo, lista ou tabela do subtópico.
+- **Nenhum versículo no corpo do capítulo.** A conexão VP do blueprint vive no arquivo de anexo, em "E para hoje…".
+- **Nenhuma ficha biográfica no corpo do capítulo.** O personagem-chave do blueprint vai para "Esse foi o 'cara'", no anexo; o que a aula desenvolve é o **papel histórico** dele, em prosa, quando o recorte pedir.
 - **Zero itens da lista NÃO ANTECIPAR** do blueprint, nem "de passagem".
 - A **pergunta-problema** é respondida dentro da aula pertinente, **sem anunciar**.
 - **Nunca invente número, data ou estatística.**
@@ -64,7 +67,7 @@ Capítulos da **área geo-histórica** para o 3º e 4º bimestres de 2026:
 
 Um capítulo pertence sempre a **uma** disciplina — no EM, nunca misturar recorte de Geografia com o de História.
 
-**A equação do modelo:** `1 tema = 1 capítulo` · `1 aula = 1 tópico numerado (## N.)` · `1 aula ≈ 50 min ≈ 180–220 palavras (teto 300)` · `parágrafos enxutos + marcadores + respiro visual`.
+**A equação do modelo:** `1 tema = 1 capítulo + 1 anexo` · `1 aula = 1 tópico numerado (## N.)` · `1 aula ≈ 50 min ≈ 180–220 palavras (teto 300)` · `parágrafos enxutos + marcadores + respiro visual`.
 
 > **Override específico de Estudos Sociais:** a faixa 180–220 substitui o padrão comum de 220–250 do Anexo A. O recorte completo continua sendo mais importante que a contagem.
 
@@ -87,7 +90,7 @@ Cada blueprint traz, por capítulo: tema, nº de aulas, pergunta-problema, perso
 ## 2. Estrutura do capítulo
 
 ```
-# Capítulo {N} — {Tema}
+# BL{1|2}_Capítulo {N} — {Tema}
 
 > {pergunta-problema do blueprint, sem rótulo — só a pergunta}
 
@@ -100,7 +103,69 @@ Cada blueprint traz, por capítulo: tema, nº de aulas, pergunta-problema, perso
 ...
 ```
 
-O capítulo **termina na última aula**. Não há seção de fechamento.
+O capítulo **termina na última aula**. Não há seção de fechamento — o que fecha o tema vive no **arquivo de anexo** (§2.1).
+
+**Título:** `# BL{1|2}_Capítulo {N} — {Tema}`. O prefixo `BL1_`/`BL2_` identifica o bloco do bimestre; a numeração dos capítulos **reinicia a cada bloco** (BL1_Capítulo 1, BL1_Capítulo 2… BL2_Capítulo 1…). Sem linha de disciplina, ano ou série.
+
+### 2.1 O arquivo de anexo
+
+Cada capítulo entrega **dois arquivos** na pasta do ano:
+
+| Arquivo | Conteúdo |
+|---|---|
+| `{Tema}.md` | o capítulo — só as aulas |
+| `{Tema} — Anexo.md` | "Enquanto isso…", "E para hoje…" e "Esse foi o 'cara'" |
+
+O anexo é material complementar: lê-se **depois** das aulas e não substitui nenhuma delas. Ele existe justamente para que esses três blocos **não atravessem a explicação** — foi o motivo da mudança. Nenhum dos três pode aparecer dentro do capítulo, nem como seção, nem como box, nem diluído na prosa.
+
+Esqueleto do anexo:
+
+````markdown
+# Anexo — BL{1|2}_Capítulo {N}: {Tema}
+
+> Material complementar do capítulo. Lê-se depois das aulas e não substitui nenhuma delas.
+
+---
+
+## Enquanto isso…
+
+{2–4 frases: o que se passava na trajetória cristã no mesmo período ou em torno do mesmo
+problema do capítulo. Fatos datados e verificáveis — nunca inventar data, nome ou número.}
+
+**O que estava em jogo:**
+
+- {tensão real do período}
+- {segunda}
+- {terceira}
+
+---
+
+## E para hoje…
+
+> *"{versículo-âncora da conexão VP do blueprint}"*
+>
+> — **{Referência}**
+
+{1 parágrafo curto ligando o conteúdo do capítulo ao valor da unidade VP — prático e
+específico, sem piedosismo e sem lista de ações.}
+
+---
+
+## Esse foi o "cara"
+
+**{Personagem-chave do blueprint} ({datas})**
+
+- {quem foi};
+- {o que fez};
+- {o que mudou com isso}.
+
+🏛️ **Legado:** {uma linha}.
+````
+
+- **"Enquanto isso…"** é sempre a **trajetória cristã** — igreja, missões, comunidades e debates de fé contemporâneos ao tema. Não é sincronia histórica genérica.
+- **"E para hoje…"** usa o **versículo-âncora prescrito pelo blueprint**. Continua valendo o **teste do sinônimo**: se a ligação depende de o texto e o versículo compartilharem uma palavra, é trocadilho — nesse caso, registre a recusa na entrega em vez de forçar.
+- **"Esse foi o 'cara'"** traz o personagem-chave do blueprint, com os dados que o próprio blueprint fornece.
+- O anexo é o **único lugar** onde emoji aparece fora dos boxes (o 🏛️ do legado).
 
 - **1 aula = 1 tópico `## N.`**, na ordem do blueprint; `---` entre aulas. Cada aula deve ser **autossuficiente**: quem lê só aquele tópico tem a aula completa (~50 min).
 - Os tópicos internos da aula viram subseções **numeradas `### N.1`, `### N.2`** (a numeração da aula, depois a da parte). Título curto e descritivo — o aluno usa como índice.
@@ -158,7 +223,7 @@ Exemplo:
 2. **Ritmo:** conceito → explicação → exemplo. Abertura de seção em 1 frase direta, sem aquecimento; **uma ideia por parágrafo, preferencialmente em uma frase**. Duas frases curtas são o limite quando formam o mesmo encadeamento. Cada frase entrega informação nova; se pode ser cortada sem perda, corte. A meta é **menos volume com todo o conteúdo**, nunca remover conceito para encurtar.
 3. **História = processo, não lista de fatos:** trabalhar causas, consequências, continuidades e rupturas — o "porquê" e o "como", não só o "o quê/quando". Apresentar múltiplas perspectivas quando o blueprint indicar. Datas e nomes ancoram a narrativa, não a substituem.
 4. **Geografia = raciocínio geográfico:** relação sociedade-natureza (nunca separar física de humana), mudança de escala (do local ao global) e leitura espacial descrita em texto. Nada de geografia puramente descritiva e mnemônica ("os principais rios são…").
-5. **Personagem-chave:** aparece **uma vez no capítulo**, na aula mais pertinente, no box `👤 Esse foi o "cara"` (3 bullets focados: quem foi, o que fez, quando — dados do blueprint + 1 linha de legado). Não espalhar menções. *(No EM, a referência-chave vai desenvolvida **no texto**, sem box — ver `instrucoes-geografia-historia-EM.md` §4.)*
+5. **Personagem-chave:** a ficha biográfica vai **inteira para o anexo** ("Esse foi o 'cara'"), nunca no corpo do capítulo. Se o recorte da aula incluir a atuação dele, desenvolva o **papel histórico** em prosa — o que fez, com que consequência — e não a biografia. Regra prática: se a informação só serve para identificar a pessoa (nascimento, morte, alforria, títulos), é anexo; se explica o processo, é aula. Não espalhar menções ao longo do capítulo. *(Vale igualmente para o EM — ver `instrucoes-geografia-historia-EM.md` §4.)*
 6. **Fontes e tradições:** guiar a leitura de fontes quando o blueprint pedir (quem produziu? quando? com que intenção?). **Tradições religiosas vivas são tratadas com dignidade** — distinguir sempre relato de tradição (ex.: relato bíblico do Êxodo) de evidência arqueológica, sem reduzir nem desqualificar nenhum dos dois.
 
 ## 5. Voz e tom
@@ -182,19 +247,20 @@ Exemplo:
 ```
 > 🔎 **Curiosidade:**            → fato surpreendente ligado ao tema (máx. 2 frases)
 > 💭 **Você já pensou nisso?**   → pergunta de reflexão conectando o tema à vida do aluno (2–3 frases)
-> 👤 **Esse foi o "cara":**      → personagem-chave do blueprint (3 bullets + 1 linha de legado)
 ```
 
 - **No máximo 2 boxes por aula.** Cada box é um "drop": dado isolado, **nunca mini-parágrafo** — o padrão é 1 frase única, e os tetos por tipo são os da família acima.
+- **ONDE O BOX ENTRA — o box nunca abre um subtópico.** Ele comenta um conteúdo que o aluno **já leu**; por isso não pode vir imediatamente depois de um título `##` ou `###`. Antes dele é obrigatório haver pelo menos um parágrafo, lista ou tabela daquele subtópico. O lugar natural é **fechando** o subtópico ou entre dois blocos de conteúdo. Subtópico que começa com box está errado mesmo que respeite o limite de 2 por aula — foi o erro mais frequente da disciplina na primeira rodada de produção (46 ocorrências em 29 dos 34 capítulos do 3º bimestre).
+- **Box não carrega o conceito da aula.** Se o dado é o núcleo do subtópico, ele é conteúdo e vai para a prosa; box é sempre informação lateral. Rebaixar o conceito a box e explicar o resto em volta é o mesmo defeito visto de outro ângulo.
 - **Quebra de linha interna obrigatória:** título na 1ª linha (dois espaços no final), conteúdo na 2ª, ambos no blockquote.
 - **Nunca dois boxes seguidos** — sempre pelo menos um parágrafo de conteúdo entre eles.
-- O box `👤` é **1× por capítulo** e existe **só no Fundamental**; no EM a referência-chave vai no texto, sem box (`instrucoes-geografia-historia-EM.md` §4).
+- **Não existe box de personagem.** O antigo `👤 Esse foi o "cara"` foi extinto do corpo do capítulo em 30/07/2026 e passou a ser seção do **arquivo de anexo** (§2.1).
 - Ponto contraintuitivo ou erro comum **não fica em negrito solto no corpo**: como esta família não tem box de alerta (`⚠️`), vira **frase curta própria**.
 
 ## 7. Convenções tipográficas
 
 - **Negrito** → conceito em estudo na primeira ocorrência; nomes de personagens-chave em destaque. *Itálico* → palavras citadas, títulos de obras, termos estrangeiros (*polis*, *Huang He*).
-- Emojis → somente nos boxes padronizados (🔎 💭 👤). Nunca em títulos ou corpo do texto.
+- Emojis → no capítulo, somente nos boxes padronizados (🔎 💭); nunca em títulos ou corpo do texto. No anexo, apenas o 🏛️ do legado.
 - Mapas e esquemas → **descritos em texto** (o projeto não usa imagens); ASCII simples entre ` ``` ` apenas quando um esquema realmente ajudar.
 - Datas: usar "a.C./d.C."; séculos em romanos (século XIX); "c." para datas aproximadas (c. 1250 a.C.).
 - Numerais: por extenso de um a dez em texto corrido; **algarismos sempre** em datas, medidas, populações e tabelas.
@@ -209,7 +275,9 @@ Exemplo:
 - ❌ Profundidade ou temas fora do balizamento do ano definido no blueprint.
 - ❌ Frases-preparação ("Neste capítulo vamos estudar…", "Explorando os conceitos…"). Conteúdo entra direto nas seções.
 - ❌ Rótulos no cabeçalho ("Pergunta-problema:") — só a pergunta em blockquote.
-- ❌ Emojis fora dos boxes · imagens.
+- ❌ **Box logo abaixo de um título** `##` ou `###`, sem conteúdo entre os dois.
+- ❌ **Versículo, ficha biográfica, "Enquanto isso…", "E para hoje…" ou "Esse foi o 'cara'" dentro do capítulo** — os quatro vivem no arquivo de anexo.
+- ❌ Emojis fora dos boxes (no anexo, só o 🏛️) · imagens.
 - ❌ Mais de 2 tabelas por capítulo · tabela sem comparação genuína.
 - ❌ Juízo depreciativo sobre povos, culturas ou tradições religiosas.
 - ❌ Inventar número, data ou estatística.
@@ -232,19 +300,23 @@ Estes elementos existiam como blocos pós-conteúdo no formato antigo (E para ho
 
 1. **Vida do aluno** — é o próprio tecido do capítulo: aberturas concretas, pontes com o presente ("nosso alfabeto descende do fenício") e boxes 💭 cumprem essa função.
 2. **Pergunta-problema** — respondida dentro da aula mais pertinente ao seu conteúdo, de forma natural, **sem anunciar** ("aqui está a resposta…", "respondendo à pergunta…" são proibidos).
-3. **Bíblia (conexão VP do blueprint) — CONDICIONAL, não obrigatória.**
+3. **Bíblia (conexão VP do blueprint) — no ANEXO, nunca no capítulo.**
 
-   O versículo entra **somente quando a ligação for conceitual**: o conceito da aula e o valor da unidade tratam da mesma coisa. Sem essa ligação, **o capítulo sai sem versículo** — e isso é entrega correta, não item faltando.
+   Desde 30/07/2026 o versículo **não entra mais no fluxo da aula**. Ele vive em "E para hoje…", no arquivo de anexo (§2.1). O corpo do capítulo é conteúdo histórico e geográfico, sem citação bíblica.
+
+   O que **não** mudou é o critério de qualidade da ligação: ela precisa ser **conceitual**. Se a conexão prescrita pelo blueprint for trocadilho, o anexo sai sem "E para hoje…" e a recusa é registrada na entrega.
 
    ❌ **Proibido: ligação por palavra.** Se a conexão depende de o texto e o versículo compartilharem um termo, ela não vale. Casos reais reprovados em Biologia (todos vinham prescritos no blueprint): organela "menor" ↔ *"ao menor destes"*; população "pequena" ↔ *"pequenino"*; ciência que "testa todas as manhãs" ↔ *"renovam-se cada manhã"*; sistema imune como "amigo fiel" ↔ *"em todo tempo ama o amigo"*.
 
    **Teste antes de inserir:** *a ligação sobrevive se eu trocar o termo em comum por um sinônimo?* Se não sobrevive, é trocadilho — corte o versículo.
 
-   Formato quando entrar: versículo em blockquote (itálico, referência em linha própria: `— **Gênesis 1:27**`) e **um parágrafo curto** ligando conteúdo e valor, no fluxo do texto, prático e específico — nunca espiritualidade genérica, nunca piedosismo. Sem seção própria, sem lista de ações. **Variar os versículos entre capítulos** — nunca repetir o mesmo versículo-âncora em capítulos diferentes.
+   Formato no anexo: versículo em blockquote (itálico, referência em linha própria: `— **Gênesis 1:27**`) e **um parágrafo curto** ligando conteúdo e valor, prático e específico — nunca espiritualidade genérica, nunca piedosismo, sem lista de ações.
+
+   **Repetição de versículo-âncora:** use o que o blueprint prescreve. Os blueprints repetem a mesma âncora em capítulos diferentes do mesmo ano (a unidade VP é a mesma no bloco), e isso **não é erro de produção** — vem da fonte. Quando dois capítulos vizinhos do mesmo ano caírem no mesmo versículo, escreva parágrafos de ligação claramente distintos, cada um ancorado no conteúdo do seu capítulo.
 
    **O blueprint prescreve a conexão VP, mas não é autoritativo neste ponto:** se a conexão for trocadilho, não a use e registre a recusa na entrega.
 
-❌ Proibido: `## Introdução`, `## E para hoje`, `## Simplificando`, `## Para não esquecer`, `## Sua Parte`, `## Explorando os Conceitos`, "Valores para nossa vida:", `💬 Para Conversar`.
+❌ Proibido **dentro do capítulo**: `## Introdução`, `## Simplificando`, `## Para não esquecer`, `## Sua Parte`, `## Explorando os Conceitos`, "Valores para nossa vida:", `💬 Para Conversar` — e também `## Enquanto isso…`, `## E para hoje…` e `## Esse foi o "cara"`, que só existem no **arquivo de anexo**.
 
 ## 10. Checklist de entrega (conferência de LEITURA)
 
@@ -254,7 +326,7 @@ Estes elementos existiam como blocos pós-conteúdo no formato antigo (E para ho
 > ```
 > E **não persiga a contagem exata de palavras**: conte uma vez, ao final. Só reescreva se estourou o teto de 300 — ficar abaixo dele não é defeito.
 
-- [ ] Título é `# Capítulo {N} — {Tema}` (sem linha de disciplina/ano)
+- [ ] Título é `# BL{1|2}_Capítulo {N} — {Tema}` (sem linha de disciplina/ano), com o prefixo do bloco correto
 - [ ] Todas as aulas do blueprint, na ordem, com todo o recorte desenvolvido
 - [ ] Cada aula abre com cena histórica/situação geográfica concreta · preferir 180–220 palavras (teto 300, sem mínimo) · autossuficiente · zero enchimento
 - [ ] Parágrafos enxutos: uma ideia principal; preferir uma frase e admitir no máximo duas curtas no mesmo encadeamento
@@ -267,10 +339,13 @@ Estes elementos existiam como blocos pós-conteúdo no formato antigo (E para ho
 - [ ] Dentro de cada aula, não há dois subtópicos `###` consecutivos sem lista de marcadores
 - [ ] Datas, nomes, lugares e processos conferidos contra o blueprint; **causas e consequências presentes** (não só fatos); nenhum dado inventado
 - [ ] Máx. 2 tabelas no capítulo, só para comparações genuínas
-- [ ] Boxes: só da família permitida (🔎 💭 👤), 1–2 por aula, nunca consecutivos, quebra de linha interna
-- [ ] Personagem-chave uma única vez, na aula pertinente — box 👤 no Fundamental; **no texto, sem box, no EM**
+- [ ] Boxes: só da família permitida (🔎 💭), 1–2 por aula, nunca consecutivos, quebra de linha interna
+- [ ] **Nenhum box logo abaixo de um título** — todo box tem parágrafo, lista ou tabela antes dele, no mesmo subtópico
+- [ ] **Nenhum box carregando o conceito do subtópico** — o que é núcleo está na prosa; box é informação lateral
+- [ ] Personagem-chave: ficha biográfica **só no anexo**; no capítulo, apenas o papel histórico em prosa, quando o recorte pedir
 - [ ] Tradições religiosas tratadas com dignidade; relato de tradição distinto de evidência histórica
-- [ ] Versículo só com ligação **conceitual** (teste do sinônimo) — sem versículo é entrega válida; versículo-âncora integrado a uma aula, sem repetir o de outro capítulo
+- [ ] **Nenhum versículo no corpo do capítulo** — a conexão VP está no anexo, em "E para hoje…"
+- [ ] **Anexo entregue** como arquivo próprio (`{Tema} — Anexo.md`), com as três seções e dados verificáveis
 - [ ] Zero atividades (e, no EM, zero "caso ENEM"); zero itens de NÃO ANTECIPAR; balizamento do ano respeitado
 - [ ] Sem seções de fechamento; pergunta-problema respondida sem anúncio
 - [ ] **EM:** disciplina única e correta · profundidade N3/N4 · leituras em disputa sem partidarismo
@@ -324,12 +399,12 @@ O mesmo nível N muda de cara conforme a série. Parâmetros objetivos por faixa
 | **Ordem de apresentação** | **Exemplo concreto → conceito**, sem exceção; o conceito nomeia o que a criança acabou de ver | **Exemplo concreto → conceito** (sempre) | Exemplo → conceito, ou conceito → exemplo imediato | Definição formal primeiro é aceitável | Definição direta; aluno já tem repertório |
 | **Vocabulário** | Cotidiano da criança; termo técnico só quando é o próprio conteúdo, explicado com palavra do dia a dia | Cotidiano; **todo termo técnico explicado na 1ª ocorrência** | Técnico consolidado; termo novo sempre explicado | Técnico pleno; nomenclatura padrão da área | Técnico pleno + vocabulário de prova |
 | **Abstração** | Nenhuma; tudo ancorado no que se vê, toca ou conta | Mínima; ancorar em situação vivida/observável | Transição: alterna concreto e abstrato | Abstração plena, com retorno ao real como aplicação | Abstração + síntese entre temas |
-| **Exemplos por conceito** | 2, do mundo da criança de 9–10 anos (casa, escola, brincadeira, animais, comida, dinheiro de troco) | 2, do universo do aluno (escola, família, esporte, jogos, tecnologia) | 1–2, de textos/fenômenos reais e referências culturais | 1–2, de fontes reais (literatura, imprensa, dados, experimento) | 1 forte + 1 no formato de prova |
+| **Exemplos por conceito** | 1 exemplo claro; segundo só quando mostrar uma situação diferente, sempre do mundo da criança | 2, do universo do aluno (escola, família, esporte, jogos, tecnologia) | 1–2, de textos/fenômenos reais e referências culturais | 1–2, de fontes reais (literatura, imprensa, dados, experimento) | 1 forte + 1 no formato de prova |
 | **Exceções e casos raros** | Nunca entram | Não entram (salvo se estiverem no recorte do blueprint) | Entram as principais | Sistematizadas | Sistematizadas + pegadinhas clássicas de prova |
 | **Tom** | Professor próximo, fala com "você", frases afirmativas — **sem infantilizar, sem diminutivo, sem personagem falante** | Professor próximo e direto (fala com "você") | Direto, sem infantilizar | Acadêmico acessível — **nunca infantilizar** | Pré-universitário |
 | **Conexão com prova** | Não | Não | Leve (no 9º, mencionar quando natural) | Notas ENEM/vestibular quando o conteúdo render | Sistemática |
 
-**Nota sobre o 4º–5º ano:** faixa acrescentada em 20/07/2026 com a entrada do Fundamental I. A escala N1–N4 não muda — ela descreve a operação cognitiva, não a linguagem. Na prática o EF1 opera em **N1–N3**; **N4 é raro** e só aparece quando o próprio blueprint marcar. O erro típico aqui não é escrever difícil demais, é **infantilizar**: o aluno de 9–10 anos entende explicação direta, o que ele não tem é repertório abstrato.
+**Nota sobre o 4º–5º ano:** faixa acrescentada em 20/07/2026 com a entrada do Fundamental I. A escala N1–N4 não muda — ela descreve a operação cognitiva, não a linguagem. Na prática o EF1 opera em **N1–N3**; **N4 é raro** e só aparece quando o próprio blueprint marcar. O texto usa palavras comuns, exemplos próximos e frases curtas. Simplicidade não significa infantilização: diminutivos e personagens falantes continuam fora do padrão.
 
 **Nota sobre o 9º ano:** é segmento próprio no calendário (24 aulas/sem), mas na escrita segue a coluna 8º–9º **puxando para cima** — é a ponte para o EM.
 
@@ -436,12 +511,12 @@ $$\frac{1+2}{4} = \frac{3}{4}$$
 2. **Pergunta-problema** do blueprint em blockquote logo abaixo do título, **sem rótulo** — só a pergunta. É respondida dentro da aula pertinente, sem anunciar.
 3. **1 aula = 1 tópico `## N.`**, na ordem do blueprint; `---` entre aulas. Cada aula autossuficiente (~50 min).
 4. **2–3 subseções `### N.1`, `### N.2`** por aula, com título curto (pode ser pergunta orientadora).
-5. **Extensão por aula:** padrão da casa 220–250 (teto 300); overrides por disciplina — Física 130–170 (teto 190), Geometria 170–210 (teto 240), Matemática EF1 180–220 (teto 260). Fórmulas, exemplos resolvidos, tabelas, ASCII e boxes **não** entram na conta. **O teto não é meta; não existe mínimo.**
+5. **Extensão por aula:** padrão da casa 220–250 (teto 300); overrides por disciplina — Física 130–170 (teto 190), Química 180–210 (teto 240), Geometria 170–210 (teto 240), Matemática EF1 **sem alvo e sem mínimo** (teto 160). Fórmulas, exemplos resolvidos, tabelas, ASCII, figuras TikZ/PNG, textos alternativos e boxes **não** entram na conta. **O teto não é meta.**
 6. **Prosa curta + marcadores:** máx. 2 frases seguidas antes de uma lista; tabela para 2+ itens comparáveis; **liste o paralelo, escreva o encadeado**. Toda lista com frase de transição **informativa**.
-7. **Boxes:** só a família da disciplina, em blockquote, com quebra de linha interna (título na 1ª linha com dois espaços finais). 1–2 por aula, **nunca dois seguidos**, 1 frase ("drop").
-8. **Bíblia condicional:** versículo só com ligação **conceitual** (teste do sinônimo) — capítulo sem versículo é entrega válida.
-9. **Personagem/referência-chave** 1× por capítulo, na aula pertinente (EF em box 👤 onde a disciplina tiver; EM e matemáticas integrado ao texto).
-10. **O que NUNCA aparece:** blocos pós-conteúdo do formato antigo (`Introdução`, `Sua Parte`, `O que a Bíblia diz sobre...`, `E a Bíblia nisso?`, `Simplificando`, `Para não esquecer`, `Explorando os Conceitos`, `Ampliando o Olhar`, `No Fio da História`, `O Que a Fé Diz`, `Pensador em Destaque`, `Você já pensou nisso?`, `Síntese`, `Fórmulas do capítulo`, `💬 Para Conversar`) · atividades/exercícios propostos/provas · itens do NÃO ANTECIPAR · emojis fora de box · imagens (figuras descritas ou ASCII) · frases-preparação ("Neste capítulo vamos...").
+7. **Boxes:** só a família da disciplina, em blockquote, com quebra de linha interna (título na 1ª linha com dois espaços finais). 1–2 por aula, **nunca dois seguidos**, 1 frase ("drop"). **O box nunca abre um subtópico** — antes dele tem de haver parágrafo, lista ou tabela, porque ele comenta o que o aluno já leu.
+8. **Bíblia condicional:** versículo só com ligação **conceitual** (teste do sinônimo) — capítulo sem versículo é entrega válida. *(Em Estudos Sociais, desde 30/07/2026 o versículo não entra no capítulo: vive no arquivo de anexo.)*
+9. **Personagem/referência-chave** 1× por capítulo, na aula pertinente (EF em box 👤 onde a disciplina tiver; EM e matemáticas integrado ao texto). *(Estudos Sociais não tem mais box de personagem — a ficha vai para o anexo.)*
+10. **O que NUNCA aparece:** blocos pós-conteúdo do formato antigo (`Introdução`, `Sua Parte`, `O que a Bíblia diz sobre...`, `E a Bíblia nisso?`, `Simplificando`, `Para não esquecer`, `Explorando os Conceitos`, `Ampliando o Olhar`, `No Fio da História`, `O Que a Fé Diz`, `Pensador em Destaque`, `Você já pensou nisso?`, `Síntese`, `Fórmulas do capítulo`, `💬 Para Conversar`) · atividades/exercícios propostos/provas · itens do NÃO ANTECIPAR · emojis fora de box · imagens, **exceto as figuras TikZ/PNG autorizadas pelo manual da disciplina** · frases-preparação ("Neste capítulo vamos...").
 
 **Famílias de boxes por disciplina:**
 
@@ -451,7 +526,7 @@ $$\frac{1+2}{4} = \frac{3}{4}$$
 | Física | 💭 ⏸️ 💡 📏 ⚡ 📐 (+ 📝 rótulo de exemplo) |
 | Química | 💡 🔎 🌍 💭 ⏸️ ⚠️ |
 | Português | 💡 ⚠️ 📌 🔎 👤 |
-| Estudos Sociais (Geo/Hist) | 🔎 💭 👤 |
+| Estudos Sociais (Geo/Hist) | 🔎 💭 |
 | Sociologia · Filosofia | 💭 ⏸️ 💡 🔍 |
 | Operações · Geometria · Financeira · Matemática EF1 | 🔢 ⚠️ |
 

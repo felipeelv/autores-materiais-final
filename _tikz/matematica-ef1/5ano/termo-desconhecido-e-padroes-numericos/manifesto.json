@@ -1,0 +1,23 @@
+{
+  "versao": 1,
+  "disciplina": "matematica-ef1",
+  "ano_serie": "5ano",
+  "titulo_documento": "Termo desconhecido e padrões numéricos",
+  "slug_documento": "termo-desconhecido-e-padroes-numericos",
+  "arquivo_markdown": "Matematica EF1/_staging-3bim/5ano/Termo desconhecido e padrões numéricos.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-padroes-de-soma-e-dobro",
+      "pagina": 1,
+      "arquivo": "fig-01-padroes-de-soma-e-dobro.png",
+      "alt": "Duas sequências visuais comparam somar três a cada passo e dobrar o termo anterior",
+      "aprovada": true,
+      "sha256": "90ef30ce113f9545ae5cf04b2389950ce3c0a22e7463b2f2bec215738e462ae3",
+      "largura_px": 1453,
+      "altura_px": 833,
+      "publicado_sha256": "90ef30ce113f9545ae5cf04b2389950ce3c0a22e7463b2f2bec215738e462ae3",
+      "publicado_commit": "6c942753ca7f024fd3e570569e223cd6dbeb87b1"
+    }
+  ]
+}

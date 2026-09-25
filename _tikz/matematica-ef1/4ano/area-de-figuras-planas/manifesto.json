@@ -1,0 +1,71 @@
+{
+  "versao": 1,
+  "disciplina": "matematica-ef1",
+  "ano_serie": "4ano",
+  "titulo_documento": "Área de figuras planas",
+  "slug_documento": "area-de-figuras-planas",
+  "arquivo_markdown": "Matematica EF1/_staging-3bim/4ano/Área de figuras planas.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-azulejos-e-area",
+      "pagina": 1,
+      "arquivo": "fig-01-azulejos-e-area.png",
+      "alt": "Piso retangular aparece totalmente coberto por doze azulejos quadrados",
+      "aprovada": true,
+      "sha256": "88b595e2b442db068e11fa58859766bb25ed0e2aaca9601a5d5e9dd8582c7eea",
+      "largura_px": 1016,
+      "altura_px": 762,
+      "publicado_sha256": "88b595e2b442db068e11fa58859766bb25ed0e2aaca9601a5d5e9dd8582c7eea",
+      "publicado_commit": "aaf6408dc49aa775a94731ecb7c149187882df30"
+    },
+    {
+      "id": "fig-02-contagem-por-fileiras",
+      "pagina": 2,
+      "arquivo": "fig-02-contagem-por-fileiras.png",
+      "alt": "Malha retangular organiza vinte quadradinhos em cinco fileiras de quatro",
+      "aprovada": true,
+      "sha256": "227b06d7a1c93b6dc3f5e03babd222a99c0b30b0f7eacd274d0c75e4dc403f60",
+      "largura_px": 1117,
+      "altura_px": 939,
+      "publicado_sha256": "227b06d7a1c93b6dc3f5e03babd222a99c0b30b0f7eacd274d0c75e4dc403f60",
+      "publicado_commit": "aaf6408dc49aa775a94731ecb7c149187882df30"
+    },
+    {
+      "id": "fig-03-metades-de-quadradinho",
+      "pagina": 3,
+      "arquivo": "fig-03-metades-de-quadradinho.png",
+      "alt": "Quatro meios quadradinhos se agrupam em dois quadradinhos inteiros",
+      "aprovada": true,
+      "sha256": "fccf27e0f4e5653be71d7820d71eef28fb25019947eb5691a4d38572dc8422c7",
+      "largura_px": 1341,
+      "altura_px": 721,
+      "publicado_sha256": "fccf27e0f4e5653be71d7820d71eef28fb25019947eb5691a4d38572dc8422c7",
+      "publicado_commit": "aaf6408dc49aa775a94731ecb7c149187882df30"
+    },
+    {
+      "id": "fig-04-perimetro-e-area",
+      "pagina": 4,
+      "arquivo": "fig-04-perimetro-e-area.png",
+      "alt": "Mesma figura destaca o contorno em centímetros e o interior em centímetros quadrados",
+      "aprovada": true,
+      "sha256": "8f0234be960aa8a2fd4a2462dfe6105ac9739d0941a40c4c191bcfde4da64a12",
+      "largura_px": 1193,
+      "altura_px": 821,
+      "publicado_sha256": "8f0234be960aa8a2fd4a2462dfe6105ac9739d0941a40c4c191bcfde4da64a12",
+      "publicado_commit": "aaf6408dc49aa775a94731ecb7c149187882df30"
+    },
+    {
+      "id": "fig-05-mesma-area-formatos",
+      "pagina": 5,
+      "arquivo": "fig-05-mesma-area-formatos.png",
+      "alt": "Duas figuras de formatos diferentes possuem doze quadradinhos e perímetros distintos",
+      "aprovada": true,
+      "sha256": "6ee8da4a10c932c7365798c245ca178f483c15e638cd381fa6d9a367f85ea291",
+      "largura_px": 1430,
+      "altura_px": 898,
+      "publicado_sha256": "6ee8da4a10c932c7365798c245ca178f483c15e638cd381fa6d9a367f85ea291",
+      "publicado_commit": "aaf6408dc49aa775a94731ecb7c149187882df30"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "versao": 1,
+  "disciplina": "matematica-ef1",
+  "ano_serie": "5ano",
+  "titulo_documento": "Volume e capacidade",
+  "slug_documento": "volume-e-capacidade",
+  "arquivo_markdown": "Matematica EF1/_staging-3bim/5ano/Volume e capacidade.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-comprimento-area-e-volume",
+      "pagina": 1,
+      "arquivo": "fig-01-comprimento-area-e-volume.png",
+      "alt": "Bloco retangular destaca uma aresta, uma face e o interior como comprimento, área e volume",
+      "aprovada": true,
+      "sha256": "f475953512ae0ab993f62b85eda677bc9e22e095facf2c8c9537cce041acdcd3",
+      "largura_px": 1300,
+      "altura_px": 975,
+      "publicado_sha256": "f475953512ae0ab993f62b85eda677bc9e22e095facf2c8c9537cce041acdcd3",
+      "publicado_commit": "4a0b5db3a682bfc889fefc24ed40dbe058b9cd58"
+    },
+    {
+      "id": "fig-02-cubos-em-camadas",
+      "pagina": 2,
+      "arquivo": "fig-02-cubos-em-camadas.png",
+      "alt": "Bloco de vinte e quatro cubos aparece organizado em duas camadas de doze",
+      "aprovada": true,
+      "sha256": "de4e64eb4394a3442b7a462c96093da370c2deefa81d1325b8bb3ac218082f4f",
+      "largura_px": 1371,
+      "altura_px": 1087,
+      "publicado_sha256": "de4e64eb4394a3442b7a462c96093da370c2deefa81d1325b8bb3ac218082f4f",
+      "publicado_commit": "4a0b5db3a682bfc889fefc24ed40dbe058b9cd58"
+    },
+    {
+      "id": "fig-03-dimensoes-do-bloco",
+      "pagina": 3,
+      "arquivo": "fig-03-dimensoes-do-bloco.png",
+      "alt": "Bloco de cubos indica quatro de comprimento, três de largura e duas camadas",
+      "aprovada": true,
+      "sha256": "b70137a1dded7108c8400e26494487625dc5c848965d4bcc535cbf3d87db4252",
+      "largura_px": 1371,
+      "altura_px": 1016,
+      "publicado_sha256": "b70137a1dded7108c8400e26494487625dc5c848965d4bcc535cbf3d87db4252",
+      "publicado_commit": "4a0b5db3a682bfc889fefc24ed40dbe058b9cd58"
+    },
+    {
+      "id": "fig-04-litro-e-centimetro-cubico",
+      "pagina": 4,
+      "arquivo": "fig-04-litro-e-centimetro-cubico.png",
+      "alt": "Cubo de dez centímetros de aresta relaciona mil centímetros cúbicos a um litro",
+      "aprovada": true,
+      "sha256": "9f29f49972cc5b848ac79acea11bd2ac23f9c4f7221fc4d86d929b9619597a17",
+      "largura_px": 1335,
+      "altura_px": 969,
+      "publicado_sha256": "9f29f49972cc5b848ac79acea11bd2ac23f9c4f7221fc4d86d929b9619597a17",
+      "publicado_commit": "4a0b5db3a682bfc889fefc24ed40dbe058b9cd58"
+    }
+  ]
+}

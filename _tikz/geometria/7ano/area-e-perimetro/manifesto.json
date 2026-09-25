@@ -1,0 +1,95 @@
+{
+  "versao": 1,
+  "disciplina": "geometria",
+  "ano_serie": "7ano",
+  "titulo_documento": "Área e perímetro",
+  "slug_documento": "area-e-perimetro",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Geometria/7ano/geometria-7ano-3bim-cap2.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-mesmo-perimetro-areas-diferentes",
+      "pagina": 1,
+      "arquivo": "fig-01-mesmo-perimetro-areas-diferentes.png",
+      "alt": "Retângulo de um por nove metros e quadrado de lado cinco metros com mesmo perímetro e áreas diferentes",
+      "aprovada": true,
+      "sha256": "ba4aa18250dc166e08eec4467956762337e36b45da888f6bc511f8ff2e468f0e",
+      "largura_px": 1288,
+      "altura_px": 1075,
+      "publicado_sha256": "ba4aa18250dc166e08eec4467956762337e36b45da888f6bc511f8ff2e468f0e",
+      "publicado_commit": "8d4b2c462ff20696e7687269458e49f45d3f2636"
+    },
+    {
+      "id": "fig-02-recomposicao-do-paralelogramo",
+      "pagina": 2,
+      "arquivo": "fig-02-recomposicao-do-paralelogramo.png",
+      "alt": "Recorte triangular deslocado de um lado do paralelogramo para formar um retângulo de mesma área",
+      "aprovada": true,
+      "sha256": "df09c8513a85cbc7739dbe44246133d824fef0d5ccae379c34df2f8f90bb70bf",
+      "largura_px": 1164,
+      "altura_px": 999,
+      "publicado_sha256": "df09c8513a85cbc7739dbe44246133d824fef0d5ccae379c34df2f8f90bb70bf",
+      "publicado_commit": "8d4b2c462ff20696e7687269458e49f45d3f2636"
+    },
+    {
+      "id": "fig-03-losango-em-quatro-triangulos",
+      "pagina": 3,
+      "arquivo": "fig-03-losango-em-quatro-triangulos.png",
+      "alt": "Losango dividido por diagonais perpendiculares em quatro triângulos retângulos",
+      "aprovada": true,
+      "sha256": "8a492ae9fc3ecf6a248bc57e7c68b5fd0f919be082c549b4d27cc2b31c63afd3",
+      "largura_px": 1087,
+      "altura_px": 969,
+      "publicado_sha256": "8a492ae9fc3ecf6a248bc57e7c68b5fd0f919be082c549b4d27cc2b31c63afd3",
+      "publicado_commit": "8d4b2c462ff20696e7687269458e49f45d3f2636"
+    },
+    {
+      "id": "fig-04-duplicacao-do-trapezio",
+      "pagina": 4,
+      "arquivo": "fig-04-duplicacao-do-trapezio.png",
+      "alt": "Duas cópias de um trapézio formando um paralelogramo cuja base mede B mais b",
+      "aprovada": true,
+      "sha256": "eada84c124bdb6394ae1a3be3094f116b4b0770194f06c0209ebeb679a3ad06e",
+      "largura_px": 1188,
+      "altura_px": 969,
+      "publicado_sha256": "eada84c124bdb6394ae1a3be3094f116b4b0770194f06c0209ebeb679a3ad06e",
+      "publicado_commit": "8d4b2c462ff20696e7687269458e49f45d3f2636"
+    },
+    {
+      "id": "fig-05-dois-triangulos-formam-paralelogramo",
+      "pagina": 5,
+      "arquivo": "fig-05-dois-triangulos-formam-paralelogramo.png",
+      "alt": "Dois triângulos congruentes unidos para formar um paralelogramo de base b e altura h",
+      "aprovada": true,
+      "sha256": "fc57ae5adaddab40beed59b7f6de7cf44874a62b711f0e1aed903180c9e3aca4",
+      "largura_px": 1134,
+      "altura_px": 815,
+      "publicado_sha256": "fc57ae5adaddab40beed59b7f6de7cf44874a62b711f0e1aed903180c9e3aca4",
+      "publicado_commit": "8d4b2c462ff20696e7687269458e49f45d3f2636"
+    },
+    {
+      "id": "fig-06-circulo-reorganizado-em-quase-retangulo",
+      "pagina": 6,
+      "arquivo": "fig-06-circulo-reorganizado-em-quase-retangulo.png",
+      "alt": "Setores de um círculo alternados para aproximar um retângulo de base pi r e altura r",
+      "aprovada": true,
+      "sha256": "642648eb610cdf0876cf422b1064636051c8377d1682677cdddfdff0e875aa51",
+      "largura_px": 1182,
+      "altura_px": 1158,
+      "publicado_sha256": "642648eb610cdf0876cf422b1064636051c8377d1682677cdddfdff0e875aa51",
+      "publicado_commit": "8d4b2c462ff20696e7687269458e49f45d3f2636"
+    },
+    {
+      "id": "fig-07-composicao-e-subtracao-de-areas",
+      "pagina": 7,
+      "arquivo": "fig-07-composicao-e-subtracao-de-areas.png",
+      "alt": "Mesma figura em formato de L dividida por soma de retângulos e por subtração de um recorte",
+      "aprovada": true,
+      "sha256": "62d1fbf340348e404cb426b201ec8fbaf765fd81044206c5d90da2806385f0c1",
+      "largura_px": 1347,
+      "altura_px": 904,
+      "publicado_sha256": "62d1fbf340348e404cb426b201ec8fbaf765fd81044206c5d90da2806385f0c1",
+      "publicado_commit": "8d4b2c462ff20696e7687269458e49f45d3f2636"
+    }
+  ]
+}

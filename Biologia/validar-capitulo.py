@@ -33,7 +33,8 @@ import re, argparse
 # fora_box: emojis permitidos FORA de box (ex.: rótulo 📝 Exemplo da Física)
 DISC = {
     "portugues":       dict(boxes="💡⚠️📌🔎👤", fora_box="",  familia="humanas"),
-    "estudos-sociais": dict(boxes="🔎💭👤",       fora_box="",  familia="humanas"),
+    "estudos-sociais": dict(boxes="🔎💭👤",       fora_box="",  familia="humanas",
+                            prefixo_bloco=True),
     "sociologia":      dict(boxes="💭⏸️💡🔍",     fora_box="",  familia="humanas"),
     "filosofia":       dict(boxes="💭⏸️💡🔍",     fora_box="",  familia="humanas"),
     "ciencias":        dict(boxes="💭⏸️💡📏🔬",   fora_box="",  familia="empiricas"),
@@ -46,13 +47,15 @@ DISC = {
     "matematica-ef1":  dict(boxes="🔢⚠️",         fora_box="",  familia="matematicas"),
 }
 
-# Extensão por aula: (piso, teto). O piso só avisa; o teto reprova acima de +10%.
+# Extensão por aula: (piso, teto). O piso só avisa; em Biologia o teto é firme.
+# Nas demais disciplinas, o teto reprova acima de +10%.
 # Disciplinas fórmula-driven entregam o mesmo conteúdo em menos texto — fórmula,
 # tabela e figura carregam o que em Humanas precisa de frase.
 # ⚠️ Os limites foram calibrados com o método de contagem de contar_conteudo().
 # Mudar o método sem recalibrar faz o validador reprovar o padrão-ouro.
 MIN_PAL, MAX_PAL = 180, 300
 PAL_POR_DISC = {
+    "biologia":      (180, 220),
     "fisica":         (110, 190),
     "geometria":      (150, 240),
     "matematica-ef1": (150, 260),   # provisório — calibrar após o piloto
@@ -170,10 +173,16 @@ def main():
 
     # 1. Estrutura ------------------------------------------------------------
     print("\n[1] Estrutura")
-    if not re.match(r"^#\s+Capítulo\s+\d+\s+—\s+.+", texto.strip()):
-        rc |= falha("título não é `# Capítulo N — Tema`")
+    # O prefixo BL1_/BL2_ identifica o bloco do bimestre. Onde a disciplina o exige
+    # (cfg["prefixo_bloco"]), o título sem prefixo é falha; nas demais, é opcional.
+    exige_prefixo = cfg.get("prefixo_bloco", False)
+    m_titulo = re.match(r"^#\s+(BL(\d)_)?Capítulo\s+\d+\s+—\s+.+", texto.strip())
+    if not m_titulo:
+        rc |= falha("título não é `# [BL{1|2}_]Capítulo N — Tema`")
+    elif exige_prefixo and not m_titulo.group(1):
+        rc |= falha("título sem o prefixo de bloco — use `# BL1_Capítulo N — Tema`")
     else:
-        ok("título no formato `# Capítulo N — Tema`")
+        ok(f"título no formato `# {m_titulo.group(1) or ''}Capítulo N — Tema`")
 
     aulas = separar_aulas(texto)
     if not aulas:
@@ -197,7 +206,9 @@ def main():
     print(f"\n[2] Extensão por aula (teto {max_pal} · piso de referência {min_pal})")
     for num, tit, corpo in aulas:
         n = contar_conteudo(corpo)
-        if n > max_pal * 1.1:
+        if args.disciplina == "biologia" and n > max_pal:
+            rc |= falha(f"Aula {num} — {tit}: {n} palavras")
+        elif n > max_pal * 1.1:
             rc |= falha(f"Aula {num} — {tit}: {n} palavras")
         elif n > max_pal:
             aviso(f"Aula {num} — {tit}: {n} palavras (pouco acima do teto)")
@@ -227,22 +238,27 @@ def main():
         print(f"  {marca} Aula {num} — {tit[:30]}: {proporcao * 100:.0f}% prosa · {obs}")
 
     # 2c. LaTeX que quebra a renderização -------------------------------------
-    # Dois bugs reais do material do 3º bimestre: `\text{}` não aceita acento
-    # (o renderizador lê como comando e imprime erro na tela) e `%` sem escape
-    # inicia COMENTÁRIO em LaTeX — tudo depois some em silêncio.
+    # Bugs reais do material do 3º bimestre: `\text{}` não aceita acento,
+    # `%` sem escape inicia comentário e `\ce{}` depende de mhchem, extensão
+    # ausente no render final.
     print("\n[2c] LaTeX seguro no renderizador")
     formulas = re.findall(r"\$\$(.+?)\$\$", texto, flags=re.S)
     acento = [f.strip()[:60] for f in formulas
               if re.search(r"\\text\{[^}]*[À-ÿ][^}]*\}", f)]
     pct = [f.strip()[:60] for f in formulas if re.search(r"(?<!\\)%", f)]
+    mhchem = [f.strip()[:60] for f in formulas if r"\ce{" in f]
     for f in acento:
         rc |= falha(f"acento dentro de \\text{{}} — não renderiza: {f}")
     for f in pct:
         rc |= falha(f"`%` sem escape (vira comentário e some): {f}")
+    for f in mhchem:
+        rc |= falha(f"`\\ce{{}}` requer mhchem e aparece literal: {f}")
     if not acento:
         ok("nenhum acento dentro de \\text{}")
     if not pct:
         ok("todo `%` em fórmula está escapado (\\%)")
+    if not mhchem:
+        ok("nenhuma fórmula depende de \\ce{}")
 
     # 3. Seções de fechamento proibidas ---------------------------------------
     print("\n[3] Seções de fechamento (devem estar ausentes)")

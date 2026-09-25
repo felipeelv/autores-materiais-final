@@ -1,0 +1,35 @@
+{
+  "versao": 1,
+  "disciplina": "matematica-ef1",
+  "ano_serie": "4ano",
+  "titulo_documento": "Medidas de tempo",
+  "slug_documento": "medidas-de-tempo",
+  "arquivo_markdown": "Matematica EF1/_staging-3bim/4ano/Medidas de tempo.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-relogio-analogico-e-digital",
+      "pagina": 1,
+      "arquivo": "fig-01-relogio-analogico-e-digital.png",
+      "alt": "Relógios analógico e digital mostram o mesmo horário de sete horas e trinta minutos",
+      "aprovada": true,
+      "sha256": "f9c9ca21e2f009c66a2cce8f48daaaae457dac5781f0d89c06bac3f0aa6b54de",
+      "largura_px": 1441,
+      "altura_px": 886,
+      "publicado_sha256": "f9c9ca21e2f009c66a2cce8f48daaaae457dac5781f0d89c06bac3f0aa6b54de",
+      "publicado_commit": "0009cffefe6e55c379e13e69270f4894070fb1a6"
+    },
+    {
+      "id": "fig-02-linha-do-tempo-intervalo",
+      "pagina": 2,
+      "arquivo": "fig-02-linha-do-tempo-intervalo.png",
+      "alt": "Linha do tempo divide o intervalo de sete e meia a nove e quinze em três partes",
+      "aprovada": true,
+      "sha256": "f335ea6a76abdcbe35e2643645a20c324f8ff1b9c2cdd12560f503d28c13fb70",
+      "largura_px": 1424,
+      "altura_px": 626,
+      "publicado_sha256": "f335ea6a76abdcbe35e2643645a20c324f8ff1b9c2cdd12560f503d28c13fb70",
+      "publicado_commit": "0009cffefe6e55c379e13e69270f4894070fb1a6"
+    }
+  ]
+}

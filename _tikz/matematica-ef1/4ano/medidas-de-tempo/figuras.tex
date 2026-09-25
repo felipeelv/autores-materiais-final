@@ -1,0 +1,46 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-matematica-ef1}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-relogio-analogico-e-digital
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (11.40,6.70);
+  \draw[matematica contorno,line width=2pt] (3.10,3.25) circle (2.45);
+  \foreach \a/\v in {90/12,0/3,-90/6,180/9}
+    \node[font=\large\bfseries,text=matemacinza] at ($(3.10,3.25)+(\a:1.92)$) {\v};
+  \foreach \a in {0,30,...,330}\draw[matematica eixo]
+    ($(3.10,3.25)+(\a:2.18)$)--($(3.10,3.25)+(\a:2.38)$);
+  \draw[-{Stealth[length=2.4mm]},matematica destaque,line width=2.2pt]
+    (3.10,3.25)--++(-90:1.78);
+  \draw[-{Stealth[length=2.4mm]},matematica contorno,line width=2.8pt]
+    (3.10,3.25)--++(-135:1.28);
+  \fill[matemazul] (3.10,3.25) circle (.10);
+
+  \draw[matematica contorno,rounded corners=8pt,fill=matemacinzaclaro]
+    (7.15,2.15) rectangle (10.65,4.35);
+  \node[font=\Huge\bfseries,text=matemazul] at (8.90,3.25) {07:30};
+  \node[matematica rotulo] at (3.10,0.35) {analógico};
+  \node[matematica rotulo] at (8.90,1.35) {digital};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-linha-do-tempo-intervalo
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.25,-0.20) rectangle (11.20,4.50);
+  \draw[-{Stealth[length=3mm]},matematica eixo] (0.50,1.65)--(10.75,1.65);
+  \foreach \x/\t in {0.80/7:30,3.30/8:00,7.75/9:00,10.35/9:15}{
+    \draw[matematica contorno,line width=2pt] (\x,1.35)--(\x,1.95);
+    \node[matematica valor] at (\x,0.75) {\t};
+  }
+  \draw[{Stealth[length=2.4mm]}-{Stealth[length=2.4mm]},matematica destaque]
+    (0.85,2.55)--(3.25,2.55);
+  \node[matematica resultado] at (2.05,3.10) {$30\text{ min}$};
+  \draw[{Stealth[length=2.4mm]}-{Stealth[length=2.4mm]},matematica contorno]
+    (3.35,2.55)--(7.70,2.55);
+  \node[matematica valor] at (5.52,3.10) {$60\text{ min}$};
+  \draw[{Stealth[length=2.4mm]}-{Stealth[length=2.4mm]},matematica destaque]
+    (7.80,2.55)--(10.30,2.55);
+  \node[matematica resultado] at (9.05,3.10) {$15\text{ min}$};
+\end{tikzpicture}
+
+\end{document}

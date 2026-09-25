@@ -1,0 +1,131 @@
+{
+  "versao": 1,
+  "disciplina": "geometria",
+  "ano_serie": "2serie",
+  "titulo_documento": "Cilindros",
+  "slug_documento": "cilindros",
+  "arquivo_markdown": "Geometria/modelos/geometria-2serie-modelo.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-geracao-por-rotacao",
+      "pagina": 1,
+      "arquivo": "fig-01-geracao-por-rotacao.png",
+      "alt": "Retângulo girando trezentos e sessenta graus em torno de um de seus lados para gerar um cilindro",
+      "aprovada": true,
+      "sha256": "65c347e14d114a795b2cb604e29e01c1dfa33f594d2b5159aeaff5fe5d2aebb8",
+      "largura_px": 1052,
+      "altura_px": 804,
+      "publicado_sha256": "65c347e14d114a795b2cb604e29e01c1dfa33f594d2b5159aeaff5fe5d2aebb8",
+      "publicado_commit": "7f39b2c89bfdda1c4751fba9ad83362d9d9465e6"
+    },
+    {
+      "id": "fig-02-geracao-por-translacao-da-base",
+      "pagina": 2,
+      "arquivo": "fig-02-geracao-por-translacao-da-base.png",
+      "alt": "Círculo transladado perpendicularmente ao plano da base por uma distância h para gerar um cilindro",
+      "aprovada": true,
+      "sha256": "d02f818416a1ddc5e1fd030de89cd1c183d227b6a43deccf11470c5cd79c74d1",
+      "largura_px": 969,
+      "altura_px": 945,
+      "publicado_sha256": "d02f818416a1ddc5e1fd030de89cd1c183d227b6a43deccf11470c5cd79c74d1",
+      "publicado_commit": "7f39b2c89bfdda1c4751fba9ad83362d9d9465e6"
+    },
+    {
+      "id": "fig-03-elementos-do-cilindro",
+      "pagina": 3,
+      "arquivo": "fig-03-elementos-do-cilindro.png",
+      "alt": "Cilindro com as duas bases, o eixo, o raio r, a altura h e uma geratriz g identificados",
+      "aprovada": true,
+      "sha256": "7aa83dea0f373e9575c08a498ab74b2da339b941fe0c01aa01766bb1a155a240",
+      "largura_px": 1176,
+      "altura_px": 1069,
+      "publicado_sha256": "7aa83dea0f373e9575c08a498ab74b2da339b941fe0c01aa01766bb1a155a240",
+      "publicado_commit": "7f39b2c89bfdda1c4751fba9ad83362d9d9465e6"
+    },
+    {
+      "id": "fig-04-cilindro-reto-e-obliquo",
+      "pagina": 4,
+      "arquivo": "fig-04-cilindro-reto-e-obliquo.png",
+      "alt": "Comparação entre cilindro reto, em que geratriz e altura coincidem, e cilindro oblíquo, em que a geratriz é maior",
+      "aprovada": true,
+      "sha256": "eb13f963cb18f3bdad4a39ff70b521735229aa8d652882e41de740179b57ea80",
+      "largura_px": 1323,
+      "altura_px": 851,
+      "publicado_sha256": "eb13f963cb18f3bdad4a39ff70b521735229aa8d652882e41de740179b57ea80",
+      "publicado_commit": "7f39b2c89bfdda1c4751fba9ad83362d9d9465e6"
+    },
+    {
+      "id": "fig-05-cilindro-equilatero",
+      "pagina": 5,
+      "arquivo": "fig-05-cilindro-equilatero.png",
+      "alt": "Cilindro equilátero cortado pelo eixo, formando uma secção meridiana quadrada com altura h igual a dois raios",
+      "aprovada": true,
+      "sha256": "75b17db3834c9ad9255bc34a3ee6cb8aecf42346da8eb552559a0e0838359578",
+      "largura_px": 1016,
+      "altura_px": 1022,
+      "publicado_sha256": "75b17db3834c9ad9255bc34a3ee6cb8aecf42346da8eb552559a0e0838359578",
+      "publicado_commit": "7f39b2c89bfdda1c4751fba9ad83362d9d9465e6"
+    },
+    {
+      "id": "fig-06-desenrolamento-da-area-lateral",
+      "pagina": 6,
+      "arquivo": "fig-06-desenrolamento-da-area-lateral.png",
+      "alt": "Superfície lateral de um cilindro sendo aberta em um retângulo de comprimento dois pi r e altura h",
+      "aprovada": true,
+      "sha256": "cf7fec3930f91005b477f7f834a74a494e83e283eaa00bc5e898a7d9e3401620",
+      "largura_px": 1052,
+      "altura_px": 1170,
+      "publicado_sha256": "cf7fec3930f91005b477f7f834a74a494e83e283eaa00bc5e898a7d9e3401620",
+      "publicado_commit": "7f39b2c89bfdda1c4751fba9ad83362d9d9465e6"
+    },
+    {
+      "id": "fig-07-planificacao-da-area-total",
+      "pagina": 7,
+      "arquivo": "fig-07-planificacao-da-area-total.png",
+      "alt": "Planificação de um cilindro fechado com o retângulo lateral e duas bases circulares de raio r separados",
+      "aprovada": true,
+      "sha256": "2d06d2e4f6081b0245004fb0a74874616f0a6c57fe03ec785c845148a2c48332",
+      "largura_px": 1052,
+      "altura_px": 1223,
+      "publicado_sha256": "2d06d2e4f6081b0245004fb0a74874616f0a6c57fe03ec785c845148a2c48332",
+      "publicado_commit": "7f39b2c89bfdda1c4751fba9ad83362d9d9465e6"
+    },
+    {
+      "id": "fig-08-cavalieri-e-volume",
+      "pagina": 8,
+      "arquivo": "fig-08-cavalieri-e-volume.png",
+      "alt": "Cilindros reto e oblíquo com a mesma área de base, a mesma altura e secções paralelas correspondentes",
+      "aprovada": true,
+      "sha256": "a05a270bff926a69e6788b880b545155e46c82e3eb390d97ae2ca170ba69266d",
+      "largura_px": 1335,
+      "altura_px": 951,
+      "publicado_sha256": "a05a270bff926a69e6788b880b545155e46c82e3eb390d97ae2ca170ba69266d",
+      "publicado_commit": "7f39b2c89bfdda1c4751fba9ad83362d9d9465e6"
+    },
+    {
+      "id": "fig-09-seccao-meridiana",
+      "pagina": 9,
+      "arquivo": "fig-09-seccao-meridiana.png",
+      "alt": "Plano que contém o eixo de um cilindro reto produzindo uma secção meridiana retangular de lados dois r e h",
+      "aprovada": true,
+      "sha256": "3b3526f5fb180af151eaf1e05c92fcd0b077b353877399c55628fceace361d68",
+      "largura_px": 1040,
+      "altura_px": 1022,
+      "publicado_sha256": "3b3526f5fb180af151eaf1e05c92fcd0b077b353877399c55628fceace361d68",
+      "publicado_commit": "7f39b2c89bfdda1c4751fba9ad83362d9d9465e6"
+    },
+    {
+      "id": "fig-10-seccao-transversal",
+      "pagina": 10,
+      "arquivo": "fig-10-seccao-transversal.png",
+      "alt": "Plano paralelo às bases cortando o cilindro e produzindo uma secção circular de raio r",
+      "aprovada": true,
+      "sha256": "733363647ace5de6992ce297ae9558b02cd2e547bf56ca04e1176520d89aa762",
+      "largura_px": 1052,
+      "altura_px": 1040,
+      "publicado_sha256": "733363647ace5de6992ce297ae9558b02cd2e547bf56ca04e1176520d89aa762",
+      "publicado_commit": "7f39b2c89bfdda1c4751fba9ad83362d9d9465e6"
+    }
+  ]
+}

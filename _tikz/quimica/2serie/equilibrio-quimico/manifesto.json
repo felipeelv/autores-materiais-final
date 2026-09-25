@@ -1,0 +1,47 @@
+{
+  "versao": 1,
+  "disciplina": "quimica",
+  "ano_serie": "2serie",
+  "titulo_documento": "Equilíbrio químico",
+  "slug_documento": "equilibrio-quimico",
+  "arquivo_markdown": "Quimica/modelos/quimica-2serie-modelo.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-equilibrio-dinamico-graficos",
+      "pagina": 1,
+      "arquivo": "fig-01-equilibrio-dinamico-graficos.png",
+      "alt": "Gráficos qualitativos em que as velocidades direta e inversa convergem para o mesmo valor enquanto as concentrações atingem patamares constantes diferentes",
+      "aprovada": true,
+      "sha256": "65c944b5dc64824c723b052d5e5f78b87dc6ffb5e48ad7a4c97ca04a0ef1bee2",
+      "largura_px": 1347,
+      "altura_px": 1506,
+      "publicado_sha256": "65c944b5dc64824c723b052d5e5f78b87dc6ffb5e48ad7a4c97ca04a0ef1bee2",
+      "publicado_commit": "e637319bb635434380a7a194e2ad18c7e0111dfd"
+    },
+    {
+      "id": "fig-02-pressao-na-sintese-da-amonia",
+      "pagina": 2,
+      "arquivo": "fig-02-pressao-na-sintese-da-amonia.png",
+      "alt": "Comparação estequiométrica entre quatro mols gasosos nos reagentes e dois nos produtos mostrando por que maior pressão favorece a formação de amônia",
+      "aprovada": true,
+      "sha256": "a7c858ef7c7c22e77ec4a911729d783e9d44cf35cd33d346557bb1550ac1c25e",
+      "largura_px": 1365,
+      "altura_px": 1294,
+      "publicado_sha256": "a7c858ef7c7c22e77ec4a911729d783e9d44cf35cd33d346557bb1550ac1c25e",
+      "publicado_commit": "e637319bb635434380a7a194e2ad18c7e0111dfd"
+    },
+    {
+      "id": "fig-03-fluxo-haber-bosch",
+      "pagina": 3,
+      "arquivo": "fig-03-fluxo-haber-bosch.png",
+      "alt": "Fluxo do processo Haber-Bosch com compressão, reator catalítico, resfriamento, retirada de amônia e recirculação de nitrogênio e hidrogênio",
+      "aprovada": true,
+      "sha256": "b9895048cd04051f24eced088a172278c5a55910199dbb5a3fc0c408077099ed",
+      "largura_px": 1477,
+      "altura_px": 1247,
+      "publicado_sha256": "b9895048cd04051f24eced088a172278c5a55910199dbb5a3fc0c408077099ed",
+      "publicado_commit": "e637319bb635434380a7a194e2ad18c7e0111dfd"
+    }
+  ]
+}

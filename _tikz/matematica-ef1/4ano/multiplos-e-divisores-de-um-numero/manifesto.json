@@ -1,0 +1,35 @@
+{
+  "versao": 1,
+  "disciplina": "matematica-ef1",
+  "ano_serie": "4ano",
+  "titulo_documento": "Múltiplos e divisores de um número",
+  "slug_documento": "multiplos-e-divisores-de-um-numero",
+  "arquivo_markdown": "Matematica EF1/_staging-3bim/4ano/Múltiplos e divisores de um número.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-multiplos-de-2-e-5",
+      "pagina": 1,
+      "arquivo": "fig-01-multiplos-de-2-e-5.png",
+      "alt": "Retas numéricas mostram saltos de dois e de cinco a partir do zero",
+      "aprovada": true,
+      "sha256": "d669e8630eae3c5d4047aafe3fdfa6dc6c5447ad8a9ced79d5f1a071218c5692",
+      "largura_px": 991,
+      "altura_px": 815,
+      "publicado_sha256": "d669e8630eae3c5d4047aafe3fdfa6dc6c5447ad8a9ced79d5f1a071218c5692",
+      "publicado_commit": "551c31a58e6fb8273dc75743453d660a3ad966e1"
+    },
+    {
+      "id": "fig-02-fileiras-e-divisores-de-12",
+      "pagina": 2,
+      "arquivo": "fig-02-fileiras-e-divisores-de-12.png",
+      "alt": "Doze pontos formam fileiras de dois por seis e três por quatro, mas deixam sobra em grupos de cinco",
+      "aprovada": true,
+      "sha256": "2326181e2d7ef2aa3278c1d2b77a30ea53c55d175c8edb6ef09ad73ec6419336",
+      "largura_px": 1177,
+      "altura_px": 879,
+      "publicado_sha256": "2326181e2d7ef2aa3278c1d2b77a30ea53c55d175c8edb6ef09ad73ec6419336",
+      "publicado_commit": "551c31a58e6fb8273dc75743453d660a3ad966e1"
+    }
+  ]
+}

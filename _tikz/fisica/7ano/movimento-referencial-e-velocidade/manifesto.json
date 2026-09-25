@@ -1,0 +1,47 @@
+{
+  "versao": 1,
+  "disciplina": "fisica",
+  "ano_serie": "7ano",
+  "titulo_documento": "Movimento, referencial e velocidade",
+  "slug_documento": "movimento-referencial-e-velocidade",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Fisica/7ano/fisica-7ano-3bim-cap1.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-movimento-depende-do-referencial",
+      "pagina": 1,
+      "arquivo": "fig-01-movimento-depende-do-referencial.png",
+      "alt": "Passageiro em repouso em relação ao banco e em movimento em relação à casa fora do ônibus",
+      "aprovada": true,
+      "sha256": "bbb8b10fcae6ef4ee82313e332adf53d26e0a88d6f0225d6bc648a8d0238d445",
+      "largura_px": 1394,
+      "altura_px": 1004,
+      "publicado_sha256": "bbb8b10fcae6ef4ee82313e332adf53d26e0a88d6f0225d6bc648a8d0238d445",
+      "publicado_commit": "7034a7efdb639e75eb730f786864e9a9548b53af"
+    },
+    {
+      "id": "fig-02-trajetorias-da-lampada",
+      "pagina": 2,
+      "arquivo": "fig-02-trajetorias-da-lampada.png",
+      "alt": "Mesma queda da lâmpada vista como reta pelo passageiro e curva pelo pedestre",
+      "aprovada": true,
+      "sha256": "a84ce778f1017eec1931814a59bf725768d90f1b0e8b376a621b7c9a972301fd",
+      "largura_px": 1323,
+      "altura_px": 1312,
+      "publicado_sha256": "a84ce778f1017eec1931814a59bf725768d90f1b0e8b376a621b7c9a972301fd",
+      "publicado_commit": "7034a7efdb639e75eb730f786864e9a9548b53af"
+    },
+    {
+      "id": "fig-03-mesma-rapidez-velocidades-diferentes",
+      "pagina": 3,
+      "arquivo": "fig-03-mesma-rapidez-velocidades-diferentes.png",
+      "alt": "Dois carros com mesma rapidez e vetores velocidade de sentidos opostos",
+      "aprovada": true,
+      "sha256": "e9cd7689f2bdff6baea5454fe83dcb60b7b62fa191e68fe64f6a980de4d420b5",
+      "largura_px": 1335,
+      "altura_px": 969,
+      "publicado_sha256": "e9cd7689f2bdff6baea5454fe83dcb60b7b62fa191e68fe64f6a980de4d420b5",
+      "publicado_commit": "7034a7efdb639e75eb730f786864e9a9548b53af"
+    }
+  ]
+}

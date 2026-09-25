@@ -1,0 +1,183 @@
+{
+  "versao": 2,
+  "status": "piloto_validado_localmente",
+  "disciplina": "geometria",
+  "ano_serie": "6ano",
+  "titulo_documento": "Quadriláteros e circunferência",
+  "slug_documento": "quadrilateros-e-circunferencia-piloto",
+  "arquivo_markdown": "Geometria/modelos/geometria-6ano-modelo-piloto-asymptote.md",
+  "politica": {
+    "autor_define": [
+      "finalidade_pedagogica",
+      "descricao",
+      "dados",
+      "relacoes",
+      "incognitas",
+      "alt",
+      "insercao_markdown"
+    ],
+    "orquestrador_define": [
+      "renderizador",
+      "formatos_de_saida",
+      "tipografia"
+    ],
+    "renderizador": "asymptote",
+    "formatos_de_saida": {
+      "matriz_vetorial": "svg",
+      "impressao": "pdf",
+      "compatibilidade": "png"
+    },
+    "tipografia": {
+      "rotulos": "Roboto Regular",
+      "formulas": "Latin Modern Math (latinmodern-math.otf)",
+      "arquivo_rotulos": "fonts/roboto/Roboto-VF.ttf",
+      "licenca_rotulos": "fonts/roboto/OFL.txt"
+    }
+  },
+  "figuras": [
+    {
+      "id": "fig-01-elementos-e-soma-angular",
+      "fonte": "src/fig-01-elementos-e-soma-angular.asy",
+      "finalidade_pedagogica": "Identificar os elementos do quadrilátero e justificar a soma dos ângulos internos pela divisão em dois triângulos.",
+      "descricao": "Quadrilátero ABCD com as duas diagonais; AC recebe destaque e separa os triângulos ABC e ACD.",
+      "dados": ["vértices A, B, C e D", "diagonais AC e BD"],
+      "relacoes": ["AC divide o quadrilátero em dois triângulos", "180° + 180° = 360°"],
+      "incognitas": [],
+      "alt": "Quadrilátero ABCD dividido pela diagonal AC em dois triângulos, enquanto a segunda diagonal aparece tracejada",
+      "insercao_markdown": "após a lista de elementos do quadrilátero",
+      "saidas": {
+        "svg": "build/fig-01-elementos-e-soma-angular.svg",
+        "pdf": "build/fig-01-elementos-e-soma-angular.pdf",
+        "png": "build/fig-01-elementos-e-soma-angular.png",
+        "preview_300": "preview/fig-01-elementos-e-soma-angular-300-branco.jpg"
+      },
+      "sha256_png": "888975d2359239b07862c5ec1b8ec22416d0f6d6b9efbd51dad353762505bbf4"
+    },
+    {
+      "id": "fig-02-inclusao-dos-paralelogramos",
+      "fonte": "src/fig-02-inclusao-dos-paralelogramos.asy",
+      "finalidade_pedagogica": "Mostrar que as classes de quadriláteros se incluem e se sobrepõem.",
+      "descricao": "Diagrama de conjuntos com paralelogramos como classe maior, retângulos e losangos sobrepostos e quadrados na interseção.",
+      "dados": ["paralelogramos", "retângulos", "losangos", "quadrados"],
+      "relacoes": ["retângulos e losangos são paralelogramos", "quadrados são simultaneamente retângulos e losangos"],
+      "incognitas": [],
+      "alt": "Diagrama de inclusão mostra retângulos e losangos dentro dos paralelogramos e quadrados na interseção das duas classes",
+      "insercao_markdown": "após a tabela das famílias de quadriláteros",
+      "saidas": {
+        "svg": "build/fig-02-inclusao-dos-paralelogramos.svg",
+        "pdf": "build/fig-02-inclusao-dos-paralelogramos.pdf",
+        "png": "build/fig-02-inclusao-dos-paralelogramos.png",
+        "preview_300": "preview/fig-02-inclusao-dos-paralelogramos-300-branco.jpg"
+      },
+      "sha256_png": "42e922c18c622d783aa89d11ed13896c715a1be89af61a176f974b68cc29b31c"
+    },
+    {
+      "id": "fig-03-tipos-de-trapezio",
+      "fonte": "src/fig-03-tipos-de-trapezio.asy",
+      "finalidade_pedagogica": "Comparar os critérios visuais dos trapézios retângulo, isósceles e escaleno.",
+      "descricao": "Três trapézios empilhados, com setas nos lados paralelos, marcas de ângulo reto no primeiro e de congruência nos lados do segundo.",
+      "dados": ["um par de lados paralelos em cada figura"],
+      "relacoes": ["trapézio retângulo tem dois ângulos retos", "trapézio isósceles tem lados não paralelos congruentes"],
+      "incognitas": [],
+      "alt": "Comparação entre trapézio retângulo com ângulos retos, isósceles com lados não paralelos congruentes e escaleno",
+      "insercao_markdown": "após a classificação das famílias",
+      "saidas": {
+        "svg": "build/fig-03-tipos-de-trapezio.svg",
+        "pdf": "build/fig-03-tipos-de-trapezio.pdf",
+        "png": "build/fig-03-tipos-de-trapezio.png",
+        "preview_300": "preview/fig-03-tipos-de-trapezio-300-branco.jpg"
+      },
+      "sha256_png": "f796357f2cd19ca9d52994811774564cc57a3c5c6c380852762ffb5ba4436b4c"
+    },
+    {
+      "id": "fig-04-lados-e-angulos-opostos",
+      "fonte": "src/fig-04-lados-e-angulos-opostos.asy",
+      "finalidade_pedagogica": "Associar marcas geométricas às congruências de lados e ângulos opostos de um paralelogramo.",
+      "descricao": "Paralelogramo ABCD com um ou dois traços nos pares de lados e um ou dois arcos nos pares de ângulos.",
+      "dados": ["paralelogramo ABCD"],
+      "relacoes": ["AB é congruente a CD", "BC é congruente a AD", "ângulos opostos são congruentes"],
+      "incognitas": [],
+      "alt": "Paralelogramo ABCD com marcas iguais nos pares de lados opostos e arcos iguais nos pares de ângulos opostos",
+      "insercao_markdown": "após a definição das propriedades de lados e ângulos",
+      "saidas": {
+        "svg": "build/fig-04-lados-e-angulos-opostos.svg",
+        "pdf": "build/fig-04-lados-e-angulos-opostos.pdf",
+        "png": "build/fig-04-lados-e-angulos-opostos.png",
+        "preview_300": "preview/fig-04-lados-e-angulos-opostos-300-branco.jpg"
+      },
+      "sha256_png": "b4f100864451aee5dab9be4e9320adb628fb9bc718be2b6210ba65c3791d89f8"
+    },
+    {
+      "id": "fig-05-diagonais-no-ponto-medio",
+      "fonte": "src/fig-05-diagonais-no-ponto-medio.asy",
+      "finalidade_pedagogica": "Mostrar que as diagonais do paralelogramo se dividem mutuamente ao meio.",
+      "descricao": "Paralelogramo ABCD com diagonais AC e BD cruzando-se em M e marcas iguais em cada metade.",
+      "dados": ["diagonais AC e BD", "ponto de encontro M"],
+      "relacoes": ["AM = MC", "BM = MD"],
+      "incognitas": ["comprimento total de uma diagonal quando uma metade é conhecida"],
+      "alt": "Paralelogramo ABCD cujas diagonais se cruzam em M, com marcas indicando AM igual a MC e BM igual a MD",
+      "insercao_markdown": "antes do exemplo resolvido da moldura",
+      "saidas": {
+        "svg": "build/fig-05-diagonais-no-ponto-medio.svg",
+        "pdf": "build/fig-05-diagonais-no-ponto-medio.pdf",
+        "png": "build/fig-05-diagonais-no-ponto-medio.png",
+        "preview_300": "preview/fig-05-diagonais-no-ponto-medio-300-branco.jpg"
+      },
+      "sha256_png": "3fd6e0399275a86dc67687fe85a506558f526c00d045ad8a4f1c582b157f039f"
+    },
+    {
+      "id": "fig-06-circulo-circunferencia-e-elementos",
+      "fonte": "src/fig-06-circulo-circunferencia-e-elementos.asy",
+      "finalidade_pedagogica": "Distinguir círculo de circunferência e localizar seus elementos principais.",
+      "descricao": "Região circular preenchida, contorno destacado e raio, diâmetro, corda, arco e centro identificados.",
+      "dados": ["centro O", "raio", "diâmetro", "corda", "arco"],
+      "relacoes": ["o círculo inclui a região interna", "a circunferência é o contorno", "d = 2r"],
+      "incognitas": [],
+      "alt": "Círculo com a circunferência destacada e raio, diâmetro, corda, arco e centro O identificados",
+      "insercao_markdown": "após as definições de círculo e circunferência",
+      "saidas": {
+        "svg": "build/fig-06-circulo-circunferencia-e-elementos.svg",
+        "pdf": "build/fig-06-circulo-circunferencia-e-elementos.pdf",
+        "png": "build/fig-06-circulo-circunferencia-e-elementos.png",
+        "preview_300": "preview/fig-06-circulo-circunferencia-e-elementos-300-branco.jpg"
+      },
+      "sha256_png": "32f8680ac29a4315006abed4e38ea12cec8fa0b24ebaa83f8bfa208b3f656c5f"
+    },
+    {
+      "id": "fig-07-tangente-e-secante",
+      "fonte": "src/fig-07-tangente-e-secante.asy",
+      "finalidade_pedagogica": "Comparar tangente e secante pelo número de pontos comuns com a circunferência.",
+      "descricao": "Dois casos empilhados: reta tangente com um ponto marcado e reta secante com dois pontos marcados.",
+      "dados": ["uma circunferência e uma reta em cada caso"],
+      "relacoes": ["tangente tem um ponto comum", "secante tem dois pontos comuns"],
+      "incognitas": [],
+      "alt": "Comparação mostra a reta tangente tocando a circunferência em um ponto e a secante cruzando-a em dois pontos",
+      "insercao_markdown": "antes da lista que define tangente e secante",
+      "saidas": {
+        "svg": "build/fig-07-tangente-e-secante.svg",
+        "pdf": "build/fig-07-tangente-e-secante.pdf",
+        "png": "build/fig-07-tangente-e-secante.png",
+        "preview_300": "preview/fig-07-tangente-e-secante-300-branco.jpg"
+      },
+      "sha256_png": "5faa3c13016cfbe799f5ac506608f0fb574e529795579bc8af4a5cba953aaa17"
+    },
+    {
+      "id": "fig-08-razao-entre-circunferencia-e-diametro",
+      "fonte": "src/fig-08-razao-entre-circunferencia-e-diametro.asy",
+      "finalidade_pedagogica": "Visualizar que o comprimento da circunferência corresponde a aproximadamente 3,14 diâmetros.",
+      "descricao": "Circunferência com diâmetro e comprimento alinhado em três segmentos d mais um segmento 0,14d.",
+      "dados": ["comprimento C", "diâmetro d"],
+      "relacoes": ["C/d = π", "C é aproximadamente 3,14d"],
+      "incognitas": ["comprimento C quando d é conhecido"],
+      "alt": "Comprimento da circunferência alinhado a três diâmetros completos e mais zero vírgula quatorze do diâmetro",
+      "insercao_markdown": "antes da definição da razão C/d",
+      "saidas": {
+        "svg": "build/fig-08-razao-entre-circunferencia-e-diametro.svg",
+        "pdf": "build/fig-08-razao-entre-circunferencia-e-diametro.pdf",
+        "png": "build/fig-08-razao-entre-circunferencia-e-diametro.png",
+        "preview_300": "preview/fig-08-razao-entre-circunferencia-e-diametro-300-branco.jpg"
+      },
+      "sha256_png": "2e4eac63e774b91ae1741ef6d5dc09853d01f0cfac7952586403d8d5f3e194e7"
+    }
+  ]
+}

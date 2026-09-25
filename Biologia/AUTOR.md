@@ -27,7 +27,7 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **Anexo A** (como esc
 - **1 tema = 1 capítulo · 1 aula = 1 tópico numerado `## N.`**, na ordem do blueprint. Cada aula é autossuficiente (~50 min).
 - **O material é a REFERÊNCIA DO ALUNO — a explicação é do professor.** Escreva para ser consultado: definição localizável, dado à mão, comparação em tabela. Não escreva o que o professor vai dizer (analogia estendida, recapitulação, parágrafo que amarra a ideia).
 - **Máximo 45% do conteúdo da aula em prosa corrida.** Tudo que for enumerável (fatores, tipos, etapas, condições) sai em **lista ou tabela**. Frase média de ~14 palavras.
-- **220–250 palavras de conteúdo por aula, teto firme de 300** (tabelas, esquemas e fórmulas não contam). O teto **não é meta**; não existe mínimo. Conteúdo denso (ciclos, frequências, vias metabólicas) vira **fatias finas**, nunca aula inchada.
+- **180–210 palavras de conteúdo por aula, teto firme de 220** (tabelas, esquemas e fórmulas não contam). O teto **não é meta**; o piso de 180 serve apenas para detectar aula possivelmente truncada. Conteúdo denso (ciclos, frequências, vias metabólicas) vira **fatias finas**, nunca aula inchada.
 - **Abertura de no máximo 25 palavras** — fato direto ou fenômeno concreto, sem cena narrativa.
 - **Material é só conteúdo.** Zero atividade, exercício proposto, experimento a executar, projeto, revisão ou prova. **Exemplo resolvido de cálculo é conteúdo e é permitido**; "agora calcule você" não.
 - **Sem seções de fechamento.** Nada de "Introdução", "Sua Parte", "O que a Bíblia diz sobre…", "Simplificando", "Para não esquecer" — esses elementos vivem **dentro** das aulas.
@@ -52,7 +52,7 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **Anexo A** (como esc
 
 Capítulos de **Biologia, 9º ano e 1ª a 3ª série do EM**, para o 3º e 4º bimestres de 2026. Do 6º ao 8º ano a disciplina é **Ciências** (projeto próprio).
 
-**A equação do modelo:** `1 tema = 1 capítulo` · `1 aula = 1 tópico numerado (## N.)` · `1 aula ≈ 50 min ≈ 220–250 palavras de conteúdo (teto 300)` · `≤ 45% em prosa corrida`.
+**A equação do modelo:** `1 tema = 1 capítulo` · `1 aula = 1 tópico numerado (## N.)` · `1 aula ≈ 50 min ≈ 180–210 palavras de conteúdo (teto 220)` · `≤ 45% em prosa corrida`.
 
 > ⚠️ **Prosa corrida é o defeito principal a evitar — e a contagem de palavras não o detecta.** Medido em 07/2026: capítulos do mesmo tamanho do texto-referência ainda liam como "texto demais", porque tinham 78% de prosa contra 46% da referência.
 
@@ -92,7 +92,7 @@ O capítulo **termina na última aula**. Não há seção de fechamento.
 - **1 aula = 1 tópico `## N.`**, na ordem do blueprint; `---` entre aulas. Quem consulta só aquele tópico encontra o conteúdo completo.
 - Tópicos internos viram subseções **numeradas `### N.1`, `### N.2`** (a numeração da aula, depois a da parte). Título curto e descritivo — o aluno usa como índice; pode ser pergunta orientadora, desde que cubra o tópico do blueprint.
 - **2 a 3 subseções por aula.** Mais que isso fragmenta; cada subseção nova traz sua própria abertura e engorda o texto.
-- **Extensão: alvo 220–250 palavras, teto firme de 300** por aula (tabelas, esquemas e fórmulas fora da conta). Desenvolva todo o recorte do blueprint e pare — não adicione exemplos extras nem parágrafos de contexto para "engordar" a aula. Se passar de 300, corte rodeio e redundância, nunca recorte do blueprint. Aula que cobriu tudo em 200 palavras está pronta. Conteúdo denso (frequências, ciclos, vias metabólicas) → **fatias finas**, como o blueprint já definiu.
+- **Extensão: alvo 180–210 palavras, teto firme de 220** por aula (tabelas, esquemas e fórmulas fora da conta). Desenvolva todo o recorte do blueprint e pare — não adicione exemplos extras nem parágrafos de contexto para "engordar" a aula. Se passar de 220, corte rodeio e redundância, nunca recorte do blueprint. Aula que cobriu tudo em 180 palavras está pronta. Conteúdo denso (frequências, ciclos, vias metabólicas) → **fatias finas**, como o blueprint já definiu.
 
 **Onde a gordura aparece** — corte estes antes de qualquer outra coisa:
 
@@ -191,7 +191,7 @@ O capítulo **termina na última aula**. Não há seção de fechamento.
 | Notação científica | `$$3\times 10^{9}$$` (pares de bases) |
 | Seta de processo | `\rightarrow` |
 | Equilíbrio (reação) | `\rightleftharpoons` |
-| Equação química (fotossíntese, respiração) — `\ce{}` (mhchem, validado) | `$$\ce{6CO2 + 6H2O -> C6H12O6 + 6O2}$$` |
+| Equação química (fotossíntese, respiração) — MathJax básico | `$$6\mathrm{CO_2} + 6\mathrm{H_2O} \rightarrow \mathrm{C_6H_{12}O_6} + 6\mathrm{O_2}$$` |
 
 **Formato do cálculo em Biologia** — fórmula em linha própria, precedida de frase introdutória, com cada elemento definido logo abaixo; exemplo resolvido **passo a passo, uma operação por linha** (nunca compactar etapas); e **o resultado termina em leitura biológica, não no número**:
 
@@ -274,11 +274,11 @@ Estes elementos existiam como blocos pós-conteúdo no formato antigo (Sua Parte
 > ```
 > python3 ./validar-capitulo.py <capitulo.md> --disciplina biologia [--blueprint <arq.md>]
 > ```
-> E **não persiga a contagem exata de palavras**: conte uma vez, ao final. Só reescreva se estourou o teto de 300 — ficar abaixo dele não é defeito, e aula de 200 palavras com o recorte completo é entrega boa, não entrega curta.
+> E **não persiga a contagem exata de palavras**: conte uma vez, ao final. Só reescreva se estourou o teto de 220 ou se ficou abaixo de 180 com sinal de conteúdo truncado. Aula de 180 palavras com o recorte completo é entrega boa, não entrega curta.
 
 - [ ] Título é `# Capítulo {N} — {Tema}` (sem linha de disciplina/série)
 - [ ] Todas as aulas do blueprint, na ordem, com todo o recorte desenvolvido
-- [ ] Cada aula: 220–250 palavras (teto 300) · abertura ≤ 25 palavras (fato direto ou fenômeno, sem cena narrativa) · autossuficiente
+- [ ] Cada aula: 180–210 palavras (teto 220) · abertura ≤ 25 palavras (fato direto ou fenômeno, sem cena narrativa) · autossuficiente
 - [ ] **Prosa corrida ≤ 45% do conteúdo da aula** — todo conteúdo enumerável em lista ou tabela
 - [ ] Subseções numeradas `N.1`, `N.2` — 2 a 3 por aula
 - [ ] Frases curtas (média ~14 palavras); definições complementares inline, entre parênteses
@@ -341,12 +341,12 @@ O mesmo nível N muda de cara conforme a série. Parâmetros objetivos por faixa
 | **Ordem de apresentação** | **Exemplo concreto → conceito**, sem exceção; o conceito nomeia o que a criança acabou de ver | **Exemplo concreto → conceito** (sempre) | Exemplo → conceito, ou conceito → exemplo imediato | Definição formal primeiro é aceitável | Definição direta; aluno já tem repertório |
 | **Vocabulário** | Cotidiano da criança; termo técnico só quando é o próprio conteúdo, explicado com palavra do dia a dia | Cotidiano; **todo termo técnico explicado na 1ª ocorrência** | Técnico consolidado; termo novo sempre explicado | Técnico pleno; nomenclatura padrão da área | Técnico pleno + vocabulário de prova |
 | **Abstração** | Nenhuma; tudo ancorado no que se vê, toca ou conta | Mínima; ancorar em situação vivida/observável | Transição: alterna concreto e abstrato | Abstração plena, com retorno ao real como aplicação | Abstração + síntese entre temas |
-| **Exemplos por conceito** | 2, do mundo da criança de 9–10 anos (casa, escola, brincadeira, animais, comida, dinheiro de troco) | 2, do universo do aluno (escola, família, esporte, jogos, tecnologia) | 1–2, de textos/fenômenos reais e referências culturais | 1–2, de fontes reais (literatura, imprensa, dados, experimento) | 1 forte + 1 no formato de prova |
+| **Exemplos por conceito** | 1 exemplo claro; segundo só quando mostrar uma situação diferente, sempre do mundo da criança | 2, do universo do aluno (escola, família, esporte, jogos, tecnologia) | 1–2, de textos/fenômenos reais e referências culturais | 1–2, de fontes reais (literatura, imprensa, dados, experimento) | 1 forte + 1 no formato de prova |
 | **Exceções e casos raros** | Nunca entram | Não entram (salvo se estiverem no recorte do blueprint) | Entram as principais | Sistematizadas | Sistematizadas + pegadinhas clássicas de prova |
 | **Tom** | Professor próximo, fala com "você", frases afirmativas — **sem infantilizar, sem diminutivo, sem personagem falante** | Professor próximo e direto (fala com "você") | Direto, sem infantilizar | Acadêmico acessível — **nunca infantilizar** | Pré-universitário |
 | **Conexão com prova** | Não | Não | Leve (no 9º, mencionar quando natural) | Notas ENEM/vestibular quando o conteúdo render | Sistemática |
 
-**Nota sobre o 4º–5º ano:** faixa acrescentada em 20/07/2026 com a entrada do Fundamental I. A escala N1–N4 não muda — ela descreve a operação cognitiva, não a linguagem. Na prática o EF1 opera em **N1–N3**; **N4 é raro** e só aparece quando o próprio blueprint marcar. O erro típico aqui não é escrever difícil demais, é **infantilizar**: o aluno de 9–10 anos entende explicação direta, o que ele não tem é repertório abstrato.
+**Nota sobre o 4º–5º ano:** faixa acrescentada em 20/07/2026 com a entrada do Fundamental I. A escala N1–N4 não muda — ela descreve a operação cognitiva, não a linguagem. Na prática o EF1 opera em **N1–N3**; **N4 é raro** e só aparece quando o próprio blueprint marcar. O texto usa palavras comuns, exemplos próximos e frases curtas. Simplicidade não significa infantilização: diminutivos e personagens falantes continuam fora do padrão.
 
 **Nota sobre o 9º ano:** é segmento próprio no calendário (24 aulas/sem), mas na escrita segue a coluna 8º–9º **puxando para cima** — é a ponte para o EM.
 
@@ -453,12 +453,12 @@ $$\frac{1+2}{4} = \frac{3}{4}$$
 2. **Pergunta-problema** do blueprint em blockquote logo abaixo do título, **sem rótulo** — só a pergunta. É respondida dentro da aula pertinente, sem anunciar.
 3. **1 aula = 1 tópico `## N.`**, na ordem do blueprint; `---` entre aulas. Cada aula autossuficiente (~50 min).
 4. **2–3 subseções `### N.1`, `### N.2`** por aula, com título curto (pode ser pergunta orientadora).
-5. **Extensão por aula:** padrão da casa 220–250 (teto 300); overrides por disciplina — Física 130–170 (teto 190), Geometria 170–210 (teto 240), Matemática EF1 180–220 (teto 260). Fórmulas, exemplos resolvidos, tabelas, ASCII e boxes **não** entram na conta. **O teto não é meta; não existe mínimo.**
+5. **Extensão por aula:** padrão da casa 220–250 (teto 300); overrides por disciplina — Física 130–170 (teto 190), Química 180–210 (teto 240), Geometria 170–210 (teto 240), Matemática EF1 **sem alvo e sem mínimo** (teto 160). Fórmulas, exemplos resolvidos, tabelas, ASCII, figuras TikZ/PNG, textos alternativos e boxes **não** entram na conta. **O teto não é meta.**
 6. **Prosa curta + marcadores:** máx. 2 frases seguidas antes de uma lista; tabela para 2+ itens comparáveis; **liste o paralelo, escreva o encadeado**. Toda lista com frase de transição **informativa**.
-7. **Boxes:** só a família da disciplina, em blockquote, com quebra de linha interna (título na 1ª linha com dois espaços finais). 1–2 por aula, **nunca dois seguidos**, 1 frase ("drop").
-8. **Bíblia condicional:** versículo só com ligação **conceitual** (teste do sinônimo) — capítulo sem versículo é entrega válida.
-9. **Personagem/referência-chave** 1× por capítulo, na aula pertinente (EF em box 👤 onde a disciplina tiver; EM e matemáticas integrado ao texto).
-10. **O que NUNCA aparece:** blocos pós-conteúdo do formato antigo (`Introdução`, `Sua Parte`, `O que a Bíblia diz sobre...`, `E a Bíblia nisso?`, `Simplificando`, `Para não esquecer`, `Explorando os Conceitos`, `Ampliando o Olhar`, `No Fio da História`, `O Que a Fé Diz`, `Pensador em Destaque`, `Você já pensou nisso?`, `Síntese`, `Fórmulas do capítulo`, `💬 Para Conversar`) · atividades/exercícios propostos/provas · itens do NÃO ANTECIPAR · emojis fora de box · imagens (figuras descritas ou ASCII) · frases-preparação ("Neste capítulo vamos...").
+7. **Boxes:** só a família da disciplina, em blockquote, com quebra de linha interna (título na 1ª linha com dois espaços finais). 1–2 por aula, **nunca dois seguidos**, 1 frase ("drop"). **O box nunca abre um subtópico** — antes dele tem de haver parágrafo, lista ou tabela, porque ele comenta o que o aluno já leu.
+8. **Bíblia condicional:** versículo só com ligação **conceitual** (teste do sinônimo) — capítulo sem versículo é entrega válida. *(Em Estudos Sociais, desde 30/07/2026 o versículo não entra no capítulo: vive no arquivo de anexo.)*
+9. **Personagem/referência-chave** 1× por capítulo, na aula pertinente (EF em box 👤 onde a disciplina tiver; EM e matemáticas integrado ao texto). *(Estudos Sociais não tem mais box de personagem — a ficha vai para o anexo.)*
+10. **O que NUNCA aparece:** blocos pós-conteúdo do formato antigo (`Introdução`, `Sua Parte`, `O que a Bíblia diz sobre...`, `E a Bíblia nisso?`, `Simplificando`, `Para não esquecer`, `Explorando os Conceitos`, `Ampliando o Olhar`, `No Fio da História`, `O Que a Fé Diz`, `Pensador em Destaque`, `Você já pensou nisso?`, `Síntese`, `Fórmulas do capítulo`, `💬 Para Conversar`) · atividades/exercícios propostos/provas · itens do NÃO ANTECIPAR · emojis fora de box · imagens, **exceto as figuras TikZ/PNG autorizadas pelo manual da disciplina** · frases-preparação ("Neste capítulo vamos...").
 
 **Famílias de boxes por disciplina:**
 
@@ -468,7 +468,7 @@ $$\frac{1+2}{4} = \frac{3}{4}$$
 | Física | 💭 ⏸️ 💡 📏 ⚡ 📐 (+ 📝 rótulo de exemplo) |
 | Química | 💡 🔎 🌍 💭 ⏸️ ⚠️ |
 | Português | 💡 ⚠️ 📌 🔎 👤 |
-| Estudos Sociais (Geo/Hist) | 🔎 💭 👤 |
+| Estudos Sociais (Geo/Hist) | 🔎 💭 |
 | Sociologia · Filosofia | 💭 ⏸️ 💡 🔍 |
 | Operações · Geometria · Financeira · Matemática EF1 | 🔢 ⚠️ |
 

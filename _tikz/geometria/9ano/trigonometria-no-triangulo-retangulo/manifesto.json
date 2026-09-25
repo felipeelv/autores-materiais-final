@@ -1,0 +1,71 @@
+{
+  "versao": 1,
+  "disciplina": "geometria",
+  "ano_serie": "9ano",
+  "titulo_documento": "Trigonometria no triângulo retângulo",
+  "slug_documento": "trigonometria-no-triangulo-retangulo",
+  "arquivo_markdown": "Geometria/modelos/geometria-9ano-modelo.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-lados-em-relacao-ao-angulo",
+      "pagina": 1,
+      "arquivo": "fig-01-lados-em-relacao-ao-angulo.png",
+      "alt": "Triângulo ABC retângulo em A com hipotenusa, cateto oposto e cateto adjacente identificados em relação ao ângulo teta em B",
+      "aprovada": true,
+      "sha256": "6008b9d4d9d5ff7b79a1f0de1f84b5eecbd5db56547b4b6d78a183e6f041ccee",
+      "largura_px": 1188,
+      "altura_px": 821,
+      "publicado_sha256": "6008b9d4d9d5ff7b79a1f0de1f84b5eecbd5db56547b4b6d78a183e6f041ccee",
+      "publicado_commit": "40b0c3e3cff4be6f06180204258e8f9866d0e75c"
+    },
+    {
+      "id": "fig-02-triangulos-semelhantes-mesmo-angulo",
+      "pagina": 2,
+      "arquivo": "fig-02-triangulos-semelhantes-mesmo-angulo.png",
+      "alt": "Dois triângulos retângulos de tamanhos diferentes compartilham o mesmo ângulo teta e têm lados correspondentes proporcionais",
+      "aprovada": true,
+      "sha256": "2fff0baae7b3547fc3e0b6a7d176b9b5f8c2e19612f432c365afb20af6c758f3",
+      "largura_px": 1182,
+      "altura_px": 1300,
+      "publicado_sha256": "2fff0baae7b3547fc3e0b6a7d176b9b5f8c2e19612f432c365afb20af6c758f3",
+      "publicado_commit": "40b0c3e3cff4be6f06180204258e8f9866d0e75c"
+    },
+    {
+      "id": "fig-03-triangulo-de-trinta-e-sessenta",
+      "pagina": 3,
+      "arquivo": "fig-03-triangulo-de-trinta-e-sessenta.png",
+      "alt": "Triângulo equilátero de lado 2 dividido pela altura em triângulos retângulos com catetos 1 e raiz de 3 e ângulos de 30 e 60 graus",
+      "aprovada": true,
+      "sha256": "57094906773b4fb0e1cebb99752415800fef4e9073506e9c9a82c67cd6accf9e",
+      "largura_px": 1063,
+      "altura_px": 886,
+      "publicado_sha256": "57094906773b4fb0e1cebb99752415800fef4e9073506e9c9a82c67cd6accf9e",
+      "publicado_commit": "40b0c3e3cff4be6f06180204258e8f9866d0e75c"
+    },
+    {
+      "id": "fig-04-triangulo-de-quarenta-e-cinco",
+      "pagina": 4,
+      "arquivo": "fig-04-triangulo-de-quarenta-e-cinco.png",
+      "alt": "Triângulo retângulo isósceles com catetos iguais a 1, hipotenusa raiz de 2 e dois ângulos de 45 graus",
+      "aprovada": true,
+      "sha256": "083dc2b6a98e44afbd5d6af88a95dab74f6cf6eb09c871fe0fdfa236408e8d50",
+      "largura_px": 969,
+      "altura_px": 898,
+      "publicado_sha256": "083dc2b6a98e44afbd5d6af88a95dab74f6cf6eb09c871fe0fdfa236408e8d50",
+      "publicado_commit": "40b0c3e3cff4be6f06180204258e8f9866d0e75c"
+    },
+    {
+      "id": "fig-05-angulo-de-elevacao",
+      "pagina": 5,
+      "arquivo": "fig-05-angulo-de-elevacao.png",
+      "alt": "Teodolito observa o topo de um prédio pelo ângulo de elevação teta, formando triângulo retângulo com distância horizontal b e altura a",
+      "aprovada": true,
+      "sha256": "4933474cfa929a78f134898f9b481958d88153498623edce9c67182b3708255d",
+      "largura_px": 1453,
+      "altura_px": 910,
+      "publicado_sha256": "4933474cfa929a78f134898f9b481958d88153498623edce9c67182b3708255d",
+      "publicado_commit": "40b0c3e3cff4be6f06180204258e8f9866d0e75c"
+    }
+  ]
+}

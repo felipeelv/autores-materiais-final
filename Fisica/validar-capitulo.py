@@ -14,7 +14,9 @@ O QUE ELE FAZ — só o que a máquina decide melhor que a leitura:
   [1] estrutura do capítulo      [4] boxes (família, consecutivos)
   [2] extensão por aula          [5] emoji fora de box
   [3] seções de fechamento       [6] ortografia pré-Acordo
-  [2b] LaTeX que quebra render   [7] regras da família/disciplina
+  [2b] prosa × marcadores        [7] regras da família/disciplina
+  [2c] LaTeX que quebra render
+  [2c] exatas (unidades, valores declarados e uma operação por linha)
 
 O QUE ELE NÃO FAZ (fica para a leitura humana / do autor):
   - julgar se o recorte do blueprint foi cumprido ou se algum item do
@@ -31,12 +33,13 @@ import re, argparse
 # fora_box: emojis permitidos FORA de box (ex.: rótulo 📝 Exemplo da Física)
 DISC = {
     "portugues":       dict(boxes="💡⚠️📌🔎👤", fora_box="",  familia="humanas"),
-    "estudos-sociais": dict(boxes="🔎💭👤",       fora_box="",  familia="humanas"),
+    "estudos-sociais": dict(boxes="🔎💭👤",       fora_box="",  familia="humanas",
+                            prefixo_bloco=True),
     "sociologia":      dict(boxes="💭⏸️💡🔍",     fora_box="",  familia="humanas"),
     "filosofia":       dict(boxes="💭⏸️💡🔍",     fora_box="",  familia="humanas"),
     "ciencias":        dict(boxes="💭⏸️💡📏🔬",   fora_box="",  familia="empiricas"),
     "biologia":        dict(boxes="💭⏸️💡📏🔬",   fora_box="",  familia="empiricas"),
-    "fisica":          dict(boxes="💭⏸️💡📏⚡📐", fora_box="📝", familia="empiricas"),
+    "fisica":          dict(boxes="💭⏸️💡📏⚡📐👤", fora_box="📝", familia="empiricas"),
     "quimica":         dict(boxes="💡🔎🌍💭⏸️⚠️", fora_box="",  familia="empiricas"),
     "operacoes":       dict(boxes="🔢⚠️",         fora_box="",  familia="matematicas"),
     "geometria":       dict(boxes="🔢⚠️",         fora_box="",  familia="matematicas"),
@@ -55,6 +58,11 @@ PAL_POR_DISC = {
     "geometria":      (150, 240),
     "matematica-ef1": (150, 260),   # provisório — calibrar após o piloto
 }
+
+# Prosa corrida como fração do conteúdo da aula. É diagnóstico, nunca portão:
+# a regra operacional continua sendo estruturar o que é enumerável sem forçar
+# marcadores em raciocínios encadeados.
+PROSA_REF, PROSA_ALERTA = 0.45, 0.70
 
 # Títulos de fechamento proibidos (o formato novo dissolveu tudo nas aulas).
 # AMBIGUOS  → só reprova se for o título INTEIRO ("## Síntese" sim;
@@ -78,6 +86,15 @@ TIPOGRAFIA_OK = set("→←↔⇒⇐✅❌✓✗±≈≥≤≠∴")
 # ️ é o seletor de variação que acompanha ⚠️ e ⏸️ — sem ele esses boxes
 # passavam invisíveis pelo validador.
 BOX_TITULO = re.compile(r"^\s*>\s*(" + EMOJI.pattern + r")️?\s*\*\*")
+IMAGEM_MD = re.compile(r"!\[([^\]\n]*)\]\(([^)\n]+)\)")
+FORMULA = re.compile(r"\$\$(.+?)\$\$", flags=re.S)
+FORMULA_LINHA = re.compile(r"(?m)^[ \t]*\$\$([^\n]*?)\$\$[ \t]*$")
+INICIO_EXEMPLO = re.compile(r"(?m)^📝\s*\*\*Exemplo:\*\*")
+FIM_EXEMPLO = re.compile(r"(?m)^(?:#{2,3}\s|---\s*$|>\s*\S)")
+UNIDADE_APOS_VIRGULA = re.compile(
+    r"\d+,\s*(?:\\mathrm\{|kg\b|g\b|N\b|J\b|W\b|V\b|A\b|T\b|"
+    r"m(?:/s(?:\^2)?)?\b|s\b|Hz\b|Pa\b|C\b|rad/s\b)"
+)
 
 
 def falha(msg): print(f"  ✗ {msg}"); return 1
@@ -88,16 +105,56 @@ def ok(msg):    print(f"  ✓ {msg}"); return 0
 def contar_conteudo(corpo: str) -> int:
     """Palavras que o aluno lê na aula.
 
-    Exclui blocos de código/ASCII, LaTeX e separadores de tabela.
+    Exclui blocos de código/ASCII, LaTeX, imagens e separadores de tabela.
     Inclui prosa, exemplos, versículos, texto de box e de tabela.
     """
     t = re.sub(r"```.*?```", " ", corpo, flags=re.S)
     t = re.sub(r"\$\$.*?\$\$", " ", t, flags=re.S)
+    t = IMAGEM_MD.sub(" ", t)
+    t = re.sub(r"<!--.*?-->", " ", t, flags=re.S)
     manter = [l for l in t.split("\n")
               if l.strip() and l.strip() != "---"
               and not re.match(r"^\|[\s:\-|]+\|$", l.strip())]
     txt = re.sub(r"[>#*|_`]", " ", "\n".join(manter))
     return len(re.findall(r"[A-Za-zÀ-ÿ0-9]+(?:[-'][A-Za-zÀ-ÿ0-9]+)*", txt))
+
+
+def perfil_forma(corpo: str):
+    """Retorna palavras em (prosa, lista, box, tabela).
+
+    Fórmulas contam como conteúdo estruturado com peso fixo. Isso evita que
+    aulas de cálculo pareçam compostas apenas de prosa explicativa. Imagens e
+    seus textos alternativos ficam fora do cálculo editorial.
+    """
+    t = re.sub(r"```.*?```", " ", corpo, flags=re.S)
+    t = re.sub(r"\$\$.*?\$\$", "\n@FORMULA@\n", t, flags=re.S)
+    t = IMAGEM_MD.sub(" ", t)
+    t = re.sub(r"<!--.*?-->", " ", t, flags=re.S)
+    prosa = lista = box = tabela = 0
+
+    for linha in t.split("\n"):
+        if linha.strip() == "@FORMULA@":
+            lista += 12
+    t = t.replace("@FORMULA@", "")
+
+    for linha in t.split("\n"):
+        s = linha.strip()
+        if not s or s == "---" or s.startswith("#"):
+            continue
+        n = len(re.findall(
+            r"[A-Za-zÀ-ÿ0-9]+(?:[-'][A-Za-zÀ-ÿ0-9]+)*",
+            re.sub(r"[>#*|_`]", " ", s),
+        ))
+        if s.startswith(">"):
+            box += n
+        elif re.match(r"^[-*+]\s|^\d+[.)]\s", s):
+            lista += n
+        elif s.startswith("|"):
+            if not re.match(r"^\|[\s:\-|]+\|$", s):
+                tabela += n
+        else:
+            prosa += n
+    return prosa, lista, box, tabela
 
 
 def separar_aulas(texto: str):
@@ -111,10 +168,68 @@ def separar_aulas(texto: str):
     return [(a[0], a[1], a[3]) for a in aulas]
 
 
+def sem_matematica_codigo(texto: str) -> str:
+    """Mantém quebras de linha e remove trechos em que comandos LaTeX são válidos."""
+    t = re.sub(r"```.*?```", lambda m: "\n" * m.group().count("\n"), texto, flags=re.S)
+    t = FORMULA.sub(lambda m: "\n" * m.group().count("\n"), t)
+    t = re.sub(r"<!--.*?-->", lambda m: "\n" * m.group().count("\n"), t, flags=re.S)
+    return t
+
+
+def separar_exemplos(texto: str):
+    """Retorna blocos de exemplo até o próximo título, separador ou box."""
+    exemplos = []
+    for inicio in INICIO_EXEMPLO.finditer(texto):
+        resto = texto[inicio.end():]
+        fim = FIM_EXEMPLO.search(resto)
+        pos_fim = inicio.end() + (fim.start() if fim else len(resto))
+        exemplos.append((inicio.start(), texto[inicio.start():pos_fim]))
+    return exemplos
+
+
+def numeros_fisicos(texto: str) -> set[str]:
+    """Extrai valores, ignorando expoentes, índices e números dentro de unidades."""
+    t = re.sub(r"\\mathrm\{[^}]*\}", " ", texto)
+    t = re.sub(r"[\^_]\s*\{?\s*-?\d+\s*\}?", " ", t)
+    t = re.sub(r"\\[A-Za-z]+", " ", t)
+    valores = set()
+    for m in re.finditer(r"(?<![A-Za-zÀ-ÿ0-9])\d+(?:\{,\}\d+|[,.]\d+)?", t):
+        bruto = m.group().replace("{,}", ".").replace(",", ".")
+        try:
+            valores.add(f"{float(bruto):g}")
+        except ValueError:
+            pass
+    return valores
+
+
+def linha_de(texto: str, pos: int) -> int:
+    return texto.count("\n", 0, pos) + 1
+
+
+def parece_inventario_unidades(linha: str) -> bool:
+    """Reconhece apenas inventários de alta confiança; definição única é permitida."""
+    s = linha.strip()
+    baixo = s.lower()
+    if re.search(r"\b(as|essas|estas) grandezas são\b", baixo):
+        return True
+    if re.search(r"\btodas? as (?:grandezas|energias|forças|distâncias)\b", baixo):
+        return bool(re.search(r"\b(medid|unidade|newton|joule|metro|segundo)", baixo))
+    if not re.search(r"\bness(?:a|as|e|es) (?:express(?:ão|ões)|relaç(?:ão|ões))\b", baixo):
+        return False
+    simbolos = len(re.findall(r"\$\$[^$]+\$\$", s))
+    pistas = len(re.findall(
+        r"\b(?:medid[ao]s?|unidades?|newtons?|joules?|metros?|segundos?|"
+        r"quilogramas?|sem unidade|não possui unidade)\b|\([^)]{1,18}\)",
+        baixo,
+    ))
+    return simbolos >= 2 and pistas >= 2
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("capitulo")
     ap.add_argument("--disciplina", required=True, choices=DISC.keys())
+    ap.add_argument("--blueprint", help="aceito para compatibilidade; a leitura é semântica")
     args = ap.parse_args()
 
     cfg = DISC[args.disciplina]
@@ -127,10 +242,16 @@ def main():
 
     # 1. Estrutura ------------------------------------------------------------
     print("\n[1] Estrutura")
-    if not re.match(r"^#\s+Capítulo\s+\d+\s+—\s+.+", texto.strip()):
-        rc |= falha("título não é `# Capítulo N — Tema`")
+    # O prefixo BL1_/BL2_ identifica o bloco do bimestre. Onde a disciplina o exige
+    # (cfg["prefixo_bloco"]), o título sem prefixo é falha; nas demais, é opcional.
+    exige_prefixo = cfg.get("prefixo_bloco", False)
+    m_titulo = re.match(r"^#\s+(BL(\d)_)?Capítulo\s+\d+\s+—\s+.+", texto.strip())
+    if not m_titulo:
+        rc |= falha("título não é `# [BL{1|2}_]Capítulo N — Tema`")
+    elif exige_prefixo and not m_titulo.group(1):
+        rc |= falha("título sem o prefixo de bloco — use `# BL1_Capítulo N — Tema`")
     else:
-        ok("título no formato `# Capítulo N — Tema`")
+        ok(f"título no formato `# {m_titulo.group(1) or ''}Capítulo N — Tema`")
 
     aulas = separar_aulas(texto)
     if not aulas:
@@ -163,22 +284,136 @@ def main():
         else:
             ok(f"Aula {num} — {tit}: {n} palavras")
 
-    # 2b. LaTeX que quebra a renderização -------------------------------------
-    # Dois bugs reais do material do 3º bimestre: `\text{}` não aceita acento
-    # (o renderizador lê como comando e imprime erro na tela) e `%` sem escape
-    # inicia COMENTÁRIO em LaTeX — tudo depois some em silêncio.
+    # 2b. Prosa × marcadores — diagnóstico, nunca reprova ---------------------
+    print(f"\n[2b] Prosa × marcadores (referência ~{int(PROSA_REF * 100)}% prosa · diagnóstico, não reprova)")
+    for num, tit, corpo in aulas:
+        prosa, lista, box, tabela = perfil_forma(corpo)
+        total = prosa + lista + box + tabela
+        if not total:
+            continue
+        proporcao = prosa / total
+        estruturado = lista + tabela
+        if estruturado == 0:
+            marca = "⚠️ "
+            obs = "sem lista nem tabela — há algo enumerável aqui?"
+        elif proporcao > PROSA_ALERTA:
+            marca = "⚠️ "
+            obs = "bloco de prosa — veja o que é enumerável"
+        else:
+            marca = "✓"
+            obs = f"{estruturado} pal. em lista/tabela"
+        print(f"  {marca} Aula {num} — {tit[:30]}: {proporcao * 100:.0f}% prosa · {obs}")
+
+    # 2c. LaTeX que quebra a renderização -------------------------------------
+    # Bugs reais do material do 3º bimestre: `\text{}` não aceita acento,
+    # `%` sem escape inicia comentário e `\ce{}` depende de mhchem, extensão
+    # ausente no render final.
     formulas = re.findall(r"\$\$(.+?)\$\$", texto, flags=re.S)
     if formulas:
-        print("\n[2b] LaTeX seguro no renderizador")
+        print("\n[2c] LaTeX seguro no renderizador")
         acento = [f.strip()[:60] for f in formulas
                   if re.search(r"\\text\{[^}]*[À-ÿ][^}]*\}", f)]
         pct = [f.strip()[:60] for f in formulas if re.search(r"(?<!\\)%", f)]
+        mhchem = [f.strip()[:60] for f in formulas if r"\ce{" in f]
         for f in acento:
             rc |= falha(f"acento dentro de \\text{{}} — não renderiza: {f}")
         for f in pct:
             rc |= falha(f"`%` sem escape (vira comentário e some): {f}")
-        if not acento and not pct:
-            ok("nenhum acento em \\text{} e todo `%` escapado")
+        for f in mhchem:
+            rc |= falha(f"`\\ce{{}}` requer mhchem e aparece literal: {f}")
+        if not acento and not pct and not mhchem:
+            ok("sem \\ce{}, nenhum acento em \\text{} e todo `%` escapado")
+
+    # 2c. Regras determinísticas de exatas -----------------------------------
+    if args.disciplina == "fisica":
+        print("\n[2c] Passada específica de exatas")
+
+        fora_matematica = sem_matematica_codigo(texto)
+        espaco_fino_fora = [
+            i for i, l in enumerate(fora_matematica.splitlines(), 1) if r"\," in l
+        ]
+        if espaco_fino_fora:
+            rc |= falha(f"`\\,` fora de ambiente matemático nas linhas {espaco_fino_fora}")
+        else:
+            ok("`\\,` aparece somente dentro de ambiente matemático")
+
+        virgula_unidade = [
+            i for i, l in enumerate(linhas, 1) if UNIDADE_APOS_VIRGULA.search(l)
+        ]
+        if virgula_unidade:
+            rc |= falha(
+                f"vírgula usada como espaço antes de unidade nas linhas {virgula_unidade}"
+            )
+        else:
+            ok("nenhum caso como `10,kg` ou `10, kg`")
+
+        inventarios = [
+            i for i, l in enumerate(linhas, 1) if parece_inventario_unidades(l)
+        ]
+        if inventarios:
+            rc |= falha(f"parágrafo-inventário de unidades nas linhas {inventarios}")
+        else:
+            ok("nenhum inventário de unidades de alta confiança")
+
+        cadeias = []
+        valores_novos = []
+        for pos_exemplo, exemplo in separar_exemplos(texto):
+            formulas_exemplo = list(FORMULA_LINHA.finditer(exemplo))
+            if not formulas_exemplo:
+                continue
+            contexto_inicio = max(
+                texto.rfind("\n### ", 0, pos_exemplo),
+                texto.rfind("\n## ", 0, pos_exemplo),
+                0,
+            )
+            conhecidos = numeros_fisicos(
+                texto[contexto_inicio:pos_exemplo]
+                + exemplo[:formulas_exemplo[0].start()]
+            )
+            for formula in formulas_exemplo:
+                linha = linha_de(texto, pos_exemplo + formula.start())
+                conteudo = formula.group(1)
+                if conteudo.count("=") > 1:
+                    cadeias.append(linha)
+                atuais = numeros_fisicos(conteudo)
+                sem_unidades = re.sub(r"\\mathrm\{[^}]*\}", " ", conteudo)
+                sem_indices = re.sub(r"[\^_]\s*\{?\s*-?\d+\s*\}?", " ", sem_unidades)
+                tem_operacao = bool(
+                    re.search(r"\\(?:cdot|frac|sqrt)|[+\-*/]", sem_indices)
+                )
+                partes = re.split(r"=|\\approx", sem_indices)
+                lados = []
+                for lado in partes:
+                    lado = re.sub(r"\\[A-Za-z]+|\\[,;! ]", " ", lado)
+                    lados.append(re.sub(r"[{}\s]", "", lado))
+                lado_numerico = any(
+                    re.fullmatch(r"-?\d+(?:,\d+|\.\d+)?", lado) for lado in lados
+                )
+                if tem_operacao and not lado_numerico:
+                    novos = sorted(
+                        valor for valor in atuais - conhecidos
+                        if valor not in {"0", "1", "2"}
+                    )
+                    if novos:
+                        valores_novos.append((linha, novos))
+                conhecidos.update(atuais)
+
+        if cadeias:
+            rc |= falha(
+                f"mais de uma operação/etapa na mesma linha de exemplo: {cadeias}"
+            )
+        else:
+            ok("uma operação por linha nos exemplos")
+
+        if valores_novos:
+            for linha, valores in valores_novos:
+                aviso(
+                    f"linha {linha}: conferir origem dos valores "
+                    + ", ".join(valores)
+                    + " (não apareceram antes no exemplo)"
+                )
+        else:
+            ok("nenhum valor numérico novo surgiu durante os cálculos")
 
     # 3. Seções de fechamento proibidas ---------------------------------------
     print("\n[3] Seções de fechamento (devem estar ausentes)")
@@ -280,8 +515,8 @@ def main():
 
     print("\n" + ("═══ ✗ HÁ FALHAS — revisar antes de publicar ═══"
                   if rc else "═══ ✓ TUDO CERTO ═══") + "\n")
-    print("Lembrete: recorte do blueprint, itens do NÃO ANTECIPAR, dados e cálculos")
-    print("são conferência de LEITURA — este script não julga conteúdo.\n")
+    print("Lembrete: recorte do blueprint, dependências conceituais, novidade dos boxes")
+    print("e repetição tabela–prosa são tratados por `auditar-fisica.py`.\n")
     return rc
 
 

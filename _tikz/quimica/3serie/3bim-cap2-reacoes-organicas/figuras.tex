@@ -1,0 +1,115 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-quimica}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-categorias-reacao-organica
+\begin{tikzpicture}[quimica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.25) rectangle (13.0,10.3);
+
+  \node[quimica processo, minimum width=5.70cm, minimum height=2.45cm]
+    at (3.00,8.75)
+    {substituição\\[3pt]$\mathrm{R{-}X+Y\longrightarrow R{-}Y+X}$};
+  \node[quimica processo, minimum width=5.70cm, minimum height=2.45cm]
+    at (9.80,8.75)
+    {adição\\[3pt]$\mathrm{C{=}C+A{-}B\longrightarrow A{-}C{-}C{-}B}$};
+
+  \node[quimica processo, minimum width=5.70cm, minimum height=2.45cm]
+    at (3.00,5.45)
+    {eliminação\\[3pt]$\mathrm{A{-}C{-}C{-}B\longrightarrow C{=}C+A{-}B}$};
+  \node[quimica processo, minimum width=5.70cm, minimum height=2.45cm]
+    at (9.80,5.45)
+    {oxidação\\[3pt]$\mathrm{R{-}CH_2OH\longrightarrow R{-}CHO}$};
+
+  \node[quimica separacao, minimum width=5.70cm, minimum height=2.45cm]
+    at (3.00,2.15)
+    {condensação\\[3pt]$\mathrm{A{-}OH+H{-}B\longrightarrow A{-}B+H_2O}$};
+  \node[quimica separacao, minimum width=5.70cm, minimum height=2.45cm]
+    at (9.80,2.15)
+    {hidrólise\\[3pt]$\mathrm{A{-}B+H_2O\longrightarrow A{-}OH+H{-}B}$};
+\end{tikzpicture}
+
+
+% FIGURA 2 — fig-02-hidrogenacao-insaturacao
+\begin{tikzpicture}[quimica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (12.1,7.2);
+
+  \node[quimica rotulo] at (2.50,6.65) {cadeia insaturada};
+  \node[quimica processo, minimum width=4.50cm, minimum height=2.20cm]
+    (insat) at (2.50,4.75)
+    {$\mathrm{R{-}CH{=}CH{-}R'}$};
+  \node[quimica processo, minimum width=2.15cm, minimum height=1.45cm]
+    (hdois) at (2.50,1.85) {$\mathrm{H_2}$};
+
+  \node[quimica destaque] at (6.10,5.55) {Ni};
+  \draw[quimica fluxo] (4.95,4.75) -- (7.20,4.75);
+  \draw[quimica fluxo] (3.65,1.85) -| (6.10,4.20);
+  \node[quimica destaque, font=\normalsize\bfseries, anchor=east]
+    at (5.85,2.75) {adição de $\mathrm{H_2}$};
+
+  \node[quimica rotulo] at (9.55,6.65) {cadeia mais saturada};
+  \node[quimica separacao, minimum width=4.50cm, minimum height=2.20cm]
+    at (9.55,4.75)
+    {$\mathrm{R{-}CH_2{-}CH_2{-}R'}$};
+  \node[quimica rotulo] at (9.55,2.10)
+    {ligação simples formada};
+\end{tikzpicture}
+
+
+% FIGURA 3 — fig-03-saponificacao-triglicerideo
+\begin{tikzpicture}[quimica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.25) rectangle (13.7,8.6);
+
+  \node[quimica processo, minimum width=3.80cm, minimum height=2.35cm]
+    (tri) at (2.15,6.15)
+    {triglicerídeo\\3 ligações éster};
+  \node[quimica processo, minimum width=2.20cm, minimum height=1.65cm]
+    (oh) at (2.15,2.65) {$3\,\mathrm{OH^-}$};
+
+  \draw[quimica fluxo] (4.20,6.15) -- (6.35,6.15);
+  \draw[quimica fluxo] (3.35,2.65) -| (5.25,5.55);
+  \node[quimica destaque] at (5.25,4.45) {hidrólise básica};
+
+  \node[quimica separacao, minimum width=2.60cm, minimum height=1.85cm]
+    (glic) at (7.85,6.15) {glicerol};
+  \node[quimica rotulo] at (9.45,6.15) {$+$};
+
+  \foreach \y in {2.65,4.05,5.45}{
+    \node[quimica particula laranja, minimum size=0.92cm]
+      (cab-\y) at (10.35,\y) {$-$};
+    \draw[quimica direta] (10.80,\y)
+      .. controls (11.55,\y+0.35) and (12.15,\y-0.35) .. (12.85,\y);
+  }
+  \node[quimica rotulo] at (11.60,7.25) {3 íons de sabão};
+\end{tikzpicture}
+
+
+% FIGURA 4 — fig-04-transesterificacao-biodiesel
+\begin{tikzpicture}[quimica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.25) rectangle (14.15,8.2);
+
+  \node[quimica processo, minimum width=2.75cm] (oleo) at (1.55,6.45)
+    {óleo ou\\gordura};
+  \node[quimica processo, minimum width=2.75cm] (alcool) at (1.55,3.85)
+    {metanol ou\\etanol};
+
+  \node[quimica processo, minimum width=3.25cm, minimum height=2.00cm]
+    (reator) at (5.10,5.15)
+    {reator\\catalisador};
+  \draw[quimica fluxo] (oleo.east) -- (reator.west);
+  \draw[quimica fluxo] (alcool.east) -- (reator.west);
+
+  \node[quimica separacao, minimum width=3.05cm, minimum height=2.00cm]
+    (separacao) at (9.20,5.15)
+    {separação e\\purificação};
+  \draw[quimica fluxo] (reator.east) -- (separacao.west);
+
+  \node[quimica separacao, minimum width=2.85cm] (glicerol) at (12.35,2.55)
+    {glicerol};
+  \node[quimica separacao, minimum width=2.85cm] (bio2) at (12.35,6.95)
+    {biodiesel\\ésteres};
+  \draw[quimica fluxo, draw=quimicaverde] (separacao.east) -| (bio2.west);
+  \draw[quimica fluxo, draw=quimicaverde] (separacao.east) -| (glicerol.west);
+\end{tikzpicture}
+
+\end{document}

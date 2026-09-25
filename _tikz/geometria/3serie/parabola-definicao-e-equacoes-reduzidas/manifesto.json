@@ -1,0 +1,59 @@
+{
+  "versao": 1,
+  "disciplina": "geometria",
+  "ano_serie": "3serie",
+  "titulo_documento": "Parábola: definição e equações reduzidas",
+  "slug_documento": "parabola-definicao-e-equacoes-reduzidas",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Geometria/3serie/geometria-3serie-3bim-cap2.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-definicao-por-foco-e-diretriz",
+      "pagina": 1,
+      "arquivo": "fig-01-definicao-por-foco-e-diretriz.png",
+      "alt": "Ponto P da parábola ligado ao foco F e à diretriz por segmentos perpendiculares de mesma medida",
+      "aprovada": true,
+      "sha256": "6e1e8a35a08335dea7b433edee5d1d7dbdcd1d27a17d7afcaf19d99c5cf08f94",
+      "largura_px": 1182,
+      "altura_px": 1063,
+      "publicado_sha256": "6e1e8a35a08335dea7b433edee5d1d7dbdcd1d27a17d7afcaf19d99c5cf08f94",
+      "publicado_commit": "e74683713cc205aa327f4ff065fc6751227d6a77"
+    },
+    {
+      "id": "fig-02-elementos-da-parabola",
+      "pagina": 2,
+      "arquivo": "fig-02-elementos-da-parabola.png",
+      "alt": "Parábola vertical com foco, vértice, diretriz, eixo de simetria e parâmetro p identificados",
+      "aprovada": true,
+      "sha256": "933012930feae1a1219e76d1e7dc2c8b71155f511fc869a923c7493e6f31d608",
+      "largura_px": 1182,
+      "altura_px": 1258,
+      "publicado_sha256": "933012930feae1a1219e76d1e7dc2c8b71155f511fc869a923c7493e6f31d608",
+      "publicado_commit": "e74683713cc205aa327f4ff065fc6751227d6a77"
+    },
+    {
+      "id": "fig-03-parabolas-verticais",
+      "pagina": 3,
+      "arquivo": "fig-03-parabolas-verticais.png",
+      "alt": "Parábolas verticais com abertura para cima e para baixo mostrando focos e diretrizes correspondentes",
+      "aprovada": true,
+      "sha256": "b09c3c5193f70c8ebcdcc84f53b089ee4d2ef337bc7a51589d78b602af39e738",
+      "largura_px": 1312,
+      "altura_px": 981,
+      "publicado_sha256": "b09c3c5193f70c8ebcdcc84f53b089ee4d2ef337bc7a51589d78b602af39e738",
+      "publicado_commit": "e74683713cc205aa327f4ff065fc6751227d6a77"
+    },
+    {
+      "id": "fig-04-parabolas-horizontais",
+      "pagina": 4,
+      "arquivo": "fig-04-parabolas-horizontais.png",
+      "alt": "Parábolas horizontais com abertura para a direita e para a esquerda mostrando focos e diretrizes correspondentes",
+      "aprovada": true,
+      "sha256": "833c882afc6144096470d31ab52c64f024bb02d29558e874a6350c0f41c65091",
+      "largura_px": 1312,
+      "altura_px": 981,
+      "publicado_sha256": "833c882afc6144096470d31ab52c64f024bb02d29558e874a6350c0f41c65091",
+      "publicado_commit": "e74683713cc205aa327f4ff065fc6751227d6a77"
+    }
+  ]
+}

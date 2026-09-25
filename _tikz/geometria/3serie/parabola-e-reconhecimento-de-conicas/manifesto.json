@@ -1,0 +1,107 @@
+{
+  "versao": 1,
+  "disciplina": "geometria",
+  "ano_serie": "3serie",
+  "titulo_documento": "Parábola e reconhecimento de cônicas",
+  "slug_documento": "parabola-e-reconhecimento-de-conicas",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Geometria/3serie/geometria-3serie-3bim-cap3.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-reflexao-em-antena-e-farol",
+      "pagina": 1,
+      "arquivo": "fig-01-reflexao-em-antena-e-farol.png",
+      "alt": "Antena concentrando raios paralelos no foco e farol emitindo raios paralelos a partir de uma fonte no foco",
+      "aprovada": true,
+      "sha256": "eeb689d83786d7204eb687ffb5f0c06ccbe4e22f3e3a42f380135655825e9c1d",
+      "largura_px": 1406,
+      "altura_px": 721,
+      "publicado_sha256": "eeb689d83786d7204eb687ffb5f0c06ccbe4e22f3e3a42f380135655825e9c1d",
+      "publicado_commit": "2fdcd844d6a909e73c4204a99445dd7d55535447"
+    },
+    {
+      "id": "fig-02-trajetoria-ideal-e-com-resistencia",
+      "pagina": 2,
+      "arquivo": "fig-02-trajetoria-ideal-e-com-resistencia.png",
+      "alt": "Comparação entre trajetória parabólica ideal e trajetória mais curta alterada pela resistência do ar",
+      "aprovada": true,
+      "sha256": "33041f9a4b90e66900a581d71c3745713ba2c5530f2a2eb1d9b412afe72bfccc",
+      "largura_px": 1306,
+      "altura_px": 733,
+      "publicado_sha256": "33041f9a4b90e66900a581d71c3745713ba2c5530f2a2eb1d9b412afe72bfccc",
+      "publicado_commit": "2fdcd844d6a909e73c4204a99445dd7d55535447"
+    },
+    {
+      "id": "fig-03-medidas-de-uma-antena-parabolica",
+      "pagina": 3,
+      "arquivo": "fig-03-medidas-de-uma-antena-parabolica.png",
+      "alt": "Secção de antena parabólica com diâmetro D, profundidade h, vértice e foco a distância p",
+      "aprovada": true,
+      "sha256": "4f7cdb699610029bd0620e756b3743f475c2fd5ede8153896db53caa596faefc",
+      "largura_px": 1117,
+      "altura_px": 686,
+      "publicado_sha256": "4f7cdb699610029bd0620e756b3743f475c2fd5ede8153896db53caa596faefc",
+      "publicado_commit": "2fdcd844d6a909e73c4204a99445dd7d55535447"
+    },
+    {
+      "id": "fig-04-conica-alinhada-e-rotacionada",
+      "pagina": 4,
+      "arquivo": "fig-04-conica-alinhada-e-rotacionada.png",
+      "alt": "Mesma elipse com eixos alinhados e rotacionados em relação ao sistema cartesiano",
+      "aprovada": true,
+      "sha256": "f3c5afcc5bb8c29047337f14b77c4af3240e57d3baf7a169473c92ef840471a5",
+      "largura_px": 1424,
+      "altura_px": 857,
+      "publicado_sha256": "f3c5afcc5bb8c29047337f14b77c4af3240e57d3baf7a169473c92ef840471a5",
+      "publicado_commit": "2fdcd844d6a909e73c4204a99445dd7d55535447"
+    },
+    {
+      "id": "fig-05-continuum-e-discriminante-das-conicas",
+      "pagina": 5,
+      "arquivo": "fig-05-continuum-e-discriminante-das-conicas.png",
+      "alt": "Elipse, parábola e hipérbole em sequência associadas aos sinais negativo, zero e positivo do discriminante",
+      "aprovada": true,
+      "sha256": "992e50b561b87feff9cc6a9e630242102883e2dd8c9c705b7a48d18892cccc1d",
+      "largura_px": 1554,
+      "altura_px": 745,
+      "publicado_sha256": "992e50b561b87feff9cc6a9e630242102883e2dd8c9c705b7a48d18892cccc1d",
+      "publicado_commit": "2fdcd844d6a909e73c4204a99445dd7d55535447"
+    },
+    {
+      "id": "fig-06-circunferencia-e-elipse",
+      "pagina": 6,
+      "arquivo": "fig-06-circunferencia-e-elipse.png",
+      "alt": "Circunferência com eixos iguais comparada a elipse com semieixos de medidas diferentes",
+      "aprovada": true,
+      "sha256": "9dde880dbcbd6b11e0b413d9e70d4f33594f63f9ed59638dccc954a29283e9d5",
+      "largura_px": 1335,
+      "altura_px": 798,
+      "publicado_sha256": "9dde880dbcbd6b11e0b413d9e70d4f33594f63f9ed59638dccc954a29283e9d5",
+      "publicado_commit": "2fdcd844d6a909e73c4204a99445dd7d55535447"
+    },
+    {
+      "id": "fig-07-casos-degenerados-de-conicas",
+      "pagina": 7,
+      "arquivo": "fig-07-casos-degenerados-de-conicas.png",
+      "alt": "Casos degenerados representados por um ponto, um par de retas concorrentes e uma reta dupla",
+      "aprovada": true,
+      "sha256": "304f4d2e094b6b774ab6d06151af141420744d1b769f743559cdc42665dfe92b",
+      "largura_px": 1477,
+      "altura_px": 733,
+      "publicado_sha256": "304f4d2e094b6b774ab6d06151af141420744d1b769f743559cdc42665dfe92b",
+      "publicado_commit": "2fdcd844d6a909e73c4204a99445dd7d55535447"
+    },
+    {
+      "id": "fig-08-translacao-de-uma-hiperbole",
+      "pagina": 8,
+      "arquivo": "fig-08-translacao-de-uma-hiperbole.png",
+      "alt": "Hipérbole centrada na origem e cópia transladada para o centro h k com assíntotas paralelas preservadas",
+      "aprovada": true,
+      "sha256": "84940efccf34eb2abd306245157d0326a051d1fcf3a9dc2e89e9b921f19bd607",
+      "largura_px": 1506,
+      "altura_px": 898,
+      "publicado_sha256": "84940efccf34eb2abd306245157d0326a051d1fcf3a9dc2e89e9b921f19bd607",
+      "publicado_commit": "2fdcd844d6a909e73c4204a99445dd7d55535447"
+    }
+  ]
+}

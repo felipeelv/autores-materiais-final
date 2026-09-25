@@ -1,0 +1,35 @@
+{
+  "versao": 1,
+  "disciplina": "matematica-ef1",
+  "ano_serie": "5ano",
+  "titulo_documento": "Massa, tempo e temperatura",
+  "slug_documento": "massa-tempo-e-temperatura",
+  "arquivo_markdown": "Matematica EF1/_staging-3bim/5ano/Massa, tempo e temperatura.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-unidades-de-massa",
+      "pagina": 1,
+      "arquivo": "fig-01-unidades-de-massa.png",
+      "alt": "Pessoa, pacote e comprimido aparecem associados a quilograma, grama e miligrama",
+      "aprovada": true,
+      "sha256": "c15ce085495d4464dc5358ce5f0b7020474f7fe76c4e3ecab534be59a1e3ec70",
+      "largura_px": 1477,
+      "altura_px": 934,
+      "publicado_sha256": "c15ce085495d4464dc5358ce5f0b7020474f7fe76c4e3ecab534be59a1e3ec70",
+      "publicado_commit": "1f7e77526e6b68d6c681fa0352e846cebaac646d"
+    },
+    {
+      "id": "fig-02-termometros-e-pontos-de-referencia",
+      "pagina": 2,
+      "arquivo": "fig-02-termometros-e-pontos-de-referencia.png",
+      "alt": "Três termômetros indicam zero, trinta e seis vírgula cinco e cem graus Celsius",
+      "aprovada": true,
+      "sha256": "72e2c6c99eb96460791923f2bc35d1c43c88c2b6c24eae5153ed877e7c114140",
+      "largura_px": 1359,
+      "altura_px": 957,
+      "publicado_sha256": "72e2c6c99eb96460791923f2bc35d1c43c88c2b6c24eae5153ed877e7c114140",
+      "publicado_commit": "1f7e77526e6b68d6c681fa0352e846cebaac646d"
+    }
+  ]
+}

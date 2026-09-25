@@ -1,0 +1,47 @@
+{
+  "versao": 1,
+  "disciplina": "matematica-ef1",
+  "ano_serie": "4ano",
+  "titulo_documento": "Sequências numéricas e regras de formação",
+  "slug_documento": "sequencias-numericas-e-regras-de-formacao",
+  "arquivo_markdown": "Matematica EF1/_staging-3bim/4ano/Sequências numéricas e regras de formação.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-sequencias-na-reta",
+      "pagina": 1,
+      "arquivo": "fig-01-sequencias-na-reta.png",
+      "alt": "Duas sequências mostram uma regra que soma três e outra que subtrai três",
+      "aprovada": true,
+      "sha256": "4bc8cc252ae65cac8a6a8865c4d250a352d85a3ea6323e0a08f2fed7a4bf45e1",
+      "largura_px": 1459,
+      "altura_px": 792,
+      "publicado_sha256": "4bc8cc252ae65cac8a6a8865c4d250a352d85a3ea6323e0a08f2fed7a4bf45e1",
+      "publicado_commit": "8ea2b17c75b231502f31808fb13399313d7205c1"
+    },
+    {
+      "id": "fig-02-somar-ou-dobrar",
+      "pagina": 2,
+      "arquivo": "fig-02-somar-ou-dobrar.png",
+      "alt": "Comparação visual mostra a diferença entre somar dois e dobrar o termo anterior",
+      "aprovada": true,
+      "sha256": "39074915f1c418f0ea8db062b4e5e8cbea2908b2af03a83b8587c249056bd5a6",
+      "largura_px": 1406,
+      "altura_px": 810,
+      "publicado_sha256": "39074915f1c418f0ea8db062b4e5e8cbea2908b2af03a83b8587c249056bd5a6",
+      "publicado_commit": "8ea2b17c75b231502f31808fb13399313d7205c1"
+    },
+    {
+      "id": "fig-03-termo-que-falta",
+      "pagina": 3,
+      "arquivo": "fig-03-termo-que-falta.png",
+      "alt": "Sequência decrescente de cinco em cinco destaca o termo vinte e cinco entre trinta e vinte",
+      "aprovada": true,
+      "sha256": "204a8490b4366129f5da37c73602b2f201285c8721e8dd13e821d002642b417e",
+      "largura_px": 1252,
+      "altura_px": 526,
+      "publicado_sha256": "204a8490b4366129f5da37c73602b2f201285c8721e8dd13e821d002642b417e",
+      "publicado_commit": "8ea2b17c75b231502f31808fb13399313d7205c1"
+    }
+  ]
+}

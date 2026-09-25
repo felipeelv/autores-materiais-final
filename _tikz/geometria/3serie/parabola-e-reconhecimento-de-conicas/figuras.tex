@@ -1,0 +1,241 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-geometria}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-reflexao-em-antena-e-farol
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,-0.15) rectangle (11.20,5.35);
+
+  % Antena: raios paralelos incidentes convergem no foco.
+  \draw[eleve aresta, line width=2pt]
+    plot[domain=.25:5.15, samples=60] (\x,{.22*(\x-2.7)*(\x-2.7)+.7});
+  \coordinate (FA) at (2.70,1.84);
+  \foreach \x/\y in {1.00/1.34,2.10/.78,3.30/.78,4.40/1.34}{
+    \draw[-Stealth, eleve auxiliar, line width=1.1pt] (\x,4.65) -- (\x,\y);
+    \draw[-Stealth, eleve destaque, line width=1.25pt] (\x,\y) -- (FA);
+  }
+  \fill[elevelaranja] (FA) circle (2.7pt)
+    node[above, font=\large\bfseries, text=elevelaranja] {$F$};
+  \node[font=\large\bfseries, text=eleveazul] at (2.70,.20) {antena};
+
+  % Farol: a fonte no foco produz feixes paralelos ao eixo.
+  \draw[eleve aresta, line width=2pt]
+    plot[domain=.25:4.95, samples=60] ({6.05+.35*(\x-2.6)*(\x-2.6)},\x);
+  \coordinate (FF) at (6.76,2.60);
+  \foreach \x/\y in {6.95/1.00,6.18/2.00,6.18/3.20,6.95/4.20}{
+    \draw[-Stealth, eleve destaque, line width=1.25pt] (FF) -- (\x,\y);
+    \draw[-Stealth, eleve auxiliar, line width=1.1pt] (\x,\y) -- (10.75,\y);
+  }
+  \fill[elevelaranja] (FF) circle (2.7pt)
+    node[right=4pt, font=\large\bfseries, text=elevelaranja] {fonte};
+  \node[font=\large\bfseries, text=eleveazul] at (8.55,.20) {farol};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-trajetoria-ideal-e-com-resistencia
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,-0.25) rectangle (10.35,5.35);
+  \draw[-Stealth, elevecinza, line width=1.1pt] (.35,.55) -- (9.95,.55)
+    node[right, font=\large] {$x$};
+  \draw[-Stealth, elevecinza, line width=1.1pt] (.70,.25) -- (.70,4.90)
+    node[above, font=\large] {$y$};
+  \fill[eleveazul] (.70,.60) circle (2.4pt);
+
+  \draw[eleve aresta, line width=2pt]
+    plot[domain=.70:9.30, samples=80] (\x,{.60+.16*(\x-.70)*(9.30-\x)});
+  \draw[eleve destaque, line width=2pt]
+    plot[domain=.70:7.60, samples=80] (\x,{.60+.19*(\x-.70)*(7.60-\x)});
+  \draw[eleve auxiliar] (7.60,.35) -- (7.60,.82);
+  \draw[eleve auxiliar] (9.30,.35) -- (9.30,.82);
+
+  \node[font=\large\bfseries, text=eleveazul, fill=eleveazulclaro,
+    rounded corners=2pt, inner sep=4pt] at (6.75,4.55) {modelo ideal};
+  \node[font=\large\bfseries, text=elevelaranja, fill=elevecinzaclaro,
+    rounded corners=2pt, inner sep=4pt] at (4.25,2.05) {com resistência do ar};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-medidas-de-uma-antena-parabolica
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-4.15,-.45) rectangle (4.70,4.75);
+  \draw[eleve aresta, line width=2.2pt]
+    plot[domain=-3.30:3.30, samples=80] (\x,{.22*\x*\x});
+  \draw[eleve auxiliar] (-3.30,2.40) -- (3.30,2.40);
+  \draw[eleve destaque, |-|, line width=1.4pt] (-3.30,2.78) -- (3.30,2.78)
+    node[midway, above=4pt, font=\Large\bfseries] {$D$};
+  \draw[eleve auxiliar] (-3.30,2.40) -- (-3.30,2.92);
+  \draw[eleve auxiliar] (3.30,2.40) -- (3.30,2.92);
+
+  \coordinate (V) at (0,0);
+  \coordinate (F) at (0,1.14);
+  \fill[eleveazul] (V) circle (2.5pt)
+    node[below=4pt, font=\large\bfseries] {$V$};
+  \fill[elevelaranja] (F) circle (2.8pt)
+    node[left=5pt, font=\large\bfseries, text=elevelaranja] {$F$};
+  \draw[eleve auxiliar] (.30,0) -- (.70,0);
+  \draw[eleve auxiliar] (.30,1.14) -- (.70,1.14);
+  \draw[eleve destaque, |-|, line width=1.3pt] (.60,.03) -- (.60,1.11)
+    node[midway, right=5pt, font=\large\bfseries] {$p$};
+  \draw[eleve auxiliar] (.10,0) -- (3.80,0);
+  \draw[eleve auxiliar] (3.30,2.40) -- (3.80,2.40);
+  \draw[eleve destaque, |-|, line width=1.4pt] (3.70,.03) -- (3.70,2.37)
+    node[midway, right=5pt, font=\large\bfseries] {$h$};
+  \node[font=\large\bfseries, text=elevecinza] at (0,4.20)
+    {secção da antena};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-conica-alinhada-e-rotacionada
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-.15,-.20) rectangle (11.30,6.45);
+
+  \begin{scope}[shift={(2.60,3.05)}]
+    \draw[-Stealth, elevecinza, line width=1pt] (-2.45,0) -- (2.45,0) node[right] {$x$};
+    \draw[-Stealth, elevecinza, line width=1pt] (0,-2.10) -- (0,2.10) node[above] {$y$};
+    \draw[eleve aresta, line width=2pt] (0,0) ellipse (2.05 and 1.15);
+    \draw[eleve destaque, |-|, line width=1.2pt] (-2.05,-1.48) -- (2.05,-1.48)
+      node[midway, below=3pt, font=\large\bfseries] {eixo principal};
+  \end{scope}
+  \node[font=\large\bfseries, text=eleveazul] at (2.60,6.10) {alinhada};
+
+  \begin{scope}[shift={(8.35,3.05)}]
+    \draw[-Stealth, elevecinza, line width=1pt] (-2.45,0) -- (2.45,0) node[right] {$x$};
+    \draw[-Stealth, elevecinza, line width=1pt] (0,-2.10) -- (0,2.10) node[above] {$y$};
+    \begin{scope}[rotate=30]
+      \draw[eleve destaque, line width=2pt] (0,0) ellipse (2.05 and 1.15);
+      \draw[eleve auxiliar, line width=1.15pt] (-2.25,0) -- (2.25,0);
+      \draw[eleve auxiliar, line width=1.15pt] (0,-1.35) -- (0,1.35);
+    \end{scope}
+  \end{scope}
+  \node[font=\large\bfseries, text=elevelaranja] at (8.35,6.10) {rotacionada};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-continuum-e-discriminante-das-conicas
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-.10,-.15) rectangle (12.45,5.55);
+
+  \begin{scope}[shift={(2.05,2.75)}]
+    \draw[-Stealth, elevecinza, line width=.9pt] (-1.75,0) -- (1.75,0);
+    \draw[-Stealth, elevecinza, line width=.9pt] (0,-1.55) -- (0,1.55);
+    \draw[eleve aresta, line width=2pt] (0,0) ellipse (1.45 and .90);
+    \node[font=\large\bfseries, text=eleveazul] at (0,2.15) {elipse};
+    \node[font=\Large\bfseries, text=eleveazul] at (0,-2.05) {$\Delta<0$};
+  \end{scope}
+
+  \draw[-Stealth, elevecinza, line width=1.2pt] (3.75,2.75) -- (4.45,2.75);
+  \begin{scope}[shift={(6.20,2.75)}]
+    \draw[-Stealth, elevecinza, line width=.9pt] (-1.75,0) -- (1.75,0);
+    \draw[-Stealth, elevecinza, line width=.9pt] (0,-1.55) -- (0,1.55);
+    \draw[eleve destaque, line width=2pt]
+      plot[domain=-1.55:1.55, samples=50] ({.58*\x*\x-.75},\x);
+    \node[font=\large\bfseries, text=elevelaranja] at (0,2.15) {parábola};
+    \node[font=\Large\bfseries, text=elevelaranja] at (0,-2.05) {$\Delta=0$};
+  \end{scope}
+
+  \draw[-Stealth, elevecinza, line width=1.2pt] (7.90,2.75) -- (8.60,2.75);
+  \begin{scope}[shift={(10.40,2.75)}]
+    \draw[-Stealth, elevecinza, line width=.9pt] (-1.75,0) -- (1.75,0);
+    \draw[-Stealth, elevecinza, line width=.9pt] (0,-1.55) -- (0,1.55);
+    \draw[eleve aresta, line width=2pt]
+      (-.75,0) .. controls (-.90,.65) and (-1.30,1.15) .. (-1.70,1.48);
+    \draw[eleve aresta, line width=2pt]
+      (-.75,0) .. controls (-.90,-.65) and (-1.30,-1.15) .. (-1.70,-1.48);
+    \draw[eleve aresta, line width=2pt]
+      (.75,0) .. controls (.90,.65) and (1.30,1.15) .. (1.70,1.48);
+    \draw[eleve aresta, line width=2pt]
+      (.75,0) .. controls (.90,-.65) and (1.30,-1.15) .. (1.70,-1.48);
+    \node[font=\large\bfseries, text=eleveazul] at (0,2.15) {hipérbole};
+    \node[font=\Large\bfseries, text=eleveazul] at (0,-2.05) {$\Delta>0$};
+  \end{scope}
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-circunferencia-e-elipse
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-.10,-.20) rectangle (10.60,5.95);
+  \begin{scope}[shift={(2.55,2.75)}]
+    \draw[-Stealth, elevecinza, line width=1pt] (-2.15,0) -- (2.15,0);
+    \draw[-Stealth, elevecinza, line width=1pt] (0,-2.15) -- (0,2.15);
+    \draw[eleve aresta, line width=2pt] (0,0) circle (1.55);
+    \draw[eleve destaque, |-|, line width=1.2pt] (-1.55,-1.82) -- (1.55,-1.82)
+      node[midway, below=3pt, font=\large\bfseries] {$A=C$};
+  \end{scope}
+  \node[font=\large\bfseries, text=eleveazul] at (2.55,5.58) {circunferência};
+
+  \begin{scope}[shift={(7.80,2.75)}]
+    \draw[-Stealth, elevecinza, line width=1pt] (-2.35,0) -- (2.35,0);
+    \draw[-Stealth, elevecinza, line width=1pt] (0,-2.15) -- (0,2.15);
+    \draw[eleve destaque, line width=2pt] (0,0) ellipse (2.00 and 1.15);
+    \draw[eleve destaque, |-|, line width=1.2pt] (-2.00,-1.48) -- (2.00,-1.48)
+      node[midway, below=3pt, font=\large\bfseries] {$A\ne C$};
+  \end{scope}
+  \node[font=\large\bfseries, text=elevelaranja] at (7.80,5.58) {elipse};
+\end{tikzpicture}
+
+% FIGURA 7 — fig-07-casos-degenerados-de-conicas
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-.10,-.15) rectangle (11.80,5.45);
+
+  \begin{scope}[shift={(1.70,2.80)}]
+    \draw[-Stealth, elevecinza, line width=.9pt] (-1.30,0) -- (1.30,0);
+    \draw[-Stealth, elevecinza, line width=.9pt] (0,-1.35) -- (0,1.35);
+    \fill[elevelaranja] (0,0) circle (4pt);
+    \node[font=\large\bfseries, text=eleveazul] at (0,2.15) {um ponto};
+  \end{scope}
+
+  \begin{scope}[shift={(5.85,2.80)}]
+    \draw[-Stealth, elevecinza, line width=.9pt] (-1.55,0) -- (1.55,0);
+    \draw[-Stealth, elevecinza, line width=.9pt] (0,-1.35) -- (0,1.35);
+    \draw[eleve aresta, line width=2pt] (-1.40,-1.20) -- (1.40,1.20);
+    \draw[eleve destaque, line width=2pt] (-1.40,1.20) -- (1.40,-1.20);
+    \node[font=\large\bfseries, text=eleveazul] at (0,2.15) {duas retas};
+  \end{scope}
+
+  \begin{scope}[shift={(10.00,2.80)}]
+    \draw[-Stealth, elevecinza, line width=.9pt] (-1.45,0) -- (1.45,0);
+    \draw[-Stealth, elevecinza, line width=.9pt] (0,-1.35) -- (0,1.35);
+    \draw[eleve aresta, line width=4pt] (-1.25,-1.20) -- (1.25,1.20);
+    \draw[eleve destaque, dashed, line width=1.3pt] (-1.25,-1.20) -- (1.25,1.20);
+    \node[font=\large\bfseries, text=elevelaranja] at (0,2.15) {reta dupla};
+  \end{scope}
+\end{tikzpicture}
+
+% FIGURA 8 — fig-08-translacao-de-uma-hiperbole
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-.15,-.20) rectangle (12.00,6.80);
+
+  \begin{scope}[shift={(3.00,3.15)}]
+    \draw[-Stealth, elevecinza, line width=1pt] (-2.65,0) -- (2.65,0) node[right] {$x$};
+    \draw[-Stealth, elevecinza, line width=1pt] (0,-2.45) -- (0,2.45) node[above] {$y$};
+    \draw[eleve auxiliar] (-2.25,-2.00) -- (2.25,2.00);
+    \draw[eleve auxiliar] (-2.25,2.00) -- (2.25,-2.00);
+    \draw[eleve aresta, line width=1.9pt]
+      (-1,0) .. controls (-1.10,.85) and (-1.65,1.55) .. (-2.40,2.10);
+    \draw[eleve aresta, line width=1.9pt]
+      (-1,0) .. controls (-1.10,-.85) and (-1.65,-1.55) .. (-2.40,-2.10);
+    \draw[eleve aresta, line width=1.9pt]
+      (1,0) .. controls (1.10,.85) and (1.65,1.55) .. (2.40,2.10);
+    \draw[eleve aresta, line width=1.9pt]
+      (1,0) .. controls (1.10,-.85) and (1.65,-1.55) .. (2.40,-2.10);
+    \fill[eleveazul] (0,0) circle (2.4pt) node[below left, font=\large\bfseries] {$O$};
+  \end{scope}
+  \node[font=\large\bfseries, text=eleveazul] at (3.00,6.40) {centro na origem};
+
+  \draw[-Stealth, elevelaranja, line width=1.5pt] (5.55,3.15) -- (6.55,4.10);
+  \node[font=\large\bfseries, text=elevelaranja] at (6.05,3.20) {translação};
+
+  \begin{scope}[shift={(9.00,4.05)}]
+    \draw[eleve auxiliar] (-2.25,-2.00) -- (2.25,2.00);
+    \draw[eleve auxiliar] (-2.25,2.00) -- (2.25,-2.00);
+    \draw[eleve destaque, line width=1.9pt]
+      (-1,0) .. controls (-1.10,.85) and (-1.65,1.55) .. (-2.40,2.10);
+    \draw[eleve destaque, line width=1.9pt]
+      (-1,0) .. controls (-1.10,-.85) and (-1.65,-1.55) .. (-2.40,-2.10);
+    \draw[eleve destaque, line width=1.9pt]
+      (1,0) .. controls (1.10,.85) and (1.65,1.55) .. (2.40,2.10);
+    \draw[eleve destaque, line width=1.9pt]
+      (1,0) .. controls (1.10,-.85) and (1.65,-1.55) .. (2.40,-2.10);
+    \fill[elevelaranja] (0,0) circle (2.6pt)
+      node[below right=3pt, font=\large\bfseries, text=elevelaranja] {$C(h,k)$};
+  \end{scope}
+  \node[font=\large\bfseries, text=elevelaranja] at (9.00,6.40) {centro transladado};
+\end{tikzpicture}
+
+\end{document}

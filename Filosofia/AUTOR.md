@@ -21,8 +21,8 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **Anexo A** (como esc
 **Regras inegociáveis:**
 
 - **1 tema = 1 capítulo · 1 aula = 1 tópico numerado `## N.`**, na ordem do blueprint. Cada aula é autossuficiente (~50 min).
-- **O material é a REFERÊNCIA DO ALUNO — a explicação é do professor.** Prosa curta para o raciocínio, marcadores para o que é enumerável: máximo 2 frases seguidas antes de uma lista; tabela sempre que houver 2+ posições a contrastar.
-- **220–250 palavras de conteúdo por aula, teto firme de 300.** O teto **não é meta**; não existe mínimo.
+- **O material é a REFERÊNCIA DO ALUNO — a explicação é do professor.** Prosa curta para raciocínio encadeado; marcadores para elementos paralelos; tabelas para comparação. **Toda aula contém ao menos um organizador visual** — lista ou tabela.
+- **Preferir 155–185 palavras de conteúdo por aula.** Admitir até 190 em recortes densos; teto firme de 200. O teto **não é meta**.
 - **Material é só conteúdo.** Zero atividade, exercício, debate proposto, projeto, pesquisa proposta, revisão ou prova.
 - **Sem seções de fechamento.** Nada de "Explorando os Conceitos", "Ampliando o Olhar", "No Fio da História", "O Que a Fé Diz", "Pensador em Destaque", "Você já pensou nisso?", "Simplificando", "Para não esquecer" — esses elementos vivem **dentro** das aulas.
 - **Partir de perguntas, não de respostas prontas:** a questão filosófica aparece antes da resposta de qualquer filósofo. **Toda tese entra com argumento e principal objeção** — filosofia sem contraponto vira catecismo de autores.
@@ -30,7 +30,8 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **Anexo A** (como esc
 - **Ancoragem cristã inviolável:** a Escritura é o referencial e o ponto de origem; a tese é avaliada a partir dele — nunca o inverso. Distinção fé/filosofia na mesma frase.
 - **Disputa é disputa:** onde a tradição registra desacordo legítimo, apresente as posições e seus argumentos, sem resposta pronta.
 - **Toda lista precedida de frase de transição que carrega informação** — nunca lista solta, nunca "As principais características são:".
-- **Boxes são "drops":** 1 frase. Família 💭 ⏸️ 💡 🔍 · 1–2 por aula, **nunca dois seguidos**.
+- **Ritmo visual:** 2–3 subseções por aula; ao menos uma delas usa lista ou tabela. Não deixar três parágrafos corridos sem lista, tabela, box ou blockquote. Em geral, usar um ou dois blockquotes simples por capítulo quando uma tese, fonte, contraste ou versículo merecer destaque.
+- **Box é "drop":** exatamente 1 por aula, em uma frase curta. Família 💭 ⏸️ 💡 🔍.
 - **Bíblia condicional:** versículo só com ligação **conceitual** (teste do sinônimo); capítulo sem versículo é entrega válida.
 - **Zero itens da lista NÃO ANTECIPAR** do blueprint, nem "de passagem".
 - A **pergunta-problema** é respondida dentro da aula pertinente — **ou deixada explicitamente em aberto, quando o próprio problema filosófico for a entrega** —, sempre **sem anunciar**.
@@ -47,7 +48,7 @@ Hierarquia em caso de conflito: **blueprint** (o quê) → **Anexo A** (como esc
 
 Capítulos de **Filosofia, 1ª à 3ª série do Ensino Médio**, para o 3º e 4º bimestres de 2026.
 
-**A equação do modelo:** `1 tema = 1 capítulo` · `1 aula = 1 tópico numerado (## N.)` · `1 aula ≈ 50 min ≈ 220–250 palavras (teto 300)` · `prosa curta + marcadores`.
+**A equação do modelo:** `1 tema = 1 capítulo` · `1 aula = 1 tópico numerado (## N.)` · `1 aula ≈ 50 min ≈ 155–185 palavras (teto 200)` · `prosa curta + marcadores seletivos`.
 
 **Carga e condensação:** a disciplina tem **1 aula/semana** → 3º Bim: 3 + 3 aulas · 4º Bim: 2 + 3 aulas. Em geral, **1 capítulo por bloco**. A condensação é forte: cada aula agrupa vários subtópicos do framework — desenvolver em fatias claras, sem digressão.
 
@@ -82,22 +83,27 @@ O capítulo **termina na última aula**. Não há seção de fechamento.
 - **1 aula = 1 tópico `## N.`**, na ordem do blueprint; `---` entre aulas. Cada aula é **autossuficiente**: quem lê só aquele tópico tem a aula completa (~50 min).
 - Tópicos internos viram subseções **numeradas `### N.1`, `### N.2`** (a numeração da aula, depois a da parte). Título curto e descritivo — pode ser **pergunta orientadora**, desde que cubra o tópico do blueprint.
 - **2 a 3 subseções por aula.** Mais que isso fragmenta; cada subseção nova traz sua própria abertura e engorda o texto.
-- **Extensão: alvo 220–250 palavras, teto firme de 300** por aula (tabelas e boxes fora da conta) — **direto e conciso é o padrão da casa**. Desenvolva todo o recorte e pare: sem exemplos extras, sem parágrafos de contexto para "engordar". Se passar de 300, corte rodeio e redundância — nunca recorte do blueprint. Aula que cobriu todo o recorte de forma direta em 200 palavras está pronta; **não trate o teto como meta**.
+- **Toda aula precisa de um organizador visual:** ao menos uma lista ou tabela ligada ao raciocínio central. Títulos, boxes e blockquotes não substituem essa organização.
+- **Extensão: preferir 155–185 palavras por aula; admitir até 190 em recortes densos; teto firme de 200**, pelo método do validador, que conta todo texto legível. Desenvolva o recorte e pare: sem exemplos extras nem contexto para “engordar”. Se passar de 200, corte rodeio e redundância — nunca o conteúdo do blueprint.
 
 ## 3. Forma do conteúdo — prosa + marcadores
 
-**O material é a REFERÊNCIA DO ALUNO — a explicação é do professor.** Não é um texto que ensina sozinho: é o que o aluno consulta antes, durante e depois da aula. Escreva para ser **consultado**, não lido de ponta a ponta. Daí a mistura: **prosa curta para o raciocínio, marcadores para o que é enumerável.** Nem só parágrafo (vira parede de texto), nem só bullet (pica o raciocínio em fragmentos).
+**O material é a REFERÊNCIA DO ALUNO — a explicação é do professor.** É o que o aluno consulta antes, durante e depois da aula. Misture **prosa curta para raciocínio encadeado** e **marcadores para elementos realmente paralelos**. Nem parede de texto nem sequência de listas.
+
+**Unidade visual mínima da aula:** uma abertura curta + duas ou três subseções + pelo menos uma lista ou tabela. Use rótulos em negrito nos marcadores para transformar conceitos em pontos de consulta. Se toda a aula puder ser percorrida apenas por parágrafos, reorganize-a.
 
 **Abertura de aula (`## N.`):** 1 frase direta, sem desenvolvimento. Sem cena narrativa, sem construção de suspense.
 
 **Subtópico (`### N.1`…):**
 
-- **Definição em 1 frase curta.** Se precisar de mais de uma frase para definir, use bullets — não parágrafo.
-- **No máximo 2 frases seguidas antes de uma lista.** Prefira 1 frase densa + bullets.
+- **Definição em 1 frase curta.** A explicação pode continuar em outro parágrafo quando mudar de função: tese → argumento, argumento → objeção ou fonte → leitura.
+- **Parágrafos curtos:** em geral, 1–2 frases. Não deixar três parágrafos de prosa consecutivos sem lista, tabela, box ou blockquote.
 - **Lista com marcadores** para argumentos, teses, características e consequências.
-- **Tabela comparativa** sempre que houver 2 ou mais posições a contrastar (racionalismo × empirismo, correntes éticas) — é o formato que mais economiza texto.
+- **Tabela comparativa** quando duas ou mais posições compartilham critérios claros; não transformar todo contraste em tabela.
 - **Exemplo/dilema concreto** do universo do aluno ou da vida contemporânea, que torne o problema filosófico tangível.
 - Definição complementar entra **inline, entre parênteses**: `falácia (raciocínio que parece válido, mas viola uma regra lógica)`.
+
+Use **um ou dois blockquotes simples por capítulo**, em subtópicos sem marcadores, quando uma formulação merecer pausa visual. O blockquote precisa destacar tese, fonte, contraste ou versículo; não repete a frase anterior e não funciona como decoração.
 
 **Frase de transição antes da lista — só se carregar informação:**
 
@@ -113,7 +119,7 @@ O capítulo **termina na última aula**. Não há seção de fechamento.
 1. **Abertura: no máximo 25 palavras.** Pode ser **situação/dilema concreto** que levante a questão **ou fato direto** — escolha o que chega mais rápido ao conteúdo. Sem cena narrativa, sem construção de suspense.
 2. **Partir de perguntas, não de respostas prontas — o movimento central da disciplina:** a questão filosófica aparece antes da resposta de qualquer filósofo. O aluno vê o problema primeiro, depois as tentativas de resposta.
 3. **Argumento e contra-argumento:** toda tese entra com sua justificativa e com a principal objeção que recebeu. Filosofia sem contraponto vira catecismo de autores.
-4. **Ritmo:** questão → tese → argumento → objeção. Abertura de seção em 1 frase direta; parágrafos de no máximo 2–3 frases; cada frase entrega informação.
+4. **Ritmo:** questão → tese → argumento → objeção. Abertura de seção em 1 frase direta; parágrafos de 1–2 frases; cada frase entrega informação.
 5. **Teses com fidelidade intelectual:** apresentar o pensamento do filósofo como ele o formulou, com força, **antes** de qualquer avaliação — nunca caricaturar nem suavizar (é a condição da crítica honesta).
 6. **Disputa é disputa:** onde a tradição registra desacordo legítimo, o material apresenta as posições e seus argumentos — sem entregar resposta pronta onde não há.
 7. **Conceitos datados e contextualizados:** quem formulou, quando, contra o quê. A história da ideia explica a ideia.
@@ -149,15 +155,14 @@ Essa regra **vale sempre**, com ou sem versículo no capítulo.
 ## 6. Boxes (única família permitida — todos em blockquote)
 
 ```
-> 💭 **Pense um pouco:**  → pergunta de reflexão filosófica
-> ⏸️ **Pare e Pense:**    → dilema ético ou moral direto
-> 💡 **Você sabia?**      → curiosidade rápida sobre filósofo, conceito ou obra
-> 🔍 **Conexão:**         → ponte entre o conceito e um fenômeno atual do cotidiano do aluno
+> 💭 **Pense um pouco:** pergunta de reflexão filosófica
+> ⏸️ **Pare e pense:** dilema ético ou moral direto
+> 💡 **Você sabia?** curiosidade rápida sobre filósofo, conceito ou obra
+> 🔍 **Conexão:** ponte entre o conceito e um fenômeno atual do cotidiano do aluno
 ```
 
-- **No máximo 2 boxes por aula.** Cada box é um "drop": **1 frase única** — dado isolado, nunca mini-parágrafo.
-- **Quebra de linha interna obrigatória:** título na 1ª linha (dois espaços no final), conteúdo na 2ª, ambos no blockquote.
-- **Nunca dois boxes seguidos** — sempre ao menos um parágrafo de conteúdo entre eles.
+- **Exatamente 1 box por aula.** Cada box é um “drop” de **uma frase curta**, na mesma linha do rótulo.
+- O box acrescenta pergunta, dilema, dado ou conexão; não resume nem repete a prosa.
 - A **referência-chave (filósofo) não vai em box**: entra integrada ao texto, em 2–3 linhas, uma única vez no capítulo.
 
 ## 7. Convenções tipográficas
@@ -220,12 +225,14 @@ Estes elementos existiam como blocos pós-conteúdo no formato antigo (Ampliando
 > ```
 > python3 ./validar-capitulo.py <capitulo.md> --disciplina filosofia [--blueprint <arq.md>]
 > ```
-> E **não persiga a contagem exata de palavras**: conte uma vez, ao final. Só reescreva se estourou o teto de 300 — ficar abaixo dele não é defeito.
+> E **não persiga a contagem exata de palavras**: conte uma vez, ao final. Só reescreva se estourou o teto de 200 ou se o texto ficou claramente truncado.
 
 - [ ] Título é `# Capítulo {N} — {Tema}` (sem linha de disciplina/série)
 - [ ] Todas as aulas do blueprint, na ordem, com todo o recorte desenvolvido
-- [ ] Cada aula abre com dilema/situação concreta ou fato direto · 220–250 palavras (teto 300) · autossuficiente
-- [ ] **Prosa curta + marcadores:** conteúdo enumerável em lista/tabela; máx. 2 frases antes de uma lista
+- [ ] Cada aula abre com dilema/situação concreta ou fato direto · preferencialmente 155–185 palavras · teto 200 · autossuficiente
+- [ ] **Organização visual:** toda aula contém ao menos uma lista ou tabela; ao menos uma subseção não depende apenas de prosa
+- [ ] **Prosa curta + marcadores seletivos:** parágrafos de 1–2 frases; sem três parágrafos corridos; tabela só quando houver critérios comparáveis
+- [ ] Um ou dois blockquotes simples no capítulo, usados para tese, fonte, contraste ou versículo
 - [ ] Nenhuma analogia estendida, nenhum parágrafo que recapitula, nenhum exemplo repetido
 - [ ] **A questão antes da resposta**; toda tese com argumento e principal objeção
 - [ ] Teses com fidelidade intelectual; ancoragem cristã respeitada nos pensadores que desafiam a fé
@@ -234,7 +241,7 @@ Estes elementos existiam como blocos pós-conteúdo no formato antigo (Ampliando
 - [ ] Nomes, datas, obras e conceitos centrais conferidos contra o blueprint
 - [ ] Versículo só com ligação **conceitual** (teste do sinônimo) — sem versículo é entrega válida
 - [ ] Toda lista precedida de frase de transição **que carrega informação**
-- [ ] Boxes: só 💭 ⏸️ 💡 🔍, 1–2 por aula, nunca consecutivos, quebra de linha interna
+- [ ] Boxes: só 💭 ⏸️ 💡 🔍, exatamente um por aula, em uma frase curta
 - [ ] Referência-chave integrada ao texto, uma única vez, na aula pertinente (sem box)
 - [ ] Zero atividades; zero itens de NÃO ANTECIPAR; balizamento da série respeitado
 - [ ] Sem seções de fechamento; pergunta-problema respondida (ou deixada em aberto de propósito) sem anúncio
@@ -286,12 +293,12 @@ O mesmo nível N muda de cara conforme a série. Parâmetros objetivos por faixa
 | **Ordem de apresentação** | **Exemplo concreto → conceito**, sem exceção; o conceito nomeia o que a criança acabou de ver | **Exemplo concreto → conceito** (sempre) | Exemplo → conceito, ou conceito → exemplo imediato | Definição formal primeiro é aceitável | Definição direta; aluno já tem repertório |
 | **Vocabulário** | Cotidiano da criança; termo técnico só quando é o próprio conteúdo, explicado com palavra do dia a dia | Cotidiano; **todo termo técnico explicado na 1ª ocorrência** | Técnico consolidado; termo novo sempre explicado | Técnico pleno; nomenclatura padrão da área | Técnico pleno + vocabulário de prova |
 | **Abstração** | Nenhuma; tudo ancorado no que se vê, toca ou conta | Mínima; ancorar em situação vivida/observável | Transição: alterna concreto e abstrato | Abstração plena, com retorno ao real como aplicação | Abstração + síntese entre temas |
-| **Exemplos por conceito** | 2, do mundo da criança de 9–10 anos (casa, escola, brincadeira, animais, comida, dinheiro de troco) | 2, do universo do aluno (escola, família, esporte, jogos, tecnologia) | 1–2, de textos/fenômenos reais e referências culturais | 1–2, de fontes reais (literatura, imprensa, dados, experimento) | 1 forte + 1 no formato de prova |
+| **Exemplos por conceito** | 1 exemplo claro; segundo só quando mostrar uma situação diferente, sempre do mundo da criança | 2, do universo do aluno (escola, família, esporte, jogos, tecnologia) | 1–2, de textos/fenômenos reais e referências culturais | 1–2, de fontes reais (literatura, imprensa, dados, experimento) | 1 forte + 1 no formato de prova |
 | **Exceções e casos raros** | Nunca entram | Não entram (salvo se estiverem no recorte do blueprint) | Entram as principais | Sistematizadas | Sistematizadas + pegadinhas clássicas de prova |
 | **Tom** | Professor próximo, fala com "você", frases afirmativas — **sem infantilizar, sem diminutivo, sem personagem falante** | Professor próximo e direto (fala com "você") | Direto, sem infantilizar | Acadêmico acessível — **nunca infantilizar** | Pré-universitário |
 | **Conexão com prova** | Não | Não | Leve (no 9º, mencionar quando natural) | Notas ENEM/vestibular quando o conteúdo render | Sistemática |
 
-**Nota sobre o 4º–5º ano:** faixa acrescentada em 20/07/2026 com a entrada do Fundamental I. A escala N1–N4 não muda — ela descreve a operação cognitiva, não a linguagem. Na prática o EF1 opera em **N1–N3**; **N4 é raro** e só aparece quando o próprio blueprint marcar. O erro típico aqui não é escrever difícil demais, é **infantilizar**: o aluno de 9–10 anos entende explicação direta, o que ele não tem é repertório abstrato.
+**Nota sobre o 4º–5º ano:** faixa acrescentada em 20/07/2026 com a entrada do Fundamental I. A escala N1–N4 não muda — ela descreve a operação cognitiva, não a linguagem. Na prática o EF1 opera em **N1–N3**; **N4 é raro** e só aparece quando o próprio blueprint marcar. O texto usa palavras comuns, exemplos próximos e frases curtas. Simplicidade não significa infantilização: diminutivos e personagens falantes continuam fora do padrão.
 
 **Nota sobre o 9º ano:** é segmento próprio no calendário (24 aulas/sem), mas na escrita segue a coluna 8º–9º **puxando para cima** — é a ponte para o EM.
 
@@ -398,12 +405,12 @@ $$\frac{1+2}{4} = \frac{3}{4}$$
 2. **Pergunta-problema** do blueprint em blockquote logo abaixo do título, **sem rótulo** — só a pergunta. É respondida dentro da aula pertinente, sem anunciar.
 3. **1 aula = 1 tópico `## N.`**, na ordem do blueprint; `---` entre aulas. Cada aula autossuficiente (~50 min).
 4. **2–3 subseções `### N.1`, `### N.2`** por aula, com título curto (pode ser pergunta orientadora).
-5. **Extensão por aula:** padrão da casa 220–250 (teto 300); overrides por disciplina — Física 130–170 (teto 190), Geometria 170–210 (teto 240), Matemática EF1 180–220 (teto 260). Fórmulas, exemplos resolvidos, tabelas, ASCII e boxes **não** entram na conta. **O teto não é meta; não existe mínimo.**
+5. **Extensão por aula:** padrão da casa 220–250 (teto 300); overrides por disciplina — Física 130–170 (teto 190), Química 180–210 (teto 240), Geometria 170–210 (teto 240), Matemática EF1 **sem alvo e sem mínimo** (teto 160). Fórmulas, exemplos resolvidos, tabelas, ASCII, figuras TikZ/PNG, textos alternativos e boxes **não** entram na conta. **O teto não é meta.**
 6. **Prosa curta + marcadores:** máx. 2 frases seguidas antes de uma lista; tabela para 2+ itens comparáveis; **liste o paralelo, escreva o encadeado**. Toda lista com frase de transição **informativa**.
-7. **Boxes:** só a família da disciplina, em blockquote, com quebra de linha interna (título na 1ª linha com dois espaços finais). 1–2 por aula, **nunca dois seguidos**, 1 frase ("drop").
-8. **Bíblia condicional:** versículo só com ligação **conceitual** (teste do sinônimo) — capítulo sem versículo é entrega válida.
-9. **Personagem/referência-chave** 1× por capítulo, na aula pertinente (EF em box 👤 onde a disciplina tiver; EM e matemáticas integrado ao texto).
-10. **O que NUNCA aparece:** blocos pós-conteúdo do formato antigo (`Introdução`, `Sua Parte`, `O que a Bíblia diz sobre...`, `E a Bíblia nisso?`, `Simplificando`, `Para não esquecer`, `Explorando os Conceitos`, `Ampliando o Olhar`, `No Fio da História`, `O Que a Fé Diz`, `Pensador em Destaque`, `Você já pensou nisso?`, `Síntese`, `Fórmulas do capítulo`, `💬 Para Conversar`) · atividades/exercícios propostos/provas · itens do NÃO ANTECIPAR · emojis fora de box · imagens (figuras descritas ou ASCII) · frases-preparação ("Neste capítulo vamos...").
+7. **Boxes:** só a família da disciplina, em blockquote, com quebra de linha interna (título na 1ª linha com dois espaços finais). 1–2 por aula, **nunca dois seguidos**, 1 frase ("drop"). **O box nunca abre um subtópico** — antes dele tem de haver parágrafo, lista ou tabela, porque ele comenta o que o aluno já leu.
+8. **Bíblia condicional:** versículo só com ligação **conceitual** (teste do sinônimo) — capítulo sem versículo é entrega válida. *(Em Estudos Sociais, desde 30/07/2026 o versículo não entra no capítulo: vive no arquivo de anexo.)*
+9. **Personagem/referência-chave** 1× por capítulo, na aula pertinente (EF em box 👤 onde a disciplina tiver; EM e matemáticas integrado ao texto). *(Estudos Sociais não tem mais box de personagem — a ficha vai para o anexo.)*
+10. **O que NUNCA aparece:** blocos pós-conteúdo do formato antigo (`Introdução`, `Sua Parte`, `O que a Bíblia diz sobre...`, `E a Bíblia nisso?`, `Simplificando`, `Para não esquecer`, `Explorando os Conceitos`, `Ampliando o Olhar`, `No Fio da História`, `O Que a Fé Diz`, `Pensador em Destaque`, `Você já pensou nisso?`, `Síntese`, `Fórmulas do capítulo`, `💬 Para Conversar`) · atividades/exercícios propostos/provas · itens do NÃO ANTECIPAR · emojis fora de box · imagens, **exceto as figuras TikZ/PNG autorizadas pelo manual da disciplina** · frases-preparação ("Neste capítulo vamos...").
 
 **Famílias de boxes por disciplina:**
 
@@ -413,7 +420,7 @@ $$\frac{1+2}{4} = \frac{3}{4}$$
 | Física | 💭 ⏸️ 💡 📏 ⚡ 📐 (+ 📝 rótulo de exemplo) |
 | Química | 💡 🔎 🌍 💭 ⏸️ ⚠️ |
 | Português | 💡 ⚠️ 📌 🔎 👤 |
-| Estudos Sociais (Geo/Hist) | 🔎 💭 👤 |
+| Estudos Sociais (Geo/Hist) | 🔎 💭 |
 | Sociologia · Filosofia | 💭 ⏸️ 💡 🔍 |
 | Operações · Geometria · Financeira · Matemática EF1 | 🔢 ⚠️ |
 

@@ -1,0 +1,77 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-fisica}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-movimento-depende-do-referencial
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.0,7.7);
+  \draw[fisica superficie] (0.45,1.0) -- (10.45,1.0);
+  \draw[eleveazul, fill=eleveazulclaro, line width=1.4pt, rounded corners=5pt]
+    (1.0,2.05) rectangle (7.6,5.15);
+  \draw[eleveazul, fill=white, line width=1.0pt] (1.65,3.75) rectangle (3.1,4.7);
+  \draw[eleveazul, fill=white, line width=1.0pt] (3.45,3.75) rectangle (4.9,4.7);
+  \draw[eleveazul, fill=white, line width=1.0pt] (5.25,3.75) rectangle (6.7,4.7);
+  \draw[elevecinza, line width=1.4pt] (3.5,2.05) -- (3.5,3.2);
+  \node[fisica corpo, circle, minimum size=0.55cm] (P) at (4.25,3.25) {};
+  \node[font=\large\bfseries, text=elevecinza, anchor=west] at (4.75,2.75) {passageiro};
+  \draw[elevecinza, line width=1.5pt, fill=white] (2.15,1.0) circle (0.65);
+  \draw[elevecinza, line width=1.5pt, fill=white] (6.45,1.0) circle (0.65);
+
+  \draw[elevecinza, fill=elevelaranjaclaro, line width=1.3pt]
+    (8.65,1.0) -- (8.65,3.0) -- (9.65,4.0) -- (10.65,3.0) -- (10.65,1.0) -- cycle;
+  \node[font=\large\bfseries, text=elevecinza] at (9.65,2.25) {casa};
+
+  \draw[fisica auxiliar, <->] (3.5,5.85) -- (4.25,5.85)
+    node[fisica rotulo, midway, above=5pt] {distância fixa};
+  \draw[fisica movimento] (1.0,6.75) -- (7.25,6.75)
+    node[fisica rotulo, right] {ônibus em movimento};
+  \node[font=\large\bfseries, text=elevecinza] at (4.3,0.3)
+    {repouso em relação ao banco};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-trajetorias-da-lampada
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.4,10.3);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.0,9.75)
+    {vista do passageiro};
+  \draw[elevecinza, line width=1.4pt] (1.2,8.65) -- (8.8,8.65);
+  \draw[elevecinza, line width=1.4pt] (1.2,5.45) -- (8.8,5.45);
+  \fill[elevelaranja] (5.0,8.4) circle (5pt);
+  \draw[fisica movimento] (5.0,8.05) -- (5.0,5.9);
+  \draw[fisica trajetoria, dashed] (5.0,8.35) -- (5.0,5.65);
+  \node[fisica rotulo, anchor=west] at (5.35,6.95) {trajetória reta};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.0,4.45)
+    {vista do pedestre};
+  \draw[fisica superficie] (0.75,0.65) -- (9.25,0.65);
+  \fill[elevelaranja] (1.55,3.65) circle (5pt);
+  \draw[fisica trajetoria, dashed]
+    (1.55,3.65) .. controls (4.15,3.2) and (6.65,2.15) .. (8.55,0.85);
+  \draw[fisica movimento] (1.85,3.45) -- (3.5,3.1);
+  \node[fisica rotulo] at (6.2,2.7) {trajetória curva};
+  \node[font=\large\bfseries, text=elevecinza] at (5.0,0.05)
+    {o ônibus avança durante a queda};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-mesma-rapidez-velocidades-diferentes
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.5,7.4);
+  \draw[fisica superficie] (0.65,1.2) -- (9.85,1.2);
+  \draw[fisica superficie] (0.65,5.55) -- (9.85,5.55);
+  \draw[elevecinza, dashed, line width=1.0pt] (0.65,3.35) -- (9.85,3.35);
+  \node[fisica corpo, minimum width=1.8cm, minimum height=0.95cm] (A)
+    at (2.3,4.45) {A};
+  \node[fisica corpo, minimum width=1.8cm, minimum height=0.95cm] (B)
+    at (8.2,2.25) {B};
+  \draw[fisica movimento] (A.east) -- ++(3.0,0)
+    node[fisica rotulo, right] {$60\,\mathrm{km/h}$};
+  \draw[fisica movimento] (B.west) -- ++(-3.0,0)
+    node[fisica rotulo, left] {$60\,\mathrm{km/h}$};
+  \node[font=\Large\bfseries, text=eleveazul] at (5.25,6.65)
+    {mesma rapidez};
+  \node[font=\Large\bfseries, text=elevelaranja] at (5.25,0.25)
+    {velocidades de sentidos opostos};
+\end{tikzpicture}
+
+\end{document}

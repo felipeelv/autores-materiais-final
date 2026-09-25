@@ -1,0 +1,52 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-matematica-ef1}
+
+\newcommand{\TermometroCem}[3]{%
+  \draw[matematica contorno,line width=2pt] (#1,.85) circle (.42);
+  \draw[matematica contorno,rounded corners=8pt,line width=2pt]
+    (#1-.18,1.15) rectangle (#1+.18,5.95);
+  \fill[matemavermelho] (#1,.85) circle (.30);
+  \fill[matemavermelho] (#1-.09,1.15) rectangle (#1+.09,{1.15+4.65*#2/100});
+  \node[matematica resultado] at (#1,6.55) {#3};
+}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-unidades-de-massa
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (11.70,7.10);
+  % Pessoa
+  \fill[matemazul] (1.90,5.25) circle (.38);
+  \draw[matematica contorno,line width=2.4pt] (1.90,4.85)--(1.90,2.75);
+  \draw[matematica contorno,line width=2.4pt] (1.10,4.10)--(2.70,4.10);
+  \draw[matematica contorno,line width=2.4pt] (1.90,2.75)--(1.25,1.45);
+  \draw[matematica contorno,line width=2.4pt] (1.90,2.75)--(2.55,1.45);
+  \node[matematica resultado] at (1.90,.65) {quilograma};
+
+  % Pacote
+  \fill[matemalaranjaclaro] (4.55,2.00) rectangle (7.05,5.20);
+  \draw[matematica destaque,line width=2pt] (4.55,2.00) rectangle (7.05,5.20);
+  \draw[matematica destaque] (4.55,4.65)--(7.05,4.65);
+  \node[matematica valor] at (5.80,3.55) {200 g};
+  \node[matematica resultado] at (5.80,.65) {grama};
+
+  % Comprimido
+  \draw[matematica contorno,line width=2pt,rounded corners=12pt,fill=matemazulclaro]
+    (8.65,3.00) rectangle (11.10,4.15);
+  \draw[matematica divisao] (9.87,3.00)--(9.87,4.15);
+  \node[matematica valor] at (9.87,5.05) {500 mg};
+  \node[matematica resultado] at (9.87,.65) {miligrama};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-termometros-e-pontos-de-referencia
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (10.70,7.30);
+  \TermometroCem{1.70}{0}{$0\,^\circ\mathrm{C}$}
+  \TermometroCem{5.20}{36.5}{$36{,}5\,^\circ\mathrm{C}$}
+  \TermometroCem{8.90}{100}{$100\,^\circ\mathrm{C}$}
+  \node[matematica rotulo] at (1.70,.10) {água congela};
+  \node[matematica rotulo] at (5.20,.10) {corpo humano};
+  \node[matematica rotulo] at (8.90,.10) {água ferve};
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,96 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-fisica}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-vetor-forca-e-suas-informacoes
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.3,7.2);
+  \coordinate (O) at (1.15,3.35);
+  \draw[fisica auxiliar] (0.55,3.35) -- (9.55,3.35);
+  \draw[fisica forca] (O) -- (8.85,3.35);
+  \fill[eleveazul] (O) circle (3pt);
+  \node[fisica rotulo, above=8pt] at (5.0,3.35) {$\vec F=20\,\mathrm{N}$};
+  \node[font=\large\bfseries, text=elevecinza, align=center] at (5.0,6.05)
+    {intensidade\\valor e comprimento};
+  \draw[fisica auxiliar, ->] (5.0,5.25) -- (5.0,4.1);
+  \node[font=\large\bfseries, text=elevecinza] at (2.2,0.85)
+    {direção horizontal};
+  \draw[fisica auxiliar, ->] (3.75,1.1) -- (4.7,2.8);
+  \node[font=\large\bfseries, text=elevecinza] at (8.1,0.85)
+    {sentido para a direita};
+  \draw[fisica auxiliar, ->] (8.1,1.25) -- (8.75,2.75);
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-normal-perpendicular-a-superficie
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.6,10.3);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.1,9.75) {piso horizontal};
+  \draw[fisica superficie] (1.0,6.55) -- (9.2,6.55);
+  \node[fisica corpo, minimum width=2.0cm, minimum height=1.35cm] (A)
+    at (5.1,7.25) {};
+  \draw[fisica forca] (A.center) -- ++(0,2.0)
+    node[fisica rotulo, above] {$\vec N$};
+  \draw[elevelaranja, line width=1.1pt] (5.1,6.75) -- ++(0.48,0) -- ++(0,0.48);
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.1,5.35) {rampa};
+  \coordinate (O) at (5.35,2.55);
+  \draw[fisica superficie] (0.85,0.65) -- (9.35,4.25);
+  \begin{scope}[shift={(O)}, rotate=23]
+    \node[fisica corpo, minimum width=2.0cm, minimum height=1.35cm] (B) at (0,0) {};
+    \draw[fisica forca] (B.center) -- ++(0,2.25)
+      node[fisica rotulo, above] {$\vec N$};
+    \draw[elevelaranja, line width=1.1pt] (0,-0.5) -- ++(0.48,0) -- ++(0,0.48);
+  \end{scope}
+  \node[font=\large\bfseries, text=elevecinza] at (2.25,2.25)
+    {$\vec N\perp$ superfície};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-equilibrio-do-copo-na-mesa
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (8.8,8.8);
+  \coordinate (C) at (4.25,4.35);
+  \node[fisica corpo, minimum width=1.75cm, minimum height=2.0cm] at (C) {};
+  \fill[eleveazul] (C) circle (3pt);
+  \draw[fisica forca] (C) -- ++(0,3.15)
+    node[fisica rotulo, above] {$\vec N$};
+  \draw[fisica forca] (C) -- ++(0,-3.15)
+    node[fisica rotulo, below] {$\vec P$};
+  \draw[fisica auxiliar] (1.0,4.35) -- (7.5,4.35);
+  \node[fisica medida] at (1.55,5.15) {$N=P$};
+  \node[font=\Large\bfseries, text=eleveazul] at (4.25,0.35)
+    {$\vec F_R=0$};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-resultante-muda-a-velocidade
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.6,10.4);
+  \node[font=\Large\bfseries, text=eleveazul] at (2.65,9.85) {iniciar};
+  \node[fisica corpo, minimum width=1.25cm, minimum height=0.85cm] (A) at (2.65,7.85) {};
+  \draw[fisica forca] (A.center) -- ++(2.0,0)
+    node[fisica rotulo, right] {$\vec F_R$};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (7.9,9.85) {acelerar};
+  \node[fisica corpo, minimum width=1.25cm, minimum height=0.85cm] (B) at (7.4,7.85) {};
+  \draw[fisica movimento] ($(B.north)+(0,0.55)$) -- ++(1.25,0)
+    node[fisica rotulo, right] {$\vec v$};
+  \draw[fisica forca] (B.center) -- ++(2.0,0)
+    node[fisica rotulo, right] {$\vec F_R$};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (2.65,5.0) {frear};
+  \node[fisica corpo, minimum width=1.25cm, minimum height=0.85cm] (C) at (2.65,3.05) {};
+  \draw[fisica movimento] ($(C.north)+(0,0.55)$) -- ++(1.55,0)
+    node[fisica rotulo, right] {$\vec v$};
+  \draw[fisica forca] (C.center) -- ++(-1.75,0)
+    node[fisica rotulo, left] {$\vec F_R$};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (7.9,5.0) {desviar};
+  \draw[fisica trajetoria] (6.1,1.15) arc[start angle=205,end angle=335,radius=2.0];
+  \node[fisica corpo, circle, minimum size=0.75cm] (D) at (7.9,2.95) {};
+  \draw[fisica movimento] (D.center) -- ++(1.65,0)
+    node[fisica rotulo, right] {$\vec v$};
+  \draw[fisica forca] (D.center) -- ++(0,-1.65)
+    node[fisica rotulo, below] {$\vec F_R$};
+\end{tikzpicture}
+
+\end{document}

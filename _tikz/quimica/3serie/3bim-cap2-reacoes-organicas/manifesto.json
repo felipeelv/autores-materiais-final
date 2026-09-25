@@ -1,0 +1,59 @@
+{
+  "versao": 1,
+  "disciplina": "quimica",
+  "ano_serie": "3serie",
+  "titulo_documento": "Reações orgânicas",
+  "slug_documento": "3bim-cap2-reacoes-organicas",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Quimica/3serie/quimica-3serie-3bim-cap2.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-categorias-reacao-organica",
+      "pagina": 1,
+      "arquivo": "fig-01-categorias-reacao-organica.png",
+      "alt": "Esquemas estruturais mínimos comparando substituição, adição, eliminação, oxidação, condensação e hidrólise",
+      "aprovada": true,
+      "sha256": "2a41a06ac819cef72cb5da295a8fcacc76df66cecb177b15daeef9cd8491b1c6",
+      "largura_px": 1630,
+      "altura_px": 1317,
+      "publicado_sha256": "2a41a06ac819cef72cb5da295a8fcacc76df66cecb177b15daeef9cd8491b1c6",
+      "publicado_commit": "04cb6b4853f64c3a51e29fafbe3bcfb4b13dda72"
+    },
+    {
+      "id": "fig-02-hidrogenacao-insaturacao",
+      "pagina": 2,
+      "arquivo": "fig-02-hidrogenacao-insaturacao.png",
+      "alt": "Ligação dupla de uma cadeia graxa recebendo hidrogênio sobre catalisador de níquel e formando ligação simples",
+      "aprovada": true,
+      "sha256": "bc3747c31c64f60e93e9fd6b619320f0dcee0810e83489f7354d8c8851512f3a",
+      "largura_px": 1524,
+      "altura_px": 945,
+      "publicado_sha256": "bc3747c31c64f60e93e9fd6b619320f0dcee0810e83489f7354d8c8851512f3a",
+      "publicado_commit": "04cb6b4853f64c3a51e29fafbe3bcfb4b13dda72"
+    },
+    {
+      "id": "fig-03-saponificacao-triglicerideo",
+      "pagina": 3,
+      "arquivo": "fig-03-saponificacao-triglicerideo.png",
+      "alt": "Triglicerídeo com três ligações éster reagindo com três hidróxidos e formando glicerol e três íons de sabão",
+      "aprovada": true,
+      "sha256": "256eaa31903d422880887156b1baef292082b1e85e6917a832290c1da9698d56",
+      "largura_px": 1713,
+      "altura_px": 1117,
+      "publicado_sha256": "256eaa31903d422880887156b1baef292082b1e85e6917a832290c1da9698d56",
+      "publicado_commit": "04cb6b4853f64c3a51e29fafbe3bcfb4b13dda72"
+    },
+    {
+      "id": "fig-04-transesterificacao-biodiesel",
+      "pagina": 4,
+      "arquivo": "fig-04-transesterificacao-biodiesel.png",
+      "alt": "Fluxo da transesterificação com óleo e álcool entrando no reator e separação entre biodiesel e glicerol",
+      "aprovada": true,
+      "sha256": "ca4b6eae2330681677f6db0e47ab47c55695c036bcc39624e2e1d95c1ba28518",
+      "largura_px": 1766,
+      "altura_px": 1069,
+      "publicado_sha256": "ca4b6eae2330681677f6db0e47ab47c55695c036bcc39624e2e1d95c1ba28518",
+      "publicado_commit": "04cb6b4853f64c3a51e29fafbe3bcfb4b13dda72"
+    }
+  ]
+}

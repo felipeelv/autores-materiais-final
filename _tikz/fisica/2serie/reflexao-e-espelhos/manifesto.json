@@ -1,0 +1,107 @@
+{
+  "versao": 1,
+  "disciplina": "fisica",
+  "ano_serie": "2serie",
+  "titulo_documento": "Reflexão e espelhos",
+  "slug_documento": "reflexao-e-espelhos",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Fisica/2serie/fisica-2serie-3bim-cap1.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-reflexao-regular-e-difusa",
+      "pagina": 1,
+      "arquivo": "fig-01-reflexao-regular-e-difusa.png",
+      "alt": "Feixes paralelos refletidos paralelamente em superfície lisa e espalhados em superfície irregular",
+      "aprovada": true,
+      "sha256": "39219e333c91cc9acf03bba1fe6c55ba7736f34dbd8bc9f71fc5098d1b3138ff",
+      "largura_px": 1394,
+      "altura_px": 1288,
+      "publicado_sha256": "39219e333c91cc9acf03bba1fe6c55ba7736f34dbd8bc9f71fc5098d1b3138ff",
+      "publicado_commit": "27f9041b7f56ddb5b127c92fa1cf8aa0d588994f"
+    },
+    {
+      "id": "fig-02-lei-da-reflexao",
+      "pagina": 2,
+      "arquivo": "fig-02-lei-da-reflexao.png",
+      "alt": "Raio incidente e refletido com ângulos iguais medidos a partir da normal",
+      "aprovada": true,
+      "sha256": "fe84cb74611fdf235dd9397053ad8fad256dc3c2c36d32309a9cd7848f3700e5",
+      "largura_px": 1347,
+      "altura_px": 1146,
+      "publicado_sha256": "fe84cb74611fdf235dd9397053ad8fad256dc3c2c36d32309a9cd7848f3700e5",
+      "publicado_commit": "27f9041b7f56ddb5b127c92fa1cf8aa0d588994f"
+    },
+    {
+      "id": "fig-03-imagem-no-espelho-plano",
+      "pagina": 3,
+      "arquivo": "fig-03-imagem-no-espelho-plano.png",
+      "alt": "Objeto e imagem virtual simétricos a distâncias iguais do espelho plano",
+      "aprovada": true,
+      "sha256": "955ef79ad49eb95d10dcee1b7d4ec1dbf1b3bd3f98369fa6e20c787770385486",
+      "largura_px": 1406,
+      "altura_px": 1134,
+      "publicado_sha256": "955ef79ad49eb95d10dcee1b7d4ec1dbf1b3bd3f98369fa6e20c787770385486",
+      "publicado_commit": "27f9041b7f56ddb5b127c92fa1cf8aa0d588994f"
+    },
+    {
+      "id": "fig-04-espelho-concavo-e-convexo",
+      "pagina": 4,
+      "arquivo": "fig-04-espelho-concavo-e-convexo.png",
+      "alt": "Raios paralelos convergindo no foco do côncavo e divergindo como se viessem do foco do convexo",
+      "aprovada": true,
+      "sha256": "9b7e90b59fb9d5bf021eb207d9262b9267c04d55867189ada6788059adbe3217",
+      "largura_px": 1418,
+      "altura_px": 1394,
+      "publicado_sha256": "9b7e90b59fb9d5bf021eb207d9262b9267c04d55867189ada6788059adbe3217",
+      "publicado_commit": "27f9041b7f56ddb5b127c92fa1cf8aa0d588994f"
+    },
+    {
+      "id": "fig-05-elementos-do-espelho-esferico",
+      "pagina": 5,
+      "arquivo": "fig-05-elementos-do-espelho-esferico.png",
+      "alt": "Eixo principal do espelho côncavo com vértice, foco, centro e raio de curvatura",
+      "aprovada": true,
+      "sha256": "0f9513e0efd7e7e4f2ee43774a37961e1e3fc93caf7e744c824aad28189dcf56",
+      "largura_px": 1418,
+      "altura_px": 1028,
+      "publicado_sha256": "0f9513e0efd7e7e4f2ee43774a37961e1e3fc93caf7e744c824aad28189dcf56",
+      "publicado_commit": "27f9041b7f56ddb5b127c92fa1cf8aa0d588994f"
+    },
+    {
+      "id": "fig-06-raios-notaveis-no-concavo",
+      "pagina": 6,
+      "arquivo": "fig-06-raios-notaveis-no-concavo.png",
+      "alt": "Três raios notáveis partindo do topo do objeto e formando uma imagem no espelho côncavo",
+      "aprovada": true,
+      "sha256": "386beb071322df5bedeb8b53f638f757c53b3d6212d01d24d8ae1fc917c98a05",
+      "largura_px": 1430,
+      "altura_px": 1182,
+      "publicado_sha256": "386beb071322df5bedeb8b53f638f757c53b3d6212d01d24d8ae1fc917c98a05",
+      "publicado_commit": "27f9041b7f56ddb5b127c92fa1cf8aa0d588994f"
+    },
+    {
+      "id": "fig-07-casos-principais-do-concavo",
+      "pagina": 7,
+      "arquivo": "fig-07-casos-principais-do-concavo.png",
+      "alt": "Quatro posições do objeto no espelho côncavo com orientação e tamanho das imagens",
+      "aprovada": true,
+      "sha256": "6728f48e9c3d4d35777f9b7ca7e3999324fe093f964424edf1f755d22c1e03f0",
+      "largura_px": 1418,
+      "altura_px": 1979,
+      "publicado_sha256": "6728f48e9c3d4d35777f9b7ca7e3999324fe093f964424edf1f755d22c1e03f0",
+      "publicado_commit": "27f9041b7f56ddb5b127c92fa1cf8aa0d588994f"
+    },
+    {
+      "id": "fig-08-campo-visual-do-convexo",
+      "pagina": 8,
+      "arquivo": "fig-08-campo-visual-do-convexo.png",
+      "alt": "Comparação do campo visual de espelho plano e convexo para o mesmo observador",
+      "aprovada": true,
+      "sha256": "026730dfe8b2620b4f50a92cfec8d1614377a2b973cdf35b7dd040288948eaf5",
+      "largura_px": 1418,
+      "altura_px": 1300,
+      "publicado_sha256": "026730dfe8b2620b4f50a92cfec8d1614377a2b973cdf35b7dd040288948eaf5",
+      "publicado_commit": "27f9041b7f56ddb5b127c92fa1cf8aa0d588994f"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "versao": 1,
+  "disciplina": "fisica",
+  "ano_serie": "2serie",
+  "titulo_documento": "Refração e lentes",
+  "slug_documento": "refracao-e-lentes",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Fisica/2serie/fisica-2serie-3bim-cap2.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-desvio-na-refracao",
+      "pagina": 1,
+      "arquivo": "fig-01-desvio-na-refracao.png",
+      "alt": "Raios aproximando-se e afastando-se da normal ao mudar entre meios de índices diferentes",
+      "aprovada": true,
+      "sha256": "c8fb3e57f9cd41b7ae839fe04fbf1976bba05df0bf313be44ec0595fbbc05945",
+      "largura_px": 1394,
+      "altura_px": 1394,
+      "publicado_sha256": "c8fb3e57f9cd41b7ae839fe04fbf1976bba05df0bf313be44ec0595fbbc05945",
+      "publicado_commit": "98908e0636f1ef32f2fd63a6d315ab00ca5a7e88"
+    },
+    {
+      "id": "fig-02-profundidade-aparente",
+      "pagina": 2,
+      "arquivo": "fig-02-profundidade-aparente.png",
+      "alt": "Objeto submerso com raios refratados e prolongamentos formando imagem aparente mais rasa",
+      "aprovada": true,
+      "sha256": "0b80acdfe1ea1f5b1fa1002832ee72220c12fe51556f0dd8e4115b7d71922fbd",
+      "largura_px": 1371,
+      "altura_px": 1217,
+      "publicado_sha256": "0b80acdfe1ea1f5b1fa1002832ee72220c12fe51556f0dd8e4115b7d71922fbd",
+      "publicado_commit": "98908e0636f1ef32f2fd63a6d315ab00ca5a7e88"
+    },
+    {
+      "id": "fig-03-reflexao-total-na-fibra",
+      "pagina": 3,
+      "arquivo": "fig-03-reflexao-total-na-fibra.png",
+      "alt": "Raio luminoso refletindo sucessivamente no núcleo de uma fibra óptica",
+      "aprovada": true,
+      "sha256": "779546fe8df2cbf88b983fcce17daaf0d34da6c58936e1ac8fb0ce98a218c102",
+      "largura_px": 1394,
+      "altura_px": 1004,
+      "publicado_sha256": "779546fe8df2cbf88b983fcce17daaf0d34da6c58936e1ac8fb0ce98a218c102",
+      "publicado_commit": "98908e0636f1ef32f2fd63a6d315ab00ca5a7e88"
+    },
+    {
+      "id": "fig-04-lente-convergente-e-divergente",
+      "pagina": 4,
+      "arquivo": "fig-04-lente-convergente-e-divergente.png",
+      "alt": "Raios paralelos convergindo após uma lente e divergindo após a outra",
+      "aprovada": true,
+      "sha256": "97bd7505c6d779794a7ed9b10f3a5a1f5e64306215b946795e3d7f60f4732bd7",
+      "largura_px": 1418,
+      "altura_px": 1394,
+      "publicado_sha256": "97bd7505c6d779794a7ed9b10f3a5a1f5e64306215b946795e3d7f60f4732bd7",
+      "publicado_commit": "98908e0636f1ef32f2fd63a6d315ab00ca5a7e88"
+    },
+    {
+      "id": "fig-05-elementos-da-lente-fina",
+      "pagina": 5,
+      "arquivo": "fig-05-elementos-da-lente-fina.png",
+      "alt": "Eixo de lente fina com centro óptico, focos e distâncias focais identificados",
+      "aprovada": true,
+      "sha256": "1b84990cd7f11e4275b5154ec7651754eedb3afe43873ddf99456757fe79dc5a",
+      "largura_px": 1418,
+      "altura_px": 1063,
+      "publicado_sha256": "1b84990cd7f11e4275b5154ec7651754eedb3afe43873ddf99456757fe79dc5a",
+      "publicado_commit": "98908e0636f1ef32f2fd63a6d315ab00ca5a7e88"
+    },
+    {
+      "id": "fig-06-raios-notaveis-na-convergente",
+      "pagina": 6,
+      "arquivo": "fig-06-raios-notaveis-na-convergente.png",
+      "alt": "Três raios notáveis formando imagem real em uma lente convergente",
+      "aprovada": true,
+      "sha256": "ac748203d93b603b88e67da7efe9dd5d83a3b0f95c67a72ba5ca7013d7e05cc9",
+      "largura_px": 1441,
+      "altura_px": 1158,
+      "publicado_sha256": "ac748203d93b603b88e67da7efe9dd5d83a3b0f95c67a72ba5ca7013d7e05cc9",
+      "publicado_commit": "98908e0636f1ef32f2fd63a6d315ab00ca5a7e88"
+    },
+    {
+      "id": "fig-07-casos-principais-da-convergente",
+      "pagina": 7,
+      "arquivo": "fig-07-casos-principais-da-convergente.png",
+      "alt": "Quatro posições do objeto na lente convergente com orientação e tamanho das imagens",
+      "aprovada": true,
+      "sha256": "933a5b572fd673c4692a4b360e6f4f39ae8d1c37886e0debbc4a50942b6da177",
+      "largura_px": 1430,
+      "altura_px": 1979,
+      "publicado_sha256": "933a5b572fd673c4692a4b360e6f4f39ae8d1c37886e0debbc4a50942b6da177",
+      "publicado_commit": "98908e0636f1ef32f2fd63a6d315ab00ca5a7e88"
+    },
+    {
+      "id": "fig-08-miopia-e-hipermetropia",
+      "pagina": 8,
+      "arquivo": "fig-08-miopia-e-hipermetropia.png",
+      "alt": "Olhos míope e hipermetrope com focos antes e depois da retina e lentes corretivas",
+      "aprovada": true,
+      "sha256": "f3e5dd0ebba7d56a4cca7a258fe5639d3f6fc817ad687337eb2d9fd78150147f",
+      "largura_px": 1441,
+      "altura_px": 1571,
+      "publicado_sha256": "f3e5dd0ebba7d56a4cca7a258fe5639d3f6fc817ad687337eb2d9fd78150147f",
+      "publicado_commit": "98908e0636f1ef32f2fd63a6d315ab00ca5a7e88"
+    }
+  ]
+}

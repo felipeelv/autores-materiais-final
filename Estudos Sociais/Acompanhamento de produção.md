@@ -1,0 +1,137 @@
+# Acompanhamento de produção — Estudos Sociais
+
+> Controle dos capítulos do 3º bimestre de 2026. A produção é acompanhada nesta pasta; `Segundo Semestre/Estudos Sociais` recebe somente os conteúdos concluídos.
+
+**Última atualização:** 30/07/2026
+
+**Pasta de produção:** `autores-materiais-final/Estudos Sociais`
+
+**Pasta oficial dos conteúdos prontos:** `Segundo Semestre/Estudos Sociais`
+
+## Visão geral
+
+| Ano | Capítulos previstos | Prontos | Pendentes | Aulas previstas | Aulas prontas | Aulas pendentes |
+|---|---:|---:|---:|---:|---:|---:|
+| 4º ano | 4 | 4 | 0 | 18 | 18 | 0 |
+| 5º ano | 4 | 4 | 0 | 18 | 18 | 0 |
+| 6º ano | 5 | 5 | 0 | 30 | 30 | 0 |
+| 7º ano | 7 | 7 | 0 | 30 | 30 | 0 |
+| 8º ano | 6 | 6 | 0 | 30 | 30 | 0 |
+| 9º ano | 8 | 8 | 0 | 36 | 36 | 0 |
+| **Total do 3º bimestre** | **34** | **34** | **0** | **162** | **162** | **0** |
+
+**Status geral:** produção concluída; todos os capítulos estão na pasta oficial.
+
+**Critério de conferência:** títulos, numeração e quantidade de aulas foram levantados nos blueprints dos blocos 1 e 2. Os 34 arquivos da pasta oficial foram conferidos pelo validador de Estudos Sociais.
+
+**Revisão final — 22/07/2026:** os 34 capítulos e as 162 aulas seguem a ordem e o recorte dos blueprints. Todos passaram na validação estrutural e editorial; cada aula possui de 1 a 2 boxes permitidos. A redação foi mantida concisa, sem exercícios, fechamentos ou antecipação dos conteúdos indicados para outros capítulos.
+
+**Reforma editorial — 30/07/2026:** os 34 capítulos foram revisados sob as regras novas (`_MEMORIA.md`, decisão 14) e cada um ganhou seu **arquivo de anexo**. O que mudou:
+
+| Correção | Alcance |
+|---|---|
+| Boxes que abriam subtópico, reposicionados | 46 ocorrências em 29 capítulos |
+| Box `👤 Esse foi o "cara"` removido do corpo | 34 (um por capítulo) |
+| Subtópicos reescritos por terem ficado sem conteúdo ao perder o box | 12 |
+| Versículos retirados do fluxo da aula | 5 |
+| Arquivos `{Tema} — Anexo.md` criados | 34 |
+
+**Estado da validação:** os 34 capítulos passam sem nenhuma falha em `validar-capitulo.py`, que agora também detecta box abrindo subtópico e exige o prefixo de bloco no título. Backup dos arquivos originais em `~/Desktop/Estudos Sociais — backup antes do ajuste`.
+
+⚠️ **Pendência:** os 4 capítulos do 9º ano bloco 1 (Europa · Ásia · Potências econômicas asiáticas · Oriente Médio) têm anexo **sem "E para hoje…"** — o blueprint desses capítulos não traz Conexão VP. A correção, se desejada, é no blueprint.
+
+## Fila de produção
+
+Os capítulos seguem a ordem dos blueprints. Cada item deve ser marcado como concluído somente depois de produzido, validado e salvo na pasta oficial.
+
+### 4º ano
+
+- [x] **BL1_Capítulo 2 — A herança cultural dos povos formadores** — Bloco 1 · 4 aulas · concluído e validado.
+  - Arquivo previsto: `4º Ano/A herança cultural dos povos formadores.md`.
+- [x] **BL2_Capítulo 1 — Os símbolos da nação brasileira** — Bloco 2 · 4 aulas · concluído e validado.
+  - Arquivo previsto: `4º Ano/Os símbolos da nação brasileira.md`.
+- [x] **BL2_Capítulo 2 — As datas que o Brasil comemora** — Bloco 2 · 5 aulas · concluído e validado.
+  - Arquivo previsto: `4º Ano/As datas que o Brasil comemora.md`.
+
+### 5º ano
+
+- [x] **BL1_Capítulo 2 — O fim da escravidão e a chegada do trabalho livre** — Bloco 1 · 5 aulas · concluído e validado.
+  - Arquivo previsto: `5º Ano/O fim da escravidão e a chegada do trabalho livre.md`.
+- [x] **BL2_Capítulo 1 — A Proclamação da República** — Bloco 2 · 4 aulas · concluído e validado.
+  - Arquivo previsto: `5º Ano/A Proclamação da República.md`.
+- [x] **BL2_Capítulo 2 — A República Velha (1889–1930)** — Bloco 2 · 5 aulas · concluído e validado.
+  - Arquivo previsto: `5º Ano/A República Velha (1889–1930).md`.
+
+### 6º ano
+
+- [x] **BL1_Capítulo 2 — Sistemas terrestres** — Bloco 1 · 7 aulas · concluído e validado.
+  - Arquivo previsto: `6º Ano/Sistemas terrestres.md`.
+- [x] **BL1_Capítulo 3 — Império Persa** — Bloco 1 · 3 aulas · concluído e validado.
+  - Arquivo previsto: `6º Ano/Império Persa.md`.
+- [x] **BL2_Capítulo 1 — Roma: Monarquia e República** — Bloco 2 · 7 aulas · concluído e validado.
+  - Arquivo previsto: `6º Ano/Roma: Monarquia e República.md`.
+- [x] **BL2_Capítulo 2 — Império Romano** — Bloco 2 · 8 aulas · concluído e validado.
+  - Arquivo previsto: `6º Ano/Império Romano.md`.
+
+### 7º ano
+
+- [x] **BL1_Capítulo 2 — Problemas urbanos** — Bloco 1 · 4 aulas · concluído e validado.
+  - Arquivo previsto: `7º Ano/Problemas urbanos.md`.
+- [x] **BL1_Capítulo 3 — Redes de transporte e comunicação** — Bloco 1 · 5 aulas · concluído e validado.
+  - Arquivo previsto: `7º Ano/Redes de transporte e comunicação.md`.
+- [x] **BL2_Capítulo 1 — Renascimento comercial e urbano** — Bloco 2 · 4 aulas · concluído e validado.
+  - Arquivo previsto: `7º Ano/Renascimento comercial e urbano.md`.
+- [x] **BL2_Capítulo 2 — Mundo islâmico** — Bloco 2 · 3 aulas · concluído e validado.
+  - Arquivo previsto: `7º Ano/Mundo islâmico.md`.
+- [x] **BL2_Capítulo 3 — Cruzadas e crise do feudalismo** — Bloco 2 · 5 aulas · concluído e validado.
+  - Arquivo previsto: `7º Ano/Cruzadas e crise do feudalismo.md`.
+- [x] **BL2_Capítulo 4 — Renascimento cultural e reformas religiosas** — Bloco 2 · 3 aulas · concluído e validado.
+  - Arquivo previsto: `7º Ano/Renascimento cultural e reformas religiosas.md`.
+
+### 8º ano
+
+- [x] **BL1_Capítulo 2 — Independência do Brasil** — Bloco 1 · 4 aulas · concluído e validado.
+  - Arquivo previsto: `8º Ano/Independência do Brasil.md`.
+- [x] **BL1_Capítulo 3 — Primeiro Reinado e Período Regencial** — Bloco 1 · 5 aulas · concluído e validado.
+  - Arquivo previsto: `8º Ano/Primeiro Reinado e Período Regencial.md`.
+- [x] **BL2_Capítulo 1 — Segundo Reinado** — Bloco 2 · 5 aulas · concluído e validado.
+  - Arquivo previsto: `8º Ano/Segundo Reinado.md`.
+- [x] **BL2_Capítulo 2 — Escravidão e abolição** — Bloco 2 · 5 aulas · concluído e validado.
+  - Arquivo previsto: `8º Ano/Escravidão e abolição.md`.
+- [x] **BL2_Capítulo 3 — Fim da Monarquia e Proclamação da República** — Bloco 2 · 5 aulas · concluído e validado.
+  - Arquivo previsto: `8º Ano/Fim da Monarquia e Proclamação da República.md`.
+
+### 9º ano
+
+- [x] **BL1_Capítulo 2 — Ásia: quadro natural e humano** — Bloco 1 · 4 aulas · concluído e validado.
+  - Arquivo previsto: `9º Ano/Ásia: quadro natural e humano.md`.
+- [x] **BL1_Capítulo 3 — Potências econômicas asiáticas** — Bloco 1 · 5 aulas · concluído e validado.
+  - Arquivo previsto: `9º Ano/Potências econômicas asiáticas.md`.
+- [x] **BL1_Capítulo 4 — Oriente Médio e tensões regionais** — Bloco 1 · 4 aulas · concluído e validado.
+  - Arquivo previsto: `9º Ano/Oriente Médio e tensões regionais.md`.
+- [x] **BL2_Capítulo 1 — África: quadro natural e humano** — Bloco 2 · 4 aulas · concluído e validado.
+  - Arquivo previsto: `9º Ano/África: quadro natural e humano.md`.
+- [x] **BL2_Capítulo 2 — África: da partilha ao fim do apartheid** — Bloco 2 · 5 aulas · concluído e validado.
+  - Arquivo previsto: `9º Ano/África: da partilha ao fim do apartheid.md`.
+- [x] **BL2_Capítulo 3 — Economia e desafios africanos** — Bloco 2 · 3 aulas · concluído e validado.
+  - Arquivo previsto: `9º Ano/Economia e desafios africanos.md`.
+- [x] **BL2_Capítulo 4 — Oceania** — Bloco 2 · 6 aulas · concluído e validado.
+  - Arquivo previsto: `9º Ano/Oceania.md`.
+
+## Conteúdos prontos em Segundo Semestre
+
+- [x] **4º ano — BL1_Capítulo 1: Os povos que formaram o Brasil** — 5 aulas · validado.
+- [x] **5º ano — BL1_BL2_Capítulo 1: O Segundo Reinado e a riqueza do café** — 4 aulas · validado.
+- [x] **6º ano — BL1_Capítulo 1: Civilizações do Oriente Antigo** — 5 aulas · validado.
+- [x] **7º ano — BL1_Capítulo 1: Urbanização do Brasil** — 6 aulas · validado.
+- [x] **8º ano — BL1_Capítulo 1: Independências no Haiti e na América Espanhola** — 6 aulas · validado.
+- [x] **9º ano — BL1_Capítulo 1: Europa** — 5 aulas · validado.
+
+## Regra de atualização
+
+Ao concluir cada capítulo:
+
+1. validar estrutura, extensão e regras editoriais;
+2. salvar o arquivo em `Segundo Semestre/Estudos Sociais/<ano>/`;
+3. marcar o capítulo como concluído neste acompanhamento;
+4. atualizar os totais da visão geral.

@@ -1,0 +1,83 @@
+{
+  "versao": 1,
+  "disciplina": "fisica",
+  "ano_serie": "9ano",
+  "titulo_documento": "Trabalho e máquinas simples",
+  "slug_documento": "trabalho-e-maquinas-simples",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Fisica/9ano/fisica-9ano-3bim-cap1.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-sinais-do-trabalho",
+      "pagina": 1,
+      "arquivo": "fig-01-sinais-do-trabalho.png",
+      "alt": "Três casos com força paralela, perpendicular e oposta ao deslocamento e sinais do trabalho",
+      "aprovada": true,
+      "sha256": "cde68b517c354519a7ab0ea721c61186676cd8c52d3615c7d26a13ed132f2301",
+      "largura_px": 1371,
+      "altura_px": 1489,
+      "publicado_sha256": "cde68b517c354519a7ab0ea721c61186676cd8c52d3615c7d26a13ed132f2301",
+      "publicado_commit": "8a79200b98f7ac55e25fe649dd87f2f88f450d4e"
+    },
+    {
+      "id": "fig-02-trabalho-do-peso-independe-do-caminho",
+      "pagina": 2,
+      "arquivo": "fig-02-trabalho-do-peso-independe-do-caminho.png",
+      "alt": "Dois caminhos entre as mesmas alturas com o mesmo vetor peso e o mesmo desnível",
+      "aprovada": true,
+      "sha256": "c301aa5c43a8b8a30d27cab0a25c839d032bb13ec2f0b68f12a7f7ed73e1a14f",
+      "largura_px": 1394,
+      "altura_px": 1146,
+      "publicado_sha256": "c301aa5c43a8b8a30d27cab0a25c839d032bb13ec2f0b68f12a7f7ed73e1a14f",
+      "publicado_commit": "8a79200b98f7ac55e25fe649dd87f2f88f450d4e"
+    },
+    {
+      "id": "fig-03-equilibrio-da-alavanca",
+      "pagina": 3,
+      "arquivo": "fig-03-equilibrio-da-alavanca.png",
+      "alt": "Alavanca com força de 600 N a meio metro e força de 200 N a um metro e meio do fulcro",
+      "aprovada": true,
+      "sha256": "36a4ee10127377607b106f9e4fad41dfeb5ab6c6b262ab422028752248a719b1",
+      "largura_px": 1406,
+      "altura_px": 1016,
+      "publicado_sha256": "36a4ee10127377607b106f9e4fad41dfeb5ab6c6b262ab422028752248a719b1",
+      "publicado_commit": "8a79200b98f7ac55e25fe649dd87f2f88f450d4e"
+    },
+    {
+      "id": "fig-04-roldana-fixa-e-movel",
+      "pagina": 4,
+      "arquivo": "fig-04-roldana-fixa-e-movel.png",
+      "alt": "Comparação de roldana fixa e móvel com forças e deslocamentos da corda",
+      "aprovada": true,
+      "sha256": "c60dfe55fec82edcce272b072f38340410df4ca5160c8e5a6542c6b4b0e9c5ea",
+      "largura_px": 1406,
+      "altura_px": 1276,
+      "publicado_sha256": "c60dfe55fec82edcce272b072f38340410df4ca5160c8e5a6542c6b4b0e9c5ea",
+      "publicado_commit": "8a79200b98f7ac55e25fe649dd87f2f88f450d4e"
+    },
+    {
+      "id": "fig-05-forca-no-plano-inclinado",
+      "pagina": 5,
+      "arquivo": "fig-05-forca-no-plano-inclinado.png",
+      "alt": "Carga de mil newtons em rampa de trinta graus com força paralela de quinhentos newtons",
+      "aprovada": true,
+      "sha256": "777d6d8ac12c8f3f7d29e77167d2ae5abd418f9c76395ccebef8e512ae382cac",
+      "largura_px": 1382,
+      "altura_px": 1099,
+      "publicado_sha256": "777d6d8ac12c8f3f7d29e77167d2ae5abd418f9c76395ccebef8e512ae382cac",
+      "publicado_commit": "8a79200b98f7ac55e25fe649dd87f2f88f450d4e"
+    },
+    {
+      "id": "fig-06-ganho-em-forca-custo-em-distancia",
+      "pagina": 6,
+      "arquivo": "fig-06-ganho-em-forca-custo-em-distancia.png",
+      "alt": "Roldana, rampa e alavanca mostrando ganho de força e aumento correspondente da distância",
+      "aprovada": true,
+      "sha256": "a895cab6883675f109fddfe72d003c3df2a63162b3022463d790ae0719ebb685",
+      "largura_px": 1394,
+      "altura_px": 1441,
+      "publicado_sha256": "a895cab6883675f109fddfe72d003c3df2a63162b3022463d790ae0719ebb685",
+      "publicado_commit": "8a79200b98f7ac55e25fe649dd87f2f88f450d4e"
+    }
+  ]
+}

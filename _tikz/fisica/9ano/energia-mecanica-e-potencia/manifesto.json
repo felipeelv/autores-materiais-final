@@ -1,0 +1,83 @@
+{
+  "versao": 1,
+  "disciplina": "fisica",
+  "ano_serie": "9ano",
+  "titulo_documento": "Energia mecânica e potência",
+  "slug_documento": "energia-mecanica-e-potencia",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Fisica/9ano/fisica-9ano-3bim-cap2.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-energia-cinetica-e-velocidade",
+      "pagina": 1,
+      "arquivo": "fig-01-energia-cinetica-e-velocidade.png",
+      "alt": "Gráfico qualitativo parabólico da energia cinética em função da velocidade com pontos v e 2v",
+      "aprovada": true,
+      "sha256": "a94a037f6f100688912272af3b9cb3ce5da12d3f60d5af8aaf3d9e595c0f50a6",
+      "largura_px": 1252,
+      "altura_px": 1063,
+      "publicado_sha256": "a94a037f6f100688912272af3b9cb3ce5da12d3f60d5af8aaf3d9e595c0f50a6",
+      "publicado_commit": "799e666b9daf140b30ed05dc235b74650ae8f459"
+    },
+    {
+      "id": "fig-02-nivel-de-referencia-da-energia",
+      "pagina": 2,
+      "arquivo": "fig-02-nivel-de-referencia-da-energia.png",
+      "alt": "Mesmo corpo e duas escolhas de nível zero mostrando energias diferentes e variação igual",
+      "aprovada": true,
+      "sha256": "4f70308f37518a15d20b524628f36542d9b2d92b9e6db7fe3f7f76f17e4c1979",
+      "largura_px": 1418,
+      "altura_px": 1323,
+      "publicado_sha256": "4f70308f37518a15d20b524628f36542d9b2d92b9e6db7fe3f7f76f17e4c1979",
+      "publicado_commit": "799e666b9daf140b30ed05dc235b74650ae8f459"
+    },
+    {
+      "id": "fig-03-mola-deformada-e-energia",
+      "pagina": 3,
+      "arquivo": "fig-03-mola-deformada-e-energia.png",
+      "alt": "Mola comprimida com força restauradora e gráfico da energia potencial elástica pela deformação",
+      "aprovada": true,
+      "sha256": "4af92294fadc397ae45726ef4f3053b363d29c3112deb99d8fe92c1aaa054e84",
+      "largura_px": 1394,
+      "altura_px": 1146,
+      "publicado_sha256": "4af92294fadc397ae45726ef4f3053b363d29c3112deb99d8fe92c1aaa054e84",
+      "publicado_commit": "799e666b9daf140b30ed05dc235b74650ae8f459"
+    },
+    {
+      "id": "fig-04-transformacao-no-balanco",
+      "pagina": 4,
+      "arquivo": "fig-04-transformacao-no-balanco.png",
+      "alt": "Balanço em três posições com energia potencial máxima no alto e cinética máxima embaixo",
+      "aprovada": true,
+      "sha256": "b32e68d52cd48e2d6a6a24b0407dd98ae4e74a1b983f1b8c64037c90b677c66b",
+      "largura_px": 1418,
+      "altura_px": 1217,
+      "publicado_sha256": "b32e68d52cd48e2d6a6a24b0407dd98ae4e74a1b983f1b8c64037c90b677c66b",
+      "publicado_commit": "799e666b9daf140b30ed05dc235b74650ae8f459"
+    },
+    {
+      "id": "fig-05-montanha-russa-ideal-e-real",
+      "pagina": 5,
+      "arquivo": "fig-05-montanha-russa-ideal-e-real.png",
+      "alt": "Comparação entre trilha ideal que recupera a altura e trilha real com altura final menor",
+      "aprovada": true,
+      "sha256": "c351a0f239fe6b83e4b4757def2340dcb97d4ffa338610b383e2be5e5fd063f2",
+      "largura_px": 1406,
+      "altura_px": 1300,
+      "publicado_sha256": "c351a0f239fe6b83e4b4757def2340dcb97d4ffa338610b383e2be5e5fd063f2",
+      "publicado_commit": "799e666b9daf140b30ed05dc235b74650ae8f459"
+    },
+    {
+      "id": "fig-06-mesmo-trabalho-potencias-diferentes",
+      "pagina": 6,
+      "arquivo": "fig-06-mesmo-trabalho-potencias-diferentes.png",
+      "alt": "Duas máquinas realizando o mesmo trabalho em tempos diferentes e produzindo potências diferentes",
+      "aprovada": true,
+      "sha256": "80dab622fcc957a8d62376669dfa6437e5e32834158bcd0a68a84d68a2d2b931",
+      "largura_px": 1382,
+      "altura_px": 1099,
+      "publicado_sha256": "80dab622fcc957a8d62376669dfa6437e5e32834158bcd0a68a84d68a2d2b931",
+      "publicado_commit": "799e666b9daf140b30ed05dc235b74650ae8f459"
+    }
+  ]
+}

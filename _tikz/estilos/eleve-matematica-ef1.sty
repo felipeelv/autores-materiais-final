@@ -1,0 +1,76 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{eleve-matematica-ef1}[2026/07/23 Estilo TikZ de Matemática EF1 do Colégio Eleve]
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage{lmodern}
+\RequirePackage{amsmath}
+\RequirePackage{tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathreplacing,positioning}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{matemazul}{HTML}{245B78}
+\definecolor{matemazulclaro}{HTML}{DCEAF1}
+\definecolor{matemalaranja}{HTML}{D97732}
+\definecolor{matemalaranjaclaro}{HTML}{F7E2D2}
+\definecolor{matemacinza}{HTML}{52606D}
+\definecolor{matemacinzaclaro}{HTML}{E9EEF2}
+\definecolor{matemaverde}{HTML}{3C7A57}
+\definecolor{matemavermelho}{HTML}{A74A4A}
+
+\tikzset{
+  matematica figura/.style={
+    >=Stealth,
+    line cap=round,
+    line join=round,
+    font=\sffamily,
+    every node/.style={font=\sffamily}
+  },
+  matematica contorno/.style={
+    draw=matemazul,
+    line width=1.55pt
+  },
+  matematica destaque/.style={
+    draw=matemalaranja,
+    line width=1.8pt
+  },
+  matematica divisao/.style={
+    draw=matemacinza,
+    line width=1.05pt
+  },
+  matematica auxiliar/.style={
+    draw=matemacinza,
+    dashed,
+    line width=.85pt
+  },
+  matematica eixo/.style={
+    draw=matemacinza,
+    line width=1.25pt
+  },
+  matematica destaque claro/.style={
+    fill=matemalaranjaclaro
+  },
+  matematica neutro/.style={
+    fill=matemacinzaclaro
+  },
+  matematica prato/.style={
+    draw=matemazul,
+    fill=matemazulclaro,
+    line width=1.45pt
+  },
+  matematica rotulo/.style={
+    text=matemacinza,
+    font=\large,
+    inner sep=2pt
+  },
+  matematica valor/.style={
+    text=matemazul,
+    font=\Large\bfseries,
+    inner sep=2pt
+  },
+  matematica resultado/.style={
+    text=matemalaranja,
+    font=\Large\bfseries,
+    inner sep=2pt
+  }
+}

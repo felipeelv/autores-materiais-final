@@ -1,0 +1,187 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-quimica}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-reticulo-ionico-fragilidade
+\begin{tikzpicture}[quimica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.25,-0.3) rectangle (12.1,7.4);
+
+  \node[quimica rotulo] at (2.35,7.00) {retículo sem deformação};
+  \foreach \x in {0,...,3}{
+    \foreach \y in {0,...,3}{
+      \pgfmathtruncatemacro{\paridade}{mod(\x+\y,2)}
+      \ifnum\paridade=0
+        \node[quimica particula azul, minimum size=0.92cm]
+          at (0.80+1.05*\x,1.45+1.05*\y) {$+$};
+      \else
+        \node[quimica particula laranja, minimum size=0.92cm]
+          at (0.80+1.05*\x,1.45+1.05*\y) {$-$};
+      \fi
+    }
+  }
+  \node[quimica destaque] at (2.35,0.55)
+    {alternância de cargas};
+
+  \draw[quimica fluxo] (5.05,4.10) -- (6.25,4.10);
+
+  \node[quimica rotulo] at (9.55,7.00) {após o deslocamento};
+  \foreach \x in {0,...,3}{
+    \foreach \y in {0,1}{
+      \pgfmathtruncatemacro{\paridade}{mod(\x+\y,2)}
+      \ifnum\paridade=0
+        \node[quimica particula azul, minimum size=0.92cm]
+          at (7.45+1.05*\x,1.45+1.05*\y) {$+$};
+      \else
+        \node[quimica particula laranja, minimum size=0.92cm]
+          at (7.45+1.05*\x,1.45+1.05*\y) {$-$};
+      \fi
+    }
+    \foreach \y in {2,3}{
+      \pgfmathtruncatemacro{\paridade}{mod(\x+\y,2)}
+      \ifnum\paridade=0
+        \node[quimica particula azul, minimum size=0.92cm]
+          at (8.50+1.05*\x,1.45+1.05*\y) {$+$};
+      \else
+        \node[quimica particula laranja, minimum size=0.92cm]
+          at (8.50+1.05*\x,1.45+1.05*\y) {$-$};
+      \fi
+    }
+  }
+  \draw[quimica retorno] (6.95,3.02) -- (11.95,3.02);
+  \node[quimica destaque, align=center] at (9.55,0.45)
+    {cargas iguais se aproximam\\o cristal se rompe};
+\end{tikzpicture}
+
+
+% FIGURA 2 — fig-02-estruturas-lewis
+\begin{tikzpicture}[quimica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.25) rectangle (11.6,8.1);
+
+  \node[quimica processo, minimum width=5.15cm, minimum height=3.35cm]
+    at (2.55,6.10) {};
+  \node[quimica rotulo] at (2.55,7.35) {$\mathrm{H_2O}$};
+  \node[quimica rotulo] (ow) at (2.55,5.85) {$\mathrm{O}$};
+  \node[quimica rotulo] (hw1) at (1.20,5.85) {$\mathrm{H}$};
+  \node[quimica rotulo] (hw2) at (3.90,5.85) {$\mathrm{H}$};
+  \draw[quimica direta] (hw1.east) -- (ow.west);
+  \draw[quimica direta] (ow.east) -- (hw2.west);
+  \fill[quimicalaranja] (2.35,6.55) circle (2.2pt) (2.75,6.55) circle (2.2pt);
+  \fill[quimicalaranja] (2.35,5.18) circle (2.2pt) (2.75,5.18) circle (2.2pt);
+  \node[quimica destaque, font=\normalsize\bfseries, anchor=west]
+    at (2.95,6.55) {pares livres};
+
+  \node[quimica processo, minimum width=5.15cm, minimum height=3.35cm]
+    at (8.70,6.10) {};
+  \node[quimica rotulo] at (8.70,7.35) {$\mathrm{NH_3}$};
+  \node[quimica rotulo] (nn) at (8.70,5.95) {$\mathrm{N}$};
+  \node[quimica rotulo] (nh1) at (7.25,5.95) {$\mathrm{H}$};
+  \node[quimica rotulo] (nh2) at (10.15,5.95) {$\mathrm{H}$};
+  \node[quimica rotulo] (nh3) at (8.70,4.90) {$\mathrm{H}$};
+  \draw[quimica direta] (nh1.east) -- (nn.west);
+  \draw[quimica direta] (nn.east) -- (nh2.west);
+  \draw[quimica direta] (nn.south) -- (nh3.north);
+  \fill[quimicalaranja] (8.50,6.67) circle (2.2pt) (8.90,6.67) circle (2.2pt);
+  \node[quimica destaque, font=\normalsize\bfseries, anchor=west]
+    at (9.15,6.67) {par livre};
+
+  \node[quimica processo, minimum width=5.15cm, minimum height=3.15cm]
+    at (2.55,1.85) {};
+  \node[quimica rotulo] at (2.55,2.95) {$\mathrm{CH_4}$};
+  \node[quimica rotulo] (cc) at (2.55,1.70) {$\mathrm{C}$};
+  \node[quimica rotulo] (ch1) at (1.15,1.70) {$\mathrm{H}$};
+  \node[quimica rotulo] (ch2) at (3.95,1.70) {$\mathrm{H}$};
+  \node[quimica rotulo] (ch3) at (2.55,0.85) {$\mathrm{H}$};
+  \node[quimica rotulo] (ch4) at (2.55,2.55) {$\mathrm{H}$};
+  \draw[quimica direta] (ch1.east) -- (cc.west);
+  \draw[quimica direta] (cc.east) -- (ch2.west);
+  \draw[quimica direta] (cc.south) -- (ch3.north);
+  \draw[quimica direta] (cc.north) -- (ch4.south);
+
+  \node[quimica processo, minimum width=5.15cm, minimum height=3.15cm]
+    at (8.70,1.85) {};
+  \node[quimica rotulo] at (8.70,2.95) {$\mathrm{CO_2}$};
+  \node[quimica rotulo] (oc1) at (7.05,1.65) {$\mathrm{O}$};
+  \node[quimica rotulo] (ccc) at (8.70,1.65) {$\mathrm{C}$};
+  \node[quimica rotulo] (oc2) at (10.35,1.65) {$\mathrm{O}$};
+  \draw[quimica direta] (7.34,1.54) -- (8.42,1.54);
+  \draw[quimica direta] (7.34,1.76) -- (8.42,1.76);
+  \draw[quimica direta] (8.98,1.54) -- (10.06,1.54);
+  \draw[quimica direta] (8.98,1.76) -- (10.06,1.76);
+  \fill[quimicalaranja]
+    (6.83,2.23) circle (2.0pt) (7.23,2.23) circle (2.0pt)
+    (6.83,1.08) circle (2.0pt) (7.23,1.08) circle (2.0pt)
+    (10.13,2.23) circle (2.0pt) (10.53,2.23) circle (2.0pt)
+    (10.13,1.08) circle (2.0pt) (10.53,1.08) circle (2.0pt);
+\end{tikzpicture}
+
+
+% FIGURA 3 — fig-03-ligacao-metalica
+\begin{tikzpicture}[quimica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.4,7.6);
+  \draw[quimica recipiente] (0.45,0.65) rectangle (10.85,6.65);
+
+  \foreach \x in {0,...,4}{
+    \foreach \y in {0,...,2}{
+      \node[quimica particula azul, minimum size=0.92cm]
+        at (1.45+2.05*\x,1.75+1.75*\y) {$\mathrm{M^+}$};
+    }
+  }
+  \foreach \x/\y in {
+    2.45/1.25,4.50/1.25,6.55/1.25,8.60/1.25,
+    2.45/3.00,4.50/3.00,6.55/3.00,8.60/3.00,
+    2.45/4.75,4.50/4.75,6.55/4.75,8.60/4.75,
+    2.45/6.15,4.50/6.15,6.55/6.15,8.60/6.15}{
+      \fill[quimicalaranja] (\x,\y) circle (4.0pt);
+  }
+  \draw[quimica fluxo, draw=quimicalaranja] (2.55,3.00) -- (3.45,3.00);
+  \draw[quimica fluxo, draw=quimicalaranja] (5.60,4.75) -- (6.50,4.75);
+  \draw[quimica fluxo, draw=quimicalaranja] (7.65,1.25) -- (8.55,1.25);
+  \node[quimica rotulo] at (5.65,7.15)
+    {centros positivos organizados};
+  \node[quimica destaque, font=\normalsize\bfseries] at (5.65,0.96)
+    {elétrons deslocalizados movem-se pelo sólido};
+\end{tikzpicture}
+
+
+% FIGURA 4 — fig-04-molecular-rede-covalente
+\begin{tikzpicture}[quimica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (12.2,7.35);
+
+  \node[quimica rotulo] at (2.80,6.95) {sólido molecular};
+  \draw[quimica recipiente] (0.30,0.75) rectangle (5.30,6.45);
+  \foreach \x/\y in {1.25/4.95,3.35/4.20,1.65/2.45,3.80/1.80}{
+    \node[quimica particula azul, minimum size=0.72cm] (a) at (\x,\y) {};
+    \node[quimica particula azul, minimum size=0.72cm] (b) at (\x+0.70,\y) {};
+    \draw[quimica direta] (a) -- (b);
+  }
+  \draw[quimica auxiliar] (2.00,4.70) -- (3.30,4.28);
+  \draw[quimica auxiliar] (2.20,2.55) -- (3.65,1.98);
+  \node[quimica destaque, font=\normalsize\bfseries] at (2.80,0.30)
+    {moléculas discretas};
+
+  \draw[quimica auxiliar] (6.05,0.40) -- (6.05,6.85);
+
+  \node[quimica rotulo] at (9.10,6.95) {rede covalente};
+  \draw[quimica recipiente] (6.55,0.75) rectangle (11.65,6.45);
+  \foreach \x in {0,...,3}{
+    \foreach \y in {0,...,3}{
+      \node[quimica particula laranja, minimum size=0.68cm]
+        (n-\x-\y) at (7.25+1.20*\x,1.45+1.35*\y) {};
+    }
+  }
+  \foreach \x in {0,...,2}{
+    \foreach \y in {0,...,3}{
+      \draw[quimica direta] (n-\x-\y) -- (n-\the\numexpr\x+1\relax-\y);
+    }
+  }
+  \foreach \x in {0,...,3}{
+    \foreach \y in {0,...,2}{
+      \draw[quimica direta] (n-\x-\y) -- (n-\x-\the\numexpr\y+1\relax);
+    }
+  }
+  \node[quimica destaque, font=\normalsize\bfseries] at (9.10,0.30)
+    {ligações contínuas};
+\end{tikzpicture}
+
+\end{document}

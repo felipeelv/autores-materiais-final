@@ -1,0 +1,145 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-fisica}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-energia-cinetica-e-velocidade
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (9.8,8.2);
+  \draw[fisica eixo] (0.9,0.9) -- (9.05,0.9)
+    node[right, fisica rotulo] {$v$};
+  \draw[fisica eixo] (0.9,0.9) -- (0.9,7.5)
+    node[above, fisica rotulo] {$E_c$};
+  \draw[fisica grafico, domain=0.9:8.4, samples=100, variable=\x]
+    plot ({\x},{0.9+0.11*(\x-0.9)^2});
+  \coordinate (A) at (4.15,2.06);
+  \coordinate (B) at (7.4,5.55);
+  \fill[elevelaranja] (A) circle (3.2pt);
+  \fill[elevelaranja] (B) circle (3.2pt);
+  \draw[fisica auxiliar] (A) -- (4.15,0.9);
+  \draw[fisica auxiliar] (A) -- (0.9,2.06);
+  \draw[fisica auxiliar] (B) -- (7.4,0.9);
+  \draw[fisica auxiliar] (B) -- (0.9,5.55);
+  \node[fisica medida, below=6pt] at (4.15,0.9) {$v$};
+  \node[fisica medida, below=6pt] at (7.4,0.9) {$2v$};
+  \node[fisica medida, anchor=east] at (0.75,2.06) {$E$};
+  \node[fisica medida, anchor=east] at (0.75,5.55) {$4E$};
+  \node[font=\large\bfseries, text=elevecinza] at (5.0,7.45)
+    {crescimento quadrático};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-nivel-de-referencia-da-energia
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.8) rectangle (11.2,9.8);
+  \node[font=\Large\bfseries, text=eleveazul] at (2.7,9.25) {zero no piso};
+  \draw[fisica superficie] (0.65,1.1) -- (4.75,1.1);
+  \draw[fisica superficie] (0.65,6.25) -- (4.75,6.25);
+  \node[fisica corpo, minimum width=1.45cm, minimum height=0.95cm] at (2.7,6.75) {};
+  \draw[decorate, decoration={brace, amplitude=7pt}, elevelaranja, line width=1pt]
+    (4.15,1.1) -- (4.15,6.25)
+    node[midway, right=11pt, fisica medida] {$h$};
+  \node[fisica rotulo] at (2.7,0.45) {$E_{pg}=0$};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (8.45,9.25) {zero no térreo};
+  \draw[fisica superficie] (6.25,1.1) -- (10.65,1.1);
+  \draw[fisica superficie] (6.25,3.0) -- (10.65,3.0);
+  \draw[fisica superficie] (6.25,6.25) -- (10.65,6.25);
+  \node[fisica corpo, minimum width=1.45cm, minimum height=0.95cm] at (8.45,6.75) {};
+  \draw[decorate, decoration={brace, amplitude=7pt}, elevelaranja, line width=1pt]
+    (9.95,3.0) -- (9.95,6.25)
+    node[midway, right=11pt, fisica medida] {$h'$};
+  \node[fisica rotulo] at (8.45,2.35) {$E_{pg}=0$};
+  \node[font=\large\bfseries, text=elevelaranja] at (5.6,8.05)
+    {valores mudam};
+  \node[font=\large\bfseries, text=elevecinza] at (5.6,-0.25)
+    {a variação entre duas alturas não muda};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-mola-deformada-e-energia
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.0,8.9);
+  \draw[fisica superficie] (0.75,7.7) -- (4.75,7.7);
+  \draw[elevecinza, line width=1.5pt, decorate,
+    decoration={zigzag, segment length=8pt, amplitude=4pt}]
+    (2.75,7.7) -- (2.75,4.8);
+  \node[fisica corpo, minimum width=1.6cm, minimum height=1.0cm] (A)
+    at (2.75,4.3) {};
+  \draw[fisica forca] (A.center) -- ++(0,2.15)
+    node[fisica rotulo, right] {$\vec F_{el}$};
+  \draw[fisica movimento] ($(A.east)+(0.55,0)$) -- ++(0,-1.7)
+    node[fisica rotulo, below] {deformação $x$};
+  \node[font=\large\bfseries, text=elevecinza] at (2.75,1.65)
+    {energia armazenada};
+
+  \draw[fisica eixo] (5.8,1.1) -- (10.15,1.1)
+    node[right, fisica rotulo] {$x$};
+  \draw[fisica eixo] (5.8,1.1) -- (5.8,7.75)
+    node[above, fisica rotulo] {$E_{pe}$};
+  \draw[fisica grafico, domain=5.8:9.75, samples=80, variable=\x]
+    plot ({\x},{1.1+0.38*(\x-5.8)^2});
+  \node[fisica medida] at (8.6,5.95) {$E_{pe}\propto x^2$};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-transformacao-no-balanco
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.2,9.5);
+  \coordinate (O) at (5.35,8.15);
+  \draw[fisica superficie] (2.9,8.15) -- (7.8,8.15);
+  \draw[elevecinza, line width=1.4pt] (O) -- (2.35,4.25);
+  \draw[elevecinza, line width=1.4pt] (O) -- (5.35,2.7);
+  \draw[elevecinza, line width=1.4pt] (O) -- (8.35,4.25);
+  \node[fisica corpo, circle, minimum size=0.85cm] at (2.35,4.25) {};
+  \node[fisica corpo, circle, minimum size=0.85cm] at (5.35,2.7) {};
+  \node[fisica corpo, circle, minimum size=0.85cm] at (8.35,4.25) {};
+  \node[fisica rotulo, align=center] at (1.85,2.65) {$E_p$ máxima\\$E_c$ mínima};
+  \node[fisica rotulo, align=center] at (5.35,0.85) {$E_c$ máxima\\$E_p$ mínima};
+  \node[fisica rotulo, align=center] at (8.85,2.65) {$E_p$ máxima\\$E_c$ mínima};
+  \node[font=\large\bfseries, text=eleveazul] at (5.35,9.05)
+    {energia muda de forma};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-montanha-russa-ideal-e-real
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.1,10.2);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.25,9.65)
+    {modelo ideal};
+  \draw[fisica trajetoria] (0.75,7.75)
+    .. controls (2.1,7.75) and (2.6,4.75) .. (5.25,4.75)
+    .. controls (7.9,4.75) and (8.4,7.75) .. (9.75,7.75);
+  \node[fisica corpo, circle, minimum size=0.65cm] at (1.15,7.75) {};
+  \node[fisica corpo, circle, minimum size=0.65cm] at (9.35,7.75) {};
+  \draw[fisica auxiliar] (0.75,7.75) -- (10.0,7.75);
+  \node[fisica rotulo] at (5.25,4.15) {recupera a altura};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.25,3.15)
+    {sistema real};
+  \draw[fisica trajetoria] (0.75,1.95)
+    .. controls (2.1,1.95) and (2.6,-0.2) .. (5.25,0.15)
+    .. controls (7.5,0.45) and (8.1,1.35) .. (9.75,1.35);
+  \node[fisica corpo, circle, minimum size=0.65cm] at (1.15,1.95) {};
+  \node[fisica corpo, circle, minimum size=0.65cm] at (9.35,1.35) {};
+  \draw[fisica auxiliar] (0.75,1.95) -- (10.0,1.95);
+  \draw[fisica movimento] (6.2,0.45) -- ++(1.25,-0.8)
+    node[fisica rotulo, below right] {calor e som};
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-mesmo-trabalho-potencias-diferentes
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.9,8.5);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.2,7.95)
+    {mesmo trabalho: $W=600\,\mathrm{J}$};
+  \node[fisica corpo, minimum width=2.4cm, minimum height=1.25cm] at (2.45,5.55)
+    {máquina A};
+  \node[fisica corpo, minimum width=2.4cm, minimum height=1.25cm] at (7.95,5.55)
+    {máquina B};
+  \node[fisica rotulo] at (2.45,3.85) {$\Delta t=3\,\mathrm{s}$};
+  \node[fisica rotulo] at (7.95,3.85) {$\Delta t=6\,\mathrm{s}$};
+  \draw[fisica movimento] (2.45,3.15) -- ++(0,-1.3)
+    node[fisica rotulo, below] {$P=200\,\mathrm{W}$};
+  \draw[fisica movimento] (7.95,3.15) -- ++(0,-1.3)
+    node[fisica rotulo, below] {$P=100\,\mathrm{W}$};
+  \node[font=\large\bfseries, text=elevelaranja] at (5.2,0.35)
+    {menor tempo $\Rightarrow$ maior potência};
+\end{tikzpicture}
+
+\end{document}

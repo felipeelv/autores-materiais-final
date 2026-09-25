@@ -1,0 +1,71 @@
+{
+  "versao": 1,
+  "disciplina": "geometria",
+  "ano_serie": "8ano",
+  "titulo_documento": "Transformações geométricas",
+  "slug_documento": "transformacoes-geometricas",
+  "arquivo_markdown": "Geometria/modelos/geometria-8ano-modelo.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-translacao-por-vetor",
+      "pagina": 1,
+      "arquivo": "fig-01-translacao-por-vetor.png",
+      "alt": "Triângulo ABC e sua imagem A linha B linha C linha ligados por deslocamentos paralelos iguais ao vetor v",
+      "aprovada": true,
+      "sha256": "00d3321e963f13e06aaf74affe07bcc03302ad80e9d7d741daaf3fadbdd002a4",
+      "largura_px": 1300,
+      "altura_px": 750,
+      "publicado_sha256": "00d3321e963f13e06aaf74affe07bcc03302ad80e9d7d741daaf3fadbdd002a4",
+      "publicado_commit": "97229137a252b8c787b1b9676ec216693535f626"
+    },
+    {
+      "id": "fig-02-reflexao-por-eixo",
+      "pagina": 2,
+      "arquivo": "fig-02-reflexao-por-eixo.png",
+      "alt": "Triângulo e sua reflexão em lados opostos do eixo e, com segmentos perpendiculares e distâncias correspondentes iguais",
+      "aprovada": true,
+      "sha256": "33b8b4e4ffcba2cc9397e27188e9b524191a423311da5b7dfecbcd57f1a0d87e",
+      "largura_px": 1182,
+      "altura_px": 839,
+      "publicado_sha256": "33b8b4e4ffcba2cc9397e27188e9b524191a423311da5b7dfecbcd57f1a0d87e",
+      "publicado_commit": "97229137a252b8c787b1b9676ec216693535f626"
+    },
+    {
+      "id": "fig-03-rotacao-por-centro",
+      "pagina": 3,
+      "arquivo": "fig-03-rotacao-por-centro.png",
+      "alt": "Triângulo girado em torno do centro O por um ângulo alfa, preservando a distância entre O e pontos correspondentes",
+      "aprovada": true,
+      "sha256": "441d8e5f039778ca559cf1f3c69fa1635c1484820d61e18c7e91601790d54aca",
+      "largura_px": 1075,
+      "altura_px": 981,
+      "publicado_sha256": "441d8e5f039778ca559cf1f3c69fa1635c1484820d61e18c7e91601790d54aca",
+      "publicado_commit": "97229137a252b8c787b1b9676ec216693535f626"
+    },
+    {
+      "id": "fig-04-ordem-da-composicao",
+      "pagina": 4,
+      "arquivo": "fig-04-ordem-da-composicao.png",
+      "alt": "Duas sequências mostram que refletir e depois transladar leva de 1 a 3, enquanto transladar e depois refletir leva de 1 a menos 5",
+      "aprovada": true,
+      "sha256": "2b72b32ccc222eba5f102ce4616699fb97ddb106fb6fe1878f0027e69228e1fb",
+      "largura_px": 1182,
+      "altura_px": 1063,
+      "publicado_sha256": "2b72b32ccc222eba5f102ce4616699fb97ddb106fb6fe1878f0027e69228e1fb",
+      "publicado_commit": "97229137a252b8c787b1b9676ec216693535f626"
+    },
+    {
+      "id": "fig-05-tesselacao-hexagonal",
+      "pagina": 5,
+      "arquivo": "fig-05-tesselacao-hexagonal.png",
+      "alt": "Três hexágonos regulares compartilham um vértice onde três ângulos de 120 graus completam 360 graus sem falha",
+      "aprovada": true,
+      "sha256": "194cde090aecbf74740ad2a24cd4c0ae09254fcacf4460f73c92919bf0e9b16c",
+      "largura_px": 1063,
+      "altura_px": 999,
+      "publicado_sha256": "194cde090aecbf74740ad2a24cd4c0ae09254fcacf4460f73c92919bf0e9b16c",
+      "publicado_commit": "97229137a252b8c787b1b9676ec216693535f626"
+    }
+  ]
+}

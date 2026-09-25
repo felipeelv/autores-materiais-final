@@ -1,0 +1,139 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-matematica-ef1}
+
+\newcommand{\Fulcro}[2]{%
+  \fill[matemazulclaro] ({#1-0.62},{#2-1.05}) --
+    ({#1+0.62},{#2-1.05}) -- (#1,#2) -- cycle;
+  \draw[matematica contorno] ({#1-0.62},{#2-1.05}) --
+    ({#1+0.62},{#2-1.05}) -- (#1,#2) -- cycle;
+}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-balanca-equilibrada-e-desequilibrada
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,-0.10) rectangle (10.60,11.35);
+
+  % Equilíbrio
+  \draw[matematica contorno] (1.55,8.85) -- (9.05,8.85);
+  \draw[matematica contorno] (2.25,8.85) -- (2.25,7.55);
+  \draw[matematica contorno] (8.35,8.85) -- (8.35,7.55);
+  \draw[matematica prato] (0.95,7.55) -- (3.55,7.55);
+  \draw[matematica prato] (7.05,7.55) -- (9.65,7.55);
+  \Fulcro{5.30}{8.85}
+  \foreach \x/\y in {1.75/7.93,2.25/8.20,2.75/7.93}
+    \fill[matemalaranja] (\x,\y) circle (0.23);
+  \fill[matemaverde] (8.35,8.02) ellipse (0.48 and 0.34);
+  \node[matematica rotulo] at (2.25,6.92) {3 laranjas};
+  \node[matematica rotulo] at (8.35,6.92) {1 mamão};
+  \node[font=\Large\bfseries,text=matemaverde] at (5.30,10.15)
+    {massas iguais};
+
+  % Desequilíbrio
+  \draw[matematica contorno] (1.55,3.25) -- (9.05,4.65);
+  \draw[matematica contorno] (2.25,3.38) -- (2.25,1.95);
+  \draw[matematica contorno] (8.35,4.52) -- (8.35,3.10);
+  \draw[matematica prato] (0.95,1.95) -- (3.55,1.95);
+  \draw[matematica prato] (7.05,3.10) -- (9.65,3.10);
+  \Fulcro{5.30}{3.95}
+  \foreach \x/\y in {1.58/2.31,2.02/2.56,2.46/2.31,2.90/2.56,1.80/2.82,2.68/2.82}
+    \fill[matemalaranja] (\x,\y) circle (0.21);
+  \fill[matemaverde] (8.35,3.55) ellipse (0.48 and 0.34);
+  \node[matematica rotulo] at (2.25,1.30) {mais peso};
+  \node[matematica rotulo] at (8.35,2.48) {mesma massa};
+  \node[font=\Large\bfseries,text=matemavermelho] at (5.30,5.50)
+    {um lado mudou};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-dois-membros-da-igualdade
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,-0.10) rectangle (10.60,6.95);
+
+  \draw[matematica contorno] (1.55,4.25) -- (9.05,4.25);
+  \draw[matematica contorno] (2.25,4.25) -- (0.95,2.75);
+  \draw[matematica contorno] (2.25,4.25) -- (3.55,2.75);
+  \draw[matematica contorno] (8.35,4.25) -- (7.05,2.75);
+  \draw[matematica contorno] (8.35,4.25) -- (9.65,2.75);
+  \draw[matematica prato] (0.95,2.75) -- (3.55,2.75);
+  \draw[matematica prato] (7.05,2.75) -- (9.65,2.75);
+  \Fulcro{5.30}{4.25}
+
+  \node[matematica valor] at (2.25,3.30) {$3+4$};
+  \node[matematica valor] at (8.35,3.30) {$7$};
+  \node[font=\Huge\bfseries,text=matemalaranja] at (5.30,5.25) {$=$};
+  \node[font=\large\bfseries,text=matemacinza] at (2.25,1.90)
+    {primeiro membro};
+  \node[font=\large\bfseries,text=matemacinza] at (8.35,1.90)
+    {segundo membro};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-mesma-adicao-nos-dois-membros
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,-0.10) rectangle (10.60,11.10);
+
+  % Antes
+  \node[font=\Large\bfseries,text=matemacinza] at (5.30,10.42) {antes};
+  \draw[matematica contorno] (1.55,8.55) -- (9.05,8.55);
+  \draw[matematica contorno] (2.25,8.55) -- (0.95,7.25);
+  \draw[matematica contorno] (2.25,8.55) -- (3.55,7.25);
+  \draw[matematica contorno] (8.35,8.55) -- (7.05,7.25);
+  \draw[matematica contorno] (8.35,8.55) -- (9.65,7.25);
+  \draw[matematica prato] (0.95,7.25) -- (3.55,7.25);
+  \draw[matematica prato] (7.05,7.25) -- (9.65,7.25);
+  \Fulcro{5.30}{8.55}
+  \node[matematica valor] at (2.25,7.82) {$9$};
+  \node[matematica valor] at (8.35,7.82) {$9$};
+
+  % Depois
+  \node[font=\Large\bfseries,text=matemalaranja] at (5.30,5.05)
+    {depois de somar 3 aos dois lados};
+  \draw[matematica contorno] (1.55,3.20) -- (9.05,3.20);
+  \draw[matematica contorno] (2.25,3.20) -- (0.95,1.90);
+  \draw[matematica contorno] (2.25,3.20) -- (3.55,1.90);
+  \draw[matematica contorno] (8.35,3.20) -- (7.05,1.90);
+  \draw[matematica contorno] (8.35,3.20) -- (9.65,1.90);
+  \draw[matematica prato] (0.95,1.90) -- (3.55,1.90);
+  \draw[matematica prato] (7.05,1.90) -- (9.65,1.90);
+  \Fulcro{5.30}{3.20}
+  \node[matematica valor] at (2.25,2.47) {$9+3$};
+  \node[matematica valor] at (8.35,2.47) {$9+3$};
+  \node[font=\Large\bfseries,text=matemaverde] at (5.30,0.52)
+    {$12=12$};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-igualdade-verdadeira-e-falsa
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,-0.10) rectangle (10.60,11.35);
+
+  % Verdadeira
+  \node[font=\Large\bfseries,text=matemaverde] at (5.30,10.35)
+    {igualdade verdadeira};
+  \draw[matematica contorno] (1.55,8.55) -- (9.05,8.55);
+  \draw[matematica contorno] (2.25,8.55) -- (0.95,7.25);
+  \draw[matematica contorno] (2.25,8.55) -- (3.55,7.25);
+  \draw[matematica contorno] (8.35,8.55) -- (7.05,7.25);
+  \draw[matematica contorno] (8.35,8.55) -- (9.65,7.25);
+  \draw[matematica prato] (0.95,7.25) -- (3.55,7.25);
+  \draw[matematica prato] (7.05,7.25) -- (9.65,7.25);
+  \Fulcro{5.30}{8.55}
+  \node[matematica valor] at (2.25,7.82) {$12$};
+  \node[matematica valor] at (8.35,7.82) {$12$};
+
+  % Falsa
+  \node[font=\Large\bfseries,text=matemavermelho] at (5.30,5.55)
+    {igualdade falsa};
+  \draw[matematica contorno] (1.55,3.25) -- (9.05,4.65);
+  \draw[matematica contorno] (2.25,3.38) -- (0.95,1.95);
+  \draw[matematica contorno] (2.25,3.38) -- (3.55,1.95);
+  \draw[matematica contorno] (8.35,4.52) -- (7.05,3.10);
+  \draw[matematica contorno] (8.35,4.52) -- (9.65,3.10);
+  \draw[matematica prato] (0.95,1.95) -- (3.55,1.95);
+  \draw[matematica prato] (7.05,3.10) -- (9.65,3.10);
+  \Fulcro{5.30}{3.95}
+  \node[matematica valor] at (2.25,2.50) {$9$};
+  \node[matematica valor] at (8.35,3.65) {$8$};
+  \node[font=\Large\bfseries,text=matemavermelho] at (5.30,0.45)
+    {$9\neq8$};
+\end{tikzpicture}
+
+\end{document}

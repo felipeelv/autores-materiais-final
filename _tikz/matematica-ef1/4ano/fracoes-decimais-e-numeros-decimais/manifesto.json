@@ -1,0 +1,47 @@
+{
+  "versao": 1,
+  "disciplina": "matematica-ef1",
+  "ano_serie": "4ano",
+  "titulo_documento": "Frações decimais e números decimais",
+  "slug_documento": "fracoes-decimais-e-numeros-decimais",
+  "arquivo_markdown": "Matematica EF1/_staging-3bim/4ano/Frações decimais e números decimais.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-decimos-e-centesimos",
+      "pagina": 1,
+      "arquivo": "fig-01-decimos-e-centesimos.png",
+      "alt": "Uma barra dividida em dez partes e uma malha dividida em cem partes representam décimos e centésimos",
+      "aprovada": true,
+      "sha256": "971d579f007518219540ed51ada45fd119a213518561a2abc5374dff778e3cf5",
+      "largura_px": 990,
+      "altura_px": 1126,
+      "publicado_sha256": "971d579f007518219540ed51ada45fd119a213518561a2abc5374dff778e3cf5",
+      "publicado_commit": "e83a45b33a633fc510b3ea343d686f3f827ecc92"
+    },
+    {
+      "id": "fig-02-fracao-e-escrita-decimal",
+      "pagina": 2,
+      "arquivo": "fig-02-fracao-e-escrita-decimal.png",
+      "alt": "Um décimo e um centésimo aparecem como parte pintada, fração e número decimal",
+      "aprovada": true,
+      "sha256": "039120fa0bea8f43f67f006b08af04015d6a4486ba4d87fd19545df79d2d2a97",
+      "largura_px": 1223,
+      "altura_px": 1016,
+      "publicado_sha256": "039120fa0bea8f43f67f006b08af04015d6a4486ba4d87fd19545df79d2d2a97",
+      "publicado_commit": "e83a45b33a633fc510b3ea343d686f3f827ecc92"
+    },
+    {
+      "id": "fig-03-zeros-na-escrita-decimal",
+      "pagina": 3,
+      "arquivo": "fig-03-zeros-na-escrita-decimal.png",
+      "alt": "Malhas mostram que cinco décimos e cinquenta centésimos ocupam a mesma área",
+      "aprovada": true,
+      "sha256": "8e74a850f1bd7fa43c9b35467748f5de34a2731d09ae862e1db2fd20b299ae05",
+      "largura_px": 1365,
+      "altura_px": 839,
+      "publicado_sha256": "8e74a850f1bd7fa43c9b35467748f5de34a2731d09ae862e1db2fd20b299ae05",
+      "publicado_commit": "e83a45b33a633fc510b3ea343d686f3f827ecc92"
+    }
+  ]
+}

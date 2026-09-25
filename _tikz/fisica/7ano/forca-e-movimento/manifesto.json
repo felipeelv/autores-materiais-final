@@ -1,0 +1,59 @@
+{
+  "versao": 1,
+  "disciplina": "fisica",
+  "ano_serie": "7ano",
+  "titulo_documento": "Força e movimento",
+  "slug_documento": "forca-e-movimento",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Fisica/7ano/fisica-7ano-3bim-cap2.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-vetor-forca-e-suas-informacoes",
+      "pagina": 1,
+      "arquivo": "fig-01-vetor-forca-e-suas-informacoes.png",
+      "alt": "Vetor de força com intensidade, direção e sentido identificados separadamente",
+      "aprovada": true,
+      "sha256": "6eebce3a49ad3642befe446b31f260497bc2563c0e5837dd8ddc87fbc8ea3e35",
+      "largura_px": 1312,
+      "altura_px": 945,
+      "publicado_sha256": "6eebce3a49ad3642befe446b31f260497bc2563c0e5837dd8ddc87fbc8ea3e35",
+      "publicado_commit": "add0adbe7e3a2f36b3c459a31108a748d4157126"
+    },
+    {
+      "id": "fig-02-normal-perpendicular-a-superficie",
+      "pagina": 2,
+      "arquivo": "fig-02-normal-perpendicular-a-superficie.png",
+      "alt": "Blocos em piso e rampa com vetores normais perpendiculares às superfícies",
+      "aprovada": true,
+      "sha256": "86e3160d7982764d9c49e92079067a03b65e3cfb6b205be2e6dfab53a0db257f",
+      "largura_px": 1347,
+      "altura_px": 1312,
+      "publicado_sha256": "86e3160d7982764d9c49e92079067a03b65e3cfb6b205be2e6dfab53a0db257f",
+      "publicado_commit": "add0adbe7e3a2f36b3c459a31108a748d4157126"
+    },
+    {
+      "id": "fig-03-equilibrio-do-copo-na-mesa",
+      "pagina": 3,
+      "arquivo": "fig-03-equilibrio-do-copo-na-mesa.png",
+      "alt": "Copo isolado com peso para baixo e normal de mesmo módulo para cima",
+      "aprovada": true,
+      "sha256": "fbf4c7cfe376c3a3941d8b10dfb21295878b99d4ea4799818118c09724cae0b4",
+      "largura_px": 1134,
+      "altura_px": 1134,
+      "publicado_sha256": "fbf4c7cfe376c3a3941d8b10dfb21295878b99d4ea4799818118c09724cae0b4",
+      "publicado_commit": "add0adbe7e3a2f36b3c459a31108a748d4157126"
+    },
+    {
+      "id": "fig-04-resultante-muda-a-velocidade",
+      "pagina": 4,
+      "arquivo": "fig-04-resultante-muda-a-velocidade.png",
+      "alt": "Quatro cenas vetoriais mostrando iniciar, acelerar, frear e mudar a direção do movimento",
+      "aprovada": true,
+      "sha256": "abf8c7fb29f2d0762f3c380799d7a03b4ec565f492c43ecfb7e8e108184001fe",
+      "largura_px": 1347,
+      "altura_px": 1323,
+      "publicado_sha256": "abf8c7fb29f2d0762f3c380799d7a03b4ec565f492c43ecfb7e8e108184001fe",
+      "publicado_commit": "add0adbe7e3a2f36b3c459a31108a748d4157126"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{eleve-geometria}[2026/07/22 Estilo TikZ do Colegio Eleve]
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage{lmodern}
+\RequirePackage{tikz}
+\usetikzlibrary{angles,arrows.meta,calc,decorations.pathreplacing,intersections,patterns,quotes}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{eleveazul}{HTML}{245B78}
+\definecolor{eleveazulclaro}{HTML}{DCEAF1}
+\definecolor{elevelaranja}{HTML}{D97732}
+\definecolor{elevecinza}{HTML}{52606D}
+\definecolor{elevecinzaclaro}{HTML}{E9EEF2}
+
+\tikzset{
+  eleve figura/.style={
+    >=Stealth,
+    line cap=round,
+    line join=round,
+    font=\sffamily,
+    every node/.style={font=\sffamily}
+  },
+  eleve aresta/.style={draw=eleveazul, line width=1.15pt},
+  eleve destaque/.style={draw=elevelaranja, line width=1.45pt},
+  eleve auxiliar/.style={draw=elevecinza, dashed, line width=0.8pt},
+  eleve preenchimento/.style={fill=eleveazulclaro, draw=eleveazul, line width=1.15pt},
+  eleve ponto/.style={circle, fill=eleveazul, inner sep=1.7pt},
+  eleve rotulo/.style={text=elevecinza, inner sep=2pt},
+  eleve medida/.style={text=elevelaranja, inner sep=1.5pt}
+}
+
+\newcommand{\EleveVertice}[3]{\fill[eleveazul] (#1) circle (1.7pt) node[eleve rotulo,#2] {#3};}

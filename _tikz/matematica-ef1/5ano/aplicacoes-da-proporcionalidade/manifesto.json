@@ -1,0 +1,35 @@
+{
+  "versao": 1,
+  "disciplina": "matematica-ef1",
+  "ano_serie": "5ano",
+  "titulo_documento": "Aplicações da proporcionalidade",
+  "slug_documento": "aplicacoes-da-proporcionalidade",
+  "arquivo_markdown": "Matematica EF1/_staging-3bim/5ano/Aplicações da proporcionalidade.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-receita-ampliada",
+      "pagina": 1,
+      "arquivo": "fig-01-receita-ampliada.png",
+      "alt": "Ingredientes de uma receita para quatro pessoas aparecem triplicados para doze pessoas",
+      "aprovada": true,
+      "sha256": "bf523ac5d302dc4ea8239e3af6b87d07836d8d427ae7689a3491b959853605a8",
+      "largura_px": 1495,
+      "altura_px": 957,
+      "publicado_sha256": "bf523ac5d302dc4ea8239e3af6b87d07836d8d427ae7689a3491b959853605a8",
+      "publicado_commit": "cbdd0caa5da5a3ee2d948a903d94f453087a9f6c"
+    },
+    {
+      "id": "fig-02-escala-de-mapa-e-planta",
+      "pagina": 2,
+      "arquivo": "fig-02-escala-de-mapa-e-planta.png",
+      "alt": "Segmentos mostram um centímetro do mapa equivalente a cinquenta quilômetros e um centímetro da planta equivalente a um metro",
+      "aprovada": true,
+      "sha256": "73d191fcb3df372e525cb022ed8e070f206ef991ae4d22ddf7b5639ea5fefe7b",
+      "largura_px": 1465,
+      "altura_px": 863,
+      "publicado_sha256": "73d191fcb3df372e525cb022ed8e070f206ef991ae4d22ddf7b5639ea5fefe7b",
+      "publicado_commit": "cbdd0caa5da5a3ee2d948a903d94f453087a9f6c"
+    }
+  ]
+}

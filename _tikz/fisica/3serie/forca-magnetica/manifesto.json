@@ -1,0 +1,71 @@
+{
+  "versao": 1,
+  "disciplina": "fisica",
+  "ano_serie": "3serie",
+  "titulo_documento": "Força magnética",
+  "slug_documento": "forca-magnetica",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Fisica/3serie/fisica-3serie-3bim-cap2.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-regra-vetor-velocidade-campo-forca",
+      "pagina": 1,
+      "arquivo": "fig-01-regra-vetor-velocidade-campo-forca.png",
+      "alt": "Vetores velocidade, campo e força magnética mutuamente perpendiculares para carga positiva",
+      "aprovada": true,
+      "sha256": "13caa205b67c2b1d17a3c9651aa931dc39e7d4a1bf35c2d42c6d7b15ea39e09e",
+      "largura_px": 1252,
+      "altura_px": 1123,
+      "publicado_sha256": "13caa205b67c2b1d17a3c9651aa931dc39e7d4a1bf35c2d42c6d7b15ea39e09e",
+      "publicado_commit": "94efde9d3afdbc48ced0c610c17f2e0fecde9a8d"
+    },
+    {
+      "id": "fig-02-casos-angulares-da-forca-magnetica",
+      "pagina": 2,
+      "arquivo": "fig-02-casos-angulares-da-forca-magnetica.png",
+      "alt": "Carga com velocidade paralela e perpendicular ao campo mostrando força nula e máxima",
+      "aprovada": true,
+      "sha256": "bb3be952e943eef481213784ecd2d9bb9c951bf7e4231a8bedc293ebc15f2f94",
+      "largura_px": 1371,
+      "altura_px": 1276,
+      "publicado_sha256": "bb3be952e943eef481213784ecd2d9bb9c951bf7e4231a8bedc293ebc15f2f94",
+      "publicado_commit": "94efde9d3afdbc48ced0c610c17f2e0fecde9a8d"
+    },
+    {
+      "id": "fig-03-forca-sobre-condutor",
+      "pagina": 3,
+      "arquivo": "fig-03-forca-sobre-condutor.png",
+      "alt": "Fio com corrente imerso em campo uniforme e vetor força perpendicular",
+      "aprovada": true,
+      "sha256": "5b8c7e8f55fe652ee3c899481690954eae004901395d4d93578809891d1a08e5",
+      "largura_px": 1347,
+      "altura_px": 1146,
+      "publicado_sha256": "5b8c7e8f55fe652ee3c899481690954eae004901395d4d93578809891d1a08e5",
+      "publicado_commit": "94efde9d3afdbc48ced0c610c17f2e0fecde9a8d"
+    },
+    {
+      "id": "fig-04-binario-na-espira",
+      "pagina": 4,
+      "arquivo": "fig-04-binario-na-espira.png",
+      "alt": "Espira retangular com forças opostas em lados distintos produzindo rotação",
+      "aprovada": true,
+      "sha256": "c158e5b9cd3d9cd34d58caa740a5bf77cba23edba1a34a89133fd26097cdeb1c",
+      "largura_px": 1371,
+      "altura_px": 1170,
+      "publicado_sha256": "c158e5b9cd3d9cd34d58caa740a5bf77cba23edba1a34a89133fd26097cdeb1c",
+      "publicado_commit": "94efde9d3afdbc48ced0c610c17f2e0fecde9a8d"
+    },
+    {
+      "id": "fig-05-trajetorias-circular-e-helicoidal",
+      "pagina": 5,
+      "arquivo": "fig-05-trajetorias-circular-e-helicoidal.png",
+      "alt": "Comparação entre trajetória circular e helicoidal de cargas em campo uniforme",
+      "aprovada": true,
+      "sha256": "26c1eafbbc23e30df1d18eda997c8f072c5ee2595bbcf6add114f93bad082959",
+      "largura_px": 1418,
+      "altura_px": 1323,
+      "publicado_sha256": "26c1eafbbc23e30df1d18eda997c8f072c5ee2595bbcf6add114f93bad082959",
+      "publicado_commit": "94efde9d3afdbc48ced0c610c17f2e0fecde9a8d"
+    }
+  ]
+}

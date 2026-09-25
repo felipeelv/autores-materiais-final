@@ -1,0 +1,279 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-geometria}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-definicao-por-diferenca-de-distancias
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.10,-0.10) rectangle (10.10,6.50);
+
+  \coordinate (F1) at (3.25,3.10);
+  \coordinate (F2) at (6.75,3.10);
+  \coordinate (P) at (8.25,4.65);
+  \coordinate (Q) at (1.75,1.55);
+
+  \draw[eleve aresta, line width=1.8pt]
+    (2.35,3.10) .. controls (2.18,4.20) and (1.42,5.35) .. (0.45,6.15);
+  \draw[eleve aresta, line width=1.8pt]
+    (2.35,3.10) .. controls (2.18,2.00) and (1.42,0.85) .. (0.45,0.05);
+  \draw[eleve aresta, line width=1.8pt]
+    (7.65,3.10) .. controls (7.82,4.20) and (8.58,5.35) .. (9.55,6.15);
+  \draw[eleve aresta, line width=1.8pt]
+    (7.65,3.10) .. controls (7.82,2.00) and (8.58,0.85) .. (9.55,0.05);
+
+  \draw[eleve auxiliar, line width=1.1pt] (P) -- (F1);
+  \draw[eleve destaque, dashed, line width=1.4pt] (P) -- (F2);
+  \draw[eleve auxiliar, line width=1.1pt] (Q) -- (F2);
+  \draw[eleve destaque, dashed, line width=1.4pt] (Q) -- (F1);
+  \fill[eleveazul] (F1) circle (2.4pt) node[below, font=\large\bfseries] {$F_1$};
+  \fill[eleveazul] (F2) circle (2.4pt) node[below, font=\large\bfseries] {$F_2$};
+  \fill[elevelaranja] (P) circle (2.6pt) node[above left, font=\large\bfseries] {$P$};
+  \fill[elevelaranja] (Q) circle (2.6pt) node[below right, font=\large\bfseries] {$Q$};
+  \node[font=\large\bfseries, text=elevecinza] at (5.00,5.85)
+    {mesma diferença de distâncias};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-elementos-da-hiperbole
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (10.35,7.30);
+
+  \coordinate (O) at (5.10,3.65);
+  \coordinate (V1) at (3.25,3.65);
+  \coordinate (V2) at (6.95,3.65);
+  \coordinate (F1) at (2.25,3.65);
+  \coordinate (F2) at (7.95,3.65);
+
+  \draw[-Stealth, elevecinza, line width=1.1pt] (0.35,3.65) -- (9.85,3.65)
+    node[right, font=\large] {$x$};
+  \draw[-Stealth, elevecinza, line width=1.1pt] (5.10,0.35) -- (5.10,6.95)
+    node[above, font=\large] {$y$};
+  \draw[eleve auxiliar] (3.25,1.45) rectangle (6.95,5.85);
+
+  \draw[eleve aresta, line width=1.9pt]
+    (V1) .. controls (3.02,4.55) and (2.10,5.80) .. (0.62,6.60);
+  \draw[eleve aresta, line width=1.9pt]
+    (V1) .. controls (3.02,2.75) and (2.10,1.50) .. (0.62,0.70);
+  \draw[eleve aresta, line width=1.9pt]
+    (V2) .. controls (7.18,4.55) and (8.10,5.80) .. (9.58,6.60);
+  \draw[eleve aresta, line width=1.9pt]
+    (V2) .. controls (7.18,2.75) and (8.10,1.50) .. (9.58,0.70);
+
+  \fill[eleveazul] (O) circle (2.3pt) node[above left, font=\large\bfseries] {$O$};
+  \fill[elevelaranja] (V1) circle (2.4pt) node[above left, font=\large\bfseries] {$V_1$};
+  \fill[elevelaranja] (V2) circle (2.4pt) node[above right, font=\large\bfseries] {$V_2$};
+  \fill[eleveazul] (F1) circle (2.4pt) node[below, font=\large\bfseries] {$F_1$};
+  \fill[eleveazul] (F2) circle (2.4pt) node[above, font=\large\bfseries] {$F_2$};
+
+  % Parâmetros em linhas de medida próprias, fora dos rótulos dos pontos
+  \draw[eleve auxiliar] (5.10,3.65) -- (5.10,2.82);
+  \draw[eleve auxiliar] (6.95,3.65) -- (6.95,2.82);
+  \draw[eleve destaque, |-|, line width=1.4pt] (5.10,2.90) -- (6.95,2.90)
+    node[midway, below=6pt, font=\large\bfseries] {$a$};
+  \draw[eleve destaque, |-|, line width=1.4pt] (6.95,3.65) -- (6.95,5.85)
+    node[midway, left=6pt, font=\large\bfseries] {$b$};
+  \node[font=\large\bfseries, text=eleveazul] at (7.20,0.38)
+    {$OF_2=c$};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-hiperbole-horizontal-e-assintotas
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (9.65,7.25);
+
+  \coordinate (O) at (4.75,3.55);
+  \draw[-Stealth, elevecinza, line width=1.1pt] (0.25,3.55) -- (9.25,3.55)
+    node[right, font=\large] {$x$};
+  \draw[-Stealth, elevecinza, line width=1.1pt] (4.75,0.25) -- (4.75,6.85)
+    node[above, font=\large] {$y$};
+  \draw[eleve auxiliar, line width=1.2pt] (2.65,1.45) rectangle (6.85,5.65);
+  \draw[eleve destaque, dashed, line width=1.4pt] (1.55,0.35) -- (7.95,6.75);
+  \draw[eleve destaque, dashed, line width=1.4pt] (1.55,6.75) -- (7.95,0.35);
+
+  \draw[eleve aresta, line width=2pt]
+    (2.65,3.55) .. controls (2.42,4.50) and (1.58,5.78) .. (0.38,6.50);
+  \draw[eleve aresta, line width=2pt]
+    (2.65,3.55) .. controls (2.42,2.60) and (1.58,1.32) .. (0.38,0.60);
+  \draw[eleve aresta, line width=2pt]
+    (6.85,3.55) .. controls (7.08,4.50) and (7.92,5.78) .. (9.12,6.50);
+  \draw[eleve aresta, line width=2pt]
+    (6.85,3.55) .. controls (7.08,2.60) and (7.92,1.32) .. (9.12,0.60);
+
+  \fill[elevelaranja] (2.65,3.55) circle (2.4pt);
+  \fill[elevelaranja] (6.85,3.55) circle (2.4pt);
+  \fill[eleveazul] (O) circle (2.2pt) node[below left, font=\large\bfseries] {$O$};
+  \node[font=\large\bfseries, text=elevelaranja] at (4.75,6.55)
+    {assíntotas};
+  \node[font=\large\bfseries, text=elevecinza] at (4.75,0.05)
+    {abertura horizontal};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-hiperbole-vertical-e-assintotas
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (7.70,9.30);
+
+  \coordinate (O) at (3.75,4.55);
+  \draw[-Stealth, elevecinza, line width=1.1pt] (0.25,4.55) -- (7.25,4.55)
+    node[right, font=\large] {$x$};
+  \draw[-Stealth, elevecinza, line width=1.1pt] (3.75,0.25) -- (3.75,8.85)
+    node[above, font=\large] {$y$};
+  \draw[eleve auxiliar, line width=1.2pt] (1.55,2.55) rectangle (5.95,6.55);
+  \draw[eleve destaque, dashed, line width=1.4pt] (0.48,1.58) -- (7.02,7.52);
+  \draw[eleve destaque, dashed, line width=1.4pt] (0.48,7.52) -- (7.02,1.58);
+
+  \draw[eleve aresta, line width=2pt]
+    (3.75,6.55) .. controls (4.70,6.78) and (5.98,7.62) .. (6.70,8.68);
+  \draw[eleve aresta, line width=2pt]
+    (3.75,6.55) .. controls (2.80,6.78) and (1.52,7.62) .. (0.80,8.68);
+  \draw[eleve aresta, line width=2pt]
+    (3.75,2.55) .. controls (4.70,2.32) and (5.98,1.48) .. (6.70,0.42);
+  \draw[eleve aresta, line width=2pt]
+    (3.75,2.55) .. controls (2.80,2.32) and (1.52,1.48) .. (0.80,0.42);
+
+  \fill[elevelaranja] (3.75,6.55) circle (2.4pt);
+  \fill[elevelaranja] (3.75,2.55) circle (2.4pt);
+  \fill[eleveazul] (O) circle (2.2pt) node[below left, font=\large\bfseries] {$O$};
+  \node[font=\large\bfseries, text=elevelaranja] at (5.98,7.98)
+    {assíntotas};
+  \node[font=\large\bfseries, text=elevecinza] at (1.85,9.05)
+    {abertura vertical};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-comparacao-de-excentricidades
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (10.45,6.90);
+
+  % Menor excentricidade
+  \draw[-Stealth, elevecinza, line width=1pt] (0.35,2.95) -- (4.75,2.95);
+  \draw[-Stealth, elevecinza, line width=1pt] (2.55,0.45) -- (2.55,5.45);
+  \draw[eleve auxiliar] (0.75,1.55) -- (4.35,4.35);
+  \draw[eleve auxiliar] (0.75,4.35) -- (4.35,1.55);
+  \draw[eleve aresta, line width=1.9pt]
+    (1.45,2.95) .. controls (1.30,3.55) and (0.82,4.25) .. (0.30,4.70);
+  \draw[eleve aresta, line width=1.9pt]
+    (1.45,2.95) .. controls (1.30,2.35) and (0.82,1.65) .. (0.30,1.20);
+  \draw[eleve aresta, line width=1.9pt]
+    (3.65,2.95) .. controls (3.80,3.55) and (4.28,4.25) .. (4.80,4.70);
+  \draw[eleve aresta, line width=1.9pt]
+    (3.65,2.95) .. controls (3.80,2.35) and (4.28,1.65) .. (4.80,1.20);
+  \node[font=\Large\bfseries, text=eleveazul] at (2.55,6.25) {$e=1{,}2$};
+  \node[font=\large\bfseries, text=elevecinza] at (2.55,5.75)
+    {abertura menor};
+
+  % Maior excentricidade
+  \draw[-Stealth, elevecinza, line width=1pt] (5.65,2.95) -- (10.05,2.95);
+  \draw[-Stealth, elevecinza, line width=1pt] (7.85,0.45) -- (7.85,5.45);
+  \draw[eleve auxiliar] (6.55,0.55) -- (9.15,5.35);
+  \draw[eleve auxiliar] (6.55,5.35) -- (9.15,0.55);
+  \draw[eleve destaque, line width=1.9pt]
+    (6.75,2.95) .. controls (6.62,4.10) and (6.10,5.05) .. (5.72,5.38);
+  \draw[eleve destaque, line width=1.9pt]
+    (6.75,2.95) .. controls (6.62,1.80) and (6.10,0.85) .. (5.72,0.52);
+  \draw[eleve destaque, line width=1.9pt]
+    (8.95,2.95) .. controls (9.08,4.10) and (9.60,5.05) .. (9.98,5.38);
+  \draw[eleve destaque, line width=1.9pt]
+    (8.95,2.95) .. controls (9.08,1.80) and (9.60,0.85) .. (9.98,0.52);
+  \node[font=\Large\bfseries, text=elevelaranja] at (7.85,6.25) {$e=2{,}0$};
+  \node[font=\large\bfseries, text=elevecinza] at (7.85,5.75)
+    {abertura maior};
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-hiperbole-equilatera
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (8.55,8.55);
+
+  \coordinate (O) at (4.20,4.20);
+  \draw[-Stealth, elevecinza, line width=1.1pt] (0.30,4.20) -- (8.10,4.20)
+    node[right, font=\large] {$x$};
+  \draw[-Stealth, elevecinza, line width=1.1pt] (4.20,0.30) -- (4.20,8.10)
+    node[above, font=\large] {$y$};
+  \draw[eleve auxiliar, line width=1.2pt] (2.05,2.05) rectangle (6.35,6.35);
+  \draw[eleve destaque, dashed, line width=1.5pt] (0.55,0.55) -- (7.85,7.85);
+  \draw[eleve destaque, dashed, line width=1.5pt] (0.55,7.85) -- (7.85,0.55);
+
+  \draw[eleve aresta, line width=2pt]
+    (2.05,4.20) .. controls (1.85,5.18) and (1.10,6.45) .. (0.35,7.15);
+  \draw[eleve aresta, line width=2pt]
+    (2.05,4.20) .. controls (1.85,3.22) and (1.10,1.95) .. (0.35,1.25);
+  \draw[eleve aresta, line width=2pt]
+    (6.35,4.20) .. controls (6.55,5.18) and (7.30,6.45) .. (8.05,7.15);
+  \draw[eleve aresta, line width=2pt]
+    (6.35,4.20) .. controls (6.55,3.22) and (7.30,1.95) .. (8.05,1.25);
+  \draw[eleve destaque, line width=1.4pt] (4.20,4.75) -- (4.75,4.75) -- (4.75,4.20);
+  \fill[eleveazul] (O) circle (2.3pt);
+  \node[font=\Large\bfseries, text=eleveazul] at (1.25,8.05) {$a=b$};
+  \node[font=\large\bfseries, text=elevecinza] at (4.20,0.05)
+    {retângulo fundamental quadrado};
+\end{tikzpicture}
+
+% FIGURA 7 — fig-07-uma-hiperbole-de-localizacao
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (10.20,7.20);
+
+  \coordinate (S1) at (2.35,2.15);
+  \coordinate (S2) at (6.25,2.15);
+  \coordinate (P) at (7.85,4.85);
+  \draw[elevecinzaclaro, line width=1.2pt] (0.25,0.55) grid[xstep=1.2,ystep=1.0] (9.75,6.60);
+
+  \draw[eleve destaque, line width=2.2pt]
+    (6.90,2.15) .. controls (7.05,3.22) and (7.55,4.30) .. (8.28,5.30)
+    .. controls (8.62,5.75) and (9.02,6.15) .. (9.58,6.53);
+  \draw[eleve destaque, line width=2.2pt]
+    (6.90,2.15) .. controls (7.05,1.42) and (7.55,0.82) .. (8.35,0.35);
+
+  \draw[eleve auxiliar, line width=1.2pt] (P) -- (S1);
+  \draw[eleve auxiliar, line width=1.2pt] (P) -- (S2);
+  \node[draw=eleveazul, fill=eleveazulclaro, rounded corners=2pt, line width=1.4pt,
+    minimum width=1.05cm, minimum height=.72cm, font=\large\bfseries,
+    text=eleveazul] at (S1) {$S_1$};
+  \node[draw=eleveazul, fill=eleveazulclaro, rounded corners=2pt, line width=1.4pt,
+    minimum width=1.05cm, minimum height=.72cm, font=\large\bfseries,
+    text=eleveazul] at (S2) {$S_2$};
+  \fill[elevelaranja] (P) circle (2.8pt)
+    node[above left, font=\Large\bfseries, text=elevelaranja] {$P$};
+  \node[font=\large\bfseries, text=elevecinza] at (4.30,6.55)
+    {um ramo possível para o receptor};
+  \node[font=\large\bfseries, text=elevelaranja] at (4.30,0.20)
+    {diferença de chegada constante};
+\end{tikzpicture}
+
+% FIGURA 8 — fig-08-intersecao-de-duas-hiperboles
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (10.35,8.00);
+
+  \draw[elevecinzaclaro, line width=1.2pt] (0.25,0.45) grid[xstep=1.2,ystep=1.0] (9.85,7.45);
+  \draw[eleve auxiliar] (7.50,5.80) -- (2.20,2.65);
+  \draw[eleve auxiliar] (7.50,5.80) -- (6.25,2.65);
+  \draw[eleve auxiliar] (7.50,5.80) -- (4.80,1.00);
+  \draw[eleve auxiliar] (7.50,5.80) -- (4.80,4.85);
+
+  % Primeira dupla e seu lugar hiperbólico
+  \node[draw=eleveazul, fill=eleveazulclaro, rounded corners=2pt, line width=1.4pt,
+    minimum width=1.05cm, minimum height=.70cm, font=\large\bfseries,
+    text=eleveazul] at (2.20,2.65) {$A_1$};
+  \node[draw=eleveazul, fill=eleveazulclaro, rounded corners=2pt, line width=1.4pt,
+    minimum width=1.05cm, minimum height=.70cm, font=\large\bfseries,
+    text=eleveazul] at (6.25,2.65) {$A_2$};
+  \draw[eleve aresta, line width=2.2pt]
+    (6.92,2.65) .. controls (7.05,4.15) and (6.98,5.15) .. (7.50,5.80)
+    .. controls (7.92,6.30) and (8.55,6.78) .. (9.55,7.20);
+  \draw[eleve aresta, line width=2.2pt]
+    (6.92,2.65) .. controls (7.10,1.68) and (7.62,0.92) .. (8.50,0.45);
+
+  % Segunda dupla e seu lugar hiperbólico
+  \node[draw=elevelaranja, fill=orange!18, circle, line width=1.5pt,
+    minimum size=.86cm, font=\large\bfseries, text=elevelaranja] at (4.80,1.00) {$B_1$};
+  \node[draw=elevelaranja, fill=orange!18, circle, line width=1.5pt,
+    minimum size=.86cm, font=\large\bfseries, text=elevelaranja] at (4.80,4.85) {$B_2$};
+  \draw[eleve destaque, line width=2.2pt]
+    (4.80,5.42) .. controls (5.80,5.48) and (6.82,5.45) .. (7.50,5.80)
+    .. controls (8.12,6.12) and (8.72,6.62) .. (9.28,7.35);
+  \draw[eleve destaque, line width=2.2pt]
+    (4.80,5.42) .. controls (3.70,5.58) and (2.72,6.28) .. (1.85,7.35);
+
+  \fill[elevecinza] (7.50,5.80) circle (3.2pt);
+  \node[font=\Large\bfseries, text=elevecinza, anchor=south east] at (7.25,5.98)
+    {$P$};
+  \node[font=\large\bfseries, text=elevecinza] at (3.45,0.25)
+    {a interseção determina a posição};
+\end{tikzpicture}
+
+\end{document}

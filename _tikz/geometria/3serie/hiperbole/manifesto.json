@@ -1,0 +1,107 @@
+{
+  "versao": 1,
+  "disciplina": "geometria",
+  "ano_serie": "3serie",
+  "titulo_documento": "Hipérbole",
+  "slug_documento": "hiperbole",
+  "arquivo_markdown": "Geometria/modelos/geometria-3serie-modelo.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-definicao-por-diferenca-de-distancias",
+      "pagina": 1,
+      "arquivo": "fig-01-definicao-por-diferenca-de-distancias.png",
+      "alt": "Hipérbole de duas folhas com focos F1 e F2 e pontos P e Q cuja diferença das distâncias aos focos é constante",
+      "aprovada": true,
+      "sha256": "06f5ba20dcda3641cfd028bbe9954aadb88d27d4ccfbef227e87f1131584f4bc",
+      "largura_px": 1276,
+      "altura_px": 851,
+      "publicado_sha256": "06f5ba20dcda3641cfd028bbe9954aadb88d27d4ccfbef227e87f1131584f4bc",
+      "publicado_commit": "c2ebe74ea92ce537f98e2f508f56b4cd4c77d2bd"
+    },
+    {
+      "id": "fig-02-elementos-da-hiperbole",
+      "pagina": 2,
+      "arquivo": "fig-02-elementos-da-hiperbole.png",
+      "alt": "Hipérbole com centro O, vértices, focos, eixos real e imaginário e parâmetros a, b e c identificados",
+      "aprovada": true,
+      "sha256": "2aa60c7a60e2da1867d4d0be949416e07bf8850b2e36e2fca491978706c0adec",
+      "largura_px": 1312,
+      "altura_px": 951,
+      "publicado_sha256": "2aa60c7a60e2da1867d4d0be949416e07bf8850b2e36e2fca491978706c0adec",
+      "publicado_commit": "c2ebe74ea92ce537f98e2f508f56b4cd4c77d2bd"
+    },
+    {
+      "id": "fig-03-hiperbole-horizontal-e-assintotas",
+      "pagina": 3,
+      "arquivo": "fig-03-hiperbole-horizontal-e-assintotas.png",
+      "alt": "Hipérbole de eixo real horizontal com retângulo fundamental e assíntotas passando pelo centro",
+      "aprovada": true,
+      "sha256": "211b19861e5568c3e427e25a714e9c0155dceb9f2250d09833289f25fec7fd3c",
+      "largura_px": 1229,
+      "altura_px": 945,
+      "publicado_sha256": "211b19861e5568c3e427e25a714e9c0155dceb9f2250d09833289f25fec7fd3c",
+      "publicado_commit": "c2ebe74ea92ce537f98e2f508f56b4cd4c77d2bd"
+    },
+    {
+      "id": "fig-04-hiperbole-vertical-e-assintotas",
+      "pagina": 4,
+      "arquivo": "fig-04-hiperbole-vertical-e-assintotas.png",
+      "alt": "Hipérbole de eixo real vertical com retângulo fundamental e assíntotas passando pelo centro",
+      "aprovada": true,
+      "sha256": "577f61f10a5439daae158ccfe8c79ff6cbbf70029a2788df49ddd7346b4c5603",
+      "largura_px": 999,
+      "altura_px": 1188,
+      "publicado_sha256": "577f61f10a5439daae158ccfe8c79ff6cbbf70029a2788df49ddd7346b4c5603",
+      "publicado_commit": "c2ebe74ea92ce537f98e2f508f56b4cd4c77d2bd"
+    },
+    {
+      "id": "fig-05-comparacao-de-excentricidades",
+      "pagina": 5,
+      "arquivo": "fig-05-comparacao-de-excentricidades.png",
+      "alt": "Duas hipérboles na mesma escala com excentricidades um vírgula dois e dois, mostrando aberturas diferentes",
+      "aprovada": true,
+      "sha256": "2ffcee80abe88b47ba07ef33fbbf915b909d201bba38006ec81811c0f9115cc2",
+      "largura_px": 1323,
+      "altura_px": 904,
+      "publicado_sha256": "2ffcee80abe88b47ba07ef33fbbf915b909d201bba38006ec81811c0f9115cc2",
+      "publicado_commit": "c2ebe74ea92ce537f98e2f508f56b4cd4c77d2bd"
+    },
+    {
+      "id": "fig-06-hiperbole-equilatera",
+      "pagina": 6,
+      "arquivo": "fig-06-hiperbole-equilatera.png",
+      "alt": "Hipérbole equilátera com parâmetros a e b iguais, retângulo fundamental quadrado e assíntotas perpendiculares",
+      "aprovada": true,
+      "sha256": "0c42e6e696c16aa0527ca14dd6f4a3e2d5d67aae1ac1156ff2f7089746a7ade6",
+      "largura_px": 1099,
+      "altura_px": 1099,
+      "publicado_sha256": "0c42e6e696c16aa0527ca14dd6f4a3e2d5d67aae1ac1156ff2f7089746a7ade6",
+      "publicado_commit": "c2ebe74ea92ce537f98e2f508f56b4cd4c77d2bd"
+    },
+    {
+      "id": "fig-07-uma-hiperbole-de-localizacao",
+      "pagina": 7,
+      "arquivo": "fig-07-uma-hiperbole-de-localizacao.png",
+      "alt": "Duas estações S1 e S2 servem de focos para um ramo hiperbólico que contém as posições possíveis do receptor P",
+      "aprovada": true,
+      "sha256": "c85f9d3fd78a71470f703522cb64a287d3587f2565b3ecfa4f0bd40f825f638c",
+      "largura_px": 1294,
+      "altura_px": 939,
+      "publicado_sha256": "c85f9d3fd78a71470f703522cb64a287d3587f2565b3ecfa4f0bd40f825f638c",
+      "publicado_commit": "c2ebe74ea92ce537f98e2f508f56b4cd4c77d2bd"
+    },
+    {
+      "id": "fig-08-intersecao-de-duas-hiperboles",
+      "pagina": 8,
+      "arquivo": "fig-08-intersecao-de-duas-hiperboles.png",
+      "alt": "Duas duplas de estações geram hipérboles distintas cuja interseção determina a posição P do receptor",
+      "aprovada": true,
+      "sha256": "ac88add808758f9435a55ec2c89a86e5694b3878615232741c10020328ebca21",
+      "largura_px": 1312,
+      "altura_px": 1034,
+      "publicado_sha256": "ac88add808758f9435a55ec2c89a86e5694b3878615232741c10020328ebca21",
+      "publicado_commit": "c2ebe74ea92ce537f98e2f508f56b4cd4c77d2bd"
+    }
+  ]
+}

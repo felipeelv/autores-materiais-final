@@ -1,0 +1,91 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-matematica-ef1}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-azulejos-e-area
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (7.80,5.65);
+  \foreach \x in {0,...,3}\foreach \y in {0,...,2}{
+    \fill[matemazulclaro] (0.75+1.45*\x,0.75+1.45*\y) rectangle ++(1.40,1.40);
+    \draw[matematica contorno] (0.75+1.45*\x,0.75+1.45*\y) rectangle ++(1.40,1.40);
+  }
+  \node[matematica resultado] at (3.65,0.20) {$12$ azulejos};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-contagem-por-fileiras
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.15) rectangle (8.65,7.20);
+  \foreach \x in {0,...,3}\foreach \y in {0,...,4}{
+    \pgfmathtruncatemacro{\oddrow}{mod(\y,2)}
+    \ifnum\oddrow=0\def\cor{matemazulclaro}\else\def\cor{matemalaranjaclaro}\fi
+    \fill[\cor] (0.90+1.15*\x,0.65+1.15*\y) rectangle ++(1.10,1.10);
+    \draw[matematica contorno] (0.90+1.15*\x,0.65+1.15*\y) rectangle ++(1.10,1.10);
+  }
+  \draw[decorate,decoration={brace,amplitude=7pt},matematica destaque]
+    (0.60,0.65)--(0.60,6.35);
+  \node[matematica rotulo,rotate=90] at (0.05,3.50) {$5$ fileiras};
+  \draw[decorate,decoration={brace,mirror,amplitude=7pt},matematica destaque]
+    (0.90,6.70)--(5.45,6.70);
+  \node[matematica rotulo] at (3.18,7.02) {$4$ em cada fileira};
+  \node[matematica resultado] at (7.05,3.55) {$20\text{ cm}^2$};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-metades-de-quadradinho
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.20) rectangle (10.60,5.30);
+  \foreach \x/\flip in {0.40/0,2.10/1,3.80/0,5.50/1}{
+    \draw[matematica contorno] (\x,2.20) rectangle ++(1.25,1.25);
+    \ifnum\flip=0
+      \fill[matemalaranjaclaro] (\x,2.20)--(\x+1.25,2.20)--(\x,3.45)--cycle;
+    \else
+      \fill[matemalaranjaclaro] (\x+1.25,2.20)--(\x+1.25,3.45)--(\x,2.20)--cycle;
+    \fi
+    \draw[matematica divisao] (\x,2.20)--(\x+1.25,3.45);
+  }
+  \draw[-{Stealth[length=3mm]},matematica destaque] (7.00,2.82)--(8.00,2.82);
+  \foreach \x in {8.25,9.65}{
+    \fill[matemazulclaro] (\x,2.20) rectangle ++(1.15,1.25);
+    \draw[matematica contorno] (\x,2.20) rectangle ++(1.15,1.25);
+  }
+  \node[matematica rotulo] at (3.65,1.35) {$4$ metades};
+  \node[matematica resultado] at (9.25,1.35) {$2$ inteiros};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-perimetro-e-area
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (9.30,6.15);
+  \foreach \x in {0,...,3}\foreach \y in {0,1}{
+    \fill[matemazulclaro] (1.10+1.20*\x,1.25+1.20*\y) rectangle ++(1.20,1.20);
+    \draw[matematica divisao] (1.10+1.20*\x,1.25+1.20*\y) rectangle ++(1.20,1.20);
+  }
+  \draw[matematica destaque,line width=3pt] (1.10,1.25) rectangle (5.90,3.65);
+  \node[matematica resultado] at (3.50,4.50) {borda: $12\text{ cm}$};
+  \node[matematica valor] at (3.50,0.48) {interior: $8\text{ cm}^2$};
+  \draw[-{Stealth[length=2.8mm]},matematica destaque] (7.65,4.25)--(5.88,3.65);
+  \node[matematica rotulo] at (7.80,4.75) {perímetro};
+  \draw[-{Stealth[length=2.8mm]},matematica contorno] (7.65,1.05)--(5.45,2.10);
+  \node[matematica rotulo] at (7.80,0.55) {área};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-mesma-area-formatos
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (11.30,6.80);
+  \foreach \x in {0,...,3}\foreach \y in {0,...,2}{
+    \fill[matemazulclaro] (0.75+0.85*\x,1.50+0.85*\y) rectangle ++(0.82,0.82);
+    \draw[matematica divisao] (0.75+0.85*\x,1.50+0.85*\y) rectangle ++(0.82,0.82);
+  }
+  \draw[matematica contorno,line width=2pt] (0.75,1.50) rectangle (4.15,4.05);
+  \node[matematica valor] at (2.45,5.00) {$12\text{ cm}^2$};
+  \node[matematica rotulo] at (2.45,0.75) {perímetro: $14\text{ cm}$};
+
+  \foreach \x in {0,...,5}\foreach \y in {0,1}{
+    \fill[matemalaranjaclaro] (5.55+0.85*\x,1.92+0.85*\y) rectangle ++(0.82,0.82);
+    \draw[matematica divisao] (5.55+0.85*\x,1.92+0.85*\y) rectangle ++(0.82,0.82);
+  }
+  \draw[matematica destaque,line width=2pt] (5.55,1.92) rectangle (10.65,3.62);
+  \node[matematica valor] at (8.10,5.00) {$12\text{ cm}^2$};
+  \node[matematica rotulo] at (8.10,0.75) {perímetro: $16\text{ cm}$};
+\end{tikzpicture}
+
+\end{document}

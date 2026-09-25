@@ -1,0 +1,47 @@
+{
+  "versao": 1,
+  "disciplina": "matematica-ef1",
+  "ano_serie": "4ano",
+  "titulo_documento": "Adição e subtração de frações com o mesmo denominador",
+  "slug_documento": "adicao-e-subtracao-de-fracoes-com-o-mesmo-denominador",
+  "arquivo_markdown": "Matematica EF1/_staging-3bim/4ano/Adição e subtração de frações com o mesmo denominador.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-soma-mesmo-denominador",
+      "pagina": 1,
+      "arquivo": "fig-01-soma-mesmo-denominador.png",
+      "alt": "Uma parte marcada no almoço e duas no jantar formam três quartos do mesmo inteiro",
+      "aprovada": true,
+      "sha256": "09d49a4f7d813218284189d82ad90f234c2b0703be853060def1a1b1095aa27c",
+      "largura_px": 1052,
+      "altura_px": 502,
+      "publicado_sha256": "09d49a4f7d813218284189d82ad90f234c2b0703be853060def1a1b1095aa27c",
+      "publicado_commit": "ab098b13fdf91dde2a3b5aa392a2d406d277f43e"
+    },
+    {
+      "id": "fig-02-subtracao-mesmo-denominador",
+      "pagina": 2,
+      "arquivo": "fig-02-subtracao-mesmo-denominador.png",
+      "alt": "Quatro quintos preenchidos perdem um quinto e restam três quintos",
+      "aprovada": true,
+      "sha256": "d054ffc253d7a99d70f1985aa6388de78a8dfbd69064ad02b46811f0b13be3cb",
+      "largura_px": 1123,
+      "altura_px": 810,
+      "publicado_sha256": "d054ffc253d7a99d70f1985aa6388de78a8dfbd69064ad02b46811f0b13be3cb",
+      "publicado_commit": "ab098b13fdf91dde2a3b5aa392a2d406d277f43e"
+    },
+    {
+      "id": "fig-03-completar-inteiro",
+      "pagina": 3,
+      "arquivo": "fig-03-completar-inteiro.png",
+      "alt": "Três quartos marcados e um quarto restante completam um inteiro",
+      "aprovada": true,
+      "sha256": "41383593295330962a5925a7c7ec3ab0b80c13e8fb02a89438a3a1f339b60d0d",
+      "largura_px": 1075,
+      "altura_px": 556,
+      "publicado_sha256": "41383593295330962a5925a7c7ec3ab0b80c13e8fb02a89438a3a1f339b60d0d",
+      "publicado_commit": "ab098b13fdf91dde2a3b5aa392a2d406d277f43e"
+    }
+  ]
+}

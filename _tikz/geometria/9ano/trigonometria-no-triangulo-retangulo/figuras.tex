@@ -1,0 +1,131 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-geometria}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-lados-em-relacao-ao-angulo
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.25,-0.25) rectangle (9.20,6.10);
+  \coordinate (A) at (1.10,0.85);
+  \coordinate (B) at (7.55,0.85);
+  \coordinate (C) at (1.10,4.85);
+  \draw[eleve preenchimento, line width=1.6pt] (A)--(B)--(C)--cycle;
+  \draw[elevecinza, line width=1.2pt] (A)--($(A)+(0.38,0)$)--($(A)+(0.38,0.38)$)--($(A)+(0,0.38)$);
+  \draw[eleve destaque, line width=1.6pt]
+    ($(B)+(180:0.86)$) arc[start angle=180,end angle=148.2,radius=0.86];
+  \node[font=\Large\bfseries, text=elevelaranja] at (6.45,1.25) {$\theta$};
+
+  \EleveVertice{A}{below left}{A}
+  \EleveVertice{B}{below right}{B}
+  \EleveVertice{C}{above left}{C}
+  \node[font=\large\bfseries, text=eleveazul] at (4.33,0.42) {cateto adjacente};
+  \node[font=\large\bfseries, text=elevelaranja, rotate=90] at (0.58,2.85) {cateto oposto};
+  \node[font=\large\bfseries, text=elevecinza, rotate=-31.8] at (4.18,3.48) {hipotenusa};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-triangulos-semelhantes-mesmo-angulo
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (9.20,10.20);
+
+  % Triângulo menor: 3-4-5 em escala reduzida.
+  \coordinate (A1) at (0.85,7.05);
+  \coordinate (B1) at (4.45,7.05);
+  \coordinate (C1) at (0.85,9.75);
+  \draw[eleve preenchimento, line width=1.5pt] (A1)--(B1)--(C1)--cycle;
+  \draw[elevecinza, line width=1pt] (A1)--($(A1)+(0.30,0)$)--($(A1)+(0.30,0.30)$)--($(A1)+(0,0.30)$);
+  \draw[eleve destaque, line width=1.5pt]
+    ($(B1)+(180:0.65)$) arc[start angle=180,end angle=143.1,radius=0.65];
+  \node[font=\large\bfseries, text=elevelaranja] at (3.61,7.38) {$\theta$};
+  \node[font=\large, text=eleveazul] at (2.65,6.68) {$4$};
+  \node[font=\large, text=eleveazul] at (0.48,8.40) {$3$};
+  \node[font=\large, text=elevecinza, rotate=36.9] at (2.78,8.63) {$5$};
+
+  % Triângulo maior com os lados duplicados.
+  \coordinate (A2) at (0.85,0.55);
+  \coordinate (B2) at (8.05,0.55);
+  \coordinate (C2) at (0.85,5.95);
+  \draw[eleve destaque, fill=orange!14, line width=1.5pt] (A2)--(B2)--(C2)--cycle;
+  \draw[elevecinza, line width=1pt] (A2)--($(A2)+(0.34,0)$)--($(A2)+(0.34,0.34)$)--($(A2)+(0,0.34)$);
+  \draw[eleve destaque, line width=1.5pt]
+    ($(B2)+(180:0.75)$) arc[start angle=180,end angle=143.1,radius=0.75];
+  \node[font=\large\bfseries, text=elevelaranja] at (7.08,0.88) {$\theta$};
+  \node[font=\large, text=elevelaranja] at (4.45,0.18) {$8$};
+  \node[font=\large, text=elevelaranja] at (0.48,3.25) {$6$};
+  \node[font=\large, text=elevecinza, rotate=36.9] at (4.62,3.58) {$10$};
+  \node[font=\Large\bfseries, text=elevecinza] at (7.12,8.50) {mesmo $\theta$};
+  \node[font=\large\bfseries, text=elevelaranja] at (7.12,7.88) {lados $\times 2$};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-triangulo-de-trinta-e-sessenta
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (8.20,6.70);
+  \coordinate (A) at (0.80,0.80);
+  \coordinate (B) at (7.20,0.80);
+  \coordinate (C) at (4.00,6.34);
+  \coordinate (M) at (4.00,0.80);
+  \draw[eleve preenchimento, line width=1.6pt] (A)--(B)--(C)--cycle;
+  \draw[eleve destaque, line width=1.7pt] (C)--(M);
+  \draw[elevecinza, line width=1.1pt] (M)--($(M)+(0.34,0)$)--($(M)+(0.34,0.34)$)--($(M)+(0,0.34)$);
+
+  \node[font=\Large\bfseries, text=elevecinza, rotate=60] at (2.15,3.76) {$2$};
+  \node[font=\Large\bfseries, text=elevecinza, rotate=-60] at (5.85,3.76) {$2$};
+  \node[font=\Large\bfseries, text=eleveazul] at (2.40,0.43) {$1$};
+  \node[font=\Large\bfseries, text=eleveazul] at (5.60,0.43) {$1$};
+  \node[font=\Large\bfseries, text=elevelaranja, rotate=90] at (4.37,3.42) {$\sqrt3$};
+  \node[font=\Large\bfseries, text=elevelaranja] at (1.68,1.16) {$60^\circ$};
+  \node[font=\Large\bfseries, text=elevelaranja] at (4.70,5.55) {$30^\circ$};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-triangulo-de-quarenta-e-cinco
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.20,-0.20) rectangle (7.40,6.80);
+  \coordinate (A) at (0.85,0.85);
+  \coordinate (B) at (6.15,0.85);
+  \coordinate (C) at (0.85,6.15);
+  \draw[eleve preenchimento, line width=1.6pt] (A)--(B)--(C)--cycle;
+  \draw[elevecinza, line width=1.2pt] (A)--($(A)+(0.40,0)$)--($(A)+(0.40,0.40)$)--($(A)+(0,0.40)$);
+  \draw[eleve destaque, line width=1.6pt]
+    ($(B)+(180:0.78)$) arc[start angle=180,end angle=135,radius=0.78];
+  \draw[eleve destaque, line width=1.6pt]
+    ($(C)+(-90:0.78)$) arc[start angle=-90,end angle=-45,radius=0.78];
+  \node[font=\Large\bfseries, text=elevelaranja] at (5.10,1.27) {$45^\circ$};
+  \node[font=\Large\bfseries, text=elevelaranja] at (1.45,5.06) {$45^\circ$};
+  \node[font=\Large\bfseries, text=eleveazul] at (3.50,0.45) {$1$};
+  \node[font=\Large\bfseries, text=eleveazul] at (0.47,3.50) {$1$};
+  \node[font=\Large\bfseries, text=elevecinza, rotate=-45] at (3.77,3.77) {$\sqrt2$};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-angulo-de-elevacao
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.25,-0.25) rectangle (11.45,6.85);
+  \coordinate (T) at (1.30,1.15);
+  \coordinate (Q) at (8.45,1.15);
+  \coordinate (P) at (8.45,6.20);
+
+  % Solo, edifício e linha de visada.
+  \draw[elevecinza, line width=1.6pt] (0.30,0.70) -- (9.65,0.70);
+  \draw[eleve preenchimento, line width=1.6pt] (7.95,1.15) rectangle (8.95,6.20);
+  \draw[eleve destaque, line width=1.8pt] (T) -- (P);
+  \draw[eleve auxiliar, line width=1.3pt] (T) -- (Q);
+  \draw[elevecinza, line width=1.1pt] (Q)--($(Q)+(-0.35,0)$)--($(Q)+(-0.35,0.35)$)--($(Q)+(0,0.35)$);
+
+  % Teodolito simplificado.
+  \fill[eleveazul] (T) circle (3pt);
+  \draw[eleve aresta, line width=2pt] ($(T)+(-0.30,0.13)$)--($(T)+(0.35,0.36)$);
+  \draw[eleve aresta, line width=1.5pt] (T)--($(T)+(-0.35,-0.45)$);
+  \draw[eleve aresta, line width=1.5pt] (T)--($(T)+(0.35,-0.45)$);
+
+  \draw[eleve destaque, line width=1.7pt]
+    ($(T)+(0:1.05)$) arc[start angle=0,end angle=35.25,radius=1.05];
+  \node[font=\Large\bfseries, text=elevelaranja] at (2.72,1.68) {$\theta$};
+
+  \draw[decorate, decoration={brace,mirror,amplitude=6pt}, eleve aresta]
+    (1.30,0.95) -- (8.45,0.95)
+    node[midway, below=8pt, font=\Large\bfseries, text=eleveazul] {distância $b$};
+  \draw[decorate, decoration={brace,amplitude=6pt}, eleve destaque]
+    (9.28,1.15) -- (9.28,6.20)
+    node[midway, right=5pt, font=\Large\bfseries, text=elevelaranja] {altura $a$};
+  \node[font=\large\bfseries, text=elevecinza] at (1.30,0.18) {teodolito};
+\end{tikzpicture}
+
+\end{document}

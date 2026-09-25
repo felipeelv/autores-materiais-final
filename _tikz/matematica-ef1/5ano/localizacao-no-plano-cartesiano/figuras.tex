@@ -1,0 +1,112 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-matematica-ef1}
+
+\newcommand{\Eixos}[2]{%
+  \draw[step=1,matematica divisao] (0,0) grid (#1,#2);
+  \draw[-{Stealth[length=2.7mm]},matematica eixo] (0,0)--(#1+.45,0) node[right,matematica valor] {$x$};
+  \draw[-{Stealth[length=2.7mm]},matematica eixo] (0,0)--(0,#2+.45) node[above,matematica valor] {$y$};
+  \foreach \x in {0,...,#1}\node[font=\normalsize,text=matemacinza] at (\x,-.38) {\x};
+  \foreach \y in {1,...,#2}\node[font=\normalsize,text=matemacinza] at (-.38,\y) {\y};
+}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-mapa-linhas-e-colunas
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-1.05,-0.85) rectangle (6.35,6.60);
+  \foreach \x/\l in {0/A,1/B,2/C,3/D,4/E}
+    \node[matematica valor] at (\x+.5,5.55) {\l};
+  \foreach \y/\l in {0/5,1/4,2/3,3/2,4/1}
+    \node[matematica valor] at (-.50,\y+.5) {\l};
+  \fill[matemalaranjaclaro] (2,1) rectangle (3,2);
+  \draw[step=1,matematica contorno] (0,0) grid (5,5);
+  \node[font=\large\bfseries,text=matemalaranja] at (2.5,1.5) {loja};
+  \draw[-{Stealth[length=2.7mm]},matematica destaque] (5.90,4.80)--(3.05,1.85);
+  \node[matematica resultado] at (5.60,5.30) {C4};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-celulas-da-planilha
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-1.05,-0.80) rectangle (6.20,6.25);
+  \foreach \x/\l in {0/A,1/B,2/C,3/D,4/E}
+    \node[matematica valor] at (\x+.5,5.45) {\l};
+  \foreach \y/\l in {0/5,1/4,2/3,3/2,4/1}
+    \node[matematica valor] at (-.50,\y+.5) {\l};
+  \fill[matemazulclaro] (1,0) rectangle (2,1);
+  \fill[matemalaranjaclaro] (4,3) rectangle (5,4);
+  \draw[step=1,matematica contorno] (0,0) grid (5,5);
+  \node[font=\large\bfseries,text=matemazul] at (1.5,.5) {B5};
+  \node[font=\large\bfseries,text=matemalaranja] at (4.5,3.5) {E2};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-latitude-e-longitude
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.25,-0.20) rectangle (9.50,7.60);
+  \fill[matemazulclaro] (4.25,3.65) circle (2.75);
+  \draw[matematica contorno,line width=2pt] (4.25,3.65) circle (2.75);
+  \draw[matematica divisao] (1.50,3.65) arc[start angle=180,end angle=360,x radius=2.75,y radius=.85];
+  \draw[matematica divisao] (1.50,3.65) arc[start angle=180,end angle=0,x radius=2.75,y radius=.85];
+  \draw[matematica divisao] (1.86,2.25) arc[start angle=205,end angle=335,x radius=2.65,y radius=.62];
+  \draw[matematica divisao] (1.86,5.05) arc[start angle=155,end angle=25,x radius=2.65,y radius=.62];
+  \draw[matematica destaque] (4.25,.90) arc[start angle=-90,end angle=90,x radius=1.05,y radius=2.75];
+  \draw[matematica destaque] (4.25,.90) arc[start angle=-90,end angle=-270,x radius=1.05,y radius=2.75];
+  \draw[matematica destaque] (4.25,.90)--(4.25,6.40);
+  \draw[-{Stealth[length=2.7mm]},matematica contorno] (8.90,5.55)--(6.15,4.65);
+  \node[matematica valor] at (8.10,6.05) {paralelos};
+  \draw[-{Stealth[length=2.7mm]},matematica destaque] (8.90,1.65)--(5.10,2.55);
+  \node[matematica resultado] at (8.10,1.10) {meridianos};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-eixos-e-par-ordenado
+\begin{tikzpicture}[matematica figura, x=.95cm, y=.95cm]
+  \path[use as bounding box] (-0.90,-0.85) rectangle (6.55,6.45);
+  \Eixos{5}{5}
+  \draw[matematica auxiliar] (3,0)--(3,2)--(0,2);
+  \fill[matemalaranja] (3,2) circle (.14);
+  \node[matematica resultado,anchor=west] at (3.25,2.35) {$(3,2)$};
+  \node[matematica rotulo,fill=white,inner sep=3pt] at (1.25,.65) {origem $(0,0)$};
+  \draw[-{Stealth[length=2.3mm]},matematica auxiliar] (.80,.28)--(.10,.05);
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-marcar-e-ler-pontos
+\begin{tikzpicture}[matematica figura, x=.93cm, y=.93cm]
+  \path[use as bounding box] (-0.90,-0.85) rectangle (6.75,6.75);
+  \Eixos{5}{5}
+  \fill[matemalaranja] (3,5) circle (.14);
+  \fill[matemazul] (2,5) circle (.14);
+  \fill[matemaverde] (5,2) circle (.14);
+  \node[font=\large\bfseries,text=matemalaranja,anchor=south west] at (3.12,5.02) {$(3,5)$};
+  \node[font=\large\bfseries,text=matemazul,anchor=south east] at (1.88,5.02) {$(2,5)$};
+  \node[font=\large\bfseries,text=matemaverde,anchor=west] at (5.12,2) {$(5,2)$};
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-deslocamentos-no-plano
+\begin{tikzpicture}[matematica figura, x=.88cm, y=.88cm]
+  \path[use as bounding box] (-0.90,-0.85) rectangle (6.90,8.05);
+  \Eixos{6}{7}
+  \fill[matemazul] (2,3) circle (.14);
+  \fill[matemalaranja] (5,7) circle (.14);
+  \draw[-{Stealth[length=3mm]},matematica contorno,line width=2.2pt] (2,3)--(5,3)
+    node[midway,below=5pt,matematica valor] {$3$};
+  \draw[-{Stealth[length=3mm]},matematica destaque,line width=2.2pt] (5,3)--(5,7)
+    node[midway,right=5pt,matematica resultado] {$4$};
+  \node[matematica rotulo,anchor=south east,fill=white,inner sep=2pt] at (1.85,3.18) {$(2,3)$};
+  \node[matematica rotulo,anchor=west,fill=white,inner sep=2pt] at (5.18,6.65) {$(5,7)$};
+\end{tikzpicture}
+
+% FIGURA 7 — fig-07-trajeto-com-giros
+\begin{tikzpicture}[matematica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.35,-0.25) rectangle (8.20,6.60);
+  \draw[step=1,matematica divisao] (0.50,0.50) grid (7.50,5.50);
+  \fill[matemazul] (1.50,1.50) circle (.14);
+  \draw[-{Stealth[length=3mm]},matematica contorno,line width=2.3pt] (1.50,1.50)--(4.50,1.50)
+    node[midway,below=5pt,matematica valor] {$3$};
+  \draw[-{Stealth[length=3mm]},matematica destaque,line width=2.3pt] (4.50,1.50)--(4.50,3.50)
+    node[midway,right=5pt,matematica resultado] {$2$};
+  \draw[matematica destaque] (3.95,1.50) arc[start angle=180,end angle=90,radius=.55];
+  \node[matematica resultado,anchor=west] at (5.00,2.05) {$90^\circ$};
+  \node[matematica rotulo,anchor=west] at (.65,.75) {início};
+  \node[matematica rotulo,anchor=west,fill=white,inner sep=2pt] at (4.95,3.85) {chegada};
+\end{tikzpicture}
+
+\end{document}

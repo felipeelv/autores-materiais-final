@@ -1,0 +1,87 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-geometria}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-definicao-por-foco-e-diretriz
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (9.25,8.25);
+  \coordinate (V) at (4.35,1.30); \coordinate (F) at (4.35,2.30);
+  \coordinate (P) at (6.35,2.30); \coordinate (Q) at (6.35,.30);
+  \draw[eleve aresta,line width=2pt,domain=-2.8:2.8,samples=80,smooth,variable=\t]
+    plot ({4.35+\t},{1.30+.25*\t*\t});
+  \draw[eleve destaque,<->,line width=1.5pt] (.55,.30)--(8.65,.30);
+  \node[font=\large\bfseries,text=elevelaranja] at (1.65,.72) {diretriz $d$};
+  \draw[eleve auxiliar,line width=1.3pt] (P)--(F);
+  \draw[eleve destaque,dashed,line width=1.5pt] (P)--(Q);
+  \draw[eleve destaque] (Q)--(6.70,.30)--(6.70,.65)--(6.35,.65);
+  \fill[eleveazul] (F) circle (2.7pt) node[above left,font=\Large\bfseries] {$F$};
+  \fill[elevelaranja] (P) circle (2.8pt) node[above right,font=\Large\bfseries] {$P$};
+  \fill[elevecinza] (Q) circle (2.3pt) node[below,font=\large\bfseries] {$Q$};
+  \draw[eleve destaque,line width=1.5pt] (5.30,2.15)--(5.30,2.45);
+  \draw[eleve destaque,line width=1.5pt] (6.20,1.30)--(6.50,1.30);
+  \node[font=\Large\bfseries,text=elevecinza] at (4.35,7.72) {$PF=PQ=d(P,d)$};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-elementos-da-parabola
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (9.25,9.90);
+  \coordinate (V) at (4.35,2.00); \coordinate (F) at (4.35,3.25);
+  \draw[-Stealth,elevecinza,line width=1.1pt] (4.35,.25)--(4.35,8.95) node[above,font=\large] {eixo};
+  \draw[eleve aresta,line width=2pt,domain=-3:3,samples=80,smooth,variable=\t]
+    plot ({4.35+\t},{2+.28*\t*\t});
+  \draw[eleve destaque,<->,line width=1.5pt] (.65,.75)--(8.05,.75);
+  \node[font=\large\bfseries,text=elevelaranja,anchor=west] at (6.65,1.15) {diretriz};
+  \fill[elevelaranja] (V) circle (2.8pt) node[below right,font=\Large\bfseries] {$V$};
+  \fill[eleveazul] (F) circle (2.8pt) node[above right,font=\Large\bfseries] {$F$};
+  \draw[eleve destaque,|<->|] (3.80,2.00)--(3.80,3.25) node[midway,left,font=\Large\bfseries] {$p$};
+  \draw[eleve destaque,|<->|] (3.15,.75)--(3.15,2.00) node[midway,left,font=\Large\bfseries] {$p$};
+  \node[font=\large\bfseries,text=elevecinza] at (4.35,9.58)
+    {foco e diretriz em lados opostos};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-parabolas-verticais
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (10.35,7.55);
+  \node[font=\Large\bfseries,text=eleveazul] at (2.45,7.15) {$p>0$};
+  \draw[-Stealth,elevecinza] (.25,2.80)--(4.65,2.80);
+  \draw[-Stealth,elevecinza] (2.45,.35)--(2.45,6.65);
+  \draw[eleve aresta,line width=1.9pt,domain=-2:2,samples=60,smooth,variable=\t]
+    plot ({2.45+\t},{2.80+.55*\t*\t});
+  \fill[elevelaranja] (2.45,3.70) circle (2.6pt) node[right,font=\large\bfseries] {$F$};
+  \draw[eleve destaque,dashed] (.45,1.90)--(4.45,1.90);
+
+  \node[font=\Large\bfseries,text=elevelaranja] at (7.75,7.15) {$p<0$};
+  \draw[-Stealth,elevecinza] (5.55,4.65)--(9.95,4.65);
+  \draw[-Stealth,elevecinza] (7.75,.35)--(7.75,6.65);
+  \draw[eleve destaque,line width=1.9pt,domain=-2:2,samples=60,smooth,variable=\t]
+    plot ({7.75+\t},{4.65-.55*\t*\t});
+  \fill[eleveazul] (7.75,3.75) circle (2.6pt) node[right,font=\large\bfseries] {$F$};
+  \draw[eleve aresta,dashed] (5.75,5.55)--(9.75,5.55);
+  \node[font=\large\bfseries,text=elevecinza] at (2.45,.05) {$x^2=4py$};
+  \node[font=\large\bfseries,text=elevecinza] at (7.75,.05) {$x^2=4py$};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-parabolas-horizontais
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (10.35,7.55);
+  \node[font=\Large\bfseries,text=eleveazul] at (2.45,7.15) {$p>0$};
+  \draw[-Stealth,elevecinza] (.35,3.35)--(4.75,3.35);
+  \draw[-Stealth,elevecinza] (1.35,.55)--(1.35,6.45);
+  \draw[eleve aresta,line width=1.9pt,domain=-2.3:2.3,samples=60,smooth,variable=\t]
+    plot ({1.35+.55*\t*\t},{3.35+\t});
+  \fill[elevelaranja] (2.25,3.35) circle (2.6pt) node[above,font=\large\bfseries] {$F$};
+  \draw[eleve destaque,dashed] (.45,.75)--(.45,5.95);
+
+  \node[font=\Large\bfseries,text=elevelaranja] at (7.75,7.15) {$p<0$};
+  \draw[-Stealth,elevecinza] (5.55,3.35)--(9.95,3.35);
+  \draw[-Stealth,elevecinza] (8.85,.55)--(8.85,6.45);
+  \draw[eleve destaque,line width=1.9pt,domain=-2.3:2.3,samples=60,smooth,variable=\t]
+    plot ({8.85-.55*\t*\t},{3.35+\t});
+  \fill[eleveazul] (7.95,3.35) circle (2.6pt) node[above,font=\large\bfseries] {$F$};
+  \draw[eleve aresta,dashed] (9.75,.75)--(9.75,5.95);
+  \node[font=\large\bfseries,text=elevecinza] at (2.45,.08) {$y^2=4px$};
+  \node[font=\large\bfseries,text=elevecinza] at (7.75,.08) {$y^2=4px$};
+\end{tikzpicture}
+
+\end{document}

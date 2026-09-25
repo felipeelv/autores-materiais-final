@@ -1,0 +1,71 @@
+{
+  "versao": 1,
+  "disciplina": "geometria",
+  "ano_serie": "7ano",
+  "titulo_documento": "Circunferência e círculo",
+  "slug_documento": "circunferencia-e-circulo",
+  "arquivo_markdown": "Geometria/modelos/geometria-7ano-modelo.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-elementos-da-circunferencia",
+      "pagina": 1,
+      "arquivo": "fig-01-elementos-da-circunferencia.png",
+      "alt": "Circunferência de centro O com raio, corda, diâmetro e arco identificados",
+      "aprovada": true,
+      "sha256": "8f06d4754f161b9782b04ec4f2e73e21af0d3f10e46c2d30ee38a0c2c5bf8f6c",
+      "largura_px": 1040,
+      "altura_px": 821,
+      "publicado_sha256": "8f06d4754f161b9782b04ec4f2e73e21af0d3f10e46c2d30ee38a0c2c5bf8f6c",
+      "publicado_commit": "05773be718ba4316a23d4e434ab691fb733d55cf"
+    },
+    {
+      "id": "fig-02-construcao-com-compasso",
+      "pagina": 2,
+      "arquivo": "fig-02-construcao-com-compasso.png",
+      "alt": "Compasso com ponta seca fixa no centro O, abertura r e giro completo traçando a circunferência",
+      "aprovada": true,
+      "sha256": "9cf65b120ee05e5d136fb40271b3db058264015ad71c0c8d6df3378e6f41257d",
+      "largura_px": 1040,
+      "altura_px": 957,
+      "publicado_sha256": "9cf65b120ee05e5d136fb40271b3db058264015ad71c0c8d6df3378e6f41257d",
+      "publicado_commit": "05773be718ba4316a23d4e434ab691fb733d55cf"
+    },
+    {
+      "id": "fig-03-posicoes-de-um-ponto",
+      "pagina": 3,
+      "arquivo": "fig-03-posicoes-de-um-ponto.png",
+      "alt": "Comparação das posições interna, pertencente e externa de um ponto P conforme a distância OP e o raio",
+      "aprovada": true,
+      "sha256": "85ac4219fde78d44028c5cf536eb5eebde627e39e914b9b5057c9264d1e40e91",
+      "largura_px": 1040,
+      "altura_px": 1170,
+      "publicado_sha256": "85ac4219fde78d44028c5cf536eb5eebde627e39e914b9b5057c9264d1e40e91",
+      "publicado_commit": "05773be718ba4316a23d4e434ab691fb733d55cf"
+    },
+    {
+      "id": "fig-04-posicoes-de-uma-reta",
+      "pagina": 4,
+      "arquivo": "fig-04-posicoes-de-uma-reta.png",
+      "alt": "Comparação entre reta secante, tangente e externa conforme sua distância perpendicular ao centro",
+      "aprovada": true,
+      "sha256": "ce710279158ac9300349ff69f996d67fc78a2f656590116665a84871d4a68482",
+      "largura_px": 1087,
+      "altura_px": 1288,
+      "publicado_sha256": "ce710279158ac9300349ff69f996d67fc78a2f656590116665a84871d4a68482",
+      "publicado_commit": "05773be718ba4316a23d4e434ab691fb733d55cf"
+    },
+    {
+      "id": "fig-05-razao-comprimento-diametro",
+      "pagina": 5,
+      "arquivo": "fig-05-razao-comprimento-diametro.png",
+      "alt": "Circunferência desenrolada em três diâmetros inteiros e mais zero vírgula quatorze do diâmetro",
+      "aprovada": true,
+      "sha256": "ba31c391ffd01ab44ff60806a755a1d7f43b66f353d8f4d64e444313f9c6de12",
+      "largura_px": 1158,
+      "altura_px": 951,
+      "publicado_sha256": "ba31c391ffd01ab44ff60806a755a1d7f43b66f353d8f4d64e444313f9c6de12",
+      "publicado_commit": "05773be718ba4316a23d4e434ab691fb733d55cf"
+    }
+  ]
+}

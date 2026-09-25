@@ -1,0 +1,402 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-geometria}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-elementos-da-circunferencia
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.10) rectangle (7.75,7.35);
+  \coordinate (O) at (3.80,3.85);
+  \def\R{2.55}
+  \fill[eleveazulclaro] (O) circle (\R);
+  \draw[eleve aresta, line width=1.7pt] (O) circle (\R);
+  \fill[eleveazul] (O) circle (2.1pt);
+  \node[font=\large, text=elevecinza] at ($(O)+(-.30,-.32)$) {$O$};
+
+  % Diâmetro e raio
+  \coordinate (D1) at ($(O)+(-\R,0)$);
+  \coordinate (D2) at ($(O)+(\R,0)$);
+  \draw[eleve destaque, line width=1.7pt] (D1) -- (D2);
+  \node[font=\large\bfseries, text=elevelaranja] at (2.45,4.55) {diâmetro};
+  \coordinate (R) at ($(O)+(58:\R)$);
+  \draw[eleve aresta, line width=1.6pt] (O) -- (R);
+  \node[font=\large\bfseries, text=eleveazul] at (5.18,5.20) {raio};
+
+  % Corda e flecha
+  \coordinate (A) at ($(O)+(215:\R)$);
+  \coordinate (B) at ($(O)+(325:\R)$);
+  \coordinate (M) at ($(A)!0.5!(B)$);
+  \coordinate (F) at ($(O)+(270:\R)$);
+  \draw[eleve aresta, line width=1.5pt] (A) -- (B);
+  \node[font=\large\bfseries, text=eleveazul] at ($(M)+(0,0.82)$) {corda};
+  \draw[eleve destaque, |-|, line width=1.5pt] (M) -- (F);
+  \node[font=\large\bfseries, text=elevelaranja, right=5pt] at ($(M)!0.5!(F)$)
+    {flecha};
+
+  % Arco destacado numa região livre
+  \draw[eleve destaque, line width=2.8pt]
+    ($(O)+(112:\R)$) arc[start angle=112,end angle=166,radius=\R];
+  \node[font=\large\bfseries, text=elevelaranja] at (1.10,6.47) {arco};
+  \draw[eleve auxiliar, ->] (1.68,6.32) -- (2.15,5.92);
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-posicoes-de-um-ponto
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.05) rectangle (7.75,10.85);
+
+  % Ponto interno
+  \coordinate (O1) at (3.10,9.00);
+  \fill[eleveazulclaro] (O1) circle (1.35);
+  \draw[eleve aresta, line width=1.5pt] (O1) circle (1.35);
+  \fill[eleveazul] (O1) circle (2pt) node[font=\large, below left=1pt] {$O$};
+  \coordinate (P1) at ($(O1)+(25:0.76)$);
+  \draw[eleve auxiliar] (O1) -- (P1);
+  \fill[elevelaranja] (P1) circle (2.5pt)
+    node[font=\large\bfseries, text=elevelaranja, above right=2pt] {$P$};
+  \node[font=\large\bfseries, text=elevecinza, align=left] at (6.05,9.00)
+    {posição\\interna};
+
+  % Ponto pertencente
+  \coordinate (O2) at (3.10,5.45);
+  \fill[eleveazulclaro] (O2) circle (1.35);
+  \draw[eleve aresta, line width=1.5pt] (O2) circle (1.35);
+  \fill[eleveazul] (O2) circle (2pt) node[font=\large, below left=1pt] {$O$};
+  \coordinate (P2) at ($(O2)+(28:1.35)$);
+  \draw[eleve auxiliar] (O2) -- (P2);
+  \fill[elevelaranja] (P2) circle (2.5pt)
+    node[font=\large\bfseries, text=elevelaranja, above right=2pt] {$P$};
+  \node[font=\large\bfseries, text=elevecinza, align=left] at (6.05,5.45)
+    {na\\circunferência};
+
+  % Ponto externo
+  \coordinate (O3) at (3.10,1.90);
+  \fill[eleveazulclaro] (O3) circle (1.35);
+  \draw[eleve aresta, line width=1.5pt] (O3) circle (1.35);
+  \fill[eleveazul] (O3) circle (2pt) node[font=\large, below left=1pt] {$O$};
+  \coordinate (P3) at ($(O3)+(24:2.08)$);
+  \draw[eleve auxiliar] (O3) -- (P3);
+  \fill[elevelaranja] (P3) circle (2.5pt)
+    node[font=\large\bfseries, text=elevelaranja, above right=2pt] {$P$};
+  \node[font=\large\bfseries, text=elevecinza, align=left] at (6.05,1.90)
+    {posição\\externa};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-posicoes-de-uma-reta
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.05) rectangle (8.75,11.15);
+
+  % Externa
+  \coordinate (O1) at (3.30,9.20);
+  \fill[eleveazulclaro] (O1) circle (1.35);
+  \draw[eleve aresta, line width=1.5pt] (O1) circle (1.35);
+  \draw[eleve destaque, <->, line width=1.6pt] (0.85,10.86) -- (5.75,10.86);
+  \draw[eleve auxiliar, <->] (O1) -- (3.30,10.86);
+  \node[font=\large\bfseries, text=elevecinza, align=left] at (7.15,9.20)
+    {externa\\nenhum ponto};
+
+  % Tangente
+  \coordinate (O2) at (3.30,5.55);
+  \fill[eleveazulclaro] (O2) circle (1.35);
+  \draw[eleve aresta, line width=1.5pt] (O2) circle (1.35);
+  \coordinate (T) at (3.30,6.90);
+  \draw[eleve destaque, <->, line width=1.6pt] (0.85,6.90) -- (5.75,6.90);
+  \draw[eleve auxiliar] (O2) -- (T);
+  \draw[elevecinza, line width=1pt] (3.30,6.65) -- (3.55,6.65) -- (3.55,6.90);
+  \fill[elevelaranja] (T) circle (2.5pt);
+  \node[font=\large\bfseries, text=elevecinza, align=left] at (7.15,5.55)
+    {tangente\\um ponto};
+
+  % Secante
+  \coordinate (O3) at (3.30,1.90);
+  \fill[eleveazulclaro] (O3) circle (1.35);
+  \draw[eleve aresta, line width=1.5pt] (O3) circle (1.35);
+  \draw[eleve destaque, <->, line width=1.6pt] (0.85,1.55) -- (5.75,2.25);
+  \fill[elevelaranja] (1.99,1.71) circle (2.5pt);
+  \fill[elevelaranja] (4.61,2.09) circle (2.5pt);
+  \node[font=\large\bfseries, text=elevecinza, align=left] at (7.15,1.90)
+    {secante\\dois pontos};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-circunferencias-externas
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.05) rectangle (9.15,10.75);
+
+  % Externas
+  \coordinate (O1) at (2.35,9.00);
+  \coordinate (O2) at (6.55,9.00);
+  \draw[eleve auxiliar] (O1) -- (O2);
+  \fill[eleveazulclaro] (O1) circle (1.25);
+  \fill[orange!16] (O2) circle (1.05);
+  \draw[eleve aresta, line width=1.5pt] (O1) circle (1.25);
+  \draw[eleve destaque, line width=1.5pt] (O2) circle (1.05);
+  \fill[eleveazul] (O1) circle (2pt) node[font=\large, below=2pt] {$O_1$};
+  \fill[elevelaranja] (O2) circle (2pt) node[font=\large, below=2pt] {$O_2$};
+  \node[font=\large\bfseries, text=elevecinza] at (4.45,7.38) {externas};
+
+  % Tangentes externas
+  \coordinate (O3) at (2.55,5.25);
+  \coordinate (O4) at (5.85,5.25);
+  \coordinate (T) at (4.25,5.25);
+  \draw[eleve auxiliar] (O3) -- (O4);
+  \fill[eleveazulclaro] (O3) circle (1.70);
+  \fill[orange!16] (O4) circle (1.60);
+  \draw[eleve aresta, line width=1.5pt] (O3) circle (1.70);
+  \draw[eleve destaque, line width=1.5pt] (O4) circle (1.60);
+  \fill[eleveazul] (O3) circle (2pt) node[font=\large, below=2pt] {$O_1$};
+  \fill[elevelaranja] (O4) circle (2pt) node[font=\large, below=2pt] {$O_2$};
+  \fill[elevecinza] (T) circle (2.5pt) node[font=\large, above=3pt] {$T$};
+  \node[font=\large\bfseries, text=elevecinza] at (4.20,3.25)
+    {tangentes externas};
+
+  % Secantes
+  \coordinate (O5) at (3.20,1.35);
+  \coordinate (O6) at (5.50,1.35);
+  \fill[eleveazulclaro, opacity=.72] (O5) circle (1.35);
+  \fill[orange!20, opacity=.72] (O6) circle (1.35);
+  \draw[eleve aresta, line width=1.5pt] (O5) circle (1.35);
+  \draw[eleve destaque, line width=1.5pt] (O6) circle (1.35);
+  \fill[eleveazul] (O5) circle (2pt) node[font=\large, below=2pt] {$O_1$};
+  \fill[elevelaranja] (O6) circle (2pt) node[font=\large, below=2pt] {$O_2$};
+  \node[font=\large\bfseries, text=elevecinza] at (4.35,-0.02) {secantes};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-circunferencias-internas
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.85) rectangle (8.85,11.65);
+
+  % Tangentes internas
+  \coordinate (O1) at (4.20,9.65);
+  \coordinate (O2) at (5.45,9.65);
+  \fill[eleveazulclaro] (O1) circle (2.20);
+  \fill[orange!18] (O2) circle (0.95);
+  \draw[eleve aresta, line width=1.5pt] (O1) circle (2.20);
+  \draw[eleve destaque, line width=1.5pt] (O2) circle (0.95);
+  \draw[eleve auxiliar] (O1) -- (O2);
+  \fill[eleveazul] (O1) circle (2pt) node[font=\large, below left=2pt] {$O_1$};
+  \fill[elevelaranja] (O2) circle (2pt) node[font=\large, below left=2pt] {$O_2$};
+  \fill[elevecinza] (6.40,9.65) circle (2.5pt)
+    node[font=\large, right=3pt] {$T$};
+  \node[font=\large\bfseries, text=elevecinza, align=left, anchor=west]
+    at (6.72,9.65) {tangentes\\internas};
+
+  % Internas
+  \coordinate (O3) at (4.20,4.85);
+  \coordinate (O4) at (5.10,5.25);
+  \fill[eleveazulclaro] (O3) circle (2.05);
+  \fill[orange!18] (O4) circle (0.80);
+  \draw[eleve aresta, line width=1.5pt] (O3) circle (2.05);
+  \draw[eleve destaque, line width=1.5pt] (O4) circle (0.80);
+  \draw[eleve auxiliar] (O3) -- (O4);
+  \fill[eleveazul] (O3) circle (2pt) node[font=\large, below left=2pt] {$O_1$};
+  \fill[elevelaranja] (O4) circle (2pt) node[font=\large, above right=2pt] {$O_2$};
+  \node[font=\large\bfseries, text=elevecinza, anchor=west]
+    at (6.52,4.85) {internas};
+
+  % Concêntricas
+  \coordinate (O5) at (3.30,0.80);
+  \fill[eleveazulclaro] (O5) circle (1.50);
+  \fill[orange!14] (O5) circle (0.78);
+  \draw[eleve aresta, line width=1.5pt] (O5) circle (1.50);
+  \draw[eleve destaque, line width=1.5pt] (O5) circle (0.78);
+  \fill[elevecinza] (O5) circle (2.3pt);
+  \draw[eleve auxiliar, ->] (5.00,0.80) -- (3.42,0.80);
+  \node[font=\large, text=elevecinza, align=left, anchor=west] at (5.20,0.80)
+    {$O_1=O_2$\\\textbf{concêntricas}};
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-angulo-central-e-inscrito
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.10) rectangle (7.85,7.75);
+  \coordinate (O) at (3.85,3.80);
+  \def\R{2.75}
+  \coordinate (A) at ($(O)+(220:\R)$);
+  \coordinate (B) at ($(O)+(320:\R)$);
+  \coordinate (P) at ($(O)+(90:\R)$);
+  \fill[eleveazulclaro] (O) circle (\R);
+  \draw[eleve aresta, line width=1.7pt] (O) circle (\R);
+  \draw[eleve destaque, line width=3pt]
+    ($(O)+(220:\R)$) arc[start angle=220,end angle=320,radius=\R];
+  \draw[eleve aresta, line width=1.5pt] (O) -- (A) (O) -- (B);
+  \draw[eleve aresta, line width=1.5pt] (P) -- (A) (P) -- (B);
+  \draw[eleve destaque, line width=1.4pt]
+    ($(O)+(220:0.72)$) arc[start angle=220,end angle=320,radius=.72];
+  \draw[eleve destaque, line width=1.4pt]
+    ($(P)+(238:.68)$) arc[start angle=238,end angle=302,radius=.68];
+  \node[font=\Large\bfseries, text=elevelaranja] at (3.85,2.88) {$2\alpha$};
+  \node[font=\Large\bfseries, text=elevelaranja] at (3.85,5.66) {$\alpha$};
+  \EleveVertice{A}{below left}{A}
+  \EleveVertice{B}{below right}{B}
+  \EleveVertice{P}{above}{P}
+  \EleveVertice{O}{above right}{O}
+  \node[font=\large\bfseries, text=elevecinza] at (3.85,0.48)
+    {mesmo arco $AB$};
+\end{tikzpicture}
+
+% FIGURA 7 — fig-07-angulo-de-segmento
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.10) rectangle (8.15,7.95);
+  \coordinate (O) at (3.60,3.80);
+  \def\R{2.45}
+  \coordinate (T) at ($(O)+(0:\R)$);
+  \coordinate (A) at ($(O)+(132:\R)$);
+  \fill[eleveazulclaro] (O) circle (\R);
+  \draw[eleve aresta, line width=1.7pt] (O) circle (\R);
+  \draw[eleve destaque, <->, line width=1.7pt] (T |- 0,0.35) -- (T |- 0,7.25);
+  \draw[eleve aresta, line width=1.6pt] (T) -- (A);
+  \draw[eleve auxiliar] (O) -- (T);
+  \draw[elevecinza, line width=1pt] ($(T)+(-.28,0)$) -- ($(T)+(-.28,.28)$) -- ($(T)+(0,.28)$);
+  \draw[eleve destaque, line width=2.8pt]
+    ($(O)+(0:\R)$) arc[start angle=0,end angle=132,radius=\R];
+  \draw[eleve destaque, line width=1.4pt]
+    ($(T)+(90:.68)$) arc[start angle=90,end angle=156,radius=.68];
+  \node[font=\Large\bfseries, text=elevelaranja] at (5.44,4.76) {$\alpha$};
+  \node[font=\large\bfseries, text=elevecinza, rotate=90] at (6.45,3.80)
+    {tangente};
+  \node[font=\large\bfseries, text=eleveazul, rotate=-24] at (3.35,4.34)
+    {corda};
+  \node[font=\large\bfseries, text=elevelaranja] at (4.40,6.80)
+    {arco correspondente};
+  \EleveVertice{A}{above left}{A}
+  \EleveVertice{T}{right}{T}
+  \EleveVertice{O}{below left}{O}
+\end{tikzpicture}
+
+% FIGURA 8 — fig-08-angulo-excentrico-interior
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.10) rectangle (8.05,7.95);
+  \coordinate (O) at (3.95,3.90);
+  \def\R{2.70}
+  \coordinate (A) at ($(O)+(142:\R)$);
+  \coordinate (B) at ($(O)+(322:\R)$);
+  \coordinate (C) at ($(O)+(218:\R)$);
+  \coordinate (D) at ($(O)+(38:\R)$);
+  \coordinate (P) at (O);
+  \fill[eleveazulclaro] (O) circle (\R);
+  \draw[eleve aresta, line width=1.7pt] (O) circle (\R);
+  \draw[eleve aresta, line width=1.6pt] (A) -- (B);
+  \draw[eleve destaque, line width=1.6pt] (C) -- (D);
+  \draw[eleve destaque, line width=2.8pt]
+    ($(O)+(38:\R)$) arc[start angle=38,end angle=142,radius=\R];
+  \draw[elevecinza, dashed, line width=2.3pt]
+    ($(O)+(218:\R)$) arc[start angle=218,end angle=322,radius=\R];
+  \draw[eleve destaque, line width=1.4pt]
+    ($(P)+(38:.72)$) arc[start angle=38,end angle=142,radius=.72];
+  \fill[elevecinza] (P) circle (2.5pt)
+    node[font=\large\bfseries, text=elevecinza, below=7pt] {$P$};
+  \node[font=\Large\bfseries, text=elevelaranja] at (3.95,4.92) {$\gamma_{int}$};
+  \node[font=\large\bfseries, text=elevelaranja] at (3.95,7.18) {arco $\alpha_1$};
+  \node[font=\large\bfseries, text=elevecinza] at (3.95,0.60) {arco $\alpha_2$};
+  \EleveVertice{A}{above left}{A}
+  \EleveVertice{B}{below right}{B}
+  \EleveVertice{C}{below left}{C}
+  \EleveVertice{D}{above right}{D}
+\end{tikzpicture}
+
+% FIGURA 9 — fig-09-angulo-excentrico-exterior
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.10) rectangle (9.25,7.80);
+  \coordinate (O) at (5.55,3.75);
+  \def\R{2.40}
+  \coordinate (P) at (0.55,3.75);
+  \fill[eleveazulclaro] (O) circle (\R);
+  \draw[eleve aresta, line width=1.7pt] (O) circle (\R);
+  \draw[eleve aresta, ->, line width=1.6pt] (P) -- (8.55,7.35);
+  \draw[eleve destaque, ->, line width=1.6pt] (P) -- (8.55,0.15);
+  % Os arcos interceptados ficam em lados opostos da circunferência.
+  \draw[eleve destaque, line width=2.8pt]
+    ($(O)+(316:\R)$) arc[start angle=316,end angle=404,radius=\R];
+  \draw[elevecinza, dashed, line width=2.3pt]
+    ($(O)+(136:\R)$) arc[start angle=136,end angle=224,radius=\R];
+  \draw[eleve destaque, line width=1.4pt]
+    ($(P)+(-24:.92)$) arc[start angle=-24,end angle=24,radius=.92];
+  \fill[elevelaranja] (P) circle (2.7pt)
+    node[font=\large\bfseries, text=elevecinza, left=5pt] {$P$};
+  \node[font=\LARGE\bfseries, text=elevelaranja] at (2.25,3.75) {$\gamma_{ext}$};
+  \node[font=\large\bfseries, text=elevelaranja, align=left] at (8.00,3.75)
+    {arco\\maior};
+  \node[font=\large\bfseries, text=elevecinza, align=left] at (4.05,3.75)
+    {arco\\menor};
+\end{tikzpicture}
+
+% FIGURA 10 — fig-10-potencia-entre-cordas
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.10) rectangle (8.15,7.75);
+  \coordinate (O) at (3.95,3.80);
+  \def\R{2.70}
+  \coordinate (A) at ($(O)+(165:\R)$);
+  \coordinate (B) at ($(O)+(345:\R)$);
+  \coordinate (C) at ($(O)+(230:\R)$);
+  \coordinate (D) at ($(O)+(50:\R)$);
+  \coordinate (P) at (O);
+  \fill[eleveazulclaro] (O) circle (\R);
+  \draw[eleve aresta, line width=1.7pt] (O) circle (\R);
+  \draw[eleve aresta, line width=1.8pt] (A) -- (P) -- (B);
+  \draw[eleve destaque, line width=1.8pt] (C) -- (P) -- (D);
+  \fill[elevecinza] (P) circle (2.7pt)
+    node[font=\large\bfseries, text=elevecinza, below right=4pt] {$P$};
+  \node[font=\large\bfseries, text=eleveazul, rotate=-15] at ($(A)!0.5!(P)+(0,.47)$) {$PA$};
+  \node[font=\large\bfseries, text=eleveazul, rotate=-15] at ($(P)!0.5!(B)+(0,.47)$) {$PB$};
+  \node[font=\large\bfseries, text=elevelaranja, rotate=50] at ($(C)!0.5!(P)+(-.50,0)$) {$PC$};
+  \node[font=\large\bfseries, text=elevelaranja, rotate=50] at ($(P)!0.5!(D)+(-.50,0)$) {$PD$};
+  \EleveVertice{A}{left}{A}
+  \EleveVertice{B}{right}{B}
+  \EleveVertice{C}{below left}{C}
+  \EleveVertice{D}{above right}{D}
+\end{tikzpicture}
+
+% FIGURA 11 — fig-11-potencia-entre-secantes
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.10) rectangle (9.45,7.75);
+  \coordinate (O) at (5.65,3.75);
+  \def\R{2.45}
+  \coordinate (P) at (0.55,3.75);
+  \fill[eleveazulclaro] (O) circle (\R);
+  \draw[eleve aresta, line width=1.7pt] (O) circle (\R);
+  \draw[eleve aresta, line width=1.8pt] (P) -- (8.70,7.10);
+  \draw[eleve destaque, line width=1.8pt] (P) -- (8.70,0.40);
+  \coordinate (A) at (3.55,4.98);
+  \coordinate (B) at (7.92,6.78);
+  \coordinate (C) at (3.55,2.52);
+  \coordinate (D) at (7.92,0.72);
+  \EleveVertice{A}{above left}{A}
+  \EleveVertice{B}{above right}{B}
+  \EleveVertice{C}{below left}{C}
+  \EleveVertice{D}{below right}{D}
+  \fill[elevecinza] (P) circle (2.7pt)
+    node[font=\large\bfseries, text=elevecinza, left=5pt] {$P$};
+  \node[font=\Large\bfseries, text=eleveazul, rotate=22] at (2.20,5.15) {$PA$};
+  \node[font=\Large\bfseries, text=eleveazul, rotate=22] at (6.15,6.80) {$PB$};
+  \node[font=\Large\bfseries, text=elevelaranja, rotate=-22] at (2.20,2.32) {$PC$};
+  \node[font=\Large\bfseries, text=elevelaranja, rotate=-22] at (6.15,0.70) {$PD$};
+\end{tikzpicture}
+
+% FIGURA 12 — fig-12-potencia-secante-tangente
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.10) rectangle (8.65,7.35);
+  \coordinate (O) at (4.65,3.15);
+  \def\R{2.00}
+  \coordinate (P) at (0.65,3.15);
+  \coordinate (A) at (2.65,3.15);
+  \coordinate (B) at (6.65,3.15);
+  \coordinate (T) at (3.65,4.882);
+  \fill[eleveazulclaro] (O) circle (\R);
+  \draw[eleve aresta, line width=1.7pt] (O) circle (\R);
+  \draw[eleve aresta, ->, line width=1.8pt] (P) -- (7.75,3.15);
+  \draw[eleve destaque, line width=1.9pt] (P) -- (T);
+  \draw[eleve auxiliar] (O) -- (T);
+  \draw[elevecinza, line width=1pt]
+    ($(T)!0.16!(O)$) -- ($(T)!0.16!(O)+(150:.28)$) -- ($(T)+(150:.28)$);
+  \EleveVertice{A}{below}{A}
+  \EleveVertice{B}{below}{B}
+  \EleveVertice{T}{above right}{T}
+  \fill[elevecinza] (P) circle (2.7pt)
+    node[font=\large\bfseries, text=elevecinza, left=5pt] {$P$};
+  \EleveVertice{O}{above right}{O}
+  \node[font=\large\bfseries, text=eleveazul] at (1.67,2.64) {$PA$};
+  \node[font=\large\bfseries, text=eleveazul] at (5.56,2.64) {$PB$};
+  \node[font=\Large\bfseries, text=elevelaranja, rotate=24] at (2.10,4.78) {$PT$};
+  \node[font=\large\bfseries, text=elevelaranja, align=left] at (6.85,5.55)
+    {tangente\\em $T$};
+\end{tikzpicture}
+
+\end{document}

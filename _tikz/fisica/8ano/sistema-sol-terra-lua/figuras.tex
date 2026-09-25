@@ -1,0 +1,176 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-fisica}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-escala-terra-lua-sol
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.0,8.0);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.25,7.45)
+    {comparação das distâncias};
+  \node[fisica corpo, circle, minimum size=0.9cm] (T1) at (1.3,5.4) {T};
+  \node[fisica corpo, circle, minimum size=0.55cm] (L) at (4.2,5.4) {};
+  \draw[fisica auxiliar, <->] (1.8,5.4) -- (3.85,5.4)
+    node[fisica rotulo, midway, above=7pt] {$384$ mil km};
+  \node[fisica rotulo, anchor=west] at (4.65,5.4) {Terra--Lua};
+
+  \node[fisica corpo, circle, minimum size=0.9cm] (T2) at (1.3,2.35) {T};
+  \fill[elevelaranja] (8.8,2.35) circle (0.7);
+  \draw[elevelaranja, line width=1.4pt] (8.8,2.35) circle (0.9);
+  \draw[fisica auxiliar, <->] (1.8,2.35) -- (7.85,2.35)
+    node[fisica rotulo, midway, above=7pt] {$149{,}6$ milhões km};
+  \node[fisica rotulo, anchor=west] at (9.3,2.35) {Sol};
+  \node[font=\large\bfseries, text=elevecinza] at (5.25,0.55)
+    {Terra--Sol $\approx390$ vezes Terra--Lua};
+  \node[font=\large\bfseries, text=elevecinza] at (5.25,6.55)
+    {esquema sem escala};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-rotacao-e-translacao-da-terra
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.6,9.6);
+  \coordinate (S) at (5.0,4.55);
+  \draw[fisica trajetoria] (S) ellipse (4.25 and 2.95);
+  \fill[elevelaranja] (S) circle (0.75);
+  \node[fisica medida, below=8pt] at (S) {Sol};
+  \coordinate (T) at (8.7,5.95);
+  \shade[ball color=eleveazulclaro] (T) circle (0.62);
+  \draw[eleveazul, line width=1.2pt] (T) circle (0.62);
+  \draw[elevecinza, line width=1.2pt] ($(T)+(-0.25,-1.05)$) -- ($(T)+(0.25,1.05)$);
+  \draw[fisica movimento] ($(T)+(0.85,0.25)$)
+    arc[start angle=15,end angle=310,radius=0.9];
+  \node[fisica rotulo] at (9.15,7.65) {rotação};
+  \draw[fisica movimento] (2.1,6.8)
+    arc[start angle=145,end angle=215,x radius=4.25,y radius=2.95];
+  \node[fisica rotulo] at (1.85,8.25) {translação};
+  \node[font=\large\bfseries, text=elevecinza] at (5.0,0.55)
+    {giro próprio e órbita acontecem ao mesmo tempo};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-inclinacao-do-eixo-e-estacoes
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.2,9.2);
+  \fill[elevelaranja] (5.35,4.45) circle (0.85);
+  \node[fisica medida, below=9pt] at (5.35,4.45) {Sol};
+  \foreach \x/\sul/\norte in {1.6/verão/inverno,9.1/inverno/verão}{
+    \coordinate (T) at (\x,4.45);
+    \shade[ball color=eleveazulclaro] (T) circle (1.15);
+    \draw[eleveazul, line width=1.3pt] (T) circle (1.15);
+    \draw[elevecinza, line width=1.3pt] ($(T)+(-0.58,-2.15)$) -- ($(T)+(0.58,2.15)$);
+    \draw[elevelaranja, line width=1.0pt] ($(T)+(-0.95,0.15)$) -- ($(T)+(0.95,-0.15)$);
+    \node[fisica rotulo] at (\x,7.15) {N: \norte};
+    \node[fisica rotulo] at (\x,1.7) {S: \sul};
+  }
+  \foreach \y in {3.5,4.1,4.8,5.4}{
+    \draw[fisica raio] (4.25,\y) -- (2.85,\y);
+    \draw[fisica raio] (6.45,\y) -- (7.85,\y);
+  }
+  \draw[elevelaranja, line width=1.1pt] (1.6,6.0)
+    arc[start angle=90,end angle=74,radius=1.55];
+  \node[fisica medida] at (2.45,6.45) {$23{,}5^\circ$};
+  \node[font=\large\bfseries, text=elevecinza] at (5.35,8.55)
+    {o eixo mantém a mesma orientação};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-geometria-das-fases-da-lua
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.2,10.6);
+  \coordinate (T) at (6.0,5.1);
+  \fill[elevelaranja] (0.8,5.1) circle (0.75);
+  \node[fisica medida, below=8pt] at (0.8,5.1) {Sol};
+  \draw[fisica raio] (1.75,9.65) -- (9.9,9.65);
+  \node[fisica rotulo, below=7pt] at (3.65,9.65) {luz solar};
+  \shade[ball color=eleveazulclaro] (T) circle (1.0);
+  \draw[eleveazul, line width=1.2pt] (T) circle (1.0);
+  \node[fisica rotulo, below=8pt] at (T) {Terra};
+  \draw[fisica trajetoria] (T) circle (3.55);
+  \coordinate (N) at (2.45,5.1);
+  \coordinate (C) at (6.0,8.65);
+  \coordinate (F) at (9.55,5.1);
+  \coordinate (M) at (6.0,1.55);
+  \foreach \p in {N,C,F,M}{
+    \fill[elevecinza] (\p) circle (0.43);
+    \fill[elevelaranjaclaro] ($( \p)+(-0.21,0)$) arc[start angle=90,end angle=270,radius=0.21] -- cycle;
+    \draw[elevecinza, line width=1pt] (\p) circle (0.43);
+  }
+  \node[fisica rotulo, above=7pt] at (N) {Nova};
+  \node[fisica rotulo, above=7pt] at (C) {Crescente};
+  \node[fisica rotulo, above=7pt] at (F) {Cheia};
+  \node[fisica rotulo, below=7pt] at (M) {Minguante};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-eclipse-solar-e-lunar
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.4,11.2);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.45,10.65) {eclipse solar};
+  \fill[elevelaranja] (1.0,8.4) circle (0.7);
+  \fill[elevecinza] (5.1,8.4) circle (0.38);
+  \shade[ball color=eleveazulclaro] (9.25,8.4) circle (0.8);
+  \draw[eleveazul, line width=1pt] (9.25,8.4) circle (0.8);
+  \fill[elevecinzaclaro] (5.45,8.15) -- (8.55,7.9) -- (8.55,8.9) -- (5.45,8.65) -- cycle;
+  \node[fisica medida] at (1.0,7.25) {Sol};
+  \node[fisica rotulo] at (5.1,7.25) {Lua};
+  \node[fisica rotulo] at (9.25,7.25) {Terra};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.45,5.5) {eclipse lunar};
+  \fill[elevelaranja] (1.0,3.2) circle (0.7);
+  \shade[ball color=eleveazulclaro] (5.15,3.2) circle (0.8);
+  \draw[eleveazul, line width=1pt] (5.15,3.2) circle (0.8);
+  \fill[elevecinza] (9.35,3.2) circle (0.38);
+  \fill[elevecinzaclaro] (5.95,2.65) -- (9.0,2.98) -- (9.0,3.42) -- (5.95,3.75) -- cycle;
+  \node[fisica medida] at (1.0,2.05) {Sol};
+  \node[fisica rotulo] at (5.15,2.05) {Terra};
+  \node[fisica rotulo] at (9.35,2.05) {Lua};
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-orbita-lunar-inclinada
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.0,8.9);
+  \coordinate (T) at (5.25,4.2);
+  \shade[ball color=eleveazulclaro] (T) circle (0.9);
+  \draw[eleveazul, line width=1.2pt] (T) circle (0.9);
+  \node[fisica rotulo, below=8pt] at (T) {Terra};
+  \draw[fisica trajetoria] (T) ellipse (4.25 and 1.3);
+  \draw[fisica trajetoria, rotate around={5:(T)}] (T) ellipse (4.25 and 2.0);
+  \node[fisica rotulo] at (8.7,2.35) {plano terrestre};
+  \node[fisica rotulo] at (8.65,6.55) {órbita lunar};
+  \fill[elevecinza] (1.3,3.83) circle (0.43);
+  \fill[elevecinza] (9.2,4.88) circle (0.43);
+  \node[fisica rotulo] at (1.4,2.85) {abaixo};
+  \node[fisica rotulo] at (9.1,5.75) {acima};
+  \draw[elevelaranja, line width=1.1pt] (7.0,4.65)
+    arc[start angle=0,end angle=12,radius=1.75];
+  \node[fisica medida] at (7.65,5.1) {$5^\circ$};
+  \node[font=\large\bfseries, text=elevecinza] at (5.25,8.15)
+    {na maior parte do mês não há alinhamento};
+\end{tikzpicture}
+
+% FIGURA 7 — fig-07-sizigia-e-quadratura
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.2,10.8);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.35,10.25)
+    {sizígia: atrações alinhadas};
+  \fill[elevelaranja] (1.0,7.9) circle (0.65);
+  \draw[eleveazul, fill=eleveazulclaro, line width=1.2pt]
+    (5.45,7.9) ellipse (1.45 and 0.85);
+  \fill[elevecinza] (9.5,7.9) circle (0.38);
+  \draw[fisica forca] (5.45,7.9) -- ++(-2.2,0);
+  \draw[fisica forca] (5.45,7.9) -- ++(2.2,0);
+  \node[fisica medida] at (1.0,6.85) {Sol};
+  \node[fisica rotulo] at (9.5,6.85) {Lua};
+  \node[fisica rotulo] at (5.45,6.35) {maior diferença de nível};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.35,4.95)
+    {quadratura: atrações transversais};
+  \fill[elevelaranja] (1.0,2.4) circle (0.65);
+  \draw[eleveazul, fill=eleveazulclaro, line width=1.2pt]
+    (5.45,2.4) ellipse (1.15 and 0.92);
+  \fill[elevecinza] (5.45,4.25) circle (0.38);
+  \draw[fisica forca] (5.45,2.4) -- ++(-2.1,0);
+  \draw[fisica forca] (5.45,2.4) -- ++(0,1.25);
+  \node[fisica medida] at (1.0,1.35) {Sol};
+  \node[fisica rotulo, anchor=west] at (6.05,4.25) {Lua};
+  \node[fisica rotulo] at (5.45,0.7) {menor diferença de nível};
+\end{tikzpicture}
+
+\end{document}

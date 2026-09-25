@@ -1,0 +1,163 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-fisica}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-elementos-de-uma-onda
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-1.4,-0.2) rectangle (12.2,7.8);
+  \draw[fisica auxiliar] (0.65,3.5) -- (10.25,3.5)
+    node[right=3pt, fisica rotulo] {equilíbrio};
+  \draw[fisica movimento, domain=0.65:10.0, samples=150, variable=\x]
+    plot ({\x},{3.5+1.55*sin((\x-0.65)*90)});
+  \draw[decorate, decoration={brace, amplitude=7pt}, elevelaranja, line width=1.1pt]
+    (0.95,3.5) -- (0.95,5.05)
+    node[midway, left=12pt, fisica medida] {amplitude};
+  \draw[decorate, decoration={brace, mirror, amplitude=7pt}, elevelaranja, line width=1.1pt]
+    (2.65,1.55) -- (6.65,1.55)
+    node[midway, below=12pt, fisica medida] {$\lambda$};
+  \fill[eleveazul] (2.65,5.05) circle (3pt);
+  \fill[eleveazul] (6.65,5.05) circle (3pt);
+  \node[fisica rotulo, above=5pt] at (2.65,5.05) {crista};
+  \node[fisica rotulo, below=5pt] at (4.65,1.95) {vale};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-frequencia-fixa-muda-o-comprimento
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.8,9.3);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.15,8.75)
+    {a fonte mantém a frequência};
+  \node[fisica rotulo, anchor=east] at (2.0,6.4) {meio 1};
+  \draw[fisica movimento, domain=2.4:9.65, samples=150, variable=\x]
+    plot ({\x},{6.4+0.75*sin((\x-2.4)*125)});
+  \draw[decorate, decoration={brace, mirror, amplitude=6pt}, elevelaranja, line width=1pt]
+    (2.4,5.2) -- (5.28,5.2)
+    node[midway, below=10pt, fisica medida] {$\lambda_1$};
+
+  \node[fisica rotulo, anchor=east] at (2.0,2.75) {meio 2};
+  \draw[fisica movimento, domain=2.4:9.65, samples=150, variable=\x]
+    plot ({\x},{2.75+0.75*sin((\x-2.4)*80)});
+  \draw[decorate, decoration={brace, mirror, amplitude=6pt}, elevelaranja, line width=1pt]
+    (2.4,1.55) -- (6.9,1.55)
+    node[midway, below=10pt, fisica medida] {$\lambda_2$};
+  \node[font=\large\bfseries, text=elevecinza] at (5.2,0.35)
+    {$f$ igual; velocidade e comprimento mudam};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-onda-longitudinal-e-transversal
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.1,10.4);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.25,9.85)
+    {longitudinal};
+  \draw[fisica movimento] (1.0,8.7) -- (9.35,8.7);
+  \node[fisica rotulo, anchor=east] at (10.25,8.15) {propagação};
+  \foreach \x in {1.3,1.65,2.0,3.0,4.0,4.35,4.7,5.7,6.7,7.05,7.4,8.4,9.4}
+    \fill[eleveazul] (\x,7.1) circle (3.2pt);
+  \draw[fisica movimento, <->] (4.0,6.35) -- (4.7,6.35);
+  \node[fisica rotulo] at (5.25,5.75) {oscilação paralela};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.25,4.55)
+    {transversal};
+  \draw[fisica movimento] (1.0,3.45) -- (9.35,3.45);
+  \node[fisica rotulo, anchor=east] at (10.25,2.9) {propagação};
+  \draw[fisica trajetoria, domain=1.15:9.45, samples=120, variable=\x]
+    plot ({\x},{1.75+0.75*sin((\x-1.15)*100)});
+  \draw[fisica movimento, <->] (5.25,0.55) -- (5.25,2.95);
+  \node[fisica rotulo, anchor=west] at (5.65,0.75) {oscilação perpendicular};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-eco-e-reverberacao
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.8,8.8);
+  \node[font=\Large\bfseries, text=eleveazul] at (5.15,8.25) {eco};
+  \draw[fisica eixo] (1.0,6.25) -- (9.65,6.25)
+    node[right, fisica rotulo] {tempo};
+  \draw[elevelaranja, line width=2.4pt] (2.25,5.75) -- (2.25,6.75);
+  \draw[eleveazul, line width=2.4pt] (7.75,5.75) -- (7.75,6.75);
+  \node[fisica medida] at (2.25,5.25) {direto};
+  \node[fisica rotulo] at (7.75,5.25) {refletido separado};
+
+  \node[font=\Large\bfseries, text=eleveazul] at (5.15,4.05) {reverberação};
+  \draw[fisica eixo] (1.0,2.05) -- (9.65,2.05)
+    node[right, fisica rotulo] {tempo};
+  \draw[elevelaranja, line width=2.4pt] (4.15,1.55) -- (4.15,2.55);
+  \draw[eleveazul, line width=2.4pt] (5.15,1.55) -- (5.15,2.55);
+  \node[fisica medida] at (4.15,1.0) {direto};
+  \node[fisica rotulo, anchor=west] at (5.5,1.0) {refletido próximo};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-formacao-de-sombra
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.0,7.9);
+  \fill[elevelaranja] (1.0,3.75) circle (7pt);
+  \node[fisica medida, above=8pt] at (1.0,3.75) {fonte};
+  \draw[elevecinza, fill=elevecinzaclaro, line width=1.4pt]
+    (4.35,2.25) rectangle (5.05,5.25);
+  \node[fisica rotulo, above=7pt] at (4.7,5.25) {opaco};
+  \draw[fisica raio] (1.0,3.75) -- (4.35,5.25) -- (9.7,7.65);
+  \draw[fisica raio] (1.0,3.75) -- (4.35,2.25) -- (9.7,-0.15);
+  \fill[elevecinzaclaro] (5.05,2.25) -- (9.7,-0.15) -- (9.7,7.65) -- (5.05,5.25) -- cycle;
+  \draw[fisica superficie] (9.7,0.25) -- (9.7,7.25);
+  \node[font=\Large\bfseries, text=elevecinza] at (7.65,3.75) {sombra};
+  \node[fisica rotulo, rotate=90] at (10.35,3.75) {anteparo};
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-reflexao-e-refracao
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (10.7,8.9);
+  \fill[eleveazulclaro!55] (0.65,0.65) rectangle (10.0,4.4);
+  \draw[fisica superficie] (0.65,4.4) -- (10.0,4.4);
+  \draw[fisica auxiliar] (5.3,0.65) -- (5.3,8.25);
+  \draw[fisica raio] (1.5,7.8) -- (5.3,4.4);
+  \draw[fisica raio] (5.3,4.4) -- (8.7,7.45);
+  \draw[fisica raio] (5.3,4.4) -- (7.15,0.95);
+  \node[fisica rotulo] at (2.15,7.05) {incidente};
+  \node[fisica rotulo] at (8.35,6.65) {refletido};
+  \node[fisica rotulo] at (7.95,1.6) {refratado};
+  \node[fisica rotulo, anchor=west] at (5.55,8.0) {normal};
+  \draw[elevelaranja, line width=1.1pt] (5.3,5.55)
+    arc[start angle=90,end angle=138,radius=1.15];
+  \draw[elevelaranja, line width=1.1pt] (5.3,5.55)
+    arc[start angle=90,end angle=42,radius=1.15];
+  \node[fisica medida] at (4.45,5.6) {$i$};
+  \node[fisica medida] at (6.15,5.6) {$r$};
+\end{tikzpicture}
+
+% FIGURA 7 — fig-07-dispersao-da-luz-branca
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.0,7.8);
+  \draw[elevecinza, fill=elevecinzaclaro, line width=1.4pt]
+    (4.25,1.15) -- (7.2,3.75) -- (4.25,6.35) -- cycle;
+  \draw[white, line width=5pt] (0.75,3.75) -- (4.25,3.75);
+  \draw[elevecinza, line width=1.1pt] (0.75,3.75) -- (4.25,3.75);
+  \node[fisica rotulo, above=7pt] at (2.4,3.75) {luz branca};
+  \draw[red, ->, line width=1.7pt] (5.7,3.75) -- (10.1,6.45);
+  \draw[orange, ->, line width=1.7pt] (5.7,3.75) -- (10.1,5.55);
+  \draw[yellow!70!orange, ->, line width=1.7pt] (5.7,3.75) -- (10.1,4.65);
+  \draw[green!60!black, ->, line width=1.7pt] (5.7,3.75) -- (10.1,3.75);
+  \draw[cyan!70!blue, ->, line width=1.7pt] (5.7,3.75) -- (10.1,2.85);
+  \draw[blue, ->, line width=1.7pt] (5.7,3.75) -- (10.1,1.95);
+  \draw[violet, ->, line width=1.7pt] (5.7,3.75) -- (10.1,1.05);
+  \node[fisica rotulo] at (5.75,0.35) {cada cor sofre um desvio diferente};
+\end{tikzpicture}
+
+% FIGURA 8 — fig-08-padrao-da-dupla-fenda
+\begin{tikzpicture}[fisica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.2) rectangle (11.2,8.9);
+  \draw[fisica raio] (0.55,4.35) -- (3.35,4.35);
+  \node[fisica rotulo, above=6pt] at (1.9,4.35) {luz};
+  \draw[fisica superficie] (3.35,0.75) -- (3.35,3.55);
+  \draw[fisica superficie] (3.35,3.95) -- (3.35,4.75);
+  \draw[fisica superficie] (3.35,5.15) -- (3.35,7.95);
+  \node[fisica rotulo, rotate=90] at (2.75,6.55) {duas fendas};
+  \foreach \y in {3.75,4.95}{
+    \draw[fisica raio, opacity=.65] (3.35,\y) -- (9.4,1.05);
+    \draw[fisica raio, opacity=.65] (3.35,\y) -- (9.4,7.65);
+  }
+  \draw[fisica superficie] (9.4,0.75) -- (9.4,7.95);
+  \foreach \y/\w in {1.1/1.0,1.8/.45,2.5/1.0,3.2/.45,3.9/1.0,4.6/.45,5.3/1.0,6.0/.45,6.7/1.0,7.4/.45}
+    \draw[elevelaranja, line width=\w mm] (9.42,\y) -- (10.25,\y);
+  \node[fisica rotulo, rotate=90] at (10.75,4.35) {faixas alternadas};
+\end{tikzpicture}
+
+\end{document}

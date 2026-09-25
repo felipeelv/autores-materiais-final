@@ -1,0 +1,95 @@
+{
+  "versao": 1,
+  "disciplina": "fisica",
+  "ano_serie": "3serie",
+  "titulo_documento": "Campo magnético e suas fontes",
+  "slug_documento": "campo-magnetico-e-suas-fontes",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Fisica/3serie/fisica-3serie-3bim-cap1.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-linhas-de-campo-do-ima",
+      "pagina": 1,
+      "arquivo": "fig-01-linhas-de-campo-do-ima.png",
+      "alt": "Linhas fechadas de campo saindo do polo norte e retornando ao polo sul pelo interior do ímã",
+      "aprovada": true,
+      "sha256": "7623fb2cf6178796765b804a41ca521c500d7003d69b5b32d2d2db2158bcdb3d",
+      "largura_px": 1394,
+      "altura_px": 1111,
+      "publicado_sha256": "7623fb2cf6178796765b804a41ca521c500d7003d69b5b32d2d2db2158bcdb3d",
+      "publicado_commit": "55f227b6e2fbf4e631e09d48c3186e22acad539e"
+    },
+    {
+      "id": "fig-02-terra-como-dipolo-inclinado",
+      "pagina": 2,
+      "arquivo": "fig-02-terra-como-dipolo-inclinado.png",
+      "alt": "Eixo geográfico da Terra e eixo do dipolo magnético separados por cerca de onze graus",
+      "aprovada": true,
+      "sha256": "05a48cda81c5bde4962ad3a1e76c72321d4610c619b88b62d6831f7e02650009",
+      "largura_px": 1300,
+      "altura_px": 1241,
+      "publicado_sha256": "05a48cda81c5bde4962ad3a1e76c72321d4610c619b88b62d6831f7e02650009",
+      "publicado_commit": "55f227b6e2fbf4e631e09d48c3186e22acad539e"
+    },
+    {
+      "id": "fig-03-declinacao-e-inclinacao",
+      "pagina": 3,
+      "arquivo": "fig-03-declinacao-e-inclinacao.png",
+      "alt": "Vista horizontal da declinação e vista vertical da inclinação do campo magnético",
+      "aprovada": true,
+      "sha256": "56971e88c98b27bdbf597121df0b3f52c87d8429cfa7cc92f5a1ba94d3c17167",
+      "largura_px": 1371,
+      "altura_px": 1312,
+      "publicado_sha256": "56971e88c98b27bdbf597121df0b3f52c87d8429cfa7cc92f5a1ba94d3c17167",
+      "publicado_commit": "55f227b6e2fbf4e631e09d48c3186e22acad539e"
+    },
+    {
+      "id": "fig-04-campo-ao-redor-do-fio",
+      "pagina": 4,
+      "arquivo": "fig-04-campo-ao-redor-do-fio.png",
+      "alt": "Fio com corrente e linhas circulares de campo orientadas pela regra da mão direita",
+      "aprovada": true,
+      "sha256": "e54dd4eb02c74f28fec2e0d78c431dd850f24d11c04faf26c980ebc09925cea4",
+      "largura_px": 1252,
+      "altura_px": 1205,
+      "publicado_sha256": "e54dd4eb02c74f28fec2e0d78c431dd850f24d11c04faf26c980ebc09925cea4",
+      "publicado_commit": "55f227b6e2fbf4e631e09d48c3186e22acad539e"
+    },
+    {
+      "id": "fig-05-campo-da-espira",
+      "pagina": 5,
+      "arquivo": "fig-05-campo-da-espira.png",
+      "alt": "Espira com corrente e vetor campo perpendicular ao plano no centro",
+      "aprovada": true,
+      "sha256": "e4a878a178794b453e6b3110954134af98e2680c3bffcf638f90185328cff059",
+      "largura_px": 1347,
+      "altura_px": 1146,
+      "publicado_sha256": "e4a878a178794b453e6b3110954134af98e2680c3bffcf638f90185328cff059",
+      "publicado_commit": "55f227b6e2fbf4e631e09d48c3186e22acad539e"
+    },
+    {
+      "id": "fig-06-campo-do-solenoide",
+      "pagina": 6,
+      "arquivo": "fig-06-campo-do-solenoide.png",
+      "alt": "Solenoide com linhas internas paralelas e campo externo semelhante ao de um ímã",
+      "aprovada": true,
+      "sha256": "50821344497a62393b784d5259f4d3b03737365c060b99026d3c8e5df945b40e",
+      "largura_px": 1418,
+      "altura_px": 1134,
+      "publicado_sha256": "50821344497a62393b784d5259f4d3b03737365c060b99026d3c8e5df945b40e",
+      "publicado_commit": "55f227b6e2fbf4e631e09d48c3186e22acad539e"
+    },
+    {
+      "id": "fig-07-experiencia-de-oersted",
+      "pagina": 7,
+      "arquivo": "fig-07-experiencia-de-oersted.png",
+      "alt": "Fio ligado a uma pilha desviando a agulha de uma bússola próxima",
+      "aprovada": true,
+      "sha256": "48fc96f787d88a60f1c1aa42dc7f436d537c987ab622ef20a6b515f880df1b29",
+      "largura_px": 1371,
+      "altura_px": 1170,
+      "publicado_sha256": "48fc96f787d88a60f1c1aa42dc7f436d537c987ab622ef20a6b515f880df1b29",
+      "publicado_commit": "55f227b6e2fbf4e631e09d48c3186e22acad539e"
+    }
+  ]
+}

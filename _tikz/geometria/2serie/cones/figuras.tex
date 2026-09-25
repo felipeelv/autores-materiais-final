@@ -1,0 +1,167 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-geometria}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-geracao-do-cone-por-rotacao
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (9.15,8.55);
+  \coordinate (V) at (4.20,7.75); \coordinate (O) at (4.20,1.15); \coordinate (R) at (7.55,1.15);
+  \fill[eleveazulclaro] (V)--(O)--(R)--cycle;
+  \draw[eleve aresta,line width=1.7pt] (V)--(O)--(R)--cycle;
+  \draw[eleve destaque,line width=2.2pt] (3.98,.65)--(3.98,8.15);
+  \node[font=\large\bfseries,text=elevelaranja,anchor=east] at (3.72,4.45) {eixo};
+  \draw[eleve destaque,->,line width=1.8pt] (6.95,7.40) .. controls (5.60,8.55) and (2.90,8.45) .. (2.35,7.30);
+  \node[font=\Large\bfseries,text=elevelaranja] at (4.70,8.20) {$360^\circ$};
+  \draw[eleve auxiliar,line width=1.2pt] (V)--(.85,1.15);
+  \draw[eleve aresta,line width=1.5pt] (O) ellipse (3.35 and .70);
+  \node[font=\large\bfseries,text=elevecinza,align=center] at (7.55,4.45)
+    {hipotenusa\\gera a lateral};
+\end{tikzpicture}
+
+% FIGURA 2 — fig-02-elementos-do-cone
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (9.45,9.20);
+  \coordinate (V) at (4.25,8.45); \coordinate (O) at (4.25,1.30); \coordinate (L) at (1.25,1.30); \coordinate (R) at (7.25,1.30);
+  \fill[eleveazulclaro,opacity=.75] (V)--(R) arc[start angle=0,end angle=-180,x radius=3,y radius=.68]--cycle;
+  \draw[eleve aresta,line width=1.8pt] (V)--(L) (V)--(R);
+  \draw[eleve aresta,line width=1.5pt] (O) ellipse (3 and .68);
+  \draw[eleve auxiliar,line width=1.3pt] (V)--(O);
+  \draw[eleve destaque,|<->|] (3.80,1.30)--(3.80,8.45) node[midway,left,font=\Large\bfseries] {$h$};
+  \draw[eleve destaque,->,line width=1.6pt] (O)--(R) node[midway,above,font=\Large\bfseries] {$r$};
+  \draw[eleve destaque,line width=2.4pt] (V)--(R);
+  \node[font=\Large\bfseries,text=elevelaranja,anchor=west] at (6.30,5.25) {$g$};
+  \fill[elevelaranja] (V) circle (2.8pt) node[above,font=\large\bfseries] {vértice};
+  \fill[eleveazul] (O) circle (2.4pt);
+  \node[font=\large\bfseries,text=elevecinza] at (4.25,.25) {base circular};
+  \node[font=\large\bfseries,text=elevecinza,anchor=west] at (4.50,4.80) {eixo};
+\end{tikzpicture}
+
+% FIGURA 3 — fig-03-cone-reto-e-obliquo
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (10.55,8.10);
+  \node[font=\Large\bfseries,text=eleveazul] at (2.40,7.72) {reto};
+  \coordinate (V1) at (2.40,7.10); \coordinate (O1) at (2.40,1.15);
+  \draw[eleve aresta,line width=1.7pt] (V1)--(.55,1.15) (V1)--(4.25,1.15);
+  \draw[eleve aresta] (O1) ellipse (1.85 and .48);
+  \draw[eleve auxiliar] (V1)--(O1);
+  \draw[eleve destaque] (O1)--(2.78,1.15)--(2.78,1.53)--(O1);
+  \node[font=\large\bfseries,text=elevecinza] at (2.40,.35) {eixo $\perp$ base};
+
+  \node[font=\Large\bfseries,text=elevelaranja] at (7.80,7.72) {oblíquo};
+  \coordinate (V2) at (8.80,7.10); \coordinate (O2) at (7.30,1.15);
+  \draw[eleve destaque,line width=1.7pt] (V2)--(5.45,1.15) (V2)--(9.15,1.15);
+  \draw[eleve aresta] (O2) ellipse (1.85 and .48);
+  \draw[eleve auxiliar] (V2)--(O2);
+  \draw[eleve auxiliar,|<->|] (7.30,1.15)--(7.30,7.10) node[midway,left,font=\Large\bfseries] {$h$};
+  \node[font=\large\bfseries,text=elevecinza] at (7.80,.35) {eixo inclinado};
+\end{tikzpicture}
+
+% FIGURA 4 — fig-04-seccao-meridiana-do-cone-equilatero
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (9.25,8.10);
+  \coordinate (A) at (.85,.85); \coordinate (B) at (8.05,.85); \coordinate (V) at (4.45,7.10); \coordinate (M) at (4.45,.85);
+  \fill[eleveazulclaro] (A)--(B)--(V)--cycle;
+  \draw[eleve aresta,line width=1.8pt] (A)--(B)--(V)--cycle;
+  \draw[eleve destaque,line width=1.6pt] (V)--(M);
+  \draw[eleve destaque] (M)--(4.85,.85)--(4.85,1.25)--(M);
+  \node[font=\Large\bfseries,text=eleveazul,rotate=60] at (2.25,4.10) {$g=2r$};
+  \node[font=\Large\bfseries,text=eleveazul,rotate=-60] at (6.65,4.10) {$g=2r$};
+  \node[font=\Large\bfseries,text=elevelaranja,anchor=west] at (4.68,4.15) {$h=r\sqrt3$};
+  \draw[eleve destaque,|<->|] (.85,.32)--(8.05,.32) node[midway,below,font=\Large\bfseries] {$2r$};
+  \node[font=\large\bfseries,text=elevecinza] at (4.45,7.60) {secção meridiana equilátera};
+\end{tikzpicture}
+
+% FIGURA 5 — fig-05-planificacao-da-area-lateral
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (9.45,10.00);
+  \coordinate (V) at (4.45,9.35); \coordinate (O) at (4.45,6.55);
+  \draw[eleve aresta,line width=1.6pt] (V)--(2.55,6.55) (V)--(6.35,6.55);
+  \draw[eleve aresta] (O) ellipse (1.90 and .42);
+  \draw[eleve destaque,->,line width=1.8pt] (4.45,5.85)--(4.45,4.95);
+  \coordinate (S) at (4.45,.80);
+  \fill[eleveazulclaro] (S)--++(30:3.45) arc[start angle=30,end angle=150,radius=3.45]--cycle;
+  \draw[eleve aresta,line width=1.8pt] (S)--++(30:3.45) arc[start angle=30,end angle=150,radius=3.45]--cycle;
+  \draw[eleve destaque,->,line width=1.5pt] (S)--++(30:3.45) node[midway,below right,font=\Large\bfseries] {$g$};
+  \node[font=\Large\bfseries,text=elevelaranja] at (4.45,4.15) {arco $=2\pi r$};
+\end{tikzpicture}
+
+% FIGURA 6 — fig-06-planificacao-da-area-total
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (9.45,8.80);
+  \coordinate (S) at (4.45,.65);
+  \fill[eleveazulclaro] (S)--++(30:3.55) arc[start angle=30,end angle=150,radius=3.55]--cycle;
+  \draw[eleve aresta,line width=1.8pt] (S)--++(30:3.55) arc[start angle=30,end angle=150,radius=3.55]--cycle;
+  \node[font=\Large\bfseries,text=eleveazul] at (4.45,4.60) {lateral};
+  \draw[eleve destaque,->] (S)--++(30:3.55) node[midway,below right,font=\Large\bfseries] {$g$};
+  \fill[orange!22] (4.45,6.85) circle (1.35);
+  \draw[eleve destaque,line width=1.8pt] (4.45,6.85) circle (1.35);
+  \draw[eleve destaque,->] (4.45,6.85)--++(15:1.35) node[midway,above,font=\Large\bfseries] {$r$};
+  \node[font=\large\bfseries,text=elevecinza] at (4.45,8.55) {base};
+\end{tikzpicture}
+
+% FIGURA 7 — fig-07-tres-cones-preenchem-um-cilindro
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (11.15,8.15);
+  \foreach \x/\cor in {1.35/eleveazul,4.15/elevelaranja,6.95/eleveazul}{
+    \draw[draw=\cor,line width=1.6pt] (\x,5.65)--({\x-1.00},2.55) (\x,5.65)--({\x+1.00},2.55);
+    \draw[draw=\cor,line width=1.3pt] (\x,2.55) ellipse (1 and .30);
+    \node[font=\Large\bfseries,text=\cor] at (\x,1.75) {$\frac13$};
+  }
+  \node[font=\Large\bfseries,text=elevecinza] at (2.75,4.00) {$+$};
+  \node[font=\Large\bfseries,text=elevecinza] at (5.55,4.00) {$+$};
+  \node[font=\Large\bfseries,text=elevecinza] at (8.35,4.00) {$=$};
+  \coordinate (O1) at (9.65,2.55); \coordinate (O2) at (9.65,6.25);
+  \draw[eleve aresta,line width=1.6pt] (O1) ellipse (1.05 and .32) (O2) ellipse (1.05 and .32);
+  \draw[eleve aresta,line width=1.6pt] (8.60,2.55)--(8.60,6.25) (10.70,2.55)--(10.70,6.25);
+  \fill[eleveazulclaro,opacity=.55] (O1) ellipse (1.05 and .32);
+  \node[font=\large\bfseries,text=elevecinza] at (9.65,1.75) {cilindro};
+  \node[font=\Large\bfseries,text=elevelaranja] at (5.55,7.55) {mesma base e altura};
+\end{tikzpicture}
+
+% FIGURA 8 — fig-08-elementos-do-tronco-de-cone
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (9.45,8.80);
+  \coordinate (O1) at (4.25,1.25); \coordinate (O2) at (4.25,6.85);
+  \fill[eleveazulclaro,opacity=.75] (1.10,1.25)--(2.45,6.85) arc[start angle=180,end angle=360,x radius=1.80,y radius=.45]--(7.40,1.25) arc[start angle=0,end angle=-180,x radius=3.15,y radius=.70]--cycle;
+  \draw[eleve aresta,line width=1.7pt] (O1) ellipse (3.15 and .70) (O2) ellipse (1.80 and .45);
+  \draw[eleve aresta,line width=1.7pt] (1.10,1.25)--(2.45,6.85) (7.40,1.25)--(6.05,6.85);
+  \draw[eleve auxiliar] (O1)--(O2);
+  \draw[eleve destaque,|<->|] (3.78,1.25)--(3.78,6.85) node[midway,left,font=\Large\bfseries] {$h$};
+  \draw[eleve destaque,->] (O1)--(7.40,1.25) node[midway,below,font=\Large\bfseries] {$R$};
+  \draw[eleve destaque,->] (O2)--(6.05,6.85) node[midway,above,font=\Large\bfseries] {$r$};
+  \draw[eleve destaque,line width=2.4pt] (7.40,1.25)--(6.05,6.85);
+  \node[font=\Large\bfseries,text=elevelaranja,anchor=west] at (6.65,4.05) {$g$};
+\end{tikzpicture}
+
+% FIGURA 9 — fig-09-triangulo-gerador-do-tronco
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (8.75,7.55);
+  \coordinate (A) at (1.10,.75); \coordinate (B) at (6.95,.75); \coordinate (C) at (5.10,6.75); \coordinate (D) at (2.95,6.75);
+  \fill[eleveazulclaro] (A)--(B)--(C)--(D)--cycle;
+  \draw[eleve aresta,line width=1.8pt] (A)--(B)--(C)--(D)--cycle;
+  \draw[eleve auxiliar] (5.10,6.75)--(5.10,.75);
+  \draw[eleve destaque,line width=2.3pt] (B)--(C);
+  \draw[eleve destaque] (5.10,.75)--(5.48,.75)--(5.48,1.13)--(5.10,1.13);
+  \draw[eleve destaque,|<->|] (4.62,.75)--(4.62,6.75) node[midway,left,font=\Large\bfseries] {$h$};
+  \draw[eleve aresta,|<->|] (5.10,.30)--(6.95,.30) node[midway,below,font=\Large\bfseries] {$R-r$};
+  \node[font=\Large\bfseries,text=elevelaranja,anchor=west] at (6.25,3.75) {$g$};
+\end{tikzpicture}
+
+% FIGURA 10 — fig-10-tronco-como-cone-recortado
+\begin{tikzpicture}[eleve figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.15,-0.15) rectangle (9.45,9.45);
+  \coordinate (V) at (4.35,8.75); \coordinate (O) at (4.35,.85);
+  \draw[eleve aresta,line width=1.8pt] (V)--(.85,.85) (V)--(7.85,.85);
+  \draw[eleve aresta] (O) ellipse (3.50 and .72);
+  \coordinate (C) at (4.35,5.85);
+  \draw[eleve destaque,dashed,line width=1.5pt] (C) ellipse (1.28 and .35);
+  \fill[orange!20,opacity=.8] (V)--(3.07,5.85) arc[start angle=180,end angle=360,x radius=1.28,y radius=.35]--cycle;
+  \fill[eleveazulclaro,opacity=.65] (.85,.85)--(3.07,5.85) arc[start angle=180,end angle=360,x radius=1.28,y radius=.35]--(7.85,.85) arc[start angle=0,end angle=-180,x radius=3.50,y radius=.72]--cycle;
+  \node[font=\large\bfseries,text=elevelaranja] at (6.45,7.05) {cone retirado};
+  \node[font=\Large\bfseries,text=eleveazul] at (4.35,3.05) {tronco};
+  \draw[eleve destaque,->,line width=1.5pt] (8.75,5.85)--(6.05,5.85);
+  \node[font=\large\bfseries,text=elevecinza,anchor=east] at (8.70,6.28) {secção paralela};
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,78 @@
+\documentclass[tikz,border=3mm,multi=tikzpicture]{standalone}
+\usepackage{eleve-quimica}
+
+\begin{document}
+
+% FIGURA 1 — fig-01-escala-logaritmica-ph
+\begin{tikzpicture}[quimica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.3,-0.2) rectangle (14.7,6.1);
+
+  \fill[quimicalaranjaclaro] (0.35,2.45) rectangle (6.85,3.45);
+  \fill[quimicaverdeclaro] (6.85,2.45) rectangle (7.85,3.45);
+  \fill[quimicaazulclaro] (7.85,2.45) rectangle (14.35,3.45);
+  \draw[quimicacinza, line width=1.1pt] (0.35,2.45) rectangle (14.35,3.45);
+
+  \foreach \p in {0,...,14}{
+    \draw[quimicacinza, line width=0.8pt]
+      (0.35+\p,2.45) -- (0.35+\p,2.20);
+    \node[quimica rotulo, font=\normalsize\bfseries]
+      at (0.35+\p,1.78) {\p};
+  }
+
+  \node[quimica destaque] at (3.35,4.05) {meio ácido};
+  \node[quimica rotulo, text=quimicaverde] at (7.35,4.05)
+    {neutro a 25\,°C};
+  \node[quimica rotulo, text=quimicaazul] at (11.35,4.05)
+    {meio básico};
+
+  \draw[quimica retorno] (7.00,5.15) -- (0.75,5.15);
+  \node[quimica destaque] at (3.85,5.62)
+    {$[\mathrm{H_3O^+}]$ aumenta};
+  \draw[quimica fluxo] (7.70,5.15) -- (13.95,5.15);
+  \node[quimica rotulo, text=quimicaazul] at (10.85,5.62)
+    {$[\mathrm{OH^-}]$ aumenta};
+
+  \node[quimica rotulo] at (7.35,0.72)
+    {cada unidade: concentração varia por fator 10};
+\end{tikzpicture}
+
+
+% FIGURA 2 — fig-02-curva-titulacao-forte-forte
+\begin{tikzpicture}[quimica figura, x=1cm, y=1cm]
+  \path[use as bounding box] (-0.2,-0.25) rectangle (12.2,8.55);
+
+  \draw[quimica eixo] (1.10,0.80) -- (11.65,0.80)
+    node[above left=2pt, quimica rotulo] {volume de base adicionado};
+  \draw[quimica eixo] (1.10,0.80) -- (1.10,8.05)
+    node[above=2pt, quimica rotulo] {pH};
+
+  \foreach \p/\y in {0/0.80,2/1.80,4/2.80,6/3.80,7/4.30,8/4.80,10/5.80,12/6.80,14/7.80}{
+    \draw[quimicacinza, line width=0.8pt] (0.92,\y) -- (1.10,\y);
+    \node[quimica rotulo, font=\normalsize\bfseries, anchor=east]
+      at (0.80,\y) {\p};
+  }
+
+  \fill[quimicalaranjaclaro, opacity=0.75] (1.10,4.90) rectangle (11.20,5.80);
+  \node[quimica destaque, anchor=west] at (7.60,5.38)
+    {faixa de viragem};
+
+  \draw[quimica auxiliar] (6.15,0.80) -- (6.15,7.80);
+  \draw[quimica auxiliar] (1.10,4.30) -- (6.15,4.30);
+  \node[quimica rotulo, anchor=west] at (6.42,4.38)
+    {equivalência};
+  \node[quimica rotulo, anchor=west] at (6.42,3.95)
+    {$\mathrm{pH}=7$};
+
+  \draw[quimica direta]
+    (1.35,1.25)
+    .. controls (3.00,1.30) and (4.85,1.55) .. (5.70,2.35)
+    .. controls (6.00,2.75) and (6.05,3.55) .. (6.15,4.30)
+    .. controls (6.25,5.50) and (6.45,6.65) .. (7.15,7.05)
+    .. controls (8.20,7.55) and (9.80,7.62) .. (11.15,7.65);
+  \node[quimica destaque, anchor=west] at (2.00,1.72)
+    {ácido forte};
+  \node[quimica rotulo, text=quimicaazul, anchor=east] at (10.95,7.20)
+    {excesso de base};
+\end{tikzpicture}
+
+\end{document}

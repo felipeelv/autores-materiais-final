@@ -1,0 +1,83 @@
+{
+  "versao": 1,
+  "disciplina": "fisica",
+  "ano_serie": "7ano",
+  "titulo_documento": "Máquinas simples",
+  "slug_documento": "maquinas-simples",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Fisica/7ano/fisica-7ano-3bim-cap3.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-troca-entre-forca-e-distancia",
+      "pagina": 1,
+      "arquivo": "fig-01-troca-entre-forca-e-distancia.png",
+      "alt": "Comparação entre força maior em caminho curto e força menor em caminho longo para a mesma tarefa",
+      "aprovada": true,
+      "sha256": "4d987e6ac49b2ae018753a590fdb95cfea60ddaa6c9d625effd243ea65ccf0fb",
+      "largura_px": 1359,
+      "altura_px": 1193,
+      "publicado_sha256": "4d987e6ac49b2ae018753a590fdb95cfea60ddaa6c9d625effd243ea65ccf0fb",
+      "publicado_commit": "05d7809025210e0750efc58a52a44c5ef4b93264"
+    },
+    {
+      "id": "fig-02-elementos-e-classes-de-alavancas",
+      "pagina": 2,
+      "arquivo": "fig-02-elementos-e-classes-de-alavancas.png",
+      "alt": "Três alavancas com fulcro, força aplicada e resistência em ordens diferentes",
+      "aprovada": true,
+      "sha256": "a7000b249a40ee3b2ddd882faa842e27aa43c89a11a51f03441ae5ed0c92b5db",
+      "largura_px": 1347,
+      "altura_px": 1666,
+      "publicado_sha256": "a7000b249a40ee3b2ddd882faa842e27aa43c89a11a51f03441ae5ed0c92b5db",
+      "publicado_commit": "05d7809025210e0750efc58a52a44c5ef4b93264"
+    },
+    {
+      "id": "fig-03-polia-fixa-e-polia-movel",
+      "pagina": 3,
+      "arquivo": "fig-03-polia-fixa-e-polia-movel.png",
+      "alt": "Polia fixa mudando a direção da força e polia móvel sustentada por dois trechos de corda",
+      "aprovada": true,
+      "sha256": "54f1390b90afe100722642f38d080e69a390af675160ca0d1dffaab3d06ce4bf",
+      "largura_px": 1394,
+      "altura_px": 1312,
+      "publicado_sha256": "54f1390b90afe100722642f38d080e69a390af675160ca0d1dffaab3d06ce4bf",
+      "publicado_commit": "05d7809025210e0750efc58a52a44c5ef4b93264"
+    },
+    {
+      "id": "fig-04-trechos-que-sustentam-a-carga",
+      "pagina": 4,
+      "arquivo": "fig-04-trechos-que-sustentam-a-carga.png",
+      "alt": "Talha com quatro trechos de corda distribuindo o peso da carga",
+      "aprovada": true,
+      "sha256": "419a7d48f74f18349793aaa3a7cad8e58f05d840d87dd00f288a1415795af299",
+      "largura_px": 1371,
+      "altura_px": 1264,
+      "publicado_sha256": "419a7d48f74f18349793aaa3a7cad8e58f05d840d87dd00f288a1415795af299",
+      "publicado_commit": "05d7809025210e0750efc58a52a44c5ef4b93264"
+    },
+    {
+      "id": "fig-05-rampas-com-mesma-altura",
+      "pagina": 5,
+      "arquivo": "fig-05-rampas-com-mesma-altura.png",
+      "alt": "Duas rampas com a mesma altura e diferentes inclinações, caminhos e forças",
+      "aprovada": true,
+      "sha256": "1d27dabcc7c2095122c9c9a7683884d9cc6e12570a490c253d99978595230f15",
+      "largura_px": 1371,
+      "altura_px": 1205,
+      "publicado_sha256": "1d27dabcc7c2095122c9c9a7683884d9cc6e12570a490c253d99978595230f15",
+      "publicado_commit": "05d7809025210e0750efc58a52a44c5ef4b93264"
+    },
+    {
+      "id": "fig-06-roda-cunha-e-parafuso",
+      "pagina": 6,
+      "arquivo": "fig-06-roda-cunha-e-parafuso.png",
+      "alt": "Roda e eixo, cunha e parafuso com os elementos geométricos que explicam seu funcionamento",
+      "aprovada": true,
+      "sha256": "a4ee9dff4081d55d5a599e5e760610b3f2d13624d5f2ee91268531c202aba267",
+      "largura_px": 1371,
+      "altura_px": 1512,
+      "publicado_sha256": "a4ee9dff4081d55d5a599e5e760610b3f2d13624d5f2ee91268531c202aba267",
+      "publicado_commit": "05d7809025210e0750efc58a52a44c5ef4b93264"
+    }
+  ]
+}

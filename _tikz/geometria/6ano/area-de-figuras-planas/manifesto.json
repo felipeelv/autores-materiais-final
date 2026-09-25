@@ -1,0 +1,83 @@
+{
+  "versao": 1,
+  "disciplina": "geometria",
+  "ano_serie": "6ano",
+  "titulo_documento": "Área de figuras planas",
+  "slug_documento": "area-de-figuras-planas",
+  "arquivo_markdown": "../Reorganizacao-2026-2Semestre/conteudos-prontos/Geometria/6ano/geometria-6ano-3bim-cap2.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-area-e-perimetro-no-retangulo",
+      "pagina": 1,
+      "arquivo": "fig-01-area-e-perimetro-no-retangulo.png",
+      "alt": "Retângulo com o contorno destacado para representar o perímetro e o interior quadriculado para representar a área",
+      "aprovada": true,
+      "sha256": "4b72dc83f2685dc757f1c826e2c929034382d7facafc4330f204344a41097e71",
+      "largura_px": 1323,
+      "altura_px": 768,
+      "publicado_sha256": "4b72dc83f2685dc757f1c826e2c929034382d7facafc4330f204344a41097e71",
+      "publicado_commit": "aa494bd59b159af92efc55a6b232fe525c89d56d"
+    },
+    {
+      "id": "fig-02-unidades-quadradas-no-retangulo-e-quadrado",
+      "pagina": 2,
+      "arquivo": "fig-02-unidades-quadradas-no-retangulo-e-quadrado.png",
+      "alt": "Retângulo e quadrado preenchidos por unidades quadradas organizadas em linhas e colunas",
+      "aprovada": true,
+      "sha256": "412007322a89ded1d703bf48b14c4c57e44bc3a89098546587716fee2a58ab4f",
+      "largura_px": 1087,
+      "altura_px": 1105,
+      "publicado_sha256": "412007322a89ded1d703bf48b14c4c57e44bc3a89098546587716fee2a58ab4f",
+      "publicado_commit": "aa494bd59b159af92efc55a6b232fe525c89d56d"
+    },
+    {
+      "id": "fig-03-recomposicao-do-paralelogramo",
+      "pagina": 3,
+      "arquivo": "fig-03-recomposicao-do-paralelogramo.png",
+      "alt": "Triângulo recortado de um paralelogramo e transladado para formar um retângulo de mesma base e altura",
+      "aprovada": true,
+      "sha256": "41e992620f196cb7558f326fd810e614ad4d13089f466214871bf7b9afc07379",
+      "largura_px": 1111,
+      "altura_px": 1193,
+      "publicado_sha256": "41e992620f196cb7558f326fd810e614ad4d13089f466214871bf7b9afc07379",
+      "publicado_commit": "aa494bd59b159af92efc55a6b232fe525c89d56d"
+    },
+    {
+      "id": "fig-04-triangulo-metade-do-paralelogramo",
+      "pagina": 4,
+      "arquivo": "fig-04-triangulo-metade-do-paralelogramo.png",
+      "alt": "Duas cópias congruentes de um triângulo formando um paralelogramo de base b e altura h",
+      "aprovada": true,
+      "sha256": "09131c9b076e9a09e4e09fc6c570ccca905811343b20501481e65565152cccfb",
+      "largura_px": 1134,
+      "altura_px": 1105,
+      "publicado_sha256": "09131c9b076e9a09e4e09fc6c570ccca905811343b20501481e65565152cccfb",
+      "publicado_commit": "aa494bd59b159af92efc55a6b232fe525c89d56d"
+    },
+    {
+      "id": "fig-05-duplicacao-do-trapezio",
+      "pagina": 5,
+      "arquivo": "fig-05-duplicacao-do-trapezio.png",
+      "alt": "Dois trapézios congruentes invertidos formando um paralelogramo de base B mais b e altura h",
+      "aprovada": true,
+      "sha256": "365e95ec012dd52dc4e5c1e07bda7e4640e66c3d58af88e8c2440b2f3ff60be8",
+      "largura_px": 1182,
+      "altura_px": 939,
+      "publicado_sha256": "365e95ec012dd52dc4e5c1e07bda7e4640e66c3d58af88e8c2440b2f3ff60be8",
+      "publicado_commit": "aa494bd59b159af92efc55a6b232fe525c89d56d"
+    },
+    {
+      "id": "fig-06-malha-e-decomposicao-de-area",
+      "pagina": 6,
+      "arquivo": "fig-06-malha-e-decomposicao-de-area.png",
+      "alt": "Figura irregular em malha quadriculada com quadrados inteiros e partes complementares reunidas em unidades de área",
+      "aprovada": true,
+      "sha256": "f85c53b862e5f03e7710b40032e834987c6fc99f59acabe361195e7c561dc90c",
+      "largura_px": 1087,
+      "altura_px": 939,
+      "publicado_sha256": "f85c53b862e5f03e7710b40032e834987c6fc99f59acabe361195e7c561dc90c",
+      "publicado_commit": "aa494bd59b159af92efc55a6b232fe525c89d56d"
+    }
+  ]
+}

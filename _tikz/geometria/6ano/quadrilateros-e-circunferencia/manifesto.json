@@ -1,0 +1,83 @@
+{
+  "versao": 1,
+  "disciplina": "geometria",
+  "ano_serie": "6ano",
+  "titulo_documento": "Quadriláteros e circunferência",
+  "slug_documento": "quadrilateros-e-circunferencia",
+  "arquivo_markdown": "Geometria/modelos/geometria-6ano-modelo.md",
+  "fonte": "figuras.tex",
+  "figuras": [
+    {
+      "id": "fig-01-elementos-dos-quadrilateros",
+      "pagina": 1,
+      "arquivo": "fig-01-elementos-dos-quadrilateros.png",
+      "alt": "Quadrilátero ABCD com quatro lados, quatro vértices e as duas diagonais traçadas",
+      "aprovada": true,
+      "sha256": "c6611e91f572f1905543e32b2953fb80caf4b7feff3da7f5274ed8a0eb94a629",
+      "largura_px": 1016,
+      "altura_px": 603,
+      "publicado_sha256": "c6611e91f572f1905543e32b2953fb80caf4b7feff3da7f5274ed8a0eb94a629",
+      "publicado_commit": "0ce181ae40fd6b41195afe772ccab657c316e81c"
+    },
+    {
+      "id": "fig-02-propriedades-do-paralelogramo",
+      "pagina": 2,
+      "arquivo": "fig-02-propriedades-do-paralelogramo.png",
+      "alt": "Paralelogramo ABCD com lados e ângulos opostos congruentes e diagonais cruzando-se no ponto médio M",
+      "aprovada": true,
+      "sha256": "04635693e38935579f742e70b98e026626d9e061578d42ba3c05fb1309418f2f",
+      "largura_px": 1229,
+      "altura_px": 739,
+      "publicado_sha256": "04635693e38935579f742e70b98e026626d9e061578d42ba3c05fb1309418f2f",
+      "publicado_commit": "0ce181ae40fd6b41195afe772ccab657c316e81c"
+    },
+    {
+      "id": "fig-03-elementos-da-circunferencia",
+      "pagina": 3,
+      "arquivo": "fig-03-elementos-da-circunferencia.png",
+      "alt": "Diagrama identifica raio, diâmetro, corda e arco de uma circunferência e compara as retas tangente e secante",
+      "aprovada": true,
+      "sha256": "d7fd509f42d695d6ff65fdb6e42e87fd6865a3fbff005ef9bde1074417988a00",
+      "largura_px": 1170,
+      "altura_px": 1258,
+      "publicado_sha256": "d7fd509f42d695d6ff65fdb6e42e87fd6865a3fbff005ef9bde1074417988a00",
+      "publicado_commit": "0ce181ae40fd6b41195afe772ccab657c316e81c"
+    },
+    {
+      "id": "fig-04-razao-circunferencia-diametro",
+      "pagina": 4,
+      "arquivo": "fig-04-razao-circunferencia-diametro.png",
+      "alt": "Circunferência desenrolada mede aproximadamente três vírgula quatorze vezes o diâmetro, ilustrando a razão entre C e d igual a pi",
+      "aprovada": true,
+      "sha256": "2dd9cf8f76768ff1fe23f2f64337c4d4118714a8903a97374a8243fff6adc691",
+      "largura_px": 1158,
+      "altura_px": 892,
+      "publicado_sha256": "2dd9cf8f76768ff1fe23f2f64337c4d4118714a8903a97374a8243fff6adc691",
+      "publicado_commit": "0ce181ae40fd6b41195afe772ccab657c316e81c"
+    },
+    {
+      "id": "fig-05-classificacao-dos-paralelogramos",
+      "pagina": 5,
+      "arquivo": "fig-05-classificacao-dos-paralelogramos.png",
+      "alt": "Árvore visual mostra retângulos e losangos como paralelogramos e o quadrado pertencendo às duas classes",
+      "aprovada": true,
+      "sha256": "3515ec023a71519e4d5c7408e968b6169445a7bcaa4bb3b5c4b8e3cd85925a8a",
+      "largura_px": 1016,
+      "altura_px": 889,
+      "publicado_sha256": "3515ec023a71519e4d5c7408e968b6169445a7bcaa4bb3b5c4b8e3cd85925a8a",
+      "publicado_commit": "0ce181ae40fd6b41195afe772ccab657c316e81c"
+    },
+    {
+      "id": "fig-06-classificacao-dos-trapezios",
+      "pagina": 6,
+      "arquivo": "fig-06-classificacao-dos-trapezios.png",
+      "alt": "Trapézio com setas indicando seu único par de lados paralelos",
+      "aprovada": true,
+      "sha256": "90c9b2ad789884b714c12886e00321b48aa0413739f5c63f9bb3682776a95548",
+      "largura_px": 1016,
+      "altura_px": 479,
+      "publicado_sha256": "90c9b2ad789884b714c12886e00321b48aa0413739f5c63f9bb3682776a95548",
+      "publicado_commit": "0ce181ae40fd6b41195afe772ccab657c316e81c"
+    }
+  ]
+}
